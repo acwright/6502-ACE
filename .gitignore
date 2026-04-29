@@ -1,0 +1,11 @@
+# Local environment variables
+.env
+.env.*.local
+
+#Kicad
+*.lck
+
+# Editor and OS specific files
+.DS_Store
+Thumbs.db
+.vscode/
