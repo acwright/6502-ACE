@@ -4,6 +4,7 @@
 
 #Kicad
 *.lck
+*.bak
 
 # Editor and OS specific files
 .DS_Store
