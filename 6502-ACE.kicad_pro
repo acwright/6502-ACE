@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 1.0,
+          "height": 2.3,
+          "width": 2.3
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -571,7 +571,7 @@
     "annotate_start_num": 0,
     "annotation": {
       "method": 0,
-      "sort_order": 0
+      "sort_order": 1
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
@@ -721,7 +721,7 @@
         "uuid": "34a60d42-c14a-479d-bef3-5ff0ee57bad5"
       }
     ],
-    "used_designators": "X1,R1-36,BT1,#FLG1-3,C1-41,SW1-69,U1-22,TP1-2,Y1,D1-3,#PWR1-40,J1-22",
+    "used_designators": "X1,C1-30,SW1-69,U1-22,TP1-2,BT1,R1-36,J1-22,Y1,#PWR1-40,D1-3,#FLG1-3",
     "variants": []
   },
   "sheets": [
