@@ -35170,8 +35170,8 @@
 			)
 		)
 	)
-	(global_label "RWB"
-		(shape input)
+	(global_label "RDY"
+		(shape output)
 		(at 534.67 346.71 0)
 		(effects
 			(font
@@ -46131,7 +46131,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 637.54 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -52279,7 +52279,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 374.65 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -56303,7 +56303,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 637.54 274.32 0)
 			(hide yes)
 			(show_name no)
@@ -69843,7 +69843,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 412.75 201.93 0)
 			(hide yes)
 			(show_name no)
