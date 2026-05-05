@@ -32,7 +32,7 @@ All AC6502 computers share:
 This repository contains KiCad 7.0+ PCB designs for the ACE board.
 
 ### ACE Board
-`Hardware/ACE/`
+`Hardware/ACE Board/`
 
 The single integrated board hosting the W65C02S CPU and all peripherals. Provides:
 
