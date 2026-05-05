@@ -5,13 +5,13 @@
 	(uuid "34a60d42-c14a-479d-bef3-5ff0ee57bad5")
 	(paper "User" 803.148 419.989)
 	(title_block
-		(title "6502 ACE")
+		(title "6502 ACE Board")
 		(date "2026-04-25")
 		(rev "1.0")
 		(company "A.C. Wright Design")
 	)
 	(lib_symbols
-		(symbol "6502-ACE:6581"
+		(symbol "6502 Parts:6581"
 			(pin_names
 				(offset 1.016)
 			)
@@ -706,7 +706,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "6502-ACE:65C02"
+		(symbol "6502 Parts:65C02"
 			(pin_names
 				(offset 1.016)
 			)
@@ -1507,7 +1507,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "6502-ACE:65C22"
+		(symbol "6502 Parts:65C22"
 			(pin_names
 				(offset 1.016)
 			)
@@ -2308,7 +2308,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "6502-ACE:65C51"
+		(symbol "6502 Parts:65C51"
 			(pin_names
 				(offset 1.016)
 			)
@@ -2891,7 +2891,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "6502-ACE:74HC30"
+		(symbol "6502 Parts:74HC30"
 			(body_styles demorgan)
 			(pin_names
 				(offset 1.016)
@@ -3555,7 +3555,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "6502-ACE:AS6C4008"
+		(symbol "6502 Parts:AS6C4008"
 			(pin_names
 				(offset 1.016)
 			)
@@ -4212,7 +4212,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "6502-ACE:AS6C62256"
+		(symbol "6502 Parts:AS6C62256"
 			(pin_names
 				(offset 1.016)
 			)
@@ -4797,7 +4797,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "6502-ACE:AT28C256"
+		(symbol "6502 Parts:AT28C256"
 			(pin_names
 				(offset 1.016)
 			)
@@ -5382,7 +5382,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "6502-ACE:DS1511Y"
+		(symbol "6502 Parts:DS1511Y"
 			(pin_names
 				(offset 1.016)
 			)
@@ -5967,7 +5967,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "6502-ACE:Pico9918"
+		(symbol "6502 Parts:Pico9918"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -18983,6 +18983,12 @@
 		(uuid "9bf4c4c2-8d07-47c2-bf13-e04c3e13d2b6")
 	)
 	(junction
+		(at 425.45 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c260129-213d-4330-9ab0-65f426bc528e")
+	)
+	(junction
 		(at 439.42 204.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -21290,7 +21296,7 @@
 	)
 	(wire
 		(pts
-			(xy 427.99 134.62) (xy 427.99 133.35)
+			(xy 429.26 134.62) (xy 429.26 133.35)
 		)
 		(stroke
 			(width 0)
@@ -21740,7 +21746,7 @@
 	)
 	(wire
 		(pts
-			(xy 430.53 133.35) (xy 430.53 134.62)
+			(xy 431.8 133.35) (xy 431.8 134.62)
 		)
 		(stroke
 			(width 0)
@@ -25520,7 +25526,7 @@
 	)
 	(wire
 		(pts
-			(xy 425.45 134.62) (xy 427.99 134.62)
+			(xy 425.45 134.62) (xy 429.26 134.62)
 		)
 		(stroke
 			(width 0)
@@ -46398,7 +46404,7 @@
 			(uuid "c5cca19e-12d5-46af-aec2-a19bbeef18e2")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR07")
 					(unit 1)
@@ -46479,7 +46485,7 @@
 			(uuid "4805d0ee-67e4-4add-8c7c-28bf4ab2fcb6")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J19")
 					(unit 1)
@@ -46637,7 +46643,7 @@
 			(uuid "eb952634-88ff-46ab-bfc8-1c6b057c59ae")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U21")
 					(unit 1)
@@ -46714,7 +46720,7 @@
 			(uuid "c81dc0ff-a7b8-4070-ba8a-edbf0ae01625")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR05")
 					(unit 1)
@@ -46754,7 +46760,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 619.76 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -46794,7 +46800,7 @@
 			(uuid "88916e80-9982-4cf3-af86-42542a8a46cd")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW1")
 					(unit 1)
@@ -46833,7 +46839,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:6502 Bus Connector"
+		(property "Footprint" "6502 Parts:6502 Bus Connector"
 			(at 505.46 259.08 0)
 			(hide yes)
 			(show_name no)
@@ -47009,7 +47015,7 @@
 			(uuid "45252c2f-993e-46f6-b124-83ede90dbc7d")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J18")
 					(unit 1)
@@ -47088,7 +47094,7 @@
 			(uuid "1d968052-80ce-4089-a426-906fc1d16a05")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C6")
 					(unit 1)
@@ -47128,7 +47134,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 640.08 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -47168,7 +47174,7 @@
 			(uuid "3ff60459-f975-4311-992c-9163221ffbc6")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW51")
 					(unit 1)
@@ -47246,7 +47252,7 @@
 			(uuid "8ed8dafc-a089-4036-bee6-fbb93affd1bc")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR027")
 					(unit 1)
@@ -47325,7 +47331,7 @@
 			(uuid "9bd482a1-f5cf-4b87-806a-aef81ca37baa")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "TP1")
 					(unit 1)
@@ -47403,7 +47409,7 @@
 			(uuid "f2d97a8b-fa66-46c3-854b-370fd389f7fc")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR028")
 					(unit 1)
@@ -47443,7 +47449,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 619.76 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -47483,7 +47489,7 @@
 			(uuid "40a665d2-ec5c-473d-9332-90ab706f0748")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW25")
 					(unit 1)
@@ -47561,7 +47567,7 @@
 			(uuid "c3c499a3-05ba-430f-b576-3130d5a59bda")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR026")
 					(unit 1)
@@ -47639,7 +47645,7 @@
 			(uuid "2c859baa-daa7-47f8-9683-f7e07ce40339")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR019")
 					(unit 1)
@@ -47679,7 +47685,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 619.76 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -47719,7 +47725,7 @@
 			(uuid "9cba3ec0-4614-4e0f-94ad-cfbf1519d1ab")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW17")
 					(unit 1)
@@ -47852,7 +47858,7 @@
 			(uuid "3ff9543e-66d3-49d9-9135-7a630d87c8d9")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW69")
 					(unit 1)
@@ -47933,7 +47939,7 @@
 			(uuid "c813559f-d2e1-4eb8-9803-187fd790dc33")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R25")
 					(unit 1)
@@ -47943,7 +47949,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 427.99 128.27 90)
+		(at 429.26 128.27 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -47953,7 +47959,7 @@
 		(dnp no)
 		(uuid "132d20e7-2a55-4d61-b0e1-c0b0a718d13b")
 		(property "Reference" "J5"
-			(at 436.372 127.762 90)
+			(at 437.642 127.762 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47964,7 +47970,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 436.626 130.048 90)
+			(at 437.896 130.048 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47975,7 +47981,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 427.99 128.27 0)
+			(at 429.26 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47986,7 +47992,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 427.99 128.27 0)
+			(at 429.26 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47997,7 +48003,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 427.99 128.27 0)
+			(at 429.26 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48014,7 +48020,7 @@
 			(uuid "e862e729-e6ab-48d9-8bef-356166090599")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J5")
 					(unit 1)
@@ -48023,7 +48029,7 @@
 		)
 	)
 	(symbol
-		(lib_id "6502-ACE:AS6C62256")
+		(lib_id "6502 Parts:AS6C62256")
 		(at 40.64 147.32 0)
 		(unit 1)
 		(body_style 1)
@@ -48193,7 +48199,7 @@
 			(uuid "83cc35fa-a00b-4df4-b8b9-f23c04d433d3")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U7")
 					(unit 1)
@@ -48233,7 +48239,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 640.08 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -48273,7 +48279,7 @@
 			(uuid "6912b0a1-b4e9-4a0e-9186-444cbd71b9de")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW43")
 					(unit 1)
@@ -48410,7 +48416,7 @@
 			(uuid "5dbf244f-3ddb-435b-b4f8-b78d115e6028")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U12")
 					(unit 1)
@@ -48550,7 +48556,7 @@
 			(uuid "5dbf244f-3ddb-435b-b4f8-b78d115e6029")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U12")
 					(unit 5)
@@ -48629,7 +48635,7 @@
 			(uuid "304efb6b-b2cc-4f2a-9de7-aeeeaa15c862")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C27")
 					(unit 1)
@@ -48708,7 +48714,7 @@
 			(uuid "8c372711-0325-4813-abd7-f0777644476b")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R4")
 					(unit 1)
@@ -48747,7 +48753,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:RHDR40W82P485X254_2X20_5740X93"
+		(property "Footprint" "6502 Parts:RHDR40W82P485X254_2X20_5740X93"
 			(at 459.74 259.08 0)
 			(hide yes)
 			(show_name no)
@@ -48923,7 +48929,7 @@
 			(uuid "f714d3ee-6a40-4891-a8b5-441f50e2984e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J17")
 					(unit 1)
@@ -49061,7 +49067,7 @@
 			(uuid "5dbf244f-3ddb-435b-b4f8-b78d115e602a")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U13")
 					(unit 2)
@@ -49101,7 +49107,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.50u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.50u_PCB"
 			(at 701.04 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -49141,7 +49147,7 @@
 			(uuid "c644d622-f3b8-46ad-aba1-7ed5663173d9")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW29")
 					(unit 1)
@@ -49219,7 +49225,7 @@
 			(uuid "8031ca6f-e275-472a-9932-e64fb9deb9c1")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR020")
 					(unit 1)
@@ -49300,7 +49306,7 @@
 			(uuid "20408994-fd22-4389-87c7-1b0657c12d7d")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R15")
 					(unit 1)
@@ -49380,7 +49386,7 @@
 			(uuid "cabefaab-aed6-4da7-90fe-5e82bd7f6ba1")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#FLG01")
 					(unit 1)
@@ -49422,7 +49428,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.25u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.25u_PCB"
 			(at 660.4 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -49462,7 +49468,7 @@
 			(uuid "cab843b0-ea00-4a99-a956-4f2625f784f6")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW67")
 					(unit 1)
@@ -49502,7 +49508,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 660.4 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -49542,7 +49548,7 @@
 			(uuid "80feca1e-76c6-4891-bd8e-ec446c6b92b1")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW35")
 					(unit 1)
@@ -49582,7 +49588,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 701.04 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -49622,7 +49628,7 @@
 			(uuid "3c1f0ab1-b8c1-4bf5-b044-f4c5a0655eae")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW5")
 					(unit 1)
@@ -49701,7 +49707,7 @@
 			(uuid "c01d084e-f639-43a0-ba5e-cb2e7bbf27ad")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C13")
 					(unit 1)
@@ -49742,7 +49748,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_2.25u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_2.25u_PCB"
 			(at 701.04 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -49782,7 +49788,7 @@
 			(uuid "6eef6192-2f4e-44da-a39b-4c36eff306b4")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW49")
 					(unit 1)
@@ -49822,7 +49828,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.50u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.50u_PCB"
 			(at 762 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -49862,7 +49868,7 @@
 			(uuid "743d8e30-c663-4303-81d3-c017a0f90da7")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW16")
 					(unit 1)
@@ -49941,7 +49947,7 @@
 			(uuid "18e1eaac-84ec-4622-aa55-14a68569cb26")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR013")
 					(unit 1)
@@ -49981,7 +49987,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_400MSP1R6BLKM6QE"
+		(property "Footprint" "6502 Parts:SW_400MSP1R6BLKM6QE"
 			(at 619.76 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -50046,7 +50052,7 @@
 			(uuid "97529573-36bb-4409-991b-7c56669464f8")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW68")
 					(unit 1)
@@ -50086,7 +50092,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 680.72 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -50126,7 +50132,7 @@
 			(uuid "e74f5330-555e-44bd-802e-f33e948d7fd9")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW28")
 					(unit 1)
@@ -50166,7 +50172,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 680.72 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -50206,7 +50212,7 @@
 			(uuid "cfa15980-7cd3-4763-bd3d-5a2b9075cdf4")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW45")
 					(unit 1)
@@ -50352,7 +50358,7 @@
 			(uuid "5cd34f2e-1535-44a4-bd88-c187bfa220a9")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U5")
 					(unit 1)
@@ -50431,7 +50437,7 @@
 			(uuid "83719077-b7c1-463c-a8f4-d91a0bc92b84")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R3")
 					(unit 1)
@@ -50512,7 +50518,7 @@
 			(uuid "86ad8b4a-b927-466d-9f37-512e82d4abf2")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R14")
 					(unit 1)
@@ -50591,7 +50597,7 @@
 			(uuid "4b8f5a9c-fcbb-4115-84a3-58502cdf938c")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C30")
 					(unit 1)
@@ -50669,7 +50675,7 @@
 			(uuid "222c37d9-a09a-4e69-826e-6bc26e8e8a3d")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR014")
 					(unit 1)
@@ -50748,7 +50754,7 @@
 			(uuid "02e0948c-72c1-4335-b575-332892ba8c87")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C11")
 					(unit 1)
@@ -50788,7 +50794,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 721.36 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -50828,7 +50834,7 @@
 			(uuid "729083ea-14db-49a9-8286-ecccedbf8670")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW30")
 					(unit 1)
@@ -50968,7 +50974,7 @@
 			(uuid "61c4d0c0-2956-42db-9f3c-a5291cb309f4")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U16")
 					(unit 5)
@@ -51105,7 +51111,7 @@
 			(uuid "61c4d0c0-2956-42db-9f3c-a5291cb309f5")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U16")
 					(unit 1)
@@ -51183,7 +51189,7 @@
 			(uuid "900944e3-be7d-4674-b0d2-84f2abdb06f4")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR011")
 					(unit 1)
@@ -51223,7 +51229,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 721.36 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -51263,7 +51269,7 @@
 			(uuid "a1b93483-6116-4106-8cfb-23a3c5e366d4")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW63")
 					(unit 1)
@@ -51345,7 +51351,7 @@
 			(uuid "26df6148-0763-4854-98f4-1f82be19a66c")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "D1")
 					(unit 1)
@@ -51457,7 +51463,7 @@
 			(uuid "11e81a91-fb6f-4858-ad58-ab579455d7ba")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "D2")
 					(unit 1)
@@ -51538,7 +51544,7 @@
 			(uuid "2743d2d1-9a95-4969-bd07-49e0ddabc79f")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R16")
 					(unit 1)
@@ -51578,7 +51584,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 721.36 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -51618,7 +51624,7 @@
 			(uuid "df8fb0e9-5b1b-4b8a-8204-bc0fbcde9ff4")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW38")
 					(unit 1)
@@ -51627,7 +51633,7 @@
 		)
 	)
 	(symbol
-		(lib_id "6502-ACE:AT28C256")
+		(lib_id "6502 Parts:AT28C256")
 		(at 97.79 147.32 0)
 		(unit 1)
 		(body_style 1)
@@ -51797,7 +51803,7 @@
 			(uuid "300caa40-46c7-4466-9635-8a3e5629053f")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U8")
 					(unit 1)
@@ -51935,7 +51941,7 @@
 			(uuid "5dbf244f-3ddb-435b-b4f8-b78d115e602b")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U13")
 					(unit 3)
@@ -51975,7 +51981,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 741.68 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -52015,7 +52021,7 @@
 			(uuid "265ee5c8-381a-4e3c-a793-c298bab1e9c0")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW39")
 					(unit 1)
@@ -52094,7 +52100,7 @@
 			(uuid "f0f86751-4712-4327-9d18-49b38185ab32")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR040")
 					(unit 1)
@@ -52173,7 +52179,7 @@
 			(uuid "9a2d57e9-d052-4001-a72d-3c3a48f5a8eb")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C20")
 					(unit 1)
@@ -52252,9 +52258,89 @@
 			(uuid "4536f544-de76-4d18-a5bb-19e3c33b0eaf")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 425.45 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ce90aa9-70ba-4e26-83ad-fed6baf5c840")
+		(property "Reference" "#FLG04"
+			(at 425.45 132.715 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 425.4499 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 425.45 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 425.45 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 425.45 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "17ec7018-3800-4245-984d-2e582743e1e2")
+		)
+		(instances
+			(project "ACE Board"
+				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -52292,7 +52378,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 680.72 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -52332,7 +52418,7 @@
 			(uuid "9cd12655-789b-432d-be40-0b3b1b9a6356")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW36")
 					(unit 1)
@@ -52372,7 +52458,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_2.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_2.00u_PCB"
 			(at 721.36 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -52412,7 +52498,7 @@
 			(uuid "4f381e78-8e82-428b-b085-be8ce68b5f56")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW14")
 					(unit 1)
@@ -52547,7 +52633,7 @@
 			(uuid "72a5f404-445d-473f-9aff-464f4c6aaffa")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U20")
 					(unit 1)
@@ -52587,7 +52673,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 741.68 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -52627,7 +52713,7 @@
 			(uuid "3ab57a1a-ac8e-47b8-8d0a-fdbaaae06459")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW64")
 					(unit 1)
@@ -52708,7 +52794,7 @@
 			(uuid "959b70a3-4735-47dc-aa14-4b4773cd8b9c")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J3")
 					(unit 1)
@@ -52789,7 +52875,7 @@
 			(uuid "9998fff7-631a-49d0-8963-20c606e9f4af")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R19")
 					(unit 1)
@@ -52868,7 +52954,7 @@
 			(uuid "e9c8eaeb-a775-4174-91e8-cc912a29ef6c")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR08")
 					(unit 1)
@@ -52908,7 +52994,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 762 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -52948,7 +53034,7 @@
 			(uuid "aff83791-069b-4b3d-a988-6cdba061344c")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW48")
 					(unit 1)
@@ -53025,7 +53111,7 @@
 			(uuid "2f43fe6a-43a0-4f67-8f5d-4ab814e8fa42")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR032")
 					(unit 1)
@@ -53065,7 +53151,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 640.08 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -53105,7 +53191,7 @@
 			(uuid "d7f4e605-ad58-41c4-914d-21d621407560")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW2")
 					(unit 1)
@@ -53186,7 +53272,7 @@
 			(uuid "ee850e3a-8f20-4e3a-9696-62534f872922")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R34")
 					(unit 1)
@@ -53266,7 +53352,7 @@
 			(uuid "2dfe7de0-3158-4144-b2cf-8f8effc63593")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#FLG03")
 					(unit 1)
@@ -53403,7 +53489,7 @@
 			(uuid "c7fbdfaf-004b-460f-a96f-f2ec0b46c5d1")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U16")
 					(unit 2)
@@ -53443,7 +53529,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 721.36 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -53483,7 +53569,7 @@
 			(uuid "81f7a6e9-7775-481e-9aa2-d2c366d8f528")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW55")
 					(unit 1)
@@ -53621,7 +53707,7 @@
 			(uuid "5dbf244f-3ddb-435b-b4f8-b78d115e602c")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U12")
 					(unit 4)
@@ -53699,7 +53785,7 @@
 			(uuid "a0b1e284-aa09-40e0-956d-8886213cf3b0")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR016")
 					(unit 1)
@@ -53780,7 +53866,7 @@
 			(uuid "ba213f4a-d8e0-4e17-8e0d-ddb3f3e09b54")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R21")
 					(unit 1)
@@ -53859,7 +53945,7 @@
 			(uuid "ddab3d9a-af5d-482c-9cf7-ca7b0932490c")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R2")
 					(unit 1)
@@ -54021,7 +54107,7 @@
 			(uuid "6d505ba9-530c-461b-8732-8572b68cdab4")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J21")
 					(unit 1)
@@ -54061,7 +54147,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_6.25u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_6.25u_PCB"
 			(at 680.72 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -54101,7 +54187,7 @@
 			(uuid "9cd72a67-1d62-49f5-8656-81ac8717d343")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW61")
 					(unit 1)
@@ -54180,7 +54266,7 @@
 			(uuid "03572eae-c72d-45e9-9109-7ceaf918a024")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C29")
 					(unit 1)
@@ -54258,7 +54344,7 @@
 			(uuid "f6f76aa2-325a-49d5-a267-1f5752905e62")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR029")
 					(unit 1)
@@ -54298,7 +54384,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 660.4 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -54338,7 +54424,7 @@
 			(uuid "a6aa9d3a-b3ae-4027-9005-c2bd3c1bace0")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW52")
 					(unit 1)
@@ -54419,7 +54505,7 @@
 			(uuid "aae4b237-1dac-4726-9c20-1131ae28d3b1")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R36")
 					(unit 1)
@@ -54428,7 +54514,7 @@
 		)
 	)
 	(symbol
-		(lib_id "6502-ACE:DS1511Y")
+		(lib_id "6502 Parts:DS1511Y")
 		(at 414.02 334.01 0)
 		(unit 1)
 		(body_style 1)
@@ -54599,7 +54685,7 @@
 			(uuid "2be4a9a1-922d-4e27-b0e0-259017ca991f")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U18")
 					(unit 1)
@@ -54678,7 +54764,7 @@
 			(uuid "24a0588b-2730-4033-ba8e-927c404ae390")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR041")
 					(unit 1)
@@ -54815,7 +54901,7 @@
 			(uuid "971a6e38-2e46-44e7-87ec-984a2e385d8d")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U16")
 					(unit 3)
@@ -54894,7 +54980,7 @@
 			(uuid "109f7c68-53d8-458b-a11d-dd8120c054f8")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R26")
 					(unit 1)
@@ -54972,7 +55058,7 @@
 			(uuid "89fba953-3c63-4290-8454-aca2f22aa54a")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR012")
 					(unit 1)
@@ -55012,7 +55098,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 762 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -55052,7 +55138,7 @@
 			(uuid "35e5dba9-b75c-4f1a-b860-54dd9eba5823")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW32")
 					(unit 1)
@@ -55092,7 +55178,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 701.04 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -55132,7 +55218,7 @@
 			(uuid "b4b523c7-0c6d-4c1c-9141-d0980eab4e9e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW13")
 					(unit 1)
@@ -55172,7 +55258,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 619.76 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -55212,7 +55298,7 @@
 			(uuid "334030f9-9450-4cae-baec-d3f185425286")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW33")
 					(unit 1)
@@ -55252,7 +55338,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.25u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.25u_PCB"
 			(at 660.4 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -55292,7 +55378,7 @@
 			(uuid "36c18546-2dc7-4051-b51a-8aa233450d18")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW59")
 					(unit 1)
@@ -55373,7 +55459,7 @@
 			(uuid "79cc3b08-fec3-4fc5-8008-3c7ec57c3ac6")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R17")
 					(unit 1)
@@ -55452,7 +55538,7 @@
 			(uuid "2f0dc094-11fc-4e19-8c2d-f2e49f9444a3")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C7")
 					(unit 1)
@@ -55530,7 +55616,7 @@
 			(uuid "487fe293-e482-44bf-9969-470c77879464")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR033")
 					(unit 1)
@@ -55570,7 +55656,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 640.08 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -55610,7 +55696,7 @@
 			(uuid "d63fc994-d888-4ef9-a5ee-e2386c09e350")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW18")
 					(unit 1)
@@ -55748,7 +55834,7 @@
 			(uuid "5c522ff4-d18c-445f-ab76-76af505857c0")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J6")
 					(unit 1)
@@ -55757,7 +55843,7 @@
 		)
 	)
 	(symbol
-		(lib_id "6502-ACE:6581")
+		(lib_id "6502 Parts:6581")
 		(at 424.18 162.56 0)
 		(unit 1)
 		(body_style 1)
@@ -55909,7 +55995,7 @@
 			(uuid "ce67efe8-9df7-455f-84bb-8e8d2a08ffff")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U9")
 					(unit 1)
@@ -55918,7 +56004,7 @@
 		)
 	)
 	(symbol
-		(lib_id "6502-ACE:65C51")
+		(lib_id "6502 Parts:65C51")
 		(at 511.81 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -56069,7 +56155,7 @@
 			(uuid "35bc6711-3725-4f06-b0b8-928a0df5a60d")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U4")
 					(unit 1)
@@ -56176,7 +56262,7 @@
 			(uuid "9c9a8e63-a848-47cd-bd21-8523359e96e3")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "X1")
 					(unit 1)
@@ -56259,7 +56345,7 @@
 			(uuid "090df7c9-8e52-4d18-9e8e-452429a40f1a")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J4")
 					(unit 1)
@@ -56299,7 +56385,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 762 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -56339,7 +56425,7 @@
 			(uuid "7ce99e2d-034f-4107-8c28-80faa558395c")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW8")
 					(unit 1)
@@ -56379,7 +56465,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 762 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -56419,7 +56505,7 @@
 			(uuid "9dfbe653-7766-44f0-9d65-550f29eba058")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW24")
 					(unit 1)
@@ -56459,7 +56545,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 660.4 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -56499,7 +56585,7 @@
 			(uuid "5536a592-c8b8-4394-af0b-355143d2f84c")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW11")
 					(unit 1)
@@ -56576,7 +56662,7 @@
 			(uuid "7b23b9cf-140c-4e18-886c-784ac9e2f132")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR06")
 					(unit 1)
@@ -56657,7 +56743,7 @@
 			(uuid "f7480ae6-b316-4e02-963c-7d527a64c006")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R7")
 					(unit 1)
@@ -56738,7 +56824,7 @@
 			(uuid "11c33e9d-48ae-436b-afd5-8f301b24b44e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J20")
 					(unit 1)
@@ -56819,7 +56905,7 @@
 			(uuid "4351fa0e-922b-42e9-ba50-5ad3356f455b")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R12")
 					(unit 1)
@@ -56859,7 +56945,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 660.4 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -56899,7 +56985,7 @@
 			(uuid "c15161b4-1070-4b28-a9ea-99484d7d1efa")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW19")
 					(unit 1)
@@ -57011,7 +57097,7 @@
 			(uuid "5d28d160-0515-448b-bdf6-ac1a2d54feef")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "D3")
 					(unit 1)
@@ -57092,7 +57178,7 @@
 			(uuid "79e31d14-0bd8-448e-a120-8ae00d044004")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R18")
 					(unit 1)
@@ -57169,7 +57255,7 @@
 			(uuid "203bb0d3-f146-49c7-a2c7-9305a4521abc")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR018")
 					(unit 1)
@@ -57247,7 +57333,7 @@
 			(uuid "0c452c7b-204e-4520-a662-c4704b47734e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR021")
 					(unit 1)
@@ -57287,7 +57373,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.25u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.25u_PCB"
 			(at 701.04 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -57327,7 +57413,7 @@
 			(uuid "4d35cbf6-5e90-4eab-82cf-88dc6c2101da")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW62")
 					(unit 1)
@@ -57408,7 +57494,7 @@
 			(uuid "55192e8b-a258-4ccc-8d55-a222e71827a2")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R8")
 					(unit 1)
@@ -57448,7 +57534,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 721.36 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -57488,7 +57574,7 @@
 			(uuid "24f5dcb1-92da-4ee8-ba87-329cd52df0b3")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW22")
 					(unit 1)
@@ -57567,7 +57653,7 @@
 			(uuid "f4dc466d-fa21-464f-9fcb-363b37005bbf")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C28")
 					(unit 1)
@@ -57648,7 +57734,7 @@
 			(uuid "eeb5ed9a-2555-490f-8fc9-f7fe7f23fc80")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R10")
 					(unit 1)
@@ -57731,7 +57817,7 @@
 			(uuid "40e42212-ee61-4aa2-82c5-f259d2db9afc")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J2")
 					(unit 1)
@@ -57771,7 +57857,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 680.72 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -57811,7 +57897,7 @@
 			(uuid "4fec1191-c69d-4851-8924-a114462a884e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW4")
 					(unit 1)
@@ -57969,7 +58055,7 @@
 			(uuid "c1541420-412c-40ad-875b-42122a6e2711")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U22")
 					(unit 1)
@@ -58050,7 +58136,7 @@
 			(uuid "a382b524-d3d3-4468-b440-9392009387a6")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R29")
 					(unit 1)
@@ -58269,7 +58355,7 @@
 			(uuid "d0661016-c6e0-4f87-be29-e5bfc1da3601")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U6")
 					(unit 1)
@@ -58279,7 +58365,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 430.53 134.62 0)
+		(at 431.8 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -58289,7 +58375,7 @@
 		(dnp no)
 		(uuid "80817c6d-2439-411a-b255-b085bfc3ea15")
 		(property "Reference" "#PWR010"
-			(at 430.53 140.97 0)
+			(at 431.8 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58300,7 +58386,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 434.086 136.398 0)
+			(at 435.356 136.398 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -58310,7 +58396,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 430.53 134.62 0)
+			(at 431.8 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58321,7 +58407,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 430.53 134.62 0)
+			(at 431.8 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58332,7 +58418,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 430.53 134.62 0)
+			(at 431.8 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58346,7 +58432,7 @@
 			(uuid "26a7443b-597f-42fc-9417-fe75fea2c6ac")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR010")
 					(unit 1)
@@ -58423,7 +58509,7 @@
 			(uuid "2f4082fa-bfa4-4dc5-9a8d-e1873ca1511a")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "TP2")
 					(unit 1)
@@ -58463,7 +58549,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 619.76 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -58503,7 +58589,7 @@
 			(uuid "cf0fecbf-f2ab-4f8d-a121-b4972070a09f")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW50")
 					(unit 1)
@@ -58543,7 +58629,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 721.36 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -58583,7 +58669,7 @@
 			(uuid "fb9c7357-ae38-4d40-9c9d-cb3f2ee6e55e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW46")
 					(unit 1)
@@ -58662,7 +58748,7 @@
 			(uuid "3512cf0c-35a5-4a65-93b7-c2a301881e53")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C15")
 					(unit 1)
@@ -58702,7 +58788,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 701.04 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -58742,7 +58828,7 @@
 			(uuid "a7e3fc19-3179-43c1-8a00-6f3c5672043e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW21")
 					(unit 1)
@@ -58751,7 +58837,7 @@
 		)
 	)
 	(symbol
-		(lib_id "6502-ACE:74HC30")
+		(lib_id "6502 Parts:74HC30")
 		(at 284.48 276.86 0)
 		(unit 1)
 		(body_style 1)
@@ -58880,7 +58966,7 @@
 			(uuid "4141f37b-6219-41e4-a803-5b92e4beb87a")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U17")
 					(unit 1)
@@ -58889,7 +58975,7 @@
 		)
 	)
 	(symbol
-		(lib_id "6502-ACE:74HC30")
+		(lib_id "6502 Parts:74HC30")
 		(at 774.7 334.01 0)
 		(unit 2)
 		(body_style 1)
@@ -59019,7 +59105,7 @@
 			(uuid "4141f37b-6219-41e4-a803-5b92e4beb87b")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U17")
 					(unit 2)
@@ -59156,7 +59242,7 @@
 			(uuid "a8007851-ffc3-42d0-8666-9ac0a212d847")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U11")
 					(unit 2)
@@ -59235,7 +59321,7 @@
 			(uuid "b24bdcf4-0755-4e3c-b0f4-f5d8850c007e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R1")
 					(unit 1)
@@ -59316,7 +59402,7 @@
 			(uuid "a8de5979-31d2-41ed-a30d-12f2afcca6e7")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R9")
 					(unit 1)
@@ -59394,7 +59480,7 @@
 			(uuid "1dfd4c09-4934-4519-95ec-3abc9ac68db3")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR037")
 					(unit 1)
@@ -59473,7 +59559,7 @@
 			(uuid "5cd90ea8-7b21-429a-b18e-7de654fa837e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C4")
 					(unit 1)
@@ -59552,7 +59638,7 @@
 			(uuid "9782513d-b966-4472-9477-821e0cdfb205")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C21")
 					(unit 1)
@@ -59630,7 +59716,7 @@
 			(uuid "eea24732-008e-4282-a500-051a4eaa1c2e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR03")
 					(unit 1)
@@ -59708,7 +59794,7 @@
 			(uuid "375f5cda-1480-42ca-9067-1f47d8c256fb")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR035")
 					(unit 1)
@@ -59748,7 +59834,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 741.68 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -59788,7 +59874,7 @@
 			(uuid "7975b6e7-e49d-4b20-aa68-409d9cde637e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW23")
 					(unit 1)
@@ -59867,7 +59953,7 @@
 			(uuid "11193223-0666-4aa9-924d-5e4e9711241b")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C10")
 					(unit 1)
@@ -59907,7 +59993,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:6502 GPIO Connector"
+		(property "Footprint" "6502 Parts:6502 GPIO Connector"
 			(at 323.85 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -59977,7 +60063,7 @@
 			(uuid "e43a5e3f-a2e4-42e1-a87e-b8e51f96c41e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J9")
 					(unit 1)
@@ -60114,7 +60200,7 @@
 			(uuid "5dbf244f-3ddb-435b-b4f8-b78d115e602d")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U13")
 					(unit 1)
@@ -60254,7 +60340,7 @@
 			(uuid "5dbf244f-3ddb-435b-b4f8-b78d115e602e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U13")
 					(unit 5)
@@ -60331,7 +60417,7 @@
 			(uuid "a5f31138-0bad-42f8-b523-7b844eca1e84")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR017")
 					(unit 1)
@@ -60469,7 +60555,7 @@
 			(uuid "f4d78204-3dab-4d04-8bc5-8884032b9707")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J8")
 					(unit 1)
@@ -60509,7 +60595,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.25u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.25u_PCB"
 			(at 619.76 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -60549,7 +60635,7 @@
 			(uuid "5bec3d75-924b-4d62-a398-6d771de08dde")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW58")
 					(unit 1)
@@ -60628,7 +60714,7 @@
 			(uuid "5ea4460e-3eb2-4be2-bd18-1f612d22506a")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C8")
 					(unit 1)
@@ -60706,7 +60792,7 @@
 			(uuid "df1c4306-0f97-4ce2-9b3e-a270dc67e9ce")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR031")
 					(unit 1)
@@ -60846,7 +60932,7 @@
 			(uuid "5dbf244f-3ddb-435b-b4f8-b78d115e6027")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U14")
 					(unit 5)
@@ -60983,7 +61069,7 @@
 			(uuid "5dbf244f-3ddb-435b-b4f8-b78d115e602f")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U14")
 					(unit 1)
@@ -61061,7 +61147,7 @@
 			(uuid "fc8fc396-0952-4e35-9d1f-7df3777d8f47")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR030")
 					(unit 1)
@@ -61101,7 +61187,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 640.08 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -61141,7 +61227,7 @@
 			(uuid "dca810fa-2a5a-42aa-baf1-71dd0d9308f3")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW10")
 					(unit 1)
@@ -61220,7 +61306,7 @@
 			(uuid "00c18a3a-4704-4adb-91ba-cda81bc821fa")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C16")
 					(unit 1)
@@ -61262,7 +61348,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "6502-ACE:SWITCHCRAFT_PJRAN1X1U0XX"
+		(property "Footprint" "6502 Parts:SWITCHCRAFT_PJRAN1X1U0XX"
 			(at 459.74 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -61324,7 +61410,7 @@
 			(uuid "73fa17c5-8efa-4d70-8fba-dc3202ef12b8")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J11")
 					(unit 1)
@@ -61333,7 +61419,7 @@
 		)
 	)
 	(symbol
-		(lib_id "6502-ACE:65C22")
+		(lib_id "6502 Parts:65C22")
 		(at 198.12 41.91 0)
 		(unit 1)
 		(body_style 1)
@@ -61539,7 +61625,7 @@
 			(uuid "cac7fe9e-d57c-44c8-9fe8-fd61af4f4086")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U2")
 					(unit 1)
@@ -61620,7 +61706,7 @@
 			(uuid "08abd027-60fb-479c-b817-26ce78534950")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R35")
 					(unit 1)
@@ -61660,7 +61746,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 680.72 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -61700,7 +61786,7 @@
 			(uuid "68418239-4e95-4f1c-95d3-d9c716e8699a")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW53")
 					(unit 1)
@@ -61779,7 +61865,7 @@
 			(uuid "7f66ce3d-78de-408a-8ef1-7fa4905a30fc")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR022")
 					(unit 1)
@@ -61916,7 +62002,7 @@
 			(uuid "f0da682e-dff4-4ed6-8017-17d9b06583ff")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U11")
 					(unit 4)
@@ -62056,7 +62142,7 @@
 			(uuid "356319d9-97d9-483a-8642-8f464ab76074")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U11")
 					(unit 5)
@@ -62193,7 +62279,7 @@
 			(uuid "356319d9-97d9-483a-8642-8f464ab76075")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U11")
 					(unit 1)
@@ -62298,7 +62384,7 @@
 			(uuid "1f452ea4-4eb8-4b76-9d9b-025240fbd308")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J16")
 					(unit 1)
@@ -62376,7 +62462,7 @@
 			(uuid "50146a2d-79f5-4dd1-a7ab-53a343982f7d")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR034")
 					(unit 1)
@@ -62455,7 +62541,7 @@
 			(uuid "a4c91f78-a5fe-4d60-8013-c43a0d82eb87")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C24")
 					(unit 1)
@@ -62536,7 +62622,7 @@
 			(uuid "ae974cab-bcc1-4275-9655-979c5c9c8f5c")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R33")
 					(unit 1)
@@ -62615,7 +62701,7 @@
 			(uuid "f4b1a04c-c634-4456-b04b-c99ce42621b4")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C19")
 					(unit 1)
@@ -62694,7 +62780,7 @@
 			(uuid "b53ac41b-c285-4fbe-95d1-707e64e87540")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C2")
 					(unit 1)
@@ -62734,7 +62820,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 680.72 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -62774,7 +62860,7 @@
 			(uuid "865e52d3-5fde-4bc0-aa1f-0d3fc93be883")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW20")
 					(unit 1)
@@ -62853,7 +62939,7 @@
 			(uuid "daec11ca-beef-4e9b-bb31-44df6dc20dc3")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C5")
 					(unit 1)
@@ -62932,7 +63018,7 @@
 			(uuid "60d9d35e-56b7-47dd-ac27-821119bc7c92")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C23")
 					(unit 1)
@@ -63010,7 +63096,7 @@
 			(uuid "f427f10a-ee68-4ec8-b80c-b1125182fad6")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR015")
 					(unit 1)
@@ -63087,7 +63173,7 @@
 			(uuid "adef3b45-3f0f-4ccb-be3d-f26fa647a831")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR04")
 					(unit 1)
@@ -63167,7 +63253,7 @@
 			(uuid "7145d707-9a19-4fcd-a1a5-6d9d01287348")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#FLG02")
 					(unit 1)
@@ -63207,7 +63293,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 762 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -63247,7 +63333,7 @@
 			(uuid "a0d233f8-9e21-4840-8ebd-53177ecc4af2")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW40")
 					(unit 1)
@@ -63287,7 +63373,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 762 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -63327,7 +63413,7 @@
 			(uuid "ddb435d5-19e3-4d29-9a52-8dd7f2979e95")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW65")
 					(unit 1)
@@ -63406,7 +63492,7 @@
 			(uuid "d6f03bd8-26db-40cb-ad7a-a532d193f1f6")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R5")
 					(unit 1)
@@ -63487,7 +63573,7 @@
 			(uuid "3aa67678-08b7-4459-9758-185083105f83")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R23")
 					(unit 1)
@@ -63565,7 +63651,7 @@
 			(uuid "28232504-8675-4bfd-a30e-2b9723b8818d")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR038")
 					(unit 1)
@@ -63643,7 +63729,7 @@
 			(uuid "529de1bf-8afd-426a-9a61-a9f3cf854b6d")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR023")
 					(unit 1)
@@ -63683,7 +63769,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 741.68 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -63723,7 +63809,7 @@
 			(uuid "5d88628f-c005-478a-802b-10fb00c54e4b")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW7")
 					(unit 1)
@@ -63732,7 +63818,7 @@
 		)
 	)
 	(symbol
-		(lib_id "6502-ACE:AS6C4008")
+		(lib_id "6502 Parts:AS6C4008")
 		(at 189.23 265.43 0)
 		(unit 1)
 		(body_style 1)
@@ -63914,7 +64000,7 @@
 			(uuid "24db2a5e-88a6-4772-95b6-68cbd08d0da0")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U15")
 					(unit 1)
@@ -63954,7 +64040,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 741.68 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -63994,7 +64080,7 @@
 			(uuid "224988c6-2a9d-4830-8eed-145dc76486b7")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW15")
 					(unit 1)
@@ -64131,7 +64217,7 @@
 			(uuid "4fd29384-b004-45f9-a0f3-afa21fc834d4")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U11")
 					(unit 3)
@@ -64171,7 +64257,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 721.36 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -64211,7 +64297,7 @@
 			(uuid "6cb39e51-df1c-4e95-a439-dc76d0912693")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW6")
 					(unit 1)
@@ -64251,7 +64337,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 640.08 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -64291,7 +64377,7 @@
 			(uuid "063b04ae-296f-4e25-b7bf-4893c09bb16a")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW60")
 					(unit 1)
@@ -64331,7 +64417,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 619.76 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -64371,7 +64457,7 @@
 			(uuid "1e470ba4-ac56-4ef4-8c8a-10ed9b732eba")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW9")
 					(unit 1)
@@ -64452,7 +64538,7 @@
 			(uuid "3c2575cf-70b7-4220-9023-eea4e495e48b")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R11")
 					(unit 1)
@@ -64590,7 +64676,7 @@
 			(uuid "5dbf244f-3ddb-435b-b4f8-b78d115e6030")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U12")
 					(unit 2)
@@ -64630,7 +64716,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 640.08 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -64670,7 +64756,7 @@
 			(uuid "25f2bdd6-e467-4470-b428-74dfec7e06fe")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW34")
 					(unit 1)
@@ -64748,7 +64834,7 @@
 			(uuid "95f31dc7-6911-4832-995e-390bb933dacd")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR039")
 					(unit 1)
@@ -64787,7 +64873,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_2.25u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_2.25u_PCB"
 			(at 701.04 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -64827,7 +64913,7 @@
 			(uuid "07b66f75-a75d-49db-af02-07af230a95fe")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW41")
 					(unit 1)
@@ -64913,7 +64999,7 @@
 			(uuid "5a175211-162c-4a59-ab3d-07cab0bba035")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J7")
 					(unit 1)
@@ -64994,7 +65080,7 @@
 			(uuid "ca7fdbaf-b158-4bab-817f-b44378f515fa")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R27")
 					(unit 1)
@@ -65077,7 +65163,7 @@
 			(uuid "dc084fe9-f198-4637-a156-d9cd5630817c")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J1")
 					(unit 1)
@@ -65117,7 +65203,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 762 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -65157,7 +65243,7 @@
 			(uuid "4b43f3fc-bac6-4e62-85f9-f112915a5a15")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW57")
 					(unit 1)
@@ -65260,7 +65346,7 @@
 			(uuid "685e7b83-ce53-4464-8585-c881f26ddd64")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "Y1")
 					(unit 1)
@@ -65341,7 +65427,7 @@
 			(uuid "eab386be-dfe7-44ee-bc22-d52d889b75f0")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R13")
 					(unit 1)
@@ -65420,7 +65506,7 @@
 			(uuid "73f5a74c-c3d0-4cc6-aadf-884b7f11c2d8")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C26")
 					(unit 1)
@@ -65557,7 +65643,7 @@
 			(uuid "9a57fe1a-cc51-4feb-9c67-754f95432a37")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U14")
 					(unit 2)
@@ -65635,7 +65721,7 @@
 			(uuid "130f21c6-6a15-4321-9274-5fb99aa51359")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR036")
 					(unit 1)
@@ -65714,7 +65800,7 @@
 			(uuid "09bb3eac-a629-4871-829b-c71b20d2de95")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C3")
 					(unit 1)
@@ -65793,7 +65879,7 @@
 			(uuid "be460370-4f8a-4d6d-a4cf-b2da79b2949d")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C9")
 					(unit 1)
@@ -65872,7 +65958,7 @@
 			(uuid "0b1c60c4-9032-48d5-b4ac-050e0d3174b1")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR09")
 					(unit 1)
@@ -65951,7 +66037,7 @@
 			(uuid "753e2604-17cf-4668-b42e-07fd9f573b77")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C14")
 					(unit 1)
@@ -65991,7 +66077,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:6502 GPIO Connector"
+		(property "Footprint" "6502 Parts:6502 GPIO Connector"
 			(at 361.95 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -66061,7 +66147,7 @@
 			(uuid "3ec8f744-0d2b-4cdf-a671-5e32b401dfc0")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J10")
 					(unit 1)
@@ -66140,7 +66226,7 @@
 			(uuid "58b6c40d-32f6-488a-a6a5-a50ff5256d3a")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C1")
 					(unit 1)
@@ -66277,7 +66363,7 @@
 			(uuid "badc57b5-01c4-4e84-96e0-f5195dc3d231")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U16")
 					(unit 4)
@@ -66317,7 +66403,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 680.72 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -66357,7 +66443,7 @@
 			(uuid "58cb168b-0b87-47f3-a46a-5e60f91838c5")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW12")
 					(unit 1)
@@ -66438,7 +66524,7 @@
 			(uuid "ce115417-4b17-4958-a956-c00bd2ae2905")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R31")
 					(unit 1)
@@ -66519,7 +66605,7 @@
 			(uuid "2cad00d0-44e6-40fb-b148-079f244d00d0")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R22")
 					(unit 1)
@@ -66598,7 +66684,7 @@
 			(uuid "39ed66df-35f7-44ed-a6af-8c1a6e4a374b")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR02")
 					(unit 1)
@@ -66736,7 +66822,7 @@
 			(uuid "71682fc2-ccee-4240-b3be-df95ab4d8b80")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J12")
 					(unit 1)
@@ -66775,7 +66861,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:BAT_BAT-HLD-001-THM"
+		(property "Footprint" "6502 Parts:BAT_BAT-HLD-001-THM"
 			(at 464.82 356.616 90)
 			(hide yes)
 			(show_name no)
@@ -66849,7 +66935,7 @@
 			(uuid "ac5d8b64-a587-485f-9a15-939d653fd4e7")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "BT1")
 					(unit 1)
@@ -66891,7 +66977,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.25u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.25u_PCB"
 			(at 619.76 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -66931,7 +67017,7 @@
 			(uuid "b727e1c0-90c6-4d44-934d-0f66fba2114e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW66")
 					(unit 1)
@@ -67069,7 +67155,7 @@
 			(uuid "5dbf244f-3ddb-435b-b4f8-b78d115e6031")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U12")
 					(unit 3)
@@ -67150,7 +67236,7 @@
 			(uuid "d9204027-e397-4268-9f3d-aa794c0bc266")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R30")
 					(unit 1)
@@ -67229,7 +67315,7 @@
 			(uuid "20c35913-40af-43f8-ab9e-f56b8431f070")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R24")
 					(unit 1)
@@ -67269,7 +67355,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 701.04 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -67309,7 +67395,7 @@
 			(uuid "6a3e1dc9-7058-4890-959e-bd303e98551a")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW54")
 					(unit 1)
@@ -67349,7 +67435,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.75u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.75u_PCB"
 			(at 741.68 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -67389,7 +67475,7 @@
 			(uuid "742575b7-a64c-4ce7-9e07-321157549164")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW31")
 					(unit 1)
@@ -67490,7 +67576,7 @@
 			(uuid "b41e4410-7da9-4667-ae7c-71b94f0c6705")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R28")
 					(unit 1)
@@ -67627,7 +67713,7 @@
 			(uuid "271dcfd3-a5e1-4bb1-b04d-2e4c5ffe7ac3")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U14")
 					(unit 3)
@@ -67636,7 +67722,7 @@
 		)
 	)
 	(symbol
-		(lib_id "6502-ACE:Pico9918")
+		(lib_id "6502 Parts:Pico9918")
 		(at 435.61 67.31 0)
 		(unit 1)
 		(body_style 1)
@@ -67823,7 +67909,7 @@
 			(uuid "870c4fcd-1f16-41a8-83f2-e792f473f767")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U3")
 					(unit 1)
@@ -67863,7 +67949,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 640.08 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -67903,7 +67989,7 @@
 			(uuid "542f04f6-28d7-489f-9ed4-d48a9dfc2743")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW26")
 					(unit 1)
@@ -67943,7 +68029,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_2.25u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_2.25u_PCB"
 			(at 660.4 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -67983,7 +68069,7 @@
 			(uuid "53b9e98e-321c-4424-bc13-4cb83e2925a0")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW44")
 					(unit 1)
@@ -68154,7 +68240,7 @@
 			(uuid "73d2bb91-07ed-4128-b187-ab55c60a51bf")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U10")
 					(unit 1)
@@ -68235,7 +68321,7 @@
 			(uuid "f662b797-07aa-4329-80bd-c4f2eef33215")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R20")
 					(unit 1)
@@ -68314,7 +68400,7 @@
 			(uuid "f9b4f78f-8d50-4115-b79a-1ab16dbccd88")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C25")
 					(unit 1)
@@ -68452,7 +68538,7 @@
 			(uuid "5dbf244f-3ddb-435b-b4f8-b78d115e6032")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U13")
 					(unit 4)
@@ -68531,7 +68617,7 @@
 			(uuid "0525830e-0d77-4ef4-ae05-0a25a8ca47cb")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR024")
 					(unit 1)
@@ -68677,7 +68763,7 @@
 			(uuid "82558512-85a2-4670-9be2-749b1048bb9b")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U19")
 					(unit 1)
@@ -68814,7 +68900,7 @@
 			(uuid "f68bede8-72d6-4a50-9ca0-a96c604c31f8")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U14")
 					(unit 4)
@@ -68854,7 +68940,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 660.4 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -68894,7 +68980,7 @@
 			(uuid "848eab28-72e0-402d-bb80-e7e991dd50d8")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW27")
 					(unit 1)
@@ -68972,7 +69058,7 @@
 			(uuid "1de3b0c7-4ded-4099-b106-92bbf63f128e")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR025")
 					(unit 1)
@@ -69012,7 +69098,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 741.68 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -69052,7 +69138,7 @@
 			(uuid "6dd22486-024f-4254-8568-0687f16d565b")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW47")
 					(unit 1)
@@ -69131,7 +69217,7 @@
 			(uuid "0fbf8daa-2b31-4c88-a191-551d1924f0f6")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C17")
 					(unit 1)
@@ -69171,7 +69257,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 619.76 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -69211,7 +69297,7 @@
 			(uuid "b45fa14d-79a6-44c9-b9ec-40e6e78e14e9")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW42")
 					(unit 1)
@@ -69289,7 +69375,7 @@
 			(uuid "fa1e50c7-ed71-4cc7-9389-7e1e8c612bdf")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR01")
 					(unit 1)
@@ -69329,7 +69415,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 701.04 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -69369,7 +69455,7 @@
 			(uuid "21f35727-9cca-44f6-93a2-fcc961d02b6d")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW37")
 					(unit 1)
@@ -69378,7 +69464,7 @@
 		)
 	)
 	(symbol
-		(lib_id "6502-ACE:65C02")
+		(lib_id "6502 Parts:65C02")
 		(at 35.56 41.91 0)
 		(unit 1)
 		(body_style 1)
@@ -69585,7 +69671,7 @@
 			(uuid "dfc00307-af66-40b0-9e54-e5f9eac5aff3")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U1")
 					(unit 1)
@@ -69625,7 +69711,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 741.68 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -69665,7 +69751,7 @@
 			(uuid "ab70d0f9-2f90-4c4f-8014-e88485792ada")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW56")
 					(unit 1)
@@ -69705,7 +69791,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:SW_Cherry_MX_1.00u_PCB"
+		(property "Footprint" "6502 Parts:SW_Cherry_MX_1.00u_PCB"
 			(at 660.4 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -69745,7 +69831,7 @@
 			(uuid "f4035db3-e263-4a6c-9869-99cca53123cc")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "SW3")
 					(unit 1)
@@ -69787,7 +69873,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "6502-ACE:SWITCHCRAFT_PJRAN1X1U0XX"
+		(property "Footprint" "6502 Parts:SWITCHCRAFT_PJRAN1X1U0XX"
 			(at 459.74 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -69850,7 +69936,7 @@
 			(uuid "086d0f94-c70d-4886-ad05-f673efda766a")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J14")
 					(unit 1)
@@ -69931,7 +70017,7 @@
 			(uuid "afd90bbb-d625-4288-a6a6-8bb01518dcc5")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R6")
 					(unit 1)
@@ -69971,7 +70057,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502-ACE:KMDGX-6S-BS"
+		(property "Footprint" "6502 Parts:KMDGX-6S-BS"
 			(at 196.85 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -70034,7 +70120,7 @@
 			(uuid "37a2fa39-67d0-4ddc-9ecd-3ff678fd96ed")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J13")
 					(unit 1)
@@ -70115,7 +70201,7 @@
 			(uuid "ab6d9948-4a62-4d23-b56b-4ca22ecfb59a")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R32")
 					(unit 1)
@@ -70194,7 +70280,7 @@
 			(uuid "858b82b4-79ab-4a55-9053-ac2eb40e9bb8")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C12")
 					(unit 1)
@@ -70273,7 +70359,7 @@
 			(uuid "651d7cbb-1215-425f-aa22-44372eac6540")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C18")
 					(unit 1)
@@ -70355,7 +70441,7 @@
 			(uuid "1a3ed373-ac87-48de-9511-bfb8c0ba1cd7")
 		)
 		(instances
-			(project "6502-ACE"
+			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J15")
 					(unit 1)

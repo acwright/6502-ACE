@@ -7,7 +7,7 @@
 	(property "Reference" "REF**"
 		(at 1.3 -2.05 0)
 		(layer "F.SilkS")
-		(uuid "e13cecd2-a1ff-42e4-9c97-978d7c76c54e")
+		(uuid "ab118ac1-4762-4748-a128-b8cf1aa29530")
 		(effects
 			(font
 				(size 1 1)
@@ -18,7 +18,7 @@
 	(property "Value" "KMDGX6SBS"
 		(at 1.3 -2.05 0)
 		(layer "F.Fab")
-		(uuid "c96b729f-fec4-43ef-83e4-31144912d96e")
+		(uuid "69e665fd-bacf-4078-9a45-03b47e6490b6")
 		(effects
 			(font
 				(size 1 1)
@@ -30,7 +30,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "671ae1a1-0390-4a89-8347-5903d1631fec")
+		(uuid "ce6778a1-074a-4283-817f-02b2e2f26dad")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +42,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d4662070-bc61-4391-9bcd-4597d3ac6aaa")
+		(uuid "96000e84-86ae-4266-a414-f7240d07f7dd")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -60,7 +60,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "33c8b033-8676-40c9-8992-323ddd207736")
+		(uuid "e68e32e0-cfac-44dd-a733-ad5f69ac2f6c")
 	)
 	(fp_line
 		(start -5.7 -5.5)
@@ -70,7 +70,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "4e36542a-ae70-4951-9dc1-e06238f348e4")
+		(uuid "98cb4b9a-d016-4635-93a3-898361731167")
 	)
 	(fp_line
 		(start -5.7 -0.5)
@@ -80,7 +80,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "b73e039f-8c28-46d6-ba16-cb5428595137")
+		(uuid "e90af3bf-9932-4526-a29c-02a46be97673")
 	)
 	(fp_line
 		(start -5.7 4.4)
@@ -90,7 +90,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "f470a475-15a1-4ec5-9271-15a3402eae17")
+		(uuid "e9372597-06a4-4f56-a2a9-56c1cb1c82ec")
 	)
 	(fp_line
 		(start 8.3 -8.5)
@@ -100,7 +100,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "86e29e58-7e0b-418c-ae89-a300d5366dad")
+		(uuid "3ae09f39-0713-4dcd-81db-e50780137f66")
 	)
 	(fp_line
 		(start 8.3 4.4)
@@ -110,7 +110,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "1c2554cf-99ee-4cb3-839d-27bdf80b4737")
+		(uuid "6d95de54-1c91-48a9-88ee-8244048fc32d")
 	)
 	(fp_line
 		(start -8.175 -9.5)
@@ -120,7 +120,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "1644fe83-27a0-4cee-95c1-fe893888a190")
+		(uuid "9c896201-7b2f-40c6-b1d1-00d557797100")
 	)
 	(fp_line
 		(start -8.175 5.4)
@@ -130,7 +130,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "cb7c9697-f54f-44b4-a3b0-e2d3bb4373ab")
+		(uuid "3e24bf3a-463d-4966-a570-1d2bf15b774a")
 	)
 	(fp_line
 		(start -5.7 -8.5)
@@ -140,7 +140,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "fb4465ed-c251-4682-af23-2d4a89732efd")
+		(uuid "826cd215-d52e-445f-a396-a0354128b9e6")
 	)
 	(fp_line
 		(start -5.7 4.4)
@@ -150,7 +150,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "c30c71b8-7e9d-49b9-adb4-ff634229641b")
+		(uuid "39c2c23a-f67f-4578-b96d-9320cf3d6379")
 	)
 	(fp_line
 		(start 8.3 -8.5)
@@ -160,7 +160,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "47c32b57-3908-4d58-88ab-f059fdab8e64")
+		(uuid "0626cf12-1d0b-4e2e-8167-2c609265b571")
 	)
 	(fp_line
 		(start 8.3 4.4)
@@ -170,7 +170,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "fc796297-a118-432b-8f6f-e44fdc6afeb9")
+		(uuid "5218d9ae-0a8a-4b35-8c73-d65a800b30f9")
 	)
 	(fp_line
 		(start 10.775 -9.5)
@@ -180,7 +180,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "7144adf2-0c4c-466d-a426-7d0455efeaf3")
+		(uuid "ad8309ac-52b8-4ad7-8c0c-88f537175df7")
 	)
 	(fp_line
 		(start 10.775 5.4)
@@ -190,7 +190,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "7a273714-a496-4f19-b7e5-e6dc8314c277")
+		(uuid "0c83daa1-e2ed-4507-a508-4285fcb3c496")
 	)
 	(pad "1" thru_hole circle
 		(at 0 0)
@@ -199,7 +199,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
-		(uuid "71a80632-d592-47ca-a516-9c678c6326d1")
+		(uuid "23864e1b-6d03-4cb7-95f7-aa35befd6906")
 	)
 	(pad "2" thru_hole circle
 		(at 2.6 0)
@@ -208,7 +208,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
-		(uuid "5272a172-31d5-47c2-b987-17ecf461460a")
+		(uuid "fe096deb-f9a6-4b97-aa04-c4027f685df8")
 	)
 	(pad "3" thru_hole circle
 		(at -2.1 0)
@@ -217,7 +217,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
-		(uuid "44f0ed01-d876-4f3a-939d-a00749dcd655")
+		(uuid "5d30179f-adcb-44bc-8498-297f4fca3301")
 	)
 	(pad "4" thru_hole circle
 		(at 4.7 0)
@@ -226,7 +226,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
-		(uuid "22645042-7387-4b02-88e4-4ff6cd64a94c")
+		(uuid "d0730c04-c14a-4ab4-bb29-e637bc4d10ae")
 	)
 	(pad "5" thru_hole circle
 		(at -2.1 2.5)
@@ -235,7 +235,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
-		(uuid "0f42c902-06e9-452e-a178-4c91b9ff0314")
+		(uuid "601fafde-3242-48d9-905d-698ffd5dd3ce")
 	)
 	(pad "6" thru_hole circle
 		(at 4.7 2.5)
@@ -244,7 +244,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
-		(uuid "efd3d651-05db-4a2f-97e5-a0a4345153a0")
+		(uuid "a17f3858-ddc1-4c78-ba48-b9a59cfe7116")
 	)
 	(pad "MH1" thru_hole circle
 		(at -5.45 -3)
@@ -253,7 +253,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
-		(uuid "a9dcd700-5949-42a1-b93e-149f18cf64db")
+		(uuid "b7769a2c-83e2-4c3f-962f-f6fad61a3f57")
 	)
 	(pad "MH2" thru_hole circle
 		(at 1.3 -3.8)
@@ -262,7 +262,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
-		(uuid "09558a8e-e5cf-4042-83ac-f26503b01fc5")
+		(uuid "a7ae9c4b-358e-45a0-900c-9e41e96f4554")
 	)
 	(pad "MH3" thru_hole circle
 		(at 8.05 -3)
@@ -271,10 +271,10 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
-		(uuid "f3330e14-9338-4b0b-b254-4269eacbe69b")
+		(uuid "75634b77-2d52-416c-8998-81e0b7cd1b96")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/Models/KMDGX-6S-BS.step"
+	(model "${KIPRJMOD}/../../../Models/KMDGX-6S-BS.step"
 		(offset
 			(xyz 1.5 8.5 0)
 		)

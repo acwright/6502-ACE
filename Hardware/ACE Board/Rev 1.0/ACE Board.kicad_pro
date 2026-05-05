@@ -296,6 +296,10 @@
       [
         "pin_to_pin|4216400|571500|f93ac2b0-9446-4d7a-b231-72f23dc9ae4d|1f1c15a0-628d-4b7f-9174-b4e6e999857e|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
         ""
+      ],
+      [
+        "pin_to_pin|4978400|482600|1f1c15a0-628d-4b7f-9174-b4e6e999857e|a0aeb11a-ec42-43ff-a60f-2cfa375560e0|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
+        ""
       ]
     ],
     "meta": {
@@ -525,7 +529,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "6502-ACE.kicad_pro",
+    "filename": "ACE Board.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -565,7 +569,7 @@
       "specctra_dsn": "",
       "vrml": ""
     },
-    "page_layout_descr_file": "kicad-embed://6502-ACE.kicad_wks"
+    "page_layout_descr_file": ""
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -709,15 +713,15 @@
     "meta": {
       "version": 1
     },
-    "page_layout_descr_file": "kicad-embed://6502-ACE.kicad_wks",
+    "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "6502-ACE.kicad_sch",
-        "name": "6502-ACE",
+        "filename": "ACE Board.kicad_sch",
+        "name": "ACE Board",
         "uuid": "34a60d42-c14a-479d-bef3-5ff0ee57bad5"
       }
     ],
@@ -727,7 +731,7 @@
   "sheets": [
     [
       "34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-      "6502-ACE"
+      "ACE Board"
     ]
   ],
   "text_variables": {},

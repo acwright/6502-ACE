@@ -58,8 +58,8 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 
 This repository contains [PlatformIO](https://platformio.org/)-based firmware for the ACE board.
 
-### ACE Controller
-`Firmware/ACE Controller/`
+### AB Controller
+`Firmware/AB Controller/`
 
 Firmware for the ATmega1284P keyboard controller on the ACE board. Provides:
 
@@ -70,7 +70,7 @@ Firmware for the ATmega1284P keyboard controller on the ACE board. Provides:
 - Buffered output via 65C22 VIA with CA1/CB1 data-ready strobes
 - Independent enable/disable for PS/2 and matrix inputs
 
-See [Firmware/ACE Controller/README.md](./Firmware/ACE%20Controller/README.md) for setup and usage instructions.
+See [Firmware/AB Controller/README.md](./Firmware/AB%20Controller/README.md) for setup and usage instructions.
 
 ---
 
