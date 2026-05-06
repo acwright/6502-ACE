@@ -54,7 +54,7 @@
       "ly_points"
     ],
     "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
-    "zone_display_mode": 1
+    "zone_display_mode": 0
   },
   "git": {
     "integration_disabled": false,
@@ -63,7 +63,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "6502-ACE.kicad_prl",
+    "filename": "ACE Board.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {

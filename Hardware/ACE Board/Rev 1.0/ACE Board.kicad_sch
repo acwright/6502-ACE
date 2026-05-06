@@ -19355,6 +19355,12 @@
 		(uuid "e099818f-ff5d-4508-aa6e-d8c6d5d1306c")
 	)
 	(junction
+		(at 128.27 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0c38aa7-b478-4112-90d7-ca2776b2ff18")
+	)
+	(junction
 		(at 107.95 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -22916,16 +22922,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 133.35) (xy 127 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d4ce891-f17a-4bda-8338-8d3f398f095d")
-	)
-	(wire
-		(pts
 			(xy 492.76 55.88) (xy 497.84 55.88)
 		)
 		(stroke
@@ -23003,6 +22999,16 @@
 			(type default)
 		)
 		(uuid "3e2bb1b7-1a9e-408c-9d29-596b731b7618")
+	)
+	(wire
+		(pts
+			(xy 128.27 147.32) (xy 137.16 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e2dd679-6ca7-45d0-9289-cbb8cb5db1aa")
 	)
 	(wire
 		(pts
@@ -24403,6 +24409,16 @@
 			(type default)
 		)
 		(uuid "54917399-2469-45e6-aebf-70b621eeb720")
+	)
+	(wire
+		(pts
+			(xy 128.27 147.32) (xy 128.27 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54c0d78b-a486-4f4e-b141-66fb79ec6c83")
 	)
 	(wire
 		(pts
@@ -26986,7 +27002,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 149.86) (xy 125.73 149.86)
+			(xy 128.27 149.86) (xy 125.73 149.86)
 		)
 		(stroke
 			(width 0)
@@ -27023,16 +27039,6 @@
 			(type default)
 		)
 		(uuid "8cf29001-51d8-47df-b1be-bea9fe038334")
-	)
-	(wire
-		(pts
-			(xy 127 143.51) (xy 127 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d657610-d927-4c3f-ba52-cf08cfd80fce")
 	)
 	(wire
 		(pts
@@ -28506,7 +28512,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 147.32) (xy 137.16 147.32)
+			(xy 125.73 147.32) (xy 128.27 147.32)
 		)
 		(stroke
 			(width 0)
@@ -36179,28 +36185,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-	)
-	(global_label "VCC"
-		(shape input)
-		(at 127 133.35 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3d04548a-aaad-4b58-98a0-f7a2f6a3d38b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 	)
@@ -49228,87 +49212,6 @@
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 127 139.7 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1d8ebef5-8b80-48d4-8740-ba1dc6ea3d40")
-		(property "Reference" "R15"
-			(at 124.714 140.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 124.714 138.684 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 128.778 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 127 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "adde5559-6f4a-41f4-ad94-2e7c67ea1b49")
-		)
-		(pin "2"
-			(uuid "20408994-fd22-4389-87c7-1b0657c12d7d")
-		)
-		(instances
-			(project "ACE Board"
-				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R15")
 					(unit 1)
 				)
 			)
