@@ -6336,14 +6336,14 @@
 			(pin power_in line
 				(at -3.81 -48.26 90)
 				(length 5.08)
-				(name "GND"
+				(name "MP1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "51"
+				(number "MP1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6354,14 +6354,14 @@
 			(pin power_in line
 				(at -6.35 -48.26 90)
 				(length 5.08)
-				(name "GND"
+				(name "MP2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "52"
+				(number "MP2"
 					(effects
 						(font
 							(size 1.27 1.27)
