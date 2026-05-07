@@ -41,7 +41,7 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - **ROM**: 32KB EEPROM (28C256) at $8000–$FFFF
 - **Video**: TMS9918A VDP (composite output, 256×192) or Pico9918 (VGA 640×480)
 - **Audio**: ARMSID SID chip emulator (3-voice synthesis, RCA output)
-- **Storage**: CompactFlash socket (IDE protocol, up to 128GB)
+- **Storage**: Storage adapter socket
 - **Serial**: 65C51 ACIA with MAX232 level shifter (RS-232 via DB9, 50–19200 baud)
 - **GPIO**: 65C22 VIA (20 GPIO pins, 2× 16-bit timers, shift register)
 - **RTC**: DS1511Y real-time clock with battery-backed SRAM and Y2K support
@@ -51,6 +51,14 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - **Clock**: On-board oscillator (1–8 MHz, selectable by swapping oscillator)
 - **Reset**: Power-on RC reset circuit and manual reset button
 - **Power**: 5V DC, 2–3A
+
+### ACE CF Adapter
+`Hardware/ACE CF Adapter/`
+
+A CompactFlash adapter board that connects to the Storage header on the ACE Board. Provides:
+
+- **Interface**: 8-bit IDE mode
+- **Storage**: CompactFlash socket (up to 1MB)
 
 ---
 
