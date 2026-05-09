@@ -19511,6 +19511,12 @@
 		(uuid "fbcc40fb-efe2-42ff-bdb1-b52716793ada")
 	)
 	(junction
+		(at 369.57 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc322960-8760-427f-a133-d02e5c1b1737")
+	)
+	(junction
 		(at 673.1 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -22629,6 +22635,16 @@
 			(type default)
 		)
 		(uuid "38b5d9fc-c5c2-4f33-93fa-724428f3f045")
+	)
+	(wire
+		(pts
+			(xy 387.35 68.58) (xy 387.35 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38d1234f-dd1b-410f-99da-49af2deb5049")
 	)
 	(wire
 		(pts
@@ -26442,7 +26458,7 @@
 	)
 	(wire
 		(pts
-			(xy 355.6 88.9) (xy 374.65 88.9)
+			(xy 355.6 88.9) (xy 369.57 88.9)
 		)
 		(stroke
 			(width 0)
@@ -26599,6 +26615,16 @@
 			(type default)
 		)
 		(uuid "8469fa2b-aee1-45c5-ace8-bc5e0eef3f79")
+	)
+	(wire
+		(pts
+			(xy 369.57 68.58) (xy 369.57 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8546acd8-4e82-45d4-8c34-3d5ba1c9732d")
 	)
 	(wire
 		(pts
@@ -29292,6 +29318,16 @@
 	)
 	(wire
 		(pts
+			(xy 374.65 68.58) (xy 369.57 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9743d3a-8fc7-4cef-b3c6-73065efb86f6")
+	)
+	(wire
+		(pts
 			(xy 769.62 129.54) (xy 769.62 146.05)
 		)
 		(stroke
@@ -29652,6 +29688,16 @@
 	)
 	(wire
 		(pts
+			(xy 369.57 88.9) (xy 374.65 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c05fd096-5796-4420-a80b-aee780061ab5")
+	)
+	(wire
+		(pts
 			(xy 452.12 199.39) (xy 452.12 184.15)
 		)
 		(stroke
@@ -29819,6 +29865,16 @@
 			(type default)
 		)
 		(uuid "c3c5de95-7773-4495-a385-60ae44168b1f")
+	)
+	(wire
+		(pts
+			(xy 384.81 68.58) (xy 387.35 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3d6f5ac-c6ae-4ef6-b3ff-85173046d39f")
 	)
 	(wire
 		(pts
@@ -56067,6 +56123,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 387.35 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "670a7751-6d1d-406f-ab55-8f8384c278a5")
+		(property "Reference" "#PWR042"
+			(at 387.35 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 387.35 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 387.35 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 387.35 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 387.35 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e30239f1-be58-4280-828b-6c0ab6a068d4")
+		)
+		(instances
+			(project "ACE Board"
+				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Oscillator:OCXO-14")
 		(at 93.98 86.36 0)
 		(unit 1)
@@ -57084,6 +57218,86 @@
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 379.73 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77086891-f9e3-4d18-b41b-5545886cfc18")
+		(property "Reference" "SW70"
+			(at 379.73 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RESET"
+			(at 379.73 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+			(at 379.73 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 379.73 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 379.73 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c8c4fc8b-a32a-41a5-9ad6-c7bd2dccacda")
+		)
+		(pin "1"
+			(uuid "5a8d7ae8-6bca-4f57-8ab0-81d6bd8b7a95")
+		)
+		(instances
+			(project "ACE Board"
+				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
+					(reference "SW70")
 					(unit 1)
 				)
 			)
@@ -68014,7 +68228,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-24_W7.62mm"
+		(property "Footprint" "Package_DIP:DIP-24_W7.62mm_Socket_LongPads"
 			(at 513.08 204.47 0)
 			(hide yes)
 			(show_name no)
