@@ -11,9 +11,7 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 
 The AC6502 ecosystem is a family of open-source, 65C02-based computers sharing a common architecture, memory map, and [BIOS](https://github.com/acwright/6502-BIOS). Each computer in the family is purpose-built for a different use case but runs the same software and firmware.
 
-The **ACE** (All-in-one Computer Experience) is a complete, self-contained 65C02 computer on a single PCB. It integrates everything found across the COB's modular cards — CPU, memory, video, audio, storage, serial, GPIO, RTC, and keyboard controller — onto one board, delivering the full COB experience without a backplane or expansion cards.
-
----
+The **ACE** (All-in-one Computer Experience) is a complete, self-contained 65C02 computer on a single PCB. It integrates everything found across the COB's modular cards — CPU, memory, video, audio, storage, serial, GPIO, RTC, and keyboard controller — onto one board, delivering the full experience without a backplane or expansion cards.
 
 ## Architecture
 
@@ -25,7 +23,25 @@ All AC6502 computers share:
 - **Bus**: 16-bit address bus, 8-bit bidirectional data bus, standard 65C02 control signals (RW, PHI2, RESET, IRQ, NMI, RDY, SYNC)
 - **BIOS**: A common [BIOS](https://github.com/acwright/6502-BIOS) provides the kernel, monitor, and BASIC interpreter across all systems
 
----
+## Systems
+
+| Project | Description |
+|---------|-------------|
+| [6502-ACE](https://github.com/acwright/6502-ACE) | All-in-one Computer Experience — A single board computer (YOU ARE HERE) |
+| [6502-COB](https://github.com/acwright/6502-COB) | Computer On a Backplane — Modular desktop computer with expandable card slots |
+| [6502-DEV](https://github.com/acwright/6502-DEV) | Development Environment Vehicle — Emulation-based dev system |
+| [6502-KIM](https://github.com/acwright/6502-KIM) | Keyboard Input Monitor - KIM-1 inspired minimal computer |
+| [6502-VCS](https://github.com/acwright/6502-VCS) | Video Computer System — Cartridge-based retro gaming console |
+
+## Software
+
+| Project | Description |
+|---------|-------------|
+| [6502-BIOS](https://github.com/acwright/6502-BIOS) | The shared BIOS (kernel, monitor, BASIC) for all AC6502 computers |
+| [6502-PRG](https://github.com/acwright/6502-PRG) | Template project for writing assembly language programs |
+| [6502-CRT](https://github.com/acwright/6502-CRT) | Template project for writing assembly language cartridges |
+| [6502-EMULATOR](https://github.com/acwright/6502-EMULATOR) | Node.js-based AC6502 emulator |
+| [6502-WEBULATOR](https://github.com/acwright/6502-WEBULATOR) | Web-based AC6502 emulator |
 
 ## Hardware
 
@@ -37,17 +53,17 @@ This repository contains KiCad 7.0+ PCB designs for the ACE board.
 The single integrated board hosting the W65C02S CPU and all peripherals. Provides:
 
 - **CPU**: W65C02S running at 1 MHz
-- **RAM**: 32KB SRAM (62256) at $0000–$7FFF
-- **ROM**: 32KB EEPROM (28C256) at $8000–$FFFF
-- **Video**: TMS9918A VDP (composite output, 256×192) or Pico9918 (VGA 640×480)
+- **RAM**: 32KB SRAM (62256) + Optional 512K banked SRAM (AS6C4008)
+- **ROM**: 32KB EEPROM (28C256)
+- **Video**: Pico9918 (VGA 640×480)
 - **Audio**: ARMSID SID chip emulator (3-voice synthesis, RCA output)
 - **Storage**: Storage adapter socket
-- **Serial**: 65C51 ACIA with MAX232 level shifter (RS-232 via DB9, 50–19200 baud)
+- **Serial**: 65C51 ACIA with MAX238 level shifter (RS-232 via DB9, 50–19200 baud)
 - **GPIO**: 65C22 VIA (20 GPIO pins, 2× 16-bit timers, shift register)
-- **RTC**: DS1511Y real-time clock with battery-backed SRAM and Y2K support
-- **Keyboard Controller**: ATmega1284P running ACE Controller firmware
+- **RTC**: DS1511Y real-time clock with battery-backed NVRAM
+- **Keyboard Controller**: ATmega1284P running AB Controller firmware
 - **Input**: PS/2 keyboard connector and 8×8 keyboard matrix header
-- **Joystick**: Atari 2600-style joystick port
+- **Joystick**: Atari 2600-compatible joystick port
 - **Clock**: On-board oscillator (1–8 MHz, selectable by swapping oscillator)
 - **Reset**: Power-on RC reset circuit and manual reset button
 - **Power**: 5V DC, 2–3A
@@ -59,8 +75,6 @@ A CompactFlash adapter board that connects to the Storage header on the ACE Boar
 
 - **Interface**: 8-bit IDE mode
 - **Storage**: CompactFlash socket (up to 1MB)
-
----
 
 ## Firmware
 
@@ -80,59 +94,25 @@ Firmware for the ATmega1284P keyboard controller on the ACE board. Provides:
 
 See [Firmware/AB Controller/README.md](./Firmware/AB%20Controller/README.md) for setup and usage instructions.
 
----
-
 ## CAD
 `CAD/`
 
 3D-printable enclosure bases and laser-cut top panels for the ACE system.
-
----
 
 ## Production
 `Production/`
 
 JLCPCB-ready Gerber files and BOM/CPL for PCB fabrication and assembly.
 
----
-
 ## Schematics
 `Schematics/`
 
 PDF schematics for the ACE board.
 
----
-
 ## Libraries
 `Libraries/`
 
 Shared KiCad symbol and footprint libraries used across all AC6502 hardware projects.
-
----
-
-## AC6502 Projects
-
-| Project | Description |
-|---------|-------------|
-| [6502-BIOS](https://github.com/acwright/6502-BIOS) | The shared BIOS (kernel, monitor, BASIC) for all AC6502 computers |
-| [6502-PRG](https://github.com/acwright/6502-PRG) | Template for writing assembly language programs |
-| [6502-CRT](https://github.com/acwright/6502-CRT) | Template for writing assembly language cartridges |
-| [6502-EMULATOR](https://github.com/acwright/6502-EMULATOR) | Node.js-based AC6502 emulator |
-| [6502-WEBULATOR](https://github.com/acwright/6502-WEBULATOR) | Web-based AC6502 emulator |
-
----
-
-## AC6502 Systems
-
-| Project | Description |
-|---------|-------------|
-| [6502-ACE](https://github.com/acwright/6502-ACE) | All-in-one single-PCB computer — the COB experience without the backplane (you are here) |
-| [6502-COB](https://github.com/acwright/6502-COB) | Computer on a Backplane — modular desktop computer with expandable card slots |
-| [6502-DEV](https://github.com/acwright/6502-DEV) | Development Environment Vehicle — emulation-based dev system |
-| [6502-KIM](https://github.com/acwright/6502-KIM) | KIM-1 inspired minimal computer |
-| [6502-VCS](https://github.com/acwright/6502-VCS) | Video Computer System — cartridge-based retro gaming console |
-
----
 
 ## License
 
