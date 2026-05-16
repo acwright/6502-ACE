@@ -1,6 +1,5 @@
 ﻿Designator,Footprint,Quantity,Value,LCSC Part #
 D1,LED_D3.0mm,1,ACT,
-J21,PinHeader_2x10_P2.54mm_Horizontal,1,STORAGE,
-J3,101DTAABR01,1,Compact Flash,
+J1,PinHeader_2x10_P2.54mm_Horizontal,1,STORAGE,
 "R1, R2, R3, R4",R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal,4,1k,
 R5,R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal,1,330,
