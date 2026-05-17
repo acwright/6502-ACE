@@ -649,6 +649,12 @@
         },
         {
           "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": true
+        },
+        {
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
           "show": false
@@ -675,7 +681,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -685,14 +691,14 @@
         },
         {
           "group_by": false,
-          "label": "MPN",
-          "name": "MPN",
+          "label": "Mouser",
+          "name": "Mouser",
           "show": true
         },
         {
           "group_by": false,
-          "label": "Description",
-          "name": "Description",
+          "label": "MPN",
+          "name": "MPN",
           "show": false
         },
         {
@@ -703,20 +709,14 @@
         },
         {
           "group_by": false,
-          "label": "Mouser",
-          "name": "Mouser",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Amazon",
-          "name": "Amazon",
+          "label": "Other",
+          "name": "Other",
           "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"

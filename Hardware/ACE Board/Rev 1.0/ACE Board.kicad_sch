@@ -47319,7 +47319,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x2 2.54mm"
 			(at 637.54 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -47401,7 +47401,7 @@
 				)
 			)
 		)
-		(property "Description" "8-bit Latch 3-state outputs"
+		(property "Description" ""
 			(at 203.2 363.22 0)
 			(hide yes)
 			(show_name no)
@@ -47634,7 +47634,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 619.76 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -47713,7 +47713,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Box Header 2x20 2.54mm"
 			(at 505.46 259.08 0)
 			(hide yes)
 			(show_name no)
@@ -47928,7 +47928,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 541.02 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -48008,7 +48008,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 640.08 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -48118,7 +48118,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -48168,7 +48168,7 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Test Point"
 			(at 629.92 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -48323,7 +48323,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 619.76 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -48559,7 +48559,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 619.76 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -48639,7 +48639,7 @@
 				)
 			)
 		)
-		(property "Description" "8x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+		(property "Description" "8x DIP Switch SPST"
 			(at 71.12 344.17 0)
 			(hide yes)
 			(show_name no)
@@ -48650,7 +48650,7 @@
 				)
 			)
 		)
-		(property "Amazon" "https://www.amazon.com/Yohii-2-54mm-Positions-Double-Assorted/dp/B07DSBX4BK/"
+		(property "Other" "https://www.amazon.com/Yohii-2-54mm-Positions-Double-Assorted/dp/B07DSBX4BK/"
 			(at 71.12 344.17 0)
 			(hide yes)
 			(show_name no)
@@ -48773,7 +48773,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 41.91 243.84 0)
 			(hide yes)
 			(show_name no)
@@ -48854,7 +48854,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x2 2.54mm"
 			(at 429.26 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -49113,7 +49113,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 640.08 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -49192,7 +49192,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 284.48 257.81 0)
 			(hide yes)
 			(show_name no)
@@ -49332,7 +49332,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 722.63 334.01 0)
 			(hide yes)
 			(show_name no)
@@ -49548,7 +49548,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -49627,7 +49627,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Card Edge Connector 2x20 2.54mm"
 			(at 459.74 259.08 0)
 			(hide yes)
 			(show_name no)
@@ -49843,7 +49843,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 334.01 275.59 0)
 			(hide yes)
 			(show_name no)
@@ -49981,7 +49981,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 701.04 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -50221,7 +50221,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 660.4 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -50301,7 +50301,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 660.4 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -50381,7 +50381,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 701.04 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -50541,7 +50541,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 701.04 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -50621,7 +50621,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 762 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -50780,7 +50780,7 @@
 				)
 			)
 		)
-		(property "Description" "Switch, single pole double throw"
+		(property "Description" "SPDT Switch"
 			(at 619.76 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -50885,7 +50885,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 680.72 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -50965,7 +50965,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 680.72 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -51047,7 +51047,7 @@
 				)
 			)
 		)
-		(property "Description" "Synchronous 4-bit programmable binary Counter"
+		(property "Description" ""
 			(at 124.46 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -51190,7 +51190,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 99.06 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -51271,7 +51271,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 233.68 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -51587,7 +51587,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 721.36 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -51669,7 +51669,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 661.67 334.01 0)
 			(hide yes)
 			(show_name no)
@@ -51806,7 +51806,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 34.29 270.51 0)
 			(hide yes)
 			(show_name no)
@@ -52022,7 +52022,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 721.36 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -52104,7 +52104,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "3.0mm LED"
 			(at 629.92 284.48 0)
 			(hide yes)
 			(show_name no)
@@ -52216,7 +52216,7 @@
 				)
 			)
 		)
-		(property "Amazon" "https://www.amazon.com/gp/product/B0CKSNPVH8"
+		(property "Other" "https://www.amazon.com/gp/product/B0CKSNPVH8"
 			(at 243.84 290.83 0)
 			(hide yes)
 			(show_name no)
@@ -52297,7 +52297,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 180.34 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -52377,7 +52377,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 721.36 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -52636,7 +52636,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 358.14 262.89 0)
 			(hide yes)
 			(show_name no)
@@ -52774,7 +52774,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 741.68 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -53171,7 +53171,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 680.72 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -53251,7 +53251,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 721.36 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -53333,7 +53333,7 @@
 				)
 			)
 		)
-		(property "Description" "3-to-8 line decoder/multiplexer inverting, DIP-16/SOIC-16/SSOP-16"
+		(property "Description" ""
 			(at 123.19 344.17 0)
 			(hide yes)
 			(show_name no)
@@ -53466,7 +53466,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 741.68 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -53547,7 +53547,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x2 2.54mm"
 			(at 382.27 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -53628,7 +53628,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 203.2 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -53787,7 +53787,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 762 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -53944,7 +53944,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 640.08 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -54025,7 +54025,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 132.08 381 0)
 			(hide yes)
 			(show_name no)
@@ -54184,7 +54184,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 50.8 278.13 0)
 			(hide yes)
 			(show_name no)
@@ -54322,7 +54322,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 721.36 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -54402,7 +54402,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 284.48 317.5 0)
 			(hide yes)
 			(show_name no)
@@ -54619,7 +54619,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 218.44 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -54698,7 +54698,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 91.44 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -54778,7 +54778,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Socket 2x10 2.54mm Horizontal"
 			(at 524.51 351.79 0)
 			(hide yes)
 			(show_name no)
@@ -54945,7 +54945,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 680.72 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -55182,7 +55182,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 660.4 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -55263,7 +55263,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 147.32 381 0)
 			(hide yes)
 			(show_name no)
@@ -55601,7 +55601,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 68.58 278.13 0)
 			(hide yes)
 			(show_name no)
@@ -55738,7 +55738,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 617.22 276.86 0)
 			(hide yes)
 			(show_name no)
@@ -55896,7 +55896,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 762 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -55976,7 +55976,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 701.04 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -56056,7 +56056,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 619.76 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -56136,7 +56136,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 660.4 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -56217,7 +56217,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 187.96 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -56296,7 +56296,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 452.12 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -56454,7 +56454,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 640.08 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -56535,7 +56535,7 @@
 				)
 			)
 		)
-		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
+		(property "Description" "DB-9 Male"
 			(at 275.59 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -56992,7 +56992,7 @@
 				)
 			)
 		)
-		(property "Description" "Voltage-Controlled Crystal Clock Oscillator, DIP14-style metal package"
+		(property "Description" "DIP-14 Full Can Oscillator"
 			(at 93.98 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -57100,7 +57100,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x3 2.54mm"
 			(at 565.15 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -57183,7 +57183,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 762 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -57263,7 +57263,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 762 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -57343,7 +57343,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 660.4 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -57501,7 +57501,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 180.34 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -57582,7 +57582,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x2 2.54mm"
 			(at 637.54 274.32 0)
 			(hide yes)
 			(show_name no)
@@ -57663,7 +57663,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 218.44 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -57743,7 +57743,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 660.4 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -57855,7 +57855,7 @@
 				)
 			)
 		)
-		(property "Amazon" "https://www.amazon.com/gp/product/B0CKSNPVH8"
+		(property "Other" "https://www.amazon.com/gp/product/B0CKSNPVH8"
 			(at 243.84 297.18 0)
 			(hide yes)
 			(show_name no)
@@ -57936,7 +57936,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 195.58 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -58018,7 +58018,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Tact Push Button Switch 5.00mm"
 			(at 361.95 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -58253,7 +58253,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 701.04 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -58334,7 +58334,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 187.96 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -58414,7 +58414,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 721.36 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -58574,7 +58574,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 203.2 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -58654,7 +58654,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x3 2.54mm"
 			(at 565.15 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -58737,7 +58737,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 680.72 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -58819,7 +58819,7 @@
 				)
 			)
 		)
-		(property "Description" "8-bit Latch 3-state outputs"
+		(property "Description" ""
 			(at 251.46 363.22 0)
 			(hide yes)
 			(show_name no)
@@ -58976,7 +58976,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 93.98 381 0)
 			(hide yes)
 			(show_name no)
@@ -59059,7 +59059,7 @@
 				)
 			)
 		)
-		(property "Description" "20MHz, 128kB Flash, 16kB SRAM, 4kB EEPROM, JTAG, DIP-40"
+		(property "Description" ""
 			(at 340.36 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -59304,7 +59304,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -59352,7 +59352,7 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Test Point"
 			(at 608.33 276.86 0)
 			(hide yes)
 			(show_name no)
@@ -59429,7 +59429,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 619.76 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -59509,7 +59509,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 721.36 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -59668,7 +59668,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 701.04 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -59748,7 +59748,7 @@
 				)
 			)
 		)
-		(property "Description" "8-input NAND"
+		(property "Description" ""
 			(at 284.48 276.86 0)
 			(hide yes)
 			(show_name no)
@@ -59887,7 +59887,7 @@
 				)
 			)
 		)
-		(property "Description" "8-input NAND"
+		(property "Description" ""
 			(at 774.7 334.01 0)
 			(hide yes)
 			(show_name no)
@@ -60024,7 +60024,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 68.58 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -60161,7 +60161,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 83.82 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -60242,7 +60242,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 195.58 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -60399,7 +60399,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 452.12 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -60714,7 +60714,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 741.68 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -60873,7 +60873,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Box Header 2x6 2.54mm"
 			(at 323.85 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -60982,7 +60982,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 334.01 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -61122,7 +61122,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 744.22 334.01 0)
 			(hide yes)
 			(show_name no)
@@ -61338,7 +61338,7 @@
 				)
 			)
 		)
-		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
+		(property "Description" "DB-9 Male"
 			(at 275.59 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -61475,7 +61475,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 619.76 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -61555,7 +61555,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x16 2.00mm"
 			(at 688.34 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -61676,7 +61676,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 445.77 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -61836,7 +61836,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 681.99 334.01 0)
 			(hide yes)
 			(show_name no)
@@ -61973,7 +61973,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 135.89 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -62189,7 +62189,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 640.08 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -62350,7 +62350,7 @@
 				)
 			)
 		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(property "Description" "RCA Jack"
 			(at 459.74 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -62668,7 +62668,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 139.7 381 0)
 			(hide yes)
 			(show_name no)
@@ -62748,7 +62748,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 680.72 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -62906,7 +62906,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 114.3 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -63046,7 +63046,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 702.31 334.01 0)
 			(hide yes)
 			(show_name no)
@@ -63183,7 +63183,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 50.8 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -63321,7 +63321,7 @@
 				)
 			)
 		)
-		(property "Description" "DC Barrel Jack with an internal switch"
+		(property "Description" "DC Barrel Jack"
 			(at 598.17 255.27 0)
 			(hide yes)
 			(show_name no)
@@ -63584,7 +63584,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 124.46 381 0)
 			(hide yes)
 			(show_name no)
@@ -63742,7 +63742,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 483.87 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -63822,7 +63822,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 680.72 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -63901,7 +63901,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 541.02 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -64295,7 +64295,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 762 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -64375,7 +64375,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 762 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -64454,7 +64454,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 114.3 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -64535,7 +64535,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 233.68 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -64771,7 +64771,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 741.68 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -65042,7 +65042,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 741.68 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -65121,7 +65121,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 92.71 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -65259,7 +65259,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 721.36 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -65339,7 +65339,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 640.08 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -65419,7 +65419,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 619.76 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -65500,7 +65500,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 210.82 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -65580,7 +65580,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 311.15 257.81 0)
 			(hide yes)
 			(show_name no)
@@ -65718,7 +65718,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 640.08 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -65875,7 +65875,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 701.04 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -65955,7 +65955,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x4 2.54mm"
 			(at 459.74 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -66042,7 +66042,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 237.49 278.13 0)
 			(hide yes)
 			(show_name no)
@@ -66122,7 +66122,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x3 2.54mm"
 			(at 147.32 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -66205,7 +66205,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 762 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -66286,7 +66286,7 @@
 				)
 			)
 		)
-		(property "Description" "Two pin crystal"
+		(property "Description" ""
 			(at 547.37 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -66389,7 +66389,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 226.06 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -66547,7 +66547,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 41.91 394.97 0)
 			(hide yes)
 			(show_name no)
@@ -66762,7 +66762,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 541.02 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -67079,7 +67079,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Box Header 2x6 2.54mm"
 			(at 361.95 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -67188,7 +67188,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 321.31 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -67267,7 +67267,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 92.71 278.13 0)
 			(hide yes)
 			(show_name no)
@@ -67405,7 +67405,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 680.72 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -67486,7 +67486,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 109.22 381 0)
 			(hide yes)
 			(show_name no)
@@ -67567,7 +67567,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 226.06 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -67727,7 +67727,7 @@
 				)
 			)
 		)
-		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
+		(property "Description" "DB-9 Male"
 			(at 562.61 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -67863,7 +67863,7 @@
 				)
 			)
 		)
-		(property "Description" "Single-cell battery"
+		(property "Description" "CR2032"
 			(at 464.82 358.14 0)
 			(hide yes)
 			(show_name no)
@@ -67979,7 +67979,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 619.76 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -68059,7 +68059,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 284.48 300.99 0)
 			(hide yes)
 			(show_name no)
@@ -68198,7 +68198,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 101.6 381 0)
 			(hide yes)
 			(show_name no)
@@ -68277,7 +68277,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 439.42 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -68357,7 +68357,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 701.04 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -68437,7 +68437,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 741.68 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -68516,7 +68516,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 458.47 344.17 0)
 			(hide yes)
 			(show_name no)
@@ -68617,7 +68617,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 60.96 377.19 0)
 			(hide yes)
 			(show_name no)
@@ -68951,7 +68951,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 640.08 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -69031,7 +69031,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 660.4 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -69114,7 +69114,7 @@
 				)
 			)
 		)
-		(property "Description" "Quad RS232 driver/receiver, 5V supply, 120kb/s, DIP-24"
+		(property "Description" ""
 			(at 511.81 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -69283,7 +69283,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 210.82 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -69442,7 +69442,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 358.14 278.13 0)
 			(hide yes)
 			(show_name no)
@@ -69661,7 +69661,7 @@
 				)
 			)
 		)
-		(property "Description" "3-to-8 line decoder/multiplexer inverting, DIP-16/SOIC-16/SSOP-16"
+		(property "Description" ""
 			(at 43.18 344.17 0)
 			(hide yes)
 			(show_name no)
@@ -69804,7 +69804,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 60.96 392.43 0)
 			(hide yes)
 			(show_name no)
@@ -69942,7 +69942,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 660.4 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -70100,7 +70100,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 741.68 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -70259,7 +70259,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 619.76 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -70417,7 +70417,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 701.04 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -70713,7 +70713,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 741.68 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -70793,7 +70793,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 660.4 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -70875,7 +70875,7 @@
 				)
 			)
 		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(property "Description" "RCA Jack"
 			(at 459.74 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -70979,7 +70979,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 321.31 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -71070,7 +71070,7 @@
 				)
 			)
 		)
-		(property "Amazon" "https://www.amazon.com/dp/B08GS3QL7T"
+		(property "Other" "https://www.amazon.com/dp/B08GS3QL7T"
 			(at 196.85 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -71163,7 +71163,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 116.84 381 0)
 			(hide yes)
 			(show_name no)
@@ -71403,7 +71403,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x2 2.54mm"
 			(at 412.75 201.93 0)
 			(hide yes)
 			(show_name no)

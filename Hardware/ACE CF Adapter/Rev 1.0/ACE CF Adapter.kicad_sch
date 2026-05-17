@@ -4134,7 +4134,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 151.13 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -4172,7 +4172,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14d2ad51-4174-44ca-9947-6c5322f614e4")
-		(property "Reference" "J21"
+		(property "Reference" "J1"
 			(at 64.77 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4214,7 +4214,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 2x10 2.54mm Horizontal"
 			(at 63.5 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4299,7 +4299,7 @@
 		(instances
 			(project "ACE CF Adapter"
 				(path "/154a5133-b84f-49cb-b657-9c810539146c"
-					(reference "J21")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -4358,7 +4358,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 151.13 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4396,7 +4396,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a51829a-023d-4bdf-8539-dc6d7ffaa709")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG02"
 			(at 187.325 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -4458,7 +4458,7 @@
 		(instances
 			(project "ACE CF Adapter"
 				(path "/154a5133-b84f-49cb-b657-9c810539146c"
-					(reference "#FLG01")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -4476,7 +4476,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "559dd7f6-8be9-48e0-819c-5feca85f844f")
-		(property "Reference" "J3"
+		(property "Reference" "J2"
 			(at 193.9641 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4701,7 +4701,7 @@
 		(instances
 			(project "ACE CF Adapter"
 				(path "/154a5133-b84f-49cb-b657-9c810539146c"
-					(reference "J3")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -4762,7 +4762,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "3.0mm LED"
 			(at 231.14 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -4841,7 +4841,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 215.9 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -4879,7 +4879,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f03bf60-19a4-43e3-8e8a-2a405bf360c5")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR02"
 			(at 73.66 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -4939,7 +4939,7 @@
 		(instances
 			(project "ACE CF Adapter"
 				(path "/154a5133-b84f-49cb-b657-9c810539146c"
-					(reference "#PWR037")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -4957,7 +4957,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b4ad7e7-d44f-4dcf-9e21-b925af3b85fc")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR03"
 			(at 158.75 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -5017,7 +5017,7 @@
 		(instances
 			(project "ACE CF Adapter"
 				(path "/154a5133-b84f-49cb-b657-9c810539146c"
-					(reference "#PWR04")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -5035,7 +5035,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9467e355-0b4e-4f7f-95f0-a6e3e518d692")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR01"
 			(at 44.45 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -5095,7 +5095,7 @@
 		(instances
 			(project "ACE CF Adapter"
 				(path "/154a5133-b84f-49cb-b657-9c810539146c"
-					(reference "#PWR033")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -5113,7 +5113,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "978be7b0-c741-4b48-882f-61c18605d487")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR04"
 			(at 189.23 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -5173,7 +5173,7 @@
 		(instances
 			(project "ACE CF Adapter"
 				(path "/154a5133-b84f-49cb-b657-9c810539146c"
-					(reference "#PWR05")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -5191,7 +5191,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0991798-a630-434a-8d0e-106cc343b2db")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG01"
 			(at 182.245 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -5253,7 +5253,7 @@
 		(instances
 			(project "ACE CF Adapter"
 				(path "/154a5133-b84f-49cb-b657-9c810539146c"
-					(reference "#FLG02")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -5312,7 +5312,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 215.9 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -5393,7 +5393,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 231.14 105.41 0)
 			(hide yes)
 			(show_name no)
