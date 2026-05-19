@@ -54092,6 +54092,17 @@
 				)
 			)
 		)
+		(property "Mouser" "595-SN74HC138N"
+			(at 123.19 344.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "14"
 			(uuid "3d33220d-dec2-4687-b3ce-57af88001dd8")
 		)
@@ -74107,6 +74118,17 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/dp/B08GS3QL7T"
+			(at 196.85 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "806-KMDGX-6S-BS"
 			(at 196.85 187.96 0)
 			(hide yes)
 			(show_name no)

@@ -17,7 +17,7 @@
 "J10","1","PORT A","Box Header 2x6 2.54mm","6502 Parts:6502 GPIO Connector","2057-BHR-12-VUA-ND","","https://www.amazon.com/uxcell-2-54mm-2x6-Pin-Straight-Connector/dp/B07DJYVZV2"
 "J11","1","AUDIO L","RCA Jack","6502 Parts:SWITCHCRAFT_PJRAN1X1U0XX","PJRAN1X1U02X-ND","502-PJRAN1X1U02X",""
 "J12","1","DB9 MALE (DTE)","DB-9 Male","Connector_Dsub:DSUB-9_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm","609-1481-ND","649-D09P33E4GX00LF",""
-"J13","1","PS/2","6-pin Mini-DIN connector","6502 Parts:KMDGX-6S-BS","","","https://www.amazon.com/dp/B08GS3QL7T"
+"J13","1","PS/2","6-pin Mini-DIN connector","6502 Parts:KMDGX-6S-BS","","806-KMDGX-6S-BS","https://www.amazon.com/dp/B08GS3QL7T"
 "J14","1","AUDIO R","RCA Jack","6502 Parts:SWITCHCRAFT_PJRAN1X1U0XX","PJRAN1X1U03X-ND","502-PJRAN1X1U03X",""
 "J15","1","AUDIO","Pin Header 1x2 2.54mm","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","","","https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
 "J16","1","5V DC","DC Barrel Jack","Connector_BarrelJack:BarrelJack_Horizontal","2073-DCJ200-10-A-K1-K-ND","640-DCJ200-10-A-K1-K",""
