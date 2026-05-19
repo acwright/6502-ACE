@@ -47779,6 +47779,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/Female-Headers-Connector-Header-Raspberry/dp/B07DNHS2SJ"
+			(at 505.46 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0b122b8f-44b5-4a85-a878-633431fb2404")
 		)
@@ -47973,6 +47984,17 @@
 			)
 		)
 		(property "Digikey" "478-7667-ND"
+			(at 541.02 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 541.02 149.86 90)
 			(hide yes)
 			(show_name no)
@@ -49656,6 +49678,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 741.68 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e799d1fd-39ad-4aee-8588-b9607bbb3733")
 		)
@@ -50768,6 +50801,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 707.39 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "39b8212d-fe7b-4bf3-a0c4-c9e1775ae124")
 		)
@@ -51801,6 +51845,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 775.97 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5f30dd1e-3226-49c8-aef4-a0e72cd3aa97")
 		)
@@ -51959,6 +52014,17 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
+			(at 684.53 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 684.53 256.54 90)
 			(hide yes)
 			(show_name no)
@@ -53537,6 +53603,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 661.67 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "24320487-7f94-4bdd-8da2-30fc1104aa5a")
 		)
@@ -53617,6 +53694,17 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
+			(at 684.53 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 684.53 290.83 90)
 			(hide yes)
 			(show_name no)
@@ -55904,6 +55992,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 764.54 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1f550825-c1f9-4740-94b6-6f1bea0b3be0")
 		)
@@ -57342,6 +57441,17 @@
 			)
 		)
 		(property "Digikey" "478-SR151C222KAATR1CT-ND"
+			(at 452.12 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 452.12 152.4 90)
 			(hide yes)
 			(show_name no)
@@ -59857,6 +59967,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 753.11 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c7553935-623d-4f95-a0a5-b0af80495821")
 		)
@@ -61084,6 +61205,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 730.25 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "41f70a17-9d9d-4f47-ad0e-81cbb93af4fa")
 		)
@@ -61972,6 +62104,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 452.12 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "500e2c8b-625e-4062-822b-a7338343d9a0")
 		)
@@ -62052,6 +62195,17 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
+			(at 673.1 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 673.1 290.83 90)
 			(hide yes)
 			(show_name no)
@@ -62400,6 +62554,17 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
+			(at 673.1 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 673.1 256.54 90)
 			(hide yes)
 			(show_name no)
@@ -63359,6 +63524,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 445.77 184.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "64a7f5ea-09d6-4a81-a039-a0ce767d3559")
 		)
@@ -63974,6 +64150,17 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
+			(at 741.68 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 741.68 256.54 90)
 			(hide yes)
 			(show_name no)
@@ -65274,6 +65461,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 707.39 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8027fedc-e502-401e-b9fc-6e469d6d8b5b")
 		)
@@ -65467,6 +65665,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 775.97 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ea548019-7dbf-43bc-b928-61412b9db228")
 		)
@@ -65547,6 +65756,17 @@
 			)
 		)
 		(property "Digikey" "478-7667-ND"
+			(at 483.87 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 483.87 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -65749,6 +65969,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 541.02 142.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "888f847f-23d5-41dd-9afb-23c2b7c031a5")
 		)
@@ -65829,6 +66060,17 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
+			(at 695.96 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 695.96 290.83 90)
 			(hide yes)
 			(show_name no)
@@ -68690,6 +68932,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 730.25 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fd6012d1-4733-4a7c-8c9b-ce3e3999eb4d")
 		)
@@ -68995,6 +69248,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 541.02 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2dfc5e5d-62a7-43f5-b301-a11d492bef70")
 		)
@@ -69075,6 +69339,17 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
+			(at 661.67 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 661.67 256.54 90)
 			(hide yes)
 			(show_name no)
@@ -69244,6 +69519,17 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
+			(at 718.82 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 718.82 256.54 90)
 			(hide yes)
 			(show_name no)
@@ -69466,6 +69752,17 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
+			(at 321.31 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 321.31 128.27 90)
 			(hide yes)
 			(show_name no)
@@ -71925,6 +72222,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 718.82 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e4a66fbf-06cc-49c0-b9a5-be2ac0fdca72")
 		)
@@ -72787,6 +73095,17 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
+			(at 753.11 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 753.11 256.54 90)
 			(hide yes)
 			(show_name no)
@@ -74003,6 +74322,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 695.96 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6abfb7cf-2127-4592-b41f-49dba6013e92")
 		)
@@ -74083,6 +74413,17 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
+			(at 764.54 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
 			(at 764.54 256.54 90)
 			(hide yes)
 			(show_name no)

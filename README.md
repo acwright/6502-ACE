@@ -143,9 +143,9 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 | Reference | Qty | Value | Description | DigiKey | Mouser | Other |
 |-----------|-----|-------|-------------|---------|--------|-------|
 | BT1 | 1 | CR2032 | Battery Holder | [BAT-HLD-001-THM-ND](https://www.digikey.com/en/products/filter?keywords=BAT-HLD-001-THM-ND) | [712-BAT-HLD-001-THM](https://www.mouser.com/ProductDetail/712-BAT-HLD-001-THM) | |
-| C1, C9–C30 | 23 | 100nF | Disc Capacitor | [478-5732-ND](https://www.digikey.com/en/products/filter?keywords=478-5732-ND) | | |
-| C2, C3, C5, C6, C8 | 5 | 1µF | Disc Capacitor | [478-7667-ND](https://www.digikey.com/en/products/filter?keywords=478-7667-ND) | | |
-| C4, C7 | 2 | 2.2nF | Disc Capacitor | [478-SR151C222KAATR1CT-ND](https://www.digikey.com/en/products/filter?keywords=478-SR151C222KAATR1CT-ND) | | |
+| C1, C9–C30 | 23 | 100nF | Disc Capacitor | [478-5732-ND](https://www.digikey.com/en/products/filter?keywords=478-5732-ND) | | [AMAZON](https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5) |
+| C2, C3, C5, C6, C8 | 5 | 1µF | Disc Capacitor | [478-7667-ND](https://www.digikey.com/en/products/filter?keywords=478-7667-ND) | | [AMAZON](https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5) |
+| C4, C7 | 2 | 2.2nF | Disc Capacitor | [478-SR151C222KAATR1CT-ND](https://www.digikey.com/en/products/filter?keywords=478-SR151C222KAATR1CT-ND) | | [AMAZON](https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5) |
 | D1 | 1 | LED | 3.0mm Power LED | [732-5008-ND](https://www.digikey.com/en/products/filter?keywords=732-5008-ND) | | [AMAZON](https://www.amazon.com/300-Pcs-LED-Diode-Assortment/dp/B0F38LJDJB) |
 | D2, D3 | 2 | BAT85 | Schottky Diode | [BAT85SCT-ND](https://www.digikey.com/en/products/filter?keywords=BAT85SCT-ND) | [78-BAT85S](https://www.mouser.com/ProductDetail/78-BAT85S) | [AMAZON](https://www.amazon.com/gp/product/B0CKSNPVH8) |
 | J1 | 1 | PHI2 SELECT | Pin Header 1×3 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
