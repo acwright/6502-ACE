@@ -47330,6 +47330,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 637.54 260.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ef3da397-f50b-463a-b6e8-2e8e85daa821")
 		)
@@ -47645,6 +47656,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 619.76 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 619.76 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ff113f2c-451d-436c-a3d0-db90b7202dc5")
 		)
@@ -47939,6 +47972,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-7667-ND"
+			(at 541.02 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dcb21e3e-bc1c-4a08-9432-9bd4ce6e4f32")
 		)
@@ -48009,6 +48053,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 640.08 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 640.08 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 640.08 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -48334,6 +48400,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 619.76 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 619.76 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9d785833-e093-4775-a49d-355865168b9d")
 		)
@@ -48570,6 +48658,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 619.76 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 619.76 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "18a74c2f-a0cf-45a2-a031-b26c25f5338d")
 		)
@@ -48784,6 +48894,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 41.91 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 41.91 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ca9fd4b2-d134-45bd-a154-a07f27c6f590")
 		)
@@ -48856,6 +48988,17 @@
 		)
 		(property "Description" "Pin Header 1x2 2.54mm"
 			(at 429.26 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 429.26 128.27 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49114,6 +49257,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 640.08 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 640.08 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 640.08 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -49480,6 +49645,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 741.68 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e799d1fd-39ad-4aee-8588-b9607bbb3733")
 		)
@@ -49549,6 +49725,28 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
+			(at 106.68 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 106.68 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
 			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -49992,6 +50190,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 701.04 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 701.04 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "de88dd66-db5a-4eaa-9922-376e2812ee8e")
 		)
@@ -50232,6 +50452,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 660.4 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 660.4 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8db4f606-1456-45d7-bf2b-bcafbc3c9368")
 		)
@@ -50302,6 +50544,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 660.4 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 660.4 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 660.4 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -50392,6 +50656,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 701.04 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 701.04 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "328fac23-fc26-4aae-bc2b-20f3a2b400f1")
 		)
@@ -50462,6 +50748,17 @@
 		)
 		(property "Description" ""
 			(at 707.39 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 707.39 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50552,6 +50849,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 701.04 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 701.04 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "afcfa64a-72ae-46d5-ac20-213f2e9df5c6")
 		)
@@ -50622,6 +50941,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 762 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 762 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 762 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -50896,6 +51237,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 680.72 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 680.72 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "723a0137-994a-463a-93b4-b78087572f8a")
 		)
@@ -50966,6 +51329,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 680.72 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 680.72 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 680.72 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -51201,6 +51586,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 99.06 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 99.06 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1ce2b2f2-8a00-44d9-ad34-ffe61693587d")
 		)
@@ -51282,6 +51689,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 233.68 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 233.68 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "35a618fb-8c0e-42be-a9e6-d1d1272272e2")
 		)
@@ -51352,6 +51781,17 @@
 		)
 		(property "Description" ""
 			(at 775.97 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 775.97 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51518,6 +51958,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 684.53 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f0d40e24-3fb0-46f5-b28e-f70689291951")
 		)
@@ -51588,6 +52039,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 721.36 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 721.36 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 721.36 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -52033,6 +52506,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 721.36 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 721.36 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "12d7a9ba-0195-405c-aa51-545c57df8799")
 		)
@@ -52106,6 +52601,28 @@
 		)
 		(property "Description" "3.0mm LED"
 			(at 629.92 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "732-5008-ND"
+			(at 629.92 284.48 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/300-Pcs-LED-Diode-Assortment/dp/B0F38LJDJB"
+			(at 629.92 284.48 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -52308,6 +52825,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 180.34 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 180.34 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d6215451-95de-466e-8e0d-50ea898eb89b")
 		)
@@ -52378,6 +52917,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 721.36 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 721.36 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 721.36 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -52785,6 +53346,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 741.68 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 741.68 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "45e58823-6e16-44d3-b8ab-f6f1d5aa3529")
 		)
@@ -52943,6 +53526,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 661.67 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "24320487-7f94-4bdd-8da2-30fc1104aa5a")
 		)
@@ -53013,6 +53607,17 @@
 		)
 		(property "Description" ""
 			(at 684.53 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 684.53 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53182,6 +53787,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 680.72 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 680.72 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "59a88c0d-93cf-4bdf-ac12-b56bd0fc1411")
 		)
@@ -53252,6 +53879,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 721.36 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 721.36 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 721.36 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -53477,6 +54126,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 741.68 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 741.68 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ba07b69a-5137-4897-b047-57f3a9ea3cbb")
 		)
@@ -53558,6 +54229,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 382.27 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "feaf64f8-bdc9-4201-938b-ddbf2589dd4c")
 		)
@@ -53629,6 +54311,28 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
+			(at 203.2 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 203.2 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
 			(at 203.2 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -53798,6 +54502,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 762 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 762 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0cd2daae-fe24-467d-8bf0-e9bab966d6eb")
 		)
@@ -53955,6 +54681,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 640.08 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 640.08 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "25ab8e89-a080-4039-a74a-980c535f1b83")
 		)
@@ -54026,6 +54774,28 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
+			(at 132.08 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 132.08 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
 			(at 132.08 381 0)
 			(hide yes)
 			(show_name no)
@@ -54333,6 +55103,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 721.36 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 721.36 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "add0bef6-30ca-4e26-b83b-3d87f03cdd43")
 		)
@@ -54630,6 +55422,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 218.44 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 218.44 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "59e4dd25-527a-4786-aea1-145d1cb9405a")
 		)
@@ -54699,6 +55513,28 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
+			(at 91.44 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 91.44 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
 			(at 91.44 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -54956,6 +55792,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 680.72 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 680.72 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8af06f61-26a3-4e31-ac09-2bb927f28235")
 		)
@@ -55026,6 +55884,17 @@
 		)
 		(property "Description" ""
 			(at 764.54 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 764.54 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55193,6 +56062,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 660.4 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 660.4 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d43cdfbc-c14b-4bb9-af72-a452b7195fd0")
 		)
@@ -55264,6 +56155,28 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
+			(at 147.32 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 147.32 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
 			(at 147.32 381 0)
 			(hide yes)
 			(show_name no)
@@ -55749,6 +56662,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 617.22 276.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8b5d5284-e96a-4677-aa78-5960a5320024")
 		)
@@ -55907,6 +56831,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 762 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 762 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9933e864-6d35-45f6-8477-62a15a59d357")
 		)
@@ -55977,6 +56923,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 701.04 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 701.04 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 701.04 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -56067,6 +57035,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 619.76 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 619.76 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f52e37f8-c96a-4953-b6ba-5ab80081ab4a")
 		)
@@ -56137,6 +57127,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 660.4 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 660.4 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 660.4 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -56228,6 +57240,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 187.96 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 187.96 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3267f0f2-27a6-4a0d-a1a8-dbf0bb4aabdb")
 		)
@@ -56298,6 +57332,17 @@
 		)
 		(property "Description" ""
 			(at 452.12 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-SR151C222KAATR1CT-ND"
+			(at 452.12 152.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -56455,6 +57500,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 640.08 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 640.08 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 640.08 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -56686,6 +57753,17 @@
 				)
 			)
 		)
+		(property "Other" "https://retrocomp.cz/produkt?id=2"
+			(at 424.18 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "8"
 			(uuid "a82aab2a-8bb7-436b-bddd-c8707d39df7c")
 		)
@@ -56837,6 +57915,17 @@
 		)
 		(property "Description" ""
 			(at 511.81 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.jameco.com/z/R6551AP-Rockwell-IC-6551-Asynchronous-Communication-Interface-Adapter-DIP-28-pin_43318.html?CID=GOOG&utm_source=google&utm_medium=ppc&utm_campaign=&utm_term=&utm_content=&gad_source=4&gad_campaignid=17336645193&gbraid=0AAAAADoyMrfPykBRZHoLXLdz-O5yEtKaY&gclid=CjwKCAjw8arQBhB9EiwAfIKdQmvZnC1nx-RFZj4kRF0D1Wvrek1TTdUge2eacHqJPe6JeM53aHADyxoCYnEQAvD_BwE"
+			(at 511.81 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -57111,6 +58200,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 565.15 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "82ad4ff0-57fe-4e3c-877f-26897f6f51f4")
 		)
@@ -57184,6 +58284,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 762 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 762 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 762 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -57274,6 +58396,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 762 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 762 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2b578605-803c-4c0d-8e1f-60e429eea61d")
 		)
@@ -57344,6 +58488,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 660.4 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 660.4 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 660.4 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -57512,6 +58678,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 180.34 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 180.34 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a7bdcb56-d073-48d0-8f4b-2c81b24ef046")
 		)
@@ -57583,6 +58771,17 @@
 			)
 		)
 		(property "Description" "Pin Header 1x2 2.54mm"
+			(at 637.54 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
 			(at 637.54 274.32 0)
 			(hide yes)
 			(show_name no)
@@ -57674,6 +58873,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 218.44 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 218.44 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "32a9277c-eaf7-4881-8502-5cea877e39fc")
 		)
@@ -57744,6 +58965,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 660.4 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 660.4 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 660.4 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -57947,6 +59190,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 195.58 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 195.58 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ac81f69d-e0fb-4766-beda-a583a39b086f")
 		)
@@ -58020,6 +59285,17 @@
 		)
 		(property "Description" "Tact Push Button Switch 5.00mm"
 			(at 361.95 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/QTEATAK-Momentary-Tactile-Button-Switch/dp/B07VSNN9S2"
+			(at 361.95 96.52 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58264,6 +59540,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 701.04 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 701.04 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f9841456-1cae-4d9a-8444-9d3c31ef0d56")
 		)
@@ -58335,6 +59633,28 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
+			(at 187.96 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 187.96 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
 			(at 187.96 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -58425,6 +59745,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 721.36 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 721.36 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "323e1ef6-c76c-43fc-ba1e-ae9d1ebfc360")
 		)
@@ -58495,6 +59837,17 @@
 		)
 		(property "Description" ""
 			(at 753.11 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 753.11 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58585,6 +59938,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 203.2 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 203.2 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1a4a4615-525d-4ad2-a695-2f76ca0ffba9")
 		)
@@ -58655,6 +60030,17 @@
 			)
 		)
 		(property "Description" "Pin Header 1x3 2.54mm"
+			(at 565.15 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
 			(at 565.15 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -58738,6 +60124,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 680.72 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 680.72 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 680.72 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -58977,6 +60385,28 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
+			(at 93.98 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 93.98 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
 			(at 93.98 381 0)
 			(hide yes)
 			(show_name no)
@@ -59440,6 +60870,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3Xhttps://www.amazon.com/dp/B0FYR5TV3X"
+			(at 619.76 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 619.76 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "98f625f9-e181-45de-a43c-3a28e442fc8b")
 		)
@@ -59510,6 +60962,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 721.36 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 721.36 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 721.36 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -59599,6 +61073,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 730.25 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "41f70a17-9d9d-4f47-ad0e-81cbb93af4fa")
 		)
@@ -59669,6 +61154,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 701.04 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 701.04 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 701.04 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -60172,6 +61679,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 83.82 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 83.82 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "94cc3d57-a957-4a2d-8b05-711bd68cbac0")
 		)
@@ -60243,6 +61772,28 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
+			(at 195.58 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 195.58 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
 			(at 195.58 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -60410,6 +61961,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-SR151C222KAATR1CT-ND"
+			(at 452.12 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "500e2c8b-625e-4062-822b-a7338343d9a0")
 		)
@@ -60480,6 +62042,17 @@
 		)
 		(property "Description" ""
 			(at 673.1 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 673.1 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -60725,6 +62298,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 741.68 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 741.68 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2c088c6c-ba92-4fa7-b6d3-86650a072c30")
 		)
@@ -60804,6 +62399,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 673.1 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c69219e7-1e1f-4278-9058-56e0de2263f3")
 		)
@@ -60874,6 +62480,28 @@
 			)
 		)
 		(property "Description" "Box Header 2x6 2.54mm"
+			(at 323.85 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "2057-BHR-12-VUA-ND"
+			(at 323.85 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/uxcell-2-54mm-2x6-Pin-Straight-Connector/dp/B07DJYVZV2"
 			(at 323.85 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -61486,6 +63114,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 619.76 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 619.76 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "369f6a12-ae32-4f65-9465-146b62cce452")
 		)
@@ -61557,6 +63207,17 @@
 		)
 		(property "Description" "Pin Header 1x16 2.00mm"
 			(at 688.34 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 688.34 194.31 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61678,6 +63339,17 @@
 		)
 		(property "Description" ""
 			(at 445.77 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-7667-ND"
+			(at 445.77 184.15 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62200,6 +63872,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 640.08 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 640.08 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c154ca06-354f-4f61-b5f7-0c9c7aa3287e")
 		)
@@ -62270,6 +63964,17 @@
 		)
 		(property "Description" ""
 			(at 741.68 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 741.68 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62679,6 +64384,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 139.7 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 139.7 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6cca8ad2-ddab-4439-b6f7-a60115dedd04")
 		)
@@ -62749,6 +64476,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 680.72 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 680.72 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 680.72 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -63514,6 +65263,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 707.39 290.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8027fedc-e502-401e-b9fc-6e469d6d8b5b")
 		)
@@ -63585,6 +65345,28 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
+			(at 124.46 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 124.46 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
 			(at 124.46 381 0)
 			(hide yes)
 			(show_name no)
@@ -63674,6 +65456,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 775.97 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ea548019-7dbf-43bc-b928-61412b9db228")
 		)
@@ -63743,6 +65536,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 483.87 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-7667-ND"
 			(at 483.87 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -63833,6 +65637,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 680.72 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 680.72 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9e05fc10-d0a9-47d9-85ba-b88bc5db5880")
 		)
@@ -63912,6 +65738,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-7667-ND"
+			(at 541.02 142.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "888f847f-23d5-41dd-9afb-23c2b7c031a5")
 		)
@@ -63982,6 +65819,17 @@
 		)
 		(property "Description" ""
 			(at 695.96 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 695.96 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -64306,6 +66154,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 762 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 762 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "01ad700e-e96f-4df2-ad74-4b8bed2392b3")
 		)
@@ -64376,6 +66246,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 762 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 762 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 762 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -64465,6 +66357,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 114.3 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 114.3 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8fc3fb9a-cdea-4646-a60c-7666360ca22e")
 		)
@@ -64536,6 +66450,28 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
+			(at 233.68 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 233.68 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
 			(at 233.68 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -64772,6 +66708,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 741.68 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 741.68 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 741.68 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -65053,6 +67011,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 741.68 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 741.68 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "53944fea-c6a4-4432-8eda-fd55a04ddbea")
 		)
@@ -65270,6 +67250,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 721.36 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 721.36 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "27f4e20a-b727-42d5-9965-f5450c2a90a1")
 		)
@@ -65340,6 +67342,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 640.08 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 640.08 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 640.08 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -65430,6 +67454,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 619.76 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 619.76 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "73507150-a89b-4eda-992b-ccf0f7e45b51")
 		)
@@ -65501,6 +67547,28 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
+			(at 210.82 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 210.82 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
 			(at 210.82 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -65729,6 +67797,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 640.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 640.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "495ce939-19c2-44a3-b85a-fe0e258a1489")
 		)
@@ -65886,6 +67976,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 701.04 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 701.04 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "abf89c81-87f6-433f-a37d-fd43272c1490")
 		)
@@ -65956,6 +68068,17 @@
 			)
 		)
 		(property "Description" "Pin Header 1x4 2.54mm"
+			(at 459.74 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
 			(at 459.74 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -66053,6 +68176,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 237.49 278.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 237.49 278.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3c29bd10-efc6-4104-bfce-025c3718d1e5")
 		)
@@ -66123,6 +68268,17 @@
 			)
 		)
 		(property "Description" "Pin Header 1x3 2.54mm"
+			(at 147.32 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
 			(at 147.32 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -66206,6 +68362,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 762 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 762 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 762 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -66400,6 +68578,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 226.06 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 226.06 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5eb5e02e-033e-4435-a645-38345a4b642c")
 		)
@@ -66470,6 +68670,17 @@
 		)
 		(property "Description" ""
 			(at 730.25 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 730.25 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66773,6 +68984,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-7667-ND"
+			(at 541.02 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2dfc5e5d-62a7-43f5-b301-a11d492bef70")
 		)
@@ -66843,6 +69065,17 @@
 		)
 		(property "Description" ""
 			(at 661.67 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 661.67 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67010,6 +69243,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 718.82 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a7ffbab0-66df-42ca-b218-2defe3ca015e")
 		)
@@ -67080,6 +69324,28 @@
 			)
 		)
 		(property "Description" "Box Header 2x6 2.54mm"
+			(at 361.95 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "2057-BHR-12-VUA-ND"
+			(at 361.95 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/uxcell-2-54mm-2x6-Pin-Straight-Connector/dp/B07DJYVZV2"
 			(at 361.95 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -67190,6 +69456,17 @@
 		)
 		(property "Description" ""
 			(at 321.31 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 321.31 128.27 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67416,6 +69693,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 680.72 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 680.72 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d4cd6aea-1867-48af-a810-d3969b82ca72")
 		)
@@ -67497,6 +69796,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 109.22 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 109.22 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e0913a4d-d156-4fe2-8b98-2d3972bf6283")
 		)
@@ -67568,6 +69889,28 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
+			(at 226.06 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 226.06 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
 			(at 226.06 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -67990,6 +70333,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 619.76 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 619.76 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2f4383b7-a074-4b0d-b981-dcbc47555001")
 		)
@@ -68209,6 +70574,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 101.6 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 101.6 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8c0fe82a-b1f8-4ab1-9e5e-bf6b1003ad82")
 		)
@@ -68288,6 +70675,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 439.42 193.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 439.42 193.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fee6d1e1-a1c4-47f0-a8f6-d34b1136e70e")
 		)
@@ -68358,6 +70767,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 701.04 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 701.04 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 701.04 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -68448,6 +70879,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 741.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 741.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cc9c1aa5-3f7f-4e96-970f-c0ba3567e592")
 		)
@@ -68527,7 +70980,7 @@
 				)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "RNF18FTD1K00CT-ND"
 			(at 458.47 344.17 90)
 			(hide yes)
 			(show_name no)
@@ -68539,6 +70992,17 @@
 			)
 		)
 		(property "Mouser" ""
+			(at 458.47 344.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
 			(at 458.47 344.17 90)
 			(hide yes)
 			(show_name no)
@@ -68768,6 +71232,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.tindie.com/products/visrealm/pico9918-pro/"
+			(at 435.61 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "40"
 			(uuid "e2b7ab32-afa8-4627-b830-010075454880")
 		)
@@ -68962,6 +71437,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 640.08 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 640.08 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7b1e3cf4-5764-425e-ba10-b4e0e635470d")
 		)
@@ -69032,6 +71529,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 660.4 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 660.4 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 660.4 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -69294,6 +71813,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 210.82 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 210.82 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "63472285-2e07-46e6-942e-730d2a246fb0")
 		)
@@ -69364,6 +71905,17 @@
 		)
 		(property "Description" ""
 			(at 718.82 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 718.82 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -69953,6 +72505,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 660.4 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 660.4 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1d26ce70-15da-408f-a167-f98b72cbdca5")
 		)
@@ -70111,6 +72685,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 741.68 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 741.68 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1cec3579-8615-44fd-b62b-39dbeffb47c2")
 		)
@@ -70190,6 +72786,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 753.11 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ca9a4e9a-fc2c-4c8b-ac53-f4cf0de367dc")
 		)
@@ -70260,6 +72867,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 619.76 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 619.76 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 619.76 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -70418,6 +73047,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 701.04 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 701.04 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 701.04 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -70724,6 +73375,28 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 741.68 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 741.68 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "082b22d5-d21d-4d1e-9ab4-cc2e901cf64f")
 		)
@@ -70794,6 +73467,28 @@
 			)
 		)
 		(property "Description" "Cherry MX Switch"
+			(at 660.4 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 660.4 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
 			(at 660.4 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -70990,6 +73685,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 321.31 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 321.31 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b4bd9dd8-9b74-45af-b4f6-b2bdf666b17f")
 		)
@@ -71174,6 +73891,28 @@
 				)
 			)
 		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 116.84 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 116.84 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b9c7299f-3e00-4e92-ad06-643912b4683d")
 		)
@@ -71244,6 +73983,17 @@
 		)
 		(property "Description" ""
 			(at 695.96 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 695.96 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71332,6 +74082,17 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 764.54 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a8b4cfa3-75b6-497d-bf4f-06c308267a3a")
 		)
@@ -71404,6 +74165,17 @@
 			)
 		)
 		(property "Description" "Pin Header 1x2 2.54mm"
+			(at 412.75 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
 			(at 412.75 201.93 0)
 			(hide yes)
 			(show_name no)

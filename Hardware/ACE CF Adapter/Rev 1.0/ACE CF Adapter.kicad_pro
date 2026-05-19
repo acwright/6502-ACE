@@ -608,6 +608,18 @@
           "label": "Digikey",
           "name": "Digikey",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Mouser",
+          "name": "Mouser",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Other",
+          "name": "Other",
+          "show": true
         }
       ],
       "filter_string": "",
