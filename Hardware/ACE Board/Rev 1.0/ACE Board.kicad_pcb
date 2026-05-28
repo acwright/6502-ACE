@@ -4522,7 +4522,7 @@
 		)
 		(property "Value" "1k"
 			(at 2.54 1.92 90)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "69da9944-719f-4dae-ac6a-6c4b53361273")
 			(effects
 				(font
