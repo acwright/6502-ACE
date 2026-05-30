@@ -63,6 +63,14 @@
 #define POR_HOLD_MS       250  // Hold 6502 in reset at power-on for stable supply/clock
 #define RESET_DEBOUNCE_MS 20   // Reset button debounce interval
 
+// Boot grace period before the RTC SQW jiffy interrupt is armed. The DS1511Y
+// powers up with SQW in an undefined, battery-backed state that can default to
+// a 32.768 kHz output (an NMI every ~30 us). If those NMIs hit the 6502 during
+// the BIOS boot window (before NMI_PTR is initialized) the system hangs. We
+// hold off arming PCINT3 until the 6502 has had time to boot and the BIOS has
+// configured SQW, then enable it.
+#define SQW_BOOT_GRACE_MS 500
+
 // Jiffy clock: number of RTC SQW pulses per 6502 NMI tick
 #define JIFFY_DIVIDER 1
 
@@ -92,6 +100,8 @@ unsigned long matrixLastScan = 0;
 
 // Jiffy clock (RTC SQW) state
 volatile uint16_t jiffyCount = 0;
+bool sqwIntEnabled = false;            // Has PCINT3 (SQW) been armed yet?
+unsigned long resbReleasedAt = 0;     // millis() when RESB was last released
 
 void onInterrupt();
 void handleReset();
@@ -168,9 +178,14 @@ void handleReset() {
     if (pressed && !resetActive) {
       resetActive = true;
       digitalWrite(RESB, LOW);   // Assert reset
+      // Disarm the SQW jiffy interrupt while the 6502 is held in reset so the
+      // boot window after release is protected the same way as power-on.
+      PCICR &= ~_BV(PCIE3);
+      sqwIntEnabled = false;
     } else if (!pressed && resetActive) {
       resetActive = false;
       digitalWrite(RESB, HIGH);  // Release reset
+      resbReleasedAt = millis(); // Restart the boot grace period
     }
   }
 }
@@ -201,20 +216,32 @@ void setup() {
   
   attachInterrupt(digitalPinToInterrupt(PS2CLK), onInterrupt, FALLING);
 
-  // Enable pin-change interrupt on PD6 (PCINT30) for the RTC SQW jiffy clock.
+  // Configure the pin-change interrupt on PD6 (PCINT30) for the RTC SQW jiffy
+  // clock, but do NOT arm it yet. Arming is deferred until SQW_BOOT_GRACE_MS
+  // after RESB is released (see loop()) so a power-up 32.768 kHz SQW burst
+  // cannot storm the 6502 with NMIs during the BIOS boot window.
   PCMSK3 |= _BV(PCINT30);
   PCIFR  |= _BV(PCIF3);   // Clear any pending flag
-  PCICR  |= _BV(PCIE3);   // Enable PCINT[31:24]
 
   // Power-on reset: keep the 6502 held in reset briefly so its supply and the
   // 16 MHz clock are stable, then release.
   delay(POR_HOLD_MS);
   digitalWrite(RESB, HIGH);
+  resbReleasedAt = millis();
 }
 
 void loop() {
   // Handle the reset button (asserts RESB on the 6502 while held)
   handleReset();
+
+  // Arm the RTC SQW jiffy interrupt once the 6502 has had time to boot. This
+  // protects the BIOS boot window from a power-up 32.768 kHz SQW NMI storm.
+  if (!sqwIntEnabled && (millis() - resbReleasedAt >= SQW_BOOT_GRACE_MS)) {
+    jiffyCount = 0;
+    PCIFR |= _BV(PCIF3);   // Clear any flag accumulated while disarmed
+    PCICR |= _BV(PCIE3);   // Enable PCINT[31:24]
+    sqwIntEnabled = true;
+  }
 
   // Check PS/2 enable/disable (CA2)
   int ps2EnableState = digitalRead(VIA_CA2);
