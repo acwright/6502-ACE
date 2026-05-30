@@ -13,6 +13,8 @@ The AB Controller is firmware for the ATMega1284P microcontroller that provides 
 - **Buffered Input**: Uses circular buffers to prevent data loss during rapid typing
 - **Debounced Matrix Scanning**: Hardware debouncing for reliable matrix keyboard operation
 - **Enable/Disable Control**: Independent enable signals for PS/2 and matrix inputs
+- **6502 Reset Control**: Drives the 6502 RESB line, providing power-on reset and a debounced reset button
+- **Jiffy Clock**: Generates periodic 6502 NMIs from a DS1511Y RTC square-wave input
 
 ## Hardware Connections
 
@@ -47,6 +49,15 @@ Used for column scanning (matrix mode) or ASCII output (matrix output):
 - Pin 11 (PS2DATA) - PS/2 Data input
 - Pin 12 (VIA_CB1) - Matrix Data Ready strobe (output)
 - Pin 13 (VIA_CB2) - Matrix Enable (input, active low)
+
+#### 6502 System Control
+- PC0 (Pin 16) - RESET_BTN / Reset button (input, N.O., active low, internal pull-up)
+- PC7 (Pin 23) - RESB / 6502 reset output (active low)
+- PD6 (Pin 14) - RTC_SQW / DS1511Y square-wave input (jiffy clock source)
+- PD7 (Pin 15) - NMIB / 6502 non-maskable interrupt output (active low)
+
+#### Clock
+- XTAL1 - 16 MHz full-can oscillator module (external clock source)
 
 ### PS/2 Keyboard Interface
 
@@ -109,6 +120,30 @@ When VIA_CB2 (Pin 13) is pulled LOW:
 
 ### Dual Mode
 Both keyboards can operate simultaneously if both enable signals are active.
+
+## 6502 System Control
+
+In addition to keyboard input, the controller manages reset and interrupt timing
+for the host 6502.
+
+### Reset Control (RESB)
+
+The controller drives the 6502 RESB line on PC7 (active low):
+
+- **Power-on reset**: At startup RESB is asserted immediately and held low for
+  ~250 ms (`POR_HOLD_MS`) so the supply rails and 16 MHz oscillator stabilize
+  before the 6502 begins executing.
+- **Reset button**: A normally-open, active-low button on PC0 (internal pull-up)
+  is polled and debounced (`RESET_DEBOUNCE_MS`, ~20 ms). While the button is
+  held, RESB is asserted; releasing it brings the 6502 out of reset.
+
+### Jiffy Clock (NMIB)
+
+A DS1511Y RTC drives a square wave into PD6 (RTC_SQW). A pin-change interrupt
+counts the rising edges and, every `JIFFY_DIVIDER` edges (default 1), pulses the
+6502 NMIB line on PD7 low for ~5 µs. The NMI is generated directly in the ISR so
+its timing is independent of keyboard-scanning load. Set the DS1511Y SQW output
+rate (and `JIFFY_DIVIDER`) to obtain the desired jiffy tick frequency.
 
 ## ASCII Character Mapping
 
@@ -219,17 +254,23 @@ The project uses a MiniPro TL866 programmer for uploading.
 The `fuses.cfg` file contains the ATMega1284P fuse settings:
 
 ```properties
-lfuse = 0xff   # Low fuse
+lfuse = 0xe0   # Low fuse
 hfuse = 0xff   # High fuse  
 efuse = 0xff   # Extended fuse
 lock = 0xff    # Lock bits (unprogrammed)
 ```
 
 **Fuse Settings:**
-- **Low Fuse (0xFF)**: Full-swing crystal oscillator, no clock divide
+- **Low Fuse (0xE0)**: External clock source (16 MHz full-can oscillator on
+  XTAL1), slowly-rising-power start-up, no clock divide (CKDIV8 off), clock
+  output disabled
 - **High Fuse (0xFF)**: Default settings
 - **Extended Fuse (0xFF)**: Default settings
 - **Lock Bits (0xFF)**: No memory lock protection
+
+> **Note**: The low fuse selects the *external clock* source, which is required
+> for a full-can oscillator module driving XTAL1. Do not use a crystal-oscillator
+> fuse setting with this hardware.
 
 ⚠️ **Warning**: Incorrect fuse settings can brick your microcontroller. Verify fuse values are appropriate for your hardware configuration before programming.
 

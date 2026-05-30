@@ -53,6 +53,19 @@
 #define VIA_CB1 12
 #define VIA_CB2 13
 
+// 6502 system control (MightyCore "standard" pinout)
+#define RESET_BTN 16   // PC0 - reset button (N.O., active low, internal pullup)
+#define RESB      23   // PC7 - 6502 RESB output (active low)
+#define RTC_SQW   14   // PD6 - square-wave input from DS1511Y RTC
+#define NMIB      15   // PD7 - 6502 NMIB output (active low)
+
+// Power-on reset / reset button timing
+#define POR_HOLD_MS       250  // Hold 6502 in reset at power-on for stable supply/clock
+#define RESET_DEBOUNCE_MS 20   // Reset button debounce interval
+
+// Jiffy clock: number of RTC SQW pulses per 6502 NMI tick
+#define JIFFY_DIVIDER 1
+
 #define BUFFER_SIZE 16
 
 CircularBuffer<uint8_t, BUFFER_SIZE> ps2Buffer;  // Buffer for PS/2 keyboard data
@@ -77,7 +90,11 @@ unsigned long matrixLastScan = 0;
 #define MATRIX_SCAN_INTERVAL 10  // Scan every 10ms
 #define MATRIX_DEBOUNCE_COUNT 2  // Key must be stable for 2 scans
 
+// Jiffy clock (RTC SQW) state
+volatile uint16_t jiffyCount = 0;
+
 void onInterrupt();
+void handleReset();
 void enablePS2();
 void disablePS2();
 void enableMatrix();
@@ -110,7 +127,68 @@ const uint8_t matrixMap[8][8] PROGMEM = {
   {             0xFE,  0xFF,  0xFF,  0x20,  0xFF,  0x1C,  0x1F,  0x1D }   // CTRL (ign) (ign) SPACE (ign) LEFT DOWN RIGHT
 };
 
+// ============================================================================
+// Jiffy Clock (RTC SQW -> 6502 NMI)
+// ============================================================================
+// The DS1511Y RTC drives a square wave into PD6 (RTC_SQW). Every JIFFY_DIVIDER
+// rising edges we pulse NMIB (PD7) low to tick the 6502's jiffy clock. The NMI
+// is generated directly in the ISR so its timing is independent of loop() load.
+ISR(PCINT3_vect) {
+  static uint8_t lastSQW = 1;
+  uint8_t cur = (PIND & _BV(PD6)) ? 1 : 0;
+
+  if (cur && !lastSQW) {  // Rising edge of SQW
+    if (++jiffyCount >= JIFFY_DIVIDER) {
+      jiffyCount = 0;
+      PORTD &= ~_BV(PD7);   // NMIB low (assert)
+      delayMicroseconds(5);
+      PORTD |= _BV(PD7);    // NMIB high (release)
+    }
+  }
+  lastSQW = cur;
+}
+
+// Poll the reset button and drive RESB on the 6502. The button is N.O. and
+// active low; while it is held (debounced) the 6502 is kept in reset.
+void handleReset() {
+  static bool resetActive = false;
+  static int lastReading = HIGH;
+  static unsigned long lastChange = 0;
+
+  int reading = digitalRead(RESET_BTN);
+  unsigned long now = millis();
+
+  if (reading != lastReading) {
+    lastReading = reading;
+    lastChange = now;
+  }
+
+  if (now - lastChange >= RESET_DEBOUNCE_MS) {
+    bool pressed = (reading == LOW);
+    if (pressed && !resetActive) {
+      resetActive = true;
+      digitalWrite(RESB, LOW);   // Assert reset
+    } else if (!pressed && resetActive) {
+      resetActive = false;
+      digitalWrite(RESB, HIGH);  // Release reset
+    }
+  }
+}
+
 void setup() {
+  // ---- 6502 system control ----
+  // Assert reset immediately so the 6502 stays held while we initialize.
+  pinMode(RESB, OUTPUT);
+  digitalWrite(RESB, LOW);
+  pinMode(RESET_BTN, INPUT_PULLUP);
+
+  // NMIB idles HIGH (active low); fired by the jiffy clock.
+  pinMode(NMIB, OUTPUT);
+  digitalWrite(NMIB, HIGH);
+
+  // RTC square-wave input (DS1511Y SQW). Pullup in case the output is open-drain.
+  pinMode(RTC_SQW, INPUT_PULLUP);
+
   pinMode(VIA_CA1, OUTPUT);
   pinMode(VIA_CA2, INPUT_PULLUP);
   pinMode(VIA_CB1, OUTPUT);
@@ -122,9 +200,22 @@ void setup() {
   digitalWrite(VIA_CB1, HIGH);
   
   attachInterrupt(digitalPinToInterrupt(PS2CLK), onInterrupt, FALLING);
+
+  // Enable pin-change interrupt on PD6 (PCINT30) for the RTC SQW jiffy clock.
+  PCMSK3 |= _BV(PCINT30);
+  PCIFR  |= _BV(PCIF3);   // Clear any pending flag
+  PCICR  |= _BV(PCIE3);   // Enable PCINT[31:24]
+
+  // Power-on reset: keep the 6502 held in reset briefly so its supply and the
+  // 16 MHz clock are stable, then release.
+  delay(POR_HOLD_MS);
+  digitalWrite(RESB, HIGH);
 }
 
 void loop() {
+  // Handle the reset button (asserts RESB on the 6502 while held)
+  handleReset();
+
   // Check PS/2 enable/disable (CA2)
   int ps2EnableState = digitalRead(VIA_CA2);
   if (ps2EnableState == LOW && !ps2Enabled) {
