@@ -1049,7 +1049,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "af4db757-290a-4015-a32b-bdb162a189c3")
@@ -2794,7 +2794,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "592b715d-5dbe-4145-927c-13045aaf691c")
@@ -2962,7 +2962,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 0)
 			(layer "F.SilkS")
 			(uuid "333ae590-9f6f-4af1-9c60-f10de73381de")
@@ -5574,7 +5574,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "6c770741-a505-446f-a935-5f034de91745")
@@ -8000,7 +8000,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "0b8f2ada-bf80-404e-9322-0f73663bee4f")
@@ -8460,7 +8460,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "192f342c-2fc3-4fbd-9437-47d9f8f982b9")
@@ -10560,7 +10560,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "c2ea937f-14b1-4b71-8853-6a20751829bb")
@@ -11340,7 +11340,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.2898 0 90)
 			(layer "F.SilkS")
 			(uuid "f10fb418-a203-4aed-af7e-dd12e782e1f2")
@@ -14889,7 +14889,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "5720d05a-c8b5-493e-a2e3-79e6c8e89d38")
@@ -18678,6 +18678,7 @@
 				(pins "1")
 			)
 		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.45 -1.45)
@@ -23595,7 +23596,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "4bbb631a-037a-44eb-9718-559931b488f3")
@@ -25259,7 +25260,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "708b8ad6-9322-4bd7-a688-ab47a4ae717c")
@@ -29112,7 +29113,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "9da8691f-cbc5-46a8-be54-fc5dc7d06dd4")
@@ -31072,7 +31073,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "4913dae1-2190-4dda-9568-41447ffc8c76")
@@ -32443,7 +32444,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "76ac97ad-c64b-4486-96a0-4ee4dddab7af")
@@ -34509,7 +34510,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "068b9156-31fe-4bc5-a784-b62ff96a1649")
@@ -35975,7 +35976,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 2.54 1.92 90)
 			(layer "F.SilkS")
 			(uuid "fe0bfec3-27d7-463b-8e4a-2b5b820447f0")
@@ -37234,6 +37235,7 @@
 				(pins "1")
 			)
 		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.45 -1.45)
@@ -38435,7 +38437,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm* SO14*")
-		(path "/bdec5e3b-dc4d-4a4f-a990-802f1b44cc7d")
+		(path "/a44b5e6f-4cf3-45ac-8a5d-97258a05c159")
 		(sheetname "/")
 		(sheetfile "ACE Board.kicad_sch")
 		(units
@@ -42058,7 +42060,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "f2e5c055-690e-43cb-840e-27b8af855e07")
@@ -42394,7 +42396,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.324 0 0)
 			(layer "F.SilkS")
 			(uuid "5c8e9e6a-1ee1-48c2-9b96-f10d96addea2")
@@ -45797,7 +45799,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm* SO14*")
-		(path "/4ea45bdb-1c3b-4afe-a1fd-8304a2be515a")
+		(path "/c0a15f25-2af1-4561-9b11-b23da3764fb3")
 		(sheetname "/")
 		(sheetfile "ACE Board.kicad_sch")
 		(units
@@ -46570,7 +46572,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 0)
 			(layer "F.SilkS")
 			(uuid "4ee68b03-eef8-4a86-ae2a-56ecd0d5df52")
@@ -48594,7 +48596,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 0)
 			(layer "F.SilkS")
 			(uuid "7f9d9954-f630-47b9-b05e-37af70cc5c0d")
@@ -49511,7 +49513,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "e0730420-0d40-4208-b53f-abcd209c09aa")
@@ -54260,7 +54262,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 7.366 0 90)
 			(layer "F.SilkS")
 			(uuid "47518525-9fd6-4724-9ac9-7207763de2d6")
