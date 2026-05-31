@@ -333,6 +333,10 @@
       [
         "pin_to_pin|4978400|482600|1f1c15a0-628d-4b7f-9174-b4e6e999857e|a0aeb11a-ec42-43ff-a60f-2cfa375560e0|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
         ""
+      ],
+      [
+        "pin_to_pin|660400|469900|772d2d21-db7d-491e-8e68-a7abc951acb7|cabefaab-aed6-4da7-90fe-5e82bd7f6ba1|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
+        ""
       ]
     ],
     "meta": {
@@ -778,7 +782,7 @@
         "uuid": "34a60d42-c14a-479d-bef3-5ff0ee57bad5"
       }
     ],
-    "used_designators": "J22",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

@@ -18679,12 +18679,6 @@
 		(uuid "123c2c7f-8066-41e1-a13a-27abf920db8a")
 	)
 	(junction
-		(at 91.44 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "12c68868-3d0b-4d27-8e8e-a42f83c45d88")
-	)
-	(junction
 		(at 744.22 320.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -18937,7 +18931,7 @@
 		(uuid "3ffaded9-e744-4342-af91-634643c5d92f")
 	)
 	(junction
-		(at 99.06 20.32)
+		(at 93.98 20.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "408e5f24-054a-474d-b1c9-b75e36cc1ec5")
@@ -19279,7 +19273,7 @@
 		(uuid "789401c3-3f35-461d-a3c2-65a8123abf95")
 	)
 	(junction
-		(at 114.3 20.32)
+		(at 109.22 20.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7a453e44-62c9-4b4e-96bb-76de18209dd0")
@@ -19591,7 +19585,7 @@
 		(uuid "ab6b9200-ae1f-4e47-b274-24f7d707d15d")
 	)
 	(junction
-		(at 106.68 20.32)
+		(at 101.6 20.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac0fd455-bec4-469f-81a8-6c675d01880f")
@@ -20314,16 +20308,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 30.48) (xy 83.82 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "021afa2b-a6b9-4c25-88e2-dd8a1dbfe8f3")
-	)
-	(wire
-		(pts
 			(xy 107.95 351.79) (xy 113.03 351.79)
 		)
 		(stroke
@@ -20834,7 +20818,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 20.32) (xy 114.3 20.32)
+			(xy 115.57 20.32) (xy 109.22 20.32)
 		)
 		(stroke
 			(width 0)
@@ -21364,7 +21348,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 20.32) (xy 99.06 22.86)
+			(xy 93.98 20.32) (xy 93.98 22.86)
 		)
 		(stroke
 			(width 0)
@@ -23454,7 +23438,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 20.32) (xy 99.06 20.32)
+			(xy 101.6 20.32) (xy 93.98 20.32)
 		)
 		(stroke
 			(width 0)
@@ -24034,7 +24018,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 30.48) (xy 106.68 33.02)
+			(xy 101.6 30.48) (xy 101.6 33.02)
 		)
 		(stroke
 			(width 0)
@@ -24354,7 +24338,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 30.48) (xy 114.3 33.02)
+			(xy 109.22 30.48) (xy 109.22 33.02)
 		)
 		(stroke
 			(width 0)
@@ -24364,7 +24348,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 20.32) (xy 91.44 20.32)
+			(xy 93.98 20.32) (xy 86.36 20.32)
 		)
 		(stroke
 			(width 0)
@@ -25084,7 +25068,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 30.48) (xy 99.06 33.02)
+			(xy 93.98 30.48) (xy 93.98 33.02)
 		)
 		(stroke
 			(width 0)
@@ -26834,7 +26818,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 30.48) (xy 91.44 33.02)
+			(xy 86.36 30.48) (xy 86.36 33.02)
 		)
 		(stroke
 			(width 0)
@@ -27324,7 +27308,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 20.32) (xy 91.44 22.86)
+			(xy 86.36 20.32) (xy 86.36 22.86)
 		)
 		(stroke
 			(width 0)
@@ -29284,7 +29268,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 20.32) (xy 106.68 22.86)
+			(xy 101.6 20.32) (xy 101.6 22.86)
 		)
 		(stroke
 			(width 0)
@@ -29864,7 +29848,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 20.32) (xy 106.68 20.32)
+			(xy 109.22 20.32) (xy 101.6 20.32)
 		)
 		(stroke
 			(width 0)
@@ -30344,7 +30328,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 20.32) (xy 114.3 22.86)
+			(xy 109.22 20.32) (xy 109.22 22.86)
 		)
 		(stroke
 			(width 0)
@@ -30731,16 +30715,6 @@
 			(type default)
 		)
 		(uuid "c85dbc2a-0ff1-4fe7-9b0d-7b3ba11a98f4")
-	)
-	(wire
-		(pts
-			(xy 83.82 20.32) (xy 83.82 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c900baa6-2ea4-44e3-a33e-f4d9e7fe41da")
 	)
 	(wire
 		(pts
@@ -32071,16 +32045,6 @@
 			(type default)
 		)
 		(uuid "e21b2229-36c6-4431-83f8-970fd70ab36c")
-	)
-	(wire
-		(pts
-			(xy 91.44 20.32) (xy 83.82 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e239f8d1-6bd3-422d-9eb6-a018cdad595e")
 	)
 	(wire
 		(pts
@@ -33820,7 +33784,7 @@
 	)
 	(global_label "RDY"
 		(shape output)
-		(at 114.3 33.02 270)
+		(at 109.22 33.02 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33829,7 +33793,7 @@
 		)
 		(uuid "0142f3f8-3a05-462c-93ec-def79345f661")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.3 33.02 90)
+			(at 109.22 33.02 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34050,7 +34014,7 @@
 	)
 	(global_label "IRQB"
 		(shape output)
-		(at 106.68 33.02 270)
+		(at 101.6 33.02 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -34059,7 +34023,7 @@
 		)
 		(uuid "058bd24e-af05-401b-98fc-b52db5929c2c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 106.68 33.02 90)
+			(at 101.6 33.02 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35158,7 +35122,7 @@
 	)
 	(global_label "NMIB"
 		(shape output)
-		(at 99.06 33.02 270)
+		(at 93.98 33.02 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -35167,7 +35131,7 @@
 		)
 		(uuid "1ddbdbc0-0dc8-448b-a6b8-5deb09eeddc7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.06 33.02 90)
+			(at 93.98 33.02 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36430,7 +36394,7 @@
 	)
 	(global_label "VCC"
 		(shape input)
-		(at 120.65 20.32 0)
+		(at 115.57 20.32 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -36439,7 +36403,7 @@
 		)
 		(uuid "34877af1-8040-45e3-8738-c4d24d67ac2d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.65 20.32 90)
+			(at 115.57 20.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37220,28 +37184,6 @@
 		(uuid "43498032-74c5-4b63-b50d-6ad7591f23c3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 81.28 334.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "SOB"
-		(shape output)
-		(at 83.82 33.02 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4470e17c-c5ac-4b6b-baf5-a3c56dee6598")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 83.82 33.02 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40408,7 +40350,7 @@
 	)
 	(global_label "BE"
 		(shape output)
-		(at 91.44 33.02 270)
+		(at 86.36 33.02 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40417,7 +40359,7 @@
 		)
 		(uuid "84fecf48-3f25-41a1-aa66-259351dd4046")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.44 33.02 90)
+			(at 86.36 33.02 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45626,7 +45568,7 @@
 			)
 		)
 	)
-	(global_label "SOB"
+	(global_label "VCC"
 		(shape input)
 		(at 68.58 46.99 0)
 		(effects
@@ -47275,7 +47217,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0150b516-b630-4add-b0e7-05e41e0b7cc7")
-		(property "Reference" "J19"
+		(property "Reference" "J20"
 			(at 636.016 254.254 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47350,7 +47292,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "J19")
+					(reference "J20")
 					(unit 1)
 				)
 			)
@@ -47525,7 +47467,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0473f02b-f3b8-4d89-af0d-b80b2a1bfa3c")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR04"
 			(at 93.98 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -47585,7 +47527,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "#PWR05")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -47704,7 +47646,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0675029f-d391-43b1-9d3a-948a21094593")
-		(property "Reference" "J18"
+		(property "Reference" "J19"
 			(at 506.73 233.045 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47913,7 +47855,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "J18")
+					(reference "J19")
 					(unit 1)
 				)
 			)
@@ -48032,7 +47974,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09056aa4-9531-41d0-b15f-11723a1c765c")
-		(property "Reference" "SW51"
+		(property "Reference" "SW52"
 			(at 640.08 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48116,7 +48058,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW51")
+					(reference "SW52")
 					(unit 1)
 				)
 			)
@@ -48369,7 +48311,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0e45a5b2-a35c-4210-ba23-a72a9b365473")
-		(property "Reference" "SW25"
+		(property "Reference" "SW26"
 			(at 619.76 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48453,7 +48395,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW25")
+					(reference "SW26")
 					(unit 1)
 				)
 			)
@@ -48627,7 +48569,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ef86b13-4a02-4749-b69e-ef7b4c57e1e9")
-		(property "Reference" "SW17"
+		(property "Reference" "SW18"
 			(at 619.76 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48711,7 +48653,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW17")
+					(reference "SW18")
 					(unit 1)
 				)
 			)
@@ -48729,7 +48671,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f4b5c49-5428-4165-b951-6ff420d1f96b")
-		(property "Reference" "SW69"
+		(property "Reference" "SW70"
 			(at 71.12 326.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48844,7 +48786,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW69")
+					(reference "SW70")
 					(unit 1)
 				)
 			)
@@ -48861,7 +48803,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ff0f2c6-43dd-4920-937f-da9b7de7022e")
-		(property "Reference" "R25"
+		(property "Reference" "R23"
 			(at 44.196 242.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48947,7 +48889,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R25")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -49236,7 +49178,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13adf94f-4bff-4efb-9cfd-5ff4931efc17")
-		(property "Reference" "SW43"
+		(property "Reference" "SW44"
 			(at 640.08 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49320,7 +49262,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW43")
+					(reference "SW44")
 					(unit 1)
 				)
 			)
@@ -49706,7 +49648,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 106.68 26.67 180)
+		(at 101.6 26.67 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -49715,8 +49657,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "17ebbe05-d8e9-40db-8e26-3a209838ea92")
-		(property "Reference" "R4"
-			(at 110.49 25.2222 0)
+		(property "Reference" "R3"
+			(at 105.41 25.2222 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49726,7 +49668,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 110.49 27.5336 0)
+			(at 105.41 27.5336 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49736,7 +49678,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 108.458 26.67 90)
+			(at 103.378 26.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49747,7 +49689,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 26.67 0)
+			(at 101.6 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49758,7 +49700,7 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
-			(at 106.68 26.67 0)
+			(at 101.6 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49769,7 +49711,7 @@
 			)
 		)
 		(property "Digikey" "RNF18FTD1K00CT-ND"
-			(at 106.68 26.67 0)
+			(at 101.6 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49780,7 +49722,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
-			(at 106.68 26.67 0)
+			(at 101.6 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49799,7 +49741,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R4")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -49816,7 +49758,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "18ded2d6-13ac-4ef5-9962-8980c33007f2")
-		(property "Reference" "J17"
+		(property "Reference" "J18"
 			(at 461.01 233.045 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50014,7 +49956,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "J17")
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -50170,7 +50112,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b817d00-b68f-47c4-b090-478a029ba569")
-		(property "Reference" "SW29"
+		(property "Reference" "SW30"
 			(at 701.04 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50254,7 +50196,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW29")
+					(reference "SW30")
 					(unit 1)
 				)
 			)
@@ -50350,7 +50292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e079739-8775-4141-9e4f-24fe00518384")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG02"
 			(at 659.765 320.04 0)
 			(hide yes)
 			(show_name no)
@@ -50412,7 +50354,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "#FLG01")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -50430,7 +50372,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e6dc015-67ec-46bf-86b6-91be7f93d199")
-		(property "Reference" "SW67"
+		(property "Reference" "SW68"
 			(at 660.4 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -50516,7 +50458,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW67")
+					(reference "SW68")
 					(unit 1)
 				)
 			)
@@ -50534,7 +50476,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f458b70-8b52-4b95-9498-28400f47a1d6")
-		(property "Reference" "SW35"
+		(property "Reference" "SW36"
 			(at 660.4 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50618,7 +50560,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW35")
+					(reference "SW36")
 					(unit 1)
 				)
 			)
@@ -50838,7 +50780,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "255a7922-5d9d-439d-82a4-813cf424dd91")
-		(property "Reference" "SW49"
+		(property "Reference" "SW50"
 			(at 701.294 139.446 0)
 			(hide yes)
 			(show_name no)
@@ -50924,7 +50866,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW49")
+					(reference "SW50")
 					(unit 1)
 				)
 			)
@@ -51123,7 +51065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "274df19b-640c-44c3-b48e-0a1c6df98e28")
-		(property "Reference" "SW68"
+		(property "Reference" "SW69"
 			(at 619.76 243.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51210,7 +51152,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW68")
+					(reference "SW69")
 					(unit 1)
 				)
 			)
@@ -51228,7 +51170,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29b1482e-9556-4968-b8c6-26accfc85150")
-		(property "Reference" "SW28"
+		(property "Reference" "SW29"
 			(at 680.72 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51312,7 +51254,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW28")
+					(reference "SW29")
 					(unit 1)
 				)
 			)
@@ -51330,7 +51272,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a0b371e-7fbe-447b-9128-d453c5e61386")
-		(property "Reference" "SW45"
+		(property "Reference" "SW46"
 			(at 680.72 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51414,7 +51356,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW45")
+					(reference "SW46")
 					(unit 1)
 				)
 			)
@@ -51568,7 +51510,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 99.06 26.67 180)
+		(at 93.98 26.67 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -51577,8 +51519,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2b978e04-1e4e-4015-891f-efd90f162011")
-		(property "Reference" "R3"
-			(at 102.87 25.2222 0)
+		(property "Reference" "R2"
+			(at 97.79 25.2222 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -51588,7 +51530,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 102.87 27.5336 0)
+			(at 97.79 27.5336 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -51598,7 +51540,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 100.838 26.67 90)
+			(at 95.758 26.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51609,7 +51551,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 26.67 0)
+			(at 93.98 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51620,7 +51562,7 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
-			(at 99.06 26.67 0)
+			(at 93.98 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51631,7 +51573,7 @@
 			)
 		)
 		(property "Digikey" "RNF18FTD1K00CT-ND"
-			(at 99.06 26.67 0)
+			(at 93.98 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51642,7 +51584,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
-			(at 99.06 26.67 0)
+			(at 93.98 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51661,7 +51603,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R3")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -51678,7 +51620,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2bcc87b6-50cf-4945-a8a8-124a57ae2e6c")
-		(property "Reference" "R14"
+		(property "Reference" "R13"
 			(at 235.458 120.7516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51689,7 +51631,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 235.458 123.063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51764,7 +51706,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R14")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -52062,7 +52004,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f63f639-8b7d-4169-9e3f-50b16b618a16")
-		(property "Reference" "SW30"
+		(property "Reference" "SW31"
 			(at 721.36 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -52146,7 +52088,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW30")
+					(reference "SW31")
 					(unit 1)
 				)
 			)
@@ -52519,7 +52461,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "359cd149-1d61-4cc3-bb2b-92d867ca5797")
-		(property "Reference" "SW63"
+		(property "Reference" "SW64"
 			(at 721.36 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -52603,7 +52545,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW63")
+					(reference "SW64")
 					(unit 1)
 				)
 			)
@@ -52836,7 +52778,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "38500931-daa8-43b2-bdea-ed337da7f906")
-		(property "Reference" "R16"
+		(property "Reference" "R14"
 			(at 182.118 142.3416 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -52847,7 +52789,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 182.118 144.653 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -52922,7 +52864,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R16")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -52940,7 +52882,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "390f3baa-2203-421e-ae93-f5cf61e2bf89")
-		(property "Reference" "SW38"
+		(property "Reference" "SW39"
 			(at 721.36 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53024,7 +52966,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW38")
+					(reference "SW39")
 					(unit 1)
 				)
 			)
@@ -53359,7 +53301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a13b4b4-3694-4ee1-9fe9-62b401ac33a6")
-		(property "Reference" "SW39"
+		(property "Reference" "SW40"
 			(at 741.68 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53443,7 +53385,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW39")
+					(reference "SW40")
 					(unit 1)
 				)
 			)
@@ -53742,7 +53684,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ce90aa9-70ba-4e26-83ad-fed6baf5c840")
-		(property "Reference" "#FLG04"
+		(property "Reference" "#FLG01"
 			(at 425.45 132.715 0)
 			(hide yes)
 			(show_name no)
@@ -53804,7 +53746,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "#FLG04")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -53822,7 +53764,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3f43161f-aa7b-4e04-ac69-d6bb16988089")
-		(property "Reference" "SW36"
+		(property "Reference" "SW37"
 			(at 680.72 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53906,7 +53848,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW36")
+					(reference "SW37")
 					(unit 1)
 				)
 			)
@@ -54172,7 +54114,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "425e5064-acad-4159-8236-836433a4762a")
-		(property "Reference" "SW64"
+		(property "Reference" "SW65"
 			(at 741.68 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54256,7 +54198,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW64")
+					(reference "SW65")
 					(unit 1)
 				)
 			)
@@ -54365,7 +54307,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "495033d4-62ea-4f2f-b188-d65ab1bed7d5")
-		(property "Reference" "R19"
+		(property "Reference" "R17"
 			(at 204.978 142.3416 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54376,7 +54318,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 204.978 144.653 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54451,7 +54393,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R19")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -54548,7 +54490,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a437bfc-c854-43a8-8892-20404057a004")
-		(property "Reference" "SW48"
+		(property "Reference" "SW49"
 			(at 762 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54632,7 +54574,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW48")
+					(reference "SW49")
 					(unit 1)
 				)
 			)
@@ -54828,7 +54770,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4c0d29eb-9421-444c-a8d2-a29d1cca0a84")
-		(property "Reference" "R34"
+		(property "Reference" "R32"
 			(at 133.858 379.8316 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54914,7 +54856,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R34")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -54932,7 +54874,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4d3773f1-e4c9-4d6f-a15a-5846b33121ba")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG04"
 			(at 659.765 347.98 0)
 			(hide yes)
 			(show_name no)
@@ -54994,7 +54936,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "#FLG03")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -55149,7 +55091,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4de947d4-aff4-4da7-9561-e684c03f8bd9")
-		(property "Reference" "SW55"
+		(property "Reference" "SW56"
 			(at 721.36 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55233,7 +55175,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW55")
+					(reference "SW56")
 					(unit 1)
 				)
 			)
@@ -55466,7 +55408,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "50df985d-ba07-4074-bebb-5894644e1619")
-		(property "Reference" "R21"
+		(property "Reference" "R19"
 			(at 220.218 142.3416 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55477,7 +55419,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 220.218 144.653 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55552,7 +55494,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R21")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -55560,7 +55502,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 91.44 26.67 180)
+		(at 86.36 26.67 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -55569,8 +55511,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "50e45fa3-5735-49a9-a40e-7c4469646e2d")
-		(property "Reference" "R2"
-			(at 95.25 25.2222 0)
+		(property "Reference" "R1"
+			(at 90.17 25.2222 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -55580,7 +55522,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 95.25 27.5336 0)
+			(at 90.17 27.5336 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -55590,7 +55532,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 93.218 26.67 90)
+			(at 88.138 26.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55601,7 +55543,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 26.67 0)
+			(at 86.36 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55612,7 +55554,7 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
-			(at 91.44 26.67 0)
+			(at 86.36 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55623,7 +55565,7 @@
 			)
 		)
 		(property "Digikey" "RNF18FTD1K00CT-ND"
-			(at 91.44 26.67 0)
+			(at 86.36 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55634,7 +55576,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
-			(at 91.44 26.67 0)
+			(at 86.36 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55653,7 +55595,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R2")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -55671,7 +55613,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5339c155-a044-47fe-8d7b-66e653bb79b7")
-		(property "Reference" "J21"
+		(property "Reference" "J22"
 			(at 525.78 335.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55820,7 +55762,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "J21")
+					(reference "J22")
 					(unit 1)
 				)
 			)
@@ -55838,7 +55780,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5397b6b1-ab35-4dcd-98fd-672643940c80")
-		(property "Reference" "SW61"
+		(property "Reference" "SW62"
 			(at 680.72 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55922,7 +55864,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW61")
+					(reference "SW62")
 					(unit 1)
 				)
 			)
@@ -56119,7 +56061,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b024477-2ebe-42b1-83e2-ef92d82387d7")
-		(property "Reference" "SW52"
+		(property "Reference" "SW53"
 			(at 660.4 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -56203,7 +56145,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW52")
+					(reference "SW53")
 					(unit 1)
 				)
 			)
@@ -56220,7 +56162,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5b59dc61-1a88-4733-b8cd-6e43b5cce221")
-		(property "Reference" "R36"
+		(property "Reference" "R34"
 			(at 149.098 379.8316 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -56306,7 +56248,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R36")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -56719,7 +56661,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6133d7ba-7b47-49c3-8ecd-d6b3e14f2dee")
-		(property "Reference" "R26"
+		(property "Reference" "R24"
 			(at 617.22 271.6022 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -56792,7 +56734,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R26")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -56888,7 +56830,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "62727750-0c39-42e4-8590-90215dae571f")
-		(property "Reference" "SW32"
+		(property "Reference" "SW33"
 			(at 762 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -56972,7 +56914,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW32")
+					(reference "SW33")
 					(unit 1)
 				)
 			)
@@ -57092,7 +57034,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "638ff267-baad-4516-aa7d-65e3cd8885f7")
-		(property "Reference" "SW33"
+		(property "Reference" "SW34"
 			(at 619.76 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -57176,7 +57118,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW33")
+					(reference "SW34")
 					(unit 1)
 				)
 			)
@@ -57194,7 +57136,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "640fd2f7-661c-447a-95cb-59a02ce967db")
-		(property "Reference" "SW59"
+		(property "Reference" "SW60"
 			(at 660.4 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -57278,7 +57220,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW59")
+					(reference "SW60")
 					(unit 1)
 				)
 			)
@@ -57295,7 +57237,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "658ab58f-49fb-4137-bba0-075f9c44972a")
-		(property "Reference" "R17"
+		(property "Reference" "R15"
 			(at 189.738 142.3416 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -57306,7 +57248,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 189.738 144.653 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -57381,7 +57323,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R17")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -57578,7 +57520,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "662dc787-26c8-47dc-a150-3ed2443e24ab")
-		(property "Reference" "SW18"
+		(property "Reference" "SW19"
 			(at 640.08 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -57662,7 +57604,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW18")
+					(reference "SW19")
 					(unit 1)
 				)
 			)
@@ -58464,7 +58406,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69c4e56c-c549-48c9-85a2-d764f281cc45")
-		(property "Reference" "SW24"
+		(property "Reference" "SW25"
 			(at 762 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58548,7 +58490,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW24")
+					(reference "SW25")
 					(unit 1)
 				)
 			)
@@ -58667,7 +58609,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6a756e80-77de-4fbb-aee4-93407c5741cb")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR05"
 			(at 124.46 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -58727,7 +58669,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "#PWR06")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -58744,7 +58686,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6da8cd09-4d69-42d7-a793-cad4ec567896")
-		(property "Reference" "R7"
+		(property "Reference" "R6"
 			(at 182.118 120.7516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58755,7 +58697,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 182.118 123.063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58830,7 +58772,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R7")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -58847,7 +58789,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6ec9e7f2-1637-4aee-a7a8-15c8b1320305")
-		(property "Reference" "J20"
+		(property "Reference" "J21"
 			(at 636.016 268.224 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58922,7 +58864,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "J20")
+					(reference "J21")
 					(unit 1)
 				)
 			)
@@ -58939,7 +58881,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f3c62c9-a55e-4662-8b19-b8cecb89bb8c")
-		(property "Reference" "R12"
+		(property "Reference" "R11"
 			(at 220.218 120.7516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58950,7 +58892,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 220.218 123.063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -59025,7 +58967,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R12")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -59043,7 +58985,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "704794ac-f6bc-40ac-9725-9f35f16c5810")
-		(property "Reference" "SW19"
+		(property "Reference" "SW20"
 			(at 660.4 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -59127,7 +59069,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW19")
+					(reference "SW20")
 					(unit 1)
 				)
 			)
@@ -59256,7 +59198,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "74bc5c1b-5ff4-48e2-874e-1d94b0ba88af")
-		(property "Reference" "R18"
+		(property "Reference" "R16"
 			(at 197.358 142.3416 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -59267,7 +59209,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 197.358 144.653 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -59342,7 +59284,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R18")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -59360,7 +59302,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77086891-f9e3-4d18-b41b-5545886cfc18")
-		(property "Reference" "SW70"
+		(property "Reference" "SW17"
 			(at 365.76 95.2499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -59435,7 +59377,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW70")
+					(reference "SW17")
 					(unit 1)
 				)
 			)
@@ -59608,7 +59550,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78cff3c1-2cd1-45e9-a8fd-7142b282da17")
-		(property "Reference" "SW62"
+		(property "Reference" "SW63"
 			(at 701.04 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -59692,7 +59634,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW62")
+					(reference "SW63")
 					(unit 1)
 				)
 			)
@@ -59709,7 +59651,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "78d81399-4460-4e51-8e0b-5a2e58b8d81c")
-		(property "Reference" "R8"
+		(property "Reference" "R7"
 			(at 189.738 120.7516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -59720,7 +59662,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 189.738 123.063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -59795,7 +59737,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R8")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -59813,7 +59755,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "790f41a0-9091-44d1-9d23-4ba40fb4d176")
-		(property "Reference" "SW22"
+		(property "Reference" "SW23"
 			(at 721.36 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -59897,7 +59839,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW22")
+					(reference "SW23")
 					(unit 1)
 				)
 			)
@@ -60015,7 +59957,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7acadf57-5d95-4de5-bb90-b78d8c07f44f")
-		(property "Reference" "R10"
+		(property "Reference" "R9"
 			(at 204.978 120.7516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -60026,7 +59968,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 204.978 123.063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -60101,7 +60043,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R10")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -60472,7 +60414,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8046f8c5-a535-4c21-a692-76019df613a1")
-		(property "Reference" "R29"
+		(property "Reference" "R27"
 			(at 95.758 379.8316 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -60558,7 +60500,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R29")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -60949,7 +60891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8531a534-5749-48ac-83fd-f74cb6d5774d")
-		(property "Reference" "SW50"
+		(property "Reference" "SW51"
 			(at 619.76 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61033,7 +60975,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW50")
+					(reference "SW51")
 					(unit 1)
 				)
 			)
@@ -61051,7 +60993,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "860ffa9c-f27b-4374-a998-ed82424b6e5c")
-		(property "Reference" "SW46"
+		(property "Reference" "SW47"
 			(at 721.36 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61135,7 +61077,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW46")
+					(reference "SW47")
 					(unit 1)
 				)
 			)
@@ -61254,7 +61196,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8abf4d87-d586-422e-90d8-65ee53c03735")
-		(property "Reference" "SW21"
+		(property "Reference" "SW22"
 			(at 701.04 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61338,7 +61280,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW21")
+					(reference "SW22")
 					(unit 1)
 				)
 			)
@@ -61760,107 +61702,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 83.82 26.67 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8d9b64c3-8ff2-41cd-a195-405355bb468e")
-		(property "Reference" "R1"
-			(at 87.63 25.2222 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 87.63 27.5336 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 85.598 26.67 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1/8 W Resistor"
-			(at 83.82 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey" "RNF18FTD1K00CT-ND"
-			(at 83.82 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
-			(at 83.82 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "94cc3d57-a957-4a2d-8b05-711bd68cbac0")
-		)
-		(pin "1"
-			(uuid "b24bdcf4-0755-4e3c-b0f4-f5d8850c007e")
-		)
-		(instances
-			(project "ACE Board"
-				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 195.58 121.92 180)
 		(unit 1)
 		(body_style 1)
@@ -61870,7 +61711,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8ddaa4b3-6276-4eb0-b64a-6938499305b0")
-		(property "Reference" "R9"
+		(property "Reference" "R8"
 			(at 197.358 120.7516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61881,7 +61722,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 197.358 123.063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61956,7 +61797,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R9")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -62254,7 +62095,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90eb1a89-6314-42c1-8a51-5cae14f62427")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR06"
 			(at 374.65 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -62314,7 +62155,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "#PWR03")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -62410,7 +62251,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "940394f3-1ac9-4cd2-91cb-d7e912abd479")
-		(property "Reference" "SW23"
+		(property "Reference" "SW24"
 			(at 741.68 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62494,7 +62335,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW23")
+					(reference "SW24")
 					(unit 1)
 				)
 			)
@@ -63237,7 +63078,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "96ee56d4-c321-4724-ad40-cf15f4c5f9d1")
-		(property "Reference" "SW58"
+		(property "Reference" "SW59"
 			(at 619.76 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -63321,7 +63162,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW58")
+					(reference "SW59")
 					(unit 1)
 				)
 			)
@@ -63339,7 +63180,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97243ee2-6ff6-4f2e-88af-24003437ae62")
-		(property "Reference" "J22"
+		(property "Reference" "J14"
 			(at 689.61 187.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -63454,7 +63295,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "J22")
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -64527,7 +64368,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9df07d89-e939-4448-8a50-805874d2c283")
-		(property "Reference" "R35"
+		(property "Reference" "R33"
 			(at 141.478 379.8316 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -64613,7 +64454,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R35")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -64631,7 +64472,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0a79317-f563-427f-bea3-474603859de4")
-		(property "Reference" "SW53"
+		(property "Reference" "SW54"
 			(at 680.72 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -64715,7 +64556,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW53")
+					(reference "SW54")
 					(unit 1)
 				)
 			)
@@ -65226,7 +65067,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6bd75ac-7abf-4f9d-973b-7b12e759704b")
-		(property "Reference" "J16"
+		(property "Reference" "J17"
 			(at 598.17 246.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65313,7 +65154,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "J16")
+					(reference "J17")
 					(unit 1)
 				)
 			)
@@ -65509,7 +65350,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "abecd8c0-58f5-4158-8de3-998600703d23")
-		(property "Reference" "R33"
+		(property "Reference" "R31"
 			(at 126.238 379.8316 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65595,7 +65436,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R33")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -65815,7 +65656,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af7a5380-5ab4-4ffa-868f-8f3f30a59634")
-		(property "Reference" "SW20"
+		(property "Reference" "SW21"
 			(at 680.72 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65899,7 +65740,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW20")
+					(reference "SW21")
 					(unit 1)
 				)
 			)
@@ -66196,7 +66037,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b23ab7a8-56e5-4078-a2e7-a47efb2b4d67")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR03"
 			(at 67.31 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -66256,7 +66097,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "#PWR04")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -66274,7 +66115,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2d143f0-d60d-4c4b-9fed-1bd8ad3be3c9")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG03"
 			(at 466.725 344.17 0)
 			(hide yes)
 			(show_name no)
@@ -66336,7 +66177,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "#FLG02")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -66354,7 +66195,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3b2d6fc-132b-4499-a0ef-faf0e0e5a06d")
-		(property "Reference" "SW40"
+		(property "Reference" "SW41"
 			(at 762 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66438,7 +66279,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW40")
+					(reference "SW41")
 					(unit 1)
 				)
 			)
@@ -66456,7 +66297,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4ee1ec1-a6c6-404a-ba88-485b14baa409")
-		(property "Reference" "SW65"
+		(property "Reference" "SW66"
 			(at 762 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66540,7 +66381,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW65")
+					(reference "SW66")
 					(unit 1)
 				)
 			)
@@ -66548,7 +66389,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 114.3 26.67 180)
+		(at 109.22 26.67 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -66557,8 +66398,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b6528fd7-c470-4bf2-a9d7-7dd5b355d7c9")
-		(property "Reference" "R5"
-			(at 118.11 25.2222 0)
+		(property "Reference" "R4"
+			(at 113.03 25.2222 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -66568,7 +66409,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 118.11 27.5336 0)
+			(at 113.03 27.5336 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -66578,7 +66419,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 116.078 26.67 90)
+			(at 110.998 26.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66589,7 +66430,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 26.67 0)
+			(at 109.22 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66600,7 +66441,7 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
-			(at 114.3 26.67 0)
+			(at 109.22 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66611,7 +66452,7 @@
 			)
 		)
 		(property "Digikey" "RNF18FTD1K00CT-ND"
-			(at 114.3 26.67 0)
+			(at 109.22 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66622,7 +66463,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
-			(at 114.3 26.67 0)
+			(at 109.22 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66641,7 +66482,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R5")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -66658,7 +66499,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b6a25bbb-d55b-42f1-949d-8a4fc631eb69")
-		(property "Reference" "R23"
+		(property "Reference" "R21"
 			(at 235.458 142.3416 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66669,7 +66510,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 235.458 144.653 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66744,7 +66585,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R23")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -67552,7 +67393,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfef575e-73f3-46e6-a28e-cae9895bb0e7")
-		(property "Reference" "SW60"
+		(property "Reference" "SW61"
 			(at 640.08 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67636,7 +67477,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW60")
+					(reference "SW61")
 					(unit 1)
 				)
 			)
@@ -67755,7 +67596,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c024d343-5227-4c1f-a3ed-65d59f70f2fd")
-		(property "Reference" "R11"
+		(property "Reference" "R10"
 			(at 212.598 120.7516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67766,7 +67607,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 212.598 123.063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67841,7 +67682,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R11")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -67997,7 +67838,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c172019d-6c87-4ada-b24b-4e8bed942a0d")
-		(property "Reference" "SW34"
+		(property "Reference" "SW35"
 			(at 640.08 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -68081,7 +67922,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW34")
+					(reference "SW35")
 					(unit 1)
 				)
 			)
@@ -68176,7 +68017,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c913d54f-1a43-4ebb-bc11-5a2bf348e7d7")
-		(property "Reference" "SW41"
+		(property "Reference" "SW42"
 			(at 701.04 136.906 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -68260,7 +68101,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW41")
+					(reference "SW42")
 					(unit 1)
 				)
 			)
@@ -68374,7 +68215,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cb6e60ba-b33c-48e6-b140-081db8f0071b")
-		(property "Reference" "R27"
+		(property "Reference" "R25"
 			(at 239.776 276.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -68460,7 +68301,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R27")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -68572,7 +68413,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdf174ad-1ea5-4486-97f5-930bf586017c")
-		(property "Reference" "SW57"
+		(property "Reference" "SW58"
 			(at 762 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -68656,7 +68497,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW57")
+					(reference "SW58")
 					(unit 1)
 				)
 			)
@@ -68776,7 +68617,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cf60ffdf-3f3a-4d23-89d9-ed19820058e2")
-		(property "Reference" "R13"
+		(property "Reference" "R12"
 			(at 227.838 120.7516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -68787,7 +68628,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 227.838 123.063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -68862,7 +68703,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R13")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -70049,7 +69890,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d7a6d55a-5085-4a88-8840-5c5a1796a4d6")
-		(property "Reference" "R31"
+		(property "Reference" "R29"
 			(at 110.998 379.8316 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70135,7 +69976,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R31")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -70152,7 +69993,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "da8499ba-c64c-4729-abd1-d2c23917840b")
-		(property "Reference" "R22"
+		(property "Reference" "R20"
 			(at 227.838 142.3416 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70163,7 +70004,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 227.838 144.653 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70238,7 +70079,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R22")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -70586,7 +70427,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df4ff042-1d99-4281-afa1-35373cb04530")
-		(property "Reference" "SW66"
+		(property "Reference" "SW67"
 			(at 619.76 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -70672,7 +70513,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW66")
+					(reference "SW67")
 					(unit 1)
 				)
 			)
@@ -70827,7 +70668,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e347ad0d-a0a8-4b05-bf80-fc376aff02d2")
-		(property "Reference" "R30"
+		(property "Reference" "R28"
 			(at 103.378 379.8316 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70913,7 +70754,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R30")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -70930,7 +70771,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e35bedf7-41ae-4da6-8e3f-5bf271d8ed9c")
-		(property "Reference" "R24"
+		(property "Reference" "R22"
 			(at 434.1622 193.04 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71014,7 +70855,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R24")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -71032,7 +70873,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3c8bf8c-bb5f-44e4-a6ce-30914acbc6f2")
-		(property "Reference" "SW54"
+		(property "Reference" "SW55"
 			(at 701.04 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71116,7 +70957,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW54")
+					(reference "SW55")
 					(unit 1)
 				)
 			)
@@ -71134,7 +70975,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e47e5ee9-31ab-42d4-8c4c-d26e3dd0732e")
-		(property "Reference" "SW31"
+		(property "Reference" "SW32"
 			(at 741.68 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71218,7 +71059,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW31")
+					(reference "SW32")
 					(unit 1)
 				)
 			)
@@ -71235,7 +71076,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e4a44ec6-705a-40ad-a895-dd1ce167a3d0")
-		(property "Reference" "R28"
+		(property "Reference" "R26"
 			(at 458.47 349.4278 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71330,7 +71171,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R28")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -71692,7 +71533,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6ed3595-d732-4873-9a73-976874ef3ee3")
-		(property "Reference" "SW26"
+		(property "Reference" "SW27"
 			(at 640.08 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71776,7 +71617,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW26")
+					(reference "SW27")
 					(unit 1)
 				)
 			)
@@ -71794,7 +71635,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea1365f7-d354-4cc8-88e3-734c09291cac")
-		(property "Reference" "SW44"
+		(property "Reference" "SW45"
 			(at 660.4 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71878,7 +71719,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW44")
+					(reference "SW45")
 					(unit 1)
 				)
 			)
@@ -72066,7 +71907,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ed2b864c-cd98-4b55-862e-b62a1f64c2e8")
-		(property "Reference" "R20"
+		(property "Reference" "R18"
 			(at 212.598 142.3416 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -72077,7 +71918,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 212.598 144.653 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -72152,7 +71993,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R20")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -72771,7 +72612,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f12c959c-3682-4a3a-8fe5-adc31e765a27")
-		(property "Reference" "SW27"
+		(property "Reference" "SW28"
 			(at 660.4 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -72855,7 +72696,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW27")
+					(reference "SW28")
 					(unit 1)
 				)
 			)
@@ -72951,7 +72792,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f28598fb-4fdb-4cc6-b1a7-4dd21d35a7da")
-		(property "Reference" "SW47"
+		(property "Reference" "SW48"
 			(at 741.68 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -73035,7 +72876,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW47")
+					(reference "SW48")
 					(unit 1)
 				)
 			)
@@ -73154,7 +72995,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3bfb56e-b4cf-47f1-b52f-b568699972e3")
-		(property "Reference" "SW42"
+		(property "Reference" "SW43"
 			(at 619.76 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -73238,7 +73079,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW42")
+					(reference "SW43")
 					(unit 1)
 				)
 			)
@@ -73334,7 +73175,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f419ad75-1f82-4e40-8697-04c6209aac42")
-		(property "Reference" "SW37"
+		(property "Reference" "SW38"
 			(at 701.04 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -73418,7 +73259,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW37")
+					(reference "SW38")
 					(unit 1)
 				)
 			)
@@ -73652,7 +73493,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5a4f0ce-7a9f-47c6-abb3-18efa5080803")
-		(property "Reference" "SW56"
+		(property "Reference" "SW57"
 			(at 741.68 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -73736,7 +73577,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "SW56")
+					(reference "SW57")
 					(unit 1)
 				)
 			)
@@ -73856,7 +73697,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f73f414d-bab0-401a-8092-95754aade454")
-		(property "Reference" "J14"
+		(property "Reference" "J15"
 			(at 462.28 198.4131 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -73943,7 +73784,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "J14")
+					(reference "J15")
 					(unit 1)
 				)
 			)
@@ -73960,7 +73801,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f80a3f6c-43b5-4db3-b7ff-47513b4ca0c4")
-		(property "Reference" "R6"
+		(property "Reference" "R5"
 			(at 319.532 39.2684 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -74046,7 +73887,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R6")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -74177,7 +74018,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fa3179d5-b907-4bc7-909b-492ceee5a4b3")
-		(property "Reference" "R32"
+		(property "Reference" "R30"
 			(at 118.618 379.8316 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -74263,7 +74104,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "R32")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -74483,7 +74324,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fe30a5d3-6934-4eb5-997c-5156efaff5a1")
-		(property "Reference" "J15"
+		(property "Reference" "J16"
 			(at 414.274 195.834 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -74558,7 +74399,7 @@
 		(instances
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "J15")
+					(reference "J16")
 					(unit 1)
 				)
 			)
