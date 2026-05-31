@@ -14,7 +14,7 @@ The AB Controller is firmware for the ATMega1284P microcontroller that provides 
 - **Debounced Matrix Scanning**: Hardware debouncing for reliable matrix keyboard operation
 - **Enable/Disable Control**: Independent enable signals for PS/2 and matrix inputs
 - **6502 Reset Control**: Drives the 6502 RESB line, providing power-on reset and a debounced reset button
-- **Jiffy Clock**: Generates periodic 6502 NMIs from a DS1511Y RTC square-wave input
+- **Jiffy Clock (optional)**: Can generate periodic 6502 NMIs from a DS1511Y RTC square-wave input. Disabled by default; enabled at build time via the `ENABLE_SQW` define
 
 ## Hardware Connections
 
@@ -139,11 +139,35 @@ The controller drives the 6502 RESB line on PC7 (active low):
 
 ### Jiffy Clock (NMIB)
 
-A DS1511Y RTC drives a square wave into PD6 (RTC_SQW). A pin-change interrupt
-counts the rising edges and, every `JIFFY_DIVIDER` edges (default 1), pulses the
-6502 NMIB line on PD7 low for ~5 µs. The NMI is generated directly in the ISR so
-its timing is independent of keyboard-scanning load. Set the DS1511Y SQW output
-rate (and `JIFFY_DIVIDER`) to obtain the desired jiffy tick frequency.
+> **Disabled by default.** SQW-driven NMI behavior is only compiled in when the
+> `ENABLE_SQW` define is enabled (see [Enabling the Jiffy Clock](#enabling-the-jiffy-clock)).
+> When it is disabled, NMIB (PD7) is configured as a high-impedance input and is
+> held high by the physical pull-up resistor on the PCB, so the 6502 never
+> receives an NMI from this board.
+
+When enabled, a DS1511Y RTC drives a square wave into PD6 (RTC_SQW). A pin-change
+interrupt counts the rising edges and, every `JIFFY_DIVIDER` edges (default 1),
+pulses the 6502 NMIB line on PD7 low for ~5 µs. The NMI is generated directly in
+the ISR so its timing is independent of keyboard-scanning load. Set the DS1511Y
+SQW output rate (and `JIFFY_DIVIDER`) to obtain the desired jiffy tick frequency.
+
+To protect the 6502 BIOS boot window from a power-up SQW burst (the DS1511Y
+powers up with SQW in an undefined, battery-backed state that can default to
+32.768 kHz), the interrupt is not armed immediately. Arming is deferred until
+`SQW_BOOT_GRACE_MS` (~500 ms) after RESB is released, and is re-deferred each
+time the reset button asserts reset.
+
+#### Enabling the Jiffy Clock
+
+The jiffy clock is off unless you opt in at build time. In
+[src/main.cpp](src/main.cpp), uncomment the define near the top of the file:
+
+```c
+#define ENABLE_SQW
+```
+
+Then rebuild and re-flash the firmware. Leaving it commented out keeps NMIB as a
+high-impedance input and compiles out all SQW-related code.
 
 ## ASCII Character Mapping
 
