@@ -15,6 +15,7 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [Software](#software)
 - [Hardware](#hardware)
   - [ACE Board](#ace-board)
+    - [Revision History](#revision-history)
   - [ACE CF Adapter](#ace-cf-adapter)
 - [Firmware](#firmware)
   - [AB Controller](#ab-controller)
@@ -89,6 +90,18 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - **Clock**: On-board oscillator (1–8 MHz, selectable by swapping oscillator)
 - **Reset**: Power-on RC reset circuit and manual reset button
 - **Power**: 5V DC, 2–3A
+
+#### Revision History
+
+**Rev 1.1**
+
+- Fixes the gating of the `LOADL` and `LOADH` latch-enable signals for the 74HC573 latches (`U21`, `U22`) that drive the AS6C4008 banked SRAM. In Rev 1.0 the final two decode gates (`U13C`/`U13D`) were NANDs, which left the latches pulsing while idle and allowed spurious loads on reads, so the latches never reliably held a bank value.
+- The fix replaces the final NAND stage with a NOR function: `LOADL = NOR(SEL_L, WB)` and `LOADH = NOR(SEH_L, WB)`, holding each latch enable low out of window and only pulsing on an in-window write. This makes banked RAM work correctly with no firmware change.
+- Implemented by adding one 74HC02 quad NOR (`U23`). The existing select logic in `U13A`/`U13B` is unchanged.
+
+**Rev 1.0**
+
+- Initial release.
 
 ### ACE CF Adapter
 `Hardware/ACE CF Adapter/`
@@ -199,6 +212,7 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 | U18 | 1 | DS1511Y | RTC + NVRAM | [DS1511Y+-ND](https://www.digikey.com/en/products/filter?keywords=DS1511Y+-ND) | [700-DS1511Y](https://www.mouser.com/ProductDetail/700-DS1511Y) | |
 | U19, U20 | 2 | 74HC138 | 3-to-8 Decoder | [296-1575-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1575-5-ND) | [595-SN74HC138N](https://www.mouser.com/ProductDetail/595-SN74HC138N) | |
 | U21, U22 | 2 | 74HC573 | Octal Latch | [296-12815-5-ND](https://www.digikey.com/en/products/filter?keywords=296-12815-5-ND) | [595-CD74HC573EE4](https://www.mouser.com/ProductDetail/595-CD74HC573EE4) | |
+| U23 | 1 | 74HC02 | Quad NOR | [296-1565-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1565-5-ND) | [595-SN74HC02N](https://www.mouser.com/ProductDetail/595-SN74HC02N) | |
 | X1 | 1 | 16MHz | DIP-14 Oscillator | [X947-ND](https://www.digikey.com/en/products/filter?keywords=X947-ND) | [815-ACO-16-EK](https://www.mouser.com/ProductDetail/815-ACO-16-EK) | |
 | Y1 | 1 | 1.8432MHz | Crystal | [3155-1.8432M20P2/49U-ND](https://www.digikey.com/en/products/filter?keywords=3155-1.8432M20P2%2F49U-ND) | [815-AB-1.8432-B2](https://www.mouser.com/ProductDetail/815-AB-1.8432-B2) | |
 
