@@ -1,7 +1,7 @@
 6502-ACE
 ========
 
-<!-- ![6502-ACE.png](./Images/6502-ACE.png) -->
+![6502-ACE.png](./Images/6502-ACE.png)
 
 An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 
