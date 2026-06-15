@@ -15343,6 +15343,186 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Polarized_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized_US"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Polarized capacitor, US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Polarized_US_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.778) (xy -1.27 2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.032 -1.27)
+					(mid 0 -0.5572)
+					(end 2.032 -1.27)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Polarized_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.302)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Crystal"
 			(pin_numbers
 				(hide yes)
@@ -19565,13 +19745,13 @@
 		(uuid "027529ad-833d-4a03-92b0-cd88b61b25c9")
 	)
 	(junction
-		(at 695.96 262.89)
+		(at 699.77 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "044f37aa-3b81-4969-8f80-bf8596f9d97a")
 	)
 	(junction
-		(at 741.68 297.18)
+		(at 745.49 297.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "050066ea-4480-4e41-aac8-35c95d091f5b")
@@ -19601,7 +19781,13 @@
 		(uuid "082d6e73-64fa-437b-bd0a-98c852a6c3f1")
 	)
 	(junction
-		(at 673.1 250.19)
+		(at 645.16 250.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0969fa8f-bb50-45c4-94ac-e2b13bd894f9")
+	)
+	(junction
+		(at 676.91 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "09a495c2-02c0-4e16-a50b-1005ccef2125")
@@ -19697,7 +19883,7 @@
 		(uuid "1a376e08-ca9d-4930-b1f9-7c43310e3cdf")
 	)
 	(junction
-		(at 718.82 284.48)
+		(at 722.63 284.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1c6f6f2c-24f8-432b-b638-580fc173ccd0")
@@ -19709,13 +19895,13 @@
 		(uuid "1cc19047-8479-405d-998a-6ea0787f4aef")
 	)
 	(junction
-		(at 753.11 297.18)
+		(at 756.92 297.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1ef1f170-898c-439d-b508-08330460ca31")
 	)
 	(junction
-		(at 764.54 262.89)
+		(at 768.35 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "20408281-5eac-4bd5-bd32-862f20c900ab")
@@ -19727,7 +19913,7 @@
 		(uuid "213166a4-fc1f-48ba-90f4-c23595ae6331")
 	)
 	(junction
-		(at 684.53 297.18)
+		(at 688.34 297.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "22d0fbe0-44b8-4bab-9341-4f02bdf02b8d")
@@ -19799,7 +19985,7 @@
 		(uuid "2d46b835-acb1-4afd-b0d0-b1b0364ebab4")
 	)
 	(junction
-		(at 707.39 262.89)
+		(at 711.2 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2d4a3139-143b-429d-8cdb-fd49515b726f")
@@ -19811,7 +19997,7 @@
 		(uuid "2e774aab-b019-4501-8d59-11a346c62238")
 	)
 	(junction
-		(at 695.96 297.18)
+		(at 699.77 297.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2e95d194-e140-4041-99f4-a56f4fdcafab")
@@ -19823,7 +20009,7 @@
 		(uuid "2f6b5275-09ef-4575-b120-a2965b6cd32b")
 	)
 	(junction
-		(at 753.11 250.19)
+		(at 756.92 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2f767a94-852c-43eb-ad22-54d1c3918f65")
@@ -19877,7 +20063,7 @@
 		(uuid "3ba991ce-237d-47ee-80b1-32d030b18a42")
 	)
 	(junction
-		(at 753.11 262.89)
+		(at 756.92 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c3bfe4a-8988-4e53-97d5-5ece1715080b")
@@ -19913,19 +20099,19 @@
 		(uuid "3e15b901-9bc8-4fdc-b87e-b1da5785e95c")
 	)
 	(junction
-		(at 718.82 250.19)
+		(at 722.63 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3ecc3f8a-8870-4e3f-a427-3f66e45629f6")
 	)
 	(junction
-		(at 741.68 284.48)
+		(at 745.49 284.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3f85f08e-b5e4-4e7e-bc46-c2773efac0be")
 	)
 	(junction
-		(at 629.92 274.32)
+		(at 624.84 274.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3ffaded9-e744-4342-af91-634643c5d92f")
@@ -19955,7 +20141,7 @@
 		(uuid "4571f09a-1212-473e-901a-9d493ca0dad3")
 	)
 	(junction
-		(at 764.54 250.19)
+		(at 768.35 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "461ee112-2295-4005-b58b-cbbd33436057")
@@ -19991,7 +20177,7 @@
 		(uuid "4ab0236a-5cb3-409a-8db8-44fa4a1b75c0")
 	)
 	(junction
-		(at 707.39 284.48)
+		(at 711.2 284.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4abf4e78-cca8-4c17-844b-c5d9f16b0ade")
@@ -20027,7 +20213,7 @@
 		(uuid "5193695a-e71c-4d3c-96ae-668030ac80b2")
 	)
 	(junction
-		(at 624.84 276.86)
+		(at 619.76 276.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "51e551c5-25cc-4ecf-8e81-5ba1f7cb4cb5")
@@ -20057,7 +20243,7 @@
 		(uuid "55ebfd4a-20bd-4eb9-ae8f-4bbea067ac43")
 	)
 	(junction
-		(at 695.96 250.19)
+		(at 699.77 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "563acd2c-f0ad-4c31-807c-119f421c4849")
@@ -20087,7 +20273,7 @@
 		(uuid "58b80b52-a0ff-40cd-800c-0fad29160060")
 	)
 	(junction
-		(at 608.33 257.81)
+		(at 603.25 257.81)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "599cf311-379f-46a6-b245-8f8d5698cd21")
@@ -20123,7 +20309,7 @@
 		(uuid "5be317e6-ad53-4487-a2f1-aefd04ac1804")
 	)
 	(junction
-		(at 730.25 262.89)
+		(at 734.06 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5bf856eb-3e6e-4a9b-a13e-f2b16124dcd4")
@@ -20189,7 +20375,7 @@
 		(uuid "699f0ae9-dc21-45eb-9404-3a3ab03df1fe")
 	)
 	(junction
-		(at 661.67 297.18)
+		(at 665.48 297.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ad578eb-7ee1-42ea-9101-044cbe9132f6")
@@ -20201,25 +20387,25 @@
 		(uuid "6bc2b3ec-114e-4b07-b4c4-aa4e9d9755a8")
 	)
 	(junction
-		(at 695.96 284.48)
+		(at 699.77 284.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d053903-0dab-4095-8aca-1f99a5ac52a4")
 	)
 	(junction
-		(at 684.53 250.19)
+		(at 688.34 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d16b855-e231-489b-9c82-fc64c2458a5a")
 	)
 	(junction
-		(at 741.68 262.89)
+		(at 745.49 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6fa9de93-a386-4c0d-b964-9b73e1b5f198")
 	)
 	(junction
-		(at 707.39 250.19)
+		(at 711.2 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6fdb1ad3-e664-4f49-89c8-5ba43ea0bd63")
@@ -20327,7 +20513,7 @@
 		(uuid "81f054e0-dc45-40d6-9e8c-4d6093244be4")
 	)
 	(junction
-		(at 718.82 297.18)
+		(at 722.63 297.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "82a46333-e479-4088-b1b8-6ae47e200fc7")
@@ -20339,7 +20525,7 @@
 		(uuid "82de45a0-e29a-41cf-822f-b16defea4aab")
 	)
 	(junction
-		(at 753.11 284.48)
+		(at 756.92 284.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8324b267-d8c1-4b43-8317-0e14a8563e63")
@@ -20381,7 +20567,7 @@
 		(uuid "85e20650-ae63-46e3-9c77-4761b22f0637")
 	)
 	(junction
-		(at 707.39 297.18)
+		(at 711.2 297.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "86843af5-5bcc-4892-bde6-dc8db8e5b151")
@@ -20429,7 +20615,7 @@
 		(uuid "8f716d81-3f47-4145-aa64-823e6bf4c0da")
 	)
 	(junction
-		(at 661.67 284.48)
+		(at 665.48 284.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "904fcabf-b3af-452b-b40a-4732b7ba66f5")
@@ -20471,7 +20657,7 @@
 		(uuid "94e83e9f-939a-4797-b647-7e5f5ed60e60")
 	)
 	(junction
-		(at 673.1 284.48)
+		(at 676.91 284.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "987d9b10-d290-48a6-bf55-58d7aa4ddca1")
@@ -20501,7 +20687,7 @@
 		(uuid "9b777832-8c9d-4536-9146-fa7f2c45855f")
 	)
 	(junction
-		(at 608.33 262.89)
+		(at 603.25 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9bf4c4c2-8d07-47c2-bf13-e04c3e13d2b6")
@@ -20531,7 +20717,7 @@
 		(uuid "9f27fdfb-e553-4b7d-aa92-303208d7c6e4")
 	)
 	(junction
-		(at 764.54 297.18)
+		(at 768.35 297.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9fd9192a-0dd1-46e7-98e7-4b06da3fa29a")
@@ -20555,7 +20741,7 @@
 		(uuid "a2068148-7fb8-4055-a149-3c6531a3d369")
 	)
 	(junction
-		(at 684.53 262.89)
+		(at 688.34 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a5b63830-62d4-4459-85a3-683b76a599ed")
@@ -20621,7 +20807,7 @@
 		(uuid "b0c059e1-a810-4229-bc76-95b9c6941bed")
 	)
 	(junction
-		(at 741.68 250.19)
+		(at 745.49 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b0d2a0ab-47de-4114-8d6c-50bf4293a86f")
@@ -20639,7 +20825,7 @@
 		(uuid "b281e3ab-22a6-46b1-9435-d29293585821")
 	)
 	(junction
-		(at 764.54 284.48)
+		(at 768.35 284.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b2ae6803-9cb9-4710-a2cb-8fe83890b125")
@@ -20657,7 +20843,7 @@
 		(uuid "b44c206d-9360-4299-a288-3807ad419cdb")
 	)
 	(junction
-		(at 730.25 284.48)
+		(at 734.06 284.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b5152c11-1b82-41f3-8213-7905705d75b2")
@@ -20681,7 +20867,7 @@
 		(uuid "b6f8b427-ab06-4cf5-912b-b8b09465b532")
 	)
 	(junction
-		(at 661.67 250.19)
+		(at 665.48 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b8303bd8-d1b8-4cb4-a5f2-8efc2ff8ac62")
@@ -20735,7 +20921,7 @@
 		(uuid "c03a5131-7142-4a2b-8648-a5e9141aca5f")
 	)
 	(junction
-		(at 718.82 262.89)
+		(at 722.63 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0e4f22d-ef94-4a7f-8f0c-1726d1970b52")
@@ -20789,7 +20975,7 @@
 		(uuid "c98a4c5c-355e-4d8e-b12d-4f306f4c93db")
 	)
 	(junction
-		(at 608.33 276.86)
+		(at 603.25 276.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cad10100-5f44-4c72-bc3a-c5a094f0c9a3")
@@ -20813,7 +20999,7 @@
 		(uuid "cfda8e99-1881-47bd-be4a-e1ab0227e4f0")
 	)
 	(junction
-		(at 629.92 250.19)
+		(at 624.84 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d16ad6bf-d65e-4515-b6c4-2f3630ca03d3")
@@ -20831,7 +21017,7 @@
 		(uuid "d34f5a6c-6e34-4a23-858c-a54a4e987b8e")
 	)
 	(junction
-		(at 684.53 284.48)
+		(at 688.34 284.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d3ba1e63-3433-4f0f-b336-3b7b30bef857")
@@ -20843,7 +21029,7 @@
 		(uuid "d5f7fcf7-3c19-4889-a96f-f605b1e655f4")
 	)
 	(junction
-		(at 661.67 262.89)
+		(at 665.48 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d8abb0b9-890b-4802-b99a-8895fd052578")
@@ -20867,7 +21053,7 @@
 		(uuid "db0b6852-9a85-4e85-aad9-043bf8d97f7a")
 	)
 	(junction
-		(at 730.25 297.18)
+		(at 734.06 297.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dbc94a61-cf80-40d0-8dee-e19e60b39c21")
@@ -20909,7 +21095,7 @@
 		(uuid "e652d49e-d7b2-435e-ac72-98f9b023a07a")
 	)
 	(junction
-		(at 673.1 262.89)
+		(at 676.91 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e799199c-2777-4dc1-a1c6-4b1c73b0faef")
@@ -20993,7 +21179,7 @@
 		(uuid "f3412189-d2ca-4d4b-a792-189327670dcf")
 	)
 	(junction
-		(at 730.25 250.19)
+		(at 734.06 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f365d88e-03de-4559-afba-f095d7b9c57c")
@@ -21005,7 +21191,7 @@
 		(uuid "f5782606-9578-4e6d-9df0-b923236ab795")
 	)
 	(junction
-		(at 673.1 297.18)
+		(at 676.91 297.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f68213a9-81a9-4879-a9fd-43bc0bba9e20")
@@ -21035,7 +21221,7 @@
 		(uuid "fa5e8c9e-eecf-494e-9500-5167c7f4d2ad")
 	)
 	(junction
-		(at 629.92 260.35)
+		(at 624.84 260.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb01b21b-a0f0-4d4a-8e77-b78ade87195a")
@@ -21121,7 +21307,7 @@
 		(uuid "8db34923-5b9f-47b9-abfe-d016b0f7eb73")
 	)
 	(no_connect
-		(at 624.84 255.27)
+		(at 619.76 255.27)
 		(uuid "8fef8adf-6572-4ff7-a0af-cc62a503af76")
 	)
 	(no_connect
@@ -21198,7 +21384,7 @@
 	)
 	(wire
 		(pts
-			(xy 730.25 297.18) (xy 741.68 297.18)
+			(xy 734.06 297.18) (xy 745.49 297.18)
 		)
 		(stroke
 			(width 0)
@@ -21238,7 +21424,7 @@
 	)
 	(wire
 		(pts
-			(xy 718.82 284.48) (xy 718.82 287.02)
+			(xy 722.63 284.48) (xy 722.63 287.02)
 		)
 		(stroke
 			(width 0)
@@ -21338,7 +21524,7 @@
 	)
 	(wire
 		(pts
-			(xy 741.68 284.48) (xy 730.25 284.48)
+			(xy 745.49 284.48) (xy 734.06 284.48)
 		)
 		(stroke
 			(width 0)
@@ -21498,7 +21684,7 @@
 	)
 	(wire
 		(pts
-			(xy 730.25 262.89) (xy 718.82 262.89)
+			(xy 734.06 262.89) (xy 722.63 262.89)
 		)
 		(stroke
 			(width 0)
@@ -21588,7 +21774,7 @@
 	)
 	(wire
 		(pts
-			(xy 730.25 250.19) (xy 718.82 250.19)
+			(xy 734.06 250.19) (xy 722.63 250.19)
 		)
 		(stroke
 			(width 0)
@@ -21628,7 +21814,7 @@
 	)
 	(wire
 		(pts
-			(xy 608.33 281.94) (xy 608.33 276.86)
+			(xy 603.25 281.94) (xy 603.25 276.86)
 		)
 		(stroke
 			(width 0)
@@ -21778,7 +21964,7 @@
 	)
 	(wire
 		(pts
-			(xy 741.68 260.35) (xy 741.68 262.89)
+			(xy 745.49 260.35) (xy 745.49 262.89)
 		)
 		(stroke
 			(width 0)
@@ -21988,7 +22174,7 @@
 	)
 	(wire
 		(pts
-			(xy 718.82 250.19) (xy 707.39 250.19)
+			(xy 722.63 250.19) (xy 711.2 250.19)
 		)
 		(stroke
 			(width 0)
@@ -22118,7 +22304,7 @@
 	)
 	(wire
 		(pts
-			(xy 741.68 294.64) (xy 741.68 297.18)
+			(xy 745.49 294.64) (xy 745.49 297.18)
 		)
 		(stroke
 			(width 0)
@@ -22298,7 +22484,7 @@
 	)
 	(wire
 		(pts
-			(xy 608.33 262.89) (xy 632.46 262.89)
+			(xy 603.25 262.89) (xy 627.38 262.89)
 		)
 		(stroke
 			(width 0)
@@ -22335,6 +22521,16 @@
 			(type default)
 		)
 		(uuid "150f33a0-c92a-45b5-993d-c1432a3f3526")
+	)
+	(wire
+		(pts
+			(xy 645.16 250.19) (xy 645.16 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "151bb727-769d-4532-985e-2d02dedd0fa3")
 	)
 	(wire
 		(pts
@@ -22428,7 +22624,7 @@
 	)
 	(wire
 		(pts
-			(xy 753.11 284.48) (xy 753.11 287.02)
+			(xy 756.92 284.48) (xy 756.92 287.02)
 		)
 		(stroke
 			(width 0)
@@ -22478,7 +22674,7 @@
 	)
 	(wire
 		(pts
-			(xy 629.92 288.29) (xy 629.92 293.37)
+			(xy 624.84 288.29) (xy 624.84 293.37)
 		)
 		(stroke
 			(width 0)
@@ -22608,7 +22804,7 @@
 	)
 	(wire
 		(pts
-			(xy 695.96 284.48) (xy 695.96 287.02)
+			(xy 699.77 284.48) (xy 699.77 287.02)
 		)
 		(stroke
 			(width 0)
@@ -22628,7 +22824,7 @@
 	)
 	(wire
 		(pts
-			(xy 718.82 284.48) (xy 707.39 284.48)
+			(xy 722.63 284.48) (xy 711.2 284.48)
 		)
 		(stroke
 			(width 0)
@@ -22658,7 +22854,7 @@
 	)
 	(wire
 		(pts
-			(xy 741.68 297.18) (xy 753.11 297.18)
+			(xy 745.49 297.18) (xy 756.92 297.18)
 		)
 		(stroke
 			(width 0)
@@ -22798,7 +22994,7 @@
 	)
 	(wire
 		(pts
-			(xy 684.53 260.35) (xy 684.53 262.89)
+			(xy 688.34 260.35) (xy 688.34 262.89)
 		)
 		(stroke
 			(width 0)
@@ -22938,7 +23134,7 @@
 	)
 	(wire
 		(pts
-			(xy 764.54 284.48) (xy 764.54 287.02)
+			(xy 768.35 284.48) (xy 768.35 287.02)
 		)
 		(stroke
 			(width 0)
@@ -23808,7 +24004,7 @@
 	)
 	(wire
 		(pts
-			(xy 684.53 297.18) (xy 673.1 297.18)
+			(xy 688.34 297.18) (xy 676.91 297.18)
 		)
 		(stroke
 			(width 0)
@@ -23878,7 +24074,7 @@
 	)
 	(wire
 		(pts
-			(xy 695.96 294.64) (xy 695.96 297.18)
+			(xy 699.77 294.64) (xy 699.77 297.18)
 		)
 		(stroke
 			(width 0)
@@ -24278,7 +24474,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 247.65) (xy 661.67 250.19)
+			(xy 665.48 247.65) (xy 665.48 250.19)
 		)
 		(stroke
 			(width 0)
@@ -24298,7 +24494,7 @@
 	)
 	(wire
 		(pts
-			(xy 624.84 276.86) (xy 632.46 276.86)
+			(xy 619.76 276.86) (xy 627.38 276.86)
 		)
 		(stroke
 			(width 0)
@@ -24318,7 +24514,7 @@
 	)
 	(wire
 		(pts
-			(xy 764.54 297.18) (xy 775.97 297.18)
+			(xy 768.35 297.18) (xy 779.78 297.18)
 		)
 		(stroke
 			(width 0)
@@ -24498,6 +24694,16 @@
 	)
 	(wire
 		(pts
+			(xy 645.16 250.19) (xy 650.24 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c6f93b9-ad27-49e1-9ed9-95696b7467f1")
+	)
+	(wire
+		(pts
 			(xy 228.6 59.69) (xy 231.14 59.69)
 		)
 		(stroke
@@ -24598,7 +24804,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 294.64) (xy 661.67 297.18)
+			(xy 665.48 294.64) (xy 665.48 297.18)
 		)
 		(stroke
 			(width 0)
@@ -25038,7 +25244,7 @@
 	)
 	(wire
 		(pts
-			(xy 718.82 297.18) (xy 707.39 297.18)
+			(xy 722.63 297.18) (xy 711.2 297.18)
 		)
 		(stroke
 			(width 0)
@@ -25078,7 +25284,7 @@
 	)
 	(wire
 		(pts
-			(xy 764.54 284.48) (xy 753.11 284.48)
+			(xy 768.35 284.48) (xy 756.92 284.48)
 		)
 		(stroke
 			(width 0)
@@ -25138,7 +25344,7 @@
 	)
 	(wire
 		(pts
-			(xy 753.11 297.18) (xy 764.54 297.18)
+			(xy 756.92 297.18) (xy 768.35 297.18)
 		)
 		(stroke
 			(width 0)
@@ -25248,7 +25454,7 @@
 	)
 	(wire
 		(pts
-			(xy 730.25 260.35) (xy 730.25 262.89)
+			(xy 734.06 260.35) (xy 734.06 262.89)
 		)
 		(stroke
 			(width 0)
@@ -25308,7 +25514,7 @@
 	)
 	(wire
 		(pts
-			(xy 695.96 250.19) (xy 684.53 250.19)
+			(xy 699.77 250.19) (xy 688.34 250.19)
 		)
 		(stroke
 			(width 0)
@@ -25578,7 +25784,7 @@
 	)
 	(wire
 		(pts
-			(xy 753.11 294.64) (xy 753.11 297.18)
+			(xy 756.92 294.64) (xy 756.92 297.18)
 		)
 		(stroke
 			(width 0)
@@ -25638,7 +25844,7 @@
 	)
 	(wire
 		(pts
-			(xy 718.82 294.64) (xy 718.82 297.18)
+			(xy 722.63 294.64) (xy 722.63 297.18)
 		)
 		(stroke
 			(width 0)
@@ -25868,7 +26074,7 @@
 	)
 	(wire
 		(pts
-			(xy 673.1 284.48) (xy 673.1 287.02)
+			(xy 676.91 284.48) (xy 676.91 287.02)
 		)
 		(stroke
 			(width 0)
@@ -25978,7 +26184,7 @@
 	)
 	(wire
 		(pts
-			(xy 730.25 284.48) (xy 718.82 284.48)
+			(xy 734.06 284.48) (xy 722.63 284.48)
 		)
 		(stroke
 			(width 0)
@@ -26018,7 +26224,7 @@
 	)
 	(wire
 		(pts
-			(xy 753.11 284.48) (xy 741.68 284.48)
+			(xy 756.92 284.48) (xy 745.49 284.48)
 		)
 		(stroke
 			(width 0)
@@ -26588,7 +26794,7 @@
 	)
 	(wire
 		(pts
-			(xy 707.39 260.35) (xy 707.39 262.89)
+			(xy 711.2 260.35) (xy 711.2 262.89)
 		)
 		(stroke
 			(width 0)
@@ -26668,7 +26874,7 @@
 	)
 	(wire
 		(pts
-			(xy 608.33 255.27) (xy 605.79 255.27)
+			(xy 603.25 255.27) (xy 600.71 255.27)
 		)
 		(stroke
 			(width 0)
@@ -26768,7 +26974,7 @@
 	)
 	(wire
 		(pts
-			(xy 775.97 287.02) (xy 775.97 284.48)
+			(xy 779.78 287.02) (xy 779.78 284.48)
 		)
 		(stroke
 			(width 0)
@@ -27278,7 +27484,7 @@
 	)
 	(wire
 		(pts
-			(xy 695.96 260.35) (xy 695.96 262.89)
+			(xy 699.77 260.35) (xy 699.77 262.89)
 		)
 		(stroke
 			(width 0)
@@ -27338,7 +27544,7 @@
 	)
 	(wire
 		(pts
-			(xy 764.54 260.35) (xy 764.54 262.89)
+			(xy 768.35 260.35) (xy 768.35 262.89)
 		)
 		(stroke
 			(width 0)
@@ -27738,7 +27944,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 260.35) (xy 661.67 262.89)
+			(xy 665.48 260.35) (xy 665.48 262.89)
 		)
 		(stroke
 			(width 0)
@@ -27748,7 +27954,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 250.19) (xy 661.67 252.73)
+			(xy 665.48 250.19) (xy 665.48 252.73)
 		)
 		(stroke
 			(width 0)
@@ -27988,7 +28194,7 @@
 	)
 	(wire
 		(pts
-			(xy 730.25 284.48) (xy 730.25 287.02)
+			(xy 734.06 284.48) (xy 734.06 287.02)
 		)
 		(stroke
 			(width 0)
@@ -28048,7 +28254,7 @@
 	)
 	(wire
 		(pts
-			(xy 673.1 250.19) (xy 673.1 252.73)
+			(xy 676.91 250.19) (xy 676.91 252.73)
 		)
 		(stroke
 			(width 0)
@@ -28168,7 +28374,7 @@
 	)
 	(wire
 		(pts
-			(xy 684.53 284.48) (xy 673.1 284.48)
+			(xy 688.34 284.48) (xy 676.91 284.48)
 		)
 		(stroke
 			(width 0)
@@ -28218,7 +28424,7 @@
 	)
 	(wire
 		(pts
-			(xy 624.84 293.37) (xy 624.84 276.86)
+			(xy 619.76 293.37) (xy 619.76 276.86)
 		)
 		(stroke
 			(width 0)
@@ -28308,7 +28514,7 @@
 	)
 	(wire
 		(pts
-			(xy 775.97 250.19) (xy 764.54 250.19)
+			(xy 779.78 250.19) (xy 768.35 250.19)
 		)
 		(stroke
 			(width 0)
@@ -28348,7 +28554,7 @@
 	)
 	(wire
 		(pts
-			(xy 707.39 250.19) (xy 707.39 252.73)
+			(xy 711.2 250.19) (xy 711.2 252.73)
 		)
 		(stroke
 			(width 0)
@@ -28418,7 +28624,7 @@
 	)
 	(wire
 		(pts
-			(xy 730.25 297.18) (xy 718.82 297.18)
+			(xy 734.06 297.18) (xy 722.63 297.18)
 		)
 		(stroke
 			(width 0)
@@ -28428,7 +28634,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 297.18) (xy 661.67 299.72)
+			(xy 665.48 297.18) (xy 665.48 299.72)
 		)
 		(stroke
 			(width 0)
@@ -28458,7 +28664,7 @@
 	)
 	(wire
 		(pts
-			(xy 707.39 297.18) (xy 695.96 297.18)
+			(xy 711.2 297.18) (xy 699.77 297.18)
 		)
 		(stroke
 			(width 0)
@@ -28498,7 +28704,7 @@
 	)
 	(wire
 		(pts
-			(xy 629.92 274.32) (xy 629.92 280.67)
+			(xy 624.84 274.32) (xy 624.84 280.67)
 		)
 		(stroke
 			(width 0)
@@ -28528,7 +28734,7 @@
 	)
 	(wire
 		(pts
-			(xy 629.92 250.19) (xy 643.89 250.19)
+			(xy 624.84 250.19) (xy 645.16 250.19)
 		)
 		(stroke
 			(width 0)
@@ -28628,7 +28834,7 @@
 	)
 	(wire
 		(pts
-			(xy 684.53 250.19) (xy 673.1 250.19)
+			(xy 688.34 250.19) (xy 676.91 250.19)
 		)
 		(stroke
 			(width 0)
@@ -28938,7 +29144,7 @@
 	)
 	(wire
 		(pts
-			(xy 753.11 260.35) (xy 753.11 262.89)
+			(xy 756.92 260.35) (xy 756.92 262.89)
 		)
 		(stroke
 			(width 0)
@@ -29118,7 +29324,7 @@
 	)
 	(wire
 		(pts
-			(xy 707.39 262.89) (xy 695.96 262.89)
+			(xy 711.2 262.89) (xy 699.77 262.89)
 		)
 		(stroke
 			(width 0)
@@ -29128,7 +29334,7 @@
 	)
 	(wire
 		(pts
-			(xy 684.53 294.64) (xy 684.53 297.18)
+			(xy 688.34 294.64) (xy 688.34 297.18)
 		)
 		(stroke
 			(width 0)
@@ -29298,7 +29504,7 @@
 	)
 	(wire
 		(pts
-			(xy 718.82 250.19) (xy 718.82 252.73)
+			(xy 722.63 250.19) (xy 722.63 252.73)
 		)
 		(stroke
 			(width 0)
@@ -29358,7 +29564,7 @@
 	)
 	(wire
 		(pts
-			(xy 741.68 250.19) (xy 741.68 252.73)
+			(xy 745.49 250.19) (xy 745.49 252.73)
 		)
 		(stroke
 			(width 0)
@@ -29528,7 +29734,7 @@
 	)
 	(wire
 		(pts
-			(xy 673.1 262.89) (xy 661.67 262.89)
+			(xy 676.91 262.89) (xy 665.48 262.89)
 		)
 		(stroke
 			(width 0)
@@ -29568,7 +29774,7 @@
 	)
 	(wire
 		(pts
-			(xy 764.54 250.19) (xy 753.11 250.19)
+			(xy 768.35 250.19) (xy 756.92 250.19)
 		)
 		(stroke
 			(width 0)
@@ -29588,7 +29794,7 @@
 	)
 	(wire
 		(pts
-			(xy 775.97 252.73) (xy 775.97 250.19)
+			(xy 779.78 252.73) (xy 779.78 250.19)
 		)
 		(stroke
 			(width 0)
@@ -30028,7 +30234,7 @@
 	)
 	(wire
 		(pts
-			(xy 718.82 260.35) (xy 718.82 262.89)
+			(xy 722.63 260.35) (xy 722.63 262.89)
 		)
 		(stroke
 			(width 0)
@@ -30038,7 +30244,7 @@
 	)
 	(wire
 		(pts
-			(xy 707.39 284.48) (xy 707.39 287.02)
+			(xy 711.2 284.48) (xy 711.2 287.02)
 		)
 		(stroke
 			(width 0)
@@ -30158,7 +30364,7 @@
 	)
 	(wire
 		(pts
-			(xy 605.79 252.73) (xy 614.68 252.73)
+			(xy 600.71 252.73) (xy 609.6 252.73)
 		)
 		(stroke
 			(width 0)
@@ -30288,7 +30494,7 @@
 	)
 	(wire
 		(pts
-			(xy 730.25 250.19) (xy 730.25 252.73)
+			(xy 734.06 250.19) (xy 734.06 252.73)
 		)
 		(stroke
 			(width 0)
@@ -30318,7 +30524,7 @@
 	)
 	(wire
 		(pts
-			(xy 673.1 260.35) (xy 673.1 262.89)
+			(xy 676.91 260.35) (xy 676.91 262.89)
 		)
 		(stroke
 			(width 0)
@@ -30488,7 +30694,7 @@
 	)
 	(wire
 		(pts
-			(xy 695.96 284.48) (xy 684.53 284.48)
+			(xy 699.77 284.48) (xy 688.34 284.48)
 		)
 		(stroke
 			(width 0)
@@ -30608,7 +30814,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 281.94) (xy 661.67 284.48)
+			(xy 665.48 281.94) (xy 665.48 284.48)
 		)
 		(stroke
 			(width 0)
@@ -30638,7 +30844,7 @@
 	)
 	(wire
 		(pts
-			(xy 695.96 297.18) (xy 684.53 297.18)
+			(xy 699.77 297.18) (xy 688.34 297.18)
 		)
 		(stroke
 			(width 0)
@@ -30688,7 +30894,7 @@
 	)
 	(wire
 		(pts
-			(xy 730.25 294.64) (xy 730.25 297.18)
+			(xy 734.06 294.64) (xy 734.06 297.18)
 		)
 		(stroke
 			(width 0)
@@ -30718,7 +30924,7 @@
 	)
 	(wire
 		(pts
-			(xy 684.53 250.19) (xy 684.53 252.73)
+			(xy 688.34 250.19) (xy 688.34 252.73)
 		)
 		(stroke
 			(width 0)
@@ -31128,7 +31334,7 @@
 	)
 	(wire
 		(pts
-			(xy 629.92 260.35) (xy 629.92 274.32)
+			(xy 624.84 260.35) (xy 624.84 274.32)
 		)
 		(stroke
 			(width 0)
@@ -31248,7 +31454,7 @@
 	)
 	(wire
 		(pts
-			(xy 608.33 262.89) (xy 608.33 257.81)
+			(xy 603.25 262.89) (xy 603.25 257.81)
 		)
 		(stroke
 			(width 0)
@@ -31428,7 +31634,7 @@
 	)
 	(wire
 		(pts
-			(xy 695.96 250.19) (xy 695.96 252.73)
+			(xy 699.77 250.19) (xy 699.77 252.73)
 		)
 		(stroke
 			(width 0)
@@ -31528,7 +31734,7 @@
 	)
 	(wire
 		(pts
-			(xy 753.11 250.19) (xy 741.68 250.19)
+			(xy 756.92 250.19) (xy 745.49 250.19)
 		)
 		(stroke
 			(width 0)
@@ -31818,7 +32024,7 @@
 	)
 	(wire
 		(pts
-			(xy 764.54 294.64) (xy 764.54 297.18)
+			(xy 768.35 294.64) (xy 768.35 297.18)
 		)
 		(stroke
 			(width 0)
@@ -31848,7 +32054,7 @@
 	)
 	(wire
 		(pts
-			(xy 608.33 276.86) (xy 613.41 276.86)
+			(xy 603.25 276.86) (xy 608.33 276.86)
 		)
 		(stroke
 			(width 0)
@@ -31898,7 +32104,7 @@
 	)
 	(wire
 		(pts
-			(xy 673.1 250.19) (xy 661.67 250.19)
+			(xy 676.91 250.19) (xy 665.48 250.19)
 		)
 		(stroke
 			(width 0)
@@ -32248,7 +32454,7 @@
 	)
 	(wire
 		(pts
-			(xy 753.11 262.89) (xy 764.54 262.89)
+			(xy 756.92 262.89) (xy 768.35 262.89)
 		)
 		(stroke
 			(width 0)
@@ -32288,7 +32494,7 @@
 	)
 	(wire
 		(pts
-			(xy 707.39 284.48) (xy 695.96 284.48)
+			(xy 711.2 284.48) (xy 699.77 284.48)
 		)
 		(stroke
 			(width 0)
@@ -32318,7 +32524,7 @@
 	)
 	(wire
 		(pts
-			(xy 775.97 294.64) (xy 775.97 297.18)
+			(xy 779.78 294.64) (xy 779.78 297.18)
 		)
 		(stroke
 			(width 0)
@@ -32398,7 +32604,7 @@
 	)
 	(wire
 		(pts
-			(xy 632.46 260.35) (xy 629.92 260.35)
+			(xy 627.38 260.35) (xy 624.84 260.35)
 		)
 		(stroke
 			(width 0)
@@ -32418,7 +32624,7 @@
 	)
 	(wire
 		(pts
-			(xy 673.1 297.18) (xy 661.67 297.18)
+			(xy 676.91 297.18) (xy 665.48 297.18)
 		)
 		(stroke
 			(width 0)
@@ -32448,7 +32654,7 @@
 	)
 	(wire
 		(pts
-			(xy 775.97 260.35) (xy 775.97 262.89)
+			(xy 779.78 260.35) (xy 779.78 262.89)
 		)
 		(stroke
 			(width 0)
@@ -32458,7 +32664,7 @@
 	)
 	(wire
 		(pts
-			(xy 629.92 260.35) (xy 629.92 250.19)
+			(xy 624.84 260.35) (xy 624.84 250.19)
 		)
 		(stroke
 			(width 0)
@@ -32518,7 +32724,7 @@
 	)
 	(wire
 		(pts
-			(xy 707.39 294.64) (xy 707.39 297.18)
+			(xy 711.2 294.64) (xy 711.2 297.18)
 		)
 		(stroke
 			(width 0)
@@ -32548,7 +32754,7 @@
 	)
 	(wire
 		(pts
-			(xy 741.68 250.19) (xy 730.25 250.19)
+			(xy 745.49 250.19) (xy 734.06 250.19)
 		)
 		(stroke
 			(width 0)
@@ -32568,7 +32774,7 @@
 	)
 	(wire
 		(pts
-			(xy 684.53 262.89) (xy 673.1 262.89)
+			(xy 688.34 262.89) (xy 676.91 262.89)
 		)
 		(stroke
 			(width 0)
@@ -32588,7 +32794,7 @@
 	)
 	(wire
 		(pts
-			(xy 684.53 284.48) (xy 684.53 287.02)
+			(xy 688.34 284.48) (xy 688.34 287.02)
 		)
 		(stroke
 			(width 0)
@@ -32868,7 +33074,7 @@
 	)
 	(wire
 		(pts
-			(xy 673.1 284.48) (xy 661.67 284.48)
+			(xy 676.91 284.48) (xy 665.48 284.48)
 		)
 		(stroke
 			(width 0)
@@ -32918,7 +33124,7 @@
 	)
 	(wire
 		(pts
-			(xy 741.68 284.48) (xy 741.68 287.02)
+			(xy 745.49 284.48) (xy 745.49 287.02)
 		)
 		(stroke
 			(width 0)
@@ -33068,7 +33274,7 @@
 	)
 	(wire
 		(pts
-			(xy 629.92 293.37) (xy 624.84 293.37)
+			(xy 624.84 293.37) (xy 619.76 293.37)
 		)
 		(stroke
 			(width 0)
@@ -33088,7 +33294,7 @@
 	)
 	(wire
 		(pts
-			(xy 673.1 294.64) (xy 673.1 297.18)
+			(xy 676.91 294.64) (xy 676.91 297.18)
 		)
 		(stroke
 			(width 0)
@@ -33198,7 +33404,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 262.89) (xy 661.67 265.43)
+			(xy 665.48 262.89) (xy 665.48 265.43)
 		)
 		(stroke
 			(width 0)
@@ -33228,7 +33434,7 @@
 	)
 	(wire
 		(pts
-			(xy 624.84 250.19) (xy 629.92 250.19)
+			(xy 619.76 250.19) (xy 624.84 250.19)
 		)
 		(stroke
 			(width 0)
@@ -33488,7 +33694,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 284.48) (xy 661.67 287.02)
+			(xy 665.48 284.48) (xy 665.48 287.02)
 		)
 		(stroke
 			(width 0)
@@ -33518,7 +33724,7 @@
 	)
 	(wire
 		(pts
-			(xy 764.54 262.89) (xy 775.97 262.89)
+			(xy 768.35 262.89) (xy 779.78 262.89)
 		)
 		(stroke
 			(width 0)
@@ -33638,7 +33844,7 @@
 	)
 	(wire
 		(pts
-			(xy 775.97 284.48) (xy 764.54 284.48)
+			(xy 779.78 284.48) (xy 768.35 284.48)
 		)
 		(stroke
 			(width 0)
@@ -33688,7 +33894,7 @@
 	)
 	(wire
 		(pts
-			(xy 621.03 276.86) (xy 624.84 276.86)
+			(xy 615.95 276.86) (xy 619.76 276.86)
 		)
 		(stroke
 			(width 0)
@@ -33778,7 +33984,7 @@
 	)
 	(wire
 		(pts
-			(xy 741.68 262.89) (xy 753.11 262.89)
+			(xy 745.49 262.89) (xy 756.92 262.89)
 		)
 		(stroke
 			(width 0)
@@ -33858,7 +34064,7 @@
 	)
 	(wire
 		(pts
-			(xy 608.33 257.81) (xy 608.33 255.27)
+			(xy 603.25 257.81) (xy 603.25 255.27)
 		)
 		(stroke
 			(width 0)
@@ -33988,7 +34194,7 @@
 	)
 	(wire
 		(pts
-			(xy 753.11 250.19) (xy 753.11 252.73)
+			(xy 756.92 250.19) (xy 756.92 252.73)
 		)
 		(stroke
 			(width 0)
@@ -34058,7 +34264,7 @@
 	)
 	(wire
 		(pts
-			(xy 695.96 262.89) (xy 684.53 262.89)
+			(xy 699.77 262.89) (xy 688.34 262.89)
 		)
 		(stroke
 			(width 0)
@@ -34098,7 +34304,7 @@
 	)
 	(wire
 		(pts
-			(xy 730.25 262.89) (xy 741.68 262.89)
+			(xy 734.06 262.89) (xy 745.49 262.89)
 		)
 		(stroke
 			(width 0)
@@ -34138,7 +34344,7 @@
 	)
 	(wire
 		(pts
-			(xy 718.82 262.89) (xy 707.39 262.89)
+			(xy 722.63 262.89) (xy 711.2 262.89)
 		)
 		(stroke
 			(width 0)
@@ -34178,7 +34384,7 @@
 	)
 	(wire
 		(pts
-			(xy 707.39 250.19) (xy 695.96 250.19)
+			(xy 711.2 250.19) (xy 699.77 250.19)
 		)
 		(stroke
 			(width 0)
@@ -34238,7 +34444,7 @@
 	)
 	(wire
 		(pts
-			(xy 632.46 274.32) (xy 629.92 274.32)
+			(xy 627.38 274.32) (xy 624.84 274.32)
 		)
 		(stroke
 			(width 0)
@@ -34248,7 +34454,7 @@
 	)
 	(wire
 		(pts
-			(xy 608.33 262.89) (xy 608.33 276.86)
+			(xy 603.25 262.89) (xy 603.25 276.86)
 		)
 		(stroke
 			(width 0)
@@ -34345,6 +34551,16 @@
 			(type default)
 		)
 		(uuid "f57dfce5-9495-4bd4-af8b-058a66c8fb9d")
+	)
+	(wire
+		(pts
+			(xy 645.16 265.43) (xy 645.16 273.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5919024-e3b9-43ed-b667-5594da46f02a")
 	)
 	(wire
 		(pts
@@ -34648,7 +34864,7 @@
 	)
 	(wire
 		(pts
-			(xy 764.54 250.19) (xy 764.54 252.73)
+			(xy 768.35 250.19) (xy 768.35 252.73)
 		)
 		(stroke
 			(width 0)
@@ -34778,7 +34994,7 @@
 	)
 	(wire
 		(pts
-			(xy 605.79 257.81) (xy 608.33 257.81)
+			(xy 600.71 257.81) (xy 603.25 257.81)
 		)
 		(stroke
 			(width 0)
@@ -37866,7 +38082,7 @@
 	)
 	(global_label "VCC"
 		(shape input)
-		(at 661.67 281.94 90)
+		(at 665.48 281.94 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -37876,7 +38092,7 @@
 		)
 		(uuid "3920fc45-e35b-41b9-94fa-ddbd2c8e60c6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 661.67 275.3262 90)
+			(at 665.48 275.3262 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46606,7 +46822,7 @@
 	)
 	(global_label "VCC"
 		(shape input)
-		(at 661.67 247.65 90)
+		(at 665.48 247.65 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -46616,7 +46832,7 @@
 		)
 		(uuid "e16073e5-2240-4ad8-83a4-6cccc73acbae")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 661.67 241.0362 90)
+			(at 665.48 241.0362 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47706,7 +47922,7 @@
 	)
 	(global_label "VCC"
 		(shape output)
-		(at 643.89 250.19 0)
+		(at 650.24 250.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -47715,7 +47931,7 @@
 		)
 		(uuid "f50695c5-2c56-415c-8d49-0b2bcde9c993")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 643.89 250.19 0)
+			(at 650.24 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48448,7 +48664,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 637.54 260.35 0)
+		(at 632.46 260.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -48458,7 +48674,7 @@
 		(dnp no)
 		(uuid "0150b516-b630-4add-b0e7-05e41e0b7cc7")
 		(property "Reference" "J20"
-			(at 636.016 254.254 0)
+			(at 630.936 254.254 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -48469,7 +48685,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 636.016 256.794 0)
+			(at 630.936 256.794 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -48480,7 +48696,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 637.54 260.35 0)
+			(at 632.46 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48491,7 +48707,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 637.54 260.35 0)
+			(at 632.46 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48502,7 +48718,7 @@
 			)
 		)
 		(property "Description" "Pin Header 1x2 2.54mm"
-			(at 637.54 260.35 0)
+			(at 632.46 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48513,7 +48729,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
-			(at 637.54 260.35 0)
+			(at 632.46 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49306,7 +49522,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 661.67 265.43 0)
+		(at 665.48 265.43 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -49317,7 +49533,7 @@
 		(fields_autoplaced yes)
 		(uuid "099c3a3a-d283-4b87-91f9-2394132160fc")
 		(property "Reference" "#PWR027"
-			(at 661.67 271.78 0)
+			(at 665.48 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49328,7 +49544,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 661.67 270.51 0)
+			(at 665.48 270.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49338,7 +49554,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 661.67 265.43 0)
+			(at 665.48 265.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49349,7 +49565,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 661.67 265.43 0)
+			(at 665.48 265.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49360,7 +49576,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 661.67 265.43 0)
+			(at 665.48 265.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49384,7 +49600,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 629.92 250.19 0)
+		(at 624.84 250.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -49395,7 +49611,7 @@
 		(fields_autoplaced yes)
 		(uuid "0b1d556c-07ff-451f-a05f-ccb0c73f9028")
 		(property "Reference" "TP1"
-			(at 632.46 245.6179 0)
+			(at 627.38 245.6179 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49406,7 +49622,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 632.46 248.1579 0)
+			(at 627.38 248.1579 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49417,7 +49633,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_2.5x2.5mm"
-			(at 635 250.19 0)
+			(at 629.92 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49428,7 +49644,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 635 250.19 0)
+			(at 629.92 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49439,7 +49655,7 @@
 			)
 		)
 		(property "Description" "Test Point"
-			(at 629.92 250.19 0)
+			(at 624.84 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49463,7 +49679,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 608.33 281.94 0)
+		(at 603.25 281.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -49474,7 +49690,7 @@
 		(fields_autoplaced yes)
 		(uuid "0e272a9a-31df-4605-a7ae-46cc582c6506")
 		(property "Reference" "#PWR028"
-			(at 608.33 288.29 0)
+			(at 603.25 288.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49485,7 +49701,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 608.33 287.02 0)
+			(at 603.25 287.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49495,7 +49711,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 608.33 281.94 0)
+			(at 603.25 281.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49506,7 +49722,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 608.33 281.94 0)
+			(at 603.25 281.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49517,7 +49733,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 608.33 281.94 0)
+			(at 603.25 281.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50787,7 +51003,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 741.68 290.83 0)
+		(at 745.49 290.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -50797,7 +51013,7 @@
 		(dnp no)
 		(uuid "15e30040-f90f-4e06-aa62-0b7f8f1d2d6f")
 		(property "Reference" "C27"
-			(at 748.0808 290.83 90)
+			(at 751.8908 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -50807,7 +51023,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 745.7694 290.83 90)
+			(at 749.5794 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -50817,7 +51033,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 742.6452 294.64 0)
+			(at 746.4552 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50828,7 +51044,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 741.68 290.83 0)
+			(at 745.49 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50839,7 +51055,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 741.68 290.83 0)
+			(at 745.49 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50850,7 +51066,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 741.68 290.83 90)
+			(at 745.49 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50861,7 +51077,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 741.68 290.83 90)
+			(at 745.49 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51910,7 +52126,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 707.39 256.54 0)
+		(at 711.2 256.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -51920,7 +52136,7 @@
 		(dnp no)
 		(uuid "23b7a365-ade5-460e-9877-d041ba5faf7a")
 		(property "Reference" "C13"
-			(at 713.7908 256.54 90)
+			(at 717.6008 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -51930,7 +52146,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 711.4794 256.54 90)
+			(at 715.2894 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -51940,7 +52156,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 708.3552 260.35 0)
+			(at 712.1652 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51951,7 +52167,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 707.39 256.54 0)
+			(at 711.2 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51962,7 +52178,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 707.39 256.54 0)
+			(at 711.2 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51973,7 +52189,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 707.39 256.54 90)
+			(at 711.2 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51984,7 +52200,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 707.39 256.54 90)
+			(at 711.2 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -52295,7 +52511,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPDT")
-		(at 619.76 252.73 0)
+		(at 614.68 252.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -52306,7 +52522,7 @@
 		(fields_autoplaced yes)
 		(uuid "274df19b-640c-44c3-b48e-0a1c6df98e28")
 		(property "Reference" "SW69"
-			(at 619.76 243.84 0)
+			(at 614.68 243.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -52316,7 +52532,7 @@
 			)
 		)
 		(property "Value" "POWER"
-			(at 619.76 246.38 0)
+			(at 614.68 246.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -52326,7 +52542,7 @@
 			)
 		)
 		(property "Footprint" "6502 Parts:SW_400MSP1R6BLKM6QE"
-			(at 619.76 252.73 0)
+			(at 614.68 252.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -52337,7 +52553,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 619.76 260.35 0)
+			(at 614.68 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -52348,7 +52564,7 @@
 			)
 		)
 		(property "Description" "SPDT Switch"
-			(at 619.76 252.73 0)
+			(at 614.68 252.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -52359,7 +52575,7 @@
 			)
 		)
 		(property "Digikey" "EG4326-ND"
-			(at 619.76 252.73 0)
+			(at 614.68 252.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -52370,7 +52586,7 @@
 			)
 		)
 		(property "Mouser" "612-400MSP1R6BLKM6QE"
-			(at 619.76 252.73 0)
+			(at 614.68 252.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53033,7 +53249,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 775.97 290.83 0)
+		(at 779.78 290.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -53043,7 +53259,7 @@
 		(dnp no)
 		(uuid "2cbf8428-bfbe-437e-8d82-09ebf8b41248")
 		(property "Reference" "C30"
-			(at 782.3708 290.83 90)
+			(at 786.1808 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -53053,7 +53269,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 780.0594 290.83 90)
+			(at 783.8694 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -53063,7 +53279,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 776.9352 294.64 0)
+			(at 780.7452 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53074,7 +53290,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 775.97 290.83 0)
+			(at 779.78 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53085,7 +53301,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 775.97 290.83 0)
+			(at 779.78 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53096,7 +53312,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 775.97 290.83 90)
+			(at 779.78 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53107,7 +53323,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 775.97 290.83 90)
+			(at 779.78 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53212,7 +53428,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 684.53 256.54 0)
+		(at 688.34 256.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -53222,7 +53438,7 @@
 		(dnp no)
 		(uuid "2f26e4ec-5a3d-44b4-8c74-68a247978a42")
 		(property "Reference" "C11"
-			(at 690.9308 256.54 90)
+			(at 694.7408 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -53232,7 +53448,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 688.6194 256.54 90)
+			(at 692.4294 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -53242,7 +53458,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 685.4952 260.35 0)
+			(at 689.3052 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53253,7 +53469,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 684.53 256.54 0)
+			(at 688.34 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53264,7 +53480,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 684.53 256.54 0)
+			(at 688.34 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53275,7 +53491,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 684.53 256.54 90)
+			(at 688.34 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53286,7 +53502,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 684.53 256.54 90)
+			(at 688.34 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53872,7 +54088,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 629.92 284.48 90)
+		(at 624.84 284.48 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -53883,7 +54099,7 @@
 		(fields_autoplaced yes)
 		(uuid "35cf8a32-6259-40c7-8def-e81622978c50")
 		(property "Reference" "D1"
-			(at 633.73 284.7974 90)
+			(at 628.65 284.7974 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -53894,7 +54110,7 @@
 			)
 		)
 		(property "Value" "POWER LED"
-			(at 633.73 287.3374 90)
+			(at 628.65 287.3374 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -53905,7 +54121,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 629.92 284.48 0)
+			(at 624.84 284.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53916,7 +54132,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 629.92 284.48 0)
+			(at 624.84 284.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53927,7 +54143,7 @@
 			)
 		)
 		(property "Description" "3.0mm LED"
-			(at 629.92 284.48 0)
+			(at 624.84 284.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53938,7 +54154,7 @@
 			)
 		)
 		(property "Digikey" "732-5008-ND"
-			(at 629.92 284.48 90)
+			(at 624.84 284.48 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -53949,7 +54165,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/300-Pcs-LED-Diode-Assortment/dp/B0F38LJDJB"
-			(at 629.92 284.48 90)
+			(at 624.84 284.48 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54791,7 +55007,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 661.67 290.83 0)
+		(at 665.48 290.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -54801,7 +55017,7 @@
 		(dnp no)
 		(uuid "3ba6bcea-1376-4adc-8465-40240ea6904d")
 		(property "Reference" "C20"
-			(at 668.0708 290.83 90)
+			(at 671.8808 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -54811,7 +55027,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 665.7594 290.83 90)
+			(at 669.5694 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -54821,7 +55037,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 662.6352 294.64 0)
+			(at 666.4452 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54832,7 +55048,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 661.67 290.83 0)
+			(at 665.48 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54843,7 +55059,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 661.67 290.83 0)
+			(at 665.48 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54854,7 +55070,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 661.67 290.83 90)
+			(at 665.48 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54865,7 +55081,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 661.67 290.83 90)
+			(at 665.48 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54892,7 +55108,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 684.53 290.83 0)
+		(at 688.34 290.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -54902,7 +55118,7 @@
 		(dnp no)
 		(uuid "3c84e17a-ba5c-4fe9-83df-fa4c28c5d1fb")
 		(property "Reference" "C22"
-			(at 690.9308 290.83 90)
+			(at 694.7408 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -54912,7 +55128,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 688.6194 290.83 90)
+			(at 692.4294 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -54922,7 +55138,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 685.4952 294.64 0)
+			(at 689.3052 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54933,7 +55149,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 684.53 290.83 0)
+			(at 688.34 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54944,7 +55160,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 684.53 290.83 0)
+			(at 688.34 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54955,7 +55171,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 684.53 290.83 90)
+			(at 688.34 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54966,7 +55182,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 684.53 290.83 90)
+			(at 688.34 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -57307,7 +57523,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 764.54 290.83 0)
+		(at 768.35 290.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -57317,7 +57533,7 @@
 		(dnp no)
 		(uuid "56ec9c3c-c659-4bcf-b0db-42237f7166f9")
 		(property "Reference" "C29"
-			(at 770.9408 290.83 90)
+			(at 774.7508 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -57327,7 +57543,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 768.6294 290.83 90)
+			(at 772.4394 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -57337,7 +57553,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 765.5052 294.64 0)
+			(at 769.3152 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -57348,7 +57564,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 764.54 290.83 0)
+			(at 768.35 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -57359,7 +57575,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 764.54 290.83 0)
+			(at 768.35 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -57370,7 +57586,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 764.54 290.83 90)
+			(at 768.35 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -57381,7 +57597,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 764.54 290.83 90)
+			(at 768.35 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58087,7 +58303,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 617.22 276.86 270)
+		(at 612.14 276.86 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -58097,7 +58313,7 @@
 		(dnp no)
 		(uuid "6133d7ba-7b47-49c3-8ecd-d6b3e14f2dee")
 		(property "Reference" "R24"
-			(at 617.22 271.6022 90)
+			(at 612.14 271.6022 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -58107,7 +58323,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 617.22 273.9136 90)
+			(at 612.14 273.9136 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -58117,7 +58333,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 617.22 275.082 90)
+			(at 612.14 275.082 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58128,7 +58344,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 617.22 276.86 0)
+			(at 612.14 276.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58139,7 +58355,7 @@
 			)
 		)
 		(property "Description" "1/8 W Resistor"
-			(at 617.22 276.86 0)
+			(at 612.14 276.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58150,7 +58366,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
-			(at 617.22 276.86 90)
+			(at 612.14 276.86 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -60294,7 +60510,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 637.54 274.32 0)
+		(at 632.46 274.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -60304,7 +60520,7 @@
 		(dnp no)
 		(uuid "6ec9e7f2-1637-4aee-a7a8-15c8b1320305")
 		(property "Reference" "J21"
-			(at 636.016 268.224 0)
+			(at 630.936 268.224 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -60315,7 +60531,7 @@
 			)
 		)
 		(property "Value" "POWER LED"
-			(at 636.016 270.764 0)
+			(at 630.936 270.764 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -60326,7 +60542,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 637.54 274.32 0)
+			(at 632.46 274.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -60337,7 +60553,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 637.54 274.32 0)
+			(at 632.46 274.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -60348,7 +60564,7 @@
 			)
 		)
 		(property "Description" "Pin Header 1x2 2.54mm"
-			(at 637.54 274.32 0)
+			(at 632.46 274.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -60359,7 +60575,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
-			(at 637.54 274.32 0)
+			(at 632.46 274.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61361,7 +61577,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 753.11 290.83 0)
+		(at 756.92 290.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -61371,7 +61587,7 @@
 		(dnp no)
 		(uuid "79afb5a4-4bc0-4e85-bae0-319d4123cf6a")
 		(property "Reference" "C28"
-			(at 759.5108 290.83 90)
+			(at 763.3208 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -61381,7 +61597,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 757.1994 290.83 90)
+			(at 761.0094 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -61391,7 +61607,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 754.0752 294.64 0)
+			(at 757.8852 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61402,7 +61618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 753.11 290.83 0)
+			(at 756.92 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61413,7 +61629,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 753.11 290.83 0)
+			(at 756.92 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61424,7 +61640,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 753.11 290.83 90)
+			(at 756.92 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61435,7 +61651,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 753.11 290.83 90)
+			(at 756.92 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62318,7 +62534,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 608.33 276.86 90)
+		(at 603.25 276.86 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -62329,7 +62545,7 @@
 		(fields_autoplaced yes)
 		(uuid "836c7c46-faf1-4e99-a821-dd598ab3e700")
 		(property "Reference" "TP2"
-			(at 605.028 271.78 90)
+			(at 599.948 271.78 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -62339,7 +62555,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 605.028 274.32 90)
+			(at 599.948 274.32 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -62349,7 +62565,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_2.5x2.5mm"
-			(at 608.33 271.78 0)
+			(at 603.25 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62360,7 +62576,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 608.33 271.78 0)
+			(at 603.25 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62371,7 +62587,7 @@
 			)
 		)
 		(property "Description" "Test Point"
-			(at 608.33 276.86 0)
+			(at 603.25 276.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62599,7 +62815,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 730.25 256.54 0)
+		(at 734.06 256.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -62609,7 +62825,7 @@
 		(dnp no)
 		(uuid "8a344bbc-291f-4f13-aa53-63ee2b70f8aa")
 		(property "Reference" "C15"
-			(at 736.6508 256.54 90)
+			(at 740.4608 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -62619,7 +62835,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 734.3394 256.54 90)
+			(at 738.1494 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -62629,7 +62845,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 731.2152 260.35 0)
+			(at 735.0252 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62640,7 +62856,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 730.25 256.54 0)
+			(at 734.06 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62651,7 +62867,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 730.25 256.54 0)
+			(at 734.06 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62662,7 +62878,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 730.25 256.54 90)
+			(at 734.06 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62673,7 +62889,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 730.25 256.54 90)
+			(at 734.06 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62693,6 +62909,88 @@
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_US")
+		(at 645.16 261.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a34f2a0-d40b-4aba-a7e4-6a2882dc5371")
+		(property "Reference" "C31"
+			(at 648.97 259.7149 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 648.97 262.2549 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+			(at 645.16 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 645.16 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor, US symbol"
+			(at 645.16 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3cc4f40d-d6a9-4dc0-aad5-56df70094e5d")
+		)
+		(pin "1"
+			(uuid "617fce50-d51d-407f-bceb-6da8bd313c9b")
+		)
+		(instances
+			(project "ACE Board"
+				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -63498,7 +63796,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 673.1 290.83 0)
+		(at 676.91 290.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -63508,7 +63806,7 @@
 		(dnp no)
 		(uuid "907567d4-5559-431e-84e7-4b0c71c88e1f")
 		(property "Reference" "C21"
-			(at 679.5008 290.83 90)
+			(at 683.3108 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -63518,7 +63816,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 677.1894 290.83 90)
+			(at 680.9994 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -63528,7 +63826,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 674.0652 294.64 0)
+			(at 677.8752 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -63539,7 +63837,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 673.1 290.83 0)
+			(at 676.91 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -63550,7 +63848,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 673.1 290.83 0)
+			(at 676.91 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -63561,7 +63859,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 673.1 290.83 90)
+			(at 676.91 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -63572,7 +63870,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 673.1 290.83 90)
+			(at 676.91 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -63819,46 +64117,46 @@
 			)
 		)
 		(pin "5"
-			(uuid "c821da1d-d6bf-4ec7-9f0b-a170b3f32c66")
+			(uuid "c821da1d-d6bf-4ec7-9f0b-a170b3f32c67")
 		)
 		(pin "4"
-			(uuid "eb111ee7-9873-4afe-b414-deab66baa66f")
+			(uuid "eb111ee7-9873-4afe-b414-deab66baa670")
 		)
 		(pin "3"
-			(uuid "82ff5d3b-e881-48ea-b352-fd39553675d9")
+			(uuid "82ff5d3b-e881-48ea-b352-fd39553675da")
 		)
 		(pin "2"
-			(uuid "b6c9a5a8-1ee0-48ef-a05b-075e20231e36")
+			(uuid "b6c9a5a8-1ee0-48ef-a05b-075e20231e37")
 		)
 		(pin "1"
-			(uuid "a6abe220-3b1b-430c-99ce-dd4fa7482658")
+			(uuid "a6abe220-3b1b-430c-99ce-dd4fa7482659")
 		)
 		(pin "6"
-			(uuid "df9c851d-4a83-4aea-9d06-aa9b31e1ae14")
+			(uuid "df9c851d-4a83-4aea-9d06-aa9b31e1ae15")
 		)
 		(pin "9"
-			(uuid "91efbf23-0ea4-4faf-bf01-c133a7cf3bad")
+			(uuid "91efbf23-0ea4-4faf-bf01-c133a7cf3bae")
 		)
 		(pin "8"
-			(uuid "7838f834-3039-43be-ac5c-685282db418d")
+			(uuid "7838f834-3039-43be-ac5c-685282db418e")
 		)
 		(pin "10"
-			(uuid "a0a36c12-b221-49d2-a28d-4c32ad0d63a0")
+			(uuid "a0a36c12-b221-49d2-a28d-4c32ad0d63a1")
 		)
 		(pin "11"
-			(uuid "d12af59b-1ad1-440d-bf62-33b9621c2a39")
+			(uuid "d12af59b-1ad1-440d-bf62-33b9621c2a3a")
 		)
 		(pin "12"
-			(uuid "88a52f27-a500-44b8-b3c7-1e8fef9c354c")
+			(uuid "88a52f27-a500-44b8-b3c7-1e8fef9c354d")
 		)
 		(pin "13"
-			(uuid "9fce6cd1-32d6-41e6-936c-ba8f84e68204")
+			(uuid "9fce6cd1-32d6-41e6-936c-ba8f84e68205")
 		)
 		(pin "14"
-			(uuid "0c628f4b-294b-44e6-a76d-b1cf7c96c685")
+			(uuid "0c628f4b-294b-44e6-a76d-b1cf7c96c686")
 		)
 		(pin "7"
-			(uuid "9ae28ce0-42fa-4bc2-8af8-cab186cfbabe")
+			(uuid "9ae28ce0-42fa-4bc2-8af8-cab186cfbabf")
 		)
 		(instances
 			(project "ACE Board"
@@ -63973,7 +64271,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 673.1 256.54 0)
+		(at 676.91 256.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -63983,7 +64281,7 @@
 		(dnp no)
 		(uuid "941ae804-03c5-44f2-9402-f510e0e66e88")
 		(property "Reference" "C10"
-			(at 679.5008 256.54 90)
+			(at 683.3108 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -63993,7 +64291,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 677.1894 256.54 90)
+			(at 680.9994 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -64003,7 +64301,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 674.0652 260.35 0)
+			(at 677.8752 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -64014,7 +64312,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 673.1 256.54 0)
+			(at 676.91 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -64025,7 +64323,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 673.1 256.54 0)
+			(at 676.91 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -64036,7 +64334,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 673.1 256.54 90)
+			(at 676.91 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -64047,7 +64345,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 673.1 256.54 90)
+			(at 676.91 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65034,7 +65332,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 661.67 299.72 0)
+		(at 665.48 299.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -65045,7 +65343,7 @@
 		(fields_autoplaced yes)
 		(uuid "97cde376-0115-49b8-b244-de6ee974d871")
 		(property "Reference" "#PWR031"
-			(at 661.67 306.07 0)
+			(at 665.48 306.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65056,7 +65354,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 661.67 304.8 0)
+			(at 665.48 304.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -65066,7 +65364,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 661.67 299.72 0)
+			(at 665.48 299.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65077,7 +65375,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 661.67 299.72 0)
+			(at 665.48 299.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65088,7 +65386,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 661.67 299.72 0)
+			(at 665.48 299.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65569,7 +65867,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 741.68 256.54 0)
+		(at 745.49 256.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -65579,7 +65877,7 @@
 		(dnp no)
 		(uuid "9aa57ec5-5c1e-4277-bc5b-2c5c683b62c4")
 		(property "Reference" "C16"
-			(at 748.0808 256.54 90)
+			(at 751.8908 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -65589,7 +65887,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 745.7694 256.54 90)
+			(at 749.5794 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -65599,7 +65897,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 742.6452 260.35 0)
+			(at 746.4552 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65610,7 +65908,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 741.68 256.54 0)
+			(at 745.49 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65621,7 +65919,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 741.68 256.54 0)
+			(at 745.49 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65632,7 +65930,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 741.68 256.54 90)
+			(at 745.49 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65643,7 +65941,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 741.68 256.54 90)
+			(at 745.49 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66687,7 +66985,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Barrel_Jack_Switch")
-		(at 598.17 255.27 0)
+		(at 593.09 255.27 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -66698,7 +66996,7 @@
 		(fields_autoplaced yes)
 		(uuid "a6bd75ac-7abf-4f9d-973b-7b12e759704b")
 		(property "Reference" "J17"
-			(at 598.17 246.38 0)
+			(at 593.09 246.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -66708,7 +67006,7 @@
 			)
 		)
 		(property "Value" "5V DC"
-			(at 598.17 248.92 0)
+			(at 593.09 248.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -66718,7 +67016,7 @@
 			)
 		)
 		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
-			(at 599.44 256.286 0)
+			(at 594.36 256.286 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66729,7 +67027,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 599.44 256.286 0)
+			(at 594.36 256.286 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66740,7 +67038,7 @@
 			)
 		)
 		(property "Description" "DC Barrel Jack"
-			(at 598.17 255.27 0)
+			(at 593.09 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66751,7 +67049,7 @@
 			)
 		)
 		(property "Digikey" "2073-DCJ200-10-A-K1-K-ND"
-			(at 598.17 255.27 0)
+			(at 593.09 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66762,7 +67060,7 @@
 			)
 		)
 		(property "Mouser" "640-DCJ200-10-A-K1-K"
-			(at 598.17 255.27 0)
+			(at 593.09 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66949,7 +67247,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 707.39 290.83 0)
+		(at 711.2 290.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -66959,7 +67257,7 @@
 		(dnp no)
 		(uuid "aad16c3c-98e3-4ad5-be00-f2a8a13de4d3")
 		(property "Reference" "C24"
-			(at 713.7908 290.83 90)
+			(at 717.6008 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -66969,7 +67267,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 711.4794 290.83 90)
+			(at 715.2894 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -66979,7 +67277,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 708.3552 294.64 0)
+			(at 712.1652 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66990,7 +67288,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 707.39 290.83 0)
+			(at 711.2 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67001,7 +67299,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 707.39 290.83 0)
+			(at 711.2 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67012,7 +67310,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 707.39 290.83 90)
+			(at 711.2 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67023,7 +67321,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 707.39 290.83 90)
+			(at 711.2 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67153,7 +67451,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 775.97 256.54 0)
+		(at 779.78 256.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -67163,7 +67461,7 @@
 		(dnp no)
 		(uuid "ac8dd5d4-0cf7-4452-86da-18f2ca750a17")
 		(property "Reference" "C19"
-			(at 782.3708 256.54 90)
+			(at 786.1808 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -67173,7 +67471,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 780.0594 256.54 90)
+			(at 783.8694 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -67183,7 +67481,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 776.9352 260.35 0)
+			(at 780.7452 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67194,7 +67492,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 775.97 256.54 0)
+			(at 779.78 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67205,7 +67503,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 775.97 256.54 0)
+			(at 779.78 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67216,7 +67514,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 775.97 256.54 90)
+			(at 779.78 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67227,7 +67525,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 775.97 256.54 90)
+			(at 779.78 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67558,7 +67856,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 695.96 290.83 0)
+		(at 699.77 290.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -67568,7 +67866,7 @@
 		(dnp no)
 		(uuid "b14353f1-c033-4f0d-8391-2638bb9d1dd9")
 		(property "Reference" "C23"
-			(at 702.3608 290.83 90)
+			(at 706.1708 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -67578,7 +67876,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 700.0494 290.83 90)
+			(at 703.8594 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -67588,7 +67886,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 696.9252 294.64 0)
+			(at 700.7352 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67599,7 +67897,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 695.96 290.83 0)
+			(at 699.77 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67610,7 +67908,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 695.96 290.83 0)
+			(at 699.77 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67621,7 +67919,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 695.96 290.83 90)
+			(at 699.77 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67632,7 +67930,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 695.96 290.83 90)
+			(at 699.77 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -69639,6 +69937,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 645.16 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6d30adc-2daa-47db-a993-9dd34f89e6bd")
+		(property "Reference" "#PWR046"
+			(at 645.16 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 645.16 278.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 645.16 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 645.16 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 645.16 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a7d6b601-0f5c-41ff-8c28-90cbc2fb7180")
+		)
+		(instances
+			(project "ACE Board"
+				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 464.82 370.84 0)
 		(unit 1)
 		(body_style 1)
@@ -70420,7 +70796,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 730.25 290.83 0)
+		(at 734.06 290.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -70430,7 +70806,7 @@
 		(dnp no)
 		(uuid "cfaff0aa-46f5-488d-a34b-25d2b45ac1c8")
 		(property "Reference" "C26"
-			(at 736.6508 290.83 90)
+			(at 740.4608 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -70440,7 +70816,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 734.3394 290.83 90)
+			(at 738.1494 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -70450,7 +70826,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 731.2152 294.64 0)
+			(at 735.0252 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70461,7 +70837,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 730.25 290.83 0)
+			(at 734.06 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70472,7 +70848,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 730.25 290.83 0)
+			(at 734.06 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70483,7 +70859,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 730.25 290.83 90)
+			(at 734.06 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70494,7 +70870,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 730.25 290.83 90)
+			(at 734.06 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70837,7 +71213,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 661.67 256.54 0)
+		(at 665.48 256.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -70847,7 +71223,7 @@
 		(dnp no)
 		(uuid "d1f551fd-c20e-4d25-b13f-7bf9a666711b")
 		(property "Reference" "C9"
-			(at 668.0708 256.54 90)
+			(at 671.8808 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -70857,7 +71233,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 665.7594 256.54 90)
+			(at 669.5694 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -70867,7 +71243,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 662.6352 260.35 0)
+			(at 666.4452 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70878,7 +71254,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 661.67 256.54 0)
+			(at 665.48 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70889,7 +71265,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 661.67 256.54 0)
+			(at 665.48 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70900,7 +71276,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 661.67 256.54 90)
+			(at 665.48 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70911,7 +71287,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 661.67 256.54 90)
+			(at 665.48 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71017,7 +71393,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 718.82 256.54 0)
+		(at 722.63 256.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -71027,7 +71403,7 @@
 		(dnp no)
 		(uuid "d2881fe8-fc27-4455-a17d-693f19a415a7")
 		(property "Reference" "C14"
-			(at 725.2208 256.54 90)
+			(at 729.0308 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -71037,7 +71413,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 722.9094 256.54 90)
+			(at 726.7194 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -71047,7 +71423,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 719.7852 260.35 0)
+			(at 723.5952 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71058,7 +71434,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 718.82 256.54 0)
+			(at 722.63 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71069,7 +71445,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 718.82 256.54 0)
+			(at 722.63 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71080,7 +71456,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 718.82 256.54 90)
+			(at 722.63 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -71091,7 +71467,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 718.82 256.54 90)
+			(at 722.63 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -73789,7 +74165,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 718.82 290.83 0)
+		(at 722.63 290.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -73799,7 +74175,7 @@
 		(dnp no)
 		(uuid "ede22247-220a-45e4-8f55-d8dbcbea868a")
 		(property "Reference" "C25"
-			(at 725.2208 290.83 90)
+			(at 729.0308 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -73809,7 +74185,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 722.9094 290.83 90)
+			(at 726.7194 290.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -73819,7 +74195,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 719.7852 294.64 0)
+			(at 723.5952 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -73830,7 +74206,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 718.82 290.83 0)
+			(at 722.63 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -73841,7 +74217,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 718.82 290.83 0)
+			(at 722.63 290.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -73852,7 +74228,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 718.82 290.83 90)
+			(at 722.63 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -73863,7 +74239,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 718.82 290.83 90)
+			(at 722.63 290.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -74672,7 +75048,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 753.11 256.54 0)
+		(at 756.92 256.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -74682,7 +75058,7 @@
 		(dnp no)
 		(uuid "f34c5cc9-6170-4dae-a929-49c28b4de339")
 		(property "Reference" "C17"
-			(at 759.5108 256.54 90)
+			(at 763.3208 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -74692,7 +75068,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 757.1994 256.54 90)
+			(at 761.0094 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -74702,7 +75078,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 754.0752 260.35 0)
+			(at 757.8852 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -74713,7 +75089,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 753.11 256.54 0)
+			(at 756.92 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -74724,7 +75100,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 753.11 256.54 0)
+			(at 756.92 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -74735,7 +75111,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 753.11 256.54 90)
+			(at 756.92 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -74746,7 +75122,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 753.11 256.54 90)
+			(at 756.92 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -75119,46 +75495,46 @@
 			)
 		)
 		(pin "5"
-			(uuid "c821da1d-d6bf-4ec7-9f0b-a170b3f32c66")
+			(uuid "c821da1d-d6bf-4ec7-9f0b-a170b3f32c68")
 		)
 		(pin "4"
-			(uuid "eb111ee7-9873-4afe-b414-deab66baa66f")
+			(uuid "eb111ee7-9873-4afe-b414-deab66baa671")
 		)
 		(pin "3"
-			(uuid "82ff5d3b-e881-48ea-b352-fd39553675d9")
+			(uuid "82ff5d3b-e881-48ea-b352-fd39553675db")
 		)
 		(pin "2"
-			(uuid "b6c9a5a8-1ee0-48ef-a05b-075e20231e36")
+			(uuid "b6c9a5a8-1ee0-48ef-a05b-075e20231e38")
 		)
 		(pin "1"
-			(uuid "a6abe220-3b1b-430c-99ce-dd4fa7482658")
+			(uuid "a6abe220-3b1b-430c-99ce-dd4fa748265a")
 		)
 		(pin "6"
-			(uuid "df9c851d-4a83-4aea-9d06-aa9b31e1ae14")
+			(uuid "df9c851d-4a83-4aea-9d06-aa9b31e1ae16")
 		)
 		(pin "9"
-			(uuid "91efbf23-0ea4-4faf-bf01-c133a7cf3bad")
+			(uuid "91efbf23-0ea4-4faf-bf01-c133a7cf3baf")
 		)
 		(pin "8"
-			(uuid "7838f834-3039-43be-ac5c-685282db418d")
+			(uuid "7838f834-3039-43be-ac5c-685282db418f")
 		)
 		(pin "10"
-			(uuid "a0a36c12-b221-49d2-a28d-4c32ad0d63a0")
+			(uuid "a0a36c12-b221-49d2-a28d-4c32ad0d63a2")
 		)
 		(pin "11"
-			(uuid "d12af59b-1ad1-440d-bf62-33b9621c2a39")
+			(uuid "d12af59b-1ad1-440d-bf62-33b9621c2a3b")
 		)
 		(pin "12"
-			(uuid "88a52f27-a500-44b8-b3c7-1e8fef9c354c")
+			(uuid "88a52f27-a500-44b8-b3c7-1e8fef9c354e")
 		)
 		(pin "13"
-			(uuid "9fce6cd1-32d6-41e6-936c-ba8f84e68204")
+			(uuid "9fce6cd1-32d6-41e6-936c-ba8f84e68206")
 		)
 		(pin "14"
-			(uuid "0c628f4b-294b-44e6-a76d-b1cf7c96c685")
+			(uuid "0c628f4b-294b-44e6-a76d-b1cf7c96c687")
 		)
 		(pin "7"
-			(uuid "9ae28ce0-42fa-4bc2-8af8-cab186cfbabe")
+			(uuid "9ae28ce0-42fa-4bc2-8af8-cab186cfbac0")
 		)
 		(instances
 			(project "ACE Board"
@@ -76080,46 +76456,46 @@
 			)
 		)
 		(pin "5"
-			(uuid "c821da1d-d6bf-4ec7-9f0b-a170b3f32c66")
+			(uuid "c821da1d-d6bf-4ec7-9f0b-a170b3f32c69")
 		)
 		(pin "4"
-			(uuid "eb111ee7-9873-4afe-b414-deab66baa66f")
+			(uuid "eb111ee7-9873-4afe-b414-deab66baa672")
 		)
 		(pin "3"
-			(uuid "82ff5d3b-e881-48ea-b352-fd39553675d9")
+			(uuid "82ff5d3b-e881-48ea-b352-fd39553675dc")
 		)
 		(pin "2"
-			(uuid "b6c9a5a8-1ee0-48ef-a05b-075e20231e36")
+			(uuid "b6c9a5a8-1ee0-48ef-a05b-075e20231e39")
 		)
 		(pin "1"
-			(uuid "a6abe220-3b1b-430c-99ce-dd4fa7482658")
+			(uuid "a6abe220-3b1b-430c-99ce-dd4fa748265b")
 		)
 		(pin "6"
-			(uuid "df9c851d-4a83-4aea-9d06-aa9b31e1ae14")
+			(uuid "df9c851d-4a83-4aea-9d06-aa9b31e1ae17")
 		)
 		(pin "9"
-			(uuid "91efbf23-0ea4-4faf-bf01-c133a7cf3bad")
+			(uuid "91efbf23-0ea4-4faf-bf01-c133a7cf3bb0")
 		)
 		(pin "8"
-			(uuid "7838f834-3039-43be-ac5c-685282db418d")
+			(uuid "7838f834-3039-43be-ac5c-685282db4190")
 		)
 		(pin "10"
-			(uuid "a0a36c12-b221-49d2-a28d-4c32ad0d63a0")
+			(uuid "a0a36c12-b221-49d2-a28d-4c32ad0d63a3")
 		)
 		(pin "11"
-			(uuid "d12af59b-1ad1-440d-bf62-33b9621c2a39")
+			(uuid "d12af59b-1ad1-440d-bf62-33b9621c2a3c")
 		)
 		(pin "12"
-			(uuid "88a52f27-a500-44b8-b3c7-1e8fef9c354c")
+			(uuid "88a52f27-a500-44b8-b3c7-1e8fef9c354f")
 		)
 		(pin "13"
-			(uuid "9fce6cd1-32d6-41e6-936c-ba8f84e68204")
+			(uuid "9fce6cd1-32d6-41e6-936c-ba8f84e68207")
 		)
 		(pin "14"
-			(uuid "0c628f4b-294b-44e6-a76d-b1cf7c96c685")
+			(uuid "0c628f4b-294b-44e6-a76d-b1cf7c96c688")
 		)
 		(pin "7"
-			(uuid "9ae28ce0-42fa-4bc2-8af8-cab186cfbabe")
+			(uuid "9ae28ce0-42fa-4bc2-8af8-cab186cfbac1")
 		)
 		(instances
 			(project "ACE Board"
@@ -76250,7 +76626,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 695.96 256.54 0)
+		(at 699.77 256.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -76260,7 +76636,7 @@
 		(dnp no)
 		(uuid "fdb67904-703f-46b6-aca1-4e5fe1a46f30")
 		(property "Reference" "C12"
-			(at 702.3608 256.54 90)
+			(at 706.1708 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -76270,7 +76646,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 700.0494 256.54 90)
+			(at 703.8594 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -76280,7 +76656,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 696.9252 260.35 0)
+			(at 700.7352 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76291,7 +76667,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 695.96 256.54 0)
+			(at 699.77 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76302,7 +76678,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 695.96 256.54 0)
+			(at 699.77 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76313,7 +76689,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 695.96 256.54 90)
+			(at 699.77 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76324,7 +76700,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 695.96 256.54 90)
+			(at 699.77 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76351,7 +76727,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 764.54 256.54 0)
+		(at 768.35 256.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -76361,7 +76737,7 @@
 		(dnp no)
 		(uuid "fde36a33-1bec-4b8a-bf26-95a04120c1d6")
 		(property "Reference" "C18"
-			(at 770.9408 256.54 90)
+			(at 774.7508 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -76371,7 +76747,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 768.6294 256.54 90)
+			(at 772.4394 256.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -76381,7 +76757,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 765.5052 260.35 0)
+			(at 769.3152 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76392,7 +76768,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 764.54 256.54 0)
+			(at 768.35 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76403,7 +76779,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 764.54 256.54 0)
+			(at 768.35 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76414,7 +76790,7 @@
 			)
 		)
 		(property "Digikey" "478-5732-ND"
-			(at 764.54 256.54 90)
+			(at 768.35 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -76425,7 +76801,7 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
-			(at 764.54 256.54 90)
+			(at 768.35 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
