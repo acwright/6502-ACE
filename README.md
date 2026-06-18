@@ -98,7 +98,7 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - Fixes the gating of the `LOADL` and `LOADH` latch-enable signals for the 74HC573 latches (`U21`, `U22`) that drive the AS6C4008 banked SRAM. In Rev 1.0 the final two decode gates (`U13C`/`U13D`) were NANDs, which left the latches pulsing while idle and allowed spurious loads on reads, so the latches never reliably held a bank value.
 - The fix replaces the final NAND stage with a NOR function: `LOADL = NOR(SEL_L, WB)` and `LOADH = NOR(SEH_L, WB)`, holding each latch enable low out of window and only pulsing on an in-window write. This makes banked RAM work correctly with no firmware change.
 - Implemented by adding one 74HC02 quad NOR (`U23`). The existing select logic in `U13A`/`U13B` is unchanged.
-- Pull-up resistors changed from 10kΩ to 1kΩ: `R1`–`R4` and `R25` are now 10kΩ.
+- Some pull-up resistors changed from 1kΩ to 10kΩ: `R1`–`R4` and `R25` are now 10kΩ.
 - Added `C31` (10µF electrolytic) at the power input for bulk decoupling capacitance.
 
 **Rev 1.0**
