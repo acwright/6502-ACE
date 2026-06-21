@@ -17,6 +17,7 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
   - [ACE Board](#ace-board)
     - [Revision History](#revision-history)
   - [ACE CF Adapter](#ace-cf-adapter)
+  - [ACE RAM Patch](#ace-ram-patch)
 - [Firmware](#firmware)
   - [AB Controller](#ab-controller)
 - [CAD](#cad)
@@ -26,6 +27,7 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [Bill of Materials](#bill-of-materials)
   - [ACE Board](#ace-board-1)
   - [ACE CF Adapter](#ace-cf-adapter-1)
+  - [ACE RAM Patch](#ace-ram-patch-1)
 - [License](#license)
 
 ---
@@ -112,6 +114,14 @@ A CompactFlash adapter board that connects to the Storage header on the ACE Boar
 
 - **Interface**: 8-bit IDE mode
 - **Storage**: CompactFlash socket (up to 1MB)
+
+### ACE RAM Patch
+`Hardware/ACE RAM Patch/`
+
+A piggyback patch board for Rev 1.0 of the ACE Board that corrects the extended RAM (banked SRAM) issue. Installs by plugging into the U13 (74HC00) socket on the main board. Provides:
+
+- **Fix**: Replaces the Rev 1.0 NAND-based latch-enable logic with a NOR function (`LOADL = NOR(SEL_L, WB)`, `LOADH = NOR(SEH_L, WB)`), preventing spurious latch pulses and making banked RAM work correctly with no firmware change
+- **Interface**: DIP-14 piggyback connector into U13 on the Rev 1.0 ACE Board
 
 ## Firmware
 
@@ -228,6 +238,14 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 | J2 | 1 | Compact Flash | CF Socket | [4827-101D-TAAB-R01-ND](https://www.digikey.com/en/products/filter?keywords=4827-101D-TAAB-R01-ND) | | |
 | R1–R4 | 4 | 1kΩ | 1/8W Resistor | [RNF18FTD1K00CT-ND](https://www.digikey.com/en/products/filter?keywords=RNF18FTD1K00CT-ND) | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
 | R5 | 1 | 330Ω | 1/8W Resistor | | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
+
+### ACE RAM Patch
+
+| Reference | Qty | Value | Description | DigiKey | Mouser | Other |
+|-----------|-----|-------|-------------|---------|--------|-------|
+| J1 | 1 | 74HC00 (U13) | DIP-14 Piggyback Socket | | | |
+| U1 | 1 | 74HC00 | Quad NAND | [296-1563-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1563-5-ND) | [595-SN74HC00N](https://www.mouser.com/ProductDetail/595-SN74HC00N) | |
+| U2 | 1 | 74HC02 | Quad NOR | [296-1565-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1565-5-ND) | [595-SN74HC02N](https://www.mouser.com/ProductDetail/595-SN74HC02N) | |
 
 ## License
 

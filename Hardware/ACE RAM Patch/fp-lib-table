@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "A.C. Wright Design Logo") (type "KiCad") (uri "${KIPRJMOD}/../../Libraries/A.C. Wright Logo.pretty") (options "") (descr ""))
+)
