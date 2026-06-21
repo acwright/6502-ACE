@@ -75,7 +75,7 @@ This repository contains KiCad 7.0+ PCB designs for the ACE board.
 
 The single integrated board hosting the W65C02S CPU and all peripherals. Provides:
 
-- **CPU**: W65C02S running at 1 MHz
+- **CPU**: W65C02S running at 1 or 2 MHz (jumper-selectable)
 - **RAM**: 32KB SRAM (62256) + Optional 512K banked SRAM (AS6C4008)
 - **ROM**: 32KB EEPROM (28C256)
 - **Video**: Pico9918 (VGA 640×480)
@@ -87,9 +87,9 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - **Keyboard Controller**: ATmega1284P running AB Controller firmware
 - **Input**: PS/2 keyboard connector and 8×8 keyboard matrix header
 - **Joystick**: Atari 2600-compatible joystick port
-- **Clock**: On-board oscillator (1–8 MHz, selectable by swapping oscillator)
-- **Reset**: Power-on RC reset circuit and manual reset button
-- **Power**: 5V DC, 2–3A
+- **Clock**: 16 MHz DIP-14 full can oscillator (X1); drives the ATmega1284 at 16 MHz and the 65C02 at 1 or 2 MHz via the 74HC163 divider (J1 PHI2 SELECT jumper)
+- **Reset**: Manual reset button (SW70) connected to the ATmega1284, which also provides power-on reset to the 65C02
+- **Power**: 5V DC via barrel jack
 
 #### Revision History
 
