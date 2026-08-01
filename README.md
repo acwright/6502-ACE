@@ -95,7 +95,7 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - **RTC**: DS1511Y real-time clock with battery-backed NVRAM
 - **Keyboard Controller**: ATmega1284P running AB Controller firmware
 - **Input**: PS/2 keyboard connector and 8×8 keyboard matrix header
-- **Joystick**: Atari 2600-compatible joystick port
+- **Joystick**: Two Atari 2600-compatible joystick ports (`J6` JOYSTICK A on VIA PORT A, `J8` JOYSTICK B on VIA PORT B), read as `JOY(2)` and `JOY(1)` respectively
 - **Clock**: 16 MHz DIP-14 full can oscillator (X1); drives the ATmega1284 at 16 MHz and the 65C02 at 1 or 2 MHz via the 74HC163 divider (J1 PHI2 SELECT jumper)
 - **Reset**: Manual reset button (SW70) connected to the ATmega1284, which also provides power-on reset to the 65C02
 - **Power**: 5V DC via barrel jack
@@ -144,7 +144,9 @@ Firmware for the ATmega1284P keyboard controller on the ACE board. Provides:
 - Matrix keyboard scanning with hardware debouncing
 - Modifier key support: Shift (symbols/punctuation) and Ctrl (control codes)
 - Buffered output via 65C22 VIA with CA1/CB1 data-ready strobes
-- Independent enable/disable for PS/2 and matrix inputs
+- Independent enable/disable for PS/2 and matrix inputs, releasing PORT A / PORT B so the 6502 can read the joysticks that share them
+- 6502 reset control: drives `RESB` on PC7, holding the CPU in reset for ~250 ms at power-on, and debounces the reset button on PC0
+- Optional jiffy clock: pulses `NMIB` from the DS1511Y SQW input; compiled out unless `ENABLE_SQW` is defined
 
 See [Firmware/AB Controller/README.md](./Firmware/AB%20Controller/README.md) for setup and usage instructions.
 

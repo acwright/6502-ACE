@@ -13,6 +13,7 @@ The AB Controller is firmware for the ATMega1284P microcontroller that provides 
 - **Buffered Input**: Uses circular buffers to prevent data loss during rapid typing
 - **Debounced Matrix Scanning**: Hardware debouncing for reliable matrix keyboard operation
 - **Enable/Disable Control**: Independent enable signals for PS/2 and matrix inputs
+- **Shared Joystick Ports**: Releases PORT A / PORT B when disabled so the 6502 can read the two Atari 2600-compatible joysticks that share those ports
 - **6502 Reset Control**: Drives the 6502 RESB line, providing power-on reset and a debounced reset button
 - **Jiffy Clock (optional)**: Can generate periodic 6502 NMIs from a DS1511Y RTC square-wave input. Disabled by default; enabled at build time via the `ENABLE_SQW` define
 
@@ -75,6 +76,77 @@ The firmware supports an 8x8 keyboard matrix (64 keys maximum):
 
 Each key connects a row to a column when pressed. The matrix is scanned with rows driven low and columns read with pull-ups.
 
+### Joystick Interface
+
+PORT A and PORT B are shared between this encoder and two Atari 2600-compatible
+joysticks. Unlike COB's Keyboard Encoder Helper and VCS's Input Board, which
+reach a stick through a helper board, the ACE Board carries its own DB-9s —
+`J6` JOYSTICK A and `J8` JOYSTICK B — with the 1kΩ pull-ups fitted on board
+(`R6`–`R13` on PORT A, `R14`–`R21` on PORT B). The same port lines are also
+brought out on the `J9` PORT B / `J10` PORT A 2×6 box headers.
+
+The BIOS reads the two sticks through those same ports:
+
+| BIOS routine | BASIC | VIA port | ACE connector | Encoder released by |
+|---|---|---|---|---|
+| `ReadJoystick1` (`$A048`) | `JOY(1)` | PORT B | `J8` JOYSTICK B | `CB2` high — matrix encoder off |
+| `ReadJoystick2` (`$A04B`) | `JOY(2)` | PORT A | `J6` JOYSTICK A | `CA2` high — PS/2 encoder off |
+
+> Note the naming trap: `J6` *JOYSTICK A* is PORT A, which is `JOY(2)`, and `J8`
+> *JOYSTICK B* is PORT B, which is `JOY(1)`.
+
+Each read returns the port raw, as a bitmask:
+
+```
+Bit:  7   6   5   4   3   2   1   0
+      R   L   D   U   Y   X   B   A
+```
+
+The ports are **active low** — every line is pulled high and grounded by the
+stick's switch — so a held button reads `0` and an untouched stick reads `$FF`.
+
+Both DB-9s are wired the same way:
+
+| DB-9 pin | Function | `J6` (PORT A) | `J8` (PORT B) |
+|---|---|---|---|
+| 1 | Up | PA4 | PB4 |
+| 2 | Down | PA5 | PB5 |
+| 3 | Left | PA6 | PB6 |
+| 4 | Right | PA7 | PB7 |
+| 5 | Y | PA3 | PB3 |
+| 6 | A (fire) | PA0 | PB0 |
+| 7 | B | PA1 | PB1 |
+| 8 | GND | GND | GND |
+| 9 | X | PA2 | PB2 |
+
+Pins 1–4, 6 and 8 match a standard Atari 2600 stick. Pins 5, 7 and 9 carry the
+extra Y, B and X buttons rather than the 2600's paddle pots and +5V, so a
+2600 stick works with A/fire only, and nothing on the connector sources power.
+
+This is the firmware's obligation in the joystick path: when `CA2` or `CB2`
+goes high, it releases the corresponding port within 100 µs so the 6502 can
+read the stick directly — the same arrangement a C64 has with a CIA port.
+`disablePS2()` releases PORT A and `disableMatrix()` releases PORT B, both by
+returning the pins to `INPUT_PULLUP` rather than bare `INPUT`, so an untouched
+stick reads `$FF` even on a board relying on the pull-up alone.
+
+The BIOS reads a stick as `KBDisable` → settle → read the port directly →
+`KBEnable`. Nothing is transmitted over the shared lines, so there is nothing
+for one stick to corrupt on the other's behalf — **both sticks read correctly
+even when held at the same time.** An earlier design had the encoder push
+joystick state to the 6502 as control bytes over the keyboard channel instead;
+that could not report a held button on the port it was reporting over, and was
+abandoned. See
+[BIOS `PLAN.md` §2](https://github.com/acwright/6502-BIOS/blob/main/PLAN.md)
+for the full account.
+
+**Measured release latency: to be measured later.** This is the figure the
+BIOS's `KBDisable` settle wait is sized against. Cycle-counting the compiled
+firmware puts the worst-case code path at ~17 µs against a 100 µs budget, but
+that excludes a PS/2 interrupt landing in the window and says nothing about how
+long the bus takes to charge through a pull-up, so the published number comes
+from a scope. See [PLAN.md](../../PLAN.md).
+
 ## Keyboard Matrix Layout
 
 ```
@@ -120,6 +192,10 @@ When VIA_CB2 (Pin 13) is pulled LOW:
 
 ### Dual Mode
 Both keyboards can operate simultaneously if both enable signals are active.
+
+### Joystick Reads
+When an enable signal goes HIGH the firmware releases that port so the joystick
+sharing it can be read by the 6502 — see [Joystick Interface](#joystick-interface).
 
 ## 6502 System Control
 
@@ -231,7 +307,7 @@ Letters are always uppercase (A-Z). Numbers, symbols, space, and navigation keys
 
 1. **Navigate to the project directory:**
    ```bash
-   cd "Firmware/KEH Controller"
+   cd "Firmware/AB Controller"
    ```
 
 2. **Build the firmware:**
@@ -269,8 +345,8 @@ The project uses a MiniPro TL866 programmer for uploading.
    # Flash the program
    minipro -p "ATMEGA1284P@DIP40" -c code -w .pio/build/atmega1284p/firmware.hex
    
-   # Flash the fuses and lock bits
-   minipro -p "ATMEGA1284P@DIP40" -c config -w fuses.cfg --fuses --lock
+   # Flash the fuses
+   minipro -p "ATMEGA1284P@DIP40" -c config -w fuses.cfg --fuses
    ```
 
 ## Fuse Configuration
@@ -281,7 +357,7 @@ The `fuses.cfg` file contains the ATMega1284P fuse settings:
 lfuse = 0xe0   # Low fuse
 hfuse = 0xff   # High fuse  
 efuse = 0xff   # Extended fuse
-lock = 0xff    # Lock bits (unprogrammed)
+lock = 0xff    # Lock bits (unprogrammed, not written)
 ```
 
 **Fuse Settings:**
@@ -294,7 +370,14 @@ lock = 0xff    # Lock bits (unprogrammed)
 
 > **Note**: The low fuse selects the *external clock* source, which is required
 > for a full-can oscillator module driving XTAL1. Do not use a crystal-oscillator
-> fuse setting with this hardware.
+> fuse setting with this hardware. The sibling boards — COB's `KEH Controller`
+> and VCS's `IB Controller` — carry an HC49-U crystal across XTAL1/XTAL2 instead
+> and therefore use the low power crystal setting (`lfuse = 0xFF`); the two are
+> not interchangeable.
+
+> **Note**: Lock bits are left unprogrammed on all of these boards. The upload
+> command writes fuses only (`--fuses`, no `--lock`), so the `lock` line above is
+> recorded for reference and never programmed.
 
 ⚠️ **Warning**: Incorrect fuse settings can brick your microcontroller. Verify fuse values are appropriate for your hardware configuration before programming.
 
@@ -308,7 +391,7 @@ The firmware requires the following library (automatically installed by Platform
 ## Project Structure
 
 ```
-KEH Controller/
+AB Controller/
 ├── platformio.ini          # PlatformIO configuration
 ├── fuses.cfg              # AVR fuse configuration
 ├── src/
@@ -355,6 +438,12 @@ which minipro
 - Check PS/2 clock and data connections
 - Verify matrix keyboard connections
 - Ensure VIA interface connections are correct
+
+**Problem**: `JOY(1)`/`JOY(2)` return keystrokes or a stuck value
+- Confirm the BIOS is v1.5 or later — older BIOS reads the port before the
+  encoder has released it (see [Joystick Interface](#joystick-interface))
+- Verify the on-board 1kΩ pull-ups are fitted (`R6`–`R13` for PORT A / `J6`,
+  `R14`–`R21` for PORT B / `J8`)
 
 **Problem**: Incorrect characters output
 - Check for proper pull-up resistors on PS/2 lines
