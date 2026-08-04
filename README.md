@@ -5,6 +5,9 @@
 
 An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 
+> 📖 **Guide:** [AC6502 Documentation](https://acwright.github.io/6502-DOCS/) — the user's and programmer's guide for the whole family.
+> Start with [Your ACE](https://acwright.github.io/6502-DOCS/your-ace), the tour of this board.
+
 ---
 
 ## Table of Contents
@@ -70,7 +73,7 @@ All AC6502 computers share:
 | [6502-BAS](https://github.com/acwright/6502-BAS) | BASIC program listings |
 | [6502-WOZMON](https://github.com/acwright/6502-WOZMON) | Wozmon as a standalone ROM |
 | [6502-NOP](https://github.com/acwright/6502-NOP) | An all-NOP ROM, for probing a board during bring-up |
-| [6502-ASSETS](https://github.com/acwright/6502-ASSETS) | Documentation, branding, schematic exports, and label artwork |
+| [6502-DOCS](https://github.com/acwright/6502-DOCS) | The documentation site — the guide, the printable reference cards, branding and label artwork |
 | [cffs](https://github.com/acwright/cffs) | Builds CompactFlash disk images for the BIOS filesystem |
 | [bastok](https://github.com/acwright/bastok) | Tokenizes BASIC listings into `.prg` images, and back |
 | [bin2woz](https://github.com/acwright/bin2woz) | Converts a binary into a Wozmon serial upload |
@@ -97,7 +100,7 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - **Input**: PS/2 keyboard connector and 8×8 keyboard matrix header
 - **Joystick**: Two Atari 2600-compatible joystick ports (`J6` JOYSTICK A on VIA PORT A, `J8` JOYSTICK B on VIA PORT B), read as `JOY(2)` and `JOY(1)` respectively
 - **Clock**: 16 MHz DIP-14 full can oscillator (X1); drives the ATmega1284 at 16 MHz and the 65C02 at 1 or 2 MHz via the 74HC163 divider (J1 PHI2 SELECT jumper)
-- **Reset**: Manual reset button (SW70) connected to the ATmega1284, which also provides power-on reset to the 65C02
+- **Reset**: Manual reset button (SW17, just above <kbd>Esc</kbd>) connected to the ATmega1284, which also provides power-on reset to the 65C02
 - **Power**: 5V DC via barrel jack
 
 #### Revision History
@@ -196,28 +199,28 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 | J11 | 1 | AUDIO L | RCA Jack | [PJRAN1X1U02X-ND](https://www.digikey.com/en/products/filter?keywords=PJRAN1X1U02X-ND) | [502-PJRAN1X1U02X](https://www.mouser.com/ProductDetail/502-PJRAN1X1U02X) | |
 | J12 | 1 | DB9 MALE (DTE) | DB-9 Male | [609-1481-ND](https://www.digikey.com/en/products/filter?keywords=609-1481-ND) | [649-D09P33E4GX00LF](https://www.mouser.com/ProductDetail/649-D09P33E4GX00LF) | |
 | J13 | 1 | PS/2 | 6-pin Mini-DIN | | [806-KMDGX-6S-BS](https://www.mouser.com/ProductDetail/806-KMDGX-6S-BS) | [AMAZON](https://www.amazon.com/dp/B08GS3QL7T) |
-| J14 | 1 | AUDIO R | RCA Jack | [PJRAN1X1U03X-ND](https://www.digikey.com/en/products/filter?keywords=PJRAN1X1U03X-ND) | [502-PJRAN1X1U03X](https://www.mouser.com/ProductDetail/502-PJRAN1X1U03X) | |
-| J15 | 1 | AUDIO | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
-| J16 | 1 | 5V DC | DC Barrel Jack | [2073-DCJ200-10-A-K1-K-ND](https://www.digikey.com/en/products/filter?keywords=2073-DCJ200-10-A-K1-K-ND) | [640-DCJ200-10-A-K1-K](https://www.mouser.com/ProductDetail/640-DCJ200-10-A-K1-K) | |
-| J17 | 1 | CART | Card Edge 2×20 2.54mm | [A31723-ND](https://www.digikey.com/en/products/filter?keywords=A31723-ND) | [571-5-5530843-4](https://www.mouser.com/ProductDetail/571-5-5530843-4) | |
-| J18 | 1 | BUS | Box Header 2×20 2.54mm | | | [AMAZON](https://www.amazon.com/Female-Headers-Connector-Header-Raspberry/dp/B07DNHS2SJ) |
-| J19 | 1 | VCC | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
-| J20 | 1 | POWER LED | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
-| J21 | 1 | STORAGE | Pin Socket 2×10 2.54mm Horiz | [S5563-ND](https://www.digikey.com/en/products/filter?keywords=S5563-ND) | | |
-| J22 | 1 | KEYBOARD | Pin Header 1×16 2.00mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
+| J14 | 1 | KEYBOARD | Pin Header 1×16 2.00mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
+| J15 | 1 | AUDIO R | RCA Jack | [PJRAN1X1U03X-ND](https://www.digikey.com/en/products/filter?keywords=PJRAN1X1U03X-ND) | [502-PJRAN1X1U03X](https://www.mouser.com/ProductDetail/502-PJRAN1X1U03X) | |
+| J16 | 1 | AUDIO | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
+| J17 | 1 | 5V DC | DC Barrel Jack | [2073-DCJ200-10-A-K1-K-ND](https://www.digikey.com/en/products/filter?keywords=2073-DCJ200-10-A-K1-K-ND) | [640-DCJ200-10-A-K1-K](https://www.mouser.com/ProductDetail/640-DCJ200-10-A-K1-K) | |
+| J18 | 1 | CART | Card Edge 2×20 2.54mm | [A31723-ND](https://www.digikey.com/en/products/filter?keywords=A31723-ND) | [571-5-5530843-4](https://www.mouser.com/ProductDetail/571-5-5530843-4) | |
+| J19 | 1 | BUS | Box Header 2×20 2.54mm | | | [AMAZON](https://www.amazon.com/Female-Headers-Connector-Header-Raspberry/dp/B07DNHS2SJ) |
+| J20 | 1 | VCC | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
+| J21 | 1 | POWER LED | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
+| J22 | 1 | STORAGE | Pin Socket 2×10 2.54mm Horiz | [S5563-ND](https://www.digikey.com/en/products/filter?keywords=S5563-ND) | | |
 | R1–R4, R25 | 5 | 10kΩ | 1/8W Resistor | [RNF18FTD10K0CT-ND](https://www.digikey.com/en/products/filter?keywords=RNF18FTD10K0CT-ND) | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
 | R5–R23, R26–R34 | 28 | 1kΩ | 1/8W Resistor | [RNF18FTD1K00CT-ND](https://www.digikey.com/en/products/filter?keywords=RNF18FTD1K00CT-ND) | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
 | R24 | 1 | 330Ω | 1/8W Resistor | | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
-| SW1–SW13, SW15, SW17–SW28, SW30, SW32–SW40, SW42–SW43, SW45–SW48, SW50–SW57, SW60, SW63–SW65 | 54 | Various | Cherry MX Switch 1.00u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
-| SW58, SW59, SW62, SW66, SW67 | 5 | CTRL / ALT / FN | Cherry MX Switch 1.25u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
-| SW16, SW29 | 2 | TAB / Backslash | Cherry MX Switch 1.50u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
-| SW31 | 1 | CAPS LOCK | Cherry MX Switch 1.75u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
+| SW1–SW13, SW15, SW18–SW29, SW31, SW33–SW41, SW43, SW44, SW46–SW49, SW51–SW58, SW61, SW64–SW66 | 54 | Various | Cherry MX Switch 1.00u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
+| SW59, SW60, SW63, SW67, SW68 | 5 | CTRL / ALT / FN | Cherry MX Switch 1.25u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
+| SW16, SW30 | 2 | TAB / Backslash | Cherry MX Switch 1.50u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
+| SW32 | 1 | CAPS LOCK | Cherry MX Switch 1.75u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
 | SW14 | 1 | BACKSPACE | Cherry MX Switch 2.00u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
-| SW41, SW44, SW49 | 3 | SHIFT / ENTER | Cherry MX Switch 2.25u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
-| SW61 | 1 | SPACE | Cherry MX Switch 6.25u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
-| SW68 | 1 | POWER | SPDT Switch | [EG4326-ND](https://www.digikey.com/en/products/filter?keywords=EG4326-ND) | [612-400MSP1R6BLKM6QE](https://www.mouser.com/ProductDetail/612-400MSP1R6BLKM6QE) | |
-| SW69 | 1 | IO ENABLE | 8× DIP Switch SPST | | | [AMAZON](https://www.amazon.com/Yohii-2-54mm-Positions-Double-Assorted/dp/B07DSBX4BK/) |
-| SW70 | 1 | RESET | Tact Push Button 5mm | | | [AMAZON](https://www.amazon.com/QTEATAK-Momentary-Tactile-Button-Switch/dp/B07VSNN9S2) |
+| SW42, SW45, SW50 | 3 | SHIFT / ENTER | Cherry MX Switch 2.25u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
+| SW62 | 1 | SPACE | Cherry MX Switch 6.25u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
+| SW17 | 1 | RESET | Tact Push Button 6mm | | | [AMAZON](https://www.amazon.com/QTEATAK-Momentary-Tactile-Button-Switch/dp/B07VSNN9S2) |
+| SW69 | 1 | POWER | SPDT Switch | [EG4326-ND](https://www.digikey.com/en/products/filter?keywords=EG4326-ND) | [612-400MSP1R6BLKM6QE](https://www.mouser.com/ProductDetail/612-400MSP1R6BLKM6QE) | |
+| SW70 | 1 | IO ENABLE | 8× DIP Switch SPST | | | [AMAZON](https://www.amazon.com/Yohii-2-54mm-Positions-Double-Assorted/dp/B07DSBX4BK/) |
 | U1 | 1 | W65C02S | 65C02 CPU | | [955-W65C02S6TPG-14](https://www.mouser.com/ProductDetail/955-W65C02S6TPG-14) | |
 | U2 | 1 | W65C22 | 65C22 VIA | | [955-W65C22N6TPG-14](https://www.mouser.com/ProductDetail/955-W65C22N6TPG-14) | |
 | U3 | 1 | Pico9918A | VDP (VGA) | | | [TINDIE](https://www.tindie.com/products/visrealm/pico9918-pro/) |
