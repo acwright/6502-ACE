@@ -136,8 +136,8 @@ for one stick to corrupt on the other's behalf — **both sticks read correctly
 even when held at the same time.** An earlier design had the encoder push
 joystick state to the 6502 as control bytes over the keyboard channel instead;
 that could not report a held button on the port it was reporting over, and was
-abandoned. See
-[BIOS `PLAN.md` §2](https://github.com/acwright/6502-BIOS/blob/main/PLAN.md)
+abandoned. See the BIOS commit that made the change,
+[`d0cec53`](https://github.com/acwright/6502-BIOS/commit/d0cec53e557c0937f50ea427d2a50a2d57b4f720),
 for the full account.
 
 **Measured release latency: to be measured later.** This is the figure the
