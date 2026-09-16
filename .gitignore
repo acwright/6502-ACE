@@ -11,3 +11,8 @@
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Planning documents are kept local
+VDP-ASSESSMENT.md
+VDP-PLAN.md
+/PLAN.md
