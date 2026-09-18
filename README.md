@@ -93,13 +93,23 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - **Video**: Pico9918 (VGA 640×480)
 - **Audio**: ARMSID SID chip emulator (3-voice synthesis, RCA output)
 - **Storage**: Storage adapter socket
-- **Serial**: 65C51 ACIA with MAX238 level shifter (RS-232 via DB9, 50–19200 baud)
+- **Serial**: 65C51 ACIA with MAX238 level shifter (RS-232 via DB9, 50–19200 baud). Male DB-9 wired
+  as **DTE**, like a PC, so reaching a laptop needs a **null-modem** cable. `RTS`, `DTR` and `DSR`
+  always reach the cable; the `CTS EN` (J2) and `DCD EN` (J4) jumpers pick ground or the cable for
+  those two inputs — **both default to ground**
 - **GPIO**: 65C22 VIA (20 GPIO pins, 2× 16-bit timers, shift register)
 - **RTC**: DS1511Y real-time clock with battery-backed NVRAM
 - **Keyboard Controller**: ATmega1284P running AB Controller firmware
 - **Input**: PS/2 keyboard connector and 8×8 keyboard matrix header
 - **Joystick**: Two Atari 2600-compatible joystick ports (`J6` JOYSTICK A on VIA PORT A, `J8` JOYSTICK B on VIA PORT B), read as `JOY(2)` and `JOY(1)` respectively
 - **Clock**: 16 MHz DIP-14 full can oscillator (X1); drives the ATmega1284 at 16 MHz and the 65C02 at 1 or 2 MHz via the 74HC163 divider (J1 PHI2 SELECT jumper)
+
+**The serial handshake jumpers.** `CTS EN` (J2) and `DCD EN` (J4) both default to **ground**, and
+that is how the boards were built. Ground means the line is permanently asserted, so the ACIA can
+always send and always receive. Moved to the cable, they do real work — measured on a real R6551 in
+2026: `CTS` high stops the transmitter dead and `DCD` high stops the receiver, losing the byte that
+arrives. A board jumpered to the cable and plugged into something that does not assert those lines
+shows no banner and no echo at all, and looks broken when it is not.
 - **Reset**: Manual reset button (SW17, just above <kbd>Esc</kbd>) connected to the ATmega1284, which also provides power-on reset to the 65C02
 - **Power**: 5V DC via barrel jack
 
