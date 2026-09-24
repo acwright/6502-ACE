@@ -213,6 +213,14 @@ The controller drives the 6502 RESB line on PC7 (active low):
   is polled and debounced (`RESET_DEBOUNCE_MS`, ~20 ms). While the button is
   held, RESB is asserted; releasing it brings the 6502 out of reset.
 
+PC7 drives RESB open-drain. To assert reset, the firmware makes PC7 an output
+and drives it low. To release reset, it makes PC7 an input with the ATmega's
+internal pull-up on, and never drives it high. RESB is shared with the DS1511Y's
+open-drain RST output and with the CART and BUS connectors, and each of those
+must be able to pull RESB low while the controller is not asserting reset. The
+internal pull-up raises RESB on its own; Rev 1.1 adds a 10 kΩ pull-up on the
+board as well.
+
 ### Jiffy Clock (NMIB)
 
 > **Disabled by default.** SQW-driven NMI behavior is only compiled in when the

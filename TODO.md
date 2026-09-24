@@ -46,7 +46,9 @@ reads the VDP's status register, because the Kernal's `Irq` does not.
 Rev 1.1 gets it on the board; the Rev 1.0 on the bench gets it as a bodge on
 the underside.
 
-**Firmware change:** in the AB Controller, drive PC7 (U6 pin 29) open-drain.
+**Firmware change (done 2026-09-24, `assertRESB` and `releaseRESB` in
+`Firmware/AB Controller/src/main.cpp`):** in the AB Controller, drive PC7
+(U6 pin 29) open-drain.
 To assert reset, make PC7 an output and write it low. To release reset, make
 PC7 an input with its internal pull-up on (`INPUT_PULLUP`). Nothing in the
 firmware may write PC7 high while it is an output. This applies to power-on

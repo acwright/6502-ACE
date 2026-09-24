@@ -55,7 +55,7 @@
 
 // 6502 system control (MightyCore "standard" pinout)
 #define RESET_BTN 16   // PC0 - reset button (N.O., active low, internal pullup)
-#define RESB      23   // PC7 - 6502 RESB output (active low)
+#define RESB      23   // PC7 - 6502 RESB, open-drain (active low; see assertRESB)
 #define RTC_SQW   14   // PD6 - square-wave input from DS1511Y RTC
 #define NMIB      15   // PD7 - 6502 NMIB output (active low)
 
@@ -230,6 +230,26 @@ ISR(PCINT3_vect) {
 }
 #endif
 
+// RESB is shared: the DS1511Y's open-drain RST output and the CART and BUS
+// connectors can pull it low too. So PC7 only ever pulls it low, and never
+// drives it high, or the ATmega would hold the 6502 out of a reset something
+// else asked for.
+//
+// Assert: clear the output latch (which also turns the pull-up off), then
+// make the pin an output, so it goes straight to low without a high glitch.
+void assertRESB() {
+  digitalWrite(RESB, LOW);
+  pinMode(RESB, OUTPUT);
+}
+
+// Release: an input with the internal pull-up on. The pull-up (20-50k) raises
+// RESB on a board without an external resistor; on a board with the 10k
+// pull-up the two share the job. Either way an open-drain device can still
+// pull the line low.
+void releaseRESB() {
+  pinMode(RESB, INPUT_PULLUP);
+}
+
 // Poll the reset button and drive RESB on the 6502. The button is N.O. and
 // active low; while it is held (debounced) the 6502 is kept in reset.
 void handleReset() {
@@ -249,7 +269,7 @@ void handleReset() {
     bool pressed = (reading == LOW);
     if (pressed && !resetActive) {
       resetActive = true;
-      digitalWrite(RESB, LOW);   // Assert reset
+      assertRESB();
 #ifdef ENABLE_SQW
       // Disarm the SQW jiffy interrupt while the 6502 is held in reset so the
       // boot window after release is protected the same way as power-on.
@@ -258,7 +278,7 @@ void handleReset() {
 #endif
     } else if (!pressed && resetActive) {
       resetActive = false;
-      digitalWrite(RESB, HIGH);  // Release reset
+      releaseRESB();
 #ifdef ENABLE_SQW
       resbReleasedAt = millis(); // Restart the boot grace period
 #endif
@@ -269,8 +289,7 @@ void handleReset() {
 void setup() {
   // ---- 6502 system control ----
   // Assert reset immediately so the 6502 stays held while we initialize.
-  pinMode(RESB, OUTPUT);
-  digitalWrite(RESB, LOW);
+  assertRESB();
   pinMode(RESET_BTN, INPUT_PULLUP);
 
 #ifdef ENABLE_SQW
@@ -310,7 +329,7 @@ void setup() {
   // Power-on reset: keep the 6502 held in reset briefly so its supply and the
   // 16 MHz clock are stable, then release.
   delay(POR_HOLD_MS);
-  digitalWrite(RESB, HIGH);
+  releaseRESB();
 #ifdef ENABLE_SQW
   resbReleasedAt = millis();
 #endif
