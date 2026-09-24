@@ -80,12 +80,18 @@ does the same job with one part fewer.
 
 ### 3. ATmega `NMIB` output: firmware only, no board change
 
-`NMIB` already has a pull-up (R2). In the default firmware build, PD7 is left as
-an input and never drives `NMIB`. With `ENABLE_SQW` defined, the firmware makes
-PD7 an output and holds it high between jiffy-clock pulses, which would stop a
-cartridge or bus card from ever raising an NMI. Before enabling that option,
-change the pulse to open-drain: switch PD7 to an output driven low to assert,
-and back to an input to release.
+**Done 2026-09-24.** `NMIB` already has a pull-up (R2). In the default firmware
+build, PD7 is left as an input and never drives `NMIB`. With `ENABLE_SQW`
+defined, the firmware used to make PD7 an output and hold it high between
+jiffy-clock pulses, which would stop a cartridge or bus card from ever raising
+an NMI. The pulse is now open-drain: the jiffy ISR switches PD7 to an output
+driven low to assert, and back to an input to release. PD7's output latch stays
+low throughout.
+
+The default build is byte-for-byte unchanged by this fix, so a board flashed
+with the RESB change needs no reflash. The `ENABLE_SQW` build compiles, and its
+disassembly shows the pulse as `sbi`/`cbi` on DDRD bit 7 with no write to PORTD,
+but the jiffy clock has not been run on hardware.
 
 ### 4. Cards on the `CART` and `BUS` connectors
 

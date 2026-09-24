@@ -232,7 +232,10 @@ board as well.
 When enabled, a DS1511Y RTC drives a square wave into PD6 (RTC_SQW). A pin-change
 interrupt counts the rising edges and, every `JIFFY_DIVIDER` edges (default 1),
 pulses the 6502 NMIB line on PD7 low for ~5 µs. The NMI is generated directly in
-the ISR so its timing is independent of keyboard-scanning load. Set the DS1511Y
+the ISR so its timing is independent of keyboard-scanning load. PD7 drives NMIB
+open-drain, like RESB: a pulse switches PD7 to an output driving low and back to
+an input, and the PCB's pull-up raises the line. PD7 never drives NMIB high, so a
+card on the CART or BUS connector can still raise its own NMI between pulses. Set the DS1511Y
 SQW output rate (and `JIFFY_DIVIDER`) to obtain the desired jiffy tick frequency.
 
 To protect the 6502 BIOS boot window from a power-up SQW burst (the DS1511Y

@@ -213,6 +213,12 @@ const uint8_t matrixMap[8][8] PROGMEM = {
 // The DS1511Y RTC drives a square wave into PD6 (RTC_SQW). Every JIFFY_DIVIDER
 // rising edges we pulse NMIB (PD7) low to tick the 6502's jiffy clock. The NMI
 // is generated directly in the ISR so its timing is independent of loop() load.
+//
+// NMIB is shared with the CART and BUS connectors, so PD7 drives it open-drain,
+// like RESB: the PORTD latch for PD7 stays low (setup() leaves it there), and a
+// pulse only switches the pin between output (low) and input (released, with
+// the PCB's pull-up raising the line). PD7 never drives NMIB high, so a card can
+// still raise its own NMI between pulses.
 #ifdef ENABLE_SQW
 ISR(PCINT3_vect) {
   static uint8_t lastSQW = 1;
@@ -221,9 +227,9 @@ ISR(PCINT3_vect) {
   if (cur && !lastSQW) {  // Rising edge of SQW
     if (++jiffyCount >= JIFFY_DIVIDER) {
       jiffyCount = 0;
-      PORTD &= ~_BV(PD7);   // NMIB low (assert)
+      DDRD |= _BV(PD7);     // NMIB low (assert: output, latch already low)
       delayMicroseconds(5);
-      PORTD |= _BV(PD7);    // NMIB high (release)
+      DDRD &= ~_BV(PD7);    // NMIB released (input; the PCB pull-up raises it)
     }
   }
   lastSQW = cur;
@@ -292,17 +298,15 @@ void setup() {
   assertRESB();
   pinMode(RESET_BTN, INPUT_PULLUP);
 
-#ifdef ENABLE_SQW
-  // NMIB idles HIGH (active low); fired by the jiffy clock.
-  pinMode(NMIB, OUTPUT);
-  digitalWrite(NMIB, HIGH);
+  // NMIB is released: a high-impedance input with its latch low, and the PCB
+  // pull-up holds the line high. With SQW disabled it stays that way, so the
+  // 6502 never receives an NMI from this board. With SQW enabled, the jiffy ISR
+  // pulses it low by switching the pin to an output and back.
+  pinMode(NMIB, INPUT);
 
+#ifdef ENABLE_SQW
   // RTC square-wave input (DS1511Y SQW). Pullup in case the output is open-drain.
   pinMode(RTC_SQW, INPUT_PULLUP);
-#else
-  // SQW disabled: leave NMIB as a high-impedance input. The PCB pullup keeps
-  // the line high so the 6502 never receives an NMI from this board.
-  pinMode(NMIB, INPUT);
 #endif
 
   pinMode(VIA_CA1, OUTPUT);
