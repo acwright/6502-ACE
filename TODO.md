@@ -43,14 +43,21 @@ reads the VDP's status register, because the Kernal's `Irq` does not.
 ### 2. ATmega `RESB` output: add a pull-up, and drive PC7 open-drain (decided)
 
 **Board change:** add a 10 k pull-up from the `RESB` net to 5 V. No diode.
+Rev 1.1 gets it on the board; the Rev 1.0 on the bench gets it as a bodge on
+the underside.
 
 **Firmware change:** in the AB Controller, drive PC7 (U6 pin 29) open-drain.
 To assert reset, make PC7 an output and write it low. To release reset, make
-PC7 an input with its internal pull-up off, and let the 10 k resistor raise the
-line. Nothing in the firmware may write PC7 high while it is an output. This
-applies to power-on (`setup()`) and to the reset button (`loop()`). The
-firmware change must ship with, or before, the Rev 1.1 board: on Rev 1.0,
-`RESB` has no pull-up, so an open-drain release would leave it floating.
+PC7 an input with its internal pull-up on (`INPUT_PULLUP`). Nothing in the
+firmware may write PC7 high while it is an output. This applies to power-on
+(`setup()`) and to the reset button (`loop()`).
+
+The internal pull-up (20–50 k) raises `RESB` on its own, so the new firmware
+also works on a Rev 1.0 board without the bodge, and the firmware and the
+resistor can go in in either order. The external 10 k is still needed for the
+time the internal pull-up is not there: while the ATmega is itself in reset or
+being programmed, PC7 is an input without its pull-up, and without the external
+resistor `RESB` floats.
 
 **Why:** today the firmware drives `RESB` push-pull. It sets PC7 as an output,
 writes it low to hold the 6502 in reset, and writes it high to release it. The
