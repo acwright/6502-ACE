@@ -185,13 +185,18 @@ Everything it needs is now proven (6502-PICOVDP `docs/results/phase-14.md`,
     https://github.com/acwright/6502-PICOVDP/releases/tag/v1.0.0 (SHA-256
     `0b74cd9875cbffc46de7ec48a9bb6e0d4a76a3e796d2563615e17e6bed94afd5`): hold BOOT,
     connect USB-C, `picotool load -v -x -f picovdp-v1.0.0.uf2`. The release
-    build has no USB of its own, so every update needs BOOT again. Say whether
-    it may be flashed in the ACE's socket, and whether USB-C and BOOT can be
-    reached with the ACE in its case: neither was recorded.
+    build has no USB of its own, so every update needs BOOT again. It may be
+    flashed in the ACE's socket with the ACE switched off; that is how the
+    tested card was flashed.
+  - Optionally, back up the stock firmware first, from BOOTSEL:
+    `picotool save -a stock.bin`. To restore it, `picotool load -v -x stock.bin`.
+    The backup was made; the restore is picotool's ordinary load and has not
+    been tried on a PRO.
   - Burn BIOS 2.0 to U8. The ACE tested ran `v2.0.2` (SHA-256 `7a71252d…`).
   - The first boot shows the AC6502 logo, then `AC6502 BIOS v2.0`,
-    `BASIC v2.0 30718 BYTES FREE` and `RAM RTC CF SER VIA SID VDP`. `VDP`
-    missing from that line means the card isn't running 6502-PICOVDP.
+    `BASIC v2.0 30718 BYTES FREE` and `RAM RTC CF SER VIA SID VDP`, at
+    power-on and after the reset button (SW17). `VDP` missing from that line
+    means the card isn't running 6502-PICOVDP.
   - The builder's check for the `MDE1` pin, from BASIC 2.0:
     `POKE 39939,4:POKE 39939,142:PRINT PEEK(39939):POKE 39939,0:POKE 39939,142`
     prints 172.
