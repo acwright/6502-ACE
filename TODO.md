@@ -54,10 +54,13 @@ firmware may write PC7 high while it is an output. This applies to power-on
 
 The internal pull-up (20–50 k) raises `RESB` on its own, so the new firmware
 also works on a Rev 1.0 board without the bodge, and the firmware and the
-resistor can go in in either order. The external 10 k is still needed for the
-time the internal pull-up is not there: while the ATmega is itself in reset or
-being programmed, PC7 is an input without its pull-up, and without the external
-resistor `RESB` floats.
+resistor can go in in either order. The external 10 k is a stiffer pull-up than
+the internal one, which is worth having on a reset line that runs out to the
+`CART` and `BUS` connectors. It is recommended on Rev 1.1 and optional as a
+bodge on Rev 1.0. (The ATmega is never programmed in circuit on this board.
+During its own start-up, before `setup()` runs, `RESB` has no pull-up unless
+the 10 k is fitted, but `setup()` then holds `RESB` low for 250 ms, so the 6502
+still gets a clean reset either way.)
 
 **Why:** today the firmware drives `RESB` push-pull. It sets PC7 as an output,
 writes it low to hold the 6502 in reset, and writes it high to release it. The
@@ -67,10 +70,8 @@ the ATmega holds `RESB` high, none of them can reset the machine. The DS1511Y
 asserts `RST` on a power failure and when its watchdog times out.
 
 **Why the pull-up:** `RESB` has no pull-up today; the ATmega is the only thing
-holding it high. Once PC7 only ever pulls low, the line needs a resistor to go
-high. The same resistor also keeps `RESB` defined while the ATmega is itself in
-reset or being programmed. At the moment PC7 is an input then, and `RESB`
-floats.
+holding it high. Once PC7 only ever pulls low, something else has to raise the
+line: the ATmega's internal pull-up, and on Rev 1.1 the 10 k as well.
 
 **Why not a diode:** a diode on PC7 would also work, but the firmware change
 does the same job with one part fewer.
