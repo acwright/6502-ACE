@@ -183,10 +183,11 @@ not matched (`graphics-1.asm` ran only under 1.6, and 1.6 at 1 MHz got 64
 bus-test passes against 500 elsewhere), so "only under 1.6" is weaker evidence
 than it looks. None of this matters at 1 MHz.
 
-### 8. The emulator's 2 MHz setting
+### 8. The emulator's 2 MHz setting (done)
 
-The emulator still offers 2 MHz. It should drop it, to match the board. (To do
-in 6502-EMULATOR, later.)
+6502-EMULATOR 3.5.0, released 2026-09-24, runs at 1 MHz only: the toolbar
+button and the saved setting are gone, and `--freq 2` is refused. 6502-DOCS
+pins 3.5.0 and no longer offers 2 MHz, in either edition (its ACCURACY A77).
 
 ## The bank register's address decode (third revision, 2026-09-24)
 
