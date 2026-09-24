@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 2.3,
-          "width": 2.3
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 2.54
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -51,7 +51,7 @@
         "silk_text_upright": false,
         "zones": {
           "border_display_style": 2,
-          "border_hatch_pitch": 0.5,
+          "border_hatch_pitch": 0.508,
           "corner_radius": 0.0,
           "corner_smoothing": 0,
           "fill_mode": 0,
@@ -60,13 +60,13 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.254,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
+          "min_thickness": 0.254,
           "pad_connection": 1,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
-          "thermal_relief_spoke_width": 0.5
+          "thermal_relief_gap": 0.254,
+          "thermal_relief_spoke_width": 0.254
         }
       },
       "diff_pair_dimensions": [
@@ -253,7 +253,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "1.1"
+      "sch_revision": "1.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -273,76 +273,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "multiple_net_names|558800|3340100|43498032-74c5-4b63-b50d-6ad7591f23c3|ace6e300-d4aa-4e6d-a922-8ca98bdb3f20|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "multiple_net_names|558800|3340100|99a0e532-7bd2-44c8-9ae0-22c117db8159|ace6e300-d4aa-4e6d-a922-8ca98bdb3f20|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "multiple_net_names|558800|3365500|2757dc0a-d7e2-4018-a9d6-91c3746dd10e|3603e5c2-8927-49f2-9bc9-f63de3219618|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "multiple_net_names|558800|3390900|4cf62151-6183-40dd-8acd-dfecec730925|2729471a-338d-4c9e-a58d-c91a2e1187d6|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "multiple_net_names|558800|3416300|9c1ab7f3-1f1b-445c-a8f2-5d93f38743f6|e9221fee-06dd-496a-bc2d-24412b7bf321|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "multiple_net_names|558800|3441700|243ef57d-7dcb-430e-a82d-67c4c1fa35b1|9b633a83-9f7d-4895-b821-4e2e8ce23cff|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "multiple_net_names|558800|3467100|1f27aa50-fda1-409c-bb70-8615220baab7|ef8f4c26-0ad9-4f4d-8342-f4cac8bc3ae2|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "multiple_net_names|558800|3492500|0257c60c-43f8-440a-be13-20b8c5879430|592cc6ba-3259-43af-802e-bea7c08fc143|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "multiple_net_names|558800|3492500|e32e1cfd-df50-4143-9d41-98be19f8dd4a|592cc6ba-3259-43af-802e-bea7c08fc143|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "multiple_net_names|558800|3517900|07ca3303-2487-4a5a-93b7-2ea9a63b886b|f9fea8e2-3abc-45cf-8e96-a218e9b1255a|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "pin_to_pin|1257300|1498600|87243a97-7ef5-4843-ab53-e92fe27466cb|cabefaab-aed6-4da7-90fe-5e82bd7f6ba1|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "pin_to_pin|2286000|901700|f0651991-eec2-4ba2-ac57-92f5221f7855|1f1c15a0-628d-4b7f-9174-b4e6e999857e|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "pin_to_pin|2286000|901700|f0651991-eec2-4ba2-ac57-92f5221f7855|f93ac2b0-9446-4d7a-b231-72f23dc9ae4d|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "pin_to_pin|4140200|3441700|a0aeb11a-ec42-43ff-a60f-2cfa375560e0|f93ac2b0-9446-4d7a-b231-72f23dc9ae4d|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "pin_to_pin|4216400|571500|f93ac2b0-9446-4d7a-b231-72f23dc9ae4d|1f1c15a0-628d-4b7f-9174-b4e6e999857e|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "pin_to_pin|4978400|482600|1f1c15a0-628d-4b7f-9174-b4e6e999857e|a0aeb11a-ec42-43ff-a60f-2cfa375560e0|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ],
-      [
-        "pin_to_pin|660400|469900|772d2d21-db7d-491e-8e68-a7abc951acb7|cabefaab-aed6-4da7-90fe-5e82bd7f6ba1|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5|/34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -570,7 +501,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ACE Board.kicad_pro",
+    "filename": "ACE RAM Patch.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -636,7 +567,7 @@
     "annotate_start_num": 0,
     "annotation": {
       "method": 0,
-      "sort_order": 1
+      "sort_order": 0
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
@@ -672,28 +603,22 @@
           "show": true
         },
         {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
           "show": true
         },
         {
-          "group_by": false,
-          "label": "DNP",
-          "name": "${DNP}",
-          "show": false
-        },
-        {
-          "group_by": false,
+          "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": false
+          "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
@@ -705,43 +630,13 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Digikey",
-          "name": "Digikey",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Mouser",
-          "name": "Mouser",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "MPN",
-          "name": "MPN",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Other",
-          "name": "Other",
           "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": false,
-      "name": "",
+      "include_excluded_from_bom": true,
+      "name": "Default Editing",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -781,9 +676,9 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "ACE Board.kicad_sch",
-        "name": "ACE Board",
-        "uuid": "34a60d42-c14a-479d-bef3-5ff0ee57bad5"
+        "filename": "ACE RAM Patch.kicad_sch",
+        "name": "Root",
+        "uuid": "4a58cb39-d7d3-4ad7-b7e8-56cbd8b18af7"
       }
     ],
     "used_designators": "",
@@ -791,8 +686,8 @@
   },
   "sheets": [
     [
-      "34a60d42-c14a-479d-bef3-5ff0ee57bad5",
-      "ACE Board"
+      "4a58cb39-d7d3-4ad7-b7e8-56cbd8b18af7",
+      "Root"
     ]
   ],
   "text_variables": {},

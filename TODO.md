@@ -10,6 +10,11 @@ arrives.
 
 ### 1. Pico9918 `/INT` to `IRQB`: add a diode (required)
 
+**In the Rev 1.1 schematic, 2026-09-24:** D4, a BAT85, from U3 pin 16 to
+`IRQB`, cathode on U3. `Tests/check-schematics.mjs` fails if `/INT` ever
+reaches `IRQB` another way. The Rev 1.1 PCB still has to be updated from the
+schematic.
+
 **Change:** fit a Schottky diode (BAT85) between U3 pin 16 (`/INT`) and the
 `IRQB` net, with the cathode toward U3 and the anode on `IRQB`.
 
@@ -41,6 +46,10 @@ program that does enable VDP interrupts would also need an IRQ handler that
 reads the VDP's status register, because the Kernal's `Irq` does not.
 
 ### 2. ATmega `RESB` output: add a pull-up, and drive PC7 open-drain (decided)
+
+**In the Rev 1.1 schematic, 2026-09-24:** R35, 10 k from `RESB` to VCC,
+beside R1–R4. `Tests/check-schematics.mjs` fails if `RESB` loses its pull-up.
+The Rev 1.1 PCB still has to be updated from the schematic.
 
 **Board change:** add a 10 k pull-up from the `RESB` net to 5 V. No diode.
 Rev 1.1 gets it on the board; the Rev 1.0 on the bench gets it as a bodge on
@@ -99,73 +108,127 @@ J18 and J19 carry `IRQB`, `NMIB` and `RESB`. Anything plugged into them must
 only pull those lines low. In particular, a video card built around a pico9918
 has the same `/INT` problem as U3, and needs the same diode on the card.
 
-## Rev 1.1: running at 2 MHz
+## The ACE runs at 1 MHz only (decided 2026-09-24)
 
-Found on 2026-09-24, while 6502-PICOVDP's Phase 14 tested its first release in
-this Rev 1.0 board (`docs/results/phase-14.md` in that repository, "Found on
-the way"). With J1 (PHI2 SELECT) at 1 MHz none of this happened. None of it
-involves the video card: at 2 MHz the card passed a bus test of 500 passes,
-over 7 million accesses a run with none wrong. Find the causes before Rev 1.1
-is fixed, in case one of them needs a board change, such as a chip select's
-timing.
+At 2 MHz, 6502-PICOVDP's Phase 14 found the SID and the CompactFlash card
+missing on some boots, and serial input under BIOS 1.6 replaying old lines
+(`docs/results/phase-14.md` in that repository, "Found on the way"). The first
+two are explained below. The third is not, and a fault that cannot be found
+cannot be patched on the Rev 1.0 boards, so the ACE runs at 1 MHz only.
 
-### 5. The SID and the CompactFlash card are not always found at 2 MHz
+- **Rev 1.1:** J1 (PHI2 SELECT) is gone from the schematic, and U5's 1 MHz
+  output (Q3, pin 11) drives PHI2 for the 65C02, VIA, ACIA, SID and the
+  `CART` and `BUS` connectors. Q2 is unconnected. `Tests/check-schematics.mjs`
+  fails if any of the four chips is clocked from anything else.
+- **Rev 1.0:** J1 stays on its 1 MHz pins, 1 and 2.
 
-**Symptom:** at 1 MHz the Kernal finds every card (`HW_PRESENT`, `$030D`,
-reads `$FD`), except that the SID was missed once in about a dozen boots. At
-2 MHz, under BIOS 1.6 and BIOS 2.0 alike, some boots found neither the SID nor
-the CF card (`$B5`, and BIOS 2.0's header reads `RAM RTC SER VIA VDP`), and
-others found both.
+### 5. The SID at 2 MHz (explained)
 
-**To check:**
+The SID's clock (U9 pin 6) was always U5's 1 MHz output, not the jumper, and
+its chip select (IO7B) is decoded from the address alone. At 2 MHz the SID's
+clock is high for all of one CPU cycle and low for all of the next, so only
+every other CPU cycle can reach it: a write in the other cycle is lost, and a
+read there returns whatever the bus last held. The Kernal's `ProbeSID` makes its
+three setup writes and its read of `SID_OSC3` 1,285 cycles apart, an odd number,
+so at 2 MHz either the writes or the read miss. Which one depends on where reset
+lands against the 1 MHz clock, which changes from boot to boot. A boot that
+"found" the SID found it by accident: the read missed and returned `$98`, the
+high byte of `SID_OSC3`'s address still on the bus, which is neither `$00` nor
+`$FF`. Reproduced with the emulator's CPU and this clocking added to it: BIOS
+1.6 and 2.0.2 both boot with `HW_PRESENT` `$FF` on one parity and `$BF` on the
+other. It was never only the probe: at 2 MHz half of every program's SID
+accesses miss.
 
-- Which SID is fitted. A 6581 or 8580 is rated for a 1 MHz bus; an ARMSID or
-  similar may not care.
-- Whether the CF card works at 2 MHz once booted (`LOAD "NAME.PRG"`), or only
-  its probe fails.
-- Whether either probe depends on timing: a delay or timeout counted in CPU
-  cycles is half as long at 2 MHz.
-- The SID's and the CF card's chip selects against PHI2 at 2 MHz, on a scope.
+**Still open:** at 1 MHz the SID (an ARMSID) was missed once in about a dozen
+boots. The 2 MHz fault does not explain that.
 
-### 6. Serial input replays old input under BIOS 1.6 at 2 MHz
+### 6. The CompactFlash card at 2 MHz (explained)
 
-**Symptom:** after an XMODEM `LOAD`, or after a program had run, BASIC ran
-again lines that had been typed seconds or minutes before. Twice the replayed
-line was an old `LOAD`, and the machine waited in it. BIOS 1.6 keeps its serial
-input ring at `$0200`–`$02FF` with the read pointer at `$00` and the write
-pointer at `$01`. The replays ran from 5 to about 230 bytes long, so the read
-pointer was taking a wrong value. The ring survives a reset, so a replay can
-bring back input from before one. The boot text sent over serial was also
-garbled at 2 MHz with the video card switched off by its DIP switch.
+`StWaitReadyPoll` waits for the card to leave `BSY` with a loop counted in CPU
+cycles: about 851 ms after reset at 1 MHz and 425 ms at 2 MHz, the same in BIOS
+1.6 and 2.0.2. The card's `/RESET` is `RESB`, so it starts initialising at the
+same moment the 65C02 does. A card that needs between 425 and 851 ms is found at
+1 MHz and missed at 2 MHz. The bus timing itself is within PIO mode 0 at both
+speeds.
 
-**What is known:**
+**At 1 MHz:** every boot in Phase 14 found the card, but the loop is still
+counted in cycles, and on the boots missed at 2 MHz the card needed more than
+425 ms, so the margin at 1 MHz is not known. A slower card could still be
+missed. The BIOS fix, a probe that waits a fixed time, is written up in
+6502-BIOS `TODO.md` item 1 for the next BIOS update. So is a fault in the SID
+probe that item 5 turned up: an empty SID socket reads as a SID (item 2 there).
 
-- It happened only at 2 MHz under BIOS 1.6: never at 1 MHz under either BIOS,
-  and never under BIOS 2.0 at 2 MHz in a full test run.
-- The emulator, running BIOS 1.6 with the same XMODEM stream at 2 MHz byte
-  spacing, did not do it in 20 tries. The emulator does not model the ACIA's
-  transmit time or the bus's timing.
-- Pulling and refitting the R6551AP (date code 9922) stopped it for 12 tries,
-  and then it came back.
-- An R65C51P2 (date code 8706) fitted in its place received nothing at all,
-  at 2 MHz, with the video card on or off.
+### 7. Serial input replayed old lines under BIOS 1.6 at 2 MHz (not explained, dropped)
 
-**Suspects:**
+After an XMODEM `LOAD`, or after a program had run, BASIC ran again lines typed
+seconds or minutes before. The replayed bytes were the oldest in the input ring,
+the ones just ahead of the write pointer, so a pointer jumped forward. The boot
+text sent over serial was also garbled at 2 MHz. What was ruled out:
 
-- The ACIA holding the data bus too long after a read. The Kernal reads the
-  ring's pointers a few cycles after `lda SC_DATA`, so a late release by the
-  ACIA would corrupt exactly those reads.
-- The ACIA's socket.
-- A race in BIOS 1.6's serial code that BIOS 2.0 does not have.
+- **A race in BIOS 1.6's serial code:** `Irq`, `ReadBuffer`, `WriteBuffer`,
+  `ScRts`, `ScRxPoll` and `SerialChrout` are the same in 1.6 and 2.0.2, and both
+  keep the ring's pointers at `$00` and `$01`.
+- **The ACIA holding the data bus after a read:** the nearest read of a pointer
+  after any `lda SC_DATA` is at least 12 cycles later, and the cycles between are
+  instruction fetches, which would crash the machine first.
+- **The board's timing:** RAM `/OE` and `/WE` are qualified by PHI2, and every
+  setup and hold time on the bus is measured from a PHI2 edge, so none of them
+  change with the clock rate.
+- **The test programs:** `bus.asm`, `probe.asm` and `graphics-1.asm` do not
+  touch `$00` or `$01`.
 
-**To check:**
+Two things were left: the R6551AP runs at exactly its 500 ns minimum cycle time
+at 2 MHz, and reseating it stopped the replays for a while. The runs also were
+not matched (`graphics-1.asm` ran only under 1.6, and 1.6 at 1 MHz got 64
+bus-test passes against 500 elsewhere), so "only under 1.6" is weaker evidence
+than it looks. None of this matters at 1 MHz.
 
-- Put the ACIA's chip select, PHI2 and a data line on a scope at 2 MHz, and
-  measure when the ACIA lets go of the bus after a read.
-- Try another 2 MHz-rated R6551AP. A W65C51N has its own transmit bug (TDRE is
-  always set), so it is not a like-for-like test.
-- If the ACIA's timing is marginal at 2 MHz, BIOS 2.0 may only be missing it by
-  luck, so settle the timing before relying on 2.0.
+### 8. The emulator's 2 MHz setting
+
+The emulator still offers 2 MHz. It should drop it, to match the board. (To do
+in 6502-EMULATOR, later.)
+
+## The bank register's address decode (third revision, 2026-09-24)
+
+**The fault:** in Rev 1.0, in Rev 1.1 as drawn, and with the first ACE RAM Patch
+fitted, U12B combined `/(A9·A8)` from U12A and `/(A0–A7)` from U17 with a NAND.
+A NAND of two active-low signals is the OR of the two conditions, so each bank
+latch loaded on 259 addresses instead of one: every write to `$8300`–`$83FF`,
+`$80FF`, `$81FF` and `$82FF` for the low latch, and the same in the `$8400`
+window for the high one. A write to the top 255 bytes of a bank's window
+changed the bank. The BIOS's RAM probe uses offset 0, so it never noticed. The
+first patch fixed a different fault in the same path (the latches pulsed
+whenever the bus was idle) and took U12B's output as given.
+
+**Rev 1.1 (done in the schematic):** a spare NOR in U23 (U23C, pins 8, 9 and 10)
+takes U12A's output and U17's, and drives U13 pins 1 and 4 in U12B's place.
+U12B is unused, with its inputs on ground.
+
+**ACE RAM Patch Rev 1.1 (done in the schematic):** a correct latch needs A8, A9
+and U17's output, and none of them reach U13's socket. The new patch therefore
+plugs into both sockets, J1 into U12's and J2 into U13's, and replaces both
+74HC00s with the same logic as the Rev 1.1 board (a 74HC00 and a 74HC02, as
+before). On the Rev 1.0 board both sockets face the same way, and U13's pin 1 is
+23.00 mm from U12's along the row. U15 (the banked RAM) sits directly above
+both sockets, as it does above U13 for the first patch, and C26 and C27 are
+beside them.
+
+**The check:** `Tests/check-schematics.mjs` evaluates both boards' decode from
+their netlists, in all 524,288 bus states, against the memory map (README,
+"Checking the schematics"). It fails on the Rev 1.0 board alone, on Rev 1.0
+with the first patch, and on Rev 1.1 as it was, and passes on both boards now.
+
+**Still to do:**
+
+- Lay out the patch's PCB: add J2 23.00 mm from J1, in the same orientation, and
+  route it. Order it.
+- Update the Rev 1.1 PCB from the schematic: J1 removed, D4 and R35 added, and
+  U12B's and U23C's pins swapped.
+- On the bench board: remove the hand bodge, pull the 74HC00s from U12 and U13,
+  and fit the new patch.
+- Then check the high window. Phase 14's boots read `HW_PRESENT` as `$FD` even at
+  1 MHz, which means the Kernal's probe did not find the `$8400` window (bit 1).
+  With the new patch fitted and SW70 switch 2 on, a boot should read `$FF`.
 
 ## README: the video card and BIOS 2.0
 

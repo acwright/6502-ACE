@@ -26,6 +26,7 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [CAD](#cad)
 - [Production](#production)
 - [Schematics](#schematics)
+- [Checking the schematics](#checking-the-schematics)
 - [Libraries](#libraries)
 - [Bill of Materials](#bill-of-materials)
   - [ACE Board](#ace-board-1)
@@ -87,7 +88,7 @@ This repository contains KiCad 7.0+ PCB designs for the ACE board.
 
 The single integrated board hosting the W65C02S CPU and all peripherals. Provides:
 
-- **CPU**: W65C02S running at 1 or 2 MHz (jumper-selectable)
+- **CPU**: W65C02S running at 1 MHz
 - **RAM**: 32KB SRAM (62256) + Optional 512K banked SRAM (AS6C4008)
 - **ROM**: 32KB EEPROM (28C256)
 - **Video**: Pico9918 (VGA 640×480)
@@ -102,7 +103,7 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - **Keyboard Controller**: ATmega1284P running AB Controller firmware
 - **Input**: PS/2 keyboard connector and 8×8 keyboard matrix header
 - **Joystick**: Two Atari 2600-compatible joystick ports (`J6` JOYSTICK A on VIA PORT A, `J8` JOYSTICK B on VIA PORT B), read as `JOY(2)` and `JOY(1)` respectively
-- **Clock**: 16 MHz DIP-14 full can oscillator (X1); drives the ATmega1284 at 16 MHz and the 65C02 at 1 or 2 MHz via the 74HC163 divider (J1 PHI2 SELECT jumper)
+- **Clock**: 16 MHz DIP-14 full can oscillator (X1); drives the ATmega1284 at 16 MHz and, through the 74HC163 divider (U5), the 65C02, VIA, ACIA and SID at 1 MHz. Rev 1.0 has a PHI2 SELECT jumper (J1) that offers 2 MHz; keep it on 1 MHz (pins 1 and 2), because at 2 MHz the SID, whose clock is always 1 MHz, answers only every other CPU cycle
 
 **The serial handshake jumpers.** `CTS EN` (J2) and `DCD EN` (J4) both default to **ground**, and
 that is how the boards were built. Ground means the line is permanently asserted, so the ACIA can
@@ -120,6 +121,11 @@ shows no banner and no echo at all, and looks broken when it is not.
 - Fixes the gating of the `LOADL` and `LOADH` latch-enable signals for the 74HC573 latches (`U21`, `U22`) that drive the AS6C4008 banked SRAM. In Rev 1.0 the final two decode gates (`U13C`/`U13D`) were NANDs, which left the latches pulsing while idle and allowed spurious loads on reads, so the latches never reliably held a bank value.
 - The fix replaces the final NAND stage with a NOR function: `LOADL = NOR(SEL_L, WB)` and `LOADH = NOR(SEH_L, WB)`, holding each latch enable low out of window and only pulsing on an in-window write. This makes banked RAM work correctly with no firmware change.
 - Implemented by adding one 74HC02 quad NOR (`U23`). The existing select logic in `U13A`/`U13B` is unchanged.
+- Fixes the bank register's address decode. `U12B` combined `/(A9·A8)` (`U12A`) and `/(A0–A7)` (`U17`) with a NAND, which ORs the two conditions, so each latch also loaded on every write to `$8300`–`$83FE` and `$80FF`, `$81FF`, `$82FF` (and the same in the `$8400` window). A spare NOR in `U23` (`U23C`) now combines them, so each latch loads only on a write to `$83FF` or `$87FF`. `U12B` is unused, with its inputs tied to ground.
+- Runs at 1 MHz only. The PHI2 SELECT jumper (J1) is removed, and U5's 1 MHz output (Q3) drives PHI2 for the 65C02, VIA, ACIA and SID.
+- Adds `D4` (BAT85) between the video card's `/INT` (U3 pin 16) and `IRQB`, cathode toward U3. The Pico9918 drives `/INT` high as well as low, and without the diode it held `IRQB` high against every other interrupt source.
+- Adds `R35`, a 10kΩ pull-up on `RESB`. The AB Controller firmware now only ever pulls `RESB` low, so the DS1511Y and cards on `CART` and `BUS` can reset the machine too.
+- `Tests/check-schematics.mjs` checks the address decoding of Rev 1.1, and of Rev 1.0 with the ACE RAM Patch Rev 1.1 fitted, in every bus state. See [Checking the schematics](#checking-the-schematics).
 - Some pull-up resistors changed from 1kΩ to 10kΩ: `R1`–`R4` and `R25` are now 10kΩ.
 - Added `C31` (10µF electrolytic) at the power input for bulk decoupling capacitance.
 
@@ -138,10 +144,11 @@ A CompactFlash adapter board that connects to the Storage header on the ACE Boar
 ### ACE RAM Patch
 `Hardware/ACE RAM Patch/`
 
-A piggyback patch board for Rev 1.0 of the ACE Board that corrects the extended RAM (banked SRAM) issue. Installs by plugging into the U13 (74HC00) socket on the main board. Provides:
+A piggyback patch board for Rev 1.0 of the ACE Board that corrects the extended RAM (banked SRAM) decoding, the same logic as Rev 1.1. The 74HC00s come out of U12 and U13, and the patch plugs into both sockets. Provides:
 
-- **Fix**: Replaces the Rev 1.0 NAND-based latch-enable logic with a NOR function (`LOADL = NOR(SEL_L, WB)`, `LOADH = NOR(SEH_L, WB)`), preventing spurious latch pulses and making banked RAM work correctly with no firmware change
-- **Interface**: DIP-14 piggyback connector into U13 on the Rev 1.0 ACE Board
+- **Fix**: `LOADL` and `LOADH` go high only on a write to the bank register, `$83FF` or `$87FF`, while PHI2 is high. Rev 1.0 pulsed both latches whenever the bus was idle, and the first patch (Rev 1.0) fixed that but still loaded a latch on any write to `$8300`–`$83FE` and `$80FF`–`$82FF` (and the same in the `$8400` window)
+- **Interface**: two DIP-14 piggyback connectors, J1 into U12's socket and J2 into U13's. U13's pin 1 is 23.00 mm from U12's pin 1 along the row, with both sockets facing the same way
+- **Rev 1.1**: replaces the Rev 1.0 patch, which plugged into U13 alone
 
 ## Firmware
 
@@ -178,6 +185,21 @@ JLCPCB-ready Gerber files and BOM/CPL for PCB fabrication and assembly.
 
 PDF schematics for the ACE board.
 
+## Checking the schematics
+`Tests/check-schematics.mjs`
+
+The banked RAM's latch enables were wrong in Rev 1.0, and wrong again in a different way in the first RAM Patch, and both times the gates looked right on paper. This script checks the logic instead of reading it. It asks KiCad for each board's netlist, builds the glue logic from the gates it finds there, and drives every address, as a read and as a write, with PHI2 high and low and with a cartridge in and out. That is 524,288 bus states per board. For each one it compares every chip select, read and write strobe, and bank latch enable against the memory map, and checks that exactly one chip drives the data bus on a read and exactly one takes a write. A net that nothing drives counts as a failure, so a missing wire fails too.
+
+It checks two boards: Rev 1.1, and Rev 1.0 with the ACE RAM Patch Rev 1.1 fitted. The patch's headers name the sockets they plug into (`74HC00 (U12)`), and the script pulls those chips and joins each header pin to its socket's net. For Rev 1.1 it also checks that the CPU, VIA, ACIA and SID all run from U5's 1 MHz output, that the video card's `/INT` reaches `IRQB` only through a diode, and that `RESB` has a pull-up.
+
+Run it after any change to either schematic:
+
+```sh
+node Tests/check-schematics.mjs
+```
+
+It needs Node.js and KiCad's `kicad-cli`, which it finds on the `PATH`, at the macOS default location, or through a `KICAD_CLI` environment variable. It takes about 15 seconds, prints `ok` or `FAIL` for each check with example bus states for any failure, and exits non-zero on a failure.
+
 ## Libraries
 `Libraries/`
 
@@ -195,8 +217,7 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 | C4, C7 | 2 | 2.2nF | Disc Capacitor | [478-SR151C222KAATR1CT-ND](https://www.digikey.com/en/products/filter?keywords=478-SR151C222KAATR1CT-ND) | | [AMAZON](https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5) |
 | C31 | 1 | 10uF | Electrolytic Capacitor 16v | [P966-ND](https://www.digikey.com/en/products/filter?keywords=P966-ND) | | [AMAZON](https://www.amazon.com/Tnisesm-Electrolytic-Capacitor-Assortment-Capacitors/dp/B0G5X62C69) |
 | D1 | 1 | LED | 3.0mm Power LED | [732-5008-ND](https://www.digikey.com/en/products/filter?keywords=732-5008-ND) | | [AMAZON](https://www.amazon.com/300-Pcs-LED-Diode-Assortment/dp/B0F38LJDJB) |
-| D2, D3 | 2 | BAT85 | Schottky Diode | [BAT85SCT-ND](https://www.digikey.com/en/products/filter?keywords=BAT85SCT-ND) | [78-BAT85S](https://www.mouser.com/ProductDetail/78-BAT85S) | [AMAZON](https://www.amazon.com/gp/product/B0CKSNPVH8) |
-| J1 | 1 | PHI2 SELECT | Pin Header 1×3 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
+| D2–D4 | 3 | BAT85 | Schottky Diode | [BAT85SCT-ND](https://www.digikey.com/en/products/filter?keywords=BAT85SCT-ND) | [78-BAT85S](https://www.mouser.com/ProductDetail/78-BAT85S) | [AMAZON](https://www.amazon.com/gp/product/B0CKSNPVH8) |
 | J2 | 1 | CTS EN | Pin Header 1×3 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
 | J3 | 1 | RESET SW | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
 | J4 | 1 | DCD EN | Pin Header 1×3 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
@@ -218,7 +239,7 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 | J20 | 1 | VCC | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
 | J21 | 1 | POWER LED | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
 | J22 | 1 | STORAGE | Pin Socket 2×10 2.54mm Horiz | [S5563-ND](https://www.digikey.com/en/products/filter?keywords=S5563-ND) | | |
-| R1–R4, R25 | 5 | 10kΩ | 1/8W Resistor | [RNF18FTD10K0CT-ND](https://www.digikey.com/en/products/filter?keywords=RNF18FTD10K0CT-ND) | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
+| R1–R4, R25, R35 | 6 | 10kΩ | 1/8W Resistor | [RNF18FTD10K0CT-ND](https://www.digikey.com/en/products/filter?keywords=RNF18FTD10K0CT-ND) | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
 | R5–R23, R26–R34 | 28 | 1kΩ | 1/8W Resistor | [RNF18FTD1K00CT-ND](https://www.digikey.com/en/products/filter?keywords=RNF18FTD1K00CT-ND) | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
 | R24 | 1 | 330Ω | 1/8W Resistor | | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
 | SW1–SW13, SW15, SW18–SW29, SW31, SW33–SW41, SW43, SW44, SW46–SW49, SW51–SW58, SW61, SW64–SW66 | 54 | Various | Cherry MX Switch 1.00u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
@@ -265,7 +286,8 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 
 | Reference | Qty | Value | Description | DigiKey | Mouser | Other |
 |-----------|-----|-------|-------------|---------|--------|-------|
-| J1 | 1 | 74HC00 (U13) | DIP-14 Piggyback Socket | | | |
+| J1 | 1 | 74HC00 (U12) | DIP-14 Piggyback Socket | | | |
+| J2 | 1 | 74HC00 (U13) | DIP-14 Piggyback Socket | | | |
 | U1 | 1 | 74HC00 | Quad NAND | [296-1563-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1563-5-ND) | [595-SN74HC00N](https://www.mouser.com/ProductDetail/595-SN74HC00N) | |
 | U2 | 1 | 74HC02 | Quad NOR | [296-1565-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1565-5-ND) | [595-SN74HC02N](https://www.mouser.com/ProductDetail/595-SN74HC02N) | |
 
