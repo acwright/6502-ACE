@@ -27,10 +27,34 @@ const HW = join(ROOT, 'Hardware')
 
 // ---- The boards, as built -------------------------------------------------------------
 
+// The parts the checks read, by designator on Rev 1.0, with the value each must have. A board
+// whose designators differ says so in its config's `parts`. The value is checked before
+// anything else, so a schematic that has been re-annotated since this table was written fails
+// with the part it moved, rather than checking the wrong chip.
+const PARTS = {
+  cpu: ['U1', '65C02'],
+  via: ['U2', '65C22'],
+  vdp: ['U3', 'Pico9918A'],
+  acia: ['U4', '65C51'],
+  divider: ['U5', '74HC163'],
+  ram: ['U7', 'AS6C62256'],
+  rom: ['U8', 'AT28C256'],
+  sid: ['U9', '6581'],
+  bankRam: ['U15', 'AS6C4008'],
+  rtc: ['U18', 'DS1511Y'],
+  latchL: ['U21', '74HC573'],
+  latchH: ['U22', '74HC573'],
+  cf: ['J22', 'STORAGE'],
+  cart: ['J18', 'CART'],
+  ioEnable: ['SW70', 'IO ENABLE']
+}
+
 const CONFIGS = [
   {
     name: 'ACE Board Rev 1.1',
     board: 'ACE Board/Rev 1.1/ACE Board.kicad_sch',
+    // Re-annotated on 2026-09-24: the connectors moved down one when J1 went.
+    parts: { cf: 'J21', cart: 'J17' },
     rules: ['decode', 'clock', 'shared-lines']
   },
   {
@@ -49,7 +73,8 @@ const CONFIGS = [
 //
 // a = address, r = 1 for a read, p = PHI2, h = HRDB (0 while a cartridge claims $C000-$FFFF).
 // Each check names a pin on the part that receives the signal, because net names change
-// from revision to revision and the pin is what matters.
+// from revision to revision and the pin is what matters. Parts are named (see PARTS), not
+// given by designator, so that a re-annotated schematic changes one table, not the checks.
 
 const io = (a, k) => a >= 0x8000 + k * 0x400 && a < 0x8400 + k * 0x400   // IO slot k+1
 const RB = (a, r, p) => r && p ? 0 : 1                                     // read strobe, low
@@ -58,35 +83,35 @@ const low = (cond) => cond ? 0 : 1
 
 const PINS = [
   // 32 KB RAM, $0000-$7FFF
-  ['U7', 20, 'RAM /CE', (a) => low(a < 0x8000)],
-  ['U7', 22, 'RAM /OE', RB],
-  ['U7', 27, 'RAM /WE', WB],
+  ['ram', 20, 'RAM /CE', (a) => low(a < 0x8000)],
+  ['ram', 22, 'RAM /OE', RB],
+  ['ram', 27, 'RAM /WE', WB],
   // ROM: $A000-$FFFF, or $A000-$BFFF with a cartridge in
-  ['U8', 20, 'ROM /CE', (a, r, p, h) => low(a >= 0xA000 && (a < 0xC000 || h))],
-  ['U8', 22, 'ROM /OE', RB],
+  ['rom', 20, 'ROM /CE', (a, r, p, h) => low(a >= 0xA000 && (a < 0xC000 || h))],
+  ['rom', 22, 'ROM /OE', RB],
   // Banked RAM through IO 1 ($8000) and IO 2 ($8400); bank latches at $83FF and $87FF
-  ['U15', 22, 'banked RAM /CE', (a) => low(io(a, 0) || io(a, 1))],
-  ['U15', 24, 'banked RAM /OE', RB],
-  ['U15', 29, 'banked RAM /WE', WB],
-  ['U15', 1, 'banked RAM A18', (a) => io(a, 1) ? 1 : io(a, 0) ? 0 : '-'],
-  ['U21', 1, 'low bank latch /OE', (a) => low(io(a, 0))],
-  ['U22', 1, 'high bank latch /OE', (a) => low(io(a, 1))],
-  ['U21', 11, 'LOADL (low bank latch LE)', (a, r, p) => a === 0x83FF && !r && p ? 1 : 0],
-  ['U22', 11, 'LOADH (high bank latch LE)', (a, r, p) => a === 0x87FF && !r && p ? 1 : 0],
+  ['bankRam', 22, 'banked RAM /CE', (a) => low(io(a, 0) || io(a, 1))],
+  ['bankRam', 24, 'banked RAM /OE', RB],
+  ['bankRam', 29, 'banked RAM /WE', WB],
+  ['bankRam', 1, 'banked RAM A18', (a) => io(a, 1) ? 1 : io(a, 0) ? 0 : '-'],
+  ['latchL', 1, 'low bank latch /OE', (a) => low(io(a, 0))],
+  ['latchH', 1, 'high bank latch /OE', (a) => low(io(a, 1))],
+  ['latchL', 11, 'LOADL (low bank latch LE)', (a, r, p) => a === 0x83FF && !r && p ? 1 : 0],
+  ['latchH', 11, 'LOADH (high bank latch LE)', (a, r, p) => a === 0x87FF && !r && p ? 1 : 0],
   // IO 3-8
-  ['U18', 20, 'RTC /CE', (a) => low(io(a, 2))],
-  ['U18', 22, 'RTC /OE', RB],
-  ['U18', 27, 'RTC /WE', WB],
-  ['J22', 12, 'CF /CS0', (a) => low(io(a, 3))],
-  ['J22', 8, 'CF /IORD', RB],
-  ['J22', 10, 'CF /IOWR', WB],
-  ['U4', 3, 'ACIA CS1B', (a) => low(io(a, 4))],
-  ['U4', 2, 'ACIA CS0', () => 1],
-  ['U2', 23, 'VIA CS2B', (a) => low(io(a, 5))],
-  ['U2', 24, 'VIA CS1', () => 1],
-  ['U9', 8, 'SID /CS', (a) => low(io(a, 6))],
-  ['U3', 15, 'VDP /CSR', (a, r, p) => low(io(a, 7) && r && p)],
-  ['U3', 14, 'VDP /CSW', (a, r, p) => low(io(a, 7) && !r && p)]
+  ['rtc', 20, 'RTC /CE', (a) => low(io(a, 2))],
+  ['rtc', 22, 'RTC /OE', RB],
+  ['rtc', 27, 'RTC /WE', WB],
+  ['cf', 12, 'CF /CS0', (a) => low(io(a, 3))],
+  ['cf', 8, 'CF /IORD', RB],
+  ['cf', 10, 'CF /IOWR', WB],
+  ['acia', 3, 'ACIA CS1B', (a) => low(io(a, 4))],
+  ['acia', 2, 'ACIA CS0', () => 1],
+  ['via', 23, 'VIA CS2B', (a) => low(io(a, 5))],
+  ['via', 24, 'VIA CS1', () => 1],
+  ['sid', 8, 'SID /CS', (a) => low(io(a, 6))],
+  ['vdp', 15, 'VDP /CSR', (a, r, p) => low(io(a, 7) && r && p)],
+  ['vdp', 14, 'VDP /CSW', (a, r, p) => low(io(a, 7) && !r && p)]
 ]
 
 // What drives the data bus on a read, and what takes it on a write. Exactly one of each,
@@ -94,25 +119,25 @@ const PINS = [
 // answers while PHI2 is low. (A write to $83FF or $87FF also stores the byte in the banked
 // RAM; BIOS.inc leaves that byte to the latch.)
 const READERS = [
-  ['RAM', v => v('U7', 20) === 0 && v('U7', 22) === 0],
-  ['ROM', v => v('U8', 20) === 0 && v('U8', 22) === 0],
-  ['banked RAM', v => v('U15', 22) === 0 && v('U15', 24) === 0],
-  ['RTC', v => v('U18', 20) === 0 && v('U18', 22) === 0],
-  ['CF', v => v('J22', 12) === 0 && v('J22', 8) === 0],
-  ['ACIA', (v, a, r, p) => v('U4', 3) === 0 && v('U4', 2) === 1 && r && p],
-  ['VIA', (v, a, r, p) => v('U2', 23) === 0 && v('U2', 24) === 1 && r && p],
-  ['SID', (v, a, r, p) => v('U9', 8) === 0 && r && p],
-  ['VDP', v => v('U3', 15) === 0]
+  ['RAM', v => v('ram', 20) === 0 && v('ram', 22) === 0],
+  ['ROM', v => v('rom', 20) === 0 && v('rom', 22) === 0],
+  ['banked RAM', v => v('bankRam', 22) === 0 && v('bankRam', 24) === 0],
+  ['RTC', v => v('rtc', 20) === 0 && v('rtc', 22) === 0],
+  ['CF', v => v('cf', 12) === 0 && v('cf', 8) === 0],
+  ['ACIA', (v, a, r, p) => v('acia', 3) === 0 && v('acia', 2) === 1 && r && p],
+  ['VIA', (v, a, r, p) => v('via', 23) === 0 && v('via', 24) === 1 && r && p],
+  ['SID', (v, a, r, p) => v('sid', 8) === 0 && r && p],
+  ['VDP', v => v('vdp', 15) === 0]
 ]
 const WRITERS = [
-  ['RAM', v => v('U7', 20) === 0 && v('U7', 27) === 0],
-  ['banked RAM', v => v('U15', 22) === 0 && v('U15', 29) === 0],
-  ['RTC', v => v('U18', 20) === 0 && v('U18', 27) === 0],
-  ['CF', v => v('J22', 12) === 0 && v('J22', 10) === 0],
-  ['ACIA', (v, a, r, p) => v('U4', 3) === 0 && v('U4', 2) === 1 && !r && p],
-  ['VIA', (v, a, r, p) => v('U2', 23) === 0 && v('U2', 24) === 1 && !r && p],
-  ['SID', (v, a, r, p) => v('U9', 8) === 0 && !r && p],
-  ['VDP', v => v('U3', 14) === 0]
+  ['RAM', v => v('ram', 20) === 0 && v('ram', 27) === 0],
+  ['banked RAM', v => v('bankRam', 22) === 0 && v('bankRam', 29) === 0],
+  ['RTC', v => v('rtc', 20) === 0 && v('rtc', 27) === 0],
+  ['CF', v => v('cf', 12) === 0 && v('cf', 10) === 0],
+  ['ACIA', (v, a, r, p) => v('acia', 3) === 0 && v('acia', 2) === 1 && !r && p],
+  ['VIA', (v, a, r, p) => v('via', 23) === 0 && v('via', 24) === 1 && !r && p],
+  ['SID', (v, a, r, p) => v('sid', 8) === 0 && !r && p],
+  ['VDP', v => v('vdp', 14) === 0]
 ]
 const expectedReaders = (a, r, p, h) => !r || !p ? 0 : a >= 0xC000 && !h ? 0 : 1
 const expectedWriters = (a, r, p) => r || !p ? 0 : a < 0xA000 ? 1 : 0
@@ -169,6 +194,8 @@ class Board {
     }
   }
   net(ref, pin) { const n = this.pinNet.get(`${ref}.${pin}`); return n === undefined ? undefined : this.find(n) }
+  /** A named part's pin (see PARTS). */
+  pin(name, pin) { return this.net(this.parts[name], pin) }
   join(refA, pinA, refB, pinB) {
     const a = this.pinNet.get(`${refA}.${pinA}`), b = this.pinNet.get(`${refB}.${pinB}`)
     if (a === undefined || b === undefined) throw new Error(`cannot join ${refA}.${pinA} and ${refB}.${pinB}`)
@@ -202,8 +229,19 @@ function assemble(cli, cfg, dir) {
     }
     for (const name of ['VCC', 'GND']) board.union(board.netNamed(name), `P:${name}`)
   }
+  board.parts = {}
+  for (const [name, [ref, value]] of Object.entries(PARTS)) {
+    const actual = cfg.parts?.[name] ?? ref
+    const found = board.comps.get(actual)
+    if (found !== value) {
+      throw new Error(`${cfg.board}: the ${name} part should be ${actual}, a ${value}, but ${actual} is ` +
+        `${found === undefined ? 'not on the sheet' : `a ${found}`} — re-annotated? Update PARTS or the config's parts.`)
+    }
+    board.parts[name] = actual
+  }
   // IO ENABLE switches closed: pin k to pin 17-k.
-  for (let k = 1; k <= 8; k++) board.join('SW70', k, 'SW70', 17 - k)
+  const sw = board.parts.ioEnable
+  for (let k = 1; k <= 8; k++) board.join(sw, k, sw, 17 - k)
   for (const [ref, [a, b]] of Object.entries(cfg.jumpers ?? {})) board.join(ref, a, ref, b)
   return board
 }
@@ -296,9 +334,9 @@ function evaluate(board, logic, inputs) {
 
 function checkDecode(board) {
   const logic = compile(board)
-  const cpu = pin => board.net('U1', pin)
+  const cpu = pin => board.pin('cpu', pin)
   const addr = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25].map(cpu)  // A0-A15
-  const rwb = cpu(34), phi2 = cpu(37), hrdb = board.net('J18', 4)
+  const rwb = cpu(34), phi2 = cpu(37), hrdb = board.pin('cart', 4)
   const failures = new Map()
   const fail = (what, a, r, p, h, got, want) => {
     const f = failures.get(what) ?? { count: 0, examples: [] }
@@ -306,9 +344,9 @@ function checkDecode(board) {
     if (f.examples.length < 6) f.examples.push(`$${a.toString(16).toUpperCase().padStart(4, '0')} ${r ? 'read ' : 'write'} PHI2=${p}${h ? '' : ' cart'}: got ${got}, want ${want}`)
     failures.set(what, f)
   }
-  const pinNets = PINS.map(([ref, pin, what, want]) => {
-    const n = board.net(ref, pin)
-    if (n === undefined) throw new Error(`${ref} pin ${pin} (${what}) is not in the netlist`)
+  const pinNets = PINS.map(([part, pin, what, want]) => {
+    const n = board.pin(part, pin)
+    if (n === undefined) throw new Error(`${board.parts[part]} pin ${pin} (${what}) is not in the netlist`)
     return [n, what, want]
   })
   for (let h = 0; h <= 1; h++) for (let p = 0; p <= 1; p++) for (let r = 0; r <= 1; r++) {
@@ -317,7 +355,7 @@ function checkDecode(board) {
       addr.forEach((n, i) => inputs.set(n, a >> i & 1))
       inputs.set(rwb, r); inputs.set(phi2, p); inputs.set(hrdb, h)
       const val = evaluate(board, logic, inputs)
-      const v = (ref, pin) => { const n = board.net(ref, pin); return val.has(n) ? val.get(n) : X }
+      const v = (part, pin) => { const n = board.pin(part, pin); return val.has(n) ? val.get(n) : X }
       for (const [n, what, want] of pinNets) {
         const w = want(a, r, p, h)
         const got = val.has(n) ? val.get(n) : X
@@ -332,14 +370,16 @@ function checkDecode(board) {
   return [...failures].map(([what, f]) => `${what}: wrong in ${f.count} bus states, e.g.\n        ${f.examples.join('\n        ')}`)
 }
 
-// The CPU, VIA, ACIA and SID all run from U5's 1 MHz output. At 2 MHz the SID, whose clock
+// The CPU, VIA, ACIA and SID all run from the 74HC163's 1 MHz output. At 2 MHz the SID, whose clock
 // was always the 1 MHz tap, answers only every other CPU cycle (TODO.md, "The ACE runs at
 // 1 MHz only").
 function checkClock(board) {
   const errs = []
-  const q3 = board.net('U5', 11)
-  for (const [ref, pin, what] of [['U1', 37, 'CPU PHI2'], ['U2', 25, 'VIA PHI2'], ['U4', 27, 'ACIA PHI2'], ['U9', 6, 'SID φ2']]) {
-    if (board.net(ref, pin) !== q3) errs.push(`${what} (${ref}.${pin}) is not on U5's 1 MHz output (Q3, pin 11)`)
+  const q3 = board.pin('divider', 11)
+  for (const [part, pin, what] of [['cpu', 37, 'CPU PHI2'], ['via', 25, 'VIA PHI2'], ['acia', 27, 'ACIA PHI2'], ['sid', 6, 'SID φ2']]) {
+    if (board.pin(part, pin) !== q3) {
+      errs.push(`${what} (${board.parts[part]}.${pin}) is not on ${board.parts.divider}'s 1 MHz output (Q3, pin 11)`)
+    }
   }
   return errs
 }
@@ -347,12 +387,12 @@ function checkClock(board) {
 // IRQB and RESB are shared, so nothing may drive them high (TODO.md items 1 and 2).
 function checkSharedLines(board) {
   const errs = []
-  const irqb = board.net('U1', 4), resb = board.net('U1', 40), vcc = board.netNamed('VCC')
-  const intb = board.net('U3', 16)
-  if (intb === irqb) errs.push('the video card\'s push-pull /INT (U3.16) is wired straight to IRQB')
+  const irqb = board.pin('cpu', 4), resb = board.pin('cpu', 40), vcc = board.netNamed('VCC')
+  const intb = board.pin('vdp', 16)
+  if (intb === irqb) errs.push(`the video card's push-pull /INT (${board.parts.vdp}.16) is wired straight to IRQB`)
   else {
     const ok = [...board.comps.keys()].some(ref => /^D\d+$/.test(ref) && board.net(ref, 1) === intb && board.net(ref, 2) === irqb)
-    if (!ok) errs.push('U3.16 (/INT) does not reach IRQB through a diode, cathode toward U3')
+    if (!ok) errs.push(`${board.parts.vdp}.16 (/INT) does not reach IRQB through a diode, cathode toward ${board.parts.vdp}`)
   }
   const pull = [...board.comps.keys()].some(ref => /^R\d+$/.test(ref) &&
     ((board.net(ref, 1) === resb && board.net(ref, 2) === vcc) || (board.net(ref, 2) === resb && board.net(ref, 1) === vcc)))
