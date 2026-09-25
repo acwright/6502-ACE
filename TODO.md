@@ -10,10 +10,9 @@ arrives.
 
 ### 1. Pico9918 `/INT` to `IRQB`: add a diode (required)
 
-**In the Rev 1.1 schematic, 2026-09-24:** D4, a BAT85, from U3 pin 16 to
+**In the Rev 1.1 schematic, 2026-09-24:** D1, a BAT85, from U3 pin 16 to
 `IRQB`, cathode on U3. `Tests/check-schematics.mjs` fails if `/INT` ever
-reaches `IRQB` another way. The Rev 1.1 PCB still has to be updated from the
-schematic.
+reaches `IRQB` another way. On the Rev 1.1 PCB too, beside U3 (2026-09-24).
 
 **Change:** fit a Schottky diode (BAT85) between U3 pin 16 (`/INT`) and the
 `IRQB` net, with the cathode toward U3 and the anode on `IRQB`.
@@ -47,9 +46,9 @@ reads the VDP's status register, because the Kernal's `Irq` does not.
 
 ### 2. ATmega `RESB` output: add a pull-up, and drive PC7 open-drain (decided)
 
-**In the Rev 1.1 schematic, 2026-09-24:** R35, 10 k from `RESB` to VCC,
+**In the Rev 1.1 schematic, 2026-09-24:** R5, 10 k from `RESB` to VCC,
 beside R1–R4. `Tests/check-schematics.mjs` fails if `RESB` loses its pull-up.
-The Rev 1.1 PCB still has to be updated from the schematic.
+On the Rev 1.1 PCB too (2026-09-24).
 
 **Board change:** add a 10 k pull-up from the `RESB` net to 5 V. No diode.
 Rev 1.1 gets it on the board; the Rev 1.0 on the bench gets it as a bodge on
@@ -76,7 +75,8 @@ still gets a clean reset either way.)
 **Why:** today the firmware drives `RESB` push-pull. It sets PC7 as an output,
 writes it low to hold the 6502 in reset, and writes it high to release it. The
 DS1511Y's `RST` output (U18 pin 4) is open-drain on the same net, as is
-anything on the `CART` (J18) and `BUS` (J19) connectors that pulls reset. While
+anything on the `CART` and `BUS` connectors (J18 and J19 on Rev 1.0, J17 and
+J18 on Rev 1.1) that pulls reset. While
 the ATmega holds `RESB` high, none of them can reset the machine. The DS1511Y
 asserts `RST` on a power failure and when its watchdog times out.
 
@@ -104,7 +104,8 @@ but the jiffy clock has not been run on hardware.
 
 ### 4. Cards on the `CART` and `BUS` connectors
 
-J18 and J19 carry `IRQB`, `NMIB` and `RESB`. Anything plugged into them must
+`CART` and `BUS` (J18 and J19 on Rev 1.0, J17 and J18 on Rev 1.1) carry
+`IRQB`, `NMIB` and `RESB`. Anything plugged into them must
 only pull those lines low. In particular, a video card built around a pico9918
 has the same `/INT` problem as U3, and needs the same diode on the card.
 
@@ -116,7 +117,7 @@ missing on some boots, and serial input under BIOS 1.6 replaying old lines
 two are explained below. The third is not, and a fault that cannot be found
 cannot be patched on the Rev 1.0 boards, so the ACE runs at 1 MHz only.
 
-- **Rev 1.1:** J1 (PHI2 SELECT) is gone from the schematic, and U5's 1 MHz
+- **Rev 1.1:** Rev 1.0's J1 (PHI2 SELECT) is gone from the schematic, and U5's 1 MHz
   output (Q3, pin 11) drives PHI2 for the 65C02, VIA, ACIA, SID and the
   `CART` and `BUS` connectors. Q2 is unconnected. `Tests/check-schematics.mjs`
   fails if any of the four chips is clocked from anything else.
@@ -201,18 +202,24 @@ changed the bank. The BIOS's RAM probe uses offset 0, so it never noticed. The
 first patch fixed a different fault in the same path (the latches pulsed
 whenever the bus was idle) and took U12B's output as given.
 
-**Rev 1.1 (done in the schematic):** a spare NOR in U23 (U23C, pins 8, 9 and 10)
-takes U12A's output and U17's, and drives U13 pins 1 and 4 in U12B's place.
-U12B is unused, with its inputs on ground.
+**Rev 1.1 (done in the schematic):** the same eight gates as the patch, on two
+chips, U12 (74HC00) and U13 (74HC02). Rev 1.0's second 74HC00 is gone; the
+re-annotation gave its designator to the 74HC02, which was U23 until then. U13C
+NORs U12A's `/(A9·A8)` with U17's output to select the bank register. U13D makes
+IO1 from IO1B, so that inverter no longer needs a NAND, and U12D makes B18. U12B
+and U12C combine the select with IO1 and B18, and U13A and U13B NOR those with WB.
+Every gate of both chips is in use. The removed 74HC00 had no decoupling capacitor
+of its own on the PCB (C28, C27 before the re-annotation, sits by the 74HC02), so
+none goes with it.
 
-**ACE RAM Patch Rev 1.1 (done in the schematic):** a correct latch needs A8, A9
-and U17's output, and none of them reach U13's socket. The new patch therefore
-plugs into both sockets, J1 into U12's and J2 into U13's, and replaces both
-74HC00s with the same logic as the Rev 1.1 board (a 74HC00 and a 74HC02, as
-before). On the Rev 1.0 board both sockets face the same way, and U13's pin 1 is
-23.00 mm from U12's along the row. U15 (the banked RAM) sits directly above
-both sockets, as it does above U13 for the first patch, and C26 and C27 are
-beside them.
+**ACE RAM Patch Rev 1.1 (done):** a correct latch needs A8, A9 and U17's
+output, and none of them reach U13's footprint. The new patch therefore connects
+to both, J1 to U12's holes and J2 to U13's, and replaces both 74HC00s with the
+same logic as the Rev 1.1 board (a 74HC00 and a 74HC02). It mounts underneath
+the ACE, front side up, on pin headers soldered into U12's and U13's holes once
+their chips and sockets are off; U1 and U2 are on its back, hanging below. On the
+Rev 1.0 board U13's pin 1 is 23.00 mm from U12's along the row, and on the patch
+all 28 header pins land on U12's and U13's pads to 0.0000 mm.
 
 **The check:** `Tests/check-schematics.mjs` evaluates both boards' decode from
 their netlists, in all 524,288 bus states, against the memory map (README,
@@ -221,12 +228,18 @@ with the first patch, and on Rev 1.1 as it was, and passes on both boards now.
 
 **Still to do:**
 
-- Lay out the patch's PCB: add J2 23.00 mm from J1, in the same orientation, and
-  route it. Order it.
-- Update the Rev 1.1 PCB from the schematic: J1 removed, D4 and R35 added, and
-  U12B's and U23C's pins swapped.
-- On the bench board: remove the hand bodge, pull the 74HC00s from U12 and U13,
-  and fit the new patch.
+- ~~Lay out the patch's PCB.~~ Done 2026-09-24: U1, J1, J2 and U2 in one row,
+  92.6 × 13.1 mm, routed, with no DRC errors, nothing unconnected and no
+  schematic parity issues. `Production/ACE RAM Patch/Rev 1.1` is generated.
+- Order the patch.
+- ~~Update the Rev 1.1 PCB from the schematic.~~ Done 2026-09-24. The PCB took
+  the re-annotation with every placed part where it was, lost the PHI2 SELECT
+  jumper and the second 74HC00, and gained D1 and R5; the 74HC02 (U13) sits
+  where that 74HC00 was, beside U12. DRC with schematic parity reports no errors
+  and nothing unconnected. `Production/ACE Board/Rev 1.1` is regenerated, and its
+  gerbers and drill files match the PCB shape for shape.
+- On the bench board: remove the hand bodge, take U12 and U13 off (chips and
+  sockets), and solder the new patch underneath on pin headers.
 - Then check the high window. Phase 14's boots read `HW_PRESENT` as `$FD` even at
   1 MHz, which means the Kernal's probe did not find the `$8400` window (bit 1).
   With the new patch fitted and SW70 switch 2 on, a boot should read `$FF`.
