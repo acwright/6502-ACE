@@ -59142,7 +59142,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "65C51"
+		(property "Value" "R6551AP"
 			(at 513.9533 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -28,9 +28,9 @@ const HW = join(ROOT, 'Hardware')
 // ---- The boards, as built -------------------------------------------------------------
 
 // The parts the checks read, by designator on Rev 1.0, with the value each must have. A board
-// whose designators differ says so in its config's `parts`. The value is checked before
-// anything else, so a schematic that has been re-annotated since this table was written fails
-// with the part it moved, rather than checking the wrong chip.
+// whose designators differ says so in its config's `parts`, and one whose values differ in its
+// `values`. The value is checked before anything else, so a schematic that has been re-annotated
+// since this table was written fails with the part it moved, rather than checking the wrong chip.
 const PARTS = {
   cpu: ['U1', '65C02'],
   via: ['U2', '65C22'],
@@ -55,6 +55,8 @@ const CONFIGS = [
     board: 'ACE Board/Rev 1.1/ACE Board.kicad_sch',
     // Re-annotated on 2026-09-24: the connectors moved down one when J1 went.
     parts: { cf: 'J21', cart: 'J17' },
+    // The ACIA's value names the part tested on the family's machines (2026-10-26).
+    values: { acia: 'R6551AP' },
     rules: ['decode', 'clock', 'shared-lines']
   },
   {
@@ -230,8 +232,9 @@ function assemble(cli, cfg, dir) {
     for (const name of ['VCC', 'GND']) board.union(board.netNamed(name), `P:${name}`)
   }
   board.parts = {}
-  for (const [name, [ref, value]] of Object.entries(PARTS)) {
+  for (const [name, [ref, rev10]] of Object.entries(PARTS)) {
     const actual = cfg.parts?.[name] ?? ref
+    const value = cfg.values?.[name] ?? rev10
     const found = board.comps.get(actual)
     if (found !== value) {
       throw new Error(`${cfg.board}: the ${name} part should be ${actual}, a ${value}, but ${actual} is ` +

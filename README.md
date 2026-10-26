@@ -94,7 +94,7 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - **Video**: Pico9918 (VGA 640×480)
 - **Audio**: ARMSID SID chip emulator (3-voice synthesis, RCA output)
 - **Storage**: Storage adapter socket
-- **Serial**: 65C51 ACIA with MAX238 level shifter (RS-232 via DB9, 50–19200 baud). Male DB-9 wired
+- **Serial**: R6551AP ACIA with MAX238 level shifter (RS-232 via DB9, 50–19200 baud). Male DB-9 wired
   as **DTE**, like a PC, so reaching a laptop needs a **null-modem** cable. `RTS`, `DTR` and `DSR`
   always reach the cable; the `CTS EN` and `DCD EN` jumpers (J2 and J4 on Rev 1.0, J1 and J3 on Rev 1.1) pick ground or the cable for
   those two inputs — **both default to ground**
@@ -259,7 +259,7 @@ Rev 1.1's designators. Rev 1.0's are in `Production/ACE Board/Rev 1.0/bom.csv`.
 | U1 | 1 | W65C02S | 65C02 CPU | | [955-W65C02S6TPG-14](https://www.mouser.com/ProductDetail/955-W65C02S6TPG-14) | |
 | U2 | 1 | W65C22 | 65C22 VIA | | [955-W65C22N6TPG-14](https://www.mouser.com/ProductDetail/955-W65C22N6TPG-14) | |
 | U3 | 1 | Pico9918A | VDP (VGA) | | | [TINDIE](https://www.tindie.com/products/visrealm/pico9918-pro/) |
-| U4 | 1 | 65C51 | ACIA | | | [JAMECO](https://www.jameco.com/z/R6551AP-Rockwell-IC-6551-Asynchronous-Communication-Interface-Adapter-DIP-28-pin_43318.html) |
+| U4 | 1 | R6551AP | ACIA | | | [JAMECO](https://www.jameco.com/z/R6551AP-Rockwell-IC-6551-Asynchronous-Communication-Interface-Adapter-DIP-28-pin_43318.html) |
 | U5 | 1 | 74HC163 | 4-bit Counter | [296-8246-5-ND](https://www.digikey.com/en/products/filter?keywords=296-8246-5-ND) | [595-SN74HC163N](https://www.mouser.com/ProductDetail/595-SN74HC163N) | |
 | U6 | 1 | ATmega1284-P | Keyboard Controller MCU | [ATMEGA1284-PU-ND](https://www.digikey.com/en/products/filter?keywords=ATMEGA1284-PU-ND) | [556-ATMEGA1284-PU](https://www.mouser.com/ProductDetail/556-ATMEGA1284-PU) | |
 | U7 | 1 | AS6C62256 | 32KB SRAM | [1450-1033-ND](https://www.digikey.com/en/products/filter?keywords=1450-1033-ND) | [913-AS6C62256-55PCN](https://www.mouser.com/ProductDetail/913-AS6C62256-55PCN) | |

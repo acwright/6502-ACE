@@ -40331,7 +40331,7 @@
 				)
 			)
 		)
-		(property "Value" "65C51"
+		(property "Value" "R6551AP"
 			(at 7.62 35.25 0)
 			(layer "F.SilkS")
 			(uuid "3d94322e-5af7-4b20-96c7-7d48890710ae")
