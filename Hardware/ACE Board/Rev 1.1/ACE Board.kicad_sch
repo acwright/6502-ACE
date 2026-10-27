@@ -30162,7 +30162,7 @@
 	)
 	(wire
 		(pts
-			(xy 600.71 252.73) (xy 609.6 252.73)
+			(xy 608.33 252.73) (xy 609.6 252.73)
 		)
 		(stroke
 			(width 0)
@@ -66275,6 +66275,85 @@
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 604.52 252.73 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "07c5c4d8-8852-4b05-9c11-a8088c96cb25")
+		(property "Reference" "D5"
+			(at 604.52 247.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 604.774 249.682 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 604.52 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 604.52 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 604.52 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "eb0ded6d-00a9-4022-a512-80b2f5534d31")
+		)
+		(pin "1"
+			(uuid "90e70d43-c70a-40dc-b51e-ae5248a679b8")
+		)
+		(instances
+			(project "ACE Board"
+				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
+					(reference "D5")
 					(unit 1)
 				)
 			)

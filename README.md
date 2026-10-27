@@ -116,7 +116,7 @@ always send and always receive. Moved to the cable, they do real work — measur
 arrives. A board jumpered to the cable and plugged into something that does not assert those lines
 shows no banner and no echo at all, and looks broken when it is not.
 - **Reset**: Manual reset button (SW17, just above <kbd>Esc</kbd>) connected to the ATmega1284, which also provides power-on reset to the 65C02
-- **Power**: 5V DC via barrel jack, centre-positive
+- **Power**: 5V DC via barrel jack, centre-positive. Rev 1.1 has reverse-polarity protection (`D5`); Rev 1.0 has none
 
 **Cards on `CART` and `BUS`.** `IRQB`, `NMIB` and `RESB` are shared by several devices on the board and by
 anything plugged into `CART` and `BUS` (J18 and J19 on Rev 1.0, J17 and J18 on Rev 1.1). A card may only pull
@@ -135,6 +135,7 @@ problem as U3, and needs the same diode on the card.
 - Runs at 1 MHz only. The PHI2 SELECT jumper (Rev 1.0's J1) is removed, and U5's 1 MHz output (Q3) drives PHI2 for the 65C02, VIA, ACIA and SID.
 - Adds `D1` (BAT85) between the video card's `/INT` (U3 pin 16) and `IRQB`, cathode toward U3. The Pico9918 drives `/INT` high as well as low, and without the diode it held `IRQB` high against every other interrupt source.
 - Adds `R5`, a 10kΩ pull-up on `RESB`. The AB Controller firmware now only ever pulls `RESB` low, so the DS1511Y and cards on `CART` and `BUS` can reset the machine too.
+- Adds `D5` (1N5819) in series between the barrel jack (`J16`) and the power switch (`SW69`), anode at the jack, so a reversed supply can't reach VCC. It drops about 0.3–0.4 V, so VCC sits near 4.6 V, above the 4.5 V floor of the 5 V parts. Measure VCC under full load on the first board built.
 - `Tests/check-schematics.mjs` checks the address decoding of Rev 1.1, and of Rev 1.0 with the ACE RAM Patch Rev 1.1 fitted, in every bus state. See [Checking the schematics](#checking-the-schematics).
 - Some pull-up resistors changed from 1kΩ to 10kΩ: `R1`–`R4` and `R26` (Rev 1.0's `R25`) are now 10kΩ.
 - Added `C20` (10µF electrolytic) at the power input for bulk decoupling capacitance.
@@ -261,6 +262,7 @@ Rev 1.1's designators. Rev 1.0's are in `Production/ACE Board/Rev 1.0/bom.csv`.
 | C4, C7 | 2 | 2.2nF | Disc Capacitor | [478-SR151C222KAATR1CT-ND](https://www.digikey.com/en/products/filter?keywords=478-SR151C222KAATR1CT-ND) | | [AMAZON](https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5) |
 | C20 | 1 | 10uF | Electrolytic Capacitor 16v | [P966-ND](https://www.digikey.com/en/products/filter?keywords=P966-ND) | | [AMAZON](https://www.amazon.com/Tnisesm-Electrolytic-Capacitor-Assortment-Capacitors/dp/B0G5X62C69) |
 | D2 | 1 | LED | 3.0mm Power LED | [732-5008-ND](https://www.digikey.com/en/products/filter?keywords=732-5008-ND) | | [AMAZON](https://www.amazon.com/300-Pcs-LED-Diode-Assortment/dp/B0F38LJDJB) |
+| D5 | 1 | 1N5819 | Schottky Diode (DO-41) | | | |
 | D1, D3, D4 | 3 | BAT85 | Schottky Diode | [BAT85SCT-ND](https://www.digikey.com/en/products/filter?keywords=BAT85SCT-ND) | [78-BAT85S](https://www.mouser.com/ProductDetail/78-BAT85S) | [AMAZON](https://www.amazon.com/gp/product/B0CKSNPVH8) |
 | J1 | 1 | CTS EN | Pin Header 1×3 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
 | J2 | 1 | RESET SW | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
