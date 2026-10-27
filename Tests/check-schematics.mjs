@@ -374,8 +374,8 @@ function checkDecode(board) {
 }
 
 // The CPU, VIA, ACIA and SID all run from the 74HC163's 1 MHz output. At 2 MHz the SID, whose clock
-// was always the 1 MHz tap, answers only every other CPU cycle (TODO.md, "The ACE runs at
-// 1 MHz only").
+// was always the 1 MHz tap, answers only every other CPU cycle (README, "Clock";
+// the full account is in the retired TODO.md, `git show 735c58e:TODO.md`).
 function checkClock(board) {
   const errs = []
   const q3 = board.pin('divider', 11)
@@ -387,7 +387,8 @@ function checkClock(board) {
   return errs
 }
 
-// IRQB and RESB are shared, so nothing may drive them high (TODO.md items 1 and 2).
+// IRQB and RESB are shared, so nothing may drive them high (README, "Cards on `CART` and
+// `BUS`"; the retired TODO.md, items 1 and 2).
 function checkSharedLines(board) {
   const errs = []
   const irqb = board.pin('cpu', 4), resb = board.pin('cpu', 40), vcc = board.netNamed('VCC')

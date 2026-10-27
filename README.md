@@ -19,9 +19,12 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [Hardware](#hardware)
   - [ACE Board](#ace-board)
     - [Revision History](#revision-history)
+    - [Building a Rev 1.0](#building-a-rev-10)
+    - [Known limits](#known-limits)
   - [ACE CF Adapter](#ace-cf-adapter)
   - [ACE RAM Patch](#ace-ram-patch)
 - [Firmware](#firmware)
+  - [Video card](#video-card)
   - [AB Controller](#ab-controller)
 - [CAD](#cad)
 - [Production](#production)
@@ -67,6 +70,7 @@ All AC6502 computers share:
 | Project | Description |
 |---------|-------------|
 | [6502-BIOS](https://github.com/acwright/6502-BIOS) | The shared BIOS (kernel, monitor, BASIC) for all AC6502 computers |
+| [6502-PICOVDP](https://github.com/acwright/6502-PICOVDP) | Firmware for the ACE's video card, on a PICO9918 PRO v2.0 |
 | [6502-EMULATOR](https://github.com/acwright/6502-EMULATOR) | Emulator for the whole family — desktop app, browser build, and a command line for scripted runs |
 | [6502-PRG](https://github.com/acwright/6502-PRG) | Template project for writing assembly language programs |
 | [6502-CRT](https://github.com/acwright/6502-CRT) | Template project for writing assembly language cartridges |
@@ -91,7 +95,7 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - **CPU**: W65C02S running at 1 MHz
 - **RAM**: 32KB SRAM (62256) + Optional 512K banked SRAM (AS6C4008)
 - **ROM**: 32KB EEPROM (28C256)
-- **Video**: Pico9918 (VGA 640×480)
+- **Video**: PICO9918 PRO v2.0 running [6502-PICOVDP](https://github.com/acwright/6502-PICOVDP) (VGA 640×480); see [Video card](#video-card). The silkscreen and the BOM's value field say `Pico9918A`
 - **Audio**: ARMSID SID chip emulator (3-voice synthesis, RCA output)
 - **Storage**: Storage adapter socket
 - **Serial**: R6551AP ACIA with MAX238 level shifter (RS-232 via DB9, 50–19200 baud). Male DB-9 wired
@@ -112,7 +116,13 @@ always send and always receive. Moved to the cable, they do real work — measur
 arrives. A board jumpered to the cable and plugged into something that does not assert those lines
 shows no banner and no echo at all, and looks broken when it is not.
 - **Reset**: Manual reset button (SW17, just above <kbd>Esc</kbd>) connected to the ATmega1284, which also provides power-on reset to the 65C02
-- **Power**: 5V DC via barrel jack
+- **Power**: 5V DC via barrel jack, centre-positive
+
+**Cards on `CART` and `BUS`.** `IRQB`, `NMIB` and `RESB` are shared by several devices on the board and by
+anything plugged into `CART` and `BUS` (J18 and J19 on Rev 1.0, J17 and J18 on Rev 1.1). A card may only pull
+those lines low, open-drain, and must never drive them high: a device that drives a shared line high holds it
+there against every other device that pulls it low. A video card built around a pico9918 has the same `/INT`
+problem as U3, and needs the same diode on the card.
 
 #### Revision History
 
@@ -134,6 +144,22 @@ shows no banner and no echo at all, and looks broken when it is not.
 
 - Initial release.
 
+#### Building a Rev 1.0
+
+Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev 1.0 they're done by hand:
+
+- **Pull-ups:** fit 10kΩ for `R1`–`R4`, not the 1kΩ in Rev 1.0's BOM.
+- **`RESB`:** flash the AB Controller firmware from this repository, which only ever pulls `RESB` low (see [AB Controller](#ab-controller)); older firmware drove it high as well, so nothing else could reset the machine. A 10kΩ pull-up from `RESB` to 5 V, soldered on the underside, is optional: the ATmega's internal pull-up raises the line on its own, but the 10 k is stiffer on a line that runs out to `CART` and `BUS`.
+- **Video card `/INT`:** fit a BAT85 between U3 pin 16 and `IRQB`, cathode toward the card, for example in a socket stack under the card with pin 16 routed through the diode. Without it, a PICO9918 PRO holds `IRQB` at 3.8 V while the VIA asserts it, and the keyboard and serial input are dead. A v1.3 has the same circuit and only works by luck.
+- **Clock:** keep the PHI2 SELECT jumper (J1) on its 1 MHz pins, 1 and 2.
+- **Banked RAM:** fit the [ACE RAM Patch](#ace-ram-patch) Rev 1.1 in place of U12 and U13.
+- **Power:** use a centre-positive 5 V supply only. Nothing protects Rev 1.0 from reverse polarity.
+
+#### Known limits
+
+- **The SID probe:** at 1 MHz, the BIOS missed the SID (an ARMSID) once in about a dozen boots. The cause isn't known.
+- **The CompactFlash probe:** the BIOS waits for the card to leave `BSY` with a loop counted in CPU cycles, about 851 ms at 1 MHz. Every card tested is found, but a slower card could be missed. A probe that waits a fixed time is planned for the next BIOS 2.x update (6502-BIOS `TODO.md`, item 1).
+
 ### ACE CF Adapter
 `Hardware/ACE CF Adapter/`
 
@@ -151,10 +177,24 @@ A patch board for Rev 1.0 of the ACE Board that corrects the extended RAM (banke
 - **Interface**: two DIP-14 footprints of pin headers, J1 into U12's holes and J2 into U13's, soldered on both boards. The patch mounts front side up under the ACE, so its layout is not mirrored; U13's pin 1 is 23.00 mm from U12's pin 1 along the row
 - **Layout**: U1, J1, J2 and U2 in one row, 92.6 × 13.1 mm. J1 and J2 are on the front, facing the ACE; U1 (74HC00) and U2 (74HC02) are on the back, hanging below, so trim their leads flush on the front. The patch hangs about 8.5 mm below the ACE: the header, the board, and the chips
 - **Rev 1.1**: replaces the Rev 1.0 patch, which plugged into U13 alone
+- **Status**: Rev 1.1 is made, and not yet tested on hardware. Its decode passes `Tests/check-schematics.mjs`. To test it, take U12 and U13 off a Rev 1.0 (chips and sockets), solder the patch underneath, and boot with SW70 switch 2 on: `HW_PRESENT` should read `$FF`. Without the patch, a Rev 1.0 reads `$FD`, because the BIOS doesn't find the `$8400` window
 
 ## Firmware
 
-This repository contains [PlatformIO](https://platformio.org/)-based firmware for the ACE board.
+This repository contains [PlatformIO](https://platformio.org/)-based firmware for the ACE board. The video card's firmware is [6502-PICOVDP](https://github.com/acwright/6502-PICOVDP), and the ROM is [6502-BIOS](https://github.com/acwright/6502-BIOS).
+
+### Video card
+
+The ACE runs a PICO9918 PRO v2.0 (RP2354A) with 6502-PICOVDP, and BIOS 2.x. RP2040 PICO9918 boards (v1.x) can't run 6502-PICOVDP.
+
+1. **Fit the `MDE1` pin:** solder one 0.1″ header pin into the PRO's `MDE1` pad.
+2. **Optionally, back up the stock firmware** from BOOTSEL: `picotool save -a stock.bin`. To restore it later, `picotool load -v -x stock.bin`. The backup has been made on a PRO; the restore is picotool's ordinary load and hasn't been tried.
+3. **Flash 6502-PICOVDP:** download `picovdp-v1.0.0.uf2` from the [v1.0.0 release](https://github.com/acwright/6502-PICOVDP/releases/tag/v1.0.0) (SHA-256 `0b74cd9875cbffc46de7ec48a9bb6e0d4a76a3e796d2563615e17e6bed94afd5`). Hold BOOT, connect USB-C, and run `picotool load -v -x -f picovdp-v1.0.0.uf2`. The release build has no USB of its own, so every update needs BOOT again. The card can be flashed in the ACE's socket with the ACE switched off.
+4. **Burn BIOS 2.x to U8.** The ACE was tested with `v2.0.2`.
+5. **Check the first boot:** the AC6502 logo, then `AC6502 BIOS v2.0`, `BASIC v2.0 30718 BYTES FREE` and `RAM RTC CF SER VIA SID VDP`, at power-on and after the reset button (SW17). If `VDP` is missing from that line, the card isn't running 6502-PICOVDP.
+6. **Check the `MDE1` pin** from BASIC: `POKE 39939,4:POKE 39939,142:PRINT PEEK(39939):POKE 39939,0:POKE 39939,142` prints 172.
+
+On Rev 1.0, fit the `/INT` diode first (see [Building a Rev 1.0](#building-a-rev-10)).
 
 ### AB Controller
 `Firmware/AB Controller/`
@@ -167,8 +207,8 @@ Firmware for the ATmega1284P keyboard controller on the ACE board. Provides:
 - Modifier key support: Shift (symbols/punctuation) and Ctrl (control codes)
 - Buffered output via 65C22 VIA with CA1/CB1 data-ready strobes
 - Independent enable/disable for PS/2 and matrix inputs, releasing PORT A / PORT B so the 6502 can read the joysticks that share them
-- 6502 reset control: drives `RESB` on PC7, holding the CPU in reset for ~250 ms at power-on, and debounces the reset button on PC0
-- Optional jiffy clock: pulses `NMIB` from the DS1511Y SQW input; compiled out unless `ENABLE_SQW` is defined
+- 6502 reset control: pulls `RESB` low on PC7, open-drain, holding the CPU in reset for ~250 ms at power-on, and debounces the reset button on PC0
+- Optional jiffy clock: pulses `NMIB` low from the DS1511Y SQW input, open-drain; compiled out unless `ENABLE_SQW` is defined. The `ENABLE_SQW` build compiles, but hasn't been run on hardware
 
 See [Firmware/AB Controller/README.md](./Firmware/AB%20Controller/README.md) for setup and usage instructions.
 
@@ -258,7 +298,7 @@ Rev 1.1's designators. Rev 1.0's are in `Production/ACE Board/Rev 1.0/bom.csv`.
 | SW70 | 1 | IO ENABLE | 8× DIP Switch SPST | | | [AMAZON](https://www.amazon.com/Yohii-2-54mm-Positions-Double-Assorted/dp/B07DSBX4BK/) |
 | U1 | 1 | W65C02S | 65C02 CPU | | [955-W65C02S6TPG-14](https://www.mouser.com/ProductDetail/955-W65C02S6TPG-14) | |
 | U2 | 1 | W65C22 | 65C22 VIA | | [955-W65C22N6TPG-14](https://www.mouser.com/ProductDetail/955-W65C22N6TPG-14) | |
-| U3 | 1 | Pico9918A | VDP (VGA) | | | [TINDIE](https://www.tindie.com/products/visrealm/pico9918-pro/) |
+| U3 | 1 | Pico9918A | VDP (VGA): PICO9918 PRO v2.0, running 6502-PICOVDP | | | [TINDIE](https://www.tindie.com/products/visrealm/pico9918-pro/) |
 | U4 | 1 | R6551AP | ACIA | | | [JAMECO](https://www.jameco.com/z/R6551AP-Rockwell-IC-6551-Asynchronous-Communication-Interface-Adapter-DIP-28-pin_43318.html) |
 | U5 | 1 | 74HC163 | 4-bit Counter | [296-8246-5-ND](https://www.digikey.com/en/products/filter?keywords=296-8246-5-ND) | [595-SN74HC163N](https://www.mouser.com/ProductDetail/595-SN74HC163N) | |
 | U6 | 1 | ATmega1284-P | Keyboard Controller MCU | [ATMEGA1284-PU-ND](https://www.digikey.com/en/products/filter?keywords=ATMEGA1284-PU-ND) | [556-ATMEGA1284-PU](https://www.mouser.com/ProductDetail/556-ATMEGA1284-PU) | |
