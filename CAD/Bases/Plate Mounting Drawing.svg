@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 653 472.95" width="653mm" height="472.95mm" font-family="Helvetica, Arial, sans-serif"><defs><marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9z" fill="#1f5fbf"/></marker></defs><rect width="653" height="472.95" fill="#fff"/><text x="42" y="44" font-size="5" text-anchor="start" fill="#16202c" font-weight="bold">ACE</text>
+<g transform="translate(42 62)">
+<rect x="0" y="0" width="355" height="270" rx="5" fill="#f4f5f7" stroke="#16202c" stroke-width="0.5"/>
+<polygon points="130,25 130.003,25.164 130.045,25.488 130.13,25.804 130.255,26.107 130.419,26.39 130.618,26.65 130.85,26.882 131.11,27.081 131.393,27.245 131.696,27.37 132.012,27.455 132.336,27.497 132.5,27.5 165,27.5 165.164,27.497 165.488,27.455 165.804,27.37 166.107,27.245 166.39,27.081 166.65,26.882 166.882,26.65 167.081,26.39 167.245,26.107 167.37,25.804 167.455,25.488 167.497,25.164 167.5,25 167.5,10 340,10 340.218,10.002 340.653,10.04 341.083,10.116 341.504,10.229 341.914,10.378 342.31,10.563 342.688,10.781 343.045,11.031 343.38,11.312 343.688,11.62 343.969,11.955 344.219,12.312 344.437,12.69 344.622,13.086 344.771,13.496 344.884,13.917 344.96,14.347 344.998,14.782 345,15 345,30 300,30 299.782,30.002 299.347,30.04 298.917,30.116 298.496,30.229 298.086,30.378 297.69,30.563 297.312,30.781 296.955,31.031 296.62,31.312 296.312,31.62 296.031,31.955 295.781,32.312 295.563,32.69 295.378,33.086 295.229,33.496 295.116,33.917 295.04,34.347 295.002,34.782 295,35 295,100 295.002,100.218 295.04,100.653 295.116,101.083 295.229,101.504 295.378,101.914 295.563,102.31 295.781,102.688 296.031,103.045 296.312,103.38 296.62,103.688 296.955,103.969 297.312,104.219 297.69,104.437 298.086,104.622 298.496,104.771 298.917,104.884 299.347,104.96 299.782,104.998 300,105 345,105 345,255 344.998,255.218 344.96,255.653 344.884,256.083 344.771,256.504 344.622,256.914 344.437,257.31 344.219,257.688 343.969,258.045 343.688,258.38 343.38,258.688 343.045,258.969 342.688,259.219 342.31,259.437 341.914,259.622 341.504,259.771 341.083,259.884 340.653,259.96 340.218,259.998 340,260 15,260 14.782,259.998 14.347,259.96 13.917,259.884 13.496,259.771 13.086,259.622 12.69,259.437 12.312,259.219 11.955,258.969 11.62,258.688 11.312,258.38 11.031,258.045 10.781,257.688 10.563,257.31 10.378,256.914 10.229,256.504 10.116,256.083 10.04,255.653 10.002,255.218 10,255 10,15 10.002,14.782 10.04,14.347 10.116,13.917 10.229,13.496 10.378,13.086 10.563,12.69 10.781,12.312 11.031,11.955 11.312,11.62 11.62,11.312 11.955,11.031 12.312,10.781 12.69,10.563 13.086,10.378 13.496,10.229 13.917,10.116 14.347,10.04 14.782,10.002 15,10 130,10" fill="#e4f1e6" stroke="#2c6e49" stroke-width="0.45"/>
+<rect x="295" y="30" width="50" height="75" rx="0" fill="#e4f1e6" stroke="#2c6e49" stroke-width="0.45"/>
+<rect x="22.955" y="156.475" width="309.365" height="94.965" rx="0.6" fill="#cfe3d3" stroke="#6d9a7c" stroke-width="0.2"/>
+<text x="177.637" y="205.157" font-size="3.4" text-anchor="middle" fill="#2c6e49" font-weight="normal">Keyboard</text>
+<text x="150" y="78" font-size="3.8" text-anchor="middle" fill="#1d5236" font-weight="bold">ACE Board</text>
+<text x="150" y="82.3" font-size="2.9" text-anchor="middle" fill="#2c6e49" font-weight="normal">335 × 250</text>
+<text x="320" y="66" font-size="3.8" text-anchor="middle" fill="#1d5236" font-weight="bold">ACE CF Adapter</text>
+<text x="320" y="70.3" font-size="2.9" text-anchor="middle" fill="#2c6e49" font-weight="normal">50 × 75, turned 90°</text>
+<rect x="121.5" y="9" width="54.5" height="20" rx="0.6" fill="none" stroke="#7b3fbf" stroke-width="0.3" stroke-dasharray="1.6 1"/>
+<text x="148.75" y="32.6" font-size="2.9" text-anchor="middle" fill="#7b3fbf" font-weight="normal">VGA Adapter</text>
+<circle cx="5" cy="5" r="1.6" fill="#fff" stroke="#7b3fbf" stroke-width="0.5"/>
+<text x="7.7" y="3.5" font-size="2.8" text-anchor="start" fill="#7b3fbf" font-weight="bold">1</text>
+<circle cx="350" cy="5" r="1.6" fill="#fff" stroke="#7b3fbf" stroke-width="0.5"/>
+<text x="347.3" y="3.5" font-size="2.8" text-anchor="end" fill="#7b3fbf" font-weight="bold">2</text>
+<circle cx="15" cy="15" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="15" cy="15" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="17.7" y="13.5" font-size="2.8" text-anchor="start" fill="#1f5fbf" font-weight="bold">3</text>
+<circle cx="177.5" cy="15" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="177.5" cy="15" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="180.2" y="13.5" font-size="2.8" text-anchor="start" fill="#1f5fbf" font-weight="bold">4</text>
+<circle cx="340" cy="15" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="340" cy="15" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="337.3" y="13.5" font-size="2.8" text-anchor="end" fill="#1f5fbf" font-weight="bold">5</text>
+<circle cx="300" cy="35" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="300" cy="35" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="302.7" y="33.5" font-size="2.8" text-anchor="start" fill="#1f5fbf" font-weight="bold">6</text>
+<circle cx="340" cy="35" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="340" cy="35" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="337.3" y="33.5" font-size="2.8" text-anchor="end" fill="#1f5fbf" font-weight="bold">7</text>
+<circle cx="300" cy="100" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="300" cy="100" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="302.7" y="98.5" font-size="2.8" text-anchor="start" fill="#1f5fbf" font-weight="bold">8</text>
+<circle cx="340" cy="100" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="340" cy="100" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="337.3" y="98.5" font-size="2.8" text-anchor="end" fill="#1f5fbf" font-weight="bold">9</text>
+<circle cx="15" cy="135" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="15" cy="135" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="17.7" y="133.5" font-size="2.8" text-anchor="start" fill="#1f5fbf" font-weight="bold">10</text>
+<circle cx="177.5" cy="135" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="177.5" cy="135" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="180.2" y="133.5" font-size="2.8" text-anchor="start" fill="#1f5fbf" font-weight="bold">11</text>
+<circle cx="340" cy="135" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="340" cy="135" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="337.3" y="133.5" font-size="2.8" text-anchor="end" fill="#1f5fbf" font-weight="bold">12</text>
+<circle cx="49" cy="203" r="1.1" fill="#fff" stroke="#7b8794" stroke-width="0.3"/>
+<text x="51.7" y="201.5" font-size="2.8" text-anchor="start" fill="#7b8794" font-weight="normal">13</text>
+<circle cx="302" cy="203" r="1.1" fill="#fff" stroke="#7b8794" stroke-width="0.3"/>
+<text x="304.7" y="201.5" font-size="2.8" text-anchor="start" fill="#7b8794" font-weight="normal">14</text>
+<circle cx="15" cy="255" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="15" cy="255" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="17.7" y="253.5" font-size="2.8" text-anchor="start" fill="#1f5fbf" font-weight="bold">15</text>
+<circle cx="177.5" cy="255" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="177.5" cy="255" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="180.2" y="253.5" font-size="2.8" text-anchor="start" fill="#1f5fbf" font-weight="bold">16</text>
+<circle cx="340" cy="255" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="340" cy="255" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="337.3" y="253.5" font-size="2.8" text-anchor="end" fill="#1f5fbf" font-weight="bold">17</text>
+<circle cx="5" cy="265" r="1.6" fill="#fff" stroke="#7b3fbf" stroke-width="0.5"/>
+<text x="7.7" y="263.5" font-size="2.8" text-anchor="start" fill="#7b3fbf" font-weight="bold">18</text>
+<circle cx="350" cy="265" r="1.6" fill="#fff" stroke="#7b3fbf" stroke-width="0.5"/>
+<text x="347.3" y="263.5" font-size="2.8" text-anchor="end" fill="#7b3fbf" font-weight="bold">19</text>
+<line x1="0" y1="-0.5" x2="0" y2="-8.5" stroke="#1f5fbf" stroke-width="0.15"/>
+<line x1="355" y1="-0.5" x2="355" y2="-8.5" stroke="#1f5fbf" stroke-width="0.15"/>
+<line x1="0" y1="-7" x2="355" y2="-7" stroke="#1f5fbf" stroke-width="0.22" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="177.5" y="-8.3" font-size="3.2" text-anchor="middle" fill="#1f5fbf" font-weight="normal">355</text>
+<line x1="-0.5" y1="0" x2="-8.5" y2="0" stroke="#1f5fbf" stroke-width="0.15"/>
+<line x1="-0.5" y1="270" x2="-8.5" y2="270" stroke="#1f5fbf" stroke-width="0.15"/>
+<line x1="-7" y1="0" x2="-7" y2="270" stroke="#1f5fbf" stroke-width="0.22" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="-8.3" y="135" font-size="3.2" text-anchor="middle" fill="#1f5fbf" font-weight="normal" transform="rotate(-90 -8.3 135)">270</text>
+<line x1="10" y1="10" x2="10" y2="-4" stroke="#1f5fbf" stroke-width="0.15"/>
+<line x1="345" y1="10" x2="345" y2="-4" stroke="#1f5fbf" stroke-width="0.15"/>
+<line x1="10" y1="-2.5" x2="345" y2="-2.5" stroke="#1f5fbf" stroke-width="0.22" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="177.5" y="-3.8" font-size="3.2" text-anchor="middle" fill="#1f5fbf" font-weight="normal">335</text>
+<line x1="10" y1="10" x2="-4" y2="10" stroke="#1f5fbf" stroke-width="0.15"/>
+<line x1="10" y1="260" x2="-4" y2="260" stroke="#1f5fbf" stroke-width="0.15"/>
+<line x1="-2.5" y1="10" x2="-2.5" y2="260" stroke="#1f5fbf" stroke-width="0.22" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="-3.8" y="135" font-size="3.2" text-anchor="middle" fill="#1f5fbf" font-weight="normal" transform="rotate(-90 -3.8 135)">250</text>
+</g>
+<text x="42" y="348" font-size="4.2" text-anchor="start" fill="#16202c" font-weight="bold">Plate holes</text>
+<text x="84" y="348" font-size="3" text-anchor="start" fill="#7b8794" font-weight="normal">x and y in mm from the plate's top-left corner, as the computer is used</text>
+<text x="42" y="355" font-size="3.1" text-anchor="start" fill="#16202c" font-weight="bold">Hole</text>
+<text x="55" y="355" font-size="3.1" text-anchor="start" fill="#16202c" font-weight="bold">x</text>
+<text x="69" y="355" font-size="3.1" text-anchor="start" fill="#16202c" font-weight="bold">y</text>
+<text x="83" y="355" font-size="3.1" text-anchor="start" fill="#16202c" font-weight="bold">Ø</text>
+<text x="94" y="355" font-size="3.1" text-anchor="start" fill="#16202c" font-weight="bold">Used by</text>
+<line x1="42" y1="356.4" x2="150" y2="356.4" stroke="#16202c" stroke-width="0.25"/>
+<text x="42" y="361" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">1</text>
+<text x="55" y="361" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">5</text>
+<text x="69" y="361" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">5</text>
+<text x="83" y="361" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="361" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Corner</text>
+<text x="42" y="366.05" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">2</text>
+<text x="55" y="366.05" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">350</text>
+<text x="69" y="366.05" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">5</text>
+<text x="83" y="366.05" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="366.05" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Corner</text>
+<text x="42" y="371.1" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">3</text>
+<text x="55" y="371.1" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">15</text>
+<text x="69" y="371.1" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">15</text>
+<text x="83" y="371.1" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="371.1" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE Board</text>
+<text x="42" y="376.15" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">4</text>
+<text x="55" y="376.15" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">177.5</text>
+<text x="69" y="376.15" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">15</text>
+<text x="83" y="376.15" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="376.15" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE Board</text>
+<text x="42" y="381.2" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">5</text>
+<text x="55" y="381.2" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">340</text>
+<text x="69" y="381.2" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">15</text>
+<text x="83" y="381.2" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="381.2" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE Board</text>
+<text x="42" y="386.25" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">6</text>
+<text x="55" y="386.25" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">300</text>
+<text x="69" y="386.25" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">35</text>
+<text x="83" y="386.25" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="386.25" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE CF Adapter</text>
+<text x="42" y="391.3" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">7</text>
+<text x="55" y="391.3" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">340</text>
+<text x="69" y="391.3" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">35</text>
+<text x="83" y="391.3" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="391.3" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE CF Adapter</text>
+<text x="42" y="396.35" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">8</text>
+<text x="55" y="396.35" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">300</text>
+<text x="69" y="396.35" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">100</text>
+<text x="83" y="396.35" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="396.35" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE CF Adapter</text>
+<text x="42" y="401.4" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">9</text>
+<text x="55" y="401.4" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">340</text>
+<text x="69" y="401.4" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">100</text>
+<text x="83" y="401.4" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="401.4" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE CF Adapter</text>
+<text x="42" y="406.45" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">10</text>
+<text x="55" y="406.45" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">15</text>
+<text x="69" y="406.45" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">135</text>
+<text x="83" y="406.45" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="406.45" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE Board</text>
+<text x="42" y="411.5" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">11</text>
+<text x="55" y="411.5" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">177.5</text>
+<text x="69" y="411.5" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">135</text>
+<text x="83" y="411.5" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="411.5" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE Board</text>
+<text x="42" y="416.55" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">12</text>
+<text x="55" y="416.55" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">340</text>
+<text x="69" y="416.55" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">135</text>
+<text x="83" y="416.55" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="416.55" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE Board</text>
+<text x="42" y="421.6" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">13</text>
+<text x="55" y="421.6" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">49</text>
+<text x="69" y="421.6" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">203</text>
+<text x="83" y="421.6" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">2.2</text>
+<text x="94" y="421.6" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Spare (M2), not used</text>
+<text x="42" y="426.65" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">14</text>
+<text x="55" y="426.65" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">302</text>
+<text x="69" y="426.65" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">203</text>
+<text x="83" y="426.65" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">2.2</text>
+<text x="94" y="426.65" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Spare (M2), not used</text>
+<text x="42" y="431.7" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">15</text>
+<text x="55" y="431.7" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">15</text>
+<text x="69" y="431.7" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">255</text>
+<text x="83" y="431.7" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="431.7" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE Board</text>
+<text x="42" y="436.75" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">16</text>
+<text x="55" y="436.75" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">177.5</text>
+<text x="69" y="436.75" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">255</text>
+<text x="83" y="436.75" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="436.75" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE Board</text>
+<text x="42" y="441.8" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">17</text>
+<text x="55" y="441.8" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">340</text>
+<text x="69" y="441.8" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">255</text>
+<text x="83" y="441.8" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="441.8" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE Board</text>
+<text x="42" y="446.85" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">18</text>
+<text x="55" y="446.85" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">5</text>
+<text x="69" y="446.85" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">265</text>
+<text x="83" y="446.85" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="446.85" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Corner</text>
+<text x="42" y="451.9" font-size="3" text-anchor="start" fill="#16202c" font-weight="bold">19</text>
+<text x="55" y="451.9" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">350</text>
+<text x="69" y="451.9" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">265</text>
+<text x="83" y="451.9" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">3.2</text>
+<text x="94" y="451.9" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Corner</text>
+<text x="423" y="44" font-size="4.2" text-anchor="start" fill="#16202c" font-weight="bold">Boards</text>
+<text x="423" y="51" font-size="3.1" text-anchor="start" fill="#16202c" font-weight="bold">Board</text>
+<text x="485" y="51" font-size="3.1" text-anchor="start" fill="#16202c" font-weight="bold">Size</text>
+<text x="507" y="51" font-size="3.1" text-anchor="start" fill="#16202c" font-weight="bold">Top-left on plate</text>
+<text x="539" y="51" font-size="3.1" text-anchor="start" fill="#16202c" font-weight="bold">As mounted</text>
+<line x1="423" y1="52.4" x2="565" y2="52.4" stroke="#16202c" stroke-width="0.25"/>
+<text x="423" y="57" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE Board Rev 1.1</text>
+<text x="485" y="57" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">335 × 250</text>
+<text x="507" y="57" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">(10, 10)</text>
+<text x="539" y="57" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">as drawn</text>
+<text x="423" y="62.05" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE CF Adapter Rev 1.0</text>
+<text x="485" y="62.05" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">50 × 75</text>
+<text x="507" y="62.05" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">(295, 30)</text>
+<text x="539" y="62.05" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">turned 90°</text>
+<text x="423" y="73.1" font-size="4.2" text-anchor="start" fill="#16202c" font-weight="bold">Key</text>
+<circle cx="426" cy="78.6" r="1.85" fill="#fff" stroke="#1f5fbf" stroke-width="0.55"/>
+<circle cx="426" cy="78.6" r="0.45" fill="#1f5fbf" stroke="#1f5fbf" stroke-width="0"/>
+<text x="432" y="79.6" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Plate hole used by this build: a screw through the board into a standoff.</text>
+<circle cx="426" cy="84.7" r="1.6" fill="#fff" stroke="#7b3fbf" stroke-width="0.5"/>
+<text x="432" y="85.7" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Plate hole for a printed part.</text>
+<circle cx="426" cy="90.8" r="1.6" fill="#fff" stroke="#7b8794" stroke-width="0.3"/>
+<text x="432" y="91.8" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Plate hole this build doesn't use.</text>
+<text x="423" y="100.9" font-size="4.2" text-anchor="start" fill="#16202c" font-weight="bold">Notes</text>
+<text x="423" y="107.4" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Corners go on all four corners of the plate.</text>
+<text x="423" y="113.1" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">The VGA Adapter fits the notch in the board's top edge and fastens to the board, not the plate, at (125.75,</text>
+<text x="423" y="117" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">22) and (171.75, 22). The Reset Button sits in its hole in the top and takes no hardware.</text>
+<text x="423" y="122.7" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">The ACE CF Adapter has an optional top, ACE CF Adapter Top. This drawing and its hardware count are for the</text>
+<text x="423" y="126.6" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">build without it.</text>
+<text x="423" y="132.3" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">The board's two spare M2 holes and the plate's under them, under the keyboard, are there in case the</text>
+<text x="423" y="136.2" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">keyboard ever needs support. Nothing goes in them.</text>
+<text x="423" y="141.9" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">ACE Board Rev 1.0 has the same holes as Rev 1.1.</text>
+<text x="423" y="147.6" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">The plate is a stack of three 3 mm acrylic layers, each cut from Plate.svg.</text>
+<text x="423" y="153.3" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">The SVG is drawn 1:1, so it can be printed at full size to check a plate.</text>
+<text x="423" y="163" font-size="4.2" text-anchor="start" fill="#16202c" font-weight="bold">Hardware</text>
+<text x="423" y="170" font-size="3.1" text-anchor="start" fill="#16202c" font-weight="bold">Part</text>
+<text x="515" y="170" font-size="3.1" text-anchor="start" fill="#16202c" font-weight="bold">Count</text>
+<line x1="423" y1="171.4" x2="619" y2="171.4" stroke="#16202c" stroke-width="0.25"/>
+<text x="423" y="176" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">M3 × 10 standoff, female-male</text>
+<text x="515" y="176" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">9</text>
+<text x="423" y="181.05" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">M3 × 10 standoff, female-female</text>
+<text x="515" y="181.05" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">13</text>
+<text x="423" y="186.1" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">M3 × 12 pan head</text>
+<text x="515" y="186.1" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">13</text>
+<text x="423" y="191.15" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">M3 × 6 pan head</text>
+<text x="515" y="191.15" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">13</text>
+<text x="423" y="196.2" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">M3 × 16 countersunk</text>
+<text x="515" y="196.2" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">4</text>
+<text x="423" y="201.25" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">M3 nut</text>
+<text x="515" y="201.25" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">4</text>
+<text x="423" y="206.3" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">VGA Adapter: M3 × 6 pan head</text>
+<text x="515" y="206.3" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">2</text>
+<text x="423" y="211.35" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">VGA Adapter: M3 nut</text>
+<text x="515" y="211.35" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">2</text>
+<text x="423" y="222.4" font-size="4.2" text-anchor="start" fill="#16202c" font-weight="bold">How a hole goes together</text>
+<text x="423" y="228.9" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">A normal hole, from the bottom up: an M3 × 12 pan head through the back of the plate, a female-male</text>
+<text x="423" y="232.8" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">standoff, the board, a female-female standoff, the top, and an M3 × 6 pan head.</text>
+<text x="423" y="238.5" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">A CF Adapter hole has half the stack and no top: an M3 × 12 pan head through the back of the plate, a</text>
+<text x="423" y="242.4" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">female-female standoff, the adapter, and an M3 × 6 pan head.</text>
+<text x="423" y="248.1" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Corners: an M3 × 16 countersunk screw from the top, through the plate, into a nut in the Corner's lower</text>
+<text x="423" y="252" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">jaw.</text>
+<text x="423" y="257.7" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">VGA Adapter: an M3 × 6 pan head down through the board at each end, into a nut in the adapter.</text>
+<text x="42" y="15" font-size="7.2" text-anchor="start" fill="#16202c" font-weight="bold">ACE base plate: mounting drawing</text>
+<text x="42" y="23" font-size="3.6" text-anchor="start" fill="#7b8794" font-weight="normal">Looking down on the plate, as the computer is used. All dimensions in mm.</text>
+<line x1="34" y1="461.95" x2="619" y2="461.95" stroke="#16202c" stroke-width="0.25"/>
+<text x="34" y="466.95" font-size="3" text-anchor="start" fill="#7b8794" font-weight="normal">6502-ACE · CAD/Bases/Plate.svg, Plate.lbrn2, Plate.stl · three 3 mm acrylic layers</text>
+<text x="619" y="466.95" font-size="3" text-anchor="end" fill="#7b8794" font-weight="normal">© 2026 A.C. Wright Design</text></svg>

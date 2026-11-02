@@ -218,6 +218,8 @@ See [Firmware/AB Controller/README.md](./Firmware/AB%20Controller/README.md) for
 
 3D-printable enclosure bases and laser-cut top panels for the ACE system.
 
+The **[plate mounting drawing](CAD/Bases/Plate%20Mounting%20Drawing.png)** ([SVG](CAD/Bases/Plate%20Mounting%20Drawing.svg)) shows where the ACE Board and the ACE CF Adapter mount on the base plate, with every hole's position and the hardware the build needs. The plate is a stack of three 3 mm acrylic layers.
+
 ## Production
 `Production/`
 
