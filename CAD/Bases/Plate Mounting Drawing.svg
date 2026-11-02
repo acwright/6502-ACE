@@ -231,18 +231,21 @@
 <text x="515" y="196.2" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">4</text>
 <text x="423" y="201.25" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">M3 nut</text>
 <text x="515" y="201.25" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">4</text>
-<text x="423" y="206.3" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">VGA Adapter: M3 × 6 pan head</text>
-<text x="515" y="206.3" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">2</text>
-<text x="423" y="211.35" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">VGA Adapter: M3 nut</text>
+<text x="423" y="206.3" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Rubber foot, Ø10</text>
+<text x="515" y="206.3" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">4</text>
+<text x="423" y="211.35" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">VGA Adapter: M3 × 6 pan head</text>
 <text x="515" y="211.35" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">2</text>
-<text x="423" y="222.4" font-size="4.2" text-anchor="start" fill="#16202c" font-weight="bold">How a hole goes together</text>
-<text x="423" y="228.9" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">A normal hole, from the bottom up: an M3 × 12 pan head through the back of the plate, a female-male</text>
-<text x="423" y="232.8" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">standoff, the board, a female-female standoff, the top, and an M3 × 6 pan head.</text>
-<text x="423" y="238.5" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">A CF Adapter hole has half the stack and no top: an M3 × 12 pan head through the back of the plate, a</text>
-<text x="423" y="242.4" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">female-female standoff, the adapter, and an M3 × 6 pan head.</text>
-<text x="423" y="248.1" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Corners: an M3 × 16 countersunk screw from the top, through the plate, into a nut in the Corner's lower</text>
-<text x="423" y="252" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">jaw.</text>
-<text x="423" y="257.7" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">VGA Adapter: an M3 × 6 pan head down through the board at each end, into a nut in the adapter.</text>
+<text x="423" y="216.4" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">VGA Adapter: M3 nut</text>
+<text x="515" y="216.4" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">2</text>
+<text x="423" y="227.45" font-size="4.2" text-anchor="start" fill="#16202c" font-weight="bold">How a hole goes together</text>
+<text x="423" y="233.95" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">A normal hole, from the bottom up: an M3 × 12 pan head through the back of the plate, a female-male</text>
+<text x="423" y="237.85" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">standoff, the board, a female-female standoff, the top, and an M3 × 6 pan head.</text>
+<text x="423" y="243.55" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">A CF Adapter hole has half the stack and no top: an M3 × 12 pan head through the back of the plate, a</text>
+<text x="423" y="247.45" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">female-female standoff, the adapter, and an M3 × 6 pan head.</text>
+<text x="423" y="253.15" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Corners: an M3 × 16 countersunk screw from the top, through the plate, into a nut in the Corner's lower</text>
+<text x="423" y="257.05" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">jaw.</text>
+<text x="423" y="262.75" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">VGA Adapter: an M3 × 6 pan head down through the board at each end, into a nut in the adapter.</text>
+<text x="423" y="268.45" font-size="3" text-anchor="start" fill="#16202c" font-weight="normal">Rubber feet: one in the Ø10 recess under each Corner.</text>
 <text x="42" y="15" font-size="7.2" text-anchor="start" fill="#16202c" font-weight="bold">ACE base plate: mounting drawing</text>
 <text x="42" y="23" font-size="3.6" text-anchor="start" fill="#7b8794" font-weight="normal">Looking down on the plate, as the computer is used. All dimensions in mm.</text>
 <line x1="34" y1="461.95" x2="619" y2="461.95" stroke="#16202c" stroke-width="0.25"/>
