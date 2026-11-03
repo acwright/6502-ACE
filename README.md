@@ -283,7 +283,7 @@ Rev 1.1's designators. Rev 1.0's are in `Production/ACE Board/Rev 1.0/bom.csv`.
 | J15 | 1 | AUDIO | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
 | J16 | 1 | 5V DC | DC Barrel Jack | [2073-DCJ200-10-A-K1-K-ND](https://www.digikey.com/en/products/filter?keywords=2073-DCJ200-10-A-K1-K-ND) | [640-DCJ200-10-A-K1-K](https://www.mouser.com/ProductDetail/640-DCJ200-10-A-K1-K) | |
 | J17 | 1 | CART | Card Edge 2×20 2.54mm | [A31723-ND](https://www.digikey.com/en/products/filter?keywords=A31723-ND) | [571-5-5530843-4](https://www.mouser.com/ProductDetail/571-5-5530843-4) | |
-| J18 | 1 | BUS | Box Header 2×20 2.54mm | | | [AMAZON](https://www.amazon.com/Female-Headers-Connector-Header-Raspberry/dp/B07DNHS2SJ) |
+| J18 | 1 | BUS | Box Header 2×20 2.54mm | [732-5401-ND](https://www.digikey.com/en/products/filter?keywords=732-5401-ND) | | |
 | J19 | 1 | VCC | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
 | J20 | 1 | POWER LED | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
 | J21 | 1 | STORAGE | Pin Socket 2×10 2.54mm Horiz | [S5563-ND](https://www.digikey.com/en/products/filter?keywords=S5563-ND) | | |
