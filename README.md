@@ -31,6 +31,7 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [Schematics](#schematics)
 - [Docs](#docs)
 - [Checking the schematics](#checking-the-schematics)
+- [Checking the banked RAM](#checking-the-banked-ram)
 - [Libraries](#libraries)
 - [Bill of Materials](#bill-of-materials)
   - [ACE Board](#ace-board-1)
@@ -181,7 +182,7 @@ A patch board for Rev 1.0 of the ACE Board that corrects the extended RAM (banke
 - **Interface**: two DIP-14 footprints of pin headers, J1 into U12's holes and J2 into U13's, soldered on both boards. The patch mounts front side up under the ACE, so its layout is not mirrored; U13's pin 1 is 23.00 mm from U12's pin 1 along the row
 - **Layout**: U1, J1, J2 and U2 in one row, 92.6 × 13.1 mm. J1 and J2 are on the front, facing the ACE; U1 (74HC00) and U2 (74HC02) are on the back, hanging below, so trim their leads flush on the front. The patch hangs about 8.5 mm below the ACE: the header, the board, and the chips
 - **Rev 1.1**: replaces the Rev 1.0 patch, which plugged into U13 alone
-- **Status**: Rev 1.1 is made, and not yet tested on hardware. Its decode passes `Tests/check-schematics.mjs`. To test it, take U12 and U13 off a Rev 1.0 (chips and sockets), solder the patch underneath, and boot with SW70 switch 2 on: `HW_PRESENT` should read `$FF`. Without the patch, a Rev 1.0 reads `$FD`, because the BIOS doesn't find the `$8400` window
+- **Status**: Rev 1.1 is verified on hardware. Its decode passes `Tests/check-schematics.mjs`, and on 2026-11-03 an ACE Board Rev 1.0 with the patch fitted passed `node Tests/check-ram.mjs --expect FF` with every card in place: `HW_PRESENT` read `$FF` after each of 10 restarts, each latch loaded only on its own address, and every bank of both windows held its own patterns, with 0 failures in 3 runs. The same board had 0 failures in 3 runs without the video card and the CF Adapter, reading `$77`. Without the patch, a Rev 1.0 reads `$FD`, because the BIOS doesn't find the `$8400` window. See [Checking the banked RAM](#checking-the-banked-ram)
 
 ## Firmware
 
@@ -252,6 +253,29 @@ node Tests/check-schematics.mjs
 ```
 
 It needs Node.js and KiCad's `kicad-cli`, which it finds on the `PATH`, at the macOS default location, or through a `KICAD_CLI` environment variable. It takes about 15 seconds, prints `ok` or `FAIL` for each check with example bus states for any failure, and exits non-zero on a failure.
+
+## Checking the banked RAM
+`Tests/check-ram.mjs`
+
+`check-schematics.mjs` checks the logic as it is drawn. This script checks a built board, including its chips, its solder joints and, on a Rev 1.0, its ACE RAM Patch. It talks to the machine over the serial port. It restarts the machine ten times and reads `HW_PRESENT` after each boot, then loads `Tests/check-ram.asm` over XMODEM and runs it three times. The program does three things:
+
+- **Marks every bank.** Each of the 256 banks in both windows gets a marker that names the bank.
+- **Checks that each latch loads only on its own address.** With a bank selected, it writes a different value to every data address in the window, then reads every address, including the bank register. A latch that loaded by mistake would change the bank, and the markers would show it. It also checks that the other window's latch hasn't moved, and that a write to the bank register does change the bank, so a stuck latch can't pass.
+- **Checks every byte.** It writes all 1023 data bytes of every bank in both windows, and only then reads them back, with three patterns. Two of the patterns are complements, so every bit is tested as both 0 and 1. The byte behind each bank register, `$83FF` and `$87FF`, isn't tested.
+
+The boot probe alone can't confirm the decode fix. The BIOS tests only banks 0 and 1, so a machine with the first RAM Patch's decode still finds its RAM.
+
+Connect the ACE's serial port, start it at BASIC's prompt on BIOS 2.x, and run:
+
+```sh
+node Tests/check-ram.mjs
+```
+
+With every card fitted, add `--expect FF` to require that exact `HW_PRESENT`. Without it, only the two RAM bits have to be set. `--port`, `--runs` and `--restarts` change the defaults; the top of the script lists them.
+
+It needs Node.js, [cc65](https://cc65.github.io/) and `stty`, so it runs on macOS and Linux. It takes about four minutes, works with or without a video card, and exits non-zero on a failure. **It erases the BASIC program in memory and everything in the banked RAM.**
+
+`Tests/check-ram-fault.cjs` shows that the test can fail. It runs the program on the [emulator](https://github.com/acwright/6502-EMULATOR) with a fault added to the emulated RAM card: the first RAM Patch's decode, a stuck latch bit, or a latch that never loads. Each fault has to produce failures. The file's header has the command.
 
 ## Libraries
 `Libraries/`
