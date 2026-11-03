@@ -29,6 +29,7 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [CAD](#cad)
 - [Production](#production)
 - [Schematics](#schematics)
+- [Docs](#docs)
 - [Checking the schematics](#checking-the-schematics)
 - [Libraries](#libraries)
 - [Bill of Materials](#bill-of-materials)
@@ -116,7 +117,7 @@ always send and always receive. Moved to the cable, they do real work — measur
 arrives. A board jumpered to the cable and plugged into something that does not assert those lines
 shows no banner and no echo at all, and looks broken when it is not.
 - **Reset**: Manual reset button (SW17, just above <kbd>Esc</kbd>) connected to the ATmega1284, which also provides power-on reset to the 65C02
-- **Power**: 5V DC via barrel jack, centre-positive. Rev 1.1 has reverse-polarity protection (`D5`); Rev 1.0 has none
+- **Power**: 5V DC via barrel jack, center-positive. Rev 1.1 has reverse-polarity protection (`D5`); Rev 1.0 has none
 
 **Cards on `CART` and `BUS`.** `IRQB`, `NMIB` and `RESB` are shared by several devices on the board and by
 anything plugged into `CART` and `BUS` (J18 and J19 on Rev 1.0, J17 and J18 on Rev 1.1). A card may only pull
@@ -147,14 +148,16 @@ problem as U3, and needs the same diode on the card.
 
 #### Building a Rev 1.0
 
-Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev 1.0 they're done by hand:
+Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev 1.0 they're done by hand. The [build notes](Docs/ACE%20Board/Rev%201.0/ACE%20Board%20Build%20Notes.pdf) have each step, with figures and checks.
 
-- **Pull-ups:** fit 10kΩ for `R1`–`R4`, not the 1kΩ in Rev 1.0's BOM.
+- **Pull-ups:** fit 10kΩ for `R1`–`R4` and `R25`, not the 1kΩ in Rev 1.0's BOM.
+- **ACIA:** fit an R6551AP at `U4`, where Rev 1.0's silkscreen and BOM say 65C51.
+- **Supply capacitor:** fit a 10µF electrolytic on the underside, across `J20`'s pads. Rev 1.0 has no holes for it.
 - **`RESB`:** flash the AB Controller firmware from this repository, which only ever pulls `RESB` low (see [AB Controller](#ab-controller)); older firmware drove it high as well, so nothing else could reset the machine. A 10kΩ pull-up from `RESB` to 5 V, soldered on the underside, is optional: the ATmega's internal pull-up raises the line on its own, but the 10 k is stiffer on a line that runs out to `CART` and `BUS`.
-- **Video card `/INT`:** fit a BAT85 between U3 pin 16 and `IRQB`, cathode toward the card, for example in a socket stack under the card with pin 16 routed through the diode. Without it, a PICO9918 PRO holds `IRQB` at 3.8 V while the VIA asserts it, and the keyboard and serial input are dead. A v1.3 has the same circuit and only works by luck.
+- **Video card `/INT`:** fit a BAT85 between U3 pin 16 and `IRQB`, cathode toward the card, in a socket stack under the card with pin 16 routed through the diode. Without it, a PICO9918 PRO holds `IRQB` at 3.8 V while the VIA asserts it, and the keyboard and serial input are dead. A v1.3 has the same circuit and only works by luck.
 - **Clock:** keep the PHI2 SELECT jumper (J1) on its 1 MHz pins, 1 and 2.
 - **Banked RAM:** fit the [ACE RAM Patch](#ace-ram-patch) Rev 1.1 in place of U12 and U13.
-- **Power:** use a centre-positive 5 V supply only. Nothing protects Rev 1.0 from reverse polarity.
+- **Power:** use a center-positive 5 V supply only. Nothing protects Rev 1.0 from reverse polarity.
 
 #### Known limits
 
@@ -229,6 +232,11 @@ JLCPCB-ready Gerber files and BOM/CPL for PCB fabrication and assembly.
 `Schematics/`
 
 PDF schematics for the ACE board.
+
+## Docs
+`Docs/`
+
+**[ACE Board Rev 1.0 Build Notes](Docs/ACE%20Board/Rev%201.0/ACE%20Board%20Build%20Notes.pdf)** (PDF, for printing): the work a Rev 1.0 needs beyond its bill of materials, step by step. That is the pull-up values, the ACIA, the supply capacitor, the `RESB` pull-up and firmware, the `/INT` diode's socket stack and fitting the ACE RAM Patch, followed by the meter checks and the first power-on.
 
 ## Checking the schematics
 `Tests/check-schematics.mjs`
