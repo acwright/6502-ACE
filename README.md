@@ -366,7 +366,7 @@ Rev 1.1's designators. Rev 1.0's are in `Production/ACE Board/Rev 1.0/bom.csv`.
 **Rev 1.1** (drawn, not yet made; Rev 1.0 is sold first)
 
 - Annotated properly: `J21` is now `J1`, and `J3` is now `J2`. Rev 1.0 was never annotated, so those two numbers came from another project.
-- The CF socket has an LCSC source, [C2962036](https://www.lcsc.com/product-detail/C2962036.html) (HOAUC HYCW01-CF50-395B), so JLCPCB may be able to assemble it. On its datasheet it matches the footprint: 50 pads at 0.635 mm, locating holes 38.78 mm apart against the footprint's 38.74, and hold-down tabs in the same place. Fit a sample before relying on it, because this hasn't been tried on a board.
+- The CF socket has an LCSC source, [C2962036](https://www.lcsc.com/product-detail/C2962036.html) (HOAUC HYCW01-CF50-395B), and JLCPCB's parts library lists it as an Extended part, with 457 in stock on 2026-11-04. On its datasheet it matches the footprint: 50 pads at 0.635 mm, locating holes 38.78 mm apart against the footprint's 38.74, and hold-down tabs in the same place. It hasn't been fitted to a board yet, so the first Rev 1.1 build will prove it.
 
 **Rev 1.0**
 
