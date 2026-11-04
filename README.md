@@ -225,6 +225,8 @@ See [Firmware/AB Controller/README.md](./Firmware/AB%20Controller/README.md) for
 
 3D-printable enclosure bases and laser-cut top panels for the ACE system.
 
+**Top panels, jigs are versioned by board revision**, like `Hardware/`: `CAD/Tops/<Board>/Rev X/`, `CAD/Jigs/<Board>/Rev X/`. Each revision has its own complete folder, even when two revisions share the same files. `Bases/` holds the parts for a whole computer, not for one board, so it isn't versioned.
+
 The **[plate mounting drawing](CAD/Bases/Plate%20Mounting%20Drawing.png)** ([SVG](CAD/Bases/Plate%20Mounting%20Drawing.svg)) shows where the ACE Board and the ACE CF Adapter mount on the base plate, with every hole's position and the hardware the build needs. The plate is a stack of three 3 mm acrylic layers.
 
 ## Production
