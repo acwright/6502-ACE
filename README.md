@@ -388,7 +388,7 @@ This table is Rev 1.0's. On Rev 1.1, `J21` is `J1` and `J3` is `J2`.
 
 **Rev 1.1**
 
-- Replaces Rev 1.0, and fixes the decode. Tested on 2026-11-03. The Bill of Materials below is this revision's.
+- Replaces Rev 1.0, and fixes the decode. Tested on 2026-11-03. The Bill of Materials below is this revision's. `Hardware/ACE RAM Patch/Rev 1.1/` and `Production/ACE RAM Patch/Rev 1.1/` match the boards JLCPCB made (order Y99). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
 
 **Rev 1.0**
 
