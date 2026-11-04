@@ -174,7 +174,7 @@ A CompactFlash adapter board that connects to the Storage header on the ACE Boar
 
 - **Interface**: 8-bit IDE (True IDE) mode
 - **Storage**: CompactFlash socket. The BIOS filesystem divides the card into 256 disk banks of 1 MB each, so 256 MB is the usable capacity regardless of the card fitted
-- **Files**: `Hardware/ACE CF Adapter/Rev 1.0/` and `Production/ACE CF Adapter/Rev 1.0/` match the board JLCPCB made, so their designators are the ones on the silkscreen: `J21` is STORAGE and `J3` is the CF socket. The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received
+- **Revisions**: Rev 1.0 is the board on sale, and its silkscreen says `J21` for STORAGE and `J3` for the CF socket. See the [revision history](#ace-cf-adapter-1)
 
 ### ACE RAM Patch
 `Hardware/ACE RAM Patch/`
@@ -360,6 +360,19 @@ Rev 1.1's designators. Rev 1.0's are in `Production/ACE Board/Rev 1.0/bom.csv`.
 | Y1 | 1 | 1.8432MHz | Crystal | [3155-1.8432M20P2/49U-ND](https://www.digikey.com/en/products/filter?keywords=3155-1.8432M20P2%2F49U-ND) | [815-AB-1.8432-B2](https://www.mouser.com/ProductDetail/815-AB-1.8432-B2) | |
 
 ### ACE CF Adapter
+
+#### Revision History
+
+**Rev 1.1** (drawn, not yet made; Rev 1.0 is sold first)
+
+- Annotated properly: `J21` is now `J1`, and `J3` is now `J2`. Rev 1.0 was never annotated, so those two numbers came from another project.
+- The CF socket has an LCSC source, [C2962036](https://www.lcsc.com/product-detail/C2962036.html) (HOAUC HYCW01-CF50-395B), so JLCPCB may be able to assemble it. On its datasheet it matches the footprint: 50 pads at 0.635 mm, locating holes 38.78 mm apart against the footprint's 38.74, and hold-down tabs in the same place. Fit a sample before relying on it, because this hasn't been tried on a board.
+
+**Rev 1.0**
+
+- Initial release, and the board on sale. `Hardware/ACE CF Adapter/Rev 1.0/` and `Production/ACE CF Adapter/Rev 1.0/` match the boards JLCPCB made (order Y89). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received. Its CF socket is the hand-soldered Digi-Key part in the table below.
+
+This table is Rev 1.0's. On Rev 1.1, `J21` is `J1` and `J3` is `J2`.
 
 | Reference | Qty | Value | Description | DigiKey | Mouser | Other |
 |-----------|-----|-------|-------------|---------|--------|-------|

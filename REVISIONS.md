@@ -17,6 +17,7 @@ Every revision of every board in this repository, and what is known about each. 
 | ACE Board | 1.0 | Made, checked | Y91 | 2026-05-13 | `6502-ACE 83b1b1a` | — | 335×250 | 5 mm | yes | — |  |
 | ACE Board | 1.1 | Drawn |  |  |  | — | 335×250 | 5 mm | yes | — |  |
 | ACE CF Adapter | 1.0 | Made, checked | Y89 | 2026-05-10 | `6502-ACE ef6370e` | — | 75×50 | 5 mm | yes | — |  |
+| ACE CF Adapter | 1.1 | Drawn |  |  |  | — | 75×50 | 5 mm | yes | — |  |
 | ACE RAM Patch | 1.0 | To confirm |  |  |  | — | 46×22 | — | — | — |  |
 | ACE RAM Patch | 1.1 | Made, not checked |  |  |  | — | 92.5×13 | — | — | — | fitted and tested 2026-11-03 |
 
