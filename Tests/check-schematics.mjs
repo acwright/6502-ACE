@@ -44,17 +44,17 @@ const PARTS = {
   rtc: ['U18', 'DS1511Y'],
   latchL: ['U21', '74HC573'],
   latchH: ['U22', '74HC573'],
-  cf: ['J22', 'STORAGE'],
-  cart: ['J18', 'CART'],
-  ioEnable: ['SW70', 'IO ENABLE']
+  cf: ['J21', 'STORAGE'],
+  cart: ['J17', 'CART'],
+  ioEnable: ['SW69', 'IO ENABLE']
 }
 
 const CONFIGS = [
   {
     name: 'ACE Board Rev 1.1',
     board: 'ACE Board/Rev 1.1/ACE Board.kicad_sch',
-    // Re-annotated on 2026-09-24: the connectors moved down one when J1 went.
-    parts: { cf: 'J21', cart: 'J17' },
+    // Re-annotated on 2026-09-24. RESET took SW17, so IO ENABLE moved up one.
+    parts: { ioEnable: 'SW70' },
     // The ACIA's value names the part tested on the family's machines (2026-10-26).
     values: { acia: 'R6551AP' },
     rules: ['decode', 'clock', 'shared-lines']

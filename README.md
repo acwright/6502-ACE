@@ -117,11 +117,11 @@ always send and always receive. Moved to the cable, they do real work — measur
 2026: `CTS` high stops the transmitter dead and `DCD` high stops the receiver, losing the byte that
 arrives. A board jumpered to the cable and plugged into something that does not assert those lines
 shows no banner and no echo at all, and looks broken when it is not.
-- **Reset**: Manual reset button (SW17, just above <kbd>Esc</kbd>) connected to the ATmega1284, which also provides power-on reset to the 65C02
+- **Reset**: Manual reset button (SW70 on Rev 1.0, SW17 on Rev 1.1, just above <kbd>Esc</kbd>) connected to the ATmega1284, which also provides power-on reset to the 65C02
 - **Power**: 5V DC via barrel jack, center-positive. Rev 1.1 has reverse-polarity protection (`D5`); Rev 1.0 has none
 
 **Cards on `CART` and `BUS`.** `IRQB`, `NMIB` and `RESB` are shared by several devices on the board and by
-anything plugged into `CART` and `BUS` (J18 and J19 on Rev 1.0, J17 and J18 on Rev 1.1). A card may only pull
+anything plugged into `CART` and `BUS` (J17 and J18). A card may only pull
 those lines low, open-drain, and must never drive them high: a device that drives a shared line high holds it
 there against every other device that pulls it low. A video card built around a pico9918 has the same `/INT`
 problem as U3, and needs the same diode on the card.
@@ -139,21 +139,23 @@ problem as U3, and needs the same diode on the card.
 - Adds `R5`, a 10kΩ pull-up on `RESB`. The AB Controller firmware now only ever pulls `RESB` low, so the DS1511Y and cards on `CART` and `BUS` can reset the machine too.
 - Adds `D5` (1N5819) in series between the barrel jack (`J16`) and the power switch (`SW69`), anode at the jack, so a reversed supply can't reach VCC. It drops about 0.3–0.4 V, so VCC sits near 4.6 V, above the 4.5 V floor of the 5 V parts. Measure VCC under full load on the first board built.
 - `Tests/check-schematics.mjs` checks the address decoding of Rev 1.1, and of Rev 1.0 with the ACE RAM Patch Rev 1.1 fitted, in every bus state. See [Checking the schematics](#checking-the-schematics).
-- Some pull-up resistors changed from 1kΩ to 10kΩ: `R1`–`R4` and `R26` (Rev 1.0's `R25`) are now 10kΩ.
+- Some pull-up resistors changed from 1kΩ to 10kΩ: `R1`–`R4` and `R26` (Rev 1.0's `R2`–`R5` and `R27`) are now 10kΩ.
+- Removes Rev 1.0's `R1`, the `SOB` pull-up. `SOB` is tied straight to VCC.
 - Added `C20` (10µF electrolytic) at the power input for bulk decoupling capacitance.
-- Re-annotated. Removing J1 and U13, and adding D1 and R5, renumbered the parts after them: in Rev 1.0's terms, the connectors `J2`–`J22` are now `J1`–`J21`, the diodes `D1`–`D3` are `D2`–`D4`, the resistors `R5`–`R34` are `R6`–`R35`, and the capacitors `C20`–`C30` are `C21`–`C31`, with the new bulk capacitor at `C20`. The 74HC02 is `U13`.
+- Re-annotated. In Rev 1.0's terms: the connectors `J2`–`J13` are now `J1`–`J12`, `KEYBOARD` moves from `J22` to `J13`, and `J14`–`J21` keep their numbers. The diodes `D1`–`D3` are `D2`–`D4`. The resistors `R2`–`R5` are `R1`–`R4`, `R6`–`R14` keep their numbers, and `R16`–`R36` are `R15`–`R35` (Rev 1.0 has no `R15`). The capacitors `C20`–`C30` are `C21`–`C31`, with the new bulk capacitor at `C20`. The switches `SW17`–`SW69` are `SW18`–`SW70`, and `RESET` moves from `SW70` to `SW17`. The 74HC02 is `U13`.
 
 **Rev 1.0**
 
-- Initial release.
+- Initial release, ordered from JLCPCB on 2026-05-13.
+- `Hardware/ACE Board/Rev 1.0/` and `Production/ACE Board/Rev 1.0/` match that order, so their designators are the ones on the silkscreen. The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
 
 #### Building a Rev 1.0
 
 Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev 1.0 they're done by hand. The [build notes](Docs/ACE%20Board/Rev%201.0/ACE%20Board%20Build%20Notes.pdf) have each step, with figures and checks.
 
-- **Pull-ups:** fit 10kΩ for `R1`–`R4` and `R25`, not the 1kΩ in Rev 1.0's BOM.
+- **Pull-ups:** fit 10kΩ for `R1`–`R5` and `R27`, not the 1kΩ in Rev 1.0's BOM. Don't leave out `R1`: it is the only thing holding `SOB` (U1 pin 38) high.
 - **ACIA:** fit an R6551AP at `U4`, where Rev 1.0's silkscreen and BOM say 65C51.
-- **Supply capacitor:** fit a 10µF electrolytic on the underside, across `J20`'s pads. Rev 1.0 has no holes for it.
+- **Supply capacitor:** fit a 10µF electrolytic on the underside, across the pads of `J19`, the VCC header. Rev 1.0 has no holes for it.
 - **`RESB`:** flash the AB Controller firmware from this repository, which only ever pulls `RESB` low (see [AB Controller](#ab-controller)); older firmware drove it high as well, so nothing else could reset the machine. A 10kΩ pull-up from `RESB` to 5 V, soldered on the underside, is optional: the ATmega's internal pull-up raises the line on its own, but the 10 k is stiffer on a line that runs out to `CART` and `BUS`.
 - **Video card `/INT`:** fit a BAT85 between U3 pin 16 and `IRQB`, cathode toward the card, in a socket stack under the card with pin 16 routed through the diode. Without it, a PICO9918 PRO holds `IRQB` at 3.8 V while the VIA asserts it, and the keyboard and serial input are dead. A v1.3 has the same circuit and only works by luck.
 - **Clock:** keep the PHI2 SELECT jumper (J1) on its 1 MHz pins, 1 and 2.
@@ -172,6 +174,7 @@ A CompactFlash adapter board that connects to the Storage header on the ACE Boar
 
 - **Interface**: 8-bit IDE (True IDE) mode
 - **Storage**: CompactFlash socket. The BIOS filesystem divides the card into 256 disk banks of 1 MB each, so 256 MB is the usable capacity regardless of the card fitted
+- **Files**: `Hardware/ACE CF Adapter/Rev 1.0/` and `Production/ACE CF Adapter/Rev 1.0/` match the board JLCPCB made, so their designators are the ones on the silkscreen: `J21` is STORAGE and `J3` is the CF socket. The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received
 
 ### ACE RAM Patch
 `Hardware/ACE RAM Patch/`
@@ -196,7 +199,7 @@ The ACE runs a PICO9918 PRO v2.0 (RP2354A) with 6502-PICOVDP, and BIOS 2.x. RP20
 2. **Optionally, back up the stock firmware** from BOOTSEL: `picotool save -a stock.bin`. To restore it later, `picotool load -v -x stock.bin`. The backup has been made on a PRO; the restore is picotool's ordinary load and hasn't been tried.
 3. **Flash 6502-PICOVDP:** download `picovdp-v1.0.0.uf2` from the [v1.0.0 release](https://github.com/acwright/6502-PICOVDP/releases/tag/v1.0.0) (SHA-256 `0b74cd9875cbffc46de7ec48a9bb6e0d4a76a3e796d2563615e17e6bed94afd5`). Hold BOOT, connect USB-C, and run `picotool load -v -x -f picovdp-v1.0.0.uf2`. The release build has no USB of its own, so every update needs BOOT again. The card can be flashed in the ACE's socket with the ACE switched off.
 4. **Burn BIOS 2.x to U8.** The ACE was tested with `v2.0.2`.
-5. **Check the first boot:** the AC6502 logo, then `AC6502 BIOS v2.0`, `BASIC v2.0 30718 BYTES FREE` and `RAM RTC CF SER VIA SID VDP`, at power-on and after the reset button (SW17). If `VDP` is missing from that line, the card isn't running 6502-PICOVDP.
+5. **Check the first boot:** the AC6502 logo, then `AC6502 BIOS v2.0`, `BASIC v2.0 30718 BYTES FREE` and `RAM RTC CF SER VIA SID VDP`, at power-on and after the reset button (SW70 on Rev 1.0, SW17 on Rev 1.1). If `VDP` is missing from that line, the card isn't running 6502-PICOVDP.
 6. **Check the `MDE1` pin** from BASIC: `POKE 39939,4:POKE 39939,142:PRINT PEEK(39939):POKE 39939,0:POKE 39939,142` prints 172.
 
 On Rev 1.0, fit the `/INT` diode first (see [Building a Rev 1.0](#building-a-rev-10)).
@@ -357,8 +360,8 @@ Rev 1.1's designators. Rev 1.0's are in `Production/ACE Board/Rev 1.0/bom.csv`.
 | Reference | Qty | Value | Description | DigiKey | Mouser | Other |
 |-----------|-----|-------|-------------|---------|--------|-------|
 | D1 | 1 | ACT LED | 3.0mm LED | [732-5008-ND](https://www.digikey.com/en/products/filter?keywords=732-5008-ND) | | [AMAZON](https://www.amazon.com/300-Pcs-LED-Diode-Assortment/dp/B0F38LJDJB) |
-| J1 | 1 | STORAGE | Pin Header 2×10 2.54mm Horiz | | | [AMAZON](https://www.amazon.com/dp/B00W8TSWXS) |
-| J2 | 1 | Compact Flash | CF Socket | [4827-101D-TAAB-R01-ND](https://www.digikey.com/en/products/filter?keywords=4827-101D-TAAB-R01-ND) | | |
+| J21 | 1 | STORAGE | Pin Header 2×10 2.54mm Horiz | | | [AMAZON](https://www.amazon.com/dp/B00W8TSWXS) |
+| J3 | 1 | Compact Flash | CF Socket | [4827-101D-TAAB-R01-ND](https://www.digikey.com/en/products/filter?keywords=4827-101D-TAAB-R01-ND) | | |
 | R1–R4 | 4 | 1kΩ | 1/8W Resistor | [RNF18FTD1K00CT-ND](https://www.digikey.com/en/products/filter?keywords=RNF18FTD1K00CT-ND) | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
 | R5 | 1 | 330Ω | 1/8W Resistor | | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
 

@@ -82,7 +82,7 @@ PORT A and PORT B are shared between this encoder and two Atari 2600-compatible
 joysticks. Unlike COB's Keyboard Encoder Helper and VCS's Input Board, which
 reach a stick through a helper board, the ACE Board carries its own DB-9s —
 `J6` JOYSTICK A and `J8` JOYSTICK B — with the 1kΩ pull-ups fitted on board
-(`R6`–`R13` on PORT A, `R14`–`R21` on PORT B). The same port lines are also
+(`R7`–`R14` on PORT A, `R16`–`R23` on PORT B). The same port lines are also
 brought out on the `J9` PORT B / `J10` PORT A 2×6 box headers. Those are Rev 1.0's
 designators, which this section uses throughout; on Rev 1.1 the joysticks are `J5`
 and `J7`, the box headers `J8` PORT B and `J9` PORT A, and the pull-ups `R7`–`R14`
@@ -456,8 +456,8 @@ which minipro
 **Problem**: `JOY(1)`/`JOY(2)` return keystrokes or a stuck value
 - Confirm the BIOS is v1.5 or later — older BIOS reads the port before the
   encoder has released it (see [Joystick Interface](#joystick-interface))
-- Verify the on-board 1kΩ pull-ups are fitted (`R6`–`R13` for PORT A / `J6`,
-  `R14`–`R21` for PORT B / `J8` on Rev 1.0; `R7`–`R14` / `J5` and `R15`–`R22` / `J7`
+- Verify the on-board 1kΩ pull-ups are fitted (`R7`–`R14` for PORT A / `J6`,
+  `R16`–`R23` for PORT B / `J8` on Rev 1.0; `R7`–`R14` / `J5` and `R15`–`R22` / `J7`
   on Rev 1.1)
 
 **Problem**: Incorrect characters output

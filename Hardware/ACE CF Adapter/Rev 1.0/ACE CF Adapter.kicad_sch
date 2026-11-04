@@ -4205,7 +4205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14d2ad51-4174-44ca-9947-6c5322f614e4")
-		(property "Reference" "J1"
+		(property "Reference" "J21"
 			(at 64.77 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4354,7 +4354,7 @@
 		(instances
 			(project "ACE CF Adapter"
 				(path "/154a5133-b84f-49cb-b657-9c810539146c"
-					(reference "J1")
+					(reference "J21")
 					(unit 1)
 				)
 			)
@@ -4564,7 +4564,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "559dd7f6-8be9-48e0-819c-5feca85f844f")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 193.9641 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4811,7 +4811,7 @@
 		(instances
 			(project "ACE CF Adapter"
 				(path "/154a5133-b84f-49cb-b657-9c810539146c"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
