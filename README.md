@@ -384,6 +384,16 @@ This table is Rev 1.0's. On Rev 1.1, `J21` is `J1` and `J3` is `J2`.
 
 ### ACE RAM Patch
 
+#### Revision History
+
+**Rev 1.1**
+
+- Replaces Rev 1.0, and fixes the decode. Tested on 2026-11-03. The Bill of Materials below is this revision's.
+
+**Rev 1.0**
+
+- Initial release. Boards were made, and testing showed its decode is wrong, so don't fit one: use Rev 1.1. `Hardware/ACE RAM Patch/Rev 1.0/` and `Production/ACE RAM Patch/Rev 1.0/` match the boards JLCPCB made (order Y94). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+
 | Reference | Qty | Value | Description | DigiKey | Mouser | Other |
 |-----------|-----|-------|-------------|---------|--------|-------|
 | J1 | 1 | 74HC00 (U12) | Pin Header 1×7 2.54mm ×2, soldered between the boards | | | |
