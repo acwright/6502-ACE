@@ -353,7 +353,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "3.0mm LED"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -373,6 +373,39 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "732-5008-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50c4411c-2135-458b-a831-c57c5ec7bf4e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/300-Pcs-LED-Diode-Assortment/dp/B0F38LJDJB"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0423ddab-f699-44b6-8e13-f2e24becd4d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1da0f0c2-454a-413a-bc07-5924c71fac68")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -865,7 +898,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://en.wikibooks.org/wiki/Practical_Electronics/Device_pinouts/CompactFlash_cards"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -881,6 +914,39 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "da2f6ac1-6c20-41cc-81fd-236d31c62ae3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "4827-101D-TAAB-R01-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "631d6dc6-de07-4994-8308-9af456a71b6d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dea262c9-b0d4-4320-9a8f-da7a6d3a6d06")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "637b94b7-82be-4ac1-9581-3b3b409220eb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2317,7 +2383,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2337,6 +2403,39 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc24ff0d-c344-499b-a0d7-03a67e9ede1b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25748b65-dcb1-4dbf-95df-d2e0980750f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca99ad3e-bfdd-41ac-9260-1f589ff2b643")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -2605,7 +2704,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2625,6 +2724,39 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f4ceef7-4491-4a54-8e2c-b219ff7582cd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ab7b7e4-e7d5-4e25-a377-bf1a0f262447")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "52587b5f-a036-4773-8b00-d50ae5888a26")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -2785,7 +2917,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2805,6 +2937,39 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f3392d4c-16ba-4fcc-9202-a0870c3990c2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bf48d783-2e68-411c-853a-9c1cb0018f4b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "566e8abc-0e70-486e-bb9e-014371632ec1")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -2965,7 +3130,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2985,6 +3150,39 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4987e556-e8cc-479c-b223-6a353201ee93")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c6ef0a6-95d9-40a2-9cc6-dcce4a8604bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abe8f389-89ec-4b1b-b6c2-1b794cdbff05")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -3145,7 +3343,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Pin Header 2x10 2.54mm Horizontal"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -3165,6 +3363,39 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84a13263-3803-4e4b-8b15-2b22f4139833")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B00W8TSWXS"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12eeb10e-400d-496a-b3b8-1024fe2e21f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "168a28f2-66a8-42b0-977a-0d064c34c7bb")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -4928,7 +5159,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4948,6 +5179,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46f1c925-96aa-4804-ad10-d80693301716")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8220a6cd-f523-47fc-ace2-23ab83f2532d")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)

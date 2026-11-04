@@ -173,12 +173,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1d0d3dc2-afee-4774-a6b3-595533c72bd8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f11ba925-c349-4175-88b0-8f14d7d99323")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "916d5163-1712-4b6c-8da1-24fd9acd845e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -463,11 +489,33 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "39b36d68-6dcb-4888-84c5-5c09f823d536")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-7667-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bfbe102c-a793-4ae2-96a9-b0cf88372de5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f19dfbc-91c9-4306-8710-b41dbe6a21da")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -631,7 +679,7 @@
 				)
 			)
 		)
-		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
+		(property "Description" "DB-9 Male"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1071,11 +1119,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9a32a89e-7b39-482f-8e98-260e7b6853da")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc8994cc-974c-4832-ba59-b9ae198f494f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "540c3a1f-85cd-4df9-a7a2-359abaefde40")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1237,7 +1307,7 @@
 				)
 			)
 		)
-		(property "Description" "Switch, single pole double throw"
+		(property "Description" "SPDT Switch"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1537,6 +1607,24 @@
 			(layer "F.Fab")
 			(uuid "a2a47e04-6cf3-4336-a0d8-eb5abc0dc5e3")
 		)
+		(pad "" thru_hole circle
+			(at -5.08 -2.54)
+			(size 1.635 1.635)
+			(drill 1.09)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(solder_mask_margin 0.102)
+			(uuid "1d06ed70-2bfd-4776-97e1-dbf18133864a")
+		)
+		(pad "" thru_hole circle
+			(at -5.08 2.54)
+			(size 1.635 1.635)
+			(drill 1.09)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(solder_mask_margin 0.102)
+			(uuid "0288924f-cb5e-4bbd-885a-36b62f0daac5")
+		)
 		(pad "1" thru_hole rect
 			(at 0 2.54)
 			(size 1.635 1.635)
@@ -1572,24 +1660,6 @@
 			(pintype "passive+no_connect")
 			(solder_mask_margin 0.102)
 			(uuid "c798d53e-dcb0-4845-aced-3a730aab199b")
-		)
-		(pad "" thru_hole circle
-			(at -5.08 2.54)
-			(size 1.635 1.635)
-			(drill 1.09)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(solder_mask_margin 0.102)
-			(uuid "0288924f-cb5e-4bbd-885a-36b62f0daac5")
-		)
-		(pad "" thru_hole circle
-			(at -5.08 -2.54)
-			(size 1.635 1.635)
-			(drill 1.09)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(solder_mask_margin 0.102)
-			(uuid "1d06ed70-2bfd-4776-97e1-dbf18133864a")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/../../../Models/400MSP1R6BLKM6QE.step"
@@ -1645,12 +1715,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "122f120f-7120-4cb3-81f3-2024724c673c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0e570da-872d-4114-af6f-8794e4da5264")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11754de2-78d1-4998-832c-93d094a91418")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1946,6 +2042,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "703e1104-52c9-4d16-be1c-b59ec5b97b24")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84b36a46-fa0e-43e5-bc9e-2c0b9c0a67b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/d1f551fd-c20e-4d25-b13f-7bf9a666711b")
 		(sheetname "/")
@@ -2105,12 +2223,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "05ed1cbe-3b74-4c79-8ca9-b073d8c79a31")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6f505856-8500-433f-8f58-681e54aff15e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d9dfe76-da25-48b9-9794-a8e4cf366326")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2395,11 +2539,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "971abc8f-4e45-44fc-a440-956392f3289d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55e29a81-f5db-4de9-ac6c-fd92955a5168")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5436a255-f9a3-4235-908a-bec234dccbcc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2563,11 +2729,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "72246297-e343-429f-bff5-fe62ef0f1bdf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3078b383-d998-4a25-8dd2-ab8e50196efa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c215a318-be94-413c-8ceb-a72b85514171")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2731,11 +2919,22 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x2 2.54mm"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "23c37fbe-6c46-44e7-a108-dfbd71addd6d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc07c41d-5753-48b4-8e94-85cfa7ee3d79")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2962,12 +3161,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f7582b95-011c-4e67-b5e9-7cbbe2f4ff53")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c52af52a-74d5-48ea-8bb0-b99208bbdf5f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1dbe5628-d42d-4806-8532-2f13862418e4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3477,12 +3702,25 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Tact Push Button Switch 5.00mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bfef4b10-45b5-40a5-9060-616c03098e66")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/QTEATAK-Momentary-Tactile-Button-Switch/dp/B07VSNN9S2"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28ea8c27-bc6b-49f8-b69c-993fa4c48de7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3831,12 +4069,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b5f561eb-abb5-4ae2-9c81-b0dfeef3c00c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c9a53c0b-bd23-4309-bc4d-1dc3cf5e34f1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3d10ce7-b952-4923-89ae-b47ee9a4144d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4121,7 +4385,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -4132,7 +4396,7 @@
 				)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "RNF18FTD1K00CT-ND"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4155,6 +4419,17 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ff2f6df-e2a6-4a80-869f-ab287da0b01e")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -4317,12 +4592,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1057bced-5d24-4e10-a7c5-7ab95419a2ce")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa7d2f8d-fe5d-4bb6-b710-6fda8a5f198e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0fbf9632-6d17-47dc-97bc-68dbdb5fec8e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5175,11 +5476,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dc18b634-b696-416b-b8e2-f7b5975e8fca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f854ab6-910d-40db-b4ea-fc3fab97c084")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e93486b8-8198-4df2-b67f-7051386e3815")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5787,12 +6110,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "144b3404-a974-4de0-97b0-8c41db3792fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32327102-f08f-49e9-921a-1b7bf4f437dd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64386396-7283-4ce1-8ada-8b47994eb315")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6840,11 +7189,22 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x3 2.54mm"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fff7bf23-8ac3-4ffb-be88-40fc5a0a85e3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "461e7e9a-f913-4cbc-8d3c-ae17dafce0e6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7080,11 +7440,22 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x2 2.54mm"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e3395d31-740b-4257-a37d-8b397b20cb39")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc381f28-9ef5-4017-841f-802b85e41fc5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7311,12 +7682,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cda09b2c-b8cb-44f8-a679-e61462041f39")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a98ea882-20e7-4ec8-a5a9-432b7c1348b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c2c38c44-7f92-41d6-8df7-2396c98b0e99")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7601,11 +7998,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d9301c38-4da1-43ce-9ae2-4785151f9ecb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c57400b-673e-4697-baed-f008ea0e461c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7cb3c031-b7e3-4b9e-bc74-3cf3e966537c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7771,12 +8190,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1f0c0c89-2c7b-47ee-983f-9a0bd9a911ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e6b1fabb-7289-454d-aeed-2d254e2b1cba")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d4ac76d-337b-444f-bbc0-9b9ef677add0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8061,11 +8506,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cd17e5ef-2d0c-4ec0-90dc-3fc93adffe39")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bec56834-a43b-4747-8d27-62b69a7989ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "229c35d7-029e-4085-b53a-3623c5af21b1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8231,12 +8698,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4c3ad2cc-7e2a-4d33-a1cf-cd1d8a821aed")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be7722fc-53cb-4178-8f84-a34ffcac5e36")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f4c4eb5-8f99-4e59-a96f-679896250703")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8523,12 +9016,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1e4a6045-713a-496c-b91e-495bc546ba2f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91592e56-b05b-45c5-bde4-66d8fcf80902")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c637dd62-132e-49ed-aa60-dce69e9b401f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8815,12 +9334,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b62866bf-f6e2-4b47-8d54-8755db64b734")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07006bbd-e6ed-4dea-a52f-7e864f136a1c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69457443-5bd4-4ac4-b2ff-899866f664ec")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9107,12 +9652,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dbb6717d-c4a9-450f-b1f4-550f1aee3bd0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55c09d82-fd88-4b8d-900c-17dc16b92680")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "17533be7-40b9-4427-8771-5a2b65cb8dcb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9425,11 +9996,22 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x4 2.54mm"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1fafb783-df64-41df-97e4-697147206083")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "659b690e-6783-4f2b-96d5-924a0cb65123")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9676,7 +10258,7 @@
 				)
 			)
 		)
-		(property "Description" "8-bit Latch 3-state outputs"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10161,11 +10743,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7046f9f4-7736-4972-8c4d-9d17fcfc2e2c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "afee3996-e0af-45ce-99ca-ff109c80c313")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9fb2f26e-a7aa-40fe-801c-5c03ea0e7858")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10331,12 +10935,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0f5bcec1-d4ab-4ebe-8ab5-a2b66659ff63")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7170c76f-d455-4e83-ad04-e6b50233a684")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c144b5d8-4d5d-4615-8099-75516592f66f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10651,12 +11281,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ecf9caac-649b-43b2-9f76-055e7b77d008")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15506511-faeb-4de0-b4bf-cbbc755c1878")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e5b2098-d003-43fe-94e5-b88c05fb5a5b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10941,11 +11597,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "faba4809-a454-4016-829f-2bc47e9fdaf4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1fde66ed-9506-4a8b-b729-13cfd3ceaa9c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7a6d3c2-3faa-4be5-885f-ee21bcc257bf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11109,11 +11787,22 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x2 2.54mm"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6da5a621-3fc2-4716-8e7e-fba0fae5724d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b14ac0be-7fca-41a2-87b8-2ea89ecfdaf0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11338,7 +12027,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11358,6 +12047,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD10K0CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d06e5f78-e184-46b9-aefe-f4f9f02fccc7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0ac912f6-a627-4a41-b4e1-185a42ff7bea")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -11518,11 +12229,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "508173fd-daec-4b4b-b6d9-392f7147d216")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "972d12ad-692f-46b6-a742-9acc9b961b85")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4bdf793-afa4-41ad-b285-9fdcd5e93089")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11801,7 +12534,7 @@
 				)
 			)
 		)
-		(property "Description" "8-input NAND"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12215,12 +12948,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7f503d67-6d09-4a6f-946a-0b619c642df2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8e195a11-fa1b-4460-b099-446403556074")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ededa21-e237-4a14-8afc-578f08d1fd7e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12619,7 +13378,7 @@
 				)
 			)
 		)
-		(property "Description" "Voltage-Controlled Crystal Clock Oscillator, DIP14-style metal package"
+		(property "Description" "DIP-14 Full Can Oscillator"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13036,11 +13795,22 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x2 2.54mm"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "488b616d-f989-4b04-8d29-45f2274d0a75")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "42441fde-dd18-4b5b-8c2f-461b593c2580")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13265,7 +14035,7 @@
 				)
 			)
 		)
-		(property "Description" "Quad RS232 driver/receiver, 5V supply, 120kb/s, DIP-24"
+		(property "Description" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -13796,12 +14566,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4c5f69bd-e0c4-467f-9afb-df7d12d40c76")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "788285cf-0ee8-4914-885b-a7e3a24bc371")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ffc1c86b-cc38-4eaa-9d0a-fc912fc10a85")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14088,12 +14884,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "35ab3585-0a2d-4b30-83f4-3bc622534bdc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0bc24939-a498-4dea-826f-7e1566c07ba3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c728aafa-7525-4373-b148-5809abb34664")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14380,12 +15202,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3f0c8cb9-4695-4cd4-b353-19caafe7d224")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f75d540-6823-4cb3-ab88-21f913a89d51")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8105fa92-3459-4758-84c3-539a4f5d5b2e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14670,11 +15518,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "12a114b5-115d-4287-b243-6669535c0d46")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8db7053e-0c5f-482e-9554-62934cfcb0fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a6f51ae-9253-4905-a35d-846b3ab7f96f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14843,6 +15713,28 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "903f84c1-f03d-44ea-b459-3d91ec88e977")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4f3c0abc-dc93-4e02-bb3e-bb5ae218b05a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df4e666f-7512-4b6a-8879-6792ef99bd93")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15125,6 +16017,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "547710b2-b001-44a4-b51f-93e7af0e1e9d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4c4293e-ae85-4baf-aea7-3f86efd0466a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/79afb5a4-4bc0-4e85-bae0-319d4123cf6a")
 		(sheetname "/")
@@ -15284,12 +16198,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b1e3970a-16db-40ea-896f-ad2a3e52e5ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "764ce760-475e-4ade-adaf-1cf25062fa57")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6fca8649-c352-49dc-9f83-e0e405628f69")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15576,12 +16516,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "837752e0-e9f7-456f-8c5b-97eb3648b5d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd3796f2-b7de-4c25-8c83-2c81fa698861")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ae2a586-1367-4c6f-a763-8c143671e75f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15866,7 +16832,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16289,12 +17255,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2aca5901-54db-49ab-8195-052fe26baf45")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca2f948e-738a-40b2-9dae-64173b22186a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5973f765-9eda-4730-92fd-d7747d3ba0c5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16691,7 +17683,7 @@
 				)
 			)
 		)
-		(property "Description" "20MHz, 128kB Flash, 16kB SRAM, 4kB EEPROM, JTAG, DIP-40"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17408,6 +18400,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "203fda84-1ee7-4fda-b195-ba711b33cb43")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "460b5e88-d402-441c-9e54-0e2f0e3cd62d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/2cbf8428-bfbe-437e-8d82-09ebf8b41248")
 		(sheetname "/")
@@ -17576,6 +18590,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a92ed5fa-b115-48a2-8090-ad46b3f4b70d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3717c087-b6b7-4fbe-93ad-46cce32e723f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/15e30040-f90f-4e06-aa62-0b7f8f1d2d6f")
 		(sheetname "/")
@@ -17738,6 +18774,17 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a3d7f071-5c1b-4b6f-87f3-cd7c391fbc39")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.tindie.com/products/visrealm/pico9918-pro/"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "beaa5282-c7db-4a12-8a4e-6bece2326729")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18414,7 +19461,7 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Test Point"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18591,6 +19638,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0b8c82b-0f7b-4b74-b37f-fdcf3079cc08")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9412dd46-7fb9-4f94-a233-310d8c8fac6e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/907567d4-5559-431e-84e7-4b0c71c88e1f")
 		(sheetname "/")
@@ -18748,11 +19817,33 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bda1023a-d5c9-4cb6-b8aa-edf9bc4c7770")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-7667-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3404416b-6994-45b0-b6e1-0c927cdea3c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b28c644-d11c-4598-92c8-50a13739e997")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19033,12 +20124,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "01b94830-1864-4577-8f45-b89bd00d38d5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3Xhttps://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d1372b7-1458-4da7-9033-bd493d3cfe99")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b889a0b0-8036-444b-92cf-9f7f580ff610")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20142,12 +21259,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7dfb4d7f-1f8d-4906-b46c-a75201d7444f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10beeaf6-b670-4d7e-af33-0b0afb8c63e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f413296d-e0ae-4c14-b6cb-e06edbdb4c21")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20432,11 +21575,33 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c6ab7bc7-f836-4e75-a56c-5fd5a1e0977d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-7667-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb63a5b8-17bc-4623-a91c-cdecd6ced381")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7215933-e88f-4bc6-92cf-9ce78a3f057d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20602,12 +21767,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f6dbbf7a-da94-4710-a400-2ce2913da228")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f65793d3-e954-4f33-9518-9dbb292f7c5d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fae8401e-95a9-4c9d-8b76-ac8e1fea8996")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20894,12 +22085,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "75c3f1a2-6e72-4b83-95d2-9c3e734c7d23")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b9735825-6595-496e-b941-d19bfddae2bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d6bbd8b-f765-4ebf-9acb-cda6c6e402ad")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21186,7 +22403,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Box Header 2x20 2.54mm"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21221,6 +22438,19 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Female-Headers-Connector-Header-Raspberry/dp/B07DNHS2SJ"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4eb85bee-cd1d-456c-bb5c-6122ecbc79fd")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -21866,12 +23096,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "898ff146-c8a0-4265-bd87-eb2cc0040476")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b7a6be7-8219-4df3-bc1c-92f93149a82d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "99b1fddd-45d6-410d-b324-83c71ee6fbed")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22156,11 +23412,33 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "53ba1d64-4611-43bc-81f6-d9a40e289e2c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-SR151C222KAATR1CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72376dab-5f80-41e4-9946-6841bbf3014f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "950428f7-40f6-48f3-a278-dd03392337b1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22326,12 +23604,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "63813a07-e068-48e0-9053-6bfa32d06a6a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "31d1cd95-abc8-4230-b96a-3ca8e24b2b74")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cddc81d1-3cf1-4387-852e-978329e3c552")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22644,11 +23948,33 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "13cf2838-d719-465f-96be-b9e2b2ed6112")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-SR151C222KAATR1CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "626bba98-0e09-4770-a382-fdfbefb6c456")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d2cd34e-d28c-4035-963d-f5ebc810432f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22823,6 +24149,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "51779684-153e-4a0f-a33b-2f7c4017c5c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88c87b0a-8f2a-4c4d-b73d-9fdd0fd284b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/56ec9c3c-c659-4bcf-b0db-42237f7166f9")
 		(sheetname "/")
@@ -22980,11 +24328,22 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x2 2.54mm"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bf023ac1-0126-46e9-85dd-96bc89a13dbb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25e55dd0-5751-45d2-acb1-cfdd592c8888")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23209,11 +24568,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "508347a4-b33a-4446-94ee-f4519b53e01f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "208077ba-879e-4214-bb9f-d426ad75e6bb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a1e81e4-2303-498a-b44d-ba24ec3911c3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23377,11 +24758,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5f895de5-e6d0-4fce-8c6e-a96c8f09477c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a331dbfc-d79d-453b-b027-839b24791df1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8efa5d6-1621-4c35-b70d-eefe2f733483")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23547,12 +24950,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8ce98a3f-c103-4824-9ef5-212af9c4200d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd97c83d-b823-4f8f-a1c9-8fcd24f2229b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d1c1e9de-f10a-4e23-81bd-3ee99f77a369")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23839,12 +25268,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "92ec4eff-e3e8-41a4-a09a-b812d085b709")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d1ea38c-6d1d-4c50-9cf1-310447c1e0af")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1da8646e-d00a-474c-a705-92a5d27e249d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24129,7 +25584,7 @@
 				)
 			)
 		)
-		(property "Description" "8x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+		(property "Description" "8x DIP Switch SPST"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24150,6 +25605,17 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Yohii-2-54mm-Positions-Double-Assorted/dp/B07DSBX4BK/"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96fb319f-56f0-4bdb-ac2c-8374b94e45ad")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -25041,11 +26507,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c637b434-9d06-484a-aaff-6a5b266e4337")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75205a24-40e8-4210-9d7f-524544dd8520")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77aacd80-9c69-439e-97c7-5d78ff605ebe")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25211,12 +26699,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1bd16137-0e93-4fa0-82fe-3099a29eb149")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ed87ef81-6669-4867-8ab5-9f951646b116")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91dddbfa-0f08-48c1-bea1-d927f811f5eb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25512,6 +27026,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f59d2159-5056-469d-a32b-da68678b6a2d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b53b5b53-7399-4c4a-875f-0fc46b85b300")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/9aa57ec5-5c1e-4277-bc5b-2c5c683b62c4")
 		(sheetname "/")
@@ -25671,7 +27207,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Card Edge Connector 2x20 2.54mm"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26376,7 +27912,7 @@
 				)
 			)
 		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(property "Description" "RCA Jack"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -26756,7 +28292,7 @@
 				)
 			)
 		)
-		(property "Description" "Two pin crystal"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -27018,12 +28554,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9515655b-f2c6-4013-8d3a-921f30fbb93b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65ca7b74-d062-4c1d-a8af-87705810096f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df6c7cc6-3fa9-4aa3-bc6e-7ca81a0d7453")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27420,12 +28982,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "759a4398-a46d-45b4-ab5d-101363558c7a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b4f3000-6954-4d3a-9f0a-5e0e68178853")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9b5a91c5-5b1a-4ade-b7b9-d7245f4a55e3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27712,12 +29300,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "eb94a5a1-dbc3-4119-9fb2-2967e6e321ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4b934f6-7794-4392-ba0b-b868155309db")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac6cb570-dffd-4b0b-8bff-3259b578d2dc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28576,12 +30190,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c1c9340a-3394-4191-8ab9-91a218c2d6ab")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e5b85166-4f2e-4aef-b7e3-618c6788b8f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a431a413-ec16-4675-b611-68a9b63d2ee0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28894,11 +30534,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0b7c3e79-c5f0-4274-b84a-38b6202422ec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "126d424d-bb0d-42c7-bc74-9350dcc17581")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b58ce7c0-165f-49dc-bbb6-e8311bbec9e5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29062,7 +30724,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -29485,12 +31147,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4b96dc2e-153d-4332-b118-60988ec538ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d093604-c00a-4379-981d-4bee8a9109f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d785ff5-3f37-40eb-9c51-a1a07be431da")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29892,12 +31580,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f66e4fe1-590c-47a6-b98c-edb159a0dfe5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ef5c898-7064-4c4a-856a-7ce1fd4f1ee6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "81863688-6ab8-4fbc-80b7-f32e5b96227b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30181,7 +31895,7 @@
 				)
 			)
 		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(property "Description" "RCA Jack"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -30564,12 +32278,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "819a3d21-800b-4696-b141-5fa2b36b48be")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0cf04c38-2a62-4393-ac4b-c0630865ead9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2db134a-7982-40a6-a2ef-43885272ff94")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30854,11 +32594,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "847aadae-dda5-44fb-baab-b64a46053652")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e7bda9d-2a1d-44d1-9154-ff66e2f73722")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "82aaa6dc-9734-4d8b-8237-c4c0cc9dd337")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31024,12 +32786,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b34cc5e7-dde9-488e-aa4f-e9673da634cf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f8f6c92b-fa7a-4892-be70-33905a203f8f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "edeca703-abcd-4292-8280-873aa7e15095")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31431,12 +33219,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bbe4c454-4efb-45bd-8123-09093b1cad07")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "315c7b45-fc71-490e-b596-3a022878509a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c26ab2e4-ac1a-46df-8fe0-5f0b526ce90b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31732,6 +33546,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b73739bb-a56a-4135-b61b-d327db0c4b1e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83262f40-c1cf-4416-bd87-57c6db2b327e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/fde36a33-1bec-4b8a-bf26-95a04120c1d6")
 		(sheetname "/")
@@ -31894,6 +33730,28 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4e9be516-01b8-46ed-9c53-d92406178703")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4f0e175-b9fa-4c58-8f96-8ff785196858")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c98ed347-71f2-43ad-ab21-66610f043d7f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32068,6 +33926,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "139b8c6e-3ca4-40be-af64-aa06997c9a8f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f1f0899-2d3f-4e43-8d5f-3ae0921e3cc2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ac8dd5d4-0cf7-4452-86da-18f2ca750a17")
 		(sheetname "/")
@@ -32225,11 +34105,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "975c2056-54cf-4881-b06b-3033642c5af1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6069bfe9-8beb-4894-a755-b01fc16a0903")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3594d0a-d128-4a8f-b166-d63acdcb264f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32393,11 +34295,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4ff58843-2475-4222-acc4-2cb23bb90004")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb71cbdb-27d5-426f-bfe3-1da6b9dc556e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f9592dd-3d16-45f4-a3d0-2146a8aba373")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32561,11 +34485,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7ded8d96-f267-4a31-a78d-c112bfbf567f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c7e8b07-45f3-4757-80bb-a9a3486ec39c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49e3f23e-19d9-41c8-85ce-e3e46953bde7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32729,7 +34675,7 @@
 				)
 			)
 		)
-		(property "Description" "8-bit Latch 3-state outputs"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -33214,11 +35160,33 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0620822e-db5d-422b-8a5c-63ff28898e38")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-7667-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "383a4074-b3d3-4702-b867-53774e68cc63")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "62eb1f24-40bb-42cf-af96-3c4307a766c7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34001,12 +35969,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "61d38509-5c29-4088-b887-6e045734f432")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d2e1ae0-025e-4ed3-809d-7d206d0b6aa2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9b07e5be-9328-4dc1-9ad2-aa6e002bd1f8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34291,11 +36285,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a0319793-aba7-4f4d-9969-298f84f44454")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab61bb34-9978-4133-8a89-cd1eb4764aeb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "229837c5-2be7-4095-87dd-34f97d5415c7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34461,12 +36477,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a08f6078-4320-4ccd-9af4-ed168a4db5e5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5250e970-d297-4862-9257-5c095c1afedb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a0fc7d20-fe7b-4e75-b1e4-e6a6845927bf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34753,12 +36795,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d4ee1848-4500-4e7b-b0b6-b2348628cb5c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b51b3d9-cdb2-4505-9fb1-705b3133ad24")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b7387bc-3a0c-492b-b8db-66aba3be8dbb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35043,11 +37111,22 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0f778777-0b0a-42c4-bff6-c0f9f6c1f4a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8bb61a9e-d226-4eeb-b923-91a48f29d329")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35216,6 +37295,17 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a7602bad-30c5-40cc-9e9f-b044d276f6f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://retrocomp.cz/produkt?id=2"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f519c6a2-cb2c-4c5f-8a47-1888e0a4f4b8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35759,12 +37849,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e2b9ad91-4554-4e40-a6a9-e277dbb8c536")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "423916ac-b3a2-4d02-9fd2-8908481d14c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e309ac5f-f00e-402a-b2b4-771110172098")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36051,12 +38167,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c027ce9c-4930-44dd-bae2-8456c5b3ff77")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5aeceae0-06ac-4d58-8263-e94a008371d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5531e0d3-e7b6-422d-9f23-bdcd7468eb5f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36343,12 +38485,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2c49d321-3d2f-472d-b520-afd41ec26148")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d058a5c0-03be-408e-9ac8-10b04bf3731c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d82feeeb-dcaf-4995-8fd4-6f8950b90db1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36644,6 +38812,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2213b394-c966-4c99-a338-0359de34ede2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92ee6a4e-5685-48e5-92c5-b87c9dea6b0d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/aad16c3c-98e3-4ad5-be00-f2a8a13de4d3")
 		(sheetname "/")
@@ -36803,7 +38993,7 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Test Point"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -36971,12 +39161,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f132c8c2-8bfb-4ba9-8f9e-0d3606de276e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c59360b5-ce6e-400d-aa01-bc136d3803d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fcbe7a13-0b3b-4f71-a0ca-5e81cb296ac7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37282,6 +39498,30 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B08GS3QL7T"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b36f1c09-98ce-46df-8dbb-e6d4beb9ee53")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "806-KMDGX-6S-BS"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee0f4ba4-2544-4307-af03-5aaa0625d243")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -37700,12 +39940,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "11570f26-ae95-4705-bd09-fd894ed40816")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "17c1892a-72b5-4b7c-aa91-ff1d95033bfa")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "915df96d-679c-4ce0-a423-0f095909de46")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37990,7 +40256,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -38413,12 +40679,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1bb660dc-dc8e-4d6a-9a0b-1102f3a40b1d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8505cbc-e74a-4c84-8747-d145de80d11f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56609536-4d91-449c-a245-903249f2acd4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38815,12 +41107,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0a69870c-88a8-4209-a12e-a1445fcc4c25")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "656aeef0-9389-4001-872a-ca8e3fd8c029")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f0de03c-3d61-4f42-8c22-19675bef2807")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39105,7 +41423,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Schottky diode"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -39125,6 +41443,39 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "BAT85SCT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e31665ca-5283-4e50-b0ea-d1ac7f2864ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "78-BAT85S"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "31d55754-271b-4051-b4cb-7c47ac797272")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/gp/product/B0CKSNPVH8"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91d4c516-cf46-4998-a1be-ba4769c9bb44")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -39381,11 +41732,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7f5bdc60-495d-4184-8d9c-a1de29b2fbdf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba943040-a675-48b4-ac44-d27e9423b000")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3b92fda5-52ec-444c-864b-1e8e365d04fc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39538,7 +41911,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc02"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -39549,7 +41922,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "quad 2-input NOR gate"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -39956,7 +42329,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x16 2.00mm"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -39976,6 +42349,17 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a6e32943-c99c-4903-bb1e-93ee187f6a73")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -40358,6 +42742,17 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3ab952c8-b2c0-4da4-af95-c2c0b37f8cbb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.jameco.com/z/R6551AP-Rockwell-IC-6551-Asynchronous-Communication-Interface-Adapter-DIP-28-pin_43318.html?CID=GOOG&utm_source=google&utm_medium=ppc&utm_campaign=&utm_term=&utm_content=&gad_source=4&gad_campaignid=17336645193&gbraid=0AAAAADoyMrfPykBRZHoLXLdz-O5yEtKaY&gclid=CjwKCAjw8arQBhB9EiwAfIKdQmvZnC1nx-RFZj4kRF0D1Wvrek1TTdUge2eacHqJPe6JeM53aHADyxoCYnEQAvD_BwE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "51dbc309-90da-4f20-9840-7883a85cc7d3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40901,12 +43296,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0574eab8-f01b-4d5b-ae0d-c2cbbe65c536")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92c79af3-1f86-4dbc-afcb-1103f930e4f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8a432a2a-9f0f-4e27-bbd9-7bcc1d122cd7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41193,12 +43614,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a8ab7212-611c-4414-a1dd-c84f156ce774")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "60163c17-3318-4467-887a-bb8a17dd9b1a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aafbce9f-9003-494d-b08e-704f7d9248f1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42188,11 +44635,33 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b7da81e2-48f7-4f13-80cc-5fa02d0c4a5a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a21cd07-8614-45fc-b4b9-0298eb7728a6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b47509a3-53bb-41c6-961f-ba688eadabe1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42356,11 +44825,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7baa7c75-056c-44eb-b333-8ee648851be0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0aede67e-d32a-4441-b761-20a78935f5dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e975d689-de0e-4e93-8f4b-259853a478d6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42535,6 +45026,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae4b5493-9b9a-46cc-88f8-9c8caf421c40")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2b6626a-e203-4090-a1ad-6b1089176a5c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/d2881fe8-fc27-4455-a17d-693f19a415a7")
 		(sheetname "/")
@@ -42692,11 +45205,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "348cdc4b-f2df-4bb5-9567-c26b7f501848")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06da0271-c406-4fff-8bc3-e8448b3a354d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8ab0ee8-2acc-4f87-af0a-f1898d740b1f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42862,12 +45397,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cb7ece04-8258-400b-ad4a-5c55a3dd3f1b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5282883a-a6eb-422a-865c-39ac9fed0800")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e17d0e97-1ebe-4375-a046-68dba0564491")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43180,7 +45741,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Socket 2x10 2.54mm Horizontal"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -44688,6 +47249,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cdd0b28c-203b-4ee0-a68a-8b84fdba3136")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c5e1672-f35f-48f6-b1bf-9c48b4b82d29")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3ba6bcea-1376-4adc-8465-40240ea6904d")
 		(sheetname "/")
@@ -44847,12 +47430,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e16e0aca-9ffa-409f-9ce8-10adf2520102")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc7bf2a7-a74e-4c5b-aaec-a8e92c2f38f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e890aa7f-f007-4532-aa6f-4eee56d2fe68")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -45139,12 +47748,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a7f68ef6-7a93-4592-9b27-421fba53374f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a0e7c66-c0d3-4d24-ab96-e345fbb9fc1f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80ea1212-9a82-4f19-b3c3-d25f4da516b8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -45479,6 +48114,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/gp/product/B0CKSNPVH8"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "678915e1-c9ce-41a5-b454-64e4fdc65358")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/3779b5d7-ec99-40e4-a1f4-8dd5dc32cb6d")
 		(sheetname "/")
@@ -45782,6 +48428,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/gp/product/B0CKSNPVH8"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "47339cdd-645d-4a92-b0f9-a420c87cf769")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/704fcc54-688f-4efc-a9fe-bb73fa3f76b2")
 		(sheetname "/")
@@ -46035,7 +48692,7 @@
 				)
 			)
 		)
-		(property "Description" "quad 2-input NAND gate"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -46700,11 +49357,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8b4ef3c6-18fc-4eae-881c-6cd101d4ea09")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f5b057b-1b6a-402b-9893-8ad99b3d7a41")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "52b98e8a-95db-4b22-a13c-142c1d6d2a31")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46868,11 +49547,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f473d6e3-02af-4444-8a9c-1764f666053e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f3976be-7c24-4551-9ba9-0f500ed70f2a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3723b0de-0bd3-4257-933a-4a5c9a243ddc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -47162,6 +49863,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90e5eab2-a347-44c8-b7d5-ebc0a7e116ea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96a97501-6d4b-45b6-9bf4-61dedd004c51")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3c84e17a-ba5c-4fe9-83df-fa4c28c5d1fb")
 		(sheetname "/")
@@ -47324,6 +50047,28 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "75e6810c-18fb-42e1-a8c2-b5de07c25d45")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "45b47c92-2a24-42e6-b9f8-532177f8f491")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c41cb5c5-d83e-4410-8e3f-fdca50517ee3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48194,12 +50939,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1685ac79-dc75-42b0-a378-24620490ddc2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "38097f41-96df-4edf-99e3-a850a007d0e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef3e7edd-9b81-4a19-8814-6b748e4297af")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48495,6 +51266,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "674f622d-cd02-4bcb-b324-4554f0e31b7d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a1f2039-63ae-4aed-8fa5-f9dda5c355b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ede22247-220a-45e4-8f55-d8dbcbea868a")
 		(sheetname "/")
@@ -48652,11 +51445,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4c6df338-6c66-4aea-bf44-06061ebd9d6f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d773073b-2028-4c02-b24d-cad74350f2bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2559bb96-b1e1-4562-bfc1-371544d17df7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48843,9 +51658,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/07c5c4d8-8852-4b05-9c11-a8088c96cb25")
 		(sheetname "/")
 		(sheetfile "ACE Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -49022,6 +51844,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.113636)
 			(net "Net-(D5-K)")
+			(pinfunction "K_1")
+			(pintype "passive")
 			(uuid "476b5792-a599-431e-b3bb-8f3ecbca5c8b")
 		)
 		(pad "2" thru_hole circle
@@ -49031,6 +51855,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(D5-A)")
+			(pinfunction "A_2")
+			(pintype "passive")
 			(uuid "94af7845-60c4-48f6-88dd-7c1af0a627a4")
 		)
 		(embedded_fonts no)
@@ -49087,12 +51913,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c5e85397-30c1-4d38-a795-7fcf5ded1da0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3a2f54b-b0e0-40bf-964e-97f4049ab29c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "81d708a4-fbd7-483e-b9ff-58acbd6ed49e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49677,6 +52529,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe299441-3534-489e-b749-efd8326ede02")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90c57aa2-d89f-43a6-9501-c27e06e08526")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/2f26e4ec-5a3d-44b4-8c74-68a247978a42")
 		(sheetname "/")
@@ -49834,11 +52708,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0aa8db6f-3110-4662-9f19-0c1c6d4c285c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "133f69c7-4c47-4fcb-866c-df0424742f35")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "78ee7cee-fa2a-4bee-a87f-94e9f1212e18")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50002,11 +52898,33 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "3.0mm LED"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "029b342e-86c1-4953-8c51-856b9870a890")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "732-5008-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19c8ec40-b3f3-451b-ae86-855d113b9972")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/300-Pcs-LED-Diode-Assortment/dp/B0F38LJDJB"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "63a29daf-91f5-4662-a670-6af5820bb311")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50223,11 +53141,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4d6734e8-87b7-4783-82ed-aad5d5d42ae9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4d2f0d1-2f8e-4657-890a-50bb66cd60bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4439201b-9ce9-4056-81a6-761a538be95e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50391,7 +53331,7 @@
 				)
 			)
 		)
-		(property "Description" "3-to-8 line decoder/multiplexer inverting, DIP-16/SOIC-16/SSOP-16"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -50412,6 +53352,17 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "595-SN74HC138N"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bfaa487a-e2e8-4382-9d3e-cd3101b48759")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -50821,12 +53772,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "af7a0fc5-e94b-4cf6-9ffe-59c63e50ed0d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "038dcffc-b097-4014-bd3d-ccaa313be887")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac2d58c4-9270-4467-987f-2b1867dd5056")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51113,12 +54090,38 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Box Header 2x6 2.54mm"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d47c4de1-c15f-4239-b4af-480e5ab1f463")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "2057-BHR-12-VUA-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1d7375f-5ac4-4f6b-bd76-15da82f6bc34")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/uxcell-2-54mm-2x6-Pin-Straight-Connector/dp/B07DJYVZV2"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07ffa9fd-05d6-41ad-830b-90db052ca701")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51454,11 +54457,33 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cdd06dc3-2b2b-4c30-922f-02760efe64ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "478-7667-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32993845-51e0-447b-851c-c4739673264a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0d32a7fe-fcf6-4657-81df-c273e35fa0a5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51624,12 +54649,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e6abe9e0-6bbd-4708-a78f-d74b3a2f031d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba83c58a-e7a6-4b1d-a31b-dbc5ac64df93")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "228ebf9a-72c6-4c17-be02-56b6c8deb56d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51916,12 +54967,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9c4b3d81-0a57-4f51-b88b-7cc86d6dde4e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a7f28d95-6d19-45b5-ba7e-ef94d252f75e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1fd2d815-f3db-4d47-8708-2d374f06f109")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52217,6 +55294,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd862937-ba9c-4e8f-af9e-4c75219b2a1e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40439e60-d649-4b3f-9e92-acfa62013e04")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f34c5cc9-6170-4dae-a929-49c28b4de339")
 		(sheetname "/")
@@ -52374,11 +55473,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "14a85e7b-c372-42c5-8607-d60c135cf720")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15cf7d3d-a46e-4f5f-8a1f-707316b9e28e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "513b3940-35ca-45a6-a46e-3e523f21543d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52542,11 +55663,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a9ad6655-af3a-4a00-9368-b9a6e4fcd5ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d6f77a4-e56f-474e-8e79-cdac1065be6d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a58d34cf-91b9-4a4c-8b63-d7dabeb30b59")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52710,7 +55853,7 @@
 				)
 			)
 		)
-		(property "Description" "3-to-8 line decoder/multiplexer inverting, DIP-16/SOIC-16/SSOP-16"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -53153,12 +56296,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1cd974de-3c57-4755-a085-8d70366c2ecb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f0cc734c-6773-4b17-bb4c-f9b238c11a19")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a84dc646-73c5-452a-8ad1-ae7ebba9e6ad")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53443,11 +56612,22 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Pin Header 1x3 2.54mm"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "66a185f1-15b5-4db7-b075-f6eba5d90ed2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd5b1502-4c6f-426a-98a4-3cbe55ae8891")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53694,6 +56874,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fa61115c-9e53-40a2-be9a-dd651baa1515")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4f9adafb-b019-4c72-941c-a15ea13ef2c6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/fdb67904-703f-46b6-aca1-4e5fe1a46f30")
 		(sheetname "/")
@@ -53853,12 +57055,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1570c1ea-2107-4618-8e24-0e4012558e27")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c2040667-69ea-4714-b09f-efdd42d65cbb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70a13b63-94a7-4b29-99f2-ce5f5aa887bd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54143,7 +57371,7 @@
 				)
 			)
 		)
-		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
+		(property "Description" "DB-9 Male"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -54583,11 +57811,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5d90a1e8-d574-44e1-9a99-b7b5f0e1e47e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05abed02-738e-44e4-9d07-b8ddb306491a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b5bbddc-b50c-4779-9cdc-a73371b5b69c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54753,12 +58003,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "32d1f74c-0683-4ac0-9b6c-2897532dca7b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6031ae8-1dd6-45ea-858c-1941047e591b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ac9c258-ce33-4807-ba29-274534bb22f9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55045,7 +58321,7 @@
 				)
 			)
 		)
-		(property "Description" "DC Barrel Jack with an internal switch"
+		(property "Description" "DC Barrel Jack"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -55463,12 +58739,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dd565dcd-e8d2-47b2-a9e6-fb1080f3195e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9d2d7b7-a856-4738-ae0a-9d58fcea42f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3632ebae-6e9e-4b1e-aed9-1ddb0897ddd3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55755,12 +59057,38 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Box Header 2x6 2.54mm"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f3038a7f-8a6e-4500-b5c7-1ec26c027c38")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "2057-BHR-12-VUA-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d1c067a-64d3-49db-9502-12678f50d593")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/uxcell-2-54mm-2x6-Pin-Straight-Connector/dp/B07DJYVZV2"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e6ab1fd-c327-4a0c-be6d-5459ce5abc60")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -56107,6 +59435,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be5681b9-334e-485d-96f9-b2cd344a72ed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a6e992c-eb31-4960-a5a6-cca588c87a14")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/cfaff0aa-46f5-488d-a34b-25d2b45ac1c8")
 		(sheetname "/")
@@ -56264,7 +59614,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polarized capacitor, US symbol"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -57386,11 +60736,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cfb6261e-a18c-4465-bc6a-4a5303bdd14c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c0eb077-1946-4e85-8af4-05d7a2429fc6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12ec119f-e74a-4389-8fb3-ad38618753a3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57565,6 +60937,28 @@
 				)
 			)
 		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5cfd228e-9a80-4cf1-af3e-134951744287")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11fd315e-0182-4e79-bbfd-9a3f0cb0ede9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/941ae804-03c5-44f2-9402-f510e0e66e88")
 		(sheetname "/")
@@ -57721,7 +61115,7 @@
 				)
 			)
 		)
-		(property "Description" "Single-cell battery"
+		(property "Description" "CR2032"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -57775,6 +61169,12 @@
 		(path "/dda5a239-2085-4e62-9621-4a90a2b6afd1")
 		(sheetname "/")
 		(sheetfile "ACE Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -58079,11 +61479,33 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1/8 W Resistor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fd803113-ca14-40ba-9512-bc3ad1f354d5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "RNF18FTD1K00CT-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34d9842f-f506-49b4-a99b-f234d7e094b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5e6b22a0-9765-471d-ae60-889e9a020670")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -58249,12 +61671,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b9acf78b-a19c-4f77-838e-b9ef6b89d8c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c833bb41-f18d-41d0-8577-b0a824a77a48")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef1c304c-f4e8-47f1-a2e2-bbeaac64e169")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -58541,12 +61989,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c0c63c69-ab93-4389-b509-5d110acf2296")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f7ac518-5d1a-4bc7-816b-04afa4958422")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2b43651-7346-488a-bf25-6ca706a9931c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -58833,12 +62307,38 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Cherry MX Switch"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b78ccf25-2978-4d00-b416-b880d573a4e8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/dp/B0FYR5TV3X"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc2ad217-cb07-4c3a-b075-72ffd29cdf24")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "CH196-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67252950-6ce3-4595-8f90-3f93608d3b82")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59123,7 +62623,7 @@
 				)
 			)
 		)
-		(property "Description" "Synchronous 4-bit programmable binary Counter"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -59564,7 +63064,7 @@
 				)
 			)
 		)
-		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
+		(property "Description" "DB-9 Male"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
