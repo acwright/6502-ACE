@@ -160,7 +160,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -171,7 +171,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "quad 2-input NAND gate"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -567,7 +567,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole board_only)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
@@ -830,7 +830,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc02"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -841,7 +841,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "quad 2-input NOR gate"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1226,7 +1226,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, double row, 02x07, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
