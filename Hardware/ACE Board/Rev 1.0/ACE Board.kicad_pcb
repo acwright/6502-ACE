@@ -1421,7 +1421,7 @@
 			)
 		)
 	)
-	(footprint "6502 Parts:SW_400MSP1R6BLKM6QE"
+	(footprint "6502 Parts:Power Switch"
 		(layer "F.Cu")
 		(uuid "0673e062-41b7-4974-87ff-bebf69183de7")
 		(at 114.08 102.54)
@@ -1852,7 +1852,7 @@
 			(uuid "1d06ed70-2bfd-4776-97e1-dbf18133864a")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/400MSP1R6BLKM6QE.step"
+		(model "${KIPRJMOD}/../../../Models/Power Switch.step"
 			(offset
 				(xyz -1 0 3)
 			)
@@ -8406,7 +8406,7 @@
 			(uuid "ded862e5-0a41-419f-9458-c4a16fe11b8e")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/228-1277-00-0602J.step"
+		(model "${KIPRJMOD}/../../../Models/ZIF Socket 28.step"
 			(offset
 				(xyz 7.5 -14.5 0)
 			)
@@ -25993,7 +25993,7 @@
 			(uuid "f6775399-a6e0-4fc6-8831-fc523aaf1c42")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/61204021621.step"
+		(model "${KIPRJMOD}/../../../Models/6502 Bus Connector.step"
 			(offset
 				(xyz 1.25 -24 4.5)
 			)
@@ -30720,7 +30720,7 @@
 			)
 		)
 	)
-	(footprint "6502 Parts:RHDR40W82P485X254_2X20_5740X93"
+	(footprint "6502 Parts:6502 Card Slot"
 		(layer "F.Cu")
 		(uuid "61427de6-2a98-4d81-8731-8f37a10ebce5")
 		(at 126.351 177.292 90)
@@ -31455,7 +31455,7 @@
 			(uuid "5d4387b4-4a63-4d79-91d4-e730aecac2d0")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/5-5530843-4.step"
+		(model "${KIPRJMOD}/../../../Models/6502 Card Slot.step"
 			(offset
 				(xyz 24.5 2.5 15.5)
 			)
@@ -31467,7 +31467,7 @@
 			)
 		)
 	)
-	(footprint "6502 Parts:SWITCHCRAFT_PJRAN1X1U0XX"
+	(footprint "6502 Parts:RCA Jack White"
 		(layer "F.Cu")
 		(uuid "61b81af8-a08b-4526-86c3-a98cf9b06faf")
 		(at 280 79.5 180)
@@ -31874,7 +31874,7 @@
 			(uuid "328a92d8-ba7b-44cf-9f82-4647d3a880a5")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/PJRAN1X1U0XX.step"
+		(model "${KIPRJMOD}/../../../Models/RCA Jack White.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -35883,7 +35883,7 @@
 			)
 		)
 	)
-	(footprint "6502 Parts:SWITCHCRAFT_PJRAN1X1U0XX"
+	(footprint "6502 Parts:RCA Jack White"
 		(layer "F.Cu")
 		(uuid "6ece571e-1a4a-437a-8ee8-61bc73b64b48")
 		(at 292 79.5 180)
@@ -36290,7 +36290,7 @@
 			(uuid "18acb804-5c6c-4951-a6c4-7ecb00fcb274")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/PJRAN1X1U0XX.step"
+		(model "${KIPRJMOD}/../../../Models/RCA Jack White.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44742,7 +44742,7 @@
 			)
 		)
 	)
-	(footprint "6502 Parts:KMDGX-6S-BS"
+	(footprint "6502 Parts:PS2 Jack"
 		(layer "F.Cu")
 		(uuid "943e7b3b-8461-4d31-92e0-6d5dfdaa6378")
 		(at 197.45 85)
@@ -45117,7 +45117,7 @@
 			(uuid "fb2b02fe-b050-4cfc-be99-ee538251b89c")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/KMDGX-6S-BS.step"
+		(model "${KIPRJMOD}/../../../Models/PS2 Jack.step"
 			(offset
 				(xyz 1.5 8.5 0)
 			)
@@ -60607,7 +60607,7 @@
 			(uuid "95156413-2044-44bb-a556-3b037364c7cf")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/0702461201.step"
+		(model "${KIPRJMOD}/../../../Models/6502 GPIO Connector.step"
 			(offset
 				(xyz 1.3 -6.4 4.5)
 			)
@@ -66263,7 +66263,7 @@
 			(uuid "b185d1d0-b65f-4b88-a7b7-def85c23f664")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/0702461201.step"
+		(model "${KIPRJMOD}/../../../Models/6502 GPIO Connector.step"
 			(offset
 				(xyz 1.3 -6.4 4.5)
 			)
@@ -66974,7 +66974,7 @@
 			)
 		)
 	)
-	(footprint "6502 Parts:BAT_BAT-HLD-001-THM"
+	(footprint "6502 Parts:CR2032 Holder Numbered"
 		(layer "F.Cu")
 		(uuid "f4d79015-d416-4564-998b-f851b6c44c60")
 		(at 140.4 84.6 180)
@@ -67351,7 +67351,7 @@
 			(uuid "d3d053bf-9550-430a-8554-55efa188c5b9")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/BAT-HLD-001-THM.step"
+		(model "${KIPRJMOD}/../../../Models/CR2032 Holder.step"
 			(offset
 				(xyz 0 0 0)
 			)

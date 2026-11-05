@@ -11,7 +11,7 @@
 		(company "A.C. Wright Design")
 	)
 	(lib_symbols
-		(symbol "6502 Parts:6581"
+		(symbol "6502 Parts:SID"
 			(pin_names
 				(offset 1.016)
 			)
@@ -77,7 +77,7 @@
 					)
 				)
 			)
-			(symbol "6581_0_0"
+			(symbol "SID_0_0"
 				(rectangle
 					(start -8.89 24.13)
 					(end 8.89 -24.13)
@@ -90,7 +90,7 @@
 					)
 				)
 			)
-			(symbol "6581_1_0"
+			(symbol "SID_1_0"
 				(pin input line
 					(at 11.43 20.32 180)
 					(length 2.54)
@@ -2200,7 +2200,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "6502 Parts:65C51"
+		(symbol "6502 Parts:ACIA 6551"
 			(pin_names
 				(offset 1.016)
 			)
@@ -2262,7 +2262,7 @@
 					)
 				)
 			)
-			(symbol "65C51_0_1"
+			(symbol "ACIA 6551_0_1"
 				(rectangle
 					(start -11.43 29.21)
 					(end 11.43 -29.21)
@@ -2275,7 +2275,7 @@
 					)
 				)
 			)
-			(symbol "65C51_1_1"
+			(symbol "ACIA 6551_1_1"
 				(pin power_in line
 					(at 0 -31.75 90)
 					(length 2.54)
@@ -51221,7 +51221,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502 Parts:RHDR40W82P485X254_2X20_5740X93"
+		(property "Footprint" "6502 Parts:6502 Card Slot"
 			(at 459.74 259.08 0)
 			(hide yes)
 			(show_name no)
@@ -52654,7 +52654,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502 Parts:SW_400MSP1R6BLKM6QE"
+		(property "Footprint" "6502 Parts:Power Switch"
 			(at 614.68 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -61178,7 +61178,7 @@
 		)
 	)
 	(symbol
-		(lib_id "6502 Parts:6581")
+		(lib_id "6502 Parts:SID")
 		(at 424.18 162.56 0)
 		(unit 1)
 		(body_style 1)
@@ -61394,7 +61394,7 @@
 		)
 	)
 	(symbol
-		(lib_id "6502 Parts:65C51")
+		(lib_id "6502 Parts:ACIA 6551")
 		(at 511.81 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -68995,7 +68995,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "6502 Parts:SWITCHCRAFT_PJRAN1X1U0XX"
+		(property "Footprint" "6502 Parts:RCA Jack White"
 			(at 459.74 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -76925,7 +76925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502 Parts:BAT_BAT-HLD-001-THM"
+		(property "Footprint" "6502 Parts:CR2032 Holder Numbered"
 			(at 464.82 356.616 90)
 			(hide yes)
 			(show_name no)
@@ -81157,7 +81157,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "6502 Parts:SWITCHCRAFT_PJRAN1X1U0XX"
+		(property "Footprint" "6502 Parts:RCA Jack White"
 			(at 459.74 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -81429,7 +81429,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502 Parts:KMDGX-6S-BS"
+		(property "Footprint" "6502 Parts:PS2 Jack"
 			(at 196.85 187.96 0)
 			(hide yes)
 			(show_name no)

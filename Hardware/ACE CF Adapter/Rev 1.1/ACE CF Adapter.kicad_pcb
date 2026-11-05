@@ -895,7 +895,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "6502 Parts:101DTAABR01"
+	(footprint "6502 Parts:CompactFlash Socket"
 		(layer "F.Cu")
 		(uuid "5175dacd-546a-4780-968c-0fe1b12727da")
 		(at 137.5 84)
@@ -1832,7 +1832,7 @@
 			(uuid "ce310ece-1aeb-4b3a-9270-dac1c981af6e")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/101D-TAAB-R01.step"
+		(model "${KIPRJMOD}/../../../Models/CompactFlash Socket.step"
 			(offset
 				(xyz -12 -29.5 1.5)
 			)
