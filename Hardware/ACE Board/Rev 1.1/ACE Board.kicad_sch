@@ -65030,7 +65030,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ATmega1284-P"
+		(property "Value" "ATmega1284"
 			(at 342.5033 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -77091,7 +77091,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DB9 MALE (DTE)"
+		(property "Value" "SERIAL (DTE)"
 			(at 558.8 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -79059,7 +79059,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MAX238xNG+"
+		(property "Value" "MAX238CNG+"
 			(at 513.9533 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)

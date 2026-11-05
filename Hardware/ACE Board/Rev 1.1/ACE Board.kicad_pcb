@@ -15755,7 +15755,7 @@
 				)
 			)
 		)
-		(property "Value" "MAX238xNG+"
+		(property "Value" "MAX238CNG+"
 			(at 3.81 30.27 270)
 			(layer "F.SilkS")
 			(uuid "d4d3d32f-5d44-43b3-9807-376cf37a30be")
@@ -19832,7 +19832,7 @@
 				)
 			)
 		)
-		(property "Value" "ATmega1284-P"
+		(property "Value" "ATmega1284"
 			(at 7.62 50.59 0)
 			(layer "F.SilkS")
 			(uuid "511d6669-33ca-4863-bb89-eb84e14c4ec7")
@@ -64135,7 +64135,7 @@
 				)
 			)
 		)
-		(property "Value" "DB9 MALE (DTE)"
+		(property "Value" "SERIAL (DTE)"
 			(at 15.04 -3.58 0)
 			(layer "F.SilkS")
 			(uuid "87137882-ea2b-4a1d-8f78-d3d28c6dd91f")
