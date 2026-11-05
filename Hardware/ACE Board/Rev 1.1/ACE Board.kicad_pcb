@@ -72199,17 +72199,6 @@
 		)
 	)
 	(gr_text "+"
-		(at 309 111 0)
-		(layer "F.SilkS")
-		(uuid "afa1111a-42c3-4f0a-9147-5adb4e1c430f")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "+"
 		(at 403 211.75 0)
 		(layer "F.SilkS")
 		(uuid "28a93015-87d2-4763-b8f8-f403304c7b83")
