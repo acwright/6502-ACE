@@ -50210,7 +50210,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
 			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -50232,7 +50232,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-MFR-12FTF52-10K"
 			(at 106.68 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -52534,7 +52534,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
 			(at 99.06 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -52556,7 +52556,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-MFR-12FTF52-10K"
 			(at 99.06 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -57516,7 +57516,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
 			(at 91.44 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -57538,7 +57538,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-MFR-12FTF52-10K"
 			(at 91.44 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -65344,7 +65344,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
 			(at 83.82 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -65366,7 +65366,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-MFR-12FTF52-10K"
 			(at 83.82 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -71254,7 +71254,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
 			(at 114.3 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -71276,7 +71276,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-MFR-12FTF52-10K"
 			(at 114.3 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -73546,7 +73546,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
 			(at 237.49 278.13 0)
 			(hide yes)
 			(show_name no)
@@ -73568,7 +73568,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-MFR-12FTF52-10K"
 			(at 237.49 278.13 0)
 			(hide yes)
 			(show_name no)

@@ -3554,7 +3554,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3580,7 +3580,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-MFR-12FTF52-10K"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13518,7 +13518,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13544,7 +13544,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-MFR-12FTF52-10K"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42730,7 +42730,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42756,7 +42756,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-MFR-12FTF52-10K"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -50398,7 +50398,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -50424,7 +50424,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-MFR-12FTF52-10K"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -55107,7 +55107,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -55133,7 +55133,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-MFR-12FTF52-10K"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -57560,7 +57560,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -57586,7 +57586,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-MFR-12FTF52-10K"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")

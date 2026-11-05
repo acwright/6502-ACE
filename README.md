@@ -10,6 +10,8 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 
 ---
 
+**Building one? Every part you need, with supplier numbers and known issues, is in [BOM.md](BOM.md).**
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -293,73 +295,11 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 
 ## Bill of Materials
 
+Every part for every board, by revision, is in **[BOM.md](BOM.md)**, with supplier numbers, known issues and files to upload to Digi-Key and Mouser.
+
 ### ACE Board
 
-Rev 1.1's designators. Rev 1.0's are in `Production/ACE Board/Rev 1.0/bom.csv`.
-
-| Reference | Qty | Value | Description | DigiKey | Mouser | Other |
-|-----------|-----|-------|-------------|---------|--------|-------|
-| BT1 | 1 | CR2032 | Battery Holder | [BAT-HLD-001-THM-ND](https://www.digikey.com/en/products/filter?keywords=BAT-HLD-001-THM-ND) | [712-BAT-HLD-001-THM](https://www.mouser.com/ProductDetail/712-BAT-HLD-001-THM) | |
-| C1, C9–C19, C21–C31 | 23 | 100nF | Disc Capacitor | [478-5732-ND](https://www.digikey.com/en/products/filter?keywords=478-5732-ND) | | [AMAZON](https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5) |
-| C2, C3, C5, C6, C8 | 5 | 1µF | Disc Capacitor | [478-7667-ND](https://www.digikey.com/en/products/filter?keywords=478-7667-ND) | | [AMAZON](https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5) |
-| C4, C7 | 2 | 2.2nF | Disc Capacitor | [478-SR151C222KAATR1CT-ND](https://www.digikey.com/en/products/filter?keywords=478-SR151C222KAATR1CT-ND) | | [AMAZON](https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5) |
-| C20 | 1 | 10uF | Electrolytic Capacitor 16v | [P966-ND](https://www.digikey.com/en/products/filter?keywords=P966-ND) | | [AMAZON](https://www.amazon.com/Tnisesm-Electrolytic-Capacitor-Assortment-Capacitors/dp/B0G5X62C69) |
-| D2 | 1 | LED | 3.0mm Power LED | [732-5008-ND](https://www.digikey.com/en/products/filter?keywords=732-5008-ND) | | [AMAZON](https://www.amazon.com/300-Pcs-LED-Diode-Assortment/dp/B0F38LJDJB) |
-| D5 | 1 | 1N5819 | Schottky Diode (DO-41) | | | |
-| D1, D3, D4 | 3 | BAT85 | Schottky Diode | [BAT85SCT-ND](https://www.digikey.com/en/products/filter?keywords=BAT85SCT-ND) | [78-BAT85S](https://www.mouser.com/ProductDetail/78-BAT85S) | [AMAZON](https://www.amazon.com/gp/product/B0CKSNPVH8) |
-| J1 | 1 | CTS EN | Pin Header 1×3 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
-| J2 | 1 | RESET SW | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
-| J3 | 1 | DCD EN | Pin Header 1×3 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
-| J4 | 1 | VDD | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
-| J5 | 1 | JOYSTICK A | DB-9 Male | [609-1481-ND](https://www.digikey.com/en/products/filter?keywords=609-1481-ND) | [649-D09P33E4GX00LF](https://www.mouser.com/ProductDetail/649-D09P33E4GX00LF) | |
-| J6 | 1 | PADDLES | Pin Header 1×4 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
-| J7 | 1 | JOYSTICK B | DB-9 Male | [609-1481-ND](https://www.digikey.com/en/products/filter?keywords=609-1481-ND) | [649-D09P33E4GX00LF](https://www.mouser.com/ProductDetail/649-D09P33E4GX00LF) | |
-| J8 | 1 | PORT B | Box Header 2×6 2.54mm | [2057-BHR-12-VUA-ND](https://www.digikey.com/en/products/filter?keywords=2057-BHR-12-VUA-ND) | | [AMAZON](https://www.amazon.com/uxcell-2-54mm-2x6-Pin-Straight-Connector/dp/B07DJYVZV2) |
-| J9 | 1 | PORT A | Box Header 2×6 2.54mm | [2057-BHR-12-VUA-ND](https://www.digikey.com/en/products/filter?keywords=2057-BHR-12-VUA-ND) | | [AMAZON](https://www.amazon.com/uxcell-2-54mm-2x6-Pin-Straight-Connector/dp/B07DJYVZV2) |
-| J10 | 1 | AUDIO L | RCA Jack | [PJRAN1X1U02X-ND](https://www.digikey.com/en/products/filter?keywords=PJRAN1X1U02X-ND) | [502-PJRAN1X1U02X](https://www.mouser.com/ProductDetail/502-PJRAN1X1U02X) | |
-| J11 | 1 | DB9 MALE (DTE) | DB-9 Male | [609-1481-ND](https://www.digikey.com/en/products/filter?keywords=609-1481-ND) | [649-D09P33E4GX00LF](https://www.mouser.com/ProductDetail/649-D09P33E4GX00LF) | |
-| J12 | 1 | PS/2 | 6-pin Mini-DIN | | [806-KMDGX-6S-BS](https://www.mouser.com/ProductDetail/806-KMDGX-6S-BS) | [AMAZON](https://www.amazon.com/dp/B08GS3QL7T) |
-| J13 | 1 | KEYBOARD | Pin Header 1×16 2.00mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
-| J14 | 1 | AUDIO R | RCA Jack | [PJRAN1X1U03X-ND](https://www.digikey.com/en/products/filter?keywords=PJRAN1X1U03X-ND) | [502-PJRAN1X1U03X](https://www.mouser.com/ProductDetail/502-PJRAN1X1U03X) | |
-| J15 | 1 | AUDIO | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
-| J16 | 1 | 5V DC | DC Barrel Jack | [2073-DCJ200-10-A-K1-K-ND](https://www.digikey.com/en/products/filter?keywords=2073-DCJ200-10-A-K1-K-ND) | [640-DCJ200-10-A-K1-K](https://www.mouser.com/ProductDetail/640-DCJ200-10-A-K1-K) | |
-| J17 | 1 | CART | Card Edge 2×20 2.54mm | [A31723-ND](https://www.digikey.com/en/products/filter?keywords=A31723-ND) | [571-5-5530843-4](https://www.mouser.com/ProductDetail/571-5-5530843-4) | |
-| J18 | 1 | BUS | Box Header 2×20 2.54mm | [732-5401-ND](https://www.digikey.com/en/products/filter?keywords=732-5401-ND) | | |
-| J19 | 1 | VCC | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
-| J20 | 1 | POWER LED | Pin Header 1×2 2.54mm | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
-| J21 | 1 | STORAGE | Pin Socket 2×10 2.54mm Horiz | [S5563-ND](https://www.digikey.com/en/products/filter?keywords=S5563-ND) | | |
-| R1–R5, R26 | 6 | 10kΩ | 1/8W Resistor | [RNF18FTD10K0CT-ND](https://www.digikey.com/en/products/filter?keywords=RNF18FTD10K0CT-ND) | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
-| R6–R24, R27–R35 | 28 | 1kΩ | 1/8W Resistor | [RNF18FTD1K00CT-ND](https://www.digikey.com/en/products/filter?keywords=RNF18FTD1K00CT-ND) | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
-| R25 | 1 | 330Ω | 1/8W Resistor | | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
-| SW1–SW13, SW15, SW18–SW29, SW31, SW33–SW41, SW43, SW44, SW46–SW49, SW51–SW58, SW61, SW64–SW66 | 54 | Various | Cherry MX Switch 1.00u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
-| SW59, SW60, SW63, SW67, SW68 | 5 | CTRL / ALT / FN | Cherry MX Switch 1.25u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
-| SW16, SW30 | 2 | TAB / Backslash | Cherry MX Switch 1.50u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
-| SW32 | 1 | CAPS LOCK | Cherry MX Switch 1.75u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
-| SW14 | 1 | BACKSPACE | Cherry MX Switch 2.00u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
-| SW42, SW45, SW50 | 3 | SHIFT / ENTER | Cherry MX Switch 2.25u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
-| SW62 | 1 | SPACE | Cherry MX Switch 6.25u | [CH196-ND](https://www.digikey.com/en/products/filter?keywords=CH196-ND) | | [AMAZON](https://www.amazon.com/dp/B0FYR5TV3X) |
-| SW17 | 1 | RESET | Tact Push Button 6mm | | | [AMAZON](https://www.amazon.com/QTEATAK-Momentary-Tactile-Button-Switch/dp/B07VSNN9S2) |
-| SW69 | 1 | POWER | SPDT Switch | [EG4326-ND](https://www.digikey.com/en/products/filter?keywords=EG4326-ND) | [612-400MSP1R6BLKM6QE](https://www.mouser.com/ProductDetail/612-400MSP1R6BLKM6QE) | |
-| SW70 | 1 | IO ENABLE | 8× DIP Switch SPST | | | [AMAZON](https://www.amazon.com/Yohii-2-54mm-Positions-Double-Assorted/dp/B07DSBX4BK/) |
-| U1 | 1 | W65C02S | 65C02 CPU | | [955-W65C02S6TPG-14](https://www.mouser.com/ProductDetail/955-W65C02S6TPG-14) | |
-| U2 | 1 | W65C22 | 65C22 VIA | | [955-W65C22N6TPG-14](https://www.mouser.com/ProductDetail/955-W65C22N6TPG-14) | |
-| U3 | 1 | Pico9918A | VDP (VGA): PICO9918 PRO v2.0, running 6502-PICOVDP | | | [TINDIE](https://www.tindie.com/products/visrealm/pico9918-pro/) |
-| U4 | 1 | R6551AP | ACIA | | | [JAMECO](https://www.jameco.com/z/R6551AP-Rockwell-IC-6551-Asynchronous-Communication-Interface-Adapter-DIP-28-pin_43318.html) |
-| U5 | 1 | 74HC163 | 4-bit Counter | [296-8246-5-ND](https://www.digikey.com/en/products/filter?keywords=296-8246-5-ND) | [595-SN74HC163N](https://www.mouser.com/ProductDetail/595-SN74HC163N) | |
-| U6 | 1 | ATmega1284-P | Keyboard Controller MCU | [ATMEGA1284-PU-ND](https://www.digikey.com/en/products/filter?keywords=ATMEGA1284-PU-ND) | [556-ATMEGA1284-PU](https://www.mouser.com/ProductDetail/556-ATMEGA1284-PU) | |
-| U7 | 1 | AS6C62256 | 32KB SRAM | [1450-1033-ND](https://www.digikey.com/en/products/filter?keywords=1450-1033-ND) | [913-AS6C62256-55PCN](https://www.mouser.com/ProductDetail/913-AS6C62256-55PCN) | |
-| U8 | 1 | AT28C256 | 32KB EEPROM | [AT28C256-15PU-ND](https://www.digikey.com/en/products/filter?keywords=AT28C256-15PU-ND) | [556-AT28C25615PU](https://www.mouser.com/ProductDetail/556-AT28C25615PU) | |
-| U9 | 1 | 6581 | SID Chip | | | [LINK](https://retrocomp.cz/produkt?id=2) |
-| U10 | 1 | MAX238xNG+ | RS-232 Transceiver | [MAX238CNG+-ND](https://www.digikey.com/en/products/filter?keywords=MAX238CNG+-ND) | [700-MAX238CNG](https://www.mouser.com/ProductDetail/700-MAX238CNG) | |
-| U11, U12, U14, U16 | 4 | 74HC00 | Quad NAND | [296-1563-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1563-5-ND) | [595-SN74HC00N](https://www.mouser.com/ProductDetail/595-SN74HC00N) | |
-| U13 | 1 | 74HC02 | Quad NOR | [296-1565-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1565-5-ND) | [595-SN74HC02N](https://www.mouser.com/ProductDetail/595-SN74HC02N) | |
-| U15 | 1 | AS6C4008 | 512KB SRAM | [1450-1027-ND](https://www.digikey.com/en/products/filter?keywords=1450-1027-ND) | [913-AS6C4008-55PCN](https://www.mouser.com/ProductDetail/913-AS6C4008-55PCN) | |
-| U17 | 1 | 74HC30 | 8-input NAND | [296-9196-5-ND](https://www.digikey.com/en/products/filter?keywords=296-9196-5-ND) | [595-CD74HC30E](https://www.mouser.com/ProductDetail/595-CD74HC30E) | |
-| U18 | 1 | DS1511Y | RTC + NVRAM | [DS1511Y+-ND](https://www.digikey.com/en/products/filter?keywords=DS1511Y+-ND) | [700-DS1511Y](https://www.mouser.com/ProductDetail/700-DS1511Y) | |
-| U19, U20 | 2 | 74HC138 | 3-to-8 Decoder | [296-1575-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1575-5-ND) | [595-SN74HC138N](https://www.mouser.com/ProductDetail/595-SN74HC138N) | |
-| U21, U22 | 2 | 74HC573 | Octal Latch | [296-12815-5-ND](https://www.digikey.com/en/products/filter?keywords=296-12815-5-ND) | [595-CD74HC573EE4](https://www.mouser.com/ProductDetail/595-CD74HC573EE4) | |
-| X1 | 1 | 16MHz | DIP-14 Oscillator | [X947-ND](https://www.digikey.com/en/products/filter?keywords=X947-ND) | [815-ACO-16-EK](https://www.mouser.com/ProductDetail/815-ACO-16-EK) | |
-| Y1 | 1 | 1.8432MHz | Crystal | [3155-1.8432M20P2/49U-ND](https://www.digikey.com/en/products/filter?keywords=3155-1.8432M20P2%2F49U-ND) | [815-AB-1.8432-B2](https://www.mouser.com/ProductDetail/815-AB-1.8432-B2) | |
+Parts list: [BOM.md](BOM.md#ace-board).
 
 ### ACE CF Adapter
 
@@ -374,15 +314,7 @@ Rev 1.1's designators. Rev 1.0's are in `Production/ACE Board/Rev 1.0/bom.csv`.
 
 - Initial release, and the board on sale. `Hardware/ACE CF Adapter/Rev 1.0/` and `Production/ACE CF Adapter/Rev 1.0/` match the boards JLCPCB made (order Y89). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received. Its CF socket is the hand-soldered Digi-Key part in the table below.
 
-This table is Rev 1.0's. On Rev 1.1, `J21` is `J1` and `J3` is `J2`.
-
-| Reference | Qty | Value | Description | DigiKey | Mouser | Other |
-|-----------|-----|-------|-------------|---------|--------|-------|
-| D1 | 1 | ACT LED | 3.0mm LED | [732-5008-ND](https://www.digikey.com/en/products/filter?keywords=732-5008-ND) | | [AMAZON](https://www.amazon.com/300-Pcs-LED-Diode-Assortment/dp/B0F38LJDJB) |
-| J21 | 1 | STORAGE | Pin Header 2×10 2.54mm Horiz | | | [AMAZON](https://www.amazon.com/dp/B00W8TSWXS) |
-| J3 | 1 | Compact Flash | CF Socket | [4827-101D-TAAB-R01-ND](https://www.digikey.com/en/products/filter?keywords=4827-101D-TAAB-R01-ND) | | |
-| R1–R4 | 4 | 1kΩ | 1/8W Resistor | [RNF18FTD1K00CT-ND](https://www.digikey.com/en/products/filter?keywords=RNF18FTD1K00CT-ND) | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
-| R5 | 1 | 330Ω | 1/8W Resistor | | | [AMAZON](https://www.amazon.com/ALLECIN-8W-Metal-Film-Resistor/dp/B0C77TM3NR) |
+Parts list: [BOM.md](BOM.md#ace-cf-adapter).
 
 ### ACE RAM Patch
 
@@ -396,12 +328,7 @@ This table is Rev 1.0's. On Rev 1.1, `J21` is `J1` and `J3` is `J2`.
 
 - Initial release. Boards were made, and testing showed its decode is wrong, so don't fit one: use Rev 1.1. `Hardware/ACE RAM Patch/Rev 1.0/` and `Production/ACE RAM Patch/Rev 1.0/` match the boards JLCPCB made (order Y94). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
 
-| Reference | Qty | Value | Description | DigiKey | Mouser | Other |
-|-----------|-----|-------|-------------|---------|--------|-------|
-| J1 | 1 | 74HC00 (U12) | Pin Header 1×7 2.54mm ×2, soldered between the boards | | | |
-| J2 | 1 | 74HC00 (U13) | Pin Header 1×7 2.54mm ×2, soldered between the boards | | | |
-| U1 | 1 | 74HC00 | Quad NAND | [296-1563-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1563-5-ND) | [595-SN74HC00N](https://www.mouser.com/ProductDetail/595-SN74HC00N) | |
-| U2 | 1 | 74HC02 | Quad NOR | [296-1565-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1565-5-ND) | [595-SN74HC02N](https://www.mouser.com/ProductDetail/595-SN74HC02N) | |
+Parts list: [BOM.md](BOM.md#ace-ram-patch).
 
 ## License
 
