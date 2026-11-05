@@ -22,3 +22,55 @@ Every revision of every board in this repository, and what is known about each. 
 | ACE RAM Patch | 1.1 | Made, matches order | Yes, 2026-11-03 | Y99 | 2026-09-24 | `a216b17` | — | 92.5×13 | — | — | — |  |
 
 The audit last ran on 2026-11-04. Each production zip marked *Made, matches order* was compared byte for byte with JLCPCB's copy, and its PCB regenerated to the same copper, mask, outline and holes. Tindie stock is from the listings as saved on 2026-10-23.
+
+<!-- History: hand-written. tools/revision-audit/register.py keeps everything from here to the end. -->
+
+## History
+
+What changed in each revision of each board, newest first. The table above has the facts about each one.
+
+### ACE CF Adapter
+
+**Rev 1.1** (drawn, not yet made; Rev 1.0 is sold first)
+
+- Annotated properly: `J21` is now `J1`, and `J3` is now `J2`. Rev 1.0 was never annotated, so those two numbers came from another project.
+- The CF socket has an LCSC source, [C2962036](https://www.lcsc.com/product-detail/C2962036.html) (HOAUC HYCW01-CF50-395B), and JLCPCB's parts library lists it as an Extended part, with 457 in stock on 2026-11-04. On its datasheet it matches the footprint: 50 pads at 0.635 mm, locating holes 38.78 mm apart against the footprint's 38.74, and hold-down tabs in the same place. It hasn't been fitted to a board yet, so the first Rev 1.1 build will prove it.
+
+**Rev 1.0**
+
+- Initial release, and the board on sale. `Hardware/ACE CF Adapter/Rev 1.0/` and `Production/ACE CF Adapter/Rev 1.0/` match the boards JLCPCB made (order Y89). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received. Its CF socket is hand-soldered: `101D-TAAB-R01`, in [BOM.md](BOM.md#ace-cf-adapter).
+
+### ACE RAM Patch
+
+**Rev 1.1**
+
+- Replaces Rev 1.0, and fixes the decode. Tested on 2026-11-03. `Hardware/ACE RAM Patch/Rev 1.1/` and `Production/ACE RAM Patch/Rev 1.1/` match the boards JLCPCB made (order Y99). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+
+**Rev 1.0**
+
+- Initial release. Boards were made, and testing showed its decode is wrong, so don't fit one: use Rev 1.1. `Hardware/ACE RAM Patch/Rev 1.0/` and `Production/ACE RAM Patch/Rev 1.0/` match the boards JLCPCB made (order Y94). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+
+### ACE Board
+
+**Rev 1.1**
+
+- Fixes the gating of the `LOADL` and `LOADH` latch-enable signals for the 74HC573 latches (`U21`, `U22`) that drive the AS6C4008 banked SRAM. In Rev 1.0 the final two decode gates (`U13C`/`U13D`) were NANDs, which left the latches pulsing while idle and allowed spurious loads on reads, so the latches never reliably held a bank value.
+- The fix replaces the final NAND stage with a NOR function: `LOADL = NOR(SEL_L, WB)` and `LOADH = NOR(SEH_L, WB)`, holding each latch enable low out of window and only pulsing on an in-window write. This makes banked RAM work correctly with no firmware change.
+- Implemented with one 74HC02 quad NOR beside the 74HC00 `U12`. Rev 1.0's second 74HC00 in this path is gone, and its designator, `U13`, now belongs to the 74HC02. Every gate of both chips is in use — the same eight gates as the ACE RAM Patch Rev 1.1: `U12A` makes `/(A9·A8)`; `U13C` NORs it with `U17`'s `/(A0–A7)` to select the bank register; `U13D` makes IO1 from `IO1B` and `U12D` makes `B18` from `IO2B`; `U12B` and `U12C` combine the select with IO1 and with `B18`; and `U13A` and `U13B` NOR those with `WB` to make `LOADL` and `LOADH`.
+- Fixes the bank register's address decode. `U12B` combined `/(A9·A8)` (`U12A`) and `/(A0–A7)` (`U17`) with a NAND, which ORs the two conditions, so each latch also loaded on every write to `$8300`–`$83FE` and `$80FF`, `$81FF`, `$82FF` (and the same in the `$8400` window). `U13C` now combines them with a NOR, so each latch loads only on a write to `$83FF` or `$87FF`.
+- Runs at 1 MHz only. The PHI2 SELECT jumper (Rev 1.0's J1) is removed, and U5's 1 MHz output (Q3) drives PHI2 for the 65C02, VIA, ACIA and SID.
+- Adds `D1` (BAT85) between the video card's `/INT` (U3 pin 16) and `IRQB`, cathode toward U3. The Pico9918 drives `/INT` high as well as low, and without the diode it held `IRQB` high against every other interrupt source.
+- Adds `R5`, a 10kΩ pull-up on `RESB`. The AB Controller firmware now only ever pulls `RESB` low, so the DS1511Y and cards on `CART` and `BUS` can reset the machine too.
+- Adds `D5` (1N5819) in series between the barrel jack (`J16`) and the power switch (`SW69`), anode at the jack, so a reversed supply can't reach VCC. It drops about 0.3–0.4 V, so VCC sits near 4.6 V, above the 4.5 V floor of the 5 V parts. Measure VCC under full load on the first board built.
+- `Tests/check-schematics.mjs` checks the address decoding of Rev 1.1, and of Rev 1.0 with the ACE RAM Patch Rev 1.1 fitted, in every bus state. See [Checking the schematics](README.md#checking-the-schematics).
+- Some pull-up resistors changed from 1kΩ to 10kΩ: `R1`–`R4` and `R26` (Rev 1.0's `R2`–`R5` and `R27`) are now 10kΩ.
+- Removes Rev 1.0's `R1`, the `SOB` pull-up. `SOB` is tied straight to VCC.
+- Added `C20` (10µF electrolytic) at the power input for bulk decoupling capacitance.
+- Re-annotated. In Rev 1.0's terms: the connectors `J2`–`J13` are now `J1`–`J12`, `KEYBOARD` moves from `J22` to `J13`, and `J14`–`J21` keep their numbers. The diodes `D1`–`D3` are `D2`–`D4`. The resistors `R2`–`R5` are `R1`–`R4`, `R6`–`R14` keep their numbers, and `R16`–`R36` are `R15`–`R35` (Rev 1.0 has no `R15`). The capacitors `C20`–`C30` are `C21`–`C31`, with the new bulk capacitor at `C20`. The switches `SW17`–`SW69` are `SW18`–`SW70`, and `RESET` moves from `SW70` to `SW17`. The 74HC02 is `U13`.
+- The silkscreen says `SERIAL (DTE)` at `J11`, `MAX238CNG+` at `U10`, `ATmega1284` at `U6`, `ARMSID` at `U9`, `16 MHz` at `X1` and `1.8432 MHz` at `Y1`. Rev 1.0's say `DB9 MALE (DTE)`, `MAX238xNG+`, `ATmega1284-P`, `6581`, `16MHz` and `1.8432 Mhz`.
+- Removes Rev 1.0's `J5`, the `VDD` header for a real SID's 12 V supply, which the standard build never provided and which was never tested. `U9` pin 28 is left unconnected: the ARMSID needs nothing there. Its number, `J4` in Rev 1.1's annotation, is left unused.
+
+**Rev 1.0**
+
+- Initial release, ordered from JLCPCB on 2026-05-13.
+- `Hardware/ACE Board/Rev 1.0/` and `Production/ACE Board/Rev 1.0/` match that order, so their designators are the ones on the silkscreen. The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.

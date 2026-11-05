@@ -20,8 +20,6 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [Software](#software)
 - [Hardware](#hardware)
   - [ACE Board](#ace-board)
-    - [Revision History](#revision-history)
-    - [Building a Rev 1.0](#building-a-rev-10)
     - [Known limits](#known-limits)
   - [ACE CF Adapter](#ace-cf-adapter)
   - [ACE RAM Patch](#ace-ram-patch)
@@ -36,9 +34,6 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [Checking the banked RAM](#checking-the-banked-ram)
 - [Libraries](#libraries)
 - [Bill of Materials](#bill-of-materials)
-  - [ACE Board](#ace-board-1)
-  - [ACE CF Adapter](#ace-cf-adapter-1)
-  - [ACE RAM Patch](#ace-ram-patch-1)
 - [License](#license)
 
 ---
@@ -128,44 +123,6 @@ those lines low, open-drain, and must never drive them high: a device that drive
 there against every other device that pulls it low. A video card built around a pico9918 has the same `/INT`
 problem as U3, and needs the same diode on the card.
 
-#### Revision History
-
-**Rev 1.1**
-
-- Fixes the gating of the `LOADL` and `LOADH` latch-enable signals for the 74HC573 latches (`U21`, `U22`) that drive the AS6C4008 banked SRAM. In Rev 1.0 the final two decode gates (`U13C`/`U13D`) were NANDs, which left the latches pulsing while idle and allowed spurious loads on reads, so the latches never reliably held a bank value.
-- The fix replaces the final NAND stage with a NOR function: `LOADL = NOR(SEL_L, WB)` and `LOADH = NOR(SEH_L, WB)`, holding each latch enable low out of window and only pulsing on an in-window write. This makes banked RAM work correctly with no firmware change.
-- Implemented with one 74HC02 quad NOR beside the 74HC00 `U12`. Rev 1.0's second 74HC00 in this path is gone, and its designator, `U13`, now belongs to the 74HC02. Every gate of both chips is in use — the same eight gates as the ACE RAM Patch Rev 1.1: `U12A` makes `/(A9·A8)`; `U13C` NORs it with `U17`'s `/(A0–A7)` to select the bank register; `U13D` makes IO1 from `IO1B` and `U12D` makes `B18` from `IO2B`; `U12B` and `U12C` combine the select with IO1 and with `B18`; and `U13A` and `U13B` NOR those with `WB` to make `LOADL` and `LOADH`.
-- Fixes the bank register's address decode. `U12B` combined `/(A9·A8)` (`U12A`) and `/(A0–A7)` (`U17`) with a NAND, which ORs the two conditions, so each latch also loaded on every write to `$8300`–`$83FE` and `$80FF`, `$81FF`, `$82FF` (and the same in the `$8400` window). `U13C` now combines them with a NOR, so each latch loads only on a write to `$83FF` or `$87FF`.
-- Runs at 1 MHz only. The PHI2 SELECT jumper (Rev 1.0's J1) is removed, and U5's 1 MHz output (Q3) drives PHI2 for the 65C02, VIA, ACIA and SID.
-- Adds `D1` (BAT85) between the video card's `/INT` (U3 pin 16) and `IRQB`, cathode toward U3. The Pico9918 drives `/INT` high as well as low, and without the diode it held `IRQB` high against every other interrupt source.
-- Adds `R5`, a 10kΩ pull-up on `RESB`. The AB Controller firmware now only ever pulls `RESB` low, so the DS1511Y and cards on `CART` and `BUS` can reset the machine too.
-- Adds `D5` (1N5819) in series between the barrel jack (`J16`) and the power switch (`SW69`), anode at the jack, so a reversed supply can't reach VCC. It drops about 0.3–0.4 V, so VCC sits near 4.6 V, above the 4.5 V floor of the 5 V parts. Measure VCC under full load on the first board built.
-- `Tests/check-schematics.mjs` checks the address decoding of Rev 1.1, and of Rev 1.0 with the ACE RAM Patch Rev 1.1 fitted, in every bus state. See [Checking the schematics](#checking-the-schematics).
-- Some pull-up resistors changed from 1kΩ to 10kΩ: `R1`–`R4` and `R26` (Rev 1.0's `R2`–`R5` and `R27`) are now 10kΩ.
-- Removes Rev 1.0's `R1`, the `SOB` pull-up. `SOB` is tied straight to VCC.
-- Added `C20` (10µF electrolytic) at the power input for bulk decoupling capacitance.
-- Re-annotated. In Rev 1.0's terms: the connectors `J2`–`J13` are now `J1`–`J12`, `KEYBOARD` moves from `J22` to `J13`, and `J14`–`J21` keep their numbers. The diodes `D1`–`D3` are `D2`–`D4`. The resistors `R2`–`R5` are `R1`–`R4`, `R6`–`R14` keep their numbers, and `R16`–`R36` are `R15`–`R35` (Rev 1.0 has no `R15`). The capacitors `C20`–`C30` are `C21`–`C31`, with the new bulk capacitor at `C20`. The switches `SW17`–`SW69` are `SW18`–`SW70`, and `RESET` moves from `SW70` to `SW17`. The 74HC02 is `U13`.
-- The silkscreen says `SERIAL (DTE)` at `J11`, `MAX238CNG+` at `U10`, `ATmega1284` at `U6`, `ARMSID` at `U9`, `16 MHz` at `X1` and `1.8432 MHz` at `Y1`. Rev 1.0's say `DB9 MALE (DTE)`, `MAX238xNG+`, `ATmega1284-P`, `6581`, `16MHz` and `1.8432 Mhz`.
-- Removes Rev 1.0's `J5`, the `VDD` header for a real SID's 12 V supply, which the standard build never provided and which was never tested. `U9` pin 28 is left unconnected: the ARMSID needs nothing there. Its number, `J4` in Rev 1.1's annotation, is left unused.
-
-**Rev 1.0**
-
-- Initial release, ordered from JLCPCB on 2026-05-13.
-- `Hardware/ACE Board/Rev 1.0/` and `Production/ACE Board/Rev 1.0/` match that order, so their designators are the ones on the silkscreen. The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
-
-#### Building a Rev 1.0
-
-Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev 1.0 they're done by hand. The [build notes](Docs/ACE%20Board/Rev%201.0/ACE%20Board%20Build%20Notes.pdf) have each step, with figures and checks.
-
-- **Pull-ups:** fit 10kΩ for `R1`–`R5` and `R27`, not the 1kΩ in Rev 1.0's BOM. Don't leave out `R1`: it is the only thing holding `SOB` (U1 pin 38) high.
-- **ACIA:** fit an R6551AP at `U4`, where Rev 1.0's silkscreen and BOM say 65C51.
-- **Supply capacitor:** fit a 10µF electrolytic on the underside, across the pads of `J19`, the VCC header. Rev 1.0 has no holes for it.
-- **`RESB`:** flash the AB Controller firmware from this repository, which only ever pulls `RESB` low (see [AB Controller](#ab-controller)); older firmware drove it high as well, so nothing else could reset the machine. A 10kΩ pull-up from `RESB` to 5 V, soldered on the underside, is optional: the ATmega's internal pull-up raises the line on its own, but the 10 k is stiffer on a line that runs out to `CART` and `BUS`.
-- **Video card `/INT`:** fit a BAT85 between U3 pin 16 and `IRQB`, cathode toward the card, in a socket stack under the card with pin 16 routed through the diode. Without it, a PICO9918 PRO holds `IRQB` at 3.8 V while the VIA asserts it, and the keyboard and serial input are dead. A v1.3 has the same circuit and only works by luck.
-- **Clock:** keep the PHI2 SELECT jumper (J1) on its 1 MHz pins, 1 and 2.
-- **Banked RAM:** fit the [ACE RAM Patch](#ace-ram-patch) Rev 1.1 in place of U12 and U13.
-- **Power:** use a center-positive 5 V supply only. Nothing protects Rev 1.0 from reverse polarity.
-
 #### Known limits
 
 - **The SID probe:** at 1 MHz, the BIOS missed the SID (an ARMSID) once in about a dozen boots. The cause isn't known.
@@ -178,7 +135,7 @@ A CompactFlash adapter board that connects to the Storage header on the ACE Boar
 
 - **Interface**: 8-bit IDE (True IDE) mode
 - **Storage**: CompactFlash socket. The BIOS filesystem divides the card into 256 disk banks of 1 MB each, so 256 MB is the usable capacity regardless of the card fitted
-- **Revisions**: Rev 1.0 is the board on sale, and its silkscreen says `J21` for STORAGE and `J3` for the CF socket. See the [revision history](#ace-cf-adapter-1)
+- **Revisions**: Rev 1.0 is the board on sale, and its silkscreen says `J21` for STORAGE and `J3` for the CF socket. See the [revision history](REVISIONS.md#ace-cf-adapter)
 
 ### ACE RAM Patch
 `Hardware/ACE RAM Patch/`
@@ -206,7 +163,7 @@ The ACE runs a PICO9918 PRO v2.0 (RP2354A) with 6502-PICOVDP, and BIOS 2.x. RP20
 5. **Check the first boot:** the AC6502 logo, then `AC6502 BIOS v2.0`, `BASIC v2.0 30718 BYTES FREE` and `RAM RTC CF SER VIA SID VDP`, at power-on and after the reset button (SW70 on Rev 1.0, SW17 on Rev 1.1). If `VDP` is missing from that line, the card isn't running 6502-PICOVDP.
 6. **Check the `MDE1` pin** from BASIC: `POKE 39939,4:POKE 39939,142:PRINT PEEK(39939):POKE 39939,0:POKE 39939,142` prints 172.
 
-On Rev 1.0, fit the `/INT` diode first (see [Building a Rev 1.0](#building-a-rev-10)).
+On Rev 1.0, fit the `/INT` diode first (see [Building a Rev 1.0](BOM.md#build-notes)).
 
 ### AB Controller
 `Firmware/AB Controller/`
@@ -297,40 +254,7 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 
 ## Bill of Materials
 
-Every part for every board, by revision, is in **[BOM.md](BOM.md)**, with supplier numbers, known issues and files to upload to Digi-Key and Mouser.
-
-### ACE Board
-
-Parts list: [BOM.md](BOM.md#ace-board).
-
-### ACE CF Adapter
-
-#### Revision History
-
-**Rev 1.1** (drawn, not yet made; Rev 1.0 is sold first)
-
-- Annotated properly: `J21` is now `J1`, and `J3` is now `J2`. Rev 1.0 was never annotated, so those two numbers came from another project.
-- The CF socket has an LCSC source, [C2962036](https://www.lcsc.com/product-detail/C2962036.html) (HOAUC HYCW01-CF50-395B), and JLCPCB's parts library lists it as an Extended part, with 457 in stock on 2026-11-04. On its datasheet it matches the footprint: 50 pads at 0.635 mm, locating holes 38.78 mm apart against the footprint's 38.74, and hold-down tabs in the same place. It hasn't been fitted to a board yet, so the first Rev 1.1 build will prove it.
-
-**Rev 1.0**
-
-- Initial release, and the board on sale. `Hardware/ACE CF Adapter/Rev 1.0/` and `Production/ACE CF Adapter/Rev 1.0/` match the boards JLCPCB made (order Y89). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received. Its CF socket is hand-soldered: `101D-TAAB-R01`, in [BOM.md](BOM.md#ace-cf-adapter).
-
-Parts list: [BOM.md](BOM.md#ace-cf-adapter).
-
-### ACE RAM Patch
-
-#### Revision History
-
-**Rev 1.1**
-
-- Replaces Rev 1.0, and fixes the decode. Tested on 2026-11-03. `Hardware/ACE RAM Patch/Rev 1.1/` and `Production/ACE RAM Patch/Rev 1.1/` match the boards JLCPCB made (order Y99). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
-
-**Rev 1.0**
-
-- Initial release. Boards were made, and testing showed its decode is wrong, so don't fit one: use Rev 1.1. `Hardware/ACE RAM Patch/Rev 1.0/` and `Production/ACE RAM Patch/Rev 1.0/` match the boards JLCPCB made (order Y94). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
-
-Parts list: [BOM.md](BOM.md#ace-ram-patch).
+Every part for every board, by revision, is in **[BOM.md](BOM.md)**, with supplier numbers, known issues, build notes and files to upload to Digi-Key and Mouser. What changed in each revision, and what is known about each one, is in **[REVISIONS.md](REVISIONS.md)**.
 
 ## License
 

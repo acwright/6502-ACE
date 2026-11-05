@@ -16,7 +16,7 @@ Every part for every board in this repository, by revision, with supplier number
 
 ## Which revision do I have?
 
-Look on the board: the silk prints the revision next to the copyright line. [REVISIONS.md](REVISIONS.md) has the facts for each one, and the [README](README.md) lists what changed between them.
+Look on the board: the silk prints the revision next to the copyright line. [REVISIONS.md](REVISIONS.md) has the facts for each one, and its history lists what changed between them.
 
 | Board | Revision | What the silk says | Status |
 |---|---|---|---|
@@ -43,7 +43,9 @@ These change what you buy or fit. The boards themselves stay as they were made.
 
 ### Build notes
 
-These come from the README.
+How to build each board, where it needs more than its parts list.
+
+<!-- Build notes: hand-written. tools/bom/gen_bom.py keeps everything between these two markers. -->
 
 **ACE Board**
 
@@ -60,6 +62,7 @@ Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev
 - **Banked RAM:** fit the [ACE RAM Patch](README.md#ace-ram-patch) Rev 1.1 in place of U12 and U13.
 - **Power:** use a center-positive 5 V supply only. Nothing protects Rev 1.0 from reverse polarity.
 
+<!-- End of build notes. -->
 
 ## ACE Board
 
