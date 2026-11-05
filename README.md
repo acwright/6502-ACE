@@ -103,7 +103,7 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
   those two inputs — **both default to ground**
 - **GPIO**: 65C22 VIA (20 GPIO pins, 2× 16-bit timers, shift register)
 - **RTC**: DS1511Y real-time clock with battery-backed NVRAM
-- **Keyboard Controller**: ATmega1284P running AB Controller firmware
+- **Keyboard Controller**: ATmega1284 running AB Controller firmware
 - **Input**: PS/2 keyboard connector and 8×8 keyboard matrix header
 - **Joystick**: Two Atari 2600-compatible joystick ports (JOYSTICK A on VIA PORT A and JOYSTICK B on VIA PORT B — `J6` and `J8` on Rev 1.0, `J5` and `J7` on Rev 1.1), read as `JOY(2)` and `JOY(1)` respectively
 - **Clock**: 16 MHz DIP-14 full can oscillator (X1); drives the ATmega1284 at 16 MHz and, through the 74HC163 divider (U5), the 65C02, VIA, ACIA and SID at 1 MHz. Rev 1.0 has a PHI2 SELECT jumper (J1) that offers 2 MHz; keep it on 1 MHz (pins 1 and 2), because at 2 MHz the SID, whose clock is always 1 MHz, answers only every other CPU cycle
@@ -168,7 +168,7 @@ On Rev 1.0, fit the `/INT` diode first (see [Building a Rev 1.0](BOM.md#build-no
 ### AB Controller
 `Firmware/AB Controller/`
 
-Firmware for the ATmega1284P keyboard controller on the ACE board. Provides:
+Firmware for the ATmega1284 keyboard controller on the ACE board. Provides:
 
 - Dual keyboard input: PS/2 and 8×8 matrix keyboard simultaneously
 - PS/2 scancode to ASCII conversion
