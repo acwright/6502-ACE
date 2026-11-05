@@ -20555,12 +20555,6 @@
 		(uuid "9bf4c4c2-8d07-47c2-bf13-e04c3e13d2b6")
 	)
 	(junction
-		(at 425.45 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9c260129-213d-4330-9ab0-65f426bc528e")
-	)
-	(junction
 		(at 439.42 204.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -21099,6 +21093,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe0ca0b4-d656-478c-b90f-1edf09d64980")
+	)
+	(no_connect
+		(at 425.45 135.89)
+		(uuid "b415bca9-ddcf-421f-9790-aeace70cde8e")
 	)
 	(no_connect
 		(at 189.23 185.42)
@@ -22884,16 +22882,6 @@
 	)
 	(wire
 		(pts
-			(xy 429.26 134.62) (xy 429.26 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f5a94f5-07a7-4901-a2db-e4302beddf66")
-	)
-	(wire
-		(pts
 			(xy 369.57 172.72) (xy 372.11 172.72)
 		)
 		(stroke
@@ -23311,16 +23299,6 @@
 			(type default)
 		)
 		(uuid "2822fc8b-3747-4eaa-b7bb-2a78e25ef993")
-	)
-	(wire
-		(pts
-			(xy 431.8 133.35) (xy 431.8 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "297bfa22-317d-4379-93dd-a62b1a92ad5e")
 	)
 	(wire
 		(pts
@@ -27174,16 +27152,6 @@
 	)
 	(wire
 		(pts
-			(xy 425.45 134.62) (xy 429.26 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c901264-2b89-4267-82f1-b70c670c5fa1")
-	)
-	(wire
-		(pts
 			(xy 685.8 162.56) (xy 688.34 162.56)
 		)
 		(stroke
@@ -29381,16 +29349,6 @@
 			(type default)
 		)
 		(uuid "9beed33b-b547-4456-9ae0-4ab39206e198")
-	)
-	(wire
-		(pts
-			(xy 425.45 135.89) (xy 425.45 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9bf92b8a-0ed4-4620-892e-c5f6a301f9af")
 	)
 	(wire
 		(pts
@@ -50275,142 +50233,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 429.26 128.27 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "132d20e7-2a55-4d61-b0e1-c0b0a718d13b")
-		(property "Reference" "J4"
-			(at 437.642 127.762 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VDD"
-			(at 437.896 130.048 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 429.26 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 429.26 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Pin Header 1x2 2.54mm"
-			(at 429.26 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Other" ""
-			(at 429.26 128.27 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey" "S1011EC-40-ND"
-			(at 429.26 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser" "200-TSW14007TS"
-			(at 429.26 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Jameco" ""
-			(at 429.26 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 429.26 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a3dfeea0-5e10-4e60-945c-d92e146abb8b")
-		)
-		(pin "1"
-			(uuid "e862e729-e6ab-48d9-8bef-356166090599")
-		)
-		(instances
-			(project "ACE Board"
-				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "6502 Parts:AS6C62256")
 		(at 40.64 147.32 0)
 		(unit 1)
@@ -56199,86 +56021,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 425.45 134.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ce90aa9-70ba-4e26-83ad-fed6baf5c840")
-		(property "Reference" "#FLG01"
-			(at 425.45 132.715 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 425.4499 130.81 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 425.45 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 425.45 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 425.45 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "17ec7018-3800-4245-984d-2e582743e1e2")
-		)
-		(instances
-			(project "ACE Board"
-				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 680.72 129.54 0)
 		(unit 1)
@@ -61457,7 +61199,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6581"
+		(property "Value" "ARMSID"
 			(at 415.544 136.398 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -61887,7 +61629,7 @@
 				)
 			)
 		)
-		(property "Value" "16MHz"
+		(property "Value" "16 MHz"
 			(at 87.122 93.472 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65254,83 +64996,6 @@
 			(project "ACE Board"
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "U6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 431.8 134.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "80817c6d-2439-411a-b255-b085bfc3ea15")
-		(property "Reference" "#PWR010"
-			(at 431.8 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 435.356 136.398 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 431.8 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 431.8 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 431.8 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "26a7443b-597f-42fc-9417-fe75fea2c6ac")
-		)
-		(instances
-			(project "ACE Board"
-				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
-					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -75001,7 +74666,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.8432 Mhz"
+		(property "Value" "1.8432 MHz"
 			(at 551.688 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)

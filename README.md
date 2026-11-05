@@ -145,7 +145,8 @@ problem as U3, and needs the same diode on the card.
 - Removes Rev 1.0's `R1`, the `SOB` pull-up. `SOB` is tied straight to VCC.
 - Added `C20` (10µF electrolytic) at the power input for bulk decoupling capacitance.
 - Re-annotated. In Rev 1.0's terms: the connectors `J2`–`J13` are now `J1`–`J12`, `KEYBOARD` moves from `J22` to `J13`, and `J14`–`J21` keep their numbers. The diodes `D1`–`D3` are `D2`–`D4`. The resistors `R2`–`R5` are `R1`–`R4`, `R6`–`R14` keep their numbers, and `R16`–`R36` are `R15`–`R35` (Rev 1.0 has no `R15`). The capacitors `C20`–`C30` are `C21`–`C31`, with the new bulk capacitor at `C20`. The switches `SW17`–`SW69` are `SW18`–`SW70`, and `RESET` moves from `SW70` to `SW17`. The 74HC02 is `U13`.
-- The silkscreen says `SERIAL (DTE)` at `J11`, `MAX238CNG+` at `U10` and `ATmega1284` at `U6`. Rev 1.0's say `DB9 MALE (DTE)`, `MAX238xNG+` and `ATmega1284-P`.
+- The silkscreen says `SERIAL (DTE)` at `J11`, `MAX238CNG+` at `U10`, `ATmega1284` at `U6`, `ARMSID` at `U9`, `16 MHz` at `X1` and `1.8432 MHz` at `Y1`. Rev 1.0's say `DB9 MALE (DTE)`, `MAX238xNG+`, `ATmega1284-P`, `6581`, `16MHz` and `1.8432 Mhz`.
+- Removes Rev 1.0's `J5`, the `VDD` header for a real SID's 12 V supply, which the standard build never provided and which was never tested. `U9` pin 28 is left unconnected: the ARMSID needs nothing there. Its number, `J4` in Rev 1.1's annotation, is left unused.
 
 **Rev 1.0**
 

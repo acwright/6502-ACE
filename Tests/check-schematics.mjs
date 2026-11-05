@@ -55,8 +55,9 @@ const CONFIGS = [
     board: 'ACE Board/Rev 1.1/ACE Board.kicad_sch',
     // Re-annotated on 2026-09-24. RESET took SW17, so IO ENABLE moved up one.
     parts: { ioEnable: 'SW70' },
-    // The ACIA's value names the part tested on the family's machines (2026-10-26).
-    values: { acia: 'R6551AP' },
+    // The ACIA's and the SID's values name the parts tested on the family's machines
+    // (2026-10-26 and 2026-11-05).
+    values: { acia: 'R6551AP', sid: 'ARMSID' },
     rules: ['decode', 'clock', 'shared-lines']
   },
   {

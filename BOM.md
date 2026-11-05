@@ -34,6 +34,8 @@ These change what you buy or fit. The boards themselves stay as they were made.
 | Board | Revision | Parts | Issue |
 |---|---|---|---|
 | ACE Board | 1.0 | R1–R5, R27 | Fit 10k, not the 1k in the original files. See the build notes. |
+| ACE Board | 1.0 | J5 | `VDD` is the supply for a real SID at pin 28: 12 V for a 6581, 9 V for an 8580. The standard build does not provide it, and it has never been tested. Leave it unconnected with an ARMSID. |
+| ACE Board | 1.0 | U9 | The silk says 6581; fit an ARMSID. |
 | ACE Board | 1.0 | U4 | The silk says 65C51; fit an R6551AP. |
 | ACE Board | 1.0 | BT1 | `BAT-HLD-001-THM`, on the tested boards, is obsolete. `BAT-HLD-001-THM-TR` is its listed continuation, with no stock today and no board built with it yet. |
 | ACE Board | 1.1 | BT1 | `BAT-HLD-001-THM`, on the tested boards, is obsolete. `BAT-HLD-001-THM-TR` is its listed continuation, with no stock today and no board built with it yet. |
@@ -80,7 +82,6 @@ Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.1/digikey.csv), [mouser.csv](B
 | J1 | 1 | CTS EN | Pin header 1×3, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  |
 | J2 | 1 | RESET SW | Pin header 1×2, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  |
 | J3 | 1 | DCD EN | Pin header 1×3, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  |
-| J4 | 1 | VDD | Pin header 1×2, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  |
 | J5 | 1 | JOYSTICK A | Amphenol D09P33E4GX00LF | [609-1481-ND](https://www.digikey.com/en/products/filter?keywords=609-1481-ND) | [649-D09P33E4GX00LF](https://www.mouser.com/ProductDetail/649-D09P33E4GX00LF) |  |
 | J6 | 1 | PADDLES | Pin header 1×4, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  |
 | J7 | 1 | JOYSTICK B | Amphenol D09P33E4GX00LF | [609-1481-ND](https://www.digikey.com/en/products/filter?keywords=609-1481-ND) | [649-D09P33E4GX00LF](https://www.mouser.com/ProductDetail/649-D09P33E4GX00LF) |  |
@@ -113,7 +114,7 @@ Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.1/digikey.csv), [mouser.csv](B
 | U6 | 1 | ATmega1284 | Microchip Technology ATMEGA1284-PU | [ATMEGA1284-PU-ND](https://www.digikey.com/en/products/filter?keywords=ATMEGA1284-PU-ND) | [556-ATMEGA1284-PU](https://www.mouser.com/ProductDetail/556-ATMEGA1284-PU) |  |
 | U7 | 1 | AS6C62256 | Alliance Memory AS6C62256-55PCN | [1450-1033-ND](https://www.digikey.com/en/products/filter?keywords=1450-1033-ND) | [913-AS6C62256-55PCN](https://www.mouser.com/ProductDetail/913-AS6C62256-55PCN) |  |
 | U8 | 1 | AT28C256 | Microchip Technology AT28C256-15PU | [AT28C256-15PU-ND](https://www.digikey.com/en/products/filter?keywords=AT28C256-15PU-ND) | [556-AT28C25615PU](https://www.mouser.com/ProductDetail/556-AT28C25615PU) |  |
-| U9 | 1 | 6581 | 6581, DIP-28_W15.24mm |  |  | [Retrocomp](https://retrocomp.cz/produkt?id=2) |
+| U9 | 1 | ARMSID | Retrocomp ARMSID |  |  | [Retrocomp](https://retrocomp.cz/produkt?id=2) |
 | U10 | 1 | MAX238CNG+ | Maxim MAX238CNG+ | [MAX238CNG+-ND](https://www.digikey.com/en/products/filter?keywords=MAX238CNG%2B-ND) | [700-MAX238CNG](https://www.mouser.com/ProductDetail/700-MAX238CNG) |  |
 | U11, U12, U14, U16 | 4 | 74HC00 | Texas Instruments SN74HC00N | [296-1563-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1563-5-ND) | [595-SN74HC00N](https://www.mouser.com/ProductDetail/595-SN74HC00N) |  |
 | U13 | 1 | 74HC02 | Texas Instruments SN74HC02N | [296-1564-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1564-5-ND) | [595-SN74HC02N](https://www.mouser.com/ProductDetail/595-SN74HC02N) |  |
@@ -122,8 +123,8 @@ Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.1/digikey.csv), [mouser.csv](B
 | U18 | 1 | DS1511Y | Maxim DS1511Y+ | [DS1511Y+-ND](https://www.digikey.com/en/products/filter?keywords=DS1511Y%2B-ND) | [700-DS1511Y](https://www.mouser.com/ProductDetail/700-DS1511Y) |  |
 | U19, U20 | 2 | 74HC138 | Texas Instruments SN74HC138N | [296-1575-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1575-5-ND) | [595-SN74HC138N](https://www.mouser.com/ProductDetail/595-SN74HC138N) |  |
 | U21, U22 | 2 | 74HC573 | Texas Instruments CD74HC573E | [296-12815-5-ND](https://www.digikey.com/en/products/filter?keywords=296-12815-5-ND) | [595-CD74HC573E](https://www.mouser.com/ProductDetail/595-CD74HC573E) |  |
-| X1 | 1 | 16MHz | ECS Inc. ECS-100AX-160 | [X947-ND](https://www.digikey.com/en/products/filter?keywords=X947-ND) | [520-TCF1600-X](https://www.mouser.com/ProductDetail/520-TCF1600-X) |  |
-| Y1 | 1 | 1.8432 Mhz | Abracon LLC AB-1.8432MHZ-B2 | [535-9009-ND](https://www.digikey.com/en/products/filter?keywords=535-9009-ND) | [815-AB-1.8432-B2](https://www.mouser.com/ProductDetail/815-AB-1.8432-B2) |  |
+| X1 | 1 | 16 MHz | ECS Inc. ECS-100AX-160 | [X947-ND](https://www.digikey.com/en/products/filter?keywords=X947-ND) | [520-TCF1600-X](https://www.mouser.com/ProductDetail/520-TCF1600-X) |  |
+| Y1 | 1 | 1.8432 MHz | Abracon LLC AB-1.8432MHZ-B2 | [535-9009-ND](https://www.digikey.com/en/products/filter?keywords=535-9009-ND) | [815-AB-1.8432-B2](https://www.mouser.com/ProductDetail/815-AB-1.8432-B2) |  |
 | U4, U7, U9, U18 | 4 | Socket | IC socket, 28-pin, 0.6 in | [3M5481-ND](https://www.digikey.com/en/products/filter?keywords=3M5481-ND) | [517-4828-6004-CP](https://www.mouser.com/ProductDetail/517-4828-6004-CP) | |
 | U8 | 1 | Socket | 28-pin ZIF socket, or an ordinary 28-pin socket | [3M2802-ND](https://www.digikey.com/en/products/filter?keywords=3M2802-ND) | [517-228-1277-00](https://www.mouser.com/ProductDetail/517-228-1277-00) | |
 | U21, U22 | 2 | Socket | IC socket, 20-pin, 0.3 in | [3M5477-ND](https://www.digikey.com/en/products/filter?keywords=3M5477-ND) | [517-4820-3004-CP](https://www.mouser.com/ProductDetail/517-4820-3004-CP) | |
@@ -142,7 +143,7 @@ Pin headers are cut from strips, and the cart files count whole strips.
 - **J21:** Right-angle socket on the ACE Board; the CF Adapter plugs in here. Digi-Key only.
 - **SW1–SW16, SW18–SW68:** Cherry MX2A RGB Blue, clear housing, as on the owner's Amazon kit. MX1A-E1NN (black housing) is the deeper-stocked alternative; Digi-Key CH196-ND, Mouser 540-MX1A-E1NN.
 - **U4:** Rockwell R6551AP, out of production. Do not substitute a W65C51.
-- **U9:** SID 6581, out of production
+- **U9:** A modern replacement for the MOS 6581 SID, which is out of production. Every tested build uses one. A real 6581 also needs 12 V at pin 28, which the standard build does not provide.
 
 ### ACE Board Rev 1.0
 
@@ -195,7 +196,7 @@ Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.0/digikey.csv), [mouser.csv](B
 | U6 | 1 | ATmega1284-P | Microchip Technology ATMEGA1284-PU | [ATMEGA1284-PU-ND](https://www.digikey.com/en/products/filter?keywords=ATMEGA1284-PU-ND) | [556-ATMEGA1284-PU](https://www.mouser.com/ProductDetail/556-ATMEGA1284-PU) |  |
 | U7 | 1 | AS6C62256 | Alliance Memory AS6C62256-55PCN | [1450-1033-ND](https://www.digikey.com/en/products/filter?keywords=1450-1033-ND) | [913-AS6C62256-55PCN](https://www.mouser.com/ProductDetail/913-AS6C62256-55PCN) |  |
 | U8 | 1 | AT28C256 | Microchip Technology AT28C256-15PU | [AT28C256-15PU-ND](https://www.digikey.com/en/products/filter?keywords=AT28C256-15PU-ND) | [556-AT28C25615PU](https://www.mouser.com/ProductDetail/556-AT28C25615PU) |  |
-| U9 | 1 | 6581 | 6581, DIP-28_W15.24mm |  |  | [Retrocomp](https://retrocomp.cz/produkt?id=2) |
+| U9 | 1 | 6581 | Retrocomp ARMSID |  |  | [Retrocomp](https://retrocomp.cz/produkt?id=2) |
 | U10 | 1 | MAX238xNG+ | Maxim MAX238CNG+ | [MAX238CNG+-ND](https://www.digikey.com/en/products/filter?keywords=MAX238CNG%2B-ND) | [700-MAX238CNG](https://www.mouser.com/ProductDetail/700-MAX238CNG) |  |
 | U11, U14, U16 | 3 | 74HC00 | Texas Instruments SN74HC00N | [296-1563-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1563-5-ND) | [595-SN74HC00N](https://www.mouser.com/ProductDetail/595-SN74HC00N) |  |
 | U15 | 1 | AS6C4008 | Alliance Memory AS6C4008-55PCN | [1450-1027-ND](https://www.digikey.com/en/products/filter?keywords=1450-1027-ND) | [913-AS6C4008-55PCN](https://www.mouser.com/ProductDetail/913-AS6C4008-55PCN) |  |
@@ -227,7 +228,7 @@ U12 and U13 are not listed: fit the ACE RAM Patch Rev 1.1 in their sockets. See 
 - **J21:** Right-angle socket on the ACE Board; the CF Adapter plugs in here. Digi-Key only.
 - **SW1–SW67:** Cherry MX2A RGB Blue, clear housing, as on the owner's Amazon kit. MX1A-E1NN (black housing) is the deeper-stocked alternative; Digi-Key CH196-ND, Mouser 540-MX1A-E1NN.
 - **U4:** Rockwell R6551AP, out of production. Do not substitute a W65C51.
-- **U9:** SID 6581, out of production
+- **U9:** A modern replacement for the MOS 6581 SID, which is out of production. Every tested build uses one. A real 6581 also needs 12 V at pin 28, which the standard build does not provide.
 
 
 ## ACE CF Adapter
