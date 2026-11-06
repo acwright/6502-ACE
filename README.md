@@ -30,6 +30,7 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [Production](#production)
 - [Schematics](#schematics)
 - [Shared lines](#shared-lines)
+- [Extra pins: `EXP0`–`EXP3` and `HRDB`](#extra-pins-exp0exp3-and-hrdb)
 - [Docs](#docs)
 - [Checking the schematics](#checking-the-schematics)
 - [Checking the banked RAM](#checking-the-banked-ram)
@@ -216,6 +217,19 @@ The same holds where a board has its own reset circuit. A reset switch, its time
 A few chips have a pull-up of their own inside the chip, such as an ATmega's reset pin. Where such a pin is wired to `RESB`, its pull-up of 30–60kΩ sits in parallel with the 10kΩ one. That's harmless, because whatever pulls `RESB` low can sink the extra current many times over.
 
 A revision that doesn't follow this yet says so in its known issues in [BOM.md](BOM.md), with what to fit or remove.
+
+## Extra pins: `EXP0`–`EXP3` and `HRDB`
+
+`EXP` stands for "extra pin". Four pins of the 6502 bus are left for a builder's own use: pin 4 is `EXP1`, pin 6 is `EXP0`, pin 19 is `EXP3` and pin 21 is `EXP2`.
+
+Pins 4 and 6 have a second job. A cartridge ties both of them to GND. That pulls `HRDB` ("High ROM disable bar", active low) low on the board with the ROM, which takes `$C000–$FFFF` away from the ROM so that the cartridge answers there instead. So in a build that uses cartridges, pins 4 and 6 are reserved for `HRDB`, and nothing else may drive them. They are free as `EXP1` and `EXP0` only in a build that never uses cartridges. `EXP2` and `EXP3` are always free.
+
+How the boards treat pins 4 and 6:
+
+- **The ACE Board and the KIM Board** join them to their ROM's `HRDB` input, and their silk says `HRDB`. The VCS Main Board joins them the same way from Rev 1.1.
+- **The COB Memory Card** joins them to its `HRDB` only through jumpers: fit two shunts on J2, or bridge JP1 and JP2, in a COB that takes cartridges. It is the only board with these jumpers, because the COB is the experimenter's build. The VCS Main Board Rev 1.0 had them too (J5, or JP3 and JP4); fit them, because the VCS always takes cartridges.
+- **A cartridge** (the ROM Cart, the Flash Cart, the KIM Keypad Card) ties them to GND.
+- **A board that only carries the bus through**, such as a backplane or a helper, calls them `EXP1` and `EXP0`, as its silk does, and a note on its schematic says what they carry.
 
 ## Docs
 `Docs/`
