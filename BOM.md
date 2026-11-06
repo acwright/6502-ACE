@@ -7,6 +7,7 @@ Every part for every board in this repository, by revision, with supplier number
 1. **Find your board and revision** in [Which revision do I have?](#which-revision-do-i-have)
 2. **Read the [known issues](#known-issues)** for that revision, because they change what you buy or fit.
 3. **Order from the table for your revision.** Each revision links to files you can upload to Digi-Key and Mouser. Those files are for one board, so multiply the quantities if you're building more. If a site asks which column is which, the first column is its part number and the third is the quantity. A cart only holds what that supplier sells, so check the table for anything else, such as chips from Jameco.
+4. **Set the jumpers** before the first power-up. The README's [Jumpers](README.md#jumpers) section says which ones each board needs, and the table for your revision lists the shunts.
 
 **Pre-soldered parts.** Some boards on Tindie come with their surface-mount parts already soldered. Parts marked **Yes** under Pre-soldered are the ones soldered on those boards. Check your listing, because others are sold as a bare PCB. Each revision that has such parts also has a `through-hole` cart that leaves them out. To solder a bare board yourself, use the full cart.
 
@@ -136,6 +137,7 @@ Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.1/digikey.csv), [mouser.csv](B
 | U1–U3, U6 | 4 | Socket | IC socket, 40-pin, 0.6 in | [3M5471-ND](https://www.digikey.com/en/products/filter?keywords=3M5471-ND) | [517-4840-6000-CP](https://www.mouser.com/ProductDetail/517-4840-6000-CP) | |
 | U15 | 1 | Socket | IC socket, 32-pin, 0.6 in | [3M5470-ND](https://www.digikey.com/en/products/filter?keywords=3M5470-ND) | [517-4832-6000-CP](https://www.mouser.com/ProductDetail/517-4832-6000-CP) | |
 | U5, U19, U20 | 3 | Socket | IC socket, 16-pin, 0.3 in | [3M5475-ND](https://www.digikey.com/en/products/filter?keywords=3M5475-ND) | [517-4816-3004-CP](https://www.mouser.com/ProductDetail/517-4816-3004-CP) | |
+| J1, J3 | 2 | | Shunt, 2.54 mm | [S9337-ND](https://www.digikey.com/en/products/filter?keywords=S9337-ND) |  |  |
 
 Pin headers are cut from strips, and the cart files count whole strips.
 
@@ -219,6 +221,7 @@ Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.0/digikey.csv), [mouser.csv](B
 | U5, U19, U20 | 3 | Socket | IC socket, 16-pin, 0.3 in | [3M5475-ND](https://www.digikey.com/en/products/filter?keywords=3M5475-ND) | [517-4816-3004-CP](https://www.mouser.com/ProductDetail/517-4816-3004-CP) | |
 | Added | 1 | | Panasonic EEA-GA1C100, 10 µF, on the underside across J19 | [P14482-ND](https://www.digikey.com/en/products/filter?keywords=P14482-ND) | [667-EEA-GA1C100](https://www.mouser.com/ProductDetail/667-EEA-GA1C100) |  |
 | Added | 1 | | Vishay BAT85S-TR, for the video card /INT | [BAT85SCT-ND](https://www.digikey.com/en/products/filter?keywords=BAT85SCT-ND) | [78-BAT85S](https://www.mouser.com/ProductDetail/78-BAT85S) |  |
+| J1, J2, J4 | 3 | | Shunt, 2.54 mm | [S9337-ND](https://www.digikey.com/en/products/filter?keywords=S9337-ND) |  |  |
 
 Pin headers are cut from strips, and the cart files count whole strips.
 
