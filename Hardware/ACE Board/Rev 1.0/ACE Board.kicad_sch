@@ -33585,7 +33585,7 @@
 		(uuid "f9fea8e2-3abc-45cf-8e96-a218e9b1255a")
 	)
 	(global_label "D5"
-		(shape bidirectional)
+		(shape output)
 		(at 137.16 175.26 0)
 		(effects
 			(font
@@ -35933,7 +35933,7 @@
 		)
 	)
 	(global_label "D2"
-		(shape bidirectional)
+		(shape output)
 		(at 95.25 177.8 180)
 		(effects
 			(font
@@ -37799,7 +37799,7 @@
 		)
 	)
 	(global_label "D6"
-		(shape bidirectional)
+		(shape output)
 		(at 137.16 172.72 0)
 		(effects
 			(font
@@ -40173,7 +40173,7 @@
 		)
 	)
 	(global_label "D3"
-		(shape bidirectional)
+		(shape output)
 		(at 137.16 180.34 0)
 		(effects
 			(font
@@ -40309,7 +40309,7 @@
 		)
 	)
 	(global_label "D4"
-		(shape bidirectional)
+		(shape output)
 		(at 137.16 177.8 0)
 		(effects
 			(font
@@ -40331,7 +40331,7 @@
 		)
 	)
 	(global_label "D7"
-		(shape bidirectional)
+		(shape output)
 		(at 137.16 170.18 0)
 		(effects
 			(font
@@ -40625,7 +40625,7 @@
 		)
 	)
 	(global_label "D1"
-		(shape bidirectional)
+		(shape output)
 		(at 95.25 175.26 180)
 		(effects
 			(font
@@ -42763,7 +42763,7 @@
 		)
 	)
 	(global_label "D0"
-		(shape bidirectional)
+		(shape output)
 		(at 95.25 172.72 180)
 		(effects
 			(font
