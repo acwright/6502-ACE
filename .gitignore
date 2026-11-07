@@ -16,3 +16,9 @@ Thumbs.db
 VDP-ASSESSMENT.md
 VDP-PLAN.md
 /PLAN.md
+
+# Tools/: generated files and caches
+Tools/work/
+__pycache__/
+Tools/build-notes/svg/
+Tools/build-notes/notes.html

@@ -1,0 +1,9 @@
+{
+ "_about": "What each revision's PCB looked like when its images were rendered. Tools/board-images/render.py writes it, and derived-check.py compares.",
+ "ACE|ACE Board|1.0": "6ad7eb97e6df0ccc127598fc7773632289281cfe",
+ "ACE|ACE Board|1.1": "9cc9c8ffe000c9ef194e84cd598c53d2fdc6b8f8",
+ "ACE|ACE CF Adapter|1.0": "56ce1de60b9da9420c724488a5c10b65091e0b4e",
+ "ACE|ACE CF Adapter|1.1": "58358d471e84ca25c18c218e4e63d2348fd30d27",
+ "ACE|ACE RAM Patch|1.0": "819db3abfe96a0aa349bc9f9703cd0865e435195",
+ "ACE|ACE RAM Patch|1.1": "42cde7449ade891641d0591db4d40cbbe38c6e44"
+}

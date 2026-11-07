@@ -1,0 +1,58 @@
+{
+ "_about": "What is known about each revision beyond its files: made (JLCPCB's order, its date, and the commit it was made from, byte-matched to the export in git), drawn, never made, ordered, notes, tested, and the label each revision carries. Tools/revision-audit/register.py writes REVISIONS.md from it.",
+ "made": {
+  "ACE|ACE Board|1.0": [
+   "Y91",
+   "2026-05-13",
+   "6502-ACE 83b1b1a"
+  ],
+  "ACE|ACE CF Adapter|1.0": [
+   "Y89",
+   "2026-05-10",
+   "6502-ACE ef6370e"
+  ],
+  "ACE|ACE RAM Patch|1.0": [
+   "Y94",
+   "2026-06-21",
+   "728f593"
+  ],
+  "ACE|ACE RAM Patch|1.1": [
+   "Y99",
+   "2026-09-24",
+   "a216b17"
+  ]
+ },
+ "drawn": [
+  "ACE|ACE Board|1.1",
+  "ACE|ACE CF Adapter|1.1"
+ ],
+ "never": [],
+ "ordered": {},
+ "made_unchecked": {},
+ "notes": {},
+ "tested": {
+  "ACE|ACE RAM Patch|1.1": "Yes, 2026-11-03",
+  "ACE|ACE RAM Patch|1.0": "Failed: Rev 1.1 replaces it",
+  "ACE|ACE Board|1.0": "Yes",
+  "ACE|ACE CF Adapter|1.0": "Yes"
+ },
+ "_labels": "Tested, Proven design or Untested, with a one-line reason. A revision whose 'tested' entry starts with Yes is Tested unless it is listed here; every other revision must be listed. Tools/revision-audit/labels.py reads this for REVISIONS.md, BOM.md and the README.",
+ "labels": {
+  "ACE|ACE Board|1.1": [
+   "Untested",
+   "A new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), 1 MHz only, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V"
+  ],
+  "ACE|ACE CF Adapter|1.1": [
+   "Proven design",
+   "Annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet"
+  ],
+  "ACE|ACE RAM Patch|1.0": [
+   "Tested",
+   "Built and tested: its decode is wrong, and Rev 1.1 replaces it"
+  ],
+  "ACE|ACE RAM Patch|1.1": [
+   "Tested",
+   "Built and tested on an ACE Board Rev 1.0, 2026-11-03"
+  ]
+ }
+}

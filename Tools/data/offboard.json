@@ -1,0 +1,5 @@
+{
+ "_about": "This repository's exceptions to Tools/offboard/offboard.json: headers that aren't off-board headers though their name says so (not_offboard_refs), and off-board headers accepted on another connector, with the reason (connector_accepted).",
+ "not_offboard_refs": {},
+ "connector_accepted": {}
+}
