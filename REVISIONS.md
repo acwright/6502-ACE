@@ -4,22 +4,28 @@ Every revision of every board in this repository, and what is known about each. 
 
 **Status** says what has happened to a revision:
 
-- **Made, matches order:** JLCPCB's own copy of the order is byte-identical to the production zip here, and the PCB file regenerates the same copper, mask, outline and holes. This compares files with the order. It says nothing about whether the board works: that's **Tested**.
+- **Made, matches order:** JLCPCB's own copy of the order is byte-identical to the production zip here, and the PCB file regenerates the same copper, mask, outline and holes. This compares files with the order. It says nothing about whether the board works: that's the **Label**.
 - **Made, not compared:** the board exists, but its files haven't been compared with an order.
 - **Ordered:** placed, and not yet arrived.
 - **Drawn:** the files are complete, and the board hasn't been ordered.
 - **Never made**, or **To confirm** where nothing on record says either way.
 
+**Label** says whether a builder can rely on a revision. Make the newest revision of a board, and check its label first:
+
+- **Tested:** This revision was built and tested.
+- **Proven design:** Not built at this revision, but its circuit is a tested revision's. The only changes are silkscreen text, part values, mounting holes, outline clean-up, capacitor pitch, socket outlines, a footprint swap with the same holes, a solder jumper's default, or tracks rerouted with DRC and the netlist check passing. A builder can treat it as tested.
+- **Untested:** The circuit, the power path or the layout changed in a way that only a built board proves, or the board has never been built at all.
+
 **Holes** is how far the corner mounting holes sit from the board's edges. The standard is 6 mm, and 5 mm on the ACE Board, the CF Adapter and the Keyboard Helper. A dash means a card or cart, which has no corner holes.
 
-| Board | Rev | Status | Tested | Order | Ordered | Made from | Tindie stock | Size (mm) | Holes | Top panel | Enclosure | Notes |
+| Board | Rev | Status | Label | Order | Ordered | Made from | Tindie stock | Size (mm) | Holes | Top panel | Enclosure | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| ACE Board | 1.0 | Made, matches order | Yes | Y91 | 2026-05-13 | `6502-ACE 83b1b1a` | — | 335×250 | 5 mm | yes | — |  |
-| ACE Board | 1.1 | Drawn | — |  |  |  | — | 335×250 | 5 mm | yes | — |  |
-| ACE CF Adapter | 1.0 | Made, matches order | Yes | Y89 | 2026-05-10 | `6502-ACE ef6370e` | — | 75×50 | 5 mm | yes | — |  |
-| ACE CF Adapter | 1.1 | Drawn | — |  |  |  | — | 75×50 | 5 mm | yes | — |  |
-| ACE RAM Patch | 1.0 | Made, matches order | Failed: Rev 1.1 replaces it | Y94 | 2026-06-21 | `728f593` | — | 46×22 | — | — | — |  |
-| ACE RAM Patch | 1.1 | Made, matches order | Yes, 2026-11-03 | Y99 | 2026-09-24 | `a216b17` | — | 92.5×13 | — | — | — |  |
+| ACE Board | 1.0 | Made, matches order | **Tested** | Y91 | 2026-05-13 | `6502-ACE 83b1b1a` | — | 335×250 | 5 mm | yes | — |  |
+| ACE Board | 1.1 | Drawn | **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), 1 MHz only, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V |  |  |  | — | 335×250 | 5 mm | yes | — |  |
+| ACE CF Adapter | 1.0 | Made, matches order | **Tested** | Y89 | 2026-05-10 | `6502-ACE ef6370e` | — | 75×50 | 5 mm | yes | — |  |
+| ACE CF Adapter | 1.1 | Drawn | **Proven design**: annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet |  |  |  | — | 75×50 | 5 mm | yes | — |  |
+| ACE RAM Patch | 1.0 | Made, matches order | **Tested**: built and tested: its decode is wrong, and Rev 1.1 replaces it | Y94 | 2026-06-21 | `728f593` | — | 46×22 | — | — | — |  |
+| ACE RAM Patch | 1.1 | Made, matches order | **Tested**: built and tested on an ACE Board Rev 1.0, 2026-11-03 | Y99 | 2026-09-24 | `a216b17` | — | 92.5×13 | — | — | — |  |
 
 JLCPCB's orders were checked on 2026-11-04: each production zip marked *Made, matches order* was compared byte for byte with JLCPCB's copy, and its PCB regenerated to the same copper, mask, outline and holes. Each time this table is written, every PCB is checked again against its production zip, for copper and drill holes. Tindie stock is from the listings as saved on 2026-10-23.
 

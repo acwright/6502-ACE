@@ -19,14 +19,16 @@ Every part for every board in this repository, by revision, with supplier number
 
 Look on the board: the silk prints the revision next to the copyright line. [REVISIONS.md](REVISIONS.md) has the facts for each one, and its history lists what changed between them.
 
-| Board | Revision | What the silk says | Status |
-|---|---|---|---|
-| [ACE Board](#ace-board) | 1.0 | Rev 1.0 | Made, tested |
-| [ACE Board](#ace-board) | 1.1 | Rev 1.1 | Drawn, not made yet |
-| [ACE CF Adapter](#ace-cf-adapter) | 1.0 | Rev 1.0 | Made, tested |
-| [ACE CF Adapter](#ace-cf-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet |
-| [ACE RAM Patch](#ace-ram-patch) | 1.0 | Rev 1.0 | Made. Failed: Rev 1.1 replaces it |
-| [ACE RAM Patch](#ace-ram-patch) | 1.1 | Rev 1.1 | Made. Yes, 2026-11-03 |
+**To make a new board, make the newest revision**, and check its label first. The README's [Which revision to make](README.md#which-revision-to-make) explains the three labels: **Tested**, **Proven design** and **Untested**.
+
+| Board | Revision | What the silk says | Status | Label |
+|---|---|---|---|---|
+| [ACE Board](#ace-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
+| [ACE Board](#ace-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), 1 MHz only, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V |
+| [ACE CF Adapter](#ace-cf-adapter) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
+| [ACE CF Adapter](#ace-cf-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet |
+| [ACE RAM Patch](#ace-ram-patch) | 1.0 | Rev 1.0 | Made. Failed: Rev 1.1 replaces it | **Tested**: built and tested: its decode is wrong, and Rev 1.1 replaces it |
+| [ACE RAM Patch](#ace-ram-patch) | 1.1 | Rev 1.1 | Made. Yes, 2026-11-03 | **Tested**: built and tested on an ACE Board Rev 1.0, 2026-11-03 |
 
 ## Known issues
 
@@ -69,7 +71,7 @@ Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev
 
 ### ACE Board Rev 1.1
 
-Drawn, not made yet.
+Drawn, not made yet. **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), 1 MHz only, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V.
 
 Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20Board/Rev%201.1/mouser.csv)
 
@@ -152,7 +154,7 @@ Pin headers are cut from strips, and the cart files count whole strips.
 
 ### ACE Board Rev 1.0
 
-Made, tested.
+Made, tested. **Tested**.
 
 Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.0/digikey.csv), [mouser.csv](BOM/ACE%20Board/Rev%201.0/mouser.csv)
 
@@ -241,7 +243,7 @@ U12 and U13 are not listed: fit the ACE RAM Patch Rev 1.1 in their sockets. See 
 
 ### ACE CF Adapter Rev 1.1
 
-Drawn, not made yet.
+Drawn, not made yet. **Proven design**: annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet.
 
 Cart files: [digikey.csv](BOM/ACE%20CF%20Adapter/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20CF%20Adapter/Rev%201.1/mouser.csv)
 
@@ -259,7 +261,7 @@ Cart files: [digikey.csv](BOM/ACE%20CF%20Adapter/Rev%201.1/digikey.csv), [mouser
 
 ### ACE CF Adapter Rev 1.0
 
-Made, tested.
+Made, tested. **Tested**.
 
 Cart files: [digikey.csv](BOM/ACE%20CF%20Adapter/Rev%201.0/digikey.csv), [mouser.csv](BOM/ACE%20CF%20Adapter/Rev%201.0/mouser.csv)
 
@@ -280,7 +282,7 @@ Cart files: [digikey.csv](BOM/ACE%20CF%20Adapter/Rev%201.0/digikey.csv), [mouser
 
 ### ACE RAM Patch Rev 1.1
 
-Made. Yes, 2026-11-03.
+Made. Yes, 2026-11-03. **Tested**: built and tested on an ACE Board Rev 1.0, 2026-11-03.
 
 Cart files: [digikey.csv](BOM/ACE%20RAM%20Patch/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20RAM%20Patch/Rev%201.1/mouser.csv)
 
@@ -293,7 +295,7 @@ Cart files: [digikey.csv](BOM/ACE%20RAM%20Patch/Rev%201.1/digikey.csv), [mouser.
 
 ### ACE RAM Patch Rev 1.0
 
-Made. Failed: Rev 1.1 replaces it.
+Made. Failed: Rev 1.1 replaces it. **Tested**: built and tested: its decode is wrong, and Rev 1.1 replaces it.
 
 Cart files: [digikey.csv](BOM/ACE%20RAM%20Patch/Rev%201.0/digikey.csv), [mouser.csv](BOM/ACE%20RAM%20Patch/Rev%201.0/mouser.csv)
 
