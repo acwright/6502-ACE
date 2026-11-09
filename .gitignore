@@ -22,3 +22,9 @@ Tools/work/
 __pycache__/
 Tools/build-notes/svg/
 Tools/build-notes/notes.html
+
+# LightBurn and PrusaSlicer files are set up for the owner's machines. The SVG and STL files are what a
+# builder cuts and prints from.
+*.lbrn2
+*.3mf
+*.bgcode
