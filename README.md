@@ -111,7 +111,9 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - **Keyboard Controller**: ATmega1284 running AB Controller firmware
 - **Input**: PS/2 keyboard connector and 8×8 keyboard matrix header
 - **Joystick**: Two Atari 2600-compatible joystick ports (JOYSTICK A on VIA PORT A and JOYSTICK B on VIA PORT B, `J6` and `J8`), read as `JOY(2)` and `JOY(1)` respectively
-- **Clock**: 16 MHz DIP-14 full can oscillator (X1); drives the ATmega1284 at 16 MHz and, through the 74HC163 divider (U5), the 65C02, VIA, ACIA and SID at 1 MHz. Rev 1.0 has a PHI2 SELECT jumper (J1) that offers 2 MHz; keep it on 1 MHz (pins 1 and 2), because at 2 MHz the SID, whose clock is always 1 MHz, answers only every other CPU cycle
+- **Clock**: 16 MHz DIP-14 full can oscillator (X1); drives the ATmega1284 at 16 MHz and, through the 74HC163 divider (U5), the 65C02, VIA, ACIA and SID at 1 MHz, the speed every AC6502 is tested at. The PHI2 SELECT jumper (J1) offers 2 MHz on pins 2 and 3.
+  - **Rev 1.0: keep J1 on 1 MHz** (pins 1 and 2). Its SID is clocked from the 1 MHz output whatever J1 says, so at 2 MHz it answers only every other CPU cycle.
+  - **Rev 1.1: 2 MHz is an option at the builder's risk.** The CPU, VIA, ACIA and SID all follow J1. The limit found at 2 MHz, tested on 2026-11-11, is the RAM letting go of the data bus too soon after `PHI2` falls: a fast RAM (the Alliance AS6C62256 at U7) with a fast-releasing 74HC00 lot at U14, the gate that makes `RB` and `WB`, misread at 2 MHz. Rev 1.1 fits a 74HCT00 at U14, which ends `RB` and `WB` a few nanoseconds later; it ran an hour's read-and-write soak at 2 MHz clean. A slower RAM (a Hitachi HM62256LP-70) also cures it. The cure was found by testing, not measured with a scope. The R6551AP is rated for 2 MHz, with no margin, and read back clean at that speed. The BIOS misses the CompactFlash card at boot at 2 MHz until its next release.
 
 **The serial handshake jumpers.** `CTS EN` and `DCD EN` (J2 and J4) both default to **ground**, and
 that is how the boards were built. Ground means the line is permanently asserted, so the ACIA can
@@ -168,7 +170,7 @@ Each revision carries one of three labels:
 
 | Board | Newest revision | Label | Why |
 |---|---|---|---|
-| ACE Board | 1.1 | **Untested** | A new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), 1 MHz only, a 74HCT00 at U14, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V. |
+| ACE Board | 1.1 | **Untested** | A new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), a 74HCT00 at U14, the PHI2 SELECT jumper with the SID on the CPU's clock, the ACIA's crystal jumpers, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V. |
 | ACE CF Adapter | 1.1 | **Proven design** | Annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet. |
 | ACE RAM Patch | 1.1 | **Tested** | Built and tested on an ACE Board Rev 1.0, 2026-11-03. |
 <!-- End of which revision to make -->
@@ -280,6 +282,8 @@ Where a header needs a shunt, the board's BOM lists it.
 | 1.0 | J1 | `PHI2 SELECT`: the CPU clock, 1 MHz (pins 1 and 2) or 2 MHz (pins 2 and 3). | No shunt. | Fit the shunt on pins 1 and 2, 1 MHz: at 2 MHz the sound chip, whose clock is always 1 MHz, answers only every other cycle. With no shunt the CPU has no clock. | To run |
 | 1.0, 1.1 | J2 | `CTS`: where the ACIA's `CTS` comes from. | No shunt. | Fit the shunt on pins 1 and 2, ground, as the boards are built. On pins 2 and 3 it takes `CTS` from the cable, and a cable that doesn't assert it stops the transmitter. With no shunt the input floats, and serial may not work. | For serial |
 | 1.0, 1.1 | J4 | `DCD`: where the ACIA's `DCD` comes from. | No shunt. | Fit the shunt on pins 1 and 2, ground, as the boards are built. On pins 2 and 3 it takes `DCD` from the cable, and a cable that doesn't assert it stops the receiver. With no shunt the input floats, and serial may not work. | For serial |
+| 1.1 | J1 | `PHI2 SELECT`: the CPU clock, 1 MHz (pins 1 and 2) or 2 MHz (pins 2 and 3). | No shunt. | Fit the shunt on pins 1 and 2, 1 MHz, the speed every AC6502 is tested at. Pins 2 and 3 run the CPU, VIA, ACIA and sound chip at 2 MHz together, at the builder's risk: see *Clock*. With no shunt the CPU has no clock. | To run |
+| 1.1 | JP1, JP2 | Options for the ACIA's crystal: JP1 puts R38 (1M) across it, and JP2 adds C32 (22pF) to ground. | Both open. | Leave them open for the R6551AP, the part the board is tested with. Close both for a Rockwell R65C51P1 or R65C51P2, whose oscillator won't start on the bare crystal (an R65C51P2 ran clean this way on a Serial Card on 2026-11-11), or for a WDC W65C51. |  |
 
 <!-- End of jumpers -->
 

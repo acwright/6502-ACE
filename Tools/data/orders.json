@@ -40,7 +40,7 @@
  "labels": {
   "ACE|ACE Board|1.1": [
    "Untested",
-   "A new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), 1 MHz only, a 74HCT00 at U14, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V"
+   "A new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), a 74HCT00 at U14, the PHI2 SELECT jumper with the SID on the CPU's clock, the ACIA's crystal jumpers, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V"
   ],
   "ACE|ACE CF Adapter|1.1": [
    "Proven design",

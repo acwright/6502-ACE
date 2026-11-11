@@ -53,11 +53,22 @@ const CONFIGS = [
   {
     name: 'ACE Board Rev 1.1',
     board: 'ACE Board/Rev 1.1/ACE Board.kicad_sch',
-    // Rev 1.0's designators throughout (re-annotated back on 2026-11-11).
+    // Rev 1.0's designators throughout (re-annotated back on 2026-11-11). J1, PHI2 SELECT, is
+    // back (2026-11-11): checked on its 1 MHz pins here, and on 2 MHz in the next config.
+    jumpers: { J1: [1, 2] },
     // The ACIA's and the SID's values name the parts tested on the family's machines
     // (2026-10-26 and 2026-11-05).
     values: { acia: 'R6551AP', sid: 'ARMSID' },
     rules: ['decode', 'clock', 'shared-lines']
+  },
+  {
+    // At 2 MHz (builder's risk) the SID must still share the CPU's clock: Rev 1.0's SID
+    // stayed on the 1 MHz tap and missed every other access.
+    name: 'ACE Board Rev 1.1, J1 on 2 MHz',
+    board: 'ACE Board/Rev 1.1/ACE Board.kicad_sch',
+    values: { acia: 'R6551AP', sid: 'ARMSID' },
+    jumpers: { J1: [2, 3] },
+    rules: ['clock-2mhz']
   },
   {
     // Rev 1.0's schematic is the board that was made, so it keeps the PHI2 SELECT jumper
@@ -257,7 +268,7 @@ const nor = ins => ins.includes(1) ? 0 : ins.every(v => v === 0) ? 1 : X
 
 const GATES = {
   '74HC00': { fn: nand, units: [[[1, 2], 3], [[4, 5], 6], [[9, 10], 8], [[12, 13], 11]] },
-  // The same gates with TTL input thresholds: U14 on Rev 1.1 (P11, 2026-11-11). Logically a 74HC00.
+  // The same gates with TTL input thresholds: U14 on Rev 1.1 (2026-11-11). Logically a 74HC00.
   '74HCT00': { fn: nand, units: [[[1, 2], 3], [[4, 5], 6], [[9, 10], 8], [[12, 13], 11]] },
   '74HC02': { fn: nor, units: [[[2, 3], 1], [[5, 6], 4], [[8, 9], 10], [[11, 12], 13]] },
   '74HC30': { fn: nand, units: [[[1, 2, 3, 4, 5, 6, 11, 12], 8]] }
@@ -375,15 +386,15 @@ function checkDecode(board) {
   return [...failures].map(([what, f]) => `${what}: wrong in ${f.count} bus states, e.g.\n        ${f.examples.join('\n        ')}`)
 }
 
-// The CPU, VIA, ACIA and SID all run from the 74HC163's 1 MHz output. At 2 MHz the SID, whose clock
-// was always the 1 MHz tap, answers only every other CPU cycle (README, "Clock";
-// the full account is in the retired TODO.md, `git show 735c58e:TODO.md`).
-function checkClock(board) {
+// The CPU, VIA, ACIA and SID all run from one of the 74HC163's outputs: Q3 (pin 11), 1 MHz, the
+// standard; or with J1 on 2 MHz, Q2 (pin 12). On Rev 1.0 the SID stays on the 1 MHz tap whatever
+// J1 says, so at 2 MHz it answers only every other CPU cycle (README, "Clock").
+function checkClock(board, out = 11, what = '1 MHz output (Q3, pin 11)') {
   const errs = []
-  const q3 = board.pin('divider', 11)
-  for (const [part, pin, what] of [['cpu', 37, 'CPU PHI2'], ['via', 25, 'VIA PHI2'], ['acia', 27, 'ACIA PHI2'], ['sid', 6, 'SID φ2']]) {
-    if (board.pin(part, pin) !== q3) {
-      errs.push(`${what} (${board.parts[part]}.${pin}) is not on ${board.parts.divider}'s 1 MHz output (Q3, pin 11)`)
+  const q = board.pin('divider', out)
+  for (const [part, pin, name] of [['cpu', 37, 'CPU PHI2'], ['via', 25, 'VIA PHI2'], ['acia', 27, 'ACIA PHI2'], ['sid', 6, 'SID φ2']]) {
+    if (board.pin(part, pin) !== q) {
+      errs.push(`${name} (${board.parts[part]}.${pin}) is not on ${board.parts.divider}'s ${what}`)
     }
   }
   return errs
@@ -417,6 +428,7 @@ try {
     const results = []
     if (cfg.rules.includes('decode')) results.push(['address decoding (524,288 bus states)', checkDecode(board)])
     if (cfg.rules.includes('clock')) results.push(['clock', checkClock(board)])
+    if (cfg.rules.includes('clock-2mhz')) results.push(['clock at 2 MHz', checkClock(board, 12, '2 MHz output (Q2, pin 12)')])
     if (cfg.rules.includes('shared-lines')) results.push(['IRQB and RESB', checkSharedLines(board)])
     console.log(cfg.name)
     for (const [what, errs] of results) {
