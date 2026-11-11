@@ -34037,7 +34037,7 @@
 				)
 			)
 		)
-		(property "Value" "74HC00"
+		(property "Value" "74HCT00"
 			(at 3.81 17.57 0)
 			(layer "F.SilkS")
 			(uuid "ddef33b7-8875-46c4-8088-28f2ccb40300")
@@ -34070,7 +34070,7 @@
 				)
 			)
 		)
-		(property "Digikey" "296-1563-5-ND"
+		(property "Digikey" "296-1603-5-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34083,7 +34083,7 @@
 				)
 			)
 		)
-		(property "Mouser" "595-SN74HC00N"
+		(property "Mouser" "595-SN74HCT00N"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")

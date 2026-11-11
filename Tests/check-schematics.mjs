@@ -257,6 +257,8 @@ const nor = ins => ins.includes(1) ? 0 : ins.every(v => v === 0) ? 1 : X
 
 const GATES = {
   '74HC00': { fn: nand, units: [[[1, 2], 3], [[4, 5], 6], [[9, 10], 8], [[12, 13], 11]] },
+  // The same gates with TTL input thresholds: U14 on Rev 1.1 (P11, 2026-11-11). Logically a 74HC00.
+  '74HCT00': { fn: nand, units: [[[1, 2], 3], [[4, 5], 6], [[9, 10], 8], [[12, 13], 11]] },
   '74HC02': { fn: nor, units: [[[2, 3], 1], [[5, 6], 4], [[8, 9], 10], [[11, 12], 13]] },
   '74HC30': { fn: nand, units: [[[1, 2, 3, 4, 5, 6, 11, 12], 8]] }
 }

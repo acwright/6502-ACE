@@ -24,7 +24,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | Board | Revision | What the silk says | Status | Label |
 |---|---|---|---|---|
 | [ACE Board](#ace-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
-| [ACE Board](#ace-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), 1 MHz only, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V |
+| [ACE Board](#ace-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), 1 MHz only, a 74HCT00 at U14, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V |
 | [ACE CF Adapter](#ace-cf-adapter) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [ACE CF Adapter](#ace-cf-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet |
 | [ACE RAM Patch](#ace-ram-patch) | 1.0 | Rev 1.0 | Made. Failed: Rev 1.1 replaces it | **Tested**: built and tested: its decode is wrong, and Rev 1.1 replaces it |
@@ -71,7 +71,7 @@ Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev
 
 ### ACE Board Rev 1.1
 
-Drawn, not made yet. **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), 1 MHz only, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V.
+Drawn, not made yet. **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), 1 MHz only, a 74HCT00 at U14, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V.
 
 Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20Board/Rev%201.1/mouser.csv)
 
@@ -122,8 +122,9 @@ Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.1/digikey.csv), [mouser.csv](B
 | U8 | 1 | AT28C256 | Microchip Technology AT28C256-15PU | [AT28C256-15PU-ND](https://www.digikey.com/en/products/filter?keywords=AT28C256-15PU-ND) | [556-AT28C25615PU](https://www.mouser.com/ProductDetail/556-AT28C25615PU) |  |
 | U9 | 1 | ARMSID | Retrocomp ARMSID |  |  | [Retrocomp](https://retrocomp.cz/produkt?id=2) |
 | U10 | 1 | MAX238CNG+ | Maxim MAX238CNG+ | [MAX238CNG+-ND](https://www.digikey.com/en/products/filter?keywords=MAX238CNG%2B-ND) | [700-MAX238CNG](https://www.mouser.com/ProductDetail/700-MAX238CNG) |  |
-| U11, U12, U14, U16 | 4 | 74HC00 | Texas Instruments SN74HC00N | [296-1563-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1563-5-ND) | [595-SN74HC00N](https://www.mouser.com/ProductDetail/595-SN74HC00N) |  |
+| U11, U12, U16 | 3 | 74HC00 | Texas Instruments SN74HC00N | [296-1563-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1563-5-ND) | [595-SN74HC00N](https://www.mouser.com/ProductDetail/595-SN74HC00N) |  |
 | U13 | 1 | 74HC02 | Texas Instruments SN74HC02N | [296-1564-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1564-5-ND) | [595-SN74HC02N](https://www.mouser.com/ProductDetail/595-SN74HC02N) |  |
+| U14 | 1 | 74HCT00 | Texas Instruments SN74HCT00N | [296-1603-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1603-5-ND) | [595-SN74HCT00N](https://www.mouser.com/ProductDetail/595-SN74HCT00N) |  |
 | U15 | 1 | AS6C4008 | Alliance Memory AS6C4008-55PCN | [1450-1027-ND](https://www.digikey.com/en/products/filter?keywords=1450-1027-ND) | [913-AS6C4008-55PCN](https://www.mouser.com/ProductDetail/913-AS6C4008-55PCN) |  |
 | U17 | 1 | 74HC30 | Texas Instruments CD74HC30E |  | [595-CD74HC30E](https://www.mouser.com/ProductDetail/595-CD74HC30E) |  |
 | U18 | 1 | DS1511Y | Maxim DS1511Y+ | [DS1511Y+-ND](https://www.digikey.com/en/products/filter?keywords=DS1511Y%2B-ND) | [700-DS1511Y](https://www.mouser.com/ProductDetail/700-DS1511Y) |  |
@@ -151,6 +152,7 @@ Pin headers are cut from strips, and the cart files count whole strips.
 - **SW1–SW67:** Cherry MX2A RGB Blue, clear housing, as on the owner's Amazon kit. MX1A-E1NN (black housing) is the deeper-stocked alternative; Digi-Key CH196-ND, Mouser 540-MX1A-E1NN.
 - **U4:** Rockwell R6551AP, out of production. Do not substitute a W65C51.
 - **U9:** A modern replacement for the MOS 6581 SID, which is out of production. Every tested build uses one. A real 6581 also needs 12 V at pin 28, which the standard build does not provide.
+- **U14:** The RAM's RB/WB gate (P11, 2026-11-11): its TTL thresholds end RB and WB a few ns later after PHI2 falls. The part tested in the ACE's U14.
 
 ### ACE Board Rev 1.0
 

@@ -298,7 +298,7 @@
  "ACE|ACE Board|1.1|SW58": "keyswitch-mx",
  "ACE|ACE Board|1.1|J22": "pinheader-1x16-2.00-vertical",
  "ACE|ACE Board|1.1|C8": "1uF|disc-p2.5",
- "ACE|ACE Board|1.1|U14": "74HC00|DIP-14_W7.62mm",
+ "ACE|ACE Board|1.1|U14": "74HCT00|DIP-14_W7.62mm",
  "ACE|ACE Board|1.1|SW10": "keyswitch-mx",
  "ACE|ACE Board|1.1|C16": "100nF|disc-p2.5",
  "ACE|ACE Board|1.1|J11": "jack-pjran1x1u02x",

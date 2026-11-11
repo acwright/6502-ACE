@@ -168,7 +168,7 @@ Each revision carries one of three labels:
 
 | Board | Newest revision | Label | Why |
 |---|---|---|---|
-| ACE Board | 1.1 | **Untested** | A new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), 1 MHz only, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V. |
+| ACE Board | 1.1 | **Untested** | A new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), 1 MHz only, a 74HCT00 at U14, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V. |
 | ACE CF Adapter | 1.1 | **Proven design** | Annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet. |
 | ACE RAM Patch | 1.1 | **Tested** | Built and tested on an ACE Board Rev 1.0, 2026-11-03. |
 <!-- End of which revision to make -->

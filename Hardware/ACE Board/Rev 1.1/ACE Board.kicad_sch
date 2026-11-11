@@ -68054,7 +68054,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74HC00"
+		(property "Value" "74HCT00"
 			(at 668.02 334.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -68098,7 +68098,7 @@
 				)
 			)
 		)
-		(property "Digikey" "296-1563-5-ND"
+		(property "Digikey" "296-1603-5-ND"
 			(at 661.67 332.74 0)
 			(hide yes)
 			(show_name no)
@@ -68109,7 +68109,7 @@
 				)
 			)
 		)
-		(property "Mouser" "595-SN74HC00N"
+		(property "Mouser" "595-SN74HCT00N"
 			(at 661.67 332.74 0)
 			(hide yes)
 			(show_name no)
@@ -68225,7 +68225,7 @@
 				)
 			)
 		)
-		(property "Value" "74HC00"
+		(property "Value" "74HCT00"
 			(at 135.89 259.4864 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -68268,7 +68268,7 @@
 				)
 			)
 		)
-		(property "Digikey" "296-1563-5-ND"
+		(property "Digikey" "296-1603-5-ND"
 			(at 135.89 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -68279,7 +68279,7 @@
 				)
 			)
 		)
-		(property "Mouser" "595-SN74HC00N"
+		(property "Mouser" "595-SN74HCT00N"
 			(at 135.89 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -74752,7 +74752,7 @@
 				)
 			)
 		)
-		(property "Value" "74HC00"
+		(property "Value" "74HCT00"
 			(at 41.91 389.0264 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -74795,7 +74795,7 @@
 				)
 			)
 		)
-		(property "Digikey" "296-1563-5-ND"
+		(property "Digikey" "296-1603-5-ND"
 			(at 41.91 394.97 0)
 			(hide yes)
 			(show_name no)
@@ -74806,7 +74806,7 @@
 				)
 			)
 		)
-		(property "Mouser" "595-SN74HC00N"
+		(property "Mouser" "595-SN74HCT00N"
 			(at 41.91 394.97 0)
 			(hide yes)
 			(show_name no)
@@ -77710,7 +77710,7 @@
 				)
 			)
 		)
-		(property "Value" "74HC00"
+		(property "Value" "74HCT00"
 			(at 60.96 371.2464 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -77753,7 +77753,7 @@
 				)
 			)
 		)
-		(property "Digikey" "296-1563-5-ND"
+		(property "Digikey" "296-1603-5-ND"
 			(at 60.96 377.19 0)
 			(hide yes)
 			(show_name no)
@@ -77764,7 +77764,7 @@
 				)
 			)
 		)
-		(property "Mouser" "595-SN74HC00N"
+		(property "Mouser" "595-SN74HCT00N"
 			(at 60.96 377.19 0)
 			(hide yes)
 			(show_name no)
@@ -79132,7 +79132,7 @@
 				)
 			)
 		)
-		(property "Value" "74HC00"
+		(property "Value" "74HCT00"
 			(at 60.96 386.4864 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -79175,7 +79175,7 @@
 				)
 			)
 		)
-		(property "Digikey" "296-1563-5-ND"
+		(property "Digikey" "296-1603-5-ND"
 			(at 60.96 392.43 0)
 			(hide yes)
 			(show_name no)
@@ -79186,7 +79186,7 @@
 				)
 			)
 		)
-		(property "Mouser" "595-SN74HC00N"
+		(property "Mouser" "595-SN74HCT00N"
 			(at 60.96 392.43 0)
 			(hide yes)
 			(show_name no)
