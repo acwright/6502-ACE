@@ -104,22 +104,22 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - **Storage**: Storage adapter socket
 - **Serial**: R6551AP ACIA with MAX238 level shifter (RS-232 via DB9, 50–19200 baud). Male DB-9 wired
   as **DTE**, like a PC, so reaching a laptop needs a **null-modem** cable. `RTS`, `DTR` and `DSR`
-  always reach the cable; the `CTS EN` and `DCD EN` jumpers (J2 and J4 on Rev 1.0, J1 and J3 on Rev 1.1) pick ground or the cable for
+  always reach the cable; the `CTS EN` and `DCD EN` jumpers (J2 and J4) pick ground or the cable for
   those two inputs — **both default to ground**
 - **GPIO**: 65C22 VIA (20 GPIO pins, 2× 16-bit timers, shift register)
 - **RTC**: DS1511Y real-time clock with battery-backed NVRAM
 - **Keyboard Controller**: ATmega1284 running AB Controller firmware
 - **Input**: PS/2 keyboard connector and 8×8 keyboard matrix header
-- **Joystick**: Two Atari 2600-compatible joystick ports (JOYSTICK A on VIA PORT A and JOYSTICK B on VIA PORT B — `J6` and `J8` on Rev 1.0, `J5` and `J7` on Rev 1.1), read as `JOY(2)` and `JOY(1)` respectively
+- **Joystick**: Two Atari 2600-compatible joystick ports (JOYSTICK A on VIA PORT A and JOYSTICK B on VIA PORT B, `J6` and `J8`), read as `JOY(2)` and `JOY(1)` respectively
 - **Clock**: 16 MHz DIP-14 full can oscillator (X1); drives the ATmega1284 at 16 MHz and, through the 74HC163 divider (U5), the 65C02, VIA, ACIA and SID at 1 MHz. Rev 1.0 has a PHI2 SELECT jumper (J1) that offers 2 MHz; keep it on 1 MHz (pins 1 and 2), because at 2 MHz the SID, whose clock is always 1 MHz, answers only every other CPU cycle
 
-**The serial handshake jumpers.** `CTS EN` and `DCD EN` (J2 and J4 on Rev 1.0, J1 and J3 on Rev 1.1) both default to **ground**, and
+**The serial handshake jumpers.** `CTS EN` and `DCD EN` (J2 and J4) both default to **ground**, and
 that is how the boards were built. Ground means the line is permanently asserted, so the ACIA can
 always send and always receive. Moved to the cable, they do real work — measured on a real R6551 in
 2026: `CTS` high stops the transmitter dead and `DCD` high stops the receiver, losing the byte that
 arrives. A board jumpered to the cable and plugged into something that does not assert those lines
 shows no banner and no echo at all, and looks broken when it is not.
-- **Reset**: Manual reset button (SW70 on Rev 1.0, SW17 on Rev 1.1, just above <kbd>Esc</kbd>) connected to the ATmega1284, which also provides power-on reset to the 65C02
+- **Reset**: Manual reset button (SW70, just above <kbd>Esc</kbd>) connected to the ATmega1284, which also provides power-on reset to the 65C02
 - **Power**: 5V DC via barrel jack, center-positive. Rev 1.1 has reverse-polarity protection (`D5`); Rev 1.0 has none
 
 **Cards on `CART` and `BUS`.** `IRQB`, `NMIB` and `RESB` are shared by several devices on the board and by
@@ -185,7 +185,7 @@ The ACE runs a PICO9918 PRO v2.0 (RP2354A) with 6502-PICOVDP, and BIOS 2.x. RP20
 2. **Optionally, back up the stock firmware** from BOOTSEL: `picotool save -a stock.bin`. To restore it later, `picotool load -v -x stock.bin`. The backup has been made on a PRO; the restore is picotool's ordinary load and hasn't been tried.
 3. **Flash 6502-PICOVDP:** download `picovdp-v1.0.0.uf2` from the [v1.0.0 release](https://github.com/acwright/6502-PICOVDP/releases/tag/v1.0.0) (SHA-256 `0b74cd9875cbffc46de7ec48a9bb6e0d4a76a3e796d2563615e17e6bed94afd5`). Hold BOOT, connect USB-C, and run `picotool load -v -x -f picovdp-v1.0.0.uf2`. The release build has no USB of its own, so every update needs BOOT again. The card can be flashed in the ACE's socket with the ACE switched off.
 4. **Burn BIOS 2.x to U8.** The ACE was tested with `v2.0.2`.
-5. **Check the first boot:** the AC6502 logo, then `AC6502 BIOS v2.0`, `BASIC v2.0 30718 BYTES FREE` and `RAM RTC CF SER VIA SID VDP`, at power-on and after the reset button (SW70 on Rev 1.0, SW17 on Rev 1.1). If `VDP` is missing from that line, the card isn't running 6502-PICOVDP.
+5. **Check the first boot:** the AC6502 logo, then `AC6502 BIOS v2.0`, `BASIC v2.0 30718 BYTES FREE` and `RAM RTC CF SER VIA SID VDP`, at power-on and after the reset button (SW70). If `VDP` is missing from that line, the card isn't running 6502-PICOVDP.
 6. **Check the `MDE1` pin** from BASIC: `POKE 39939,4:POKE 39939,142:PRINT PEEK(39939):POKE 39939,0:POKE 39939,142` prints 172.
 
 On Rev 1.0, fit the `/INT` diode first (see [Building a Rev 1.0](BOM.md#build-notes)).
@@ -278,10 +278,8 @@ Where a header needs a shunt, the board's BOM lists it.
 | Rev | Jumper | What it's for | As shipped | What to do | Needed |
 |---|---|---|---|---|---|
 | 1.0 | J1 | `PHI2 SELECT`: the CPU clock, 1 MHz (pins 1 and 2) or 2 MHz (pins 2 and 3). | No shunt. | Fit the shunt on pins 1 and 2, 1 MHz: at 2 MHz the sound chip, whose clock is always 1 MHz, answers only every other cycle. With no shunt the CPU has no clock. | To run |
-| 1.0 | J2 | `CTS`: where the ACIA's `CTS` comes from. | No shunt. | Fit the shunt on pins 1 and 2, ground, as the boards are built. On pins 2 and 3 it takes `CTS` from the cable, and a cable that doesn't assert it stops the transmitter. With no shunt the input floats, and serial may not work. | For serial |
-| 1.0 | J4 | `DCD`: where the ACIA's `DCD` comes from. | No shunt. | Fit the shunt on pins 1 and 2, ground, as the boards are built. On pins 2 and 3 it takes `DCD` from the cable, and a cable that doesn't assert it stops the receiver. With no shunt the input floats, and serial may not work. | For serial |
-| 1.1 | J1 | `CTS`: where the ACIA's `CTS` comes from. | No shunt. | Fit the shunt on pins 1 and 2, ground, as the boards are built. On pins 2 and 3 it takes `CTS` from the cable, and a cable that doesn't assert it stops the transmitter. With no shunt the input floats, and serial may not work. | For serial |
-| 1.1 | J3 | `DCD`: where the ACIA's `DCD` comes from. | No shunt. | Fit the shunt on pins 1 and 2, ground, as the boards are built. On pins 2 and 3 it takes `DCD` from the cable, and a cable that doesn't assert it stops the receiver. With no shunt the input floats, and serial may not work. | For serial |
+| 1.0, 1.1 | J2 | `CTS`: where the ACIA's `CTS` comes from. | No shunt. | Fit the shunt on pins 1 and 2, ground, as the boards are built. On pins 2 and 3 it takes `CTS` from the cable, and a cable that doesn't assert it stops the transmitter. With no shunt the input floats, and serial may not work. | For serial |
+| 1.0, 1.1 | J4 | `DCD`: where the ACIA's `DCD` comes from. | No shunt. | Fit the shunt on pins 1 and 2, ground, as the boards are built. On pins 2 and 3 it takes `DCD` from the cable, and a cable that doesn't assert it stops the receiver. With no shunt the input floats, and serial may not work. | For serial |
 
 <!-- End of jumpers -->
 
@@ -302,11 +300,11 @@ The table lists every off-board header on each board's newest revision, read fro
 
 | Board | Rev | Header | Label | Connector | What it's for | Leave off |
 |---|---|---|---|---|---|---|
-| ACE Board | 1.1 | J2 | `RESET SW` | Pin header, 1×2, 2.54 mm | A reset button on the case. The header is wired across SW17, the board's own reset button. | SW17, if the case covers it. Both buttons reset the machine if it stays. |
-| ACE Board | 1.1 | J13 | `KEYBOARD` | Pin header, 1×16, 2.00 mm | The keyboard matrix: `PA0`–`PA7` on pins 1–8 and `PB0`–`PB7` on pins 9–16. A keyboard on the case, such as a Keyboard Helper, connects here. | The key switches, SW1–SW16 and SW18–SW68. |
-| ACE Board | 1.1 | J15 | `AUDIO` | Pin header, 1×2, 2.54 mm | Audio to a jack or an amplifier on the case: the same signal as J10 and J14, on pin 1, with ground on pin 2. | J10 and J14, if the case has its own jack. They can stay fitted beside it. |
-| ACE Board | 1.1 | J19 | `VCC` | Pin header, 1×2, 2.54 mm | Power from a jack and a switch on the case: 5 V on pin 1, ground on pin 2. The header is on `VCC` itself, past D5, the reverse-polarity diode, and SW69, the power switch. | J16, the barrel jack, and SW69, the power switch. Nothing on the board protects this header, so the case's supply must be a regulated 5 V, wired the right way around. |
-| ACE Board | 1.1 | J20 | `POWER LED` | Pin header, 1×2, 2.54 mm | A power LED on the case: anode to pin 1 (`VCC`), cathode to pin 2, which runs through R25 to ground. | D2, the board's own power LED. It shares R25, so with both fitted each gets half the current. |
+| ACE Board | 1.1 | J3 | `RESET SW` | Pin header, 1×2, 2.54 mm | A reset button on the case. The header is wired across SW70, the board's own reset button. | SW70, if the case covers it. Both buttons reset the machine if it stays. |
+| ACE Board | 1.1 | J15 | `AUDIO` | Pin header, 1×2, 2.54 mm | Audio to a jack or an amplifier on the case: the same signal as J11 and J14, on pin 1, with ground on pin 2. | J11 and J14, if the case has its own jack. They can stay fitted beside it. |
+| ACE Board | 1.1 | J19 | `VCC` | Pin header, 1×2, 2.54 mm | Power from a jack and a switch on the case: 5 V on pin 1, ground on pin 2. The header is on `VCC` itself, past D5, the reverse-polarity diode, and SW68, the power switch. | J16, the barrel jack, and SW68, the power switch. Nothing on the board protects this header, so the case's supply must be a regulated 5 V, wired the right way around. |
+| ACE Board | 1.1 | J20 | `POWER LED` | Pin header, 1×2, 2.54 mm | A power LED on the case: anode to pin 1 (`VCC`), cathode to pin 2, which runs through R26 to ground. | D1, the board's own power LED. It shares R26, so with both fitted each gets half the current. |
+| ACE Board | 1.1 | J22 | `KEYBOARD` | Pin header, 1×16, 2.00 mm | The keyboard matrix: `PA0`–`PA7` on pins 1–8 and `PB0`–`PB7` on pins 9–16. A keyboard on the case, such as a Keyboard Helper, connects here. | The key switches, SW1–SW67. |
 
 <!-- End of off-board headers -->
 

@@ -138,7 +138,7 @@
 		(at 193.9775 263.02)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW35"
+		(property "Reference" "SW34"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "510f21ba-0702-4081-9497-9a73796a73ae")
@@ -726,7 +726,7 @@
 		(at 376.04 86.42 180)
 		(descr "9-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, pins (male), pitch 2.77x2.84mm, pin-PCB-offset 7.7mm, distance of mounting holes 25mm, distance of mounting holes to PCB edge 9.12mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf")
 		(tags "9-pin D-Sub connector horizontal angled 90deg THT pins pitch 2.77x2.84mm pin-PCB-offset 7.7mm mounting-holes-distance 25mm mounting-hole-offset 9.12mm")
-		(property "Reference" "J5"
+		(property "Reference" "J6"
 			(at -8.96 -3.08 0)
 			(layer "F.SilkS")
 			(uuid "0ff830ca-0204-4239-8540-745a9d63f627")
@@ -1192,7 +1192,7 @@
 		(at 348.58 93 -90)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R22"
+		(property "Reference" "R23"
 			(at -2.794 0 90)
 			(layer "F.SilkS")
 			(uuid "6decf174-02ee-4bf1-af49-1b6461a7a1c4")
@@ -1421,7 +1421,7 @@
 		(layer "F.Cu")
 		(uuid "0673e062-41b7-4974-87ff-bebf69183de7")
 		(at 114.08 102.54)
-		(property "Reference" "SW69"
+		(property "Reference" "SW68"
 			(at -1.5 -5.54 0)
 			(layer "F.SilkS")
 			(uuid "d7668589-8353-41fa-baad-433a396e729c")
@@ -1841,7 +1841,7 @@
 			(drill 1.09)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(SW69-C-Pad3)")
+			(net "unconnected-(SW68-C-Pad3)")
 			(pinfunction "C_3")
 			(pintype "passive+no_connect")
 			(solder_mask_margin 0.102)
@@ -1866,7 +1866,7 @@
 		(at 298.7525 282.07)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW55"
+		(property "Reference" "SW54"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "024079b0-cda8-4a41-834c-b8c2c8032395")
@@ -2811,7 +2811,7 @@
 		(at 333.34 93 -90)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R16"
+		(property "Reference" "R17"
 			(at -2.794 0 90)
 			(layer "F.SilkS")
 			(uuid "db049b59-50c5-43e3-866a-41b35a964295")
@@ -3042,7 +3042,7 @@
 		(at 142.24 164.592)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at -2.286 0 0)
 			(layer "F.SilkS")
 			(uuid "13f9a65d-9b64-4215-bc4e-b35e86fd65e9")
@@ -3273,7 +3273,7 @@
 		(at 227.315 243.97)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW22"
+		(property "Reference" "SW21"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "9a6ded48-967e-484a-9380-367c2e4f425b")
@@ -3853,7 +3853,7 @@
 		(at 412 210.75)
 		(descr "Generic 6mm SW tactile push button")
 		(tags "tact sw push 6mm")
-		(property "Reference" "SW17"
+		(property "Reference" "SW70"
 			(at 3.25 -2 0)
 			(layer "F.SilkS")
 			(uuid "0e0b3bf1-0967-440a-88ec-5ea866f3a391")
@@ -4215,7 +4215,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J2-Pin_1)")
+			(net "Net-(J3-Pin_1)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "d4474f8d-ae68-412e-9785-c5522434ba10")
@@ -4226,7 +4226,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J2-Pin_1)")
+			(net "Net-(J3-Pin_1)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "ef11c436-2cc6-4f75-806b-c66ac8228844")
@@ -4629,7 +4629,7 @@
 		(at 184.658 187.198 90)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R27"
+		(property "Reference" "R28"
 			(at 2.54 -1.92 90)
 			(layer "F.SilkS")
 			(uuid "76d9ed62-c71e-4710-b5c7-1c155718a1ff")
@@ -4861,7 +4861,7 @@
 		(at 284.465 243.97)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW25"
+		(property "Reference" "SW24"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "ba6c8c26-462f-496c-a2cd-1269d096451e")
@@ -6498,7 +6498,7 @@
 		(at 379.715 301.12)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW64"
+		(property "Reference" "SW63"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "635cfe72-2d0e-481c-be5b-e3e8cf00354e")
@@ -7657,7 +7657,7 @@
 		(at 185.49 129.22 180)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 0 -2.38 0)
 			(layer "F.SilkS")
 			(uuid "e0b0eb1a-453e-47db-8ba1-ae0b2e258643")
@@ -7926,7 +7926,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J1-Pin_2)")
+			(net "Net-(J2-Pin_2)")
 			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "f4ef61d3-6ba7-4acf-8b14-bf35867fc5d4")
@@ -8230,7 +8230,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D2-K)")
+			(net "Net-(D1-K)")
 			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "1ff05c03-009b-4588-a496-7f560f6e9430")
@@ -8254,7 +8254,7 @@
 		(at 322.565 243.97)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW27"
+		(property "Reference" "SW26"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "0e926703-223e-484d-b665-2ff42781914e")
@@ -8611,7 +8611,7 @@
 		(at 343.5 93 -90)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R20"
+		(property "Reference" "R21"
 			(at -2.794 0 90)
 			(layer "F.SilkS")
 			(uuid "47e2dbde-785d-4c0a-afcd-43d091e156e5")
@@ -8842,7 +8842,7 @@
 		(at 146.3525 301.12)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW61"
+		(property "Reference" "SW60"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "1f342a1b-7988-45d2-b6d4-1154a7e3ae97")
@@ -9199,7 +9199,7 @@
 		(at 340.96 93 -90)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R19"
+		(property "Reference" "R20"
 			(at -2.794 0 90)
 			(layer "F.SilkS")
 			(uuid "525e2590-7d77-4799-8ed4-f493ccbb0e41")
@@ -9430,7 +9430,7 @@
 		(at 341.615 243.97)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW28"
+		(property "Reference" "SW27"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "8168b719-b4a9-4f90-babd-c1b9f4868cc6")
@@ -9787,7 +9787,7 @@
 		(at 129.69 262.995)
 		(descr "Cherry MX keyswitch, 1.75u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.75u PCB")
-		(property "Reference" "SW32"
+		(property "Reference" "SW31"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "c485a5e2-90f7-4458-b39e-bb0c3fe7ac69")
@@ -10144,7 +10144,7 @@
 		(at 208.265 243.97)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW21"
+		(property "Reference" "SW20"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "0a18d417-c4f7-4c1d-b325-087675a4ae2b")
@@ -10501,7 +10501,7 @@
 		(at 134.44 282.12)
 		(descr "Cherry MX keyswitch, 2.25u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 2.25u PCB")
-		(property "Reference" "SW42"
+		(property "Reference" "SW41"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "9af9c987-54dc-4393-ad91-5778a5b7de15")
@@ -10886,7 +10886,7 @@
 		(at 289.19 94 90)
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
-		(property "Reference" "J6"
+		(property "Reference" "J7"
 			(at 3 3.81 180)
 			(layer "F.SilkS")
 			(uuid "71e3d8ac-670f-4796-88e3-fdfed65b9e88")
@@ -11155,7 +11155,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J6-Pin_2)")
+			(net "Net-(J7-Pin_2)")
 			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "19cea8cd-b229-4ab6-8799-09723250e753")
@@ -11166,7 +11166,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J6-Pin_3)")
+			(net "Net-(J7-Pin_3)")
 			(pinfunction "Pin_3_3")
 			(pintype "passive")
 			(uuid "c09acf5c-2821-4025-83ef-4eef976d4dac")
@@ -11956,7 +11956,7 @@
 		(at 367.8025 282.12)
 		(descr "Cherry MX keyswitch, 2.25u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 2.25u PCB")
-		(property "Reference" "SW50"
+		(property "Reference" "SW49"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "4ccf1b0d-ac8a-416d-84bc-547fa40dfeef")
@@ -12341,7 +12341,7 @@
 		(at 417.815 263.02)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW46"
+		(property "Reference" "SW45"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "41d1bec9-510e-46e3-b18d-23c88d09ab63")
@@ -12698,7 +12698,7 @@
 		(at 383.79 180.92 -90)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R26"
+		(property "Reference" "R27"
 			(at -2.8448 0.0254 90)
 			(layer "F.SilkS")
 			(uuid "ca81fe35-cd05-4a6b-8512-480cf7b1dea0")
@@ -12906,7 +12906,7 @@
 			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D3-A)")
+			(net "Net-(D2-A)")
 			(pintype "passive")
 			(uuid "1af892ae-d2a9-445d-87a3-89937c837c8f")
 		)
@@ -13222,7 +13222,7 @@
 		(at 142.26 174.78)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R5"
+		(property "Reference" "R37"
 			(at -2.3 -0.02 0)
 			(layer "F.SilkS")
 			(uuid "b1d5bae0-a89e-4edb-aa2a-b3042b63552b")
@@ -13465,7 +13465,7 @@
 		(at 299.466 179.07)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R29"
+		(property "Reference" "R30"
 			(at -2.794 0 0)
 			(layer "F.SilkS")
 			(uuid "5ed05d6a-1c93-4633-8005-958e2767ac8c")
@@ -14262,7 +14262,7 @@
 		(at 260.6525 282.07)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW53"
+		(property "Reference" "SW52"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "89653f88-ab56-4cf6-925c-a4dcae97cf88")
@@ -15447,7 +15447,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J10-In)")
+			(net "Net-(J11-In)")
 			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "49cff89f-d3f6-47f9-96d7-a5efd3ab3b2c")
@@ -16407,7 +16407,7 @@
 		(at 246.365 243.97)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW23"
+		(property "Reference" "SW22"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "e112fa46-7ae6-4bfe-af0a-15e4f7f75a1b")
@@ -16764,7 +16764,7 @@
 		(at 184.4525 282.07)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW48"
+		(property "Reference" "SW47"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "2109cf20-0d2a-4ed7-b629-9196093c8abc")
@@ -17352,7 +17352,7 @@
 		(at 314.7 164.275 90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "C24"
+		(property "Reference" "C23"
 			(at -3.335 0.06 90)
 			(layer "F.SilkS")
 			(uuid "2d09e868-96ba-4620-8860-51a73fb515c4")
@@ -17691,7 +17691,7 @@
 		(at 377.625 173.375 90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "C29"
+		(property "Reference" "C28"
 			(at 1.25 -2.5 90)
 			(layer "F.SilkS")
 			(uuid "65c9cee2-2ec5-4778-867e-f241b4dfebc1")
@@ -17922,7 +17922,7 @@
 		(at 327.3275 263.02)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW43"
+		(property "Reference" "SW42"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "ec5d64d9-fe8d-4067-a466-b68e88b51651")
@@ -18279,7 +18279,7 @@
 		(at 251.1275 263.02)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW38"
+		(property "Reference" "SW37"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "e1108c4f-ba70-43f2-8153-67bf6686f689")
@@ -19096,7 +19096,7 @@
 		(at 270.1775 263.02)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW39"
+		(property "Reference" "SW38"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "a01766ab-b6e1-4fdc-87eb-771c61b9cbe6")
@@ -20088,7 +20088,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J2-Pin_1)")
+			(net "Net-(J3-Pin_1)")
 			(pinfunction "PC0_22")
 			(pintype "bidirectional")
 			(uuid "112f8807-7efb-4a4e-87ed-ddf9203b64cf")
@@ -20310,7 +20310,7 @@
 		(at 390.6 209.4 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "C31"
+		(property "Reference" "C30"
 			(at 1.25 -2.5 90)
 			(layer "F.SilkS")
 			(uuid "f1d033a5-298f-4d2f-8649-0afeb411475f")
@@ -20541,7 +20541,7 @@
 		(at 362.125 204.55)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "C28"
+		(property "Reference" "C27"
 			(at 1.315 2.31 0)
 			(layer "F.SilkS")
 			(uuid "23c9f44f-8128-46f4-9021-5ec3b37ea170")
@@ -21227,7 +21227,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D1-K)")
+			(net "Net-(D4-K)")
 			(pinfunction "~{INT}_16")
 			(pintype "output")
 			(uuid "f52a0942-6cce-4b15-8427-d783d12724c9")
@@ -21683,7 +21683,7 @@
 		(at 275.925 111.05 180)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "C22"
+		(property "Reference" "C21"
 			(at 5.675 -0.05 0)
 			(layer "F.SilkS")
 			(uuid "6d384883-7a35-4100-9dd5-fda4799e8a39")
@@ -22260,7 +22260,7 @@
 		(at 222.5525 282.07)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW51"
+		(property "Reference" "SW50"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "fcd1c034-2d9e-4247-9110-7f71b74550c6")
@@ -23434,7 +23434,7 @@
 		(at 310.6775 301.12)
 		(descr "Cherry MX keyswitch, 1.25u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.25u PCB")
-		(property "Reference" "SW68"
+		(property "Reference" "SW67"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "6a629af4-6595-4fca-8422-817f8cf02cf8")
@@ -24022,7 +24022,7 @@
 		(at 279.7025 282.07)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW54"
+		(property "Reference" "SW53"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "ff9da1b1-241b-45bc-be27-1fa51c42228c")
@@ -25455,7 +25455,7 @@
 		(at 317.8025 282.07)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW56"
+		(property "Reference" "SW55"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "c7c6f1d0-cbdc-40ef-b101-16914526b8ff")
@@ -26659,7 +26659,7 @@
 		(at 394.575 173.425)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "C30"
+		(property "Reference" "C29"
 			(at -3.345 -0.005 0)
 			(layer "F.SilkS")
 			(uuid "f2b4ea03-ace9-4789-8170-266894637e74")
@@ -26890,7 +26890,7 @@
 		(at 406 212)
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 0 -2.75 180)
 			(layer "F.SilkS")
 			(uuid "d5fc4dfd-0eb5-4668-ac72-9ad982be6d43")
@@ -27148,7 +27148,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J2-Pin_1)")
+			(net "Net-(J3-Pin_1)")
 			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "ecab410a-fdd2-48e2-b51a-a9ede38f9923")
@@ -27183,7 +27183,7 @@
 		(at 108.5 189.732 -90)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R24"
+		(property "Reference" "R25"
 			(at 2.54 -1.92 90)
 			(layer "F.SilkS")
 			(uuid "dbbf7829-731b-4ea8-a324-201a70f60672")
@@ -27414,7 +27414,7 @@
 		(at 346.04 93 -90)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R21"
+		(property "Reference" "R22"
 			(at -2.794 0 90)
 			(layer "F.SilkS")
 			(uuid "8f7a57fb-7d29-41de-b68c-210e9c04e3e7")
@@ -27645,7 +27645,7 @@
 		(at 174.9275 263.02)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW34"
+		(property "Reference" "SW33"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "81cd1599-60d3-4acb-a27a-33616d264df4")
@@ -28002,7 +28002,7 @@
 		(at 303.515 243.97)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW26"
+		(property "Reference" "SW25"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "b6ac1d39-961e-4a6f-bfa3-b2ac40033940")
@@ -28359,7 +28359,7 @@
 		(at 280.5 176.5)
 		(descr "8x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x22.5mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)")
 		(tags "DIP Switch SPST Slide 7.62mm 300mil")
-		(property "Reference" "SW70"
+		(property "Reference" "SW69"
 			(at 3.81 -3.42 0)
 			(layer "F.SilkS")
 			(uuid "85313608-2174-4163-aed8-d0682620b545")
@@ -29335,7 +29335,7 @@
 		(at 335.88 93 -90)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R17"
+		(property "Reference" "R18"
 			(at -2.794 0 90)
 			(layer "F.SilkS")
 			(uuid "e8e6c370-e3ce-4208-bfda-3d66cfa68c63")
@@ -29566,7 +29566,7 @@
 		(at 189.215 243.97)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW20"
+		(property "Reference" "SW19"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "a0ae41a6-3ab5-4fea-88d8-8ef5ba299d55")
@@ -31271,7 +31271,7 @@
 			(drill oval 2.25 1.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J10-In)")
+			(net "Net-(J11-In)")
 			(pinfunction "In_1")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
@@ -31618,7 +31618,7 @@
 		(at 155.8775 263.02)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW33"
+		(property "Reference" "SW32"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "8ccc3f5d-d11f-48bd-8ebc-912c2a7f7491")
@@ -32085,7 +32085,7 @@
 		(at 360.665 243.97)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW29"
+		(property "Reference" "SW28"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "704f899b-2520-4e87-b574-bd4733f02d24")
@@ -32442,7 +32442,7 @@
 		(at 241.6025 282.07)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW52"
+		(property "Reference" "SW51"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "354903c5-2134-4062-836f-0a331e763aed")
@@ -33410,7 +33410,7 @@
 		(at 239.24 301.12)
 		(descr "Cherry MX keyswitch, 6.25u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 6.25u PCB")
-		(property "Reference" "SW62"
+		(property "Reference" "SW61"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "dc23cc53-e144-457b-877e-08897586020a")
@@ -34958,7 +34958,7 @@
 		(at 346.3775 263.02)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW44"
+		(property "Reference" "SW43"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "0c1f70f3-b641-41ad-8abb-37681c21a28b")
@@ -35313,7 +35313,7 @@
 		(layer "F.Cu")
 		(uuid "6ece571e-1a4a-437a-8ee8-61bc73b64b48")
 		(at 292 79.5 180)
-		(property "Reference" "J10"
+		(property "Reference" "J11"
 			(at -6.5 2.5 90)
 			(layer "F.SilkS")
 			(uuid "a2bc6626-1358-4b5f-9816-805befb0e8d9")
@@ -35685,7 +35685,7 @@
 			(drill oval 2.25 1.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J10-In)")
+			(net "Net-(J11-In)")
 			(pinfunction "In_1")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
@@ -35734,7 +35734,7 @@
 		(at 417.815 243.97)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW31"
+		(property "Reference" "SW30"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "865e7448-c922-4d06-a727-c42f877de312")
@@ -36091,7 +36091,7 @@
 		(at 338.42 93 -90)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R18"
+		(property "Reference" "R19"
 			(at -2.794 0 90)
 			(layer "F.SilkS")
 			(uuid "5b6f145e-fc69-448a-8b6a-40020c4ac60b")
@@ -36794,7 +36794,7 @@
 		(at 151.115 243.97)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW18"
+		(property "Reference" "SW17"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "f3badee0-34b1-4402-920f-852b7b9ed2aa")
@@ -38075,7 +38075,7 @@
 		(at 299.466 176.53)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R28"
+		(property "Reference" "R29"
 			(at -2.794 0 0)
 			(layer "F.SilkS")
 			(uuid "5ea02909-1619-47f9-8d40-f511cd676483")
@@ -38306,7 +38306,7 @@
 		(at 299.466 189.23)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R33"
+		(property "Reference" "R34"
 			(at -2.794 0 0)
 			(layer "F.SilkS")
 			(uuid "adf1112c-ed96-4c0d-a455-5705f1265e28")
@@ -39269,7 +39269,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J10-In)")
+			(net "Net-(J11-In)")
 			(pintype "passive")
 			(uuid "fe540ae0-0a32-4abf-b428-a1b0b357caaa")
 		)
@@ -39814,7 +39814,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D3-A)")
+			(net "Net-(D2-A)")
 			(pinfunction "~{CE}_22")
 			(pintype "input")
 			(uuid "8dacf6f8-48e3-4517-97d7-dcfc7b2e80fe")
@@ -40536,7 +40536,7 @@
 		(at 289.2275 263.02)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW40"
+		(property "Reference" "SW39"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "d1f27678-f62b-4f60-ade6-dd17466fc5aa")
@@ -40893,7 +40893,7 @@
 		(at 308.2775 263.02)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW41"
+		(property "Reference" "SW40"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "0d0198ed-39a7-491e-a8c0-b15fae8cce7f")
@@ -41250,7 +41250,7 @@
 		(at 134.05 114.8)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R25"
+		(property "Reference" "R26"
 			(at 2.47 -1.92 0)
 			(layer "F.SilkS")
 			(uuid "144be806-7484-4d68-97d1-3517aec49129")
@@ -41449,7 +41449,7 @@
 			(drill 0.7)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D2-K)")
+			(net "Net-(D1-K)")
 			(pintype "passive")
 			(uuid "794b2fd3-1366-42ad-a218-74fc147d8191")
 		)
@@ -42013,7 +42013,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J6-Pin_2)")
+			(net "Net-(J7-Pin_2)")
 			(pinfunction "POTY_23")
 			(pintype "input")
 			(uuid "fbd054a8-b0b8-4be6-9b1c-b141029783d1")
@@ -42024,7 +42024,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J6-Pin_3)")
+			(net "Net-(J7-Pin_3)")
 			(pinfunction "POTX_24")
 			(pintype "input")
 			(uuid "3a48d7e7-08e5-460d-9995-f85d83257e74")
@@ -42092,7 +42092,7 @@
 		(at 265.415 243.97)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW24"
+		(property "Reference" "SW23"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "f3d02fc1-68cf-4351-a4af-a18363f741b0")
@@ -42449,7 +42449,7 @@
 		(at 124.94 301.12)
 		(descr "Cherry MX keyswitch, 1.25u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.25u PCB")
-		(property "Reference" "SW59"
+		(property "Reference" "SW58"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "5b5fa2c9-8d69-48fc-8c17-b05f21de7b35")
@@ -42806,7 +42806,7 @@
 		(at 398.765 301.12)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW65"
+		(property "Reference" "SW64"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "4f2138f0-4e3f-4aab-9389-9602b5a847a2")
@@ -43163,7 +43163,7 @@
 		(at 343.495 145.325 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "C25"
+		(property "Reference" "C24"
 			(at 1.255 -2.265 90)
 			(layer "F.SilkS")
 			(uuid "c6129890-08b0-4bd3-93b3-80993a003d42")
@@ -43562,7 +43562,7 @@
 		(at 334.445 301.12)
 		(descr "Cherry MX keyswitch, 1.25u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.25u PCB")
-		(property "Reference" "SW63"
+		(property "Reference" "SW62"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "758010f5-8f39-4537-b2df-7c74f2cbff6b")
@@ -43918,7 +43918,7 @@
 		(uuid "943e7b3b-8461-4d31-92e0-6d5dfdaa6378")
 		(at 197.45 85)
 		(descr "<b>KMDGX-6S-BS-3</b><br>")
-		(property "Reference" "J12"
+		(property "Reference" "J13"
 			(at -4.45 5.5 0)
 			(layer "F.SilkS")
 			(uuid "5f451541-0698-44a4-8ced-4bbc86baa444")
@@ -44209,7 +44209,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(J12-Pad2)")
+			(net "unconnected-(J13-Pad2)")
 			(pintype "passive+no_connect")
 			(solder_mask_margin 0.102)
 			(uuid "fdf39ab4-0815-42df-a47b-62af6e86bc43")
@@ -44253,7 +44253,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(J12-Pad6)")
+			(net "unconnected-(J13-Pad6)")
 			(pintype "passive+no_connect")
 			(solder_mask_margin 0.102)
 			(uuid "4cd3a97c-331a-4e9e-930b-609bf9db470c")
@@ -44419,7 +44419,7 @@
 		(at 203.5025 282.07)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW49"
+		(property "Reference" "SW48"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "1e5aa8c9-6cc0-42f2-a973-4fa19166668b")
@@ -45236,7 +45236,7 @@
 		(at 213.0275 263.02)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW36"
+		(property "Reference" "SW35"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "b1367910-05ae-49ef-8099-9bbab868025d")
@@ -45703,7 +45703,7 @@
 		(at 336.8525 282.07)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW57"
+		(property "Reference" "SW56"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "78133a3a-2409-46d0-b5d7-db8f32718e04")
@@ -46060,7 +46060,7 @@
 		(at 226.27 128.74 90)
 		(descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, length*diameter=4*2mm^2, http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
-		(property "Reference" "D1"
+		(property "Reference" "D4"
 			(at 3.81 -2.12 90)
 			(layer "F.SilkS")
 			(uuid "c6da1340-f879-4661-be3a-9e4fa90879c1")
@@ -46363,7 +46363,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.15625)
-			(net "Net-(D1-K)")
+			(net "Net-(D4-K)")
 			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "ebf24c75-f5e8-4166-a2fd-54fa41bdb991")
@@ -47101,7 +47101,7 @@
 		(at 281.525 215.475 90)
 		(descr "Through hole straight pin header, 1x16, 2.00mm pitch, single row")
 		(tags "Through hole pin header THT 1x16 2.00mm single row")
-		(property "Reference" "J13"
+		(property "Reference" "J22"
 			(at 2.305 14.905 180)
 			(layer "F.SilkS")
 			(uuid "1b4da4d8-5201-4afa-a1a9-aab64302df0e")
@@ -47939,7 +47939,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J1-Pin_2)")
+			(net "Net-(J2-Pin_2)")
 			(pinfunction "CTSB_9")
 			(pintype "input")
 			(uuid "43ffda8e-fa3d-4fc1-a47c-9569feccb206")
@@ -48016,7 +48016,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J3-Pin_2)")
+			(net "Net-(J4-Pin_2)")
 			(pinfunction "DCDB_16")
 			(pintype "input")
 			(uuid "0bd48aa6-6c71-44a3-86cb-61736462e3cf")
@@ -48172,7 +48172,7 @@
 		(at 384.49 243.97)
 		(descr "Cherry MX keyswitch, 1.50u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.50u PCB")
-		(property "Reference" "SW30"
+		(property "Reference" "SW29"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "68f2ed9b-c78a-4c27-b08c-c0aa4c5d9f56")
@@ -50323,7 +50323,7 @@
 		(at 142.282 169.672)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R2"
+		(property "Reference" "R3"
 			(at -2.328 0 0)
 			(layer "F.SilkS")
 			(uuid "c7204f47-f304-4661-97ed-fc70e61f1081")
@@ -50554,7 +50554,7 @@
 		(at 377.3275 263.07)
 		(descr "Cherry MX keyswitch, 2.25u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 2.25u PCB")
-		(property "Reference" "SW45"
+		(property "Reference" "SW44"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "d0cb389d-e942-411d-8fba-036921e925f7")
@@ -52462,7 +52462,7 @@
 		(at 223.925 105.625 90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "C21"
+		(property "Reference" "C20"
 			(at -3.4 0.05 90)
 			(layer "F.SilkS")
 			(uuid "c9ee37e9-ad73-4602-99ee-753f3c3bd4e3")
@@ -53050,7 +53050,7 @@
 		(at 358.315 301.12)
 		(descr "Cherry MX keyswitch, 1.25u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.25u PCB")
-		(property "Reference" "SW67"
+		(property "Reference" "SW66"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "776412cc-4ed3-4168-83a2-e978249be2ac")
@@ -53407,7 +53407,7 @@
 		(at 388.07 188.5 90)
 		(descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, length*diameter=4*2mm^2, http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 3.81 -2.12 90)
 			(layer "F.SilkS")
 			(uuid "6a0a0f25-c061-4653-9100-7c9303aab025")
@@ -53724,7 +53724,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D3-A)")
+			(net "Net-(D2-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "2a95d228-1668-4a5d-9c26-9ab461e429d5")
@@ -53748,7 +53748,7 @@
 		(at 388.07 204 90)
 		(descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, length*diameter=4*2mm^2, http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
-		(property "Reference" "D4"
+		(property "Reference" "D3"
 			(at 3.81 -2.12 90)
 			(layer "F.SilkS")
 			(uuid "8b252264-273f-4256-a362-892ebc64e134")
@@ -54065,7 +54065,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D3-A)")
+			(net "Net-(D2-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "8960c80d-4aab-4573-ad5e-5636c8eeef4c")
@@ -54793,7 +54793,7 @@
 		(at 290.25 101.25)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R23"
+		(property "Reference" "R24"
 			(at -2.75 0 0)
 			(layer "F.SilkS")
 			(uuid "86f3891c-7fa5-4e34-bd84-ca5ceb360ec8")
@@ -55024,7 +55024,7 @@
 		(at 142.24 172.212)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R3"
+		(property "Reference" "R4"
 			(at -2.286 0 0)
 			(layer "F.SilkS")
 			(uuid "cb846597-fff4-4e52-a068-5103fc85de6f")
@@ -55370,7 +55370,7 @@
 		(at 309.5 123.675 90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "C23"
+		(property "Reference" "C22"
 			(at -3.525 -0.025 90)
 			(layer "F.SilkS")
 			(uuid "33a8e4fd-2441-4e3b-a93d-64d04dcc86ca")
@@ -56933,7 +56933,7 @@
 		(at 319 177.2)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "C26"
+		(property "Reference" "C25"
 			(at -3.24 0.07 0)
 			(layer "F.SilkS")
 			(uuid "36aebe09-6fd4-4d32-bb42-1bb0e64581dc")
@@ -57164,7 +57164,7 @@
 		(at 142.24 167.132)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R4"
+		(property "Reference" "R5"
 			(at -2.286 0 0)
 			(layer "F.SilkS")
 			(uuid "b6dfc372-f339-43c9-b854-c7261642e66f")
@@ -57736,7 +57736,7 @@
 		(at 417.815 301.12)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW66"
+		(property "Reference" "SW65"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "e6c512c2-7fca-440a-bde7-3f2df3469f5f")
@@ -58613,7 +58613,7 @@
 		(at 330.8 93 -90)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R15"
+		(property "Reference" "R16"
 			(at -2.794 0 90)
 			(layer "F.SilkS")
 			(uuid "c3e14286-aad2-4772-ba4b-061c210c3cdc")
@@ -58844,7 +58844,7 @@
 		(at 110.998 116 180)
 		(descr "LED, diameter 3.0mm, 2 pins, generated by kicad-footprint-generator")
 		(tags "LED")
-		(property "Reference" "D2"
+		(property "Reference" "D1"
 			(at 1.27 3 0)
 			(layer "F.SilkS")
 			(uuid "3125c415-b008-4814-ad48-cdf7e77f24d1")
@@ -59093,7 +59093,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D2-K)")
+			(net "Net-(D1-K)")
 			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "de7dce42-fe3b-472f-bed0-574e8ad154e1")
@@ -59128,7 +59128,7 @@
 		(at 299.466 181.61)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R30"
+		(property "Reference" "R31"
 			(at -2.794 0 0)
 			(layer "F.SilkS")
 			(uuid "d5056832-a512-4f19-9131-3522c8d71df5")
@@ -60195,7 +60195,7 @@
 		(at 307.3 82.54 90)
 		(descr "Through hole straight pin header, 2x06, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x06 2.54mm double row")
-		(property "Reference" "J9"
+		(property "Reference" "J10"
 			(at -4.328 16.7 0)
 			(layer "F.SilkS")
 			(uuid "62c24f23-b073-406e-850e-9fe213e2cbd5")
@@ -60834,7 +60834,7 @@
 		(at 232.0775 263.02)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW37"
+		(property "Reference" "SW36"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "706c468f-4bd1-4095-b82e-24ea604062f3")
@@ -61779,7 +61779,7 @@
 		(at 299.466 191.77)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R34"
+		(property "Reference" "R35"
 			(at -2.794 0 0)
 			(layer "F.SilkS")
 			(uuid "4067ae81-ebcf-470d-9214-709f472d6e67")
@@ -62010,7 +62010,7 @@
 		(at 299.466 194.31)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R35"
+		(property "Reference" "R36"
 			(at -2.794 0 0)
 			(layer "F.SilkS")
 			(uuid "da404f71-b501-42c3-bef4-28076ecb4753")
@@ -62721,7 +62721,7 @@
 		(at 170.165 243.97)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW19"
+		(property "Reference" "SW18"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "d6b2ddbc-ec9c-4cf9-99b0-26520a70fd6a")
@@ -63078,7 +63078,7 @@
 		(at 157.5 129.29 180)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
-		(property "Reference" "J3"
+		(property "Reference" "J4"
 			(at 0 -2.38 0)
 			(layer "F.SilkS")
 			(uuid "4ba5f1d8-84d0-4951-9f24-046249d1e1db")
@@ -63347,7 +63347,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(J3-Pin_2)")
+			(net "Net-(J4-Pin_2)")
 			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "4f6f38a1-e973-4be5-8bf3-99d8c5db1adc")
@@ -63613,7 +63613,7 @@
 		(at 167.8025 301.12)
 		(descr "Cherry MX keyswitch, 1.25u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.25u PCB")
-		(property "Reference" "SW60"
+		(property "Reference" "SW59"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "4c312d52-4117-40f6-ba26-ebb4008d9b5f")
@@ -63970,7 +63970,7 @@
 		(at 177.04 86.42 180)
 		(descr "9-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, pins (male), pitch 2.77x2.84mm, pin-PCB-offset 7.7mm, distance of mounting holes 25mm, distance of mounting holes to PCB edge 9.12mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf")
 		(tags "9-pin D-Sub connector horizontal angled 90deg THT pins pitch 2.77x2.84mm pin-PCB-offset 7.7mm mounting-holes-distance 25mm mounting-hole-offset 9.12mm")
-		(property "Reference" "J11"
+		(property "Reference" "J12"
 			(at -8.96 -3.58 0)
 			(layer "F.SilkS")
 			(uuid "9325783e-698c-41ea-aeac-8c398f3bf9b3")
@@ -64390,7 +64390,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(J11-Pad9)")
+			(net "unconnected-(J12-Pad9)")
 			(pinfunction "9_9")
 			(pintype "passive+no_connect")
 			(uuid "c85ba479-c576-480f-bb28-1afa7a1f4300")
@@ -65838,7 +65838,7 @@
 		(at 333.3 82.54 90)
 		(descr "Through hole straight pin header, 2x06, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x06 2.54mm double row")
-		(property "Reference" "J8"
+		(property "Reference" "J9"
 			(at -4.328 16.7 180)
 			(layer "F.SilkS")
 			(uuid "1895bf19-3fd8-4b3a-9ff2-34cfdedb645a")
@@ -66246,7 +66246,7 @@
 		(at 314.225 204.6 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "C27"
+		(property "Reference" "C26"
 			(at 5.71 0.045 90)
 			(layer "F.SilkS")
 			(uuid "6615ff84-1e6f-408b-872b-f87c75c8824b")
@@ -66477,7 +66477,7 @@
 		(at 123.04 110.93 -90)
 		(descr "CP, Radial series, Radial, pin pitch=1.50mm, diameter=4mm, height=7mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 1.50mm diameter 4mm height 7mm Electrolytic Capacitor")
-		(property "Reference" "C20"
+		(property "Reference" "C31"
 			(at 0.75 -3.25 90)
 			(layer "F.SilkS")
 			(uuid "adc11971-d711-4712-bf49-b3acc2ee0c44")
@@ -67664,7 +67664,7 @@
 		(at 299.466 184.15)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R31"
+		(property "Reference" "R32"
 			(at -2.794 0 0)
 			(layer "F.SilkS")
 			(uuid "4df929ea-69d4-4ac1-bc75-1b5b430ec459")
@@ -68515,7 +68515,7 @@
 		(at 299.466 186.69)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R32"
+		(property "Reference" "R33"
 			(at -2.794 0 0)
 			(layer "F.SilkS")
 			(uuid "e4de1299-41c6-4aca-bf4f-80b08bc1a432")
@@ -69103,7 +69103,7 @@
 		(at 398.765 282.07)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW58"
+		(property "Reference" "SW57"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "df422de5-9b35-4c0a-9f8a-d8491a6d3640")
@@ -69460,7 +69460,7 @@
 		(at 165.4025 282.07)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
-		(property "Reference" "SW47"
+		(property "Reference" "SW46"
 			(at -2.54 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "0416daef-c431-43c7-8481-e0101450b6bb")
@@ -70297,7 +70297,7 @@
 		(at 409.94 86.42 180)
 		(descr "9-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, pins (male), pitch 2.77x2.84mm, pin-PCB-offset 7.7mm, distance of mounting holes 25mm, distance of mounting holes to PCB edge 9.12mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf")
 		(tags "9-pin D-Sub connector horizontal angled 90deg THT pins pitch 2.77x2.84mm pin-PCB-offset 7.7mm mounting-holes-distance 25mm mounting-hole-offset 9.12mm")
-		(property "Reference" "J7"
+		(property "Reference" "J8"
 			(at -9.06 -3.08 0)
 			(layer "F.SilkS")
 			(uuid "14413a9f-278a-4dad-a482-2ece1aa01129")
@@ -83228,7 +83228,7 @@
 		(end 360.41 217.48)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "33caf6ea-b0ee-42bf-8a37-f910a522bddd")
 	)
 	(segment
@@ -83236,7 +83236,7 @@
 		(end 366.53 161.93)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "811675a9-cac8-40f1-8f0c-62729a73da49")
 	)
 	(via
@@ -83244,7 +83244,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "70ef31f5-5eaa-4454-917c-7efff1b0249d")
 	)
 	(via
@@ -83252,7 +83252,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "cc58baa5-033d-4aac-9091-f755e0d4ed4f")
 	)
 	(via
@@ -83260,7 +83260,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "d25db672-83ca-4eb6-a04a-10069c73684f")
 	)
 	(via
@@ -83268,7 +83268,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "f9ebdef9-87c7-4139-96db-ae8acec7926f")
 	)
 	(segment
@@ -83276,7 +83276,7 @@
 		(end 363.22 161.85)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "268a5a5f-ad18-4d93-81ca-ebfa0b2b0d41")
 	)
 	(segment
@@ -83284,7 +83284,7 @@
 		(end 410.11 210.75)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "79a3d36d-3b9b-4b39-a17f-a26a9a6511ce")
 	)
 	(segment
@@ -83292,7 +83292,7 @@
 		(end 412 210.75)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "7cb06fb9-cdf1-406c-bc91-3de7afa21752")
 	)
 	(segment
@@ -83300,7 +83300,7 @@
 		(end 366.45 161.85)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "7d560802-327a-4213-8ee6-98d91b46ec76")
 	)
 	(segment
@@ -83308,7 +83308,7 @@
 		(end 408.86 212)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "86c653c0-3dff-47bf-8c70-2d447fc17a58")
 	)
 	(segment
@@ -83316,7 +83316,7 @@
 		(end 406 212)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "9adc6652-f2e1-478a-8165-6ad6552fd5f7")
 	)
 	(segment
@@ -83324,7 +83324,7 @@
 		(end 403.68 212)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "9b22ae1c-1495-4fa8-802c-c0687135ce13")
 	)
 	(segment
@@ -83332,7 +83332,7 @@
 		(end 398.2 217.48)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "cd159f41-66a3-48e7-bf52-a2dc42777bae")
 	)
 	(segment
@@ -83340,7 +83340,7 @@
 		(end 406 212)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "e1d933a6-a83f-45b9-8fbd-48e65998b583")
 	)
 	(segment
@@ -83348,7 +83348,7 @@
 		(end 360.41 194.89)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "f1fa0140-ff22-406e-8e8c-b10c02d5d020")
 	)
 	(segment
@@ -83356,7 +83356,7 @@
 		(end 360.42 194.88)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J2-Pin_1)")
+		(net "Net-(J3-Pin_1)")
 		(uuid "fe2e1a5f-2e4b-44ab-8a0a-f3916862c87a")
 	)
 	(segment
@@ -103292,7 +103292,7 @@
 		(end 167.69 144.35)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J1-Pin_2)")
+		(net "Net-(J2-Pin_2)")
 		(uuid "5eea1929-6f90-4031-9565-782dc29e02a2")
 	)
 	(via
@@ -103300,7 +103300,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J1-Pin_2)")
+		(net "Net-(J2-Pin_2)")
 		(uuid "01b584c1-889d-4b93-8c5a-5fef55a91d1e")
 	)
 	(via
@@ -103308,7 +103308,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J1-Pin_2)")
+		(net "Net-(J2-Pin_2)")
 		(uuid "61db90c5-268c-4da3-8d89-3ba07bc2687b")
 	)
 	(segment
@@ -103316,7 +103316,7 @@
 		(end 184.08 125.27)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J1-Pin_2)")
+		(net "Net-(J2-Pin_2)")
 		(uuid "583e676f-d395-4372-8c3f-4065df1c297d")
 	)
 	(segment
@@ -103324,7 +103324,7 @@
 		(end 167.66 144.32)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J1-Pin_2)")
+		(net "Net-(J2-Pin_2)")
 		(uuid "aad759be-b5a9-48f9-82aa-6ac1f27001d6")
 	)
 	(segment
@@ -103332,7 +103332,7 @@
 		(end 167.74 125.27)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J1-Pin_2)")
+		(net "Net-(J2-Pin_2)")
 		(uuid "cd77d6a3-843f-41a5-9d5d-e650217563c7")
 	)
 	(segment
@@ -103340,7 +103340,7 @@
 		(end 163.75 144.32)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J1-Pin_2)")
+		(net "Net-(J2-Pin_2)")
 		(uuid "de82c48b-1caa-472b-a3a9-552d52b42f27")
 	)
 	(segment
@@ -103348,7 +103348,7 @@
 		(end 167.69 125.22)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J1-Pin_2)")
+		(net "Net-(J2-Pin_2)")
 		(uuid "f3827d76-041f-4ea4-a829-3d6c82bf8530")
 	)
 	(segment
@@ -103428,7 +103428,7 @@
 		(end 134.05 114.8)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D2-K)")
+		(net "Net-(D1-K)")
 		(uuid "1bcef696-803b-4fa5-a75f-6e39951c16c2")
 	)
 	(segment
@@ -103436,7 +103436,7 @@
 		(end 132.85 116)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D2-K)")
+		(net "Net-(D1-K)")
 		(uuid "3892033b-1e88-4c99-9f48-361c53b867b1")
 	)
 	(segment
@@ -103444,7 +103444,7 @@
 		(end 134 114.75)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D2-K)")
+		(net "Net-(D1-K)")
 		(uuid "62903122-9dc6-4bc0-9b33-3cf0f840cd87")
 	)
 	(segment
@@ -103452,7 +103452,7 @@
 		(end 134.05 114.8)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D2-K)")
+		(net "Net-(D1-K)")
 		(uuid "da8c0bf6-f719-4768-9646-55a544df84d0")
 	)
 	(segment
@@ -105204,7 +105204,7 @@
 		(end 291.73 106.55)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J6-Pin_2)")
+		(net "Net-(J7-Pin_2)")
 		(uuid "2b7ec796-e236-4ec8-9904-7f46bdfbd9e8")
 	)
 	(segment
@@ -105212,7 +105212,7 @@
 		(end 291.72 106.56)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J6-Pin_2)")
+		(net "Net-(J7-Pin_2)")
 		(uuid "8f4b66d7-d1c3-4b0f-a93c-cf6beb4974a6")
 	)
 	(segment
@@ -105220,7 +105220,7 @@
 		(end 302.96 128.78)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J6-Pin_2)")
+		(net "Net-(J7-Pin_2)")
 		(uuid "fb3b8bd7-0fef-464d-95ed-0a405ab7822b")
 	)
 	(via
@@ -105228,7 +105228,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J6-Pin_2)")
+		(net "Net-(J7-Pin_2)")
 		(uuid "082a02ad-64c6-4bce-a08c-15fc4bc1a194")
 	)
 	(via
@@ -105236,7 +105236,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J6-Pin_2)")
+		(net "Net-(J7-Pin_2)")
 		(uuid "5d65a440-5a0c-478c-9e22-fb2cba47482b")
 	)
 	(via
@@ -105244,7 +105244,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J6-Pin_2)")
+		(net "Net-(J7-Pin_2)")
 		(uuid "90fa909a-970d-430d-88d4-153f2a160505")
 	)
 	(segment
@@ -105252,7 +105252,7 @@
 		(end 302.96 106.56)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J6-Pin_2)")
+		(net "Net-(J7-Pin_2)")
 		(uuid "2d3791a8-202d-4bef-a7c3-ba0e3c92e9d5")
 	)
 	(segment
@@ -105260,7 +105260,7 @@
 		(end 303.34 128.7)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J6-Pin_2)")
+		(net "Net-(J7-Pin_2)")
 		(uuid "4259b9fa-6d0b-4330-8fe3-adc1da5760fb")
 	)
 	(segment
@@ -105268,7 +105268,7 @@
 		(end 305.74 128.7)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J6-Pin_2)")
+		(net "Net-(J7-Pin_2)")
 		(uuid "b79286e4-6d3a-4c98-a63f-532bf3a8e888")
 	)
 	(segment
@@ -105276,7 +105276,7 @@
 		(end 303.26 128.78)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J6-Pin_2)")
+		(net "Net-(J7-Pin_2)")
 		(uuid "fa094ab5-724c-42de-8261-d4456508ad04")
 	)
 	(segment
@@ -105284,7 +105284,7 @@
 		(end 292.62 97.31)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J6-Pin_3)")
+		(net "Net-(J7-Pin_3)")
 		(uuid "2b2efee9-d93a-454a-bc1c-1c25f9ce1f33")
 	)
 	(segment
@@ -105292,7 +105292,7 @@
 		(end 302.16 126.14)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J6-Pin_3)")
+		(net "Net-(J7-Pin_3)")
 		(uuid "79ac3aef-0fe6-4cb9-8eb5-03f1fcaf729b")
 	)
 	(segment
@@ -105300,7 +105300,7 @@
 		(end 294.27 95.66)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J6-Pin_3)")
+		(net "Net-(J7-Pin_3)")
 		(uuid "7dbec0a7-5d44-4c93-aeea-bb6ca31d9b18")
 	)
 	(segment
@@ -105308,7 +105308,7 @@
 		(end 292.62 107.45)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J6-Pin_3)")
+		(net "Net-(J7-Pin_3)")
 		(uuid "93f48c65-8953-4420-a533-4d33fd37c519")
 	)
 	(via
@@ -105316,7 +105316,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J6-Pin_3)")
+		(net "Net-(J7-Pin_3)")
 		(uuid "230b0bd0-3c6b-4909-a975-5b9c801d9b94")
 	)
 	(via
@@ -105324,7 +105324,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J6-Pin_3)")
+		(net "Net-(J7-Pin_3)")
 		(uuid "96894eab-9244-4ded-b96c-b816d752ef84")
 	)
 	(via
@@ -105332,7 +105332,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J6-Pin_3)")
+		(net "Net-(J7-Pin_3)")
 		(uuid "ee060487-8d7f-4629-992d-eb6d0ddb40b6")
 	)
 	(segment
@@ -105340,7 +105340,7 @@
 		(end 305.74 126.16)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J6-Pin_3)")
+		(net "Net-(J7-Pin_3)")
 		(uuid "300e0675-ed7f-40ac-a420-ffd9bb5b81e4")
 	)
 	(segment
@@ -105348,7 +105348,7 @@
 		(end 302.16 107.45)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J6-Pin_3)")
+		(net "Net-(J7-Pin_3)")
 		(uuid "75d48513-113c-4fe5-8d36-867a9e58e33f")
 	)
 	(segment
@@ -105356,7 +105356,7 @@
 		(end 302.18 126.16)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J6-Pin_3)")
+		(net "Net-(J7-Pin_3)")
 		(uuid "7cbbbf8b-7840-47f5-b3f3-506ce6952417")
 	)
 	(segment
@@ -107076,7 +107076,7 @@
 		(end 383.8 196.02)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "067474f0-03d6-402d-95d9-d3a6e0483153")
 	)
 	(segment
@@ -107084,7 +107084,7 @@
 		(end 344.4 181)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "2e7555a9-853a-4ece-8bb0-4a07891e6dd0")
 	)
 	(segment
@@ -107092,7 +107092,7 @@
 		(end 344.4 187.2)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "90ea35ed-984c-4c8b-be33-b3dd88b1fc77")
 	)
 	(segment
@@ -107100,7 +107100,7 @@
 		(end 383.79 196.01)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "a35c911e-0f64-40c3-b4fc-ed5d6dca2140")
 	)
 	(segment
@@ -107108,7 +107108,7 @@
 		(end 383.79 186)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "e0424e23-50f8-4670-9f96-332d45e57b1e")
 	)
 	(segment
@@ -107116,7 +107116,7 @@
 		(end 388.07 180.88)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "e0f7c254-fd47-40ac-b20a-9312ef0ab048")
 	)
 	(via
@@ -107124,7 +107124,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "1ad5e975-c5b8-4f2a-9849-6a516a9e3e45")
 	)
 	(via
@@ -107132,7 +107132,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "2cdeba00-6d55-48ce-8070-dc90008d0352")
 	)
 	(via
@@ -107140,7 +107140,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "ae1daf9b-51c3-4056-8e93-101c245f5aea")
 	)
 	(segment
@@ -107148,7 +107148,7 @@
 		(end 388.06 186)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "1a20b071-2ac3-4bbe-83d9-5bad0e449ced")
 	)
 	(segment
@@ -107156,7 +107156,7 @@
 		(end 382.58 187.21)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "201565e9-4ad9-4b00-a78a-2b37c98bea63")
 	)
 	(segment
@@ -107164,7 +107164,7 @@
 		(end 383.8 196.38)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "8f773175-17c2-4a3d-a190-80ba2502cbf3")
 	)
 	(segment
@@ -107172,7 +107172,7 @@
 		(end 344.41 187.21)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "c05ff621-026c-47df-bcb8-2ea091eea2ed")
 	)
 	(segment
@@ -107180,7 +107180,7 @@
 		(end 388.07 186.01)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(D3-A)")
+		(net "Net-(D2-A)")
 		(uuid "fe148bc5-dcd7-406e-b509-a9db1b1371e6")
 	)
 	(segment
@@ -107612,7 +107612,7 @@
 		(end 280 79.5)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J10-In)")
+		(net "Net-(J11-In)")
 		(uuid "18e5d3e5-5f0b-4a9d-9abe-cc6a65697ebd")
 	)
 	(segment
@@ -107620,7 +107620,7 @@
 		(end 279.25 101.25)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J10-In)")
+		(net "Net-(J11-In)")
 		(uuid "39967b88-2ed5-4e36-8353-ef3898ca1143")
 	)
 	(segment
@@ -107628,7 +107628,7 @@
 		(end 279.225 88.845)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J10-In)")
+		(net "Net-(J11-In)")
 		(uuid "61f87c8d-3e3e-48ba-bf32-d90fc274e4a9")
 	)
 	(segment
@@ -107636,7 +107636,7 @@
 		(end 280 88.07)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J10-In)")
+		(net "Net-(J11-In)")
 		(uuid "f7462484-7720-49c1-942d-ae4260165086")
 	)
 	(segment
@@ -107644,7 +107644,7 @@
 		(end 279.225 101.225)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J10-In)")
+		(net "Net-(J11-In)")
 		(uuid "f97ba30b-3c44-4342-b82c-eacbc152b9d6")
 	)
 	(segment
@@ -107652,7 +107652,7 @@
 		(end 292 79.5)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J10-In)")
+		(net "Net-(J11-In)")
 		(uuid "54d3aad5-fec2-43e3-acfc-298374cf47f0")
 	)
 	(segment
@@ -111444,7 +111444,7 @@
 		(end 226.27 137.21)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D1-K)")
+		(net "Net-(D4-K)")
 		(uuid "1a192347-cc9d-4aab-b5a6-d0d994c80e33")
 	)
 	(segment
@@ -111452,7 +111452,7 @@
 		(end 227.33 138.27)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D1-K)")
+		(net "Net-(D4-K)")
 		(uuid "835c4f21-71a2-444c-82d1-d37dfc20b6bd")
 	)
 	(segment
@@ -111460,7 +111460,7 @@
 		(end 227.3 154.1)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D1-K)")
+		(net "Net-(D4-K)")
 		(uuid "a3c187e5-0249-4bd9-96e5-8f73360ddbed")
 	)
 	(segment
@@ -111468,7 +111468,7 @@
 		(end 227.33 154.07)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(D1-K)")
+		(net "Net-(D4-K)")
 		(uuid "bd2ab7d7-a060-49e0-9c9d-e5725e3a7305")
 	)
 	(via
@@ -111476,7 +111476,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(D1-K)")
+		(net "Net-(D4-K)")
 		(uuid "2aa65c62-5031-4c38-8cbf-8161635b0acb")
 	)
 	(segment
@@ -111484,7 +111484,7 @@
 		(end 231.145 154.105)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(D1-K)")
+		(net "Net-(D4-K)")
 		(uuid "0f0b73d0-dff4-4124-9e17-661791dad60a")
 	)
 	(segment
@@ -111492,7 +111492,7 @@
 		(end 227.305 154.105)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(D1-K)")
+		(net "Net-(D4-K)")
 		(uuid "923d69bf-0c8b-48a6-a5a1-3169b3360cdd")
 	)
 	(segment
@@ -115236,7 +115236,7 @@
 		(end 175.93 154.5)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J3-Pin_2)")
+		(net "Net-(J4-Pin_2)")
 		(uuid "5c0f699e-5336-492f-8f3d-e80fee6c6454")
 	)
 	(via
@@ -115244,7 +115244,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J3-Pin_2)")
+		(net "Net-(J4-Pin_2)")
 		(uuid "8f78164c-2c23-4f9a-97a8-b4ed20d4f6a9")
 	)
 	(via
@@ -115252,7 +115252,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(J3-Pin_2)")
+		(net "Net-(J4-Pin_2)")
 		(uuid "e5423ab8-d7d6-499b-8412-f69006699cdb")
 	)
 	(segment
@@ -115260,7 +115260,7 @@
 		(end 175.93 127.79)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J3-Pin_2)")
+		(net "Net-(J4-Pin_2)")
 		(uuid "677a8972-b10f-4017-b16e-3d0a0d49428d")
 	)
 	(segment
@@ -115268,7 +115268,7 @@
 		(end 176.68 154.5)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J3-Pin_2)")
+		(net "Net-(J4-Pin_2)")
 		(uuid "6bbc0171-3882-484e-b801-7f1131be9967")
 	)
 	(segment
@@ -115276,7 +115276,7 @@
 		(end 160.41 127.8)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J3-Pin_2)")
+		(net "Net-(J4-Pin_2)")
 		(uuid "72324d70-1acb-492b-a7c0-0c2986457f31")
 	)
 	(segment
@@ -115284,7 +115284,7 @@
 		(end 176.7 154.48)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J3-Pin_2)")
+		(net "Net-(J4-Pin_2)")
 		(uuid "ac340987-7e90-43c7-8c16-1774dc1e9e17")
 	)
 	(segment
@@ -115292,7 +115292,7 @@
 		(end 159.36 126.75)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J3-Pin_2)")
+		(net "Net-(J4-Pin_2)")
 		(uuid "c4cbf94f-013c-42dc-9bc4-11f2d41b1431")
 	)
 	(segment
@@ -115300,7 +115300,7 @@
 		(end 175.92 127.8)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J3-Pin_2)")
+		(net "Net-(J4-Pin_2)")
 		(uuid "c9f69de4-2baf-493a-85e5-2e534454c712")
 	)
 	(segment
@@ -115308,7 +115308,7 @@
 		(end 178.99 154.48)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(J3-Pin_2)")
+		(net "Net-(J4-Pin_2)")
 		(uuid "fc63ef56-beb2-46a8-a961-14d1b26e1eff")
 	)
 	(segment

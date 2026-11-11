@@ -18,7 +18,8 @@
   "repo": "ACE",
   "board": "ACE Board",
   "revs": [
-   "1.0"
+   "1.0",
+   "1.1"
   ],
   "refs": [
    "J2"
@@ -33,40 +34,11 @@
   "repo": "ACE",
   "board": "ACE Board",
   "revs": [
-   "1.0"
+   "1.0",
+   "1.1"
   ],
   "refs": [
    "J4"
-  ],
-  "what": "`DCD`: where the ACIA's `DCD` comes from.",
-  "shipped": "No shunt.",
-  "do": "Fit the shunt on pins 1 and 2, ground, as the boards are built. On pins 2 and 3 it takes `DCD` from the cable, and a cable that doesn't assert it stops the receiver. With no shunt the input floats, and serial may not work.",
-  "need": "For serial",
-  "shunts": 1
- },
- {
-  "repo": "ACE",
-  "board": "ACE Board",
-  "revs": [
-   "1.1"
-  ],
-  "refs": [
-   "J1"
-  ],
-  "what": "`CTS`: where the ACIA's `CTS` comes from.",
-  "shipped": "No shunt.",
-  "do": "Fit the shunt on pins 1 and 2, ground, as the boards are built. On pins 2 and 3 it takes `CTS` from the cable, and a cable that doesn't assert it stops the transmitter. With no shunt the input floats, and serial may not work.",
-  "need": "For serial",
-  "shunts": 1
- },
- {
-  "repo": "ACE",
-  "board": "ACE Board",
-  "revs": [
-   "1.1"
-  ],
-  "refs": [
-   "J3"
   ],
   "what": "`DCD`: where the ACIA's `DCD` comes from.",
   "shipped": "No shunt.",
