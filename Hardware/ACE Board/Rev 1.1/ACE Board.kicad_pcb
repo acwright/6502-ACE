@@ -51123,7 +51123,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J1"
-			(at 0 -2.38 0)
+			(at -2.5 5.54 90)
 			(layer "F.SilkS")
 			(uuid "a8ba194c-1be4-426e-b40d-0180cc062c52")
 			(effects
@@ -51134,7 +51134,7 @@
 			)
 		)
 		(property "Value" "PHI2 SELECT"
-			(at 2.48 2.49 90)
+			(at 3 2.54 90)
 			(layer "F.SilkS")
 			(uuid "de7f04e1-4a8a-4f7c-9d68-07c3a7cf4846")
 			(effects
@@ -73811,7 +73811,7 @@
 		)
 	)
 	(gr_text "1MHz"
-		(at 234.55 66.35 90)
+		(at 218.5 118.5 90)
 		(layer "F.SilkS")
 		(uuid "2796c370-d9c7-4506-b438-7c5c727efb99")
 		(effects
@@ -73835,7 +73835,7 @@
 		)
 	)
 	(gr_text "2MHz"
-		(at 234.55 76.35 90)
+		(at 218.5 128.5 90)
 		(layer "F.SilkS")
 		(uuid "8c5be40d-7951-40a5-880e-95b9b89ffa09")
 		(effects
