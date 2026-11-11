@@ -153,7 +153,7 @@ Pin headers are cut from strips, and the cart files count whole strips.
 - **J18:** Male box header with a keying notch, for a 40-way ribbon cable.
 - **J21:** Right-angle socket on the ACE Board; the CF Adapter plugs in here. Digi-Key only.
 - **SW1–SW67:** Cherry MX2A RGB Blue, clear housing, as on the owner's Amazon kit. MX1A-E1NN (black housing) is the deeper-stocked alternative; Digi-Key CH196-ND, Mouser 540-MX1A-E1NN.
-- **U4:** Rockwell R6551AP, out of production. Do not substitute a W65C51.
+- **U4:** Rockwell R6551AP, out of production. Do not substitute a W65C51. A Rockwell R65C51P1 or R65C51P2 also works, but only where the board has the ACIA's crystal jumpers and they are closed: the Serial Card and Serial Card Pro (JP2, JP3), the ACE Board 1.1 (JP1, JP2) and the KIM Board 1.1 (JP2, JP3). On a bare crystal it gives no serial.
 - **U9:** A modern replacement for the MOS 6581 SID, which is out of production. Every tested build uses one. A real 6581 also needs 12 V at pin 28, which the standard build does not provide.
 - **U14:** The RAM's RB/WB gate (2026-11-11): its TTL thresholds end RB and WB a few ns later after PHI2 falls. The part tested in the ACE's U14.
 
@@ -240,7 +240,7 @@ U12 and U13 are not listed: fit the ACE RAM Patch Rev 1.1 in their sockets. See 
 - **J18:** Male box header with a keying notch, for a 40-way ribbon cable.
 - **J21:** Right-angle socket on the ACE Board; the CF Adapter plugs in here. Digi-Key only.
 - **SW1–SW67:** Cherry MX2A RGB Blue, clear housing, as on the owner's Amazon kit. MX1A-E1NN (black housing) is the deeper-stocked alternative; Digi-Key CH196-ND, Mouser 540-MX1A-E1NN.
-- **U4:** Rockwell R6551AP, out of production. Do not substitute a W65C51.
+- **U4:** Rockwell R6551AP, out of production. Do not substitute a W65C51. A Rockwell R65C51P1 or R65C51P2 also works, but only where the board has the ACIA's crystal jumpers and they are closed: the Serial Card and Serial Card Pro (JP2, JP3), the ACE Board 1.1 (JP1, JP2) and the KIM Board 1.1 (JP2, JP3). On a bare crystal it gives no serial.
 - **U9:** A modern replacement for the MOS 6581 SID, which is out of production. Every tested build uses one. A real 6581 also needs 12 V at pin 28, which the standard build does not provide.
 
 
