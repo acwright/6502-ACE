@@ -113,7 +113,7 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
 - **Joystick**: Two Atari 2600-compatible joystick ports (JOYSTICK A on VIA PORT A and JOYSTICK B on VIA PORT B, `J6` and `J8`), read as `JOY(2)` and `JOY(1)` respectively
 - **Clock**: 16 MHz DIP-14 full can oscillator (X1); drives the ATmega1284 at 16 MHz and, through the 74HC163 divider (U5), the 65C02, VIA, ACIA and SID at 1 MHz, the speed every AC6502 is tested at. The PHI2 SELECT jumper (J1) offers 2 MHz on pins 2 and 3.
   - **Rev 1.0: keep J1 on 1 MHz** (pins 1 and 2). Its SID is clocked from the 1 MHz output whatever J1 says, so at 2 MHz it answers only every other CPU cycle.
-  - **Rev 1.1: 2 MHz is an option at the builder's risk.** The CPU, VIA, ACIA and SID all follow J1. The limit found at 2 MHz, tested on 2026-11-11, is the RAM letting go of the data bus too soon after `PHI2` falls: a fast RAM (the Alliance AS6C62256 at U7) with a fast-releasing 74HC00 lot at U14, the gate that makes `RB` and `WB`, misread at 2 MHz. Rev 1.1 fits a 74HCT00 at U14, which ends `RB` and `WB` a few nanoseconds later; it ran an hour's read-and-write soak at 2 MHz clean. A slower RAM (a Hitachi HM62256LP-70) also cures it. The cure was found by testing, not measured with a scope. The R6551AP is rated for 2 MHz, with no margin, and read back clean at that speed. The BIOS misses the CompactFlash card at boot at 2 MHz until its next release.
+  - **Rev 1.1: 2 MHz is an option at the builder's risk.** The CPU, VIA, ACIA and SID all follow J1. The limit found at 2 MHz, tested on 2026-11-11, is the RAM letting go of the data bus too soon after `PHI2` falls: a fast RAM (the Alliance AS6C62256 at U7) with a fast-releasing 74HC00 lot at U14, the gate that makes `RB` and `WB`, misread at 2 MHz. Rev 1.1 fits a 74HCT00 at U14, which ends `RB` and `WB` a few nanoseconds later; it ran an hour's read-and-write soak at 2 MHz clean. A slower RAM (a Hitachi HM62256LP-70) also cures it. The cure was found by testing, not measured with a scope. The R6551AP is rated for 2 MHz, with no margin, and read back clean at that speed. BIOS 2.1.0 finds the CompactFlash card at boot at 2 MHz, and reads and writes it clean there (tested on Rev 1.0 with the 74HCT00 at U14, 2026-11-12); BIOS 2.0.x misses the card at boot at 2 MHz.
 
 **The serial handshake jumpers.** `CTS EN` and `DCD EN` (J2 and J4) both default to **ground**, and
 that is how the boards were built. Ground means the line is permanently asserted, so the ACIA can
@@ -132,8 +132,8 @@ problem as U3, and needs the same diode on the card.
 
 #### Known limits
 
-- **The SID probe:** at 1 MHz, the BIOS missed the SID (an ARMSID) once in about a dozen boots. The cause isn't known.
-- **The CompactFlash probe:** the BIOS waits for the card to leave `BSY` with a loop counted in CPU cycles, about 851 ms at 1 MHz. Every card tested is found, but a slower card could be missed. A probe that waits a fixed time is planned for the next BIOS 2.x update (6502-BIOS `TODO.md`, item 1).
+- **The SID probe:** BIOS 2.0.x missed the SID (an ARMSID) at 1 MHz about once in a dozen boots, because it read voice 3 only once. BIOS 2.1.0 reads it several times: on 2026-11-12 it found the ARMSID on 10 boots of 10, and with IO7 switched off on IO ENABLE (SW69) found no SID on 10 of 10. Use 2.1.0 or later.
+- **The CompactFlash probe:** BIOS 2.0.x waited for the card with a loop counted in CPU cycles, about 851 ms at 1 MHz and half that at 2 MHz, so a slow card could be missed. BIOS 2.1.0 passes over an empty slot at once and otherwise waits up to 3.0 s at 1 MHz (1.5 s at 2 MHz). A Promaster 128 MB card is ready in about 434 ms.
 
 ### ACE CF Adapter
 `Hardware/ACE CF Adapter/`
@@ -187,7 +187,7 @@ The ACE runs a PICO9918 PRO v2.0 (RP2354A) with 6502-PICOVDP, and BIOS 2.x. RP20
 2. **Optionally, back up the stock firmware** from BOOTSEL: `picotool save -a stock.bin`. To restore it later, `picotool load -v -x stock.bin`. The backup has been made on a PRO; the restore is picotool's ordinary load and hasn't been tried.
 3. **Flash 6502-PICOVDP:** download `picovdp-v1.0.0.uf2` from the [v1.0.0 release](https://github.com/acwright/6502-PICOVDP/releases/tag/v1.0.0) (SHA-256 `0b74cd9875cbffc46de7ec48a9bb6e0d4a76a3e796d2563615e17e6bed94afd5`). Hold BOOT, connect USB-C, and run `picotool load -v -x -f picovdp-v1.0.0.uf2`. The release build has no USB of its own, so every update needs BOOT again. The card can be flashed in the ACE's socket with the ACE switched off.
 4. **Burn BIOS 2.x to U8.** The ACE was tested with `v2.0.2`.
-5. **Check the first boot:** the AC6502 logo, then `AC6502 BIOS v2.0`, `BASIC v2.0 30718 BYTES FREE` and `RAM RTC CF SER VIA SID VDP`, at power-on and after the reset button (SW70). If `VDP` is missing from that line, the card isn't running 6502-PICOVDP.
+5. **Check the first boot:** the AC6502 logo, then `AC6502 BIOS v2.1`, `BASIC v2.0 30718 BYTES FREE` and `RAM RTC CF SER VIA SID VDP`, at power-on and after the reset button (SW70). If `VDP` is missing from that line, the card isn't running 6502-PICOVDP.
 6. **Check the `MDE1` pin** from BASIC: `POKE 39939,4:POKE 39939,142:PRINT PEEK(39939):POKE 39939,0:POKE 39939,142` prints 172.
 
 On Rev 1.0, fit the `/INT` diode first (see [Building a Rev 1.0](BOM.md#build-notes)).
