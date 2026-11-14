@@ -1,9 +1,9 @@
 {
- "ACE|ACE Board|1.0": "6ad7eb97e6df0ccc127598fc7773632289281cfe",
- "ACE|ACE Board|1.1": "9f4ee19fe0c3f1d6408514e7a9326284e1b44bb4",
- "ACE|ACE CF Adapter|1.0": "56ce1de60b9da9420c724488a5c10b65091e0b4e",
- "ACE|ACE CF Adapter|1.1": "28d8cf8ac97d986eeda01844541ef536be8f4057",
- "ACE|ACE RAM Patch|1.0": "819db3abfe96a0aa349bc9f9703cd0865e435195",
- "ACE|ACE RAM Patch|1.1": "42cde7449ade891641d0591db4d40cbbe38c6e44",
+ "ACE|ACE Board|1.0": "1a109b7a92f5974507236b905bbcdbaaee814381",
+ "ACE|ACE Board|1.1": "f3f7e71630d5fbe0d9919e08c9c91a43fb3c0579",
+ "ACE|ACE CF Adapter|1.0": "ab32df95ef279c6b89ea817dd6350234acf1b682",
+ "ACE|ACE CF Adapter|1.1": "1033851f2ce0dd7fbd5a840f7cfb89b4c56dcef0",
+ "ACE|ACE RAM Patch|1.0": "39a4bec276830c522a3112061e8d99f7e5bcaf76",
+ "ACE|ACE RAM Patch|1.1": "fd08a763ab5388fbfbd86840d7ea5ff3eb0713f2",
  "_about": "What each revision's PCB looked like when its images were rendered. Tools/board-images/render.py writes it, and derived-check.py compares."
 }

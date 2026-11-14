@@ -8,7 +8,7 @@
 	)
 	(paper "A2")
 	(title_block
-		(title "6502 ACE Board")
+		(title "AC6502 ACE Board")
 		(date "2026-04-29")
 		(rev "1.0")
 		(company "A.C. Wright Design")

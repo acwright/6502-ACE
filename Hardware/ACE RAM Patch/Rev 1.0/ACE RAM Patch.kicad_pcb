@@ -8,7 +8,7 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "ACE RAM Patch")
+		(title "AC6502 ACE RAM Patch")
 		(date "2026-06-21")
 		(rev "1.0")
 		(company "A.C. Wright Design")

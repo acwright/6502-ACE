@@ -8,7 +8,7 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "6502 ACE CF Adapter")
+		(title "AC6502 ACE CF Adapter")
 		(date "2026-05-07")
 		(rev "1.1")
 		(company "A.C. Wright Design")

@@ -5,7 +5,7 @@
 	(uuid "4a58cb39-d7d3-4ad7-b7e8-56cbd8b18af7")
 	(paper "A4")
 	(title_block
-		(title "ACE RAM Patch")
+		(title "AC6502 ACE RAM Patch")
 		(date "2026-06-21")
 		(rev "1.0")
 		(company "A.C. Wright Design")

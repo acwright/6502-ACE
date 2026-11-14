@@ -5,7 +5,7 @@
 	(uuid "34a60d42-c14a-479d-bef3-5ff0ee57bad5")
 	(paper "User" 803.148 419.989)
 	(title_block
-		(title "6502 ACE Board")
+		(title "AC6502 ACE Board")
 		(date "2026-09-24")
 		(rev "1.1")
 		(company "A.C. Wright Design")
