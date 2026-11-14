@@ -54,5 +54,7 @@
    "Tested",
    "Built and tested on an ACE Board Rev 1.0, 2026-11-03"
   ]
- }
+ },
+ "_replaced": "A made revision whose number a newer design took, by the owner's ruling (KICAD.md K39). Each entry keeps the made boards' JLCPCB order, its date, the commit they were made from, and the last commit that holds the made files; the revision itself is drawn, in 'drawn'. The tools treat it as drawn; register.py names the made boards in its notes.",
+ "replaced": {}
 }
