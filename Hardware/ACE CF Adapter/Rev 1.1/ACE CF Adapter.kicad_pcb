@@ -5544,7 +5544,7 @@
 	(footprint "6502 Logos:6502 ACE CF Adapter Logo 5mm"
 		(layer "F.Cu")
 		(uuid "e62800fb-64e3-4d40-a76a-cefc96854da8")
-		(at 105 94 90)
+		(at 105.000585 93.624555 90)
 		(property "Reference" "G***"
 			(at 0 0 90)
 			(layer "F.SilkS")

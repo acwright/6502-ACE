@@ -1,0 +1,4 @@
+{
+ "_about": "Newest revisions not yet made whose board logo is not where Tools/logos/standard.json puts it, each with the KICAD.md item that moves it. placement.py --check reports them without failing, and fails on an entry that is no longer needed.",
+ "pending": {}
+}
