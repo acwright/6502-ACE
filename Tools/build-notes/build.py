@@ -61,13 +61,14 @@ pages.append(f'''
 <tr><td class="c">5</td><td>Program the AB Controller firmware, and add a 10 kΩ pull-up on RESB</td><td>Firmware: every board. Pull-up: recommended</td></tr>
 <tr><td class="c">6</td><td>Stack a socket on U3 and fit a diode for /INT</td><td>Any pico9918 video card</td></tr>
 <tr><td class="c">7</td><td>Fit the ACE RAM Patch Rev 1.1 in place of U12 and U13</td><td>Any board with the banked RAM (U15, U21, U22)</td></tr>
+<tr><td class="c">8</td><td>Optional: put the SID on J1's clock, with one cut and one wire</td><td>Only a board run at 2 MHz, at the builder's risk</td></tr>
 </table>
 </div>
 <div>{fig(fig_map(),"<b>Figure 1. Top of the ACE.</b> Where each change is. Change 5 is in two places: the ATmega, U6, and its pull-up under U4.")}</div>
 </div>
 <div class="warn"><b>Power:</b> use a center-positive 5 V supply only. Rev 1.0 has no reverse-polarity protection, so a reversed supply reaches every chip. Rev 1.1 adds a diode for this. These notes have no hand fix for it.</div>
 <h3>These notes use Rev 1.0's part numbers</h3>
-<p>Rev 1.0's designators are the ones printed on your board. Rev 1.1 renumbers many parts, so build from the ACE Board Rev 1.0 table in <code>BOM.md</code>, or from <code>Production/ACE Board/Rev 1.0/bom.csv</code>, which both use these numbers. Rev 1.1's R5, C20, D1 and U13 are all different parts from the Rev 1.0 parts with those numbers.</p>
+<p>Rev 1.0's designators are the ones printed on your board. Build from the ACE Board Rev 1.0 table in <code>BOM.md</code>, or from <code>Production/ACE Board/Rev 1.0/bom.csv</code>, which both use these numbers. Rev 1.1 keeps them too, part for part, except that its U13 is a 74HC02 where Rev 1.0's is a 74HC00; the parts Rev 1.1 adds take numbers Rev 1.0 never used.</p>
 <h3>Changes to the parts you buy</h3>
 <table>
 <tr><th>Part</th><th style="width:30pt">Qty</th><th>For</th></tr>
@@ -94,7 +95,7 @@ pages.append(f'''
 <div class="side" style="grid-template-columns:1fr 2.4in">
 <div>
 {h2(3,"J1: keep the shunt on pins 1 and 2")}
-<p>J1, PHI2 SELECT, offers 1 MHz or 2 MHz. Use 1 MHz. The SID's clock is always 1 MHz, so at 2 MHz the SID answers only every other CPU cycle, and the BIOS's card probes miss cards. Rev 1.1 removes the jumper and runs at 1 MHz only.</p>
+<p>J1, PHI2 SELECT, offers 1 MHz or 2 MHz. Use 1 MHz, the AC6502's standard clock. On Rev 1.0 the SID's clock is always U5's 1 MHz output, whatever J1 says, so at 2 MHz the SID answers only every other CPU cycle. Rev 1.1 keeps J1 and puts the SID on J1's clock, so 2 MHz is an option there, at the builder's risk. Change 8 makes a Rev 1.0 the same.</p>
 {boxes("Shunt on J1 pins 1 and 2.")}
 </div>
 <div style="padding-top:10pt">{fig(fig_j1(),"<b>Figure 4.</b> J1: the shunt covers the highlighted pair.")}</div>
@@ -214,14 +215,14 @@ pages[-1]+=(f'''
 <h2>First power-on</h2>
 {boxes("SW69, IO ENABLE: all eight switches on. Each switch is one I/O window, IO1 to IO8, and the first two are the banked RAM.",
 "A center-positive 5 V supply. Switch on.")}
-<p>With a pico9918 running 6502-PICOVDP and BIOS 2.x, the screen shows the AC6502 logo, then <code>AC6502 BIOS v2.0</code>, <code>BASIC v2.0 30718 BYTES FREE</code> and the cards the BIOS found: <code>RAM RTC CF SER VIA SID VDP</code>. The 6502-ACE README's "Video card" section covers setting up the card and the ROM.</p>
+<p>With a pico9918 running 6502-PICOVDP and BIOS 2.x, the screen shows the AC6502 logo, then <code>AC6502 BIOS v2.1</code>, <code>BASIC v2.0 30718 BYTES FREE</code> and the cards the BIOS found: <code>RAM RTC CF SER VIA SID VDP</code>. The 6502-ACE README's "Video card" section covers setting up the card and the ROM.</p>
 <h3>Which cards did the BIOS find?</h3>
 <p>Type this at BASIC:</p>
 <pre>PRINT PEEK(781)</pre>
 <p>With everything fitted it prints <b>255</b>. Each card the BIOS doesn't find takes its own value off that total:</p>
 <table style="width:auto"><tr><th>RAM, $8000</th><th>RAM, $8400</th><th>RTC</th><th>CF</th><th>Serial</th><th>VIA</th><th>SID</th><th>Video</th></tr>
 <tr><td>1</td><td>2</td><td>4</td><td>8</td><td>16</td><td>32</td><td>64</td><td>128</td></tr></table>
-<p style="margin-top:5pt">Without the patch, the BIOS doesn't find the $8400 window, so a full Rev 1.0 prints 253. At 1 MHz the BIOS can miss an ARMSID on about one boot in a dozen: if the total is 64 short, press reset and read it again.</p>
+<p style="margin-top:5pt">Without the patch, the BIOS doesn't find the $8400 window, so a full Rev 1.0 prints 253. BIOS 2.0.x could miss an ARMSID on about one boot in a dozen; BIOS 2.1.0 finds it every time, so use 2.1.0 or later.</p>
 ''')
 pages.append(f'''
 <h3 style="margin-top:0">Does the banked RAM work?</h3>
@@ -246,6 +247,20 @@ RUN</pre>
 {boxes("The keyboard types at BASIC. A dead keyboard with a pico9918 fitted points to change 6, the /INT diode.",
 "The reset button, SW70, restarts the machine to the same boot screen.",
 "Serial works at 19200 baud over a null-modem DB-9 cable. The ACE's port is wired as DTE. J2 (CTS EN) and J4 (DCD EN) both stay on ground unless you need the handshake.")}
+''')
+pages.append(f'''
+{h2(8,"Optional: the SID on J1's clock, for 2 MHz")}
+<p>Only for a board you mean to run at 2 MHz, which is at the builder's risk on any ACE. On Rev 1.0 the SID, U9, takes its clock from U5's 1 MHz output, whatever J1 says, so at 2 MHz it answers only every other CPU cycle. Rev 1.1 clocks the SID from J1's middle pin, PHI2, the clock the CPU runs on. One cut and one wire do the same on a Rev 1.0. After them the SID follows J1 at either setting, so the change does no harm at 1 MHz. This change hasn't been tried on a board yet: Rev 1.1 is drawn this way.</p>
+<div class="info"><b>2 MHz needs more than this.</b> The 2 MHz tests of 2026-11-11 ran a Rev 1.0 with a 74HCT00 at U14, which fits its socket. See the 6502-ACE README's notes on 2 MHz.</div>
+<div class="side" style="grid-template-columns:2.7in 1fr">
+<div>{fig(fig_sid_cut(),"<b>Figure 14. Top of the ACE, beside U9.</b> The SID's clock runs on the top side, 2.4 mm left of U9's pins, between two vias. It is drawn in blue: the track itself is under the solder mask. Cut it level with pin 5, below C7.")}</div>
+<div>
+{step(1,"Cut the track",boxes("Find the track on the top side, running straight up and down 2.4 mm left of U9's pins 1–6, past C4 and C7.","Cut it level with U9 pin 5, below C7, where no other track runs within 4 mm: two cuts about 1 mm apart, with a sharp blade, and lift the copper between them."))}
+{step(2,"Fit the wire",boxes("On the underside, solder an insulated wire from J1 pin 2, the middle pin, to U9 pin 6 (Figure 15). Solder to the joints, and keep the wire flat against the board.","For 2 MHz, move J1's shunt to pins 2 and 3. For 1 MHz, leave it on pins 1 and 2."))}
+{step(3,"Check with the meter, power off",boxes("U9 pin 6 to J1 pin 1: no beep. The cut is through.","U9 pin 6 to J1 pin 2: beep. The wire is on.","U9 pin 6 to its neighbours, pins 5 and 7: no beep."))}
+</div>
+</div>
+{fig(fig_sid_wire(),"<b>Figure 15. Underside of the ACE.</b> The wire from J1's middle pin to U9 pin 6. Seen from below the board is mirrored, so J1 is on the right.")}
 ''')
 
 N=len(pages)

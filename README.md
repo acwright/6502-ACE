@@ -340,7 +340,7 @@ The table lists every off-board header on each board's newest revision, read fro
 ## Docs
 `Docs/`
 
-**[ACE Board Rev 1.0 Build Notes](Docs/ACE%20Board/Rev%201.0/ACE%20Board%20Build%20Notes.pdf)** (PDF, for printing): the work a Rev 1.0 needs beyond its bill of materials, step by step. That is the pull-up values, the ACIA, the supply capacitor, the `RESB` pull-up and firmware, the `/INT` diode's socket stack and fitting the ACE RAM Patch, followed by the meter checks and the first power-on.
+**[ACE Board Rev 1.0 Build Notes](Docs/ACE%20Board/Rev%201.0/ACE%20Board%20Build%20Notes.pdf)** (PDF, for printing): the work a Rev 1.0 needs beyond its bill of materials, step by step. That is the pull-up values, the ACIA, the supply capacitor, the `RESB` pull-up and firmware, the `/INT` diode's socket stack and fitting the ACE RAM Patch, followed by the meter checks and the first power-on. An optional change 8 puts the SID on J1's clock, for 2 MHz, with one cut and one wire.
 
 ## Checking the schematics
 `Tests/check-schematics.mjs`

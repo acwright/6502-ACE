@@ -45,6 +45,7 @@ def fig_map():
     b+=badge(145,183,1)+badge(392,170,1)+badge(193,104,1)
     b+=badge(171,140,'2')+badge(219,110,3)+badge(153,101,4)
     b+=badge(355.5,140,5)+badge(152,129,5)+badge(239,140,6)+badge(338,193,7)
+    b+=rect(285,113,308,151,fill='none',stroke=RED,w=.9,dash='3 2')+badge(296.5,132,8)   # optional
     b+=lab(CX,337.5,"Keyboard edge: toward you",s=7.5,w=600)
     return svg(95,70,345,272,b)
 def fig_pull():
@@ -256,3 +257,29 @@ def fig_final():
     b+=lab(383.8,-8.4,"U2 pin 8 is right under it",s=1.15,c=RED,a="end",w=500)
     b+=line(369.5,-7.9,365.3,.1,c=RED,w=.16,arrow=True)
     return svg(337,-11.2,48,24,b)
+
+# Change 8, optional: the SID's clock (U9 pin 6) moves from U5's 1 MHz output to J1's middle pin, PHI2.
+# PHI2_1MHZ reaches U9 through one top-side track at x 288.08, from a via at y 107.78 to a via at y 128.69,
+# 2.4 mm left of U9's pins. It is cut level with pin 5, below C7: no other track within 4.2 mm, C7's pad 2.6 mm above.
+SIDX,SIDY1,SIDY2=288.08,107.78,128.69
+def fig_sid_cut():
+    b=TOP()
+    b+=line(SIDX,SIDY1,SIDX,SIDY2,c="#1f6fd1",w=.5)
+    b+=circ(SIDX,SIDY1,.55,fill="#fff",stroke="#1f6fd1",w=.3)+circ(SIDX,SIDY2,.55,fill="#fff",stroke="#1f6fd1",w=.3)
+    b+=line(SIDX-1.3,126.16,SIDX+1.3,126.16,c=RED,w=.6)
+    b+=lab(SIDX-1.8,126.68,"Cut here",s=1.5,c=RED,a="end")
+    for n,y in ((1,116.0),(5,126.16),(6,128.7)):
+        b+=lab(292.2,y+.5,f"U9 pin {n}",s=1.3,a="start",w=600)
+    b+=lab(SIDX-1.2,SIDY1+.4,"via from U5",s=1.2,a="end",w=500)
+    b+=lab(SIDX-1.2,SIDY2+1.6,"via to pin 6",s=1.2,a="end",w=500)
+    return svg(274,104.5,30,27.5,b)
+def fig_sid_wire():
+    b=BOT()
+    j,u=(mx(218.5),123.6),(mx(290.5),128.7)
+    b+=line(*j,*u,c=RED,w=.45)
+    b+=circ(*j,1.0)+circ(*u,1.0)
+    b+=lab(j[0]-1.5,j[1]+3.0,"J1 pin 2, the middle pin: PHI2",s=1.6,c=RED,a="end")
+    b+=lab(u[0]+1.5,u[1]+3.0,"U9 pin 6: the SID's clock",s=1.6,c=RED,a="start")
+    b+=lab(mx(290.5)+1.6,116.5,"U9 pin 1",s=1.4,a="start")
+    b+=lab(mx(218.5)-1.6,121.5,"J1 pin 1",s=1.4,a="end")
+    return svg(mx(296),114,84,22,b)
