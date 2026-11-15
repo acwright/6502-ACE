@@ -15965,7 +15965,7 @@
 				)
 			)
 		)
-		(property "Digikey" "160-1414-1-ND"
+		(property "Digikey" "160-1415-1-ND"
 			(at 293.37 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -15976,7 +15976,7 @@
 				)
 			)
 		)
-		(property "Mouser" "859-LTST-C170KGKT"
+		(property "Mouser" "859-LTST-C170KRKT"
 			(at 293.37 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -15998,7 +15998,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2297"
+		(property "LCSC" "C2295"
 			(at 293.37 118.11 0)
 			(hide yes)
 			(show_name no)

@@ -412,7 +412,7 @@
  "ACE|ACE SD Adapter|1.1|R4": "10k|R_0805_2012Metric",
  "ACE|ACE SD Adapter|1.1|C7": "100nF|C_0805_2012Metric",
  "ACE|ACE SD Adapter|1.1|R15": "4.7k|R_0805_2012Metric",
- "ACE|ACE SD Adapter|1.1|D1": "led-0805-green",
+ "ACE|ACE SD Adapter|1.1|D1": "led-0805-red",
  "ACE|ACE SD Adapter|1.1|C6": "15pF|C_0402_1005Metric",
  "ACE|ACE SD Adapter|1.1|U3": "W25Q128JVFIQ|SOIC-16W_7.5x10.3mm_P1.27mm",
  "ACE|ACE SD Adapter|1.1|C11": "4.7uF|C_0402_1005Metric",
