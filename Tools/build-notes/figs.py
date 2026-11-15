@@ -283,3 +283,34 @@ def fig_sid_wire():
     b+=lab(mx(290.5)+1.6,116.5,"U9 pin 1",s=1.4,a="start")
     b+=lab(mx(218.5)-1.6,121.5,"J1 pin 1",s=1.4,a="end")
     return svg(mx(296),114,84,22,b)
+
+# Change 9, optional: J11 and J14 the right way round. Read from the PCB: each jack's sleeve is its centred slot (pad 1,
+# at y 79.5) and its tip and shunt the two holes behind it (pads 2, at y 83.2, 3.75 mm either side). On Rev 1.0 the
+# sleeves carry the signal and the tip and shunt pads sit in the ground pour, each held by two 0.254 mm thermal spokes,
+# one at each end of the pad, on both layers. The signal reaches J14's sleeve on a top-side track from J15 pin 1.
+TOPCU=lambda:board("ace-F-cu",CX,CY)
+BOTCU=lambda:board("ace-B-cu",CX,CY)
+TIPS=[(276.25,83.2),(283.75,83.2),(288.25,83.2),(295.75,83.2)]
+SLEEVES=[(280.0,79.5),(292.0,79.5)]
+J15P1,J15P2=(279.225,94.0),(281.765,94.0)
+def spokes(b,x0=lambda x:x):
+    for x,y in TIPS:
+        for dy in (-2.0,2.0): b+=circ(x0(x),y+dy,.55,stroke=RED,w=.3)
+    return b
+def fig_audio_top():
+    b=TOPCU();b=spokes(b)
+    b+=line(278.9,86.9,281.1,86.9,c=RED,w=.55)
+    b+=lab(281.6,87.4,"Cut the track",s=1.3,c=RED,a="start")
+    b+=lab(277.0,78.6,"J14",s=1.4,a="end")+lab(289.0,78.6,"J11",s=1.4,a="end")
+    b+=lab(J15P1[0]-1.6,J15P1[1]+.5,"J15 pin 1",s=1.2,a="end")
+    return svg(270,76,30,20.5,b)
+def fig_audio_bot():
+    b=BOTCU();b=spokes(b,mx)
+    pts=[J15P1,(276.25,83.2),(283.75,83.2),(288.25,83.2),(295.75,83.2)]
+    for (x1,y1),(x2,y2) in zip(pts,pts[1:]): b+=line(mx(x1),y1,mx(x2),y2,c=RED,w=.4)
+    b+=line(mx(SLEEVES[0][0]),SLEEVES[0][1],mx(J15P2[0]),J15P2[1],c="#1f6fd1",w=.4)
+    for x,y in pts+[SLEEVES[0],J15P2]: b+=circ(mx(x),y,.7,stroke="#000",w=.2)
+    b+=lab(mx(J15P1[0]),J15P1[1]+2.4,"1",s=1.3,c=RED)+lab(mx(J15P2[0]),J15P2[1]+2.4,"2",s=1.3,c="#1f6fd1")
+    b+=lab(mx(J15P1[0])+1.4,J15P1[1]+.5,"J15",s=1.3,a="start")
+    b+=lab(mx(289.0),78.6,"J11",s=1.4,a="start")+lab(mx(277.0),78.6,"J14",s=1.4,a="start")
+    return svg(mx(300),76,30,21.5,b)

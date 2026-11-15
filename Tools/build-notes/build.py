@@ -62,11 +62,12 @@ pages.append(f'''
 <tr><td class="c">6</td><td>Stack a socket on U3 and fit a diode for /INT</td><td>Any pico9918 video card</td></tr>
 <tr><td class="c">7</td><td>Fit the ACE RAM Patch Rev 1.1 in place of U12 and U13</td><td>Any board with the banked RAM (U15, U21, U22)</td></tr>
 <tr><td class="c">8</td><td>Optional: put the SID on J1's clock, with one cut and one wire</td><td>Only a board run at 2 MHz, at the builder's risk</td></tr>
+<tr><td class="c">9</td><td>Optional: turn the RCA jacks' wiring the right way round</td><td>A board whose J11 and J14 feed an amplifier</td></tr>
 </table>
 </div>
 <div>{fig(fig_map(),"<b>Figure 1. Top of the ACE.</b> Where each change is. Change 5 is in two places: the ATmega, U6, and its pull-up under U4.")}</div>
 </div>
-<div class="warn"><b>Audio:</b> J11 and J14, the RCA jacks, are wired the wrong way round on Rev 1.0: the signal is on the sleeve and ground on the tip. Sound plays, but if the amplifier shares a ground with the ACE through another lead, expect hum. J15, the AUDIO header, is wired right, so a jack on the case wired to J15 avoids it. Rev 1.1 fixes the jacks.</div>
+<div class="warn"><b>Audio:</b> J11 and J14, the RCA jacks, are wired the wrong way round on Rev 1.0: the signal is on the sleeve and ground on the tip. Sound plays, but if the amplifier shares a ground with the ACE through another lead, expect hum. Change 9 rewires them, or use J15, the AUDIO header, which is wired right, with a jack on the case. Rev 1.1 fixes the jacks.</div>
 <div class="warn"><b>Power:</b> use a center-positive 5 V supply only. Rev 1.0 has no reverse-polarity protection, so a reversed supply reaches every chip. Rev 1.1 adds a diode for this. These notes have no hand fix for it.</div>
 <h3>These notes use Rev 1.0's part numbers</h3>
 <p>Rev 1.0's designators are the ones printed on your board. Build from the ACE Board Rev 1.0 table in <code>BOM.md</code>, or from <code>Production/ACE Board/Rev 1.0/bom.csv</code>, which both use these numbers. Rev 1.1 keeps them too, part for part, except that its U13 is a 74HC02 where Rev 1.0's is a 74HC00; the parts Rev 1.1 adds take numbers Rev 1.0 never used.</p>
@@ -262,6 +263,16 @@ pages.append(f'''
 </div>
 </div>
 {fig(fig_sid_wire(),"<b>Figure 15. Underside of the ACE.</b> The wire from J1's middle pin to U9 pin 6. Seen from below the board is mirrored, so J1 is on the right.")}
+''')
+pages.append(f'''
+{h2(9,"Optional: the RCA jacks the right way round")}
+<p>J11 (AUDIO L) and J14 (AUDIO R) are wired the wrong way round on Rev 1.0. Each jack's sleeve, its ground, is the centred slot nearest the board edge, and its tip, the signal, is one of the two holes behind it; the other is the tip's shunt, which touches the tip whenever no plug is in. Rev 1.0 puts the SID's signal on the sleeves and ground on the tip and shunt. Sound still plays, since audio has no polarity, but the signal rides on the cable's shield, so an amplifier that shares a ground with the ACE through another lead can hum. This change swaps them, as Rev 1.1 is drawn: the sleeves go to ground, and the tip and shunt holes to the signal. It hasn't been tried on a board yet.</p>
+<div class="info"><b>Do it before fitting J11 and J14.</b> Four of the cuts are on the top side, under the jacks. On a built board, take the jacks off first. <b>The simpler way round:</b> leave J11 and J14 as they are, and wire a jack on the case to J15, the AUDIO header, which is wired right: pin 1 the signal, pin 2 ground.</div>
+<div class="two">{fig(fig_audio_top(),"<b>Figure 16. Top copper around J14 and J11.</b> Cut the track from J15 to J14's sleeve, and the eight spokes circled, two at the ends of each tip and shunt hole.")}{fig(fig_audio_bot(),"<b>Figure 17. Underside copper, mirrored.</b> Cut the eight spokes circled. Red: the signal wire, from J15 pin 1 (square pad) to all four tip and shunt holes. Blue: J14's sleeve to J15 pin 2, ground.")}</div>
+{step(1,"Cut the signal track to the sleeves",boxes("On the top side, the track runs up from J15 pin 1 into J14's sleeve slot. Cut it just below the jack's outline, where it runs straight (Figure 16), with two cuts about 1 mm apart, and lift the copper between them.","Leave the underside track that joins the two sleeves: both go to ground together."))}
+{step(2,"Free the tip and shunt holes from the ground pour",boxes("Each of the four holes behind the sleeves is held in the ground pour by two thin spokes, one at each end, on each side of the board: sixteen in all, circled in Figures 16 and 17.","Cut each spoke across its gap with a sharp blade, so no copper joins the hole's ring to the pour."))}
+{step(3,"Fit the jacks, then the two wires underneath",boxes("Fit J11 and J14 as usual.","Signal: solder an insulated wire from J15 pin 1 to the tip and shunt holes' joints, all four in a chain (red).","Ground: solder an insulated wire from J14's sleeve joint to J15 pin 2 (blue)."))}
+{step(4,"Check with the meter, power off",boxes("Each sleeve joint to J15 pin 2: beep. Each tip and shunt joint to J15 pin 2: no beep.","Each tip and shunt joint to J15 pin 1: beep. Each sleeve joint to J15 pin 1: no beep.","J15 pin 1 to C8's lead nearest J15: beep. The signal still reaches J15."))}
 ''')
 
 N=len(pages)

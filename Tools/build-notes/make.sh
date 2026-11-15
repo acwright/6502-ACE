@@ -15,6 +15,7 @@ for s in F B; do
   M=(); [ $s = B ] && M=(--mirror)
   $KC pcb export svg --mode-single --black-and-white --exclude-drawing-sheet --page-size-mode 2 $M --layers "$s.Silkscreen,$s.Mask,Edge.Cuts" -o svg/patch-$s.svg "$TMP/p/p.kicad_pcb" >/dev/null || exit 1
   $KC pcb export svg --mode-single --black-and-white --exclude-drawing-sheet --page-size-mode 2 $M --layers "$s.Silkscreen,$s.Mask,Edge.Cuts" -o svg/ace-$s.svg "$TMP/a/a.kicad_pcb" >/dev/null || exit 1
+  $KC pcb export svg --mode-single --black-and-white --exclude-drawing-sheet --page-size-mode 2 $M --layers "$s.Cu,$s.Silkscreen,Edge.Cuts" -o svg/ace-$s-cu.svg "$TMP/a/a.kicad_pcb" >/dev/null || exit 1
 done
 python3 build.py || exit 1
 "$CHROME" --headless=new --disable-gpu --no-pdf-header-footer --allow-file-access-from-files --user-data-dir="$TMP/chrome" --print-to-pdf="$OUT" --virtual-time-budget=8000 "file://$PWD/notes.html" >/dev/null 2>&1
