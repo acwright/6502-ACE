@@ -69,6 +69,7 @@ Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev
 Rev 1.1's other changes need nothing on a built board, or can't be made on one:
 - **The ACIA's crystal jumpers can't be added.** Rev 1.1's R38, C32, JP1 and JP2 let an R65C51P or a W65C51 run; a Rev 1.0 has no pads for them, so fit the R6551AP, which needs none.
 - **Leave J5, the `VDD` header, empty.** It is only for a real SID's 12 V supply; the ARMSID needs nothing at U9 pin 28, and Rev 1.1 drops the header.
+- **The audio jacks are wired the wrong way round, and can't be rewired.** J11 and J14 carry the SID's signal on their sleeve and ground on their tip; Rev 1.1 puts the signal on the tip. Sound still plays, since audio has no polarity, but the signal rides on the cable's shield, so if the amplifier also shares a ground with the ACE through another lead (a USB or serial cable to the same computer) expect hum or quieter sound. J15, the `AUDIO` header, is wired right (pin 1 the signal, pin 2 ground): a jack on the case wired to J15 avoids it.
 - **The silkscreen** names the parts Rev 1.1 fits (`R6551AP`, `ARMSID`, `ATmega1284` and the rest), and Rev 1.1 keeps Rev 1.0's designators, so these notes and Rev 1.0's silkscreen agree.
 
 **ACE CF Adapter**

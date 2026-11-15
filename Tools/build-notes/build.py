@@ -66,6 +66,7 @@ pages.append(f'''
 </div>
 <div>{fig(fig_map(),"<b>Figure 1. Top of the ACE.</b> Where each change is. Change 5 is in two places: the ATmega, U6, and its pull-up under U4.")}</div>
 </div>
+<div class="warn"><b>Audio:</b> J11 and J14, the RCA jacks, are wired the wrong way round on Rev 1.0: the signal is on the sleeve and ground on the tip. Sound plays, but if the amplifier shares a ground with the ACE through another lead, expect hum. J15, the AUDIO header, is wired right, so a jack on the case wired to J15 avoids it. Rev 1.1 fixes the jacks.</div>
 <div class="warn"><b>Power:</b> use a center-positive 5 V supply only. Rev 1.0 has no reverse-polarity protection, so a reversed supply reaches every chip. Rev 1.1 adds a diode for this. These notes have no hand fix for it.</div>
 <h3>These notes use Rev 1.0's part numbers</h3>
 <p>Rev 1.0's designators are the ones printed on your board. Build from the ACE Board Rev 1.0 table in <code>BOM.md</code>, or from <code>Production/ACE Board/Rev 1.0/bom.csv</code>, which both use these numbers. Rev 1.1 keeps them too, part for part, except that its U13 is a 74HC02 where Rev 1.0's is a 74HC00; the parts Rev 1.1 adds take numbers Rev 1.0 never used.</p>
