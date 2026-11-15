@@ -49,7 +49,7 @@ pages=[]
 
 pages.append(f'''
 <h1>ACE Board Rev 1.0: Build Notes</h1>
-<p class="sub">The work an ACE Board Rev 1.0 needs beyond its bill of materials, for a new build or for upgrading a built board. Rev 1.1 makes these fixes on the PCB. On Rev 1.0 you make them by hand.</p>
+<p class="sub">The work an ACE Board Rev 1.0 needs beyond its bill of materials, for a new build or for upgrading a built board. Rev 1.1 makes these fixes on the PCB. On Rev 1.0 you make them by hand. Changes 1–7 are done and tested on the owner's Rev 1.0; change 8, which is optional, hasn't been tried on a board yet.</p>
 <div class="side" style="grid-template-columns:1fr 2.75in">
 <div>
 <table>
