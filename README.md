@@ -173,6 +173,7 @@ Each revision carries one of three labels:
 | ACE Board | 1.1 | **Untested** | A new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), a 74HCT00 at U14, the PHI2 SELECT jumper with the SID on the CPU's clock, the ACIA's crystal jumpers, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V. |
 | ACE CF Adapter | 1.1 | **Proven design** | Annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet. |
 | ACE RAM Patch | 1.1 | **Tested** | Built and tested on an ACE Board Rev 1.0, 2026-11-03. |
+| ACE SD Adapter | 1.1 | **Untested** | New in K33: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Being drawn; not yet routed or made. |
 <!-- End of which revision to make -->
 
 ## Firmware
@@ -360,7 +361,7 @@ It needs Node.js, [cc65](https://cc65.github.io/) and `stty`, so it runs on macO
 ## Libraries
 `Libraries/`
 
-Shared KiCad symbol and footprint libraries used across all AC6502 hardware projects, with their 3D models in `Models/`. A part is named for what it is and its shape, such as `RJ45 Jack LED` or `CR2032 Holder`, never for a manufacturer's part number, so a replacement part with the same footprint fits without renaming anything. The part numbers to buy are in [BOM.md](BOM.md). Every AC6502 repository carries the same copy of each part.
+Shared KiCad symbol and footprint libraries used across all AC6502 hardware projects, with their 3D models in `Models/`. A part is named for what it is and its shape, such as `RJ45 Jack LED` or `CR2032 Holder`, never for a manufacturer's part number, so a replacement part with the same footprint fits without renaming anything. The part numbers to buy are in [BOM.md](BOM.md). Every AC6502 repository carries the same copy of each part. The RP2350A and polarized inductor models come from Raspberry Pi's RP2350 minimal design, under the MIT licence in `Models/Raspberry Pi MIT License.txt`.
 
 ## Bill of Materials
 
