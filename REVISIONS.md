@@ -61,11 +61,21 @@ What changed in each revision of each board, newest first. The table above has t
 
 - Initial release, and the board on sale. `Hardware/ACE CF Adapter/Rev 1.0/` and `Production/ACE CF Adapter/Rev 1.0/` match the boards JLCPCB made (order Y89). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received. Its CF socket is hand-soldered: `101D-TAAB-R01`, in [BOM.md](BOM.md#ace-cf-adapter).
 
+### ACE SD Adapter
+
+**Rev 1.1** (drawn, not yet made)
+
+- New board (owner, 2026-11-13; `KICAD.md` K33): an SD card that the stock BIOS sees as the ACE CF Adapter's CompactFlash card, so a builder gets SD storage with no change to the BIOS. It takes the ACE CF Adapter's place on the ACE Board's `STORAGE` header, with the CF Adapter's outline, holes and connector. An RP2350A answers the eight CompactFlash registers through a 74LVC4245A (data, at 5 V on the bus) and a 74LVC541 (controls), with a full-size SD socket and a 16 MB built-in drive (W25Q128JVFIQ) that answers when no card is in. Its circuit is the COB Storage Card Pro 1.1's, part for part.
+- It starts at Rev 1.1, as every new board in the family does (owner, 2026-11-13), so the family's boards stay one set of Rev 1.1s.
+- Being drawn: not yet routed or made.
+
 ### ACE RAM Patch
 
 **Rev 1.1**
 
-- Replaces Rev 1.0, and fixes the decode. Tested on 2026-11-03. `Hardware/ACE RAM Patch/Rev 1.1/` and `Production/ACE RAM Patch/Rev 1.1/` match the boards JLCPCB made (order Y99). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+- Replaces Rev 1.0, and fixes the bank register's decode. Rev 1.0 stopped the latches pulsing while the bus was idle, but still loaded a latch on any write to `$8300`–`$83FE` and `$80FF`–`$82FF` (and the same in the `$8400` window), not only on `$83FF` and `$87FF`: one of its gates NANDed two active-low terms, which ORs them. Rev 1.1 combines them with a NOR, the same eight gates as the ACE Board 1.1 (a 74HC00 and a 74HC02), so each latch loads only on a write to its own bank register while `PHI2` is high. `Tests/check-schematics.mjs` fails on Rev 1.0's decode and passes Rev 1.1's.
+- Takes the place of both U12 and U13, chips and sockets, soldered underneath the ACE on pin headers, front side up, because the signals the fix needs (`A8`, `A9` and U17's output) never reach U13's socket, which is all Rev 1.0 plugged into.
+- Tested on 2026-11-03. `Hardware/ACE RAM Patch/Rev 1.1/` and `Production/ACE RAM Patch/Rev 1.1/` match the boards JLCPCB made (order Y99). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
 
 **Rev 1.0**
 
@@ -86,11 +96,11 @@ What changed in each revision of each board, newest first. The table above has t
 - Adds `R37`, a 10kΩ pull-up on `RESB`. The AB Controller firmware now only ever pulls `RESB` low, so the DS1511Y and cards on `CART` and `BUS` can reset the machine too.
 - Adds `D5` (1N5819) in series between the barrel jack (`J16`) and the power switch (`SW68`), anode at the jack, so a reversed supply can't reach VCC. It drops about 0.3–0.4 V, so VCC sits near 4.6 V, above the 4.5 V floor of the 5 V parts. Measure VCC under full load on the first board built.
 - `Tests/check-schematics.mjs` checks the address decoding of Rev 1.1, and of Rev 1.0 with the ACE RAM Patch Rev 1.1 fitted, in every bus state. See [Checking the schematics](README.md#checking-the-schematics).
-- Some pull-up resistors changed from 1kΩ to 10kΩ: `R2`–`R5` and `R27` are now 10kΩ.
-- Removes Rev 1.0's `R1`, the `SOB` pull-up. `SOB` is tied straight to VCC.
+- Some pull-up resistors changed from 1kΩ to 10kΩ: `R2`–`R5` and `R27` are now 10kΩ. With a 1kΩ pull-up, a device that pulls `IRQB` low sinks 5 mA, more than the 3.2 mA that the W65C22's and W65C21's IRQ outputs are rated for; every CPU board in the family uses 10kΩ.
+- Removes Rev 1.0's `R1`, the `SOB` pull-up. `SOB` is tied straight to VCC: it isn't on the bus, so nothing else drives it, and the W65C02S datasheet says an unused input-only pin is tied to VDD.
 - Added `C31` (10µF electrolytic) at the power input for bulk decoupling capacitance.
 - Keeps Rev 1.0's designators, so the two revisions can be compared part for part (owner, 2026-11-11: a part keeps its number from one revision to the next). Parts new in Rev 1.1 take numbers Rev 1.0 never used: `D4` (BAT85), `D5` (1N5819), `R37` (the `RESB` pull-up) and `C31` (the bulk capacitor). The 74HC02 takes `U13`, the number of the Rev 1.0 74HC00 it replaces. A removed part's number is left unused. Rev 1.1 was re-annotated from 1 on 2026-09-24, and put back on 2026-11-11.
-- The silkscreen says `SERIAL (DTE)` at `J12`, `MAX238CNG+` at `U10`, `ATmega1284` at `U6`, `ARMSID` at `U9`, `16 MHz` at `X1` and `1.8432 MHz` at `Y1`. Rev 1.0's say `DB9 MALE (DTE)`, `MAX238xNG+`, `ATmega1284-P`, `6581`, `16MHz` and `1.8432 Mhz`.
+- The silkscreen says `SERIAL (DTE)` at `J12`, `MAX238CNG+` at `U10`, `ATmega1284` at `U6`, `ARMSID` at `U9`, `16 MHz` at `X1` and `1.8432 MHz` at `Y1`. Rev 1.0's say `DB9 MALE (DTE)`, `MAX238xNG+`, `ATmega1284-P`, `6581`, `16MHz` and `1.8432 Mhz`. Each now names the part the parts list orders, or the family's name for the connector, so the board says what to fit.
 - Removes Rev 1.0's `J5`, the `VDD` header for a real SID's 12 V supply, which the standard build never provided and which was never tested. `U9` pin 28 is left unconnected: the ARMSID needs nothing there. Its number, `J5`, is left unused.
 
 **Rev 1.0**

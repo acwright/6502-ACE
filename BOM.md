@@ -62,9 +62,22 @@ Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev
 - **Supply capacitor:** fit a 10µF electrolytic on the underside, across the pads of `J19`, the VCC header. Rev 1.0 has no holes for it.
 - **`RESB`:** flash the AB Controller firmware from this repository, which only ever pulls `RESB` low (see [AB Controller](README.md#ab-controller)); older firmware drove it high as well, so nothing else could reset the machine. A 10kΩ pull-up from `RESB` to 5 V, soldered on the underside, is optional: the ATmega's internal pull-up raises the line on its own, but the 10 k is stiffer on a line that runs out to `CART` and `BUS`.
 - **Video card `/INT`:** fit a BAT85 between U3 pin 16 and `IRQB`, cathode toward the card, in a socket stack under the card with pin 16 routed through the diode. Without it, a PICO9918 PRO holds `IRQB` at 3.8 V while the VIA asserts it, and the keyboard and serial input are dead. A v1.3 has the same circuit and only works by luck.
-- **Clock:** keep the PHI2 SELECT jumper (J1) on its 1 MHz pins, 1 and 2.
+- **Clock:** keep the PHI2 SELECT jumper (J1) on its 1 MHz pins, 1 and 2. Rev 1.0's SID stays on U5's 1 MHz output whatever J1 says, so at 2 MHz it answers only every other access; Rev 1.1 puts it on J1's clock. Rev 1.1's U14 is a 74HCT00, which matters only at 2 MHz: a builder who runs a Rev 1.0 at 2 MHz, at their own risk, can fit one in U14's socket.
 - **Banked RAM:** fit the [ACE RAM Patch](README.md#ace-ram-patch) Rev 1.1 in place of U12 and U13.
 - **Power:** use a center-positive 5 V supply only. Nothing protects Rev 1.0 from reverse polarity.
+
+Rev 1.1's other changes need nothing on a built board, or can't be made on one:
+- **The ACIA's crystal jumpers can't be added.** Rev 1.1's R38, C32, JP1 and JP2 let an R65C51P or a W65C51 run; a Rev 1.0 has no pads for them, so fit the R6551AP, which needs none.
+- **Leave J5, the `VDD` header, empty.** It is only for a real SID's 12 V supply; the ARMSID needs nothing at U9 pin 28, and Rev 1.1 drops the header.
+- **The silkscreen** names the parts Rev 1.1 fits (`R6551AP`, `ARMSID`, `ATmega1284` and the rest), and Rev 1.1 keeps Rev 1.0's designators, so these notes and Rev 1.0's silkscreen agree.
+
+**ACE CF Adapter**
+
+**Building a Rev 1.0:** nothing to do. Rev 1.1 renames the two connectors, `J21` to `J1` and `J3` to `J2`, because Rev 1.0's numbers came from another project; a Rev 1.0's parts list and silkscreen use its own numbers. Rev 1.1's CF socket has an LCSC number, for a board JLCPCB assembles; a Rev 1.0 takes the hand-soldered socket in its parts list. Its silkscreen changes need nothing.
+
+**ACE RAM Patch**
+
+**Building a Rev 1.0:** don't. Its decode is wrong: it still loads a bank latch on writes to `$8300`–`$83FE` and `$80FF`–`$82FF` (and the same in the `$8400` window), so a program's writes there change the bank. It can't be fixed on the board, because it plugs into U13's socket alone and the signals the fix needs never reach it. Fit a Rev 1.1, which takes the place of both U12 and U13.
 
 <!-- End of build notes. -->
 
