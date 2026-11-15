@@ -53,6 +53,8 @@ How to build each board, where it needs more than its parts list.
 
 **ACE Board**
 
+**J11 (AUDIO L) and J14 (AUDIO R), the two RCA jacks, are wired together:** both carry the SID's one output, the same signal, so a stereo amplifier's two inputs each get the sound. Either jack alone gives all of it, so a builder can fit just one and leave the other off to save its cost; each jack's parts-list row is the whole of that part. This holds on Rev 1.0 and Rev 1.1, and on Rev 1.0 whether or not change 9 is made.
+
 **Building a Rev 1.0**
 
 Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev 1.0 they're done by hand. The [build notes](Docs/ACE%20Board/Rev%201.0/ACE%20Board%20Build%20Notes.pdf) have each step, with figures and checks. Every step below is done and tested on the owner's Rev 1.0, except the optional SID wire (the build notes' change 8), which hasn't been tried on a board yet.
