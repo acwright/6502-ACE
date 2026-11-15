@@ -1762,387 +1762,6 @@
 			)
 		)
 	)
-	(footprint "6502 Parts:SD Card Socket Push-Push"
-		(layer "F.Cu")
-		(uuid "1aa8b76a-3f51-4112-a454-26b68a2be27d")
-		(at 125.3 84.5 180)
-		(descr "Full-size SD card socket, push-push, top mount, 28.5 x 29.0 mm, 2.8 mm high. Card-detect (SW) and write-protect (WP) switches close to the shell, which the two SH pads solder down. Land pattern from the XUNPU SD-106M drawing (LCSC C266603).")
-		(tags "SD card socket push-push full-size")
-		(property "Reference" "J4"
-			(at 0 -17.25 180)
-			(layer "F.SilkS")
-			(uuid "24e1840c-330d-478d-8bab-1889aa51f297")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "SD Socket"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7d196651-f876-48d0-8592-0e7ee90982cc")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2109061830_XUNPU-SD-106M_C266603.pdf"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fb796950-4bfe-4559-88db-9b767f0c669f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Full-size SD card socket, push-push, with card-detect and write-protect switches that close to the shell (SH)"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "32721abf-0449-4ec7-8789-cd727de8d07d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Digikey" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3f4015a1-b9a1-4254-85b2-32e8495b9a69")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Mouser" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3b7582f8-65e0-4b03-8e64-e16870c7d376")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Jameco" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "512da750-2c20-4fae-8c32-e3ded3d99a24")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C266603"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bfa9a8ba-c73d-4329-8f40-d1fe852cc492")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Other" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e805edb9-f44b-4580-bf5c-9e48ee449d61")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/f2e00bc1-6780-48fe-aec6-30deb3f2376e")
-		(sheetname "/")
-		(sheetfile "ACE SD Adapter.kicad_sch")
-		(attr smd)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start 14.81 6.95)
-			(end 14.81 14)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "14a69005-a35d-4d0f-bb1c-6bdc6a8a3af8")
-		)
-		(fp_line
-			(start 14.81 -14.61)
-			(end 14.81 4.55)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "47a1d83b-e1ca-4e1f-ad08-723921bad5ca")
-		)
-		(fp_line
-			(start 14.81 -14.61)
-			(end 10.18 -14.61)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "52dacc3c-82c3-445e-b0ee-88fda685f09c")
-		)
-		(fp_line
-			(start -13.91 8.15)
-			(end -13.91 14)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "5a63ed56-44df-40c8-9501-40311b0205f3")
-		)
-		(fp_line
-			(start -13.91 0.45)
-			(end -13.91 5.75)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "16b201df-a17e-46ae-973f-8d5281e5462e")
-		)
-		(fp_line
-			(start -13.91 -7.47)
-			(end -15.29 -7.47)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d844068f-f0e4-48c3-8a4e-11e62b4bc038")
-		)
-		(fp_line
-			(start -13.91 -14.61)
-			(end -13.91 -7.47)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "86d424ef-2095-4e5f-a63b-7a5314cbd325")
-		)
-		(fp_line
-			(start -15.29 0.45)
-			(end -13.91 0.45)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c00e84f4-8d36-4ce0-9da9-8393477cec95")
-		)
-		(fp_line
-			(start -15.29 -7.47)
-			(end -15.29 0.45)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "2811493c-50f7-49f5-a2ae-5d0c7fbe3635")
-		)
-		(fp_rect
-			(start -15.43 -16.25)
-			(end 14.95 14.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "1fc1e0aa-d6c9-4f85-ba5f-ddc9266fe7c8")
-		)
-		(fp_rect
-			(start -12 -12.7)
-			(end 12 19.3)
-			(stroke
-				(width 0.1)
-				(type dash)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "47d1c2a1-6410-466c-bf64-b4d1c9a4088a")
-		)
-		(fp_rect
-			(start -13.8 -14.5)
-			(end 14.7 14.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "54891982-a214-482c-9cfe-687881e98a90")
-		)
-		(fp_rect
-			(start -15.18 -7.36)
-			(end -13.8 0.34)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "8f55c32b-6b3b-480e-a4e0-c452cd0b7989")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(uuid "8aa1a703-07fd-40a6-a441-8e8d16ca5460")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "" np_thru_hole circle
-			(at -12.1 9.05 180)
-			(size 1.5 1.5)
-			(drill 1.5)
-			(layers "*.Cu" "*.Mask")
-			(uuid "75e18dc1-2aaa-45fe-8e04-ab3ec22254b2")
-		)
-		(pad "" np_thru_hole circle
-			(at 12.1 9.05 180)
-			(size 1.5 1.5)
-			(drill 1.5)
-			(layers "*.Cu" "*.Mask")
-			(uuid "e195f714-ed50-40a3-bb67-48b5011e3f51")
-		)
-		(pad "1" smd rect
-			(at 6.88 -15.25 180)
-			(size 1 1.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "SD_DAT3")
-			(uuid "053e81b9-8543-4b94-8f25-0207cc498130")
-		)
-		(pad "2" smd rect
-			(at 4.38 -15.25 180)
-			(size 1 1.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "SD_CMD")
-			(uuid "d80db22c-ac13-4099-9bc6-d95a9360704c")
-		)
-		(pad "3" smd rect
-			(at 1.08 -15.25 180)
-			(size 1 1.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "GND")
-			(uuid "b0a40fa2-02f7-4d90-a768-9b83e6ede5a0")
-		)
-		(pad "4" smd rect
-			(at -0.62 -15.25 180)
-			(size 1 1.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "3V3")
-			(uuid "630c2168-cce7-4761-b6e1-017464a81fd1")
-		)
-		(pad "5" smd rect
-			(at -3.12 -15.25 180)
-			(size 1 1.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "SD_CLK")
-			(uuid "f4410a80-9c39-45cf-91c1-7e1c493a88c1")
-		)
-		(pad "6" smd rect
-			(at -5.62 -15.25 180)
-			(size 1 1.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "GND")
-			(uuid "6116d6a3-2f4c-4f4b-8623-d956ca05bee3")
-		)
-		(pad "7" smd rect
-			(at -8.05 -15.25 180)
-			(size 1 1.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "SD_DAT0")
-			(uuid "3feeba39-41a9-45e1-ab79-1e95bf973a22")
-		)
-		(pad "8" smd rect
-			(at -9.75 -15.25 180)
-			(size 1 1.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "SD_DAT1")
-			(uuid "0804b3ee-9fad-4ace-a299-673d6a792a55")
-		)
-		(pad "9" smd rect
-			(at 9.38 -15.25 180)
-			(size 1 1.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "SD_DAT2")
-			(uuid "a58aacdb-93f5-4c93-a4ab-7cc605372db5")
-		)
-		(pad "SH" smd rect
-			(at -13.35 6.95 180)
-			(size 1.2 2)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "GND")
-			(uuid "fc184c0e-24d0-4f19-9b01-058f5b851005")
-		)
-		(pad "SH" smd rect
-			(at 14.1 5.75 180)
-			(size 1.2 2)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "GND")
-			(uuid "3e3c0a88-5752-44e1-ad9c-67e70939cdc5")
-		)
-		(pad "SW" smd rect
-			(at 2.73 -15.25 180)
-			(size 1 1.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "SD_CD")
-			(uuid "e831de3e-96e6-4a91-be3e-01fe914227b6")
-		)
-		(pad "WP" smd rect
-			(at -13.1 -15.25 180)
-			(size 1 1.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "unconnected-(J4-PROTECT-PadWP)")
-			(uuid "9c5814a9-267e-4041-8baa-42ef159581da")
-		)
-		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/SD Card Socket Push-Push.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "1c4e9f67-b6d1-4fbd-8412-b39c56ead6b2")
@@ -7028,6 +6647,331 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "6502 Parts:SD Card Socket Push-Push"
+		(layer "F.Cu")
+		(uuid "6a43982d-f8df-4e03-9bf3-40ae8947dc19")
+		(at 125.3 84.5 180)
+		(descr "Full-size SD card socket, push-push, top mount, 28.5 x 29.0 mm, 2.8 mm high. Card-detect (SW) and write-protect (WP) switches close to the shell, which the two SH pads solder down. Land pattern from the XUNPU SD-106M drawing (LCSC C266603).")
+		(tags "SD card socket push-push full-size")
+		(property "Reference" "J4"
+			(at 0 -17.25 180)
+			(layer "F.SilkS")
+			(uuid "640d3613-fc65-40a4-910b-250b7d7da325")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SD Socket"
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5eed9f07-95e8-4273-ab71-c2be8011c35e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2109061830_XUNPU-SD-106M_C266603.pdf"
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5cb045e2-240b-4a7c-899f-4e4e0a0539dd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Full-size SD card socket, push-push, with card-detect and write-protect switches that close to the shell (SH)"
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c01230e3-99eb-434e-bcdf-768dcb685f13")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "915df8ce-0b50-4032-a116-d9450e5352c6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af5a3350-0997-4d4f-b513-b8780b2103ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97e86a8a-8d34-4ae8-8ce8-0bbfc77b9b1f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C266603"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c13f92a7-23b5-4d00-83a9-e88cb44f80f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2bcb996f-6aba-44cb-b014-b4ca3260618a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/f2e00bc1-6780-48fe-aec6-30deb3f2376e")
+		(sheetname "/")
+		(sheetfile "ACE SD Adapter.kicad_sch")
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 14.81 6.95)
+			(end 14.81 14)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "bfe368a0-7e36-4cfa-b77b-ace3d9c42441")
+		)
+		(fp_line
+			(start 14.81 -14.61)
+			(end 14.81 4.55)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5e57659a-9529-4ca3-9ab9-abf316d6cd14")
+		)
+		(fp_line
+			(start 14.81 -14.61)
+			(end 10.18 -14.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b6c0f00b-dd2c-4596-aa9d-8a1943bb704a")
+		)
+		(fp_line
+			(start -13.91 8.15)
+			(end -13.91 14)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6d061688-49d8-4068-a6a7-42690ce84a0b")
+		)
+		(fp_line
+			(start -13.91 -14.61)
+			(end -13.91 5.75)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2c19374a-c443-4665-be75-c78b82497774")
+		)
+		(fp_rect
+			(start -14.05 -16.25)
+			(end 14.95 14.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "4eeb8b90-bf7f-47c4-8a47-b6859f306022")
+		)
+		(fp_rect
+			(start -12 -12.7)
+			(end 12 19.3)
+			(stroke
+				(width 0.1)
+				(type dash)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "71e42af7-ced7-4813-91fa-64ac9d4edb16")
+		)
+		(fp_rect
+			(start -13.8 -14.5)
+			(end 14.7 14.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "3e958cdf-b942-4478-b916-ac1bdf00dd1b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 180)
+			(layer "F.Fab")
+			(uuid "e2b8dd07-8410-4f06-a69b-57c1f8e1ad42")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at -12.1 9.05 180)
+			(size 1.5 1.5)
+			(drill 1.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "20aff540-e742-43b2-9569-b254473f3e23")
+		)
+		(pad "" np_thru_hole circle
+			(at 12.1 9.05 180)
+			(size 1.5 1.5)
+			(drill 1.5)
+			(layers "*.Cu" "*.Mask")
+			(uuid "7adadc53-5fc0-4543-b6c1-61276f94bb42")
+		)
+		(pad "1" smd rect
+			(at 6.88 -15.25 180)
+			(size 1 1.5)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "SD_DAT3")
+			(uuid "c99d12eb-4116-4025-9a54-d9ebdb055d03")
+		)
+		(pad "2" smd rect
+			(at 4.38 -15.25 180)
+			(size 1 1.5)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "SD_CMD")
+			(uuid "99489e81-07e5-4f22-99c4-aff398a0424b")
+		)
+		(pad "3" smd rect
+			(at 1.08 -15.25 180)
+			(size 1 1.5)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "GND")
+			(uuid "7f40fcbe-ce53-4342-a7f0-ccb361a80c61")
+		)
+		(pad "4" smd rect
+			(at -0.62 -15.25 180)
+			(size 1 1.5)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "3V3")
+			(uuid "fc556706-fe90-434a-abe8-388ab8263549")
+		)
+		(pad "5" smd rect
+			(at -3.12 -15.25 180)
+			(size 1 1.5)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "SD_CLK")
+			(uuid "f49c5bef-3d53-4bca-a0ad-5536ca9c18ac")
+		)
+		(pad "6" smd rect
+			(at -5.62 -15.25 180)
+			(size 1 1.5)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "GND")
+			(uuid "a8275fbd-96fe-471c-9b94-95baafc0cf18")
+		)
+		(pad "7" smd rect
+			(at -8.05 -15.25 180)
+			(size 1 1.5)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "SD_DAT0")
+			(uuid "f1134325-6179-4517-913a-982b52f4fc99")
+		)
+		(pad "8" smd rect
+			(at -9.75 -15.25 180)
+			(size 1 1.5)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "SD_DAT1")
+			(uuid "160d6246-76b3-4453-acd3-4326ac8c7249")
+		)
+		(pad "9" smd rect
+			(at 9.38 -15.25 180)
+			(size 1 1.5)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "SD_DAT2")
+			(uuid "f4628ca6-e402-4be6-8bb8-d62a776d5586")
+		)
+		(pad "SH" smd rect
+			(at -13.35 6.95 180)
+			(size 1.2 2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "GND")
+			(uuid "4f48ae38-bb61-4b40-8719-658a6ba52d01")
+		)
+		(pad "SH" smd rect
+			(at 14.1 5.75 180)
+			(size 1.2 2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "GND")
+			(uuid "b5fb11c8-d9ff-4328-961c-7d3d29543a69")
+		)
+		(pad "SW" smd rect
+			(at 2.73 -15.25 180)
+			(size 1 1.5)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "SD_CD")
+			(uuid "4f621b2d-82dc-47a3-a3f6-6ce53ef684c3")
+		)
+		(pad "WP" smd rect
+			(at -13.1 -15.25 180)
+			(size 1 1.5)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "unconnected-(J4-PROTECT-PadWP)")
+			(uuid "840ede5a-a969-45bc-95f3-706cdf63f0a0")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/../../../Models/SD Card Socket Push-Push.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16822,6 +16766,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -16833,6 +16778,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -16844,6 +16790,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -16855,6 +16802,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -16866,6 +16814,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
