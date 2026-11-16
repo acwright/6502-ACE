@@ -11318,7 +11318,7 @@
 		)
 	)
 	(global_label "LED_SD"
-		(shape bidirectional)
+		(shape output)
 		(at 203.2 91.44 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12964,7 +12964,7 @@
 		)
 	)
 	(global_label "LED_ACT"
-		(shape bidirectional)
+		(shape output)
 		(at 203.2 93.98 0)
 		(fields_autoplaced yes)
 		(effects
