@@ -68,9 +68,9 @@ pages.append(f'''
 <div>{fig(fig_map(),"<b>Figure 1. Top of the ACE.</b> Where each change is. Change 5 is in two places: the ATmega, U6, and its pull-up under U4.")}</div>
 </div>
 <div class="warn"><b>Audio:</b> J11 and J14, the RCA jacks, are wired the wrong way round on Rev 1.0: the signal is on the sleeve and ground on the tip. Sound plays, but if the amplifier shares a ground with the ACE through another lead, expect hum. Change 9 rewires them, or use J15, the AUDIO header, which is wired right, with a jack on the case. Rev 1.1 fixes the jacks.</div>
-<div class="warn"><b>Power:</b> use a center-positive 5 V supply only. Rev 1.0 has no reverse-polarity protection, so a reversed supply reaches every chip. Rev 1.1 adds a diode for this. These notes have no hand fix for it.</div>
+<div class="warn"><b>Power:</b> use a center-positive 5 V supply only. Neither revision has protection against a reversed one.</div>
 <h3>These notes use Rev 1.0's part numbers</h3>
-<p>Rev 1.0's designators are the ones printed on your board. Build from the ACE Board Rev 1.0 table in <code>BOM.md</code>, or from <code>Production/ACE Board/Rev 1.0/bom.csv</code>, which both use these numbers. Rev 1.1 keeps them too, part for part, except that its U13 is a 74HC02 where Rev 1.0's is a 74HC00; the parts Rev 1.1 adds take numbers Rev 1.0 never used.</p>
+<p>Rev 1.0's designators are the ones printed on your board. Build from the ACE Board Rev 1.0 table in <code>BOM.md</code>, or from <code>Production/ACE Board/Rev 1.0/bom.csv</code>, which both use these numbers. Rev 1.1 keeps them, except that its U13 is a 74HC02, not a 74HC00; its new parts take numbers Rev 1.0 never used.</p>
 <h3>Changes to the parts you buy</h3>
 <table>
 <tr><th>Part</th><th style="width:30pt">Qty</th><th>For</th></tr>
@@ -81,7 +81,7 @@ pages.append(f'''
 <tr><td>ACE RAM Patch Rev 1.1 board, 74HC02</td><td>1 each</td><td>Change 7</td></tr>
 <tr><td>74HC00</td><td>4, not 5</td><td>Change 7 uses one on the patch, in place of U12 and U13 on the ACE</td></tr>
 <tr><td>DIP-14 sockets</td><td>2 fewer</td><td>Change 7 leaves U12 and U13 without sockets</td></tr>
-<tr><td>Pin header, 2.54 mm, four strips of 7 pins</td><td>1 set</td><td>Change 7</td></tr>
+<tr><td>Pin header, 2.54 mm, 4 strips of 7</td><td>1 set</td><td>Change 7</td></tr>
 </table>
 <p style="margin-top:6pt"><b>Building a new board?</b> Fit the patch and the underside parts before the keyswitches, sockets and tall parts, while the board still lies flat on its face.</p>
 ''')

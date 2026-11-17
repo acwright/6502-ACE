@@ -123,7 +123,7 @@ always send and always receive. Moved to the cable, they do real work — measur
 arrives. A board jumpered to the cable and plugged into something that does not assert those lines
 shows no banner and no echo at all, and looks broken when it is not.
 - **Reset**: Manual reset button (SW70, just above <kbd>Esc</kbd>) connected to the ATmega1284, which also provides power-on reset to the 65C02
-- **Power**: 5V DC via barrel jack, center-positive. Rev 1.1 has reverse-polarity protection (`D5`); Rev 1.0 has none
+- **Power**: 5V DC via barrel jack, center-positive only. The jack goes straight to the power switch, so `VCC` gets the full 5 V, and nothing protects the board from a reversed supply
 
 **Cards on `CART` and `BUS`.** `IRQB`, `NMIB` and `RESB` are shared by several devices on the board and by
 anything plugged into `CART` and `BUS` (J17 and J18). A card may only pull
@@ -171,7 +171,7 @@ Each revision carries one of three labels:
 
 | Board | Newest revision | Label | Why |
 |---|---|---|---|
-| ACE Board | 1.1 | **Untested** | A new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), a 74HCT00 at U14, the PHI2 SELECT jumper with the SID on the CPU's clock, the ACIA's crystal jumpers, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V. |
+| ACE Board | 1.1 | **Untested** | A new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), a 74HCT00 at U14, the PHI2 SELECT jumper with the SID on the CPU's clock, and the ACIA's crystal jumpers. |
 | ACE CF Adapter | 1.1 | **Proven design** | Annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet. |
 | ACE RAM Patch | 1.1 | **Tested** | Built and tested on an ACE Board Rev 1.0, 2026-11-03. |
 | ACE SD Adapter | 1.1 | **Untested** | New in K33: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Being drawn; not yet routed or made. |
@@ -331,7 +331,7 @@ The table lists every off-board header on each board's newest revision, read fro
 |---|---|---|---|---|---|---|
 | ACE Board | 1.1 | J3 | `RESET SW` | Pin header, 1×2, 2.54 mm | A reset button on the case. The header is wired across SW70, the board's own reset button. | SW70, if the case covers it. Both buttons reset the machine if it stays. |
 | ACE Board | 1.1 | J15 | `AUDIO` | Pin header, 1×2, 2.54 mm | Audio to a jack or an amplifier on the case: the same signal as J11 and J14, on pin 1, with ground on pin 2. | J11 and J14, if the case has its own jack. They can stay fitted beside it. |
-| ACE Board | 1.1 | J19 | `VCC` | Pin header, 1×2, 2.54 mm | Power from a jack and a switch on the case: 5 V on pin 1, ground on pin 2. The header is on `VCC` itself, past D5, the reverse-polarity diode, and SW68, the power switch. | J16, the barrel jack, and SW68, the power switch. Nothing on the board protects this header, so the case's supply must be a regulated 5 V, wired the right way around. |
+| ACE Board | 1.1 | J19 | `VCC` | Pin header, 1×2, 2.54 mm | Power from a jack and a switch on the case: 5 V on pin 1, ground on pin 2. The header is on `VCC` itself, past SW68, the power switch. | J16, the barrel jack, and SW68, the power switch. Nothing on the board protects this header, so the case's supply must be a regulated 5 V, wired the right way around. |
 | ACE Board | 1.1 | J20 | `POWER LED` | Pin header, 1×2, 2.54 mm | A power LED on the case: anode to pin 1 (`VCC`), cathode to pin 2, which runs through R26 to ground. | D1, the board's own power LED. It shares R26, so with both fitted each gets half the current. |
 | ACE Board | 1.1 | J22 | `KEYBOARD` | Pin header, 1×16, 2.00 mm | The keyboard matrix: `PA0`–`PA7` on pins 1–8 and `PB0`–`PB7` on pins 9–16. A keyboard on the case, such as a Keyboard Helper, connects here. | The key switches, SW1–SW67. |
 

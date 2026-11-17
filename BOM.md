@@ -24,7 +24,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | Board | Revision | What the silk says | Status | Label |
 |---|---|---|---|---|
 | [ACE Board](#ace-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
-| [ACE Board](#ace-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), a 74HCT00 at U14, the PHI2 SELECT jumper with the SID on the CPU's clock, the ACIA's crystal jumpers, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V |
+| [ACE Board](#ace-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), a 74HCT00 at U14, the PHI2 SELECT jumper with the SID on the CPU's clock, and the ACIA's crystal jumpers |
 | [ACE CF Adapter](#ace-cf-adapter) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [ACE CF Adapter](#ace-cf-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet |
 | [ACE RAM Patch](#ace-ram-patch) | 1.0 | Rev 1.0 | Made. Failed: Rev 1.1 replaces it | **Tested**: built and tested: its decode is wrong, and Rev 1.1 replaces it |
@@ -55,6 +55,8 @@ How to build each board, where it needs more than its parts list.
 
 **J11 (AUDIO L) and J14 (AUDIO R), the two RCA jacks, are wired together:** both carry the SID's one output, the same signal, so a stereo amplifier's two inputs each get the sound. Either jack alone gives all of it, so a builder can fit just one and leave the other off to save its cost; each jack's parts-list row is the whole of that part. This holds on Rev 1.0 and Rev 1.1, and on Rev 1.0 whether or not change 9 is made.
 
+**Power:** use a centre-positive 5 V supply only, on either revision. Nothing on the board protects it from a reversed supply: the barrel jack goes straight to the power switch, so `VCC` gets the supply's full 5 V.
+
 **Building a Rev 1.0**
 
 Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev 1.0 they're done by hand. The [build notes](Docs/ACE%20Board/Rev%201.0/ACE%20Board%20Build%20Notes.pdf) have each step, with figures and checks. Every step below is done and tested on the owner's Rev 1.0, except the optional SID wire (the build notes' change 8), which hasn't been tried on a board yet.
@@ -66,7 +68,6 @@ Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev
 - **Video card `/INT`:** fit a BAT85 between U3 pin 16 and `IRQB`, cathode toward the card, in a socket stack under the card with pin 16 routed through the diode. Without it, a PICO9918 PRO holds `IRQB` at 3.8 V while the VIA asserts it, and the keyboard and serial input are dead. A v1.3 has the same circuit and only works by luck.
 - **Clock:** keep the PHI2 SELECT jumper (J1) on its 1 MHz pins, 1 and 2. Rev 1.0's SID stays on U5's 1 MHz output whatever J1 says, so at 2 MHz it answers only every other access; Rev 1.1 puts it on J1's clock. To do the same on a Rev 1.0, optionally, cut one track and fit one wire: change 8 in the [build notes](Docs/ACE%20Board/Rev%201.0/ACE%20Board%20Build%20Notes.pdf) has both, with figures. Rev 1.1's U14 is a 74HCT00, which matters only at 2 MHz: a builder who runs a Rev 1.0 at 2 MHz, at their own risk, can fit one in U14's socket.
 - **Banked RAM:** fit the [ACE RAM Patch](README.md#ace-ram-patch) Rev 1.1 in place of U12 and U13.
-- **Power:** use a center-positive 5 V supply only. Nothing protects Rev 1.0 from reverse polarity.
 
 Rev 1.1's other changes need nothing on a built board, or can't be made on one:
 - **The ACIA's crystal jumpers can't be added.** Rev 1.1's R38, C32, JP1 and JP2 let an R65C51P or a W65C51 run; a Rev 1.0 has no pads for them, so fit the R6551AP, which needs none.
@@ -88,7 +89,7 @@ Rev 1.1's other changes need nothing on a built board, or can't be made on one:
 
 ### ACE Board Rev 1.1
 
-Drawn, not made yet. **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), a 74HCT00 at U14, the PHI2 SELECT jumper with the SID on the CPU's clock, the ACIA's crystal jumpers, and a 1N5819 in the power path. On the first build, measure `VCC` at full load: it must stay above 4.5 V.
+Drawn, not made yet. **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), a 74HCT00 at U14, the PHI2 SELECT jumper with the SID on the CPU's clock, and the ACIA's crystal jumpers.
 
 Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20Board/Rev%201.1/mouser.csv)
 
@@ -102,7 +103,6 @@ Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.1/digikey.csv), [mouser.csv](B
 | C32 | 1 | 22pF | KYOCERA AVX SR151A220JAR | [478-4846-ND](https://www.digikey.com/en/products/filter?keywords=478-4846-ND) | [581-SR151A220JAR](https://www.mouser.com/ProductDetail/581-SR151A220JAR) |  |
 | D1 | 1 | POWER LED | Würth Elektronik 151031VS06000 | [732-5008-ND](https://www.digikey.com/en/products/filter?keywords=732-5008-ND) | [710-151031VS06000](https://www.mouser.com/ProductDetail/710-151031VS06000) |  |
 | D2–D4 | 3 | BAT85 | Vishay BAT85S-TR | [BAT85SCT-ND](https://www.digikey.com/en/products/filter?keywords=BAT85SCT-ND) | [78-BAT85S](https://www.mouser.com/ProductDetail/78-BAT85S) |  |
-| D5 | 1 | 1N5819 | Vishay 1N5819-E3/54 | [1N5819-E3/54GICT-ND](https://www.digikey.com/en/products/filter?keywords=1N5819-E3%2F54GICT-ND) | [625-1N5819-E3](https://www.mouser.com/ProductDetail/625-1N5819-E3) |  |
 | J1 | 1 | PHI2 SELECT | Pin header 1×3, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  |
 | J2 | 1 | CTS EN | Pin header 1×3, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  |
 | J3 | 1 | RESET SW | Pin header 1×2, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  |
