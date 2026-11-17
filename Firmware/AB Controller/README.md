@@ -148,7 +148,7 @@ BIOS's `KBDisable` settle wait is sized against. Cycle-counting the compiled
 firmware puts the worst-case code path at ~17 µs against a 100 µs budget, but
 that excludes a PS/2 interrupt landing in the window and says nothing about how
 long the bus takes to charge through a pull-up, so the published number comes
-from a scope. See [PLAN.md](../../PLAN.md).
+from a scope.
 
 ## Keyboard Matrix Layout
 

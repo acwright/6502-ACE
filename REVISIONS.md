@@ -13,7 +13,7 @@ Every revision of every board in this repository, and what is known about each. 
 **Label** says whether a builder can rely on a revision. Make the newest revision of a board, and check its label first:
 
 - **Tested:** This revision was built and tested.
-- **Proven design:** Not built at this revision, but its circuit is a tested revision's. The only changes are silkscreen text, part values, mounting holes, outline clean-up, parts moved a fraction of a millimetre onto their grid, capacitor pitch, socket outlines, a footprint swap with the same holes, a solder jumper's default, the solder mask or paste at a card edge, or tracks rerouted or pours refilled with DRC and the netlist check passing. A builder can treat it as tested.
+- **Proven design:** Not built at this revision, but its circuit is proven. Either it is a tested revision's circuit, or each change copies a circuit built and tested on another board or on the bench, or is a textbook circuit that leaves everything the tested revision does as it was. Any other change is silkscreen text, part values, mounting holes, outline clean-up, parts moved a fraction of a millimetre onto their grid, capacitor pitch, socket outlines, a footprint swap with the same holes, a solder jumper's default, the solder mask or paste at a card edge, or tracks rerouted or pours refilled with DRC and the netlist check passing. A builder can treat it as tested.
 - **Untested:** The circuit, the power path or the layout changed in a way that only a built board proves, or the board has never been built at all.
 
 **Holes** is how far the corner mounting holes sit from the board's edges. The standard is 6 mm, and 5 mm on the ACE Board, the CF Adapter and the Keyboard Helper. A dash means a card or cart, which has no corner holes.
@@ -21,12 +21,12 @@ Every revision of every board in this repository, and what is known about each. 
 | Board | Rev | Status | Label | Order | Ordered | Made from | Tindie stock | Size (mm) | Holes | Top panel | Enclosure | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | ACE Board | 1.0 | Made, matches order | **Tested** | Y91 | 2026-05-13 | `6502-ACE 83b1b1a` | — | 335×250 | 5 mm | yes | — |  |
-| ACE Board | 1.1 | Drawn | **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), a 74HCT00 at U14, the PHI2 SELECT jumper with the SID on the CPU's clock, and the ACIA's crystal jumpers |  |  |  | — | 335×250 | 5 mm | yes | — |  |
+| ACE Board | 1.1 | Drawn | **Proven design**: each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing |  |  |  | — | 335×250 | 5 mm | yes | — |  |
 | ACE CF Adapter | 1.0 | Made, matches order | **Tested** | Y89 | 2026-05-10 | `6502-ACE ef6370e` | — | 75×50 | 5 mm | yes | — |  |
 | ACE CF Adapter | 1.1 | Drawn | **Proven design**: annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet |  |  |  | — | 75×50 | 5 mm | yes | — |  |
 | ACE RAM Patch | 1.0 | Made, matches order | **Tested**: built and tested: its decode is wrong, and Rev 1.1 replaces it | Y94 | 2026-06-21 | `728f593` | — | 46×22 | — | — | — |  |
 | ACE RAM Patch | 1.1 | Made, matches order | **Tested**: built and tested on an ACE Board Rev 1.0, 2026-11-03 | Y99 | 2026-09-24 | `a216b17` | — | 92.5×13 | — | — | — |  |
-| ACE SD Adapter | 1.1 | Drawn | **Untested**: new in K33: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Being drawn; not yet routed or made |  |  |  | — | 75×50 | 5 mm | — | — | 147 unconnected; DRC errors: starved_thermal 4 |
+| ACE SD Adapter | 1.1 | Drawn | **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Being drawn; not yet routed or made |  |  |  | — | 75×50 | 5 mm | — | — | 147 unconnected; DRC errors: starved_thermal 4 |
 
 JLCPCB's orders were checked on 2026-11-04: each production zip marked *Made, matches order* was compared byte for byte with JLCPCB's copy, and its PCB regenerated to the same copper, mask, outline and holes. Each time this table is written, every PCB is checked again against its production zip, for copper and drill holes. Tindie stock is from the listings as saved on 2026-10-23.
 
@@ -65,7 +65,7 @@ What changed in each revision of each board, newest first. The table above has t
 
 **Rev 1.1** (drawn, not yet made)
 
-- New board (owner, 2026-11-13; `KICAD.md` K33): an SD card that the stock BIOS sees as the ACE CF Adapter's CompactFlash card, so a builder gets SD storage with no change to the BIOS. It takes the ACE CF Adapter's place on the ACE Board's `STORAGE` header, with the CF Adapter's outline, holes and connector. An RP2350A answers the eight CompactFlash registers through a 74LVC4245A (data, at 5 V on the bus) and a 74LVC541 (controls), with a full-size SD socket and a 16 MB built-in drive (W25Q128JVFIQ) that answers when no card is in. Its circuit is the COB Storage Card Pro 1.1's, part for part.
+- New board (owner, 2026-11-13): an SD card that the stock BIOS sees as the ACE CF Adapter's CompactFlash card, so a builder gets SD storage with no change to the BIOS. It takes the ACE CF Adapter's place on the ACE Board's `STORAGE` header, with the CF Adapter's outline, holes and connector. An RP2350A answers the eight CompactFlash registers through a 74LVC4245A (data, at 5 V on the bus) and a 74LVC541 (controls), with a full-size SD socket and a 16 MB built-in drive (W25Q128JVFIQ) that answers when no card is in. Its circuit is the COB Storage Card Pro 1.1's, part for part.
 - It starts at Rev 1.1, as every new board in the family does (owner, 2026-11-13), so the family's boards stay one set of Rev 1.1s.
 - Being drawn: not yet routed or made.
 

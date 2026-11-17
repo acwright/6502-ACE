@@ -15,8 +15,8 @@
   "revs": [
    "1.1"
   ],
-  "category": "out of the box",
-  "reason": "The BIOS finds everything on the board: the banked RAM in both windows, the RTC, the CompactFlash slot, the serial port, the VIA, the SID and a PICO9918 PRO running 6502-PICOVDP. Rev 1.1 has the RAM Patch's decode and the `/INT` diode on the board. Not yet built: its label is **Untested**.",
+  "category": "compatible",
+  "reason": "The BIOS finds everything on the board: the banked RAM in both windows, the RTC, the CompactFlash slot, the serial port, the VIA, the SID and a PICO9918 PRO running 6502-PICOVDP. Rev 1.1 has the RAM Patch's decode and the `/INT` diode on the board. Not yet built: its label is in [Which revision to make](#which-revision-to-make).",
   "source": "BIOS 2.x `Kernal.asm` probes; the decode by `Tests/check-schematics.mjs`"
  },
  {
@@ -26,7 +26,7 @@
    "1.0",
    "1.1"
   ],
-  "category": "out of the box",
+  "category": "compatible",
   "reason": "Its CompactFlash card answers in IO 4 (`$8C00`), where the BIOS's storage probe looks, and `LOAD`, `SAVE` and `DIR` use it.",
   "source": "BIOS 2.x `Kernal.asm` `StInit`; bench, 2026-11-12: `CF` on the boot line"
  },
@@ -56,8 +56,8 @@
   "revs": [
    "1.1"
   ],
-  "category": "out of the box",
-  "reason": "Designed for it: the board answers in IO 4 (`$8C00`) as the ACE CF Adapter's CompactFlash card does, so the BIOS uses its SD card, or its built-in drive, with no change. Not yet built: its label is **Untested** until K33's bench test passes.",
-  "source": "Its design (`KICAD.md` K33; owner, 2026-11-15)"
+  "category": "compatible",
+  "reason": "Designed for it: the board answers in IO 4 (`$8C00`) as the ACE CF Adapter's CompactFlash card does, so the BIOS uses its SD card, or its built-in drive, with no change. Not yet built: its label is in [Which revision to make](#which-revision-to-make).",
+  "source": "Its design (owner, 2026-11-15)"
  }
 ]

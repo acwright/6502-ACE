@@ -40,8 +40,8 @@
  "_labels": "Tested, Proven design or Untested, with a one-line reason. A revision whose 'tested' entry starts with Yes is Tested unless it is listed here; every other revision must be listed. Tools/revision-audit/labels.py reads this for REVISIONS.md, BOM.md and the README.",
  "labels": {
   "ACE|ACE Board|1.1": [
-   "Untested",
-   "A new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), a 74HCT00 at U14, the PHI2 SELECT jumper with the SID on the CPU's clock, and the ACIA's crystal jumpers"
+   "Proven design",
+   "Each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing"
   ],
   "ACE|ACE CF Adapter|1.1": [
    "Proven design",
@@ -57,7 +57,7 @@
   ],
   "ACE|ACE SD Adapter|1.1": [
    "Untested",
-   "New in K33: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Being drawn; not yet routed or made"
+   "A new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Being drawn; not yet routed or made"
   ]
  },
  "_replaced": "A made revision whose number a newer design took, by the owner's ruling (KICAD.md K39). Each entry keeps the made boards' JLCPCB order, its date, the commit they were made from, and the last commit that holds the made files; the revision itself is drawn, in 'drawn'. The tools treat it as drawn; register.py names the made boards in its notes.",

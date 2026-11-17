@@ -24,12 +24,12 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | Board | Revision | What the silk says | Status | Label |
 |---|---|---|---|---|
 | [ACE Board](#ace-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
-| [ACE Board](#ace-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), a 74HCT00 at U14, the PHI2 SELECT jumper with the SID on the CPU's clock, and the ACIA's crystal jumpers |
+| [ACE Board](#ace-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing |
 | [ACE CF Adapter](#ace-cf-adapter) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [ACE CF Adapter](#ace-cf-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet |
 | [ACE RAM Patch](#ace-ram-patch) | 1.0 | Rev 1.0 | Made. Failed: Rev 1.1 replaces it | **Tested**: built and tested: its decode is wrong, and Rev 1.1 replaces it |
 | [ACE RAM Patch](#ace-ram-patch) | 1.1 | Rev 1.1 | Made. Yes, 2026-11-03 | **Tested**: built and tested on an ACE Board Rev 1.0, 2026-11-03 |
-| [ACE SD Adapter](#ace-sd-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: new in K33: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Being drawn; not yet routed or made |
+| [ACE SD Adapter](#ace-sd-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Being drawn; not yet routed or made |
 
 ## Known issues
 
@@ -89,7 +89,7 @@ Rev 1.1's other changes need nothing on a built board, or can't be made on one:
 
 ### ACE Board Rev 1.1
 
-Drawn, not made yet. **Untested**: a new bank-latch decode (its logic is proven on the ACE RAM Patch 1.1), a 74HCT00 at U14, the PHI2 SELECT jumper with the SID on the CPU's clock, and the ACIA's crystal jumpers.
+Drawn, not made yet. **Proven design**: each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing.
 
 Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20Board/Rev%201.1/mouser.csv)
 
@@ -332,7 +332,7 @@ Cart files: [digikey.csv](BOM/ACE%20RAM%20Patch/Rev%201.0/digikey.csv), [mouser.
 
 ### ACE SD Adapter Rev 1.1
 
-Drawn, not made yet. **Untested**: new in K33: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Being drawn; not yet routed or made.
+Drawn, not made yet. **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Being drawn; not yet routed or made.
 
 Cart files: [digikey.csv](BOM/ACE%20SD%20Adapter/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20SD%20Adapter/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/ACE%20SD%20Adapter/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/ACE%20SD%20Adapter/Rev%201.1/mouser-through-hole.csv)
 
