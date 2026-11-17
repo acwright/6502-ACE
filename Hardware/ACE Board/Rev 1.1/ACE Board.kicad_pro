@@ -840,7 +840,7 @@
       "version": 1
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "../../../Schematics/ACE Board/Rev 1.1/",
     "reuse_designators": true,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,

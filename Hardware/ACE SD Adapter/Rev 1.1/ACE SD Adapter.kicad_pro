@@ -553,7 +553,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../Assets/PCB Models/Storage Card/Rev 1.1/Storage Card.step",
+      "step": "../../../CAD/Models/ACE SD Adapter/Rev 1.1/ACE SD Adapter.step",
       "svg": "",
       "vrml": ""
     },
@@ -685,7 +685,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "../../../Schematics/Storage Card/Rev 1.1/",
+    "plot_directory": "../../../Schematics/ACE SD Adapter/Rev 1.1/",
     "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,

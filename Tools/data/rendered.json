@@ -1,10 +1,10 @@
 {
- "ACE|ACE Board|1.0": "1a109b7a92f5974507236b905bbcdbaaee814381",
- "ACE|ACE Board|1.1": "c5c7152aca427eee7b9892e03e1abe60d5cb924c",
- "ACE|ACE CF Adapter|1.0": "ab32df95ef279c6b89ea817dd6350234acf1b682",
- "ACE|ACE CF Adapter|1.1": "42a3c01c624d7859ac68f9f2e5699dd50b723f39",
- "ACE|ACE RAM Patch|1.0": "39a4bec276830c522a3112061e8d99f7e5bcaf76",
- "ACE|ACE RAM Patch|1.1": "fd08a763ab5388fbfbd86840d7ea5ff3eb0713f2",
- "ACE|ACE SD Adapter|1.1": "89c5893f26a3d894a5cd6b34a23461e1e5454c90",
+ "ACE|ACE Board|1.0": "cc5a5d66455b1ee966369dbc1fd8f5e94218cb32",
+ "ACE|ACE Board|1.1": "ec9d83ccd7ab38b896caaeb08e6a658ad8813988",
+ "ACE|ACE CF Adapter|1.0": "f448c8db5b7bb8b33677a3abcdc501733e71d9d5",
+ "ACE|ACE CF Adapter|1.1": "9cf3c2a9b5209188425367db2a9c1b26f1e74ae0",
+ "ACE|ACE RAM Patch|1.0": "7caa1d604c36f391124e527ee65e9518142e93a8",
+ "ACE|ACE RAM Patch|1.1": "052f1d81d424d15ed4654b185f605f94619a0b76",
+ "ACE|ACE SD Adapter|1.1": "3d4a1c2fb0d2cc9f98ec8089a90efe4c6ab78098",
  "_about": "What each revision's PCB looked like when its images were rendered. Tools/board-images/render.py writes it, and derived-check.py compares."
 }
