@@ -29,7 +29,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | [ACE CF Adapter](#ace-cf-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet |
 | [ACE RAM Patch](#ace-ram-patch) | 1.0 | Rev 1.0 | Made. Failed: Rev 1.1 replaces it | **Tested**: built and tested: its decode is wrong, and Rev 1.1 replaces it |
 | [ACE RAM Patch](#ace-ram-patch) | 1.1 | Rev 1.1 | Made. Yes, 2026-11-03 | **Tested**: built and tested on an ACE Board Rev 1.0, 2026-11-03 |
-| [ACE SD Adapter](#ace-sd-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Being drawn; not yet routed or made |
+| [ACE SD Adapter](#ace-sd-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Routed; not yet made |
 
 ## Known issues
 
@@ -332,7 +332,7 @@ Cart files: [digikey.csv](BOM/ACE%20RAM%20Patch/Rev%201.0/digikey.csv), [mouser.
 
 ### ACE SD Adapter Rev 1.1
 
-Drawn, not made yet. **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Being drawn; not yet routed or made.
+Drawn, not made yet. **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Routed; not yet made.
 
 Cart files: [digikey.csv](BOM/ACE%20SD%20Adapter/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20SD%20Adapter/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/ACE%20SD%20Adapter/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/ACE%20SD%20Adapter/Rev%201.1/mouser-through-hole.csv)
 
