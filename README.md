@@ -28,6 +28,7 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [Firmware](#firmware)
   - [Video card](#video-card)
   - [AB Controller](#ab-controller)
+  - [ASDA Controller](#asda-controller)
 - [CAD](#cad)
 - [Production](#production)
 - [Schematics](#schematics)
@@ -200,7 +201,7 @@ Whether each board works with the stock BIOS, and what it takes if not. The stoc
 
 ## Firmware
 
-This repository contains [PlatformIO](https://platformio.org/)-based firmware for the ACE board. The video card's firmware is [6502-PICOVDP](https://github.com/acwright/6502-PICOVDP), and the ROM is [6502-BIOS](https://github.com/acwright/6502-BIOS).
+This repository contains firmware for the ACE: [PlatformIO](https://platformio.org/)-based for the ACE board's keyboard controller, and built with the [Raspberry Pi Pico SDK](https://github.com/raspberrypi/pico-sdk) for the ACE SD Adapter's RP2350. The video card's firmware is [6502-PICOVDP](https://github.com/acwright/6502-PICOVDP), and the ROM is [6502-BIOS](https://github.com/acwright/6502-BIOS).
 
 ### Video card
 
@@ -230,6 +231,15 @@ Firmware for the ATmega1284 keyboard controller on the ACE board. Provides:
 - Optional jiffy clock: pulses `NMIB` low from the DS1511Y SQW input, open-drain; compiled out unless `ENABLE_SQW` is defined. The `ENABLE_SQW` build compiles, but hasn't been run on hardware
 
 See [Firmware/AB Controller/README.md](./Firmware/AB%20Controller/README.md) for setup and usage instructions.
+
+### ASDA Controller
+`Firmware/ASDA Controller/`
+
+Firmware for the RP2350A on the ACE SD Adapter 1.1. The adapter is to answer on the `STORAGE` header as the ACE CF Adapter's CompactFlash card does, so the stock BIOS can use an SD card, or the adapter's built-in flash drive when no SD card is in.
+
+**Not finished.** It builds, and it doesn't answer on the bus yet. No ACE SD Adapter has been made. The Storage Card Pro 1.1 in [6502-COB](https://github.com/acwright/6502-COB) has the same circuit, and its SCP Controller is a copy of this firmware.
+
+See [Firmware/ASDA Controller/README.md](./Firmware/ASDA%20Controller/README.md) for building it.
 
 ## CAD
 `CAD/`
@@ -392,4 +402,4 @@ Every part for every board, by revision, is in **[BOM.md](BOM.md)**, with suppli
 ## License
 
 Hardware designs are released under the [CERN Open Hardware Licence Version 2 – Permissive](https://ohwr.org/cern_ohl_p_v2.txt).
-Firmware is released under the [MIT License](./Firmware/AB%20Controller/LICENSE).
+Firmware is released under the MIT License — [AB Controller](./Firmware/AB%20Controller/LICENSE) and [ASDA Controller](./Firmware/ASDA%20Controller/LICENSE).
