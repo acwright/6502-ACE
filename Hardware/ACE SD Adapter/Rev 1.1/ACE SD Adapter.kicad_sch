@@ -13696,7 +13696,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "6502 Parts:Capacitor 0402 Wide Gap"
 			(at 177.8 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -16386,7 +16386,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "6502 Parts:Capacitor 0402 Wide Gap"
 			(at 236.22 157.48 0)
 			(hide yes)
 			(show_name no)
