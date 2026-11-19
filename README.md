@@ -237,7 +237,7 @@ See [Firmware/AB Controller/README.md](./Firmware/AB%20Controller/README.md) for
 
 Firmware for the RP2350A on the ACE SD Adapter 1.1. The adapter is to answer on the `STORAGE` header as the ACE CF Adapter's CompactFlash card does, so the stock BIOS can use an SD card, or the adapter's built-in flash drive when no SD card is in.
 
-**Not finished.** It builds, and it doesn't answer on the bus yet. No ACE SD Adapter has been made. The Storage Card Pro 1.1 in [6502-COB](https://github.com/acwright/6502-COB) has the same circuit, and its SCP Controller is a copy of this firmware.
+**Not finished.** It's complete and tested on Pico 2 test rigs, on real SD cards and flash and through its bus, but it hasn't yet answered a real 6502. No ACE SD Adapter has been made. The Storage Card Pro 1.1 in [6502-COB](https://github.com/acwright/6502-COB) has the same circuit, and its SCP Controller is a copy of this firmware.
 
 See [Firmware/ASDA Controller/README.md](./Firmware/ASDA%20Controller/README.md) for building it.
 
