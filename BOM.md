@@ -29,8 +29,8 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | [ACE CF Adapter](#ace-cf-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet |
 | [ACE RAM Patch](#ace-ram-patch) | 1.0 | Rev 1.0 | Made. Failed: Rev 1.1 replaces it | **Tested**: built and tested: its decode is wrong, and Rev 1.1 replaces it |
 | [ACE RAM Patch](#ace-ram-patch) | 1.1 | Rev 1.1 | Made. Yes, 2026-11-03 | **Tested**: built and tested on an ACE Board Rev 1.0, 2026-11-03 |
-| [ACE SD Adapter Bottom](#ace-sd-adapter-bottom) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive; the ACE SD Adapter Top, stacked on it, carries the SD card socket. Not yet routed or made |
-| [ACE SD Adapter Top](#ace-sd-adapter-top) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: the ACE SD Adapter Bottom's top board: the SD card socket, the LEDs and the SD card's 3.3 V regulator, stacked on the Bottom. Not yet routed or made |
+| [ACE SD Adapter Bottom](#ace-sd-adapter-bottom) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive; the ACE SD Adapter Top, stacked on it, carries the SD card socket. Not yet made |
+| [ACE SD Adapter Top](#ace-sd-adapter-top) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: the ACE SD Adapter Bottom's top board: the SD card socket, the LEDs and the SD card's 3.3 V regulator, stacked on the Bottom. Not yet made |
 
 ## Known issues
 
@@ -333,7 +333,7 @@ Cart files: [digikey.csv](BOM/ACE%20RAM%20Patch/Rev%201.0/digikey.csv), [mouser.
 
 ### ACE SD Adapter Bottom Rev 1.1
 
-Drawn, not made yet. **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive; the ACE SD Adapter Top, stacked on it, carries the SD card socket. Not yet routed or made.
+Drawn, not made yet. **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive; the ACE SD Adapter Top, stacked on it, carries the SD card socket. Not yet made.
 
 Cart files: [digikey.csv](BOM/ACE%20SD%20Adapter%20Bottom/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20SD%20Adapter%20Bottom/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/ACE%20SD%20Adapter%20Bottom/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/ACE%20SD%20Adapter%20Bottom/Rev%201.1/mouser-through-hole.csv)
 
@@ -356,7 +356,7 @@ Cart files: [digikey.csv](BOM/ACE%20SD%20Adapter%20Bottom/Rev%201.1/digikey.csv)
 
 ### ACE SD Adapter Top Rev 1.1
 
-Drawn, not made yet. **Untested**: the ACE SD Adapter Bottom's top board: the SD card socket, the LEDs and the SD card's 3.3 V regulator, stacked on the Bottom. Not yet routed or made.
+Drawn, not made yet. **Untested**: the ACE SD Adapter Bottom's top board: the SD card socket, the LEDs and the SD card's 3.3 V regulator, stacked on the Bottom. Not yet made.
 
 Cart files: [digikey.csv](BOM/ACE%20SD%20Adapter%20Top/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20SD%20Adapter%20Top/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/ACE%20SD%20Adapter%20Top/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/ACE%20SD%20Adapter%20Top/Rev%201.1/mouser-through-hole.csv)
 
