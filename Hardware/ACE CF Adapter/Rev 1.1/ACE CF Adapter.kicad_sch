@@ -4112,7 +4112,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 151.13 90.932 90)
 			(hide yes)
 			(show_name no)
@@ -4134,7 +4134,7 @@
 				)
 			)
 		)
-		(property "Description" "1/8 W Resistor"
+		(property "Description" "Resistor"
 			(at 151.13 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -4145,7 +4145,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "311-1.00KCRCT-ND"
 			(at 151.13 92.71 90)
 			(hide yes)
 			(show_name no)
@@ -4167,7 +4167,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-RC0805FR-071KL"
 			(at 151.13 92.71 90)
 			(hide yes)
 			(show_name no)
@@ -4189,7 +4189,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17513"
 			(at 151.13 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -4435,7 +4435,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 151.13 83.312 90)
 			(hide yes)
 			(show_name no)
@@ -4457,7 +4457,7 @@
 				)
 			)
 		)
-		(property "Description" "1/8 W Resistor"
+		(property "Description" "Resistor"
 			(at 151.13 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4468,7 +4468,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "311-1.00KCRCT-ND"
 			(at 151.13 85.09 90)
 			(hide yes)
 			(show_name no)
@@ -4490,7 +4490,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-RC0805FR-071KL"
 			(at 151.13 85.09 90)
 			(hide yes)
 			(show_name no)
@@ -4512,7 +4512,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17513"
 			(at 151.13 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4938,7 +4938,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 231.14 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -4960,7 +4960,7 @@
 				)
 			)
 		)
-		(property "Description" "3.0mm LED"
+		(property "Description" "Light emitting diode"
 			(at 231.14 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -4971,7 +4971,7 @@
 				)
 			)
 		)
-		(property "Digikey" "732-5008-ND"
+		(property "Digikey" "160-1415-1-ND"
 			(at 231.14 93.98 90)
 			(hide yes)
 			(show_name no)
@@ -4993,7 +4993,7 @@
 				)
 			)
 		)
-		(property "Mouser" "710-151031VS06000"
+		(property "Mouser" "859-LTST-C170KRKT"
 			(at 231.14 93.98 90)
 			(hide yes)
 			(show_name no)
@@ -5015,7 +5015,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2295"
 			(at 231.14 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -5072,7 +5072,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 215.9 111.252 90)
 			(hide yes)
 			(show_name no)
@@ -5094,7 +5094,7 @@
 				)
 			)
 		)
-		(property "Description" "1/8 W Resistor"
+		(property "Description" "Resistor"
 			(at 215.9 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -5105,7 +5105,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "311-1.00KCRCT-ND"
 			(at 215.9 113.03 90)
 			(hide yes)
 			(show_name no)
@@ -5127,7 +5127,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-RC0805FR-071KL"
 			(at 215.9 113.03 90)
 			(hide yes)
 			(show_name no)
@@ -5149,7 +5149,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17513"
 			(at 215.9 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -5598,7 +5598,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 215.9 85.852 90)
 			(hide yes)
 			(show_name no)
@@ -5620,7 +5620,7 @@
 				)
 			)
 		)
-		(property "Description" "1/8 W Resistor"
+		(property "Description" "Resistor"
 			(at 215.9 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -5631,7 +5631,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-1KCT-ND"
+		(property "Digikey" "311-1.00KCRCT-ND"
 			(at 215.9 87.63 90)
 			(hide yes)
 			(show_name no)
@@ -5653,7 +5653,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-1K"
+		(property "Mouser" "603-RC0805FR-071KL"
 			(at 215.9 87.63 90)
 			(hide yes)
 			(show_name no)
@@ -5675,7 +5675,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17513"
 			(at 215.9 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -5734,7 +5734,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 232.918 105.41 90)
 			(hide yes)
 			(show_name no)
@@ -5756,7 +5756,7 @@
 				)
 			)
 		)
-		(property "Description" "1/8 W Resistor"
+		(property "Description" "Resistor"
 			(at 231.14 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -5778,7 +5778,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-MFR-12FTF52-330R"
+		(property "Mouser" "603-RC0805FR-07330RL"
 			(at 231.14 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -5789,7 +5789,7 @@
 				)
 			)
 		)
-		(property "Digikey" "13-MFR-12FTF52-330RCT-ND"
+		(property "Digikey" "311-330CRCT-ND"
 			(at 231.14 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -5811,7 +5811,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17630"
 			(at 231.14 105.41 0)
 			(hide yes)
 			(show_name no)

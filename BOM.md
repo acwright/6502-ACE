@@ -26,7 +26,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | [ACE Board](#ace-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [ACE Board](#ace-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing |
 | [ACE CF Adapter](#ace-cf-adapter) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
-| [ACE CF Adapter](#ace-cf-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet |
+| [ACE CF Adapter](#ace-cf-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: the same circuit as the tested Rev 1.0, renumbered and in surface-mount parts for JLCPCB assembly. The new LCSC socket fits the same footprint, but no board has been built with it yet |
 | [ACE RAM Patch](#ace-ram-patch) | 1.0 | Rev 1.0 | Made. Failed: Rev 1.1 replaces it | **Tested**: built and tested: its decode is wrong, and Rev 1.1 replaces it |
 | [ACE RAM Patch](#ace-ram-patch) | 1.1 | Rev 1.1 | Made. Yes, 2026-11-03 | **Tested**: built and tested on an ACE Board Rev 1.0, 2026-11-03 |
 | [ACE SD Adapter Bottom](#ace-sd-adapter-bottom) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive; the ACE SD Adapter Top, stacked on it, carries the SD card socket. Not yet made |
@@ -78,7 +78,7 @@ Rev 1.1's other changes need nothing on a built board, or can't be made on one:
 
 **ACE CF Adapter**
 
-**Building a Rev 1.0:** nothing to do. Rev 1.1 renames the two connectors, `J21` to `J1` and `J3` to `J2`, because Rev 1.0's numbers came from another project; a Rev 1.0's parts list and silkscreen use its own numbers. Rev 1.1's CF socket has an LCSC number, for a board JLCPCB assembles; a Rev 1.0 takes the hand-soldered socket in its parts list. Its silkscreen changes need nothing.
+**Building a Rev 1.0:** nothing to do. Rev 1.1 renames the two connectors, `J21` to `J1` and `J3` to `J2`, because Rev 1.0's numbers came from another project; a Rev 1.0's parts list and silkscreen use its own numbers. Rev 1.1 moves the LED and resistors to surface-mount parts and gives every part but J1 an LCSC number, for a board JLCPCB assembles; the circuit is the same, so a Rev 1.0 takes the through-hole parts and the hand-soldered socket in its parts list. Its silkscreen changes need nothing.
 
 **ACE RAM Patch**
 
@@ -266,19 +266,18 @@ U12 and U13 are not listed: fit the ACE RAM Patch Rev 1.1 in their sockets. See 
 
 ### ACE CF Adapter Rev 1.1
 
-Drawn, not made yet. **Proven design**: annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet.
+Drawn, not made yet. **Proven design**: the same circuit as the tested Rev 1.0, renumbered and in surface-mount parts for JLCPCB assembly. The new LCSC socket fits the same footprint, but no board has been built with it yet.
 
-Cart files: [digikey.csv](BOM/ACE%20CF%20Adapter/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20CF%20Adapter/Rev%201.1/mouser.csv)
+Cart files: [digikey.csv](BOM/ACE%20CF%20Adapter/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20CF%20Adapter/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/ACE%20CF%20Adapter/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/ACE%20CF%20Adapter/Rev%201.1/mouser-through-hole.csv)
 
-| Reference | Qty | Value | Part | Digi-Key | Mouser | Other |
-|---|---|---|---|---|---|---|
-| D1 | 1 | ACT | Würth Elektronik 151031VS06000 | [732-5008-ND](https://www.digikey.com/en/products/filter?keywords=732-5008-ND) | [710-151031VS06000](https://www.mouser.com/ProductDetail/710-151031VS06000) |  |
-| J1 | 1 | STORAGE | Amphenol 68021-120HLF | [609-3338-ND](https://www.digikey.com/en/products/filter?keywords=609-3338-ND) | [649-68021-120HLF](https://www.mouser.com/ProductDetail/649-68021-120HLF) |  |
-| J2 | 1 | Compact Flash | ATTEND Technology 101D-TAAB-R01 | [4827-101D-TAAB-R01-ND](https://www.digikey.com/en/products/filter?keywords=4827-101D-TAAB-R01-ND) |  | LCSC [C2962036](https://www.lcsc.com/search?q=C2962036) |
-| R1–R4 | 4 | 1k | YAGEO MFR-12FTF52-1K | [13-MFR-12FTF52-1KCT-ND](https://www.digikey.com/en/products/filter?keywords=13-MFR-12FTF52-1KCT-ND) | [603-MFR-12FTF52-1K](https://www.mouser.com/ProductDetail/603-MFR-12FTF52-1K) |  |
-| R5 | 1 | 330 | YAGEO MFR-12FTF52-330R | [13-MFR-12FTF52-330RCT-ND](https://www.digikey.com/en/products/filter?keywords=13-MFR-12FTF52-330RCT-ND) | [603-MFR-12FTF52-330R](https://www.mouser.com/ProductDetail/603-MFR-12FTF52-330R) |  |
+| Reference | Qty | Value | Part | Digi-Key | Mouser | Other | Pre-soldered |
+|---|---|---|---|---|---|---|---|
+| D1 | 1 | ACT | Lite-On Inc. LTST-C170KRKT | [160-1415-1-ND](https://www.digikey.com/en/products/filter?keywords=160-1415-1-ND) | [859-LTST-C170KRKT](https://www.mouser.com/ProductDetail/859-LTST-C170KRKT) | LCSC [C2295](https://www.lcsc.com/search?q=C2295) | Yes |
+| J1 | 1 | STORAGE | Amphenol 68021-120HLF | [609-3338-ND](https://www.digikey.com/en/products/filter?keywords=609-3338-ND) | [649-68021-120HLF](https://www.mouser.com/ProductDetail/649-68021-120HLF) |  | |
+| J2 | 1 | Compact Flash | ATTEND Technology 101D-TAAB-R01 | [4827-101D-TAAB-R01-ND](https://www.digikey.com/en/products/filter?keywords=4827-101D-TAAB-R01-ND) |  | LCSC [C2962036](https://www.lcsc.com/search?q=C2962036) | Yes |
+| R1–R4 | 4 | 1k | YAGEO RC0805FR-071KL | [311-1.00KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-1.00KCRCT-ND) | [603-RC0805FR-071KL](https://www.mouser.com/ProductDetail/603-RC0805FR-071KL) | LCSC [C17513](https://www.lcsc.com/search?q=C17513) | Yes |
+| R5 | 1 | 330 | YAGEO RC0805FR-07330RL | [311-330CRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-330CRCT-ND) | [603-RC0805FR-07330RL](https://www.mouser.com/ProductDetail/603-RC0805FR-07330RL) | LCSC [C17630](https://www.lcsc.com/search?q=C17630) | Yes |
 
-- **D1:** Green shown. The colour is the builder's choice.
 - **J1:** Right-angle header on the CF and SD Adapters; plugs into the right-angle socket on the ACE Board.
 - **J2:** LCSC C2962036 is a different maker (HOAUC HYCW01-CF50-395B), matched to the footprint by datasheet and not yet built. Digi-Key has none in stock today.
 

@@ -46,7 +46,7 @@
   ],
   "ACE|ACE CF Adapter|1.1": [
    "Proven design",
-   "Annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet"
+   "The same circuit as the tested Rev 1.0, renumbered and in surface-mount parts for JLCPCB assembly. The new LCSC socket fits the same footprint, but no board has been built with it yet"
   ],
   "ACE|ACE RAM Patch|1.0": [
    "Tested",
