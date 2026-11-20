@@ -6,6 +6,6 @@
  "ACE|ACE RAM Patch|1.0": "7caa1d604c36f391124e527ee65e9518142e93a8",
  "ACE|ACE RAM Patch|1.1": "052f1d81d424d15ed4654b185f605f94619a0b76",
  "ACE|ACE SD Adapter Bottom|1.1": "7d67f110b19ad017a0fe4b19230cc9401afc89d1",
- "ACE|ACE SD Adapter Top|1.1": "4512ea0ef06b9cdf2003164f0165a2a5b67e53b5",
+ "ACE|ACE SD Adapter Top|1.1": "239b8277bfd3be8ec4179874a16104350b36c862",
  "_about": "What each revision's PCB looked like when its images were rendered. Tools/board-images/render.py writes it, and derived-check.py compares."
 }
