@@ -69,14 +69,15 @@ What changed in each revision of each board, newest first. The table above has t
 - New board (owner, 2026-11-13): an SD card that the stock BIOS sees as the ACE CF Adapter's CompactFlash card, so a builder gets SD storage with no change to the BIOS. It takes the ACE CF Adapter's place on the ACE Board's `STORAGE` header, with the CF Adapter's outline, holes and connector. A Raspberry Pi Pico 2 module, on header pins, answers the eight CompactFlash registers through a 74LVC4245A (data, at 5 V on the bus) and a 74LVC541 (controls), with a 16 MB built-in drive (W25Q128JVFIQ) that answers when no card is in. The SD card socket is on the ACE SD Adapter Top, which stacks on this board through two 1x6 headers (J7 and J9 here). Its circuit is the COB Storage Card Pro 1.1's, part for part.
 - It starts at Rev 1.1, as every new board in the family does (owner, 2026-11-13), so the family's boards stay one set of Rev 1.1s.
 - First drawn with an RP2350A on the board; redrawn on a Pico 2 module, and split into two stacked boards so a full-size SD socket fits beside the module (owner, 2026-11-19).
-- Being drawn: not yet routed or made.
+- Its firmware is the ASDA Controller 1.0.0, in [`Firmware/ASDA Controller/`](./Firmware/ASDA%20Controller/), with the `.uf2` to flash onto the Pico 2.
+- Drawn and placed; not yet routed or made.
 
 ### ACE SD Adapter Top
 
 **Rev 1.1** (drawn, not yet made)
 
 - New board (owner, 2026-11-19): the ACE SD Adapter Bottom's top board. It carries the full-size SD card socket, the medium and activity LEDs, and an AP2112K-3.3 that runs the SD card, on the Bottom's outline and holes. Its two 1x6 pin headers (J8 and J10), underneath, plug into the Bottom's sockets.
-- Being drawn: not yet routed or made.
+- Drawn and placed; not yet routed or made.
 
 ### ACE RAM Patch
 

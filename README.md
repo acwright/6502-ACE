@@ -203,7 +203,7 @@ Whether each board works with the stock BIOS, and what it takes if not. The stoc
 
 ## Firmware
 
-This repository contains firmware for the ACE: [PlatformIO](https://platformio.org/)-based for the ACE board's keyboard controller, and built with the [Raspberry Pi Pico SDK](https://github.com/raspberrypi/pico-sdk) for the ACE SD Adapter's RP2350. The video card's firmware is [6502-PICOVDP](https://github.com/acwright/6502-PICOVDP), and the ROM is [6502-BIOS](https://github.com/acwright/6502-BIOS).
+This repository contains firmware for the ACE: [PlatformIO](https://platformio.org/)-based for the ACE board's keyboard controller, and built with the [Raspberry Pi Pico SDK](https://github.com/raspberrypi/pico-sdk) for the ACE SD Adapter's Raspberry Pi Pico 2. The video card's firmware is [6502-PICOVDP](https://github.com/acwright/6502-PICOVDP), and the ROM is [6502-BIOS](https://github.com/acwright/6502-BIOS).
 
 ### Video card
 
@@ -237,11 +237,11 @@ See [Firmware/AB Controller/README.md](./Firmware/AB%20Controller/README.md) for
 ### ASDA Controller
 `Firmware/ASDA Controller/`
 
-Firmware for the RP2350A on the ACE SD Adapter 1.1. The adapter is to answer on the `STORAGE` header as the ACE CF Adapter's CompactFlash card does, so the stock BIOS can use an SD card, or the adapter's built-in flash drive when no SD card is in.
+Firmware for the Raspberry Pi Pico 2 on the ACE SD Adapter 1.1, on its Bottom board, version 1.0.0. The adapter answers on the `STORAGE` header as the ACE CF Adapter's CompactFlash card does, so the stock BIOS can use an SD card, or the adapter's built-in flash drive when no SD card is in. `ASDA Controller.uf2` in the folder is the build to flash: lift the Top off, hold the Pico 2's BOOTSEL button, plug it into a computer, and copy the file onto the drive that appears.
 
-**Not finished.** It's complete and tested on Pico 2 test rigs, on real SD cards and flash and through its bus, but it hasn't yet answered a real 6502. No ACE SD Adapter has been made. The Storage Card Pro 1.1 in [6502-COB](https://github.com/acwright/6502-COB) has the same circuit, and its SCP Controller is a copy of this firmware.
+**Untested on an adapter.** It's tested on Pico 2 test rigs, on real SD cards and flash and through its bus, but it hasn't yet answered a real 6502: no ACE SD Adapter has been made. The Storage Card Pro 1.1 in [6502-COB](https://github.com/acwright/6502-COB) has the same circuit, and its SCP Controller is a copy of this firmware.
 
-See [Firmware/ASDA Controller/README.md](./Firmware/ASDA%20Controller/README.md) for building it.
+See [Firmware/ASDA Controller/README.md](./Firmware/ASDA%20Controller/README.md) for what it does, flashing it safely, its USB diagnostic port and building it.
 
 ## CAD
 `CAD/`
