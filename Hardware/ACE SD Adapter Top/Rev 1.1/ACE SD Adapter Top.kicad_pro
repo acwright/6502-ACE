@@ -274,20 +274,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "pin_to_pin|1752600|1117600|8449cc8b-80e7-4df0-a182-d1b519236bce|978bc289-dc11-400d-a839-af5b2deba4ab|/839f5f16-01ba-4147-a057-4d8bd62c7acc|/839f5f16-01ba-4147-a057-4d8bd62c7acc|/839f5f16-01ba-4147-a057-4d8bd62c7acc",
-        "The Pico 2's AGND is tied to GND, as Raspberry Pi advises when the ADC isn't used. KiCad's Pico symbol types both GND and AGND as power outputs."
-      ],
-      [
-        "pin_to_pin|3086100|838200|4ad658bd-0071-4baa-a8a0-c74c2d86aeba|439005e5-2004-4b7e-bf10-8ea35f371b98|/839f5f16-01ba-4147-a057-4d8bd62c7acc|/839f5f16-01ba-4147-a057-4d8bd62c7acc|/839f5f16-01ba-4147-a057-4d8bd62c7acc",
-        ""
-      ],
-      [
-        "pin_to_pin|3086100|863600|5319efa3-3969-4446-8533-7db1261bdbd2|439005e5-2004-4b7e-bf10-8ea35f371b98|/839f5f16-01ba-4147-a057-4d8bd62c7acc|/839f5f16-01ba-4147-a057-4d8bd62c7acc|/839f5f16-01ba-4147-a057-4d8bd62c7acc",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -707,7 +694,7 @@
         "uuid": "839f5f16-01ba-4147-a057-4d8bd62c7acc"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#FLG1",
     "variants": []
   },
   "sheets": [
