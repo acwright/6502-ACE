@@ -52,12 +52,22 @@
  },
  {
   "repo": "ACE",
-  "board": "ACE SD Adapter",
+  "board": "ACE SD Adapter Bottom",
   "revs": [
    "1.1"
   ],
   "category": "compatible",
   "reason": "Designed for it: the board answers in IO 4 (`$8C00`) as the ACE CF Adapter's CompactFlash card does, so the BIOS uses its SD card, or its built-in drive, with no change. Not yet built: its label is in [Which revision to make](#which-revision-to-make).",
   "source": "Its design (owner, 2026-11-15)"
+ },
+ {
+  "repo": "ACE",
+  "board": "ACE SD Adapter Top",
+  "revs": [
+   "1.1"
+  ],
+  "category": "nothing to support",
+  "reason": "No registers of its own: it carries the ACE SD Adapter Bottom's SD card socket and LEDs, stacked on it.",
+  "source": "Its design (owner, 2026-11-19)"
  }
 ]

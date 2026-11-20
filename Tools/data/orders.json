@@ -25,7 +25,8 @@
  "drawn": [
   "ACE|ACE Board|1.1",
   "ACE|ACE CF Adapter|1.1",
-  "ACE|ACE SD Adapter|1.1"
+  "ACE|ACE SD Adapter Bottom|1.1",
+  "ACE|ACE SD Adapter Top|1.1"
  ],
  "never": [],
  "ordered": {},
@@ -55,9 +56,13 @@
    "Tested",
    "Built and tested on an ACE Board Rev 1.0, 2026-11-03"
   ],
-  "ACE|ACE SD Adapter|1.1": [
+  "ACE|ACE SD Adapter Bottom|1.1": [
    "Untested",
-   "A new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Routed; not yet made"
+   "A new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive; the ACE SD Adapter Top, stacked on it, carries the SD card socket. Not yet routed or made"
+  ],
+  "ACE|ACE SD Adapter Top|1.1": [
+   "Untested",
+   "The ACE SD Adapter Bottom's top board: the SD card socket, the LEDs and the SD card's 3.3 V regulator, stacked on the Bottom. Not yet routed or made"
   ]
  },
  "_replaced": "A made revision whose number a newer design took, by the owner's ruling (KICAD.md K39). Each entry keeps the made boards' JLCPCB order, its date, the commit they were made from, and the last commit that holds the made files; the revision itself is drawn, in 'drawn'. The tools treat it as drawn; register.py names the made boards in its notes.",

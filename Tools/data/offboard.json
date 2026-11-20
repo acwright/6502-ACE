@@ -1,5 +1,10 @@
 {
  "_about": "This repository's exceptions to Tools/offboard/offboard.json: headers that aren't off-board headers though their name says so (not_offboard_refs), and off-board headers accepted on another connector, with the reason (connector_accepted).",
- "not_offboard_refs": {},
+ "not_offboard_refs": {
+  "ACE|ACE SD Adapter Bottom|J7": "STACK SD: a socket for the ACE SD Adapter Top's J8, which stacks on this board",
+  "ACE|ACE SD Adapter Bottom|J9": "STACK POWER: a socket for the ACE SD Adapter Top's J10, which stacks on this board",
+  "ACE|ACE SD Adapter Top|J8": "STACK SD: pins under the board, into the ACE SD Adapter Bottom's J7",
+  "ACE|ACE SD Adapter Top|J10": "STACK POWER: pins under the board, into the ACE SD Adapter Bottom's J9"
+ },
  "connector_accepted": {}
 }

@@ -26,7 +26,8 @@ Every revision of every board in this repository, and what is known about each. 
 | ACE CF Adapter | 1.1 | Drawn | **Proven design**: annotation only. The new LCSC socket fits the same footprint, but no board has been built with it yet |  |  |  | — | 75×50 | 5 mm | yes | — |  |
 | ACE RAM Patch | 1.0 | Made, matches order | **Tested**: built and tested: its decode is wrong, and Rev 1.1 replaces it | Y94 | 2026-06-21 | `728f593` | — | 46×22 | — | — | — |  |
 | ACE RAM Patch | 1.1 | Made, matches order | **Tested**: built and tested on an ACE Board Rev 1.0, 2026-11-03 | Y99 | 2026-09-24 | `a216b17` | — | 92.5×13 | — | — | — |  |
-| ACE SD Adapter | 1.1 | Drawn | **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive. Routed; not yet made |  |  |  | — | 75×50 | 5 mm | — | — |  |
+| ACE SD Adapter Bottom | 1.1 | Drawn | **Untested**: a new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive; the ACE SD Adapter Top, stacked on it, carries the SD card socket. Not yet routed or made |  |  |  | — | 75×50 | 5 mm | — | — | 70 unconnected |
+| ACE SD Adapter Top | 1.1 | Drawn | **Untested**: the ACE SD Adapter Bottom's top board: the SD card socket, the LEDs and the SD card's 3.3 V regulator, stacked on the Bottom. Not yet routed or made |  |  |  | — | 75×50 | 5 mm | — | — | 29 unconnected |
 
 JLCPCB's orders were checked on 2026-11-04: each production zip marked *Made, matches order* was compared byte for byte with JLCPCB's copy, and its PCB regenerated to the same copper, mask, outline and holes. Each time this table is written, every PCB is checked again against its production zip, for copper and drill holes. Tindie stock is from the listings as saved on 2026-10-23.
 
@@ -61,12 +62,20 @@ What changed in each revision of each board, newest first. The table above has t
 
 - Initial release, and the board on sale. `Hardware/ACE CF Adapter/Rev 1.0/` and `Production/ACE CF Adapter/Rev 1.0/` match the boards JLCPCB made (order Y89). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received. Its CF socket is hand-soldered: `101D-TAAB-R01`, in [BOM.md](BOM.md#ace-cf-adapter).
 
-### ACE SD Adapter
+### ACE SD Adapter Bottom
 
 **Rev 1.1** (drawn, not yet made)
 
-- New board (owner, 2026-11-13): an SD card that the stock BIOS sees as the ACE CF Adapter's CompactFlash card, so a builder gets SD storage with no change to the BIOS. It takes the ACE CF Adapter's place on the ACE Board's `STORAGE` header, with the CF Adapter's outline, holes and connector. An RP2350A answers the eight CompactFlash registers through a 74LVC4245A (data, at 5 V on the bus) and a 74LVC541 (controls), with a full-size SD socket and a 16 MB built-in drive (W25Q128JVFIQ) that answers when no card is in. Its circuit is the COB Storage Card Pro 1.1's, part for part.
+- New board (owner, 2026-11-13): an SD card that the stock BIOS sees as the ACE CF Adapter's CompactFlash card, so a builder gets SD storage with no change to the BIOS. It takes the ACE CF Adapter's place on the ACE Board's `STORAGE` header, with the CF Adapter's outline, holes and connector. A Raspberry Pi Pico 2 module, on header pins, answers the eight CompactFlash registers through a 74LVC4245A (data, at 5 V on the bus) and a 74LVC541 (controls), with a 16 MB built-in drive (W25Q128JVFIQ) that answers when no card is in. The SD card socket is on the ACE SD Adapter Top, which stacks on this board through two 1x6 headers (J7 and J9 here). Its circuit is the COB Storage Card Pro 1.1's, part for part.
 - It starts at Rev 1.1, as every new board in the family does (owner, 2026-11-13), so the family's boards stay one set of Rev 1.1s.
+- First drawn with an RP2350A on the board; redrawn on a Pico 2 module, and split into two stacked boards so a full-size SD socket fits beside the module (owner, 2026-11-19).
+- Being drawn: not yet routed or made.
+
+### ACE SD Adapter Top
+
+**Rev 1.1** (drawn, not yet made)
+
+- New board (owner, 2026-11-19): the ACE SD Adapter Bottom's top board. It carries the full-size SD card socket, the medium and activity LEDs, and an AP2112K-3.3 that runs the SD card, on the Bottom's outline and holes. Its two 1x6 pin headers (J8 and J10), underneath, plug into the Bottom's sockets.
 - Being drawn: not yet routed or made.
 
 ### ACE RAM Patch
