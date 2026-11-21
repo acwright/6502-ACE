@@ -330,7 +330,7 @@ Cart files: [digikey.csv](BOM/ACE%20RAM%20Patch/Rev%201.1/digikey.csv), [mouser.
 Pin headers are cut from strips, and the cart files count whole strips.
 
 - **J1, J2:** Machined round pins, which plug into a DIP socket without spreading its contacts. Cut a piece for each row of pins: a DIP-28 plug takes two of 14.
-- **J1, J2:** Pins, not a chip: the value names the ACE Board socket whose holes they are soldered into.
+- **J1, J2:** Pins, not a chip: the value names the ACE Board socket whose holes they are soldered into. They plug into no socket, so ordinary square header strip does as well: the tested patch was built with it. Try the pins in the holes first, as the build notes say.
 
 ### ACE RAM Patch Rev 1.0
 
@@ -347,7 +347,7 @@ Cart files: [digikey.csv](BOM/ACE%20RAM%20Patch/Rev%201.0/digikey.csv), [mouser.
 Pin headers are cut from strips, and the cart files count whole strips.
 
 - **J1:** Machined round pins, which plug into a DIP socket without spreading its contacts. Cut a piece for each row of pins: a DIP-28 plug takes two of 14.
-- **J1:** Pins, not a chip: the value names the ACE Board socket whose holes they are soldered into.
+- **J1:** Pins, not a chip: the value names the ACE Board socket whose holes they are soldered into. They plug into no socket, so ordinary square header strip does as well: the tested patch was built with it. Try the pins in the holes first, as the build notes say.
 
 
 ## ACE SD Adapter Bottom
