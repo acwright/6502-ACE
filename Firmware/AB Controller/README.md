@@ -15,7 +15,7 @@ The AB Controller is firmware for the ATmega1284 microcontroller (an ATmega1284P
 - **Enable/Disable Control**: Independent enable signals for PS/2 and matrix inputs
 - **Shared Joystick Ports**: Releases PORT A / PORT B when disabled so the 6502 can read the two Atari 2600-compatible joysticks that share those ports
 - **6502 Reset Control**: Drives the 6502 RESB line, providing power-on reset and a debounced reset button
-- **Jiffy Clock (optional)**: Can generate periodic 6502 NMIs from a DS1511Y RTC square-wave input. Disabled by default; enabled at build time via the `ENABLE_SQW` define
+- **Jiffy Clock (optional)**: Can generate periodic 6502 NMIs from the RTC's square-wave output (a DS1511Y, or on ACE Board 1.1 a DS1501). Disabled by default; enabled at build time via the `ENABLE_SQW` define
 
 ## Hardware Connections
 
@@ -54,7 +54,7 @@ Used for column scanning (matrix mode) or ASCII output (matrix output):
 #### 6502 System Control
 - PC0 (Pin 16) - RESET_BTN / Reset button (input, N.O., active low, internal pull-up)
 - PC7 (Pin 23) - RESB / 6502 reset output (active low)
-- PD6 (Pin 14) - RTC_SQW / DS1511Y square-wave input (jiffy clock source)
+- PD6 (Pin 14) - RTC_SQW / the RTC's square-wave output (jiffy clock source)
 - PD7 (Pin 15) - NMIB / 6502 non-maskable interrupt output (active low)
 
 #### Clock
@@ -218,7 +218,7 @@ The controller drives the 6502 RESB line on PC7 (active low):
 
 PC7 drives RESB open-drain. To assert reset, the firmware makes PC7 an output
 and drives it low. To release reset, it makes PC7 an input with the ATmega's
-internal pull-up on, and never drives it high. RESB is shared with the DS1511Y's
+internal pull-up on, and never drives it high. RESB is shared with the RTC's
 open-drain RST output and with the CART and BUS connectors, and each of those
 must be able to pull RESB low while the controller is not asserting reset. The
 internal pull-up raises RESB on its own; Rev 1.1 adds a 10 kΩ pull-up on the
@@ -232,16 +232,16 @@ board as well.
 > held high by the physical pull-up resistor on the PCB, so the 6502 never
 > receives an NMI from this board.
 
-When enabled, a DS1511Y RTC drives a square wave into PD6 (RTC_SQW). A pin-change
+When enabled, the RTC drives a square wave into PD6 (RTC_SQW). A pin-change
 interrupt counts the rising edges and, every `JIFFY_DIVIDER` edges (default 1),
 pulses the 6502 NMIB line on PD7 low for ~5 µs. The NMI is generated directly in
 the ISR so its timing is independent of keyboard-scanning load. PD7 drives NMIB
 open-drain, like RESB: a pulse switches PD7 to an output driving low and back to
 an input, and the PCB's pull-up raises the line. PD7 never drives NMIB high, so a
-card on the CART or BUS connector can still raise its own NMI between pulses. Set the DS1511Y
+card on the CART or BUS connector can still raise its own NMI between pulses. Set the RTC's
 SQW output rate (and `JIFFY_DIVIDER`) to obtain the desired jiffy tick frequency.
 
-To protect the 6502 BIOS boot window from a power-up SQW burst (the DS1511Y
+To protect the 6502 BIOS boot window from a power-up SQW burst (the RTC
 powers up with SQW in an undefined, battery-backed state that can default to
 32.768 kHz), the interrupt is not armed immediately. Arming is deferred until
 `SQW_BOOT_GRACE_MS` (~500 ms) after RESB is released, and is re-deferred each

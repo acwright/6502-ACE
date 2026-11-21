@@ -24,7 +24,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | Board | Revision | What the silk says | Status | Label |
 |---|---|---|---|---|
 | [ACE Board](#ace-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
-| [ACE Board](#ace-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing |
+| [ACE Board](#ace-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing. The DS1501 option at U18, with its crystal `Y2`, is untested |
 | [ACE CF Adapter](#ace-cf-adapter) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [ACE CF Adapter](#ace-cf-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: the same circuit as the tested Rev 1.0, renumbered and in surface-mount parts for JLCPCB assembly. The new LCSC socket fits the same footprint, but no board has been built with it yet |
 | [ACE RAM Patch](#ace-ram-patch) | 1.0 | Rev 1.0 | Made. Failed: Rev 1.1 replaces it | **Tested**: built and tested: its decode is wrong, and Rev 1.1 replaces it |
@@ -56,6 +56,11 @@ How to build each board, where it needs more than its parts list.
 
 **J11 (AUDIO L) and J14 (AUDIO R), the two RCA jacks, are wired together:** both carry the SID's one output, the same signal, so a stereo amplifier's two inputs each get the sound. Either jack alone gives all of it, so a builder can fit just one and leave the other off to save its cost; each jack's parts-list row is the whole of that part. This holds on Rev 1.0 and Rev 1.1, and on Rev 1.0 whether or not change 9 is made.
 
+**RTC:** U18 takes a DS1511Y+, the part every ACE has been tested with. Rev 1.1 also takes a DS1501YN+ there: the DS1511Y is a DS1501 with its crystal and a lithium cell built in, and Rev 1.1 has the crystal on the board (`Y2`). A Rev 1.0 has no crystal, so it takes only the DS1511Y. The DS1501 option is untested. With a DS1501:
+- **Keep the CR2032 fitted** (`BT1`). It is the DS1501's only backup, so taking it out loses the time and the NVRAM. A DS1511Y has its own cell as well.
+- **Clear its Crystal Select bit once,** from BASIC: `POKE 34831,PEEK(34831) AND 191`. A new DS1501 may start with the bit set, and then it runs slow on the 6 pF crystal. The bit is battery-backed, so it stays cleared. The BIOS doesn't clear it yet: [6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4).
+- **The DS1501YN+ is not for new designs** (NRND). Digi-Key lists it (2026-11-20); Mouser doesn't.
+
 **Power:** use a centre-positive 5 V supply only, on either revision. Nothing on the board protects it from a reversed supply: the barrel jack goes straight to the power switch, so `VCC` gets the supply's full 5 V.
 
 **Building a Rev 1.0**
@@ -72,6 +77,7 @@ Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev
 
 Rev 1.1's other changes need nothing on a built board, or can't be made on one:
 - **The ACIA's crystal jumpers can't be added.** Rev 1.1's R38, C32, JP1 and JP2 let an R65C51P or a W65C51 run; a Rev 1.0 has no pads for them, so fit the R6551AP, which needs none.
+- **A DS1501 can't be fitted at U18.** Rev 1.1 adds its crystal, `Y2`; a Rev 1.0 has no pads for it, so fit the DS1511Y.
 - **Leave J5, the `VDD` header, empty.** It is only for a real SID's 12 V supply; the ARMSID needs nothing at U9 pin 28, and Rev 1.1 drops the header.
 - **The audio jacks are wired the wrong way round.** J11 and J14 carry the SID's signal on their sleeve and ground on their tip; Rev 1.1 puts the signal on the tip. Sound still plays, since audio has no polarity, but the signal rides on the cable's shield, so if the amplifier also shares a ground with the ACE through another lead (a USB or serial cable to the same computer) expect hum or quieter sound. Change 9 in the [build notes](Docs/ACE%20Board/Rev%201.0/ACE%20Board%20Build%20Notes.pdf) rewires them, with one track cut, sixteen thermal spokes cut and two wires, before the jacks are fitted; it hasn't been tried on a board yet. Or leave them, and wire a jack on the case to J15, the `AUDIO` header, which is wired right (pin 1 the signal, pin 2 ground).
 - **The silkscreen** names the parts Rev 1.1 fits (`R6551AP`, `ARMSID`, `ATmega1284` and the rest), and Rev 1.1 keeps Rev 1.0's designators, so these notes and Rev 1.0's silkscreen agree.
@@ -90,7 +96,7 @@ Rev 1.1's other changes need nothing on a built board, or can't be made on one:
 
 ### ACE Board Rev 1.1
 
-Drawn, not made yet. **Proven design**: each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing.
+Drawn, not made yet. **Proven design**: each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing. The DS1501 option at U18, with its crystal `Y2`, is untested.
 
 Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20Board/Rev%201.1/mouser.csv)
 
@@ -148,11 +154,12 @@ Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.1/digikey.csv), [mouser.csv](B
 | U14 | 1 | 74HCT00 | Texas Instruments SN74HCT00N | [296-1603-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1603-5-ND) | [595-SN74HCT00N](https://www.mouser.com/ProductDetail/595-SN74HCT00N) |  |
 | U15 | 1 | AS6C4008 | Alliance Memory AS6C4008-55PCN | [1450-1027-ND](https://www.digikey.com/en/products/filter?keywords=1450-1027-ND) | [913-AS6C4008-55PCN](https://www.mouser.com/ProductDetail/913-AS6C4008-55PCN) |  |
 | U17 | 1 | 74HC30 | Texas Instruments CD74HC30E |  | [595-CD74HC30E](https://www.mouser.com/ProductDetail/595-CD74HC30E) |  |
-| U18 | 1 | DS1511Y | Maxim DS1511Y+ | [DS1511Y+-ND](https://www.digikey.com/en/products/filter?keywords=DS1511Y%2B-ND) | [700-DS1511Y](https://www.mouser.com/ProductDetail/700-DS1511Y) |  |
+| U18 | 1 | DS1511Y / DS1501 | Maxim DS1511Y+ | [DS1511Y+-ND](https://www.digikey.com/en/products/filter?keywords=DS1511Y%2B-ND) | [700-DS1511Y](https://www.mouser.com/ProductDetail/700-DS1511Y) |  |
 | U19, U20 | 2 | 74HC138 | Texas Instruments SN74HC138N | [296-1575-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1575-5-ND) | [595-SN74HC138N](https://www.mouser.com/ProductDetail/595-SN74HC138N) |  |
 | U21, U22 | 2 | 74HC573 | Texas Instruments CD74HC573E | [296-12815-5-ND](https://www.digikey.com/en/products/filter?keywords=296-12815-5-ND) | [595-CD74HC573E](https://www.mouser.com/ProductDetail/595-CD74HC573E) |  |
 | X1 | 1 | 16 MHz | ECS Inc. ECS-100AX-160 | [X947-ND](https://www.digikey.com/en/products/filter?keywords=X947-ND) | [520-TCF1600-X](https://www.mouser.com/ProductDetail/520-TCF1600-X) |  |
 | Y1 | 1 | 1.8432 MHz | Abracon LLC AB-1.8432MHZ-B2 | [535-9009-ND](https://www.digikey.com/en/products/filter?keywords=535-9009-ND) | [815-AB-1.8432-B2](https://www.mouser.com/ProductDetail/815-AB-1.8432-B2) |  |
+| Y2 | 1 | 32.768 kHz | Abracon LLC AB26T-32.768KHZ-6 | [535-AB26T-32.768KHZ-6CT-ND](https://www.digikey.com/en/products/filter?keywords=535-AB26T-32.768KHZ-6CT-ND) | [815-AB26T-32.768K-6](https://www.mouser.com/ProductDetail/815-AB26T-32.768K-6) |  |
 | U4, U7, U9, U18 | 4 | Socket | IC socket, 28-pin, 0.6 in | [3M5481-ND](https://www.digikey.com/en/products/filter?keywords=3M5481-ND) | [517-4828-6004-CP](https://www.mouser.com/ProductDetail/517-4828-6004-CP) | |
 | U8 | 1 | Socket | 28-pin ZIF socket, or an ordinary 28-pin socket | [3M2802-ND](https://www.digikey.com/en/products/filter?keywords=3M2802-ND) | [517-228-1277-00](https://www.mouser.com/ProductDetail/517-228-1277-00) | |
 | U21, U22 | 2 | Socket | IC socket, 20-pin, 0.3 in | [3M5477-ND](https://www.digikey.com/en/products/filter?keywords=3M5477-ND) | [517-4820-3004-CP](https://www.mouser.com/ProductDetail/517-4820-3004-CP) | |
@@ -174,6 +181,8 @@ Pin headers are cut from strips, and the cart files count whole strips.
 - **U4:** Rockwell R6551AP, out of production. Do not substitute a W65C51. A Rockwell R65C51P1 or R65C51P2 also works, but only where the board has the ACIA's crystal jumpers and they are closed: the Serial Card and Serial Card Pro (JP2, JP3), the ACE Board 1.1 (JP1, JP2) and the KIM Board 1.1 (JP2, JP3). On a bare crystal it gives no serial.
 - **U9:** A modern replacement for the MOS 6581 SID, which is out of production. Every tested build uses one. A real 6581 also needs 12 V at pin 28, which the standard build does not provide.
 - **U14:** The RAM's RB/WB gate (2026-11-11): its TTL thresholds end RB and WB a few ns later after PHI2 falls. The part tested in the ACE's U14.
+- **U18:** Or a DS1501YN+, which runs on Y2. See the build notes.
+- **Y2:** The DS1501's crystal. It must be 6 pF: a 12.5 pF crystal needs a BIOS change. Lay the can flat on its pad and solder it there. Fit it with a DS1511Y too, which has no pins to meet it.
 
 ### ACE Board Rev 1.0
 

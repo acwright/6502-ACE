@@ -57,8 +57,8 @@ const CONFIGS = [
     // back (2026-11-11): checked on its 1 MHz pins here, and on 2 MHz in the next config.
     jumpers: { J1: [1, 2] },
     // The ACIA's and the SID's values name the parts tested on the family's machines
-    // (2026-10-26 and 2026-11-05).
-    values: { acia: 'R6551AP', sid: 'ARMSID' },
+    // (2026-10-26 and 2026-11-05). The RTC's names both chips its socket takes (2026-11-20).
+    values: { acia: 'R6551AP', sid: 'ARMSID', rtc: 'DS1511Y / DS1501' },
     rules: ['decode', 'clock', 'shared-lines']
   },
   {
@@ -66,7 +66,7 @@ const CONFIGS = [
     // stayed on the 1 MHz tap and missed every other access.
     name: 'ACE Board Rev 1.1, J1 on 2 MHz',
     board: 'ACE Board/Rev 1.1/ACE Board.kicad_sch',
-    values: { acia: 'R6551AP', sid: 'ARMSID' },
+    values: { acia: 'R6551AP', sid: 'ARMSID', rtc: 'DS1511Y / DS1501' },
     jumpers: { J1: [2, 3] },
     rules: ['clock-2mhz']
   },

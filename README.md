@@ -20,6 +20,7 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [Software](#software)
 - [Hardware](#hardware)
   - [ACE Board](#ace-board)
+    - [The RTC](#the-rtc)
     - [Known limits](#known-limits)
   - [ACE CF Adapter](#ace-cf-adapter)
   - [ACE RAM Patch](#ace-ram-patch)
@@ -109,7 +110,7 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
   always reach the cable; the `CTS EN` and `DCD EN` jumpers (J2 and J4) pick ground or the cable for
   those two inputs — **both default to ground**
 - **GPIO**: 65C22 VIA (20 GPIO pins, 2× 16-bit timers, shift register)
-- **RTC**: DS1511Y real-time clock with battery-backed NVRAM
+- **RTC**: DS1511Y real-time clock with battery-backed NVRAM. Rev 1.1 also takes a DS1501; see [The RTC](#the-rtc)
 - **Keyboard Controller**: ATmega1284 running AB Controller firmware
 - **Input**: PS/2 keyboard connector and 8×8 keyboard matrix header
 - **Joystick**: Two Atari 2600-compatible joystick ports (JOYSTICK A on VIA PORT A and JOYSTICK B on VIA PORT B, `J6` and `J8`), read as `JOY(2)` and `JOY(1)` respectively
@@ -131,6 +132,25 @@ anything plugged into `CART` and `BUS` (J17 and J18). A card may only pull
 those lines low, open-drain, and must never drive them high: a device that drives a shared line high holds it
 there against every other device that pulls it low. A video card built around a pico9918 has the same `/INT`
 problem as U3, and needs the same diode on the card.
+
+#### The RTC
+
+U18 is the real-time clock, with 256 bytes of battery-backed NVRAM. The DS1511Y is a DS1501 with its 32.768 kHz
+crystal and a lithium cell built into one module: the same registers and pinout, so the BIOS runs either. Rev 1.1
+puts the crystal on the board (`Y2`), so its socket takes the bare chip too:
+
+| Rev | DS1511Y | DS1501 (DIP) |
+|---|---|---|
+| 1.0 | Yes, the part it was made and tested with | No: it has no crystal |
+| 1.1 | Yes | Yes, untested |
+
+With a DS1501:
+- **Keep the CR2032 fitted** (`BT1`). It is the DS1501's only backup, so taking it out loses the time and the NVRAM.
+  A DS1511Y has its own cell as well.
+- **Clear its Crystal Select bit once,** from BASIC: `POKE 34831,PEEK(34831) AND 191`. A new DS1501 may start with
+  the bit set, and then it runs slow on the 6 pF crystal. The bit is battery-backed, so it stays cleared. The BIOS
+  doesn't clear it yet: [6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4).
+- **The DS1501YN+ is not for new designs** (NRND). Digi-Key lists it (2026-11-20); Mouser doesn't.
 
 #### Known limits
 
@@ -172,7 +192,7 @@ Each revision carries one of three labels:
 
 | Board | Newest revision | Label | Why |
 |---|---|---|---|
-| ACE Board | 1.1 | **Proven design** | Each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing. |
+| ACE Board | 1.1 | **Proven design** | Each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing. The DS1501 option at U18, with its crystal `Y2`, is untested. |
 | ACE CF Adapter | 1.1 | **Proven design** | The same circuit as the tested Rev 1.0, renumbered and in surface-mount parts for JLCPCB assembly. The new LCSC socket fits the same footprint, but no board has been built with it yet. |
 | ACE RAM Patch | 1.1 | **Tested** | Built and tested on an ACE Board Rev 1.0, 2026-11-03. |
 | ACE SD Adapter Bottom | 1.1 | **Untested** | A new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive; the ACE SD Adapter Top, stacked on it, carries the SD card socket. Not yet made. |
@@ -192,7 +212,7 @@ Whether each board works with the stock BIOS, and what it takes if not. The stoc
 | Board | Rev | Stock BIOS | Why | Source |
 |---|---|---|---|---|
 | ACE Board | 1.0 | **After a step** | Fit the ACE RAM Patch Rev 1.1 in place of U12 and U13, or the BIOS doesn't find the `$8400` RAM window; and fit the video card's `/INT` diode, or a PICO9918 PRO holds `IRQB` high and the keyboard and serial input are dead. The build notes in [BOM.md](BOM.md#build-notes) have both. | Bench, 2026-11-03: `HW_PRESENT` reads `$FD` without the patch and `$FF` with it (see [ACE RAM Patch](#ace-ram-patch)); BOM.md build notes |
-| ACE Board | 1.1 | **Compatible** | The BIOS finds everything on the board: the banked RAM in both windows, the RTC, the CompactFlash slot, the serial port, the VIA, the SID and a PICO9918 PRO running 6502-PICOVDP. Rev 1.1 has the RAM Patch's decode and the `/INT` diode on the board. Not yet built: its label is in [Which revision to make](#which-revision-to-make). | BIOS 2.x `Kernal.asm` probes; the decode by `Tests/check-schematics.mjs` |
+| ACE Board | 1.1 | **Compatible** | The BIOS finds everything on the board: the banked RAM in both windows, the RTC, the CompactFlash slot, the serial port, the VIA, the SID and a PICO9918 PRO running 6502-PICOVDP. Rev 1.1 has the RAM Patch's decode and the `/INT` diode on the board. Not yet built: its label is in [Which revision to make](#which-revision-to-make). With a DS1501 at U18 in place of the DS1511Y, clear its Crystal Select bit once ([6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4)); [The RTC](#the-rtc) has the `POKE`. | BIOS 2.x `Kernal.asm` probes; the decode by `Tests/check-schematics.mjs` |
 | ACE CF Adapter | 1.0, 1.1 | **Compatible** | Its CompactFlash card answers in IO 4 (`$8C00`), where the BIOS's storage probe looks, and `LOAD`, `SAVE` and `DIR` use it. | BIOS 2.x `Kernal.asm` `StInit`; bench, 2026-11-12: `CF` on the boot line |
 | ACE RAM Patch | 1.0 | **Nothing to support** | No registers of its own: it replaces the ACE Board 1.0's bank decode. Its decode is wrong, so don't fit one. The BIOS's probe still passes with it, because the probe tests only banks 0 and 1. | [Checking the banked RAM](#checking-the-banked-ram); BOM.md build notes |
 | ACE RAM Patch | 1.1 | **Nothing to support** | No registers of its own: it is the ACE Board 1.0's corrected bank decode. With it fitted, the BIOS finds both RAM windows. | Bench, 2026-11-03: `HW_PRESENT` `$FF` on 10 boots of 10 |
@@ -230,7 +250,7 @@ Firmware for the ATmega1284 keyboard controller on the ACE board. Provides:
 - Buffered output via 65C22 VIA with CA1/CB1 data-ready strobes
 - Independent enable/disable for PS/2 and matrix inputs, releasing PORT A / PORT B so the 6502 can read the joysticks that share them
 - 6502 reset control: pulls `RESB` low on PC7, open-drain, holding the CPU in reset for ~250 ms at power-on, and debounces the reset button on PC0
-- Optional jiffy clock: pulses `NMIB` low from the DS1511Y SQW input, open-drain; compiled out unless `ENABLE_SQW` is defined. The `ENABLE_SQW` build compiles, but hasn't been run on hardware
+- Optional jiffy clock: pulses `NMIB` low from the RTC's `SQW` output, open-drain; compiled out unless `ENABLE_SQW` is defined. The `ENABLE_SQW` build compiles, but hasn't been run on hardware
 
 See [Firmware/AB Controller/README.md](./Firmware/AB%20Controller/README.md) for setup and usage instructions.
 
@@ -272,7 +292,7 @@ Five lines of the 6502 bus are shared by every board on it: `RESB`, `IRQB`, `NMI
 
 **Interrupt outputs.** Whatever drives `IRQB` or `NMIB` may only pull it low. Every board is drawn for the parts in its BOM and works as shipped, with no jumper to cut or bridge:
 
-- **A part whose interrupt output is open-drain** (the W65C22N, W65C21N, R6551AP, DS1511Y and TMS9918A) drives the line directly, or through a diode with a solder jumper across it that ships bridged. The diode is fitted either way. To use a part that drives its interrupt high as well as low instead, such as a W65C22S or a replacement of your own, cut the jumper: the diode then lets the part only pull the line low. A board with no diode in the line can't take such a part.
+- **A part whose interrupt output is open-drain** (the W65C22N, W65C21N, R6551AP, DS1511Y, DS1501 and TMS9918A) drives the line directly, or through a diode with a solder jumper across it that ships bridged. The diode is fitted either way. To use a part that drives its interrupt high as well as low instead, such as a W65C22S or a replacement of your own, cut the jumper: the diode then lets the part only pull the line low. A board with no diode in the line can't take such a part.
 - **A part that drives its interrupt high as well as low** (the pico9918, the VERA module, and a microcontroller such as the ATmega1284 or a Raspberry Pi Pico) reaches the line through a diode, a BAT85 or a 1N914, with its cathode toward the part. Where a solder jumper sits across that diode, it ships open. The diode is then the only path to the line, so fit it, and never bridge the jumper, because the part would then hold the line high against every other interrupt source.
 - **A microcontroller wired to the line directly,** as on the ACE Board, the Mega Helper and the Flash Helper, drives it open-drain in its firmware: it sets the pin low or leaves it as an input, and never drives it high.
 
