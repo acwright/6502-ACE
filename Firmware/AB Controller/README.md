@@ -15,7 +15,7 @@ The AB Controller is firmware for the ATmega1284 microcontroller (an ATmega1284P
 - **Enable/Disable Control**: Independent enable signals for PS/2 and matrix inputs
 - **Shared Joystick Ports**: Releases PORT A / PORT B when disabled so the 6502 can read the two Atari 2600-compatible joysticks that share those ports
 - **6502 Reset Control**: Drives the 6502 RESB line, providing power-on reset and a debounced reset button
-- **Jiffy Clock (optional)**: Can generate periodic 6502 NMIs from the RTC's square-wave output (a DS1511Y, or on ACE Board 1.1 a DS1501). Disabled by default; enabled at build time via the `ENABLE_SQW` define
+- **Jiffy Clock (optional)**: Can generate periodic 6502 NMIs from the RTC's square-wave output (a DS1511Y, or a DS1501 on the RTC Adapter or on ACE Board 1.1). Disabled by default; enabled at build time via the `ENABLE_SQW` define
 
 ## Hardware Connections
 
