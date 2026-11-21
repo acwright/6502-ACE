@@ -554,9 +554,11 @@ void enableMatrix() {
     PORTA = 0xFF;
   }
 
-  // Start a fresh sweep rather than resuming one abandoned before the matrix
-  // was last disabled
-  matrixScanRow = 0;
+  // matrixScanRow is deliberately left alone: a sweep abandoned when the 6502
+  // took the ports resumes from the row it stopped on, as scanMatrix() intends.
+  // Resetting it here undid that resume on every re-enable, so a program that
+  // reads a joystick back to back (BankedDemo, with its input buffer empty)
+  // left ~90 us windows a full sweep never fits in, and no key was ever sent.
 }
 
 void disableMatrix() {

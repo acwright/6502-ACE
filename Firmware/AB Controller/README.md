@@ -200,6 +200,20 @@ Both keyboards can operate simultaneously if both enable signals are active.
 When an enable signal goes HIGH the firmware releases that port so the joystick
 sharing it can be read by the 6502 — see [Joystick Interface](#joystick-interface).
 
+A matrix sweep interrupted by a joystick read resumes from the row it stopped on
+when the encoder is enabled again. Earlier builds restarted the sweep on every
+re-enable, so a program that reads a joystick back to back (each read leaves the
+encoder only ~90 µs before the next) never finished a sweep, and the ACE's own
+keyboard sent nothing while it ran. The PS/2 keyboard was unaffected. Tested on
+an ACE Rev 1.0 at 1 MHz, BIOS 2.1.0, 2026-11-21.
+
+**Known issue:** joystick 1's switches are wired to the same PORT B lines the
+encoder drives a matrix key code onto, with no series resistor. A key typed
+while joystick 1 holds a direction or button arrives with that line's bit
+cleared: `H` with left held arrives as `$08`, and `C` with left held as `$03`,
+Ctrl-C, which stops a running BASIC program. PORT A and joystick 2 are wired the
+same way for the PS/2 encoder. Not yet fixed.
+
 ## 6502 System Control
 
 In addition to keyboard input, the controller manages reset and interrupt timing
