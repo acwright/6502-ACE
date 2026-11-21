@@ -56,7 +56,7 @@ How to build each board, where it needs more than its parts list.
 
 **J11 (AUDIO L) and J14 (AUDIO R), the two RCA jacks, are wired together:** both carry the SID's one output, the same signal, so a stereo amplifier's two inputs each get the sound. Either jack alone gives all of it, so a builder can fit just one and leave the other off to save its cost; each jack's parts-list row is the whole of that part. This holds on Rev 1.0 and Rev 1.1, and on Rev 1.0 whether or not change 9 is made.
 
-**RTC:** U18 takes a DS1511Y+, the part every ACE has been tested with. Rev 1.1 also takes a DS1501YN+ there: the DS1511Y is a DS1501 with its crystal and a lithium cell built in, and Rev 1.1 has the crystal on the board (`Y2`). A Rev 1.0 has no crystal, so it takes only the DS1511Y. The DS1501 option is untested. With a DS1501:
+**RTC:** U18 takes a DS1511Y+, the part every ACE has been tested with. Any revision also takes the [RTC Adapter](https://github.com/acwright/6502-COB#adapters) in its place, a DS1501 and its crystal on a plug, for less; its build notes are in 6502-COB. Rev 1.1 also takes a DS1501YN+ there: the DS1511Y is a DS1501 with its crystal and a lithium cell built in, and Rev 1.1 has the crystal on the board (`Y2`). A Rev 1.0 has no crystal, so it takes the DS1511Y or the adapter. The DS1501 option and the adapter are untested. With the adapter or a DS1501:
 - **Keep the CR2032 fitted** (`BT1`). It is the DS1501's only backup, so taking it out loses the time and the NVRAM. A DS1511Y has its own cell as well.
 - **Clear its Crystal Select bit once,** from BASIC: `POKE 34831,PEEK(34831) AND 191`. A new DS1501 may start with the bit set, and then it runs slow on the 6 pF crystal. The bit is battery-backed, so it stays cleared. The BIOS doesn't clear it yet: [6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4).
 - **The DS1501YN+ is not for new designs** (NRND). Digi-Key lists it (2026-11-20); Mouser doesn't.
@@ -77,7 +77,7 @@ Rev 1.0 is the board on sale. Rev 1.1 fixes each of these on the board; on a Rev
 
 Rev 1.1's other changes need nothing on a built board, or can't be made on one:
 - **The ACIA's crystal jumpers can't be added.** Rev 1.1's R38, C32, JP1 and JP2 let an R65C51P or a W65C51 run; a Rev 1.0 has no pads for them, so fit the R6551AP, which needs none.
-- **A DS1501 can't be fitted at U18.** Rev 1.1 adds its crystal, `Y2`; a Rev 1.0 has no pads for it, so fit the DS1511Y.
+- **A bare DS1501 can't be fitted at U18.** Rev 1.1 adds its crystal, `Y2`; a Rev 1.0 has no pads for it, so fit the DS1511Y or the RTC Adapter.
 - **Leave J5, the `VDD` header, empty.** It is only for a real SID's 12 V supply; the ARMSID needs nothing at U9 pin 28, and Rev 1.1 drops the header.
 - **The audio jacks are wired the wrong way round.** J11 and J14 carry the SID's signal on their sleeve and ground on their tip; Rev 1.1 puts the signal on the tip. Sound still plays, since audio has no polarity, but the signal rides on the cable's shield, so if the amplifier also shares a ground with the ACE through another lead (a USB or serial cable to the same computer) expect hum or quieter sound. Change 9 in the [build notes](Docs/ACE%20Board/Rev%201.0/ACE%20Board%20Build%20Notes.pdf) rewires them, with one track cut, sixteen thermal spokes cut and two wires, before the jacks are fitted; it hasn't been tried on a board yet. Or leave them, and wire a jack on the case to J15, the `AUDIO` header, which is wired right (pin 1 the signal, pin 2 ground).
 - **The silkscreen** names the parts Rev 1.1 fits (`R6551AP`, `ARMSID`, `ATmega1284` and the rest), and Rev 1.1 keeps Rev 1.0's designators, so these notes and Rev 1.0's silkscreen agree.
@@ -181,8 +181,10 @@ Pin headers are cut from strips, and the cart files count whole strips.
 - **U4:** Rockwell R6551AP, out of production. Do not substitute a W65C51. A Rockwell R65C51P1 or R65C51P2 also works, but only where the board has the ACIA's crystal jumpers and they are closed: the Serial Card and Serial Card Pro (JP2, JP3), the ACE Board 1.1 (JP1, JP2) and the KIM Board 1.1 (JP2, JP3). On a bare crystal it gives no serial.
 - **U9:** A modern replacement for the MOS 6581 SID, which is out of production. Every tested build uses one. A real 6581 also needs 12 V at pin 28, which the standard build does not provide.
 - **U14:** The RAM's RB/WB gate (2026-11-11): its TTL thresholds end RB and WB a few ns later after PHI2 falls. The part tested in the ACE's U14.
+- **U18:** Or the RTC Adapter (6502-COB), a DS1501 on a plug, for less, on any revision. See the build notes.
 - **U18:** Or a DS1501YN+, which runs on Y2. See the build notes.
-- **Y2:** The DS1501's crystal. It must be 6 pF: a 12.5 pF crystal needs a BIOS change. Lay the can flat on its pad and solder it there. Fit it with a DS1511Y too, which has no pins to meet it.
+- **Y2:** The DS1501's crystal. It must be 6 pF: a 12.5 pF crystal needs a BIOS change. Lay the can flat on its pad and solder it there.
+- **Y2:** Fit it with a DS1511Y too, which has no pins to meet it.
 
 ### ACE Board Rev 1.0
 
@@ -269,6 +271,7 @@ U12 and U13 are not listed: fit the ACE RAM Patch Rev 1.1 in their sockets. See 
 - **SW1–SW67:** Cherry MX2A RGB Blue, clear housing, as on the owner's Amazon kit. MX1A-E1NN (black housing) is the deeper-stocked alternative; Digi-Key CH196-ND, Mouser 540-MX1A-E1NN.
 - **U4:** Rockwell R6551AP, out of production. Do not substitute a W65C51. A Rockwell R65C51P1 or R65C51P2 also works, but only where the board has the ACIA's crystal jumpers and they are closed: the Serial Card and Serial Card Pro (JP2, JP3), the ACE Board 1.1 (JP1, JP2) and the KIM Board 1.1 (JP2, JP3). On a bare crystal it gives no serial.
 - **U9:** A modern replacement for the MOS 6581 SID, which is out of production. Every tested build uses one. A real 6581 also needs 12 V at pin 28, which the standard build does not provide.
+- **U18:** Or the RTC Adapter (6502-COB), a DS1501 on a plug, for less, on any revision. See the build notes.
 
 
 ## ACE CF Adapter
@@ -319,10 +322,15 @@ Cart files: [digikey.csv](BOM/ACE%20RAM%20Patch/Rev%201.1/digikey.csv), [mouser.
 
 | Reference | Qty | Value | Part | Digi-Key | Mouser | Other |
 |---|---|---|---|---|---|---|
-| J1 | 1 | 74HC00 (U12) | Texas Instruments SN74HC00N | [296-1563-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1563-5-ND) | [595-SN74HC00N](https://www.mouser.com/ProductDetail/595-SN74HC00N) |  |
-| J2 | 1 | 74HC00 (U13) | Texas Instruments SN74HC00N | [296-1563-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1563-5-ND) | [595-SN74HC00N](https://www.mouser.com/ProductDetail/595-SN74HC00N) |  |
+| J1 | 1 | 74HC00 (U12) | Machined pins, 2.54 mm, cut from a 64-pin strip (Mill-Max 800-10-064-10-001000) | [ED7264-64-ND](https://www.digikey.com/en/products/filter?keywords=ED7264-64-ND) | [575-010064](https://www.mouser.com/ProductDetail/575-010064) |  |
+| J2 | 1 | 74HC00 (U13) | Machined pins, 2.54 mm, cut from a 64-pin strip (Mill-Max 800-10-064-10-001000) | [ED7264-64-ND](https://www.digikey.com/en/products/filter?keywords=ED7264-64-ND) | [575-010064](https://www.mouser.com/ProductDetail/575-010064) |  |
 | U1 | 1 | 74HC00 | Texas Instruments SN74HC00N | [296-1563-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1563-5-ND) | [595-SN74HC00N](https://www.mouser.com/ProductDetail/595-SN74HC00N) |  |
 | U2 | 1 | 74HC02 | Texas Instruments SN74HC02N | [296-1564-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1564-5-ND) | [595-SN74HC02N](https://www.mouser.com/ProductDetail/595-SN74HC02N) |  |
+
+Pin headers are cut from strips, and the cart files count whole strips.
+
+- **J1, J2:** Machined round pins, which plug into a DIP socket without spreading its contacts. Cut a piece for each row of pins: a DIP-28 plug takes two of 14.
+- **J1, J2:** Pins, not a chip: the value names the ACE Board socket whose holes they are soldered into.
 
 ### ACE RAM Patch Rev 1.0
 
@@ -332,9 +340,14 @@ Cart files: [digikey.csv](BOM/ACE%20RAM%20Patch/Rev%201.0/digikey.csv), [mouser.
 
 | Reference | Qty | Value | Part | Digi-Key | Mouser | Other |
 |---|---|---|---|---|---|---|
-| J1 | 1 | 74HC00 (U13) | Texas Instruments SN74HC00N | [296-1563-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1563-5-ND) | [595-SN74HC00N](https://www.mouser.com/ProductDetail/595-SN74HC00N) |  |
+| J1 | 1 | 74HC00 (U13) | Machined pins, 2.54 mm, cut from a 64-pin strip (Mill-Max 800-10-064-10-001000) | [ED7264-64-ND](https://www.digikey.com/en/products/filter?keywords=ED7264-64-ND) | [575-010064](https://www.mouser.com/ProductDetail/575-010064) |  |
 | U1 | 1 | 74HC00 | Texas Instruments SN74HC00N | [296-1563-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1563-5-ND) | [595-SN74HC00N](https://www.mouser.com/ProductDetail/595-SN74HC00N) |  |
 | U2 | 1 | 74HC02 | Texas Instruments SN74HC02N | [296-1564-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1564-5-ND) | [595-SN74HC02N](https://www.mouser.com/ProductDetail/595-SN74HC02N) |  |
+
+Pin headers are cut from strips, and the cart files count whole strips.
+
+- **J1:** Machined round pins, which plug into a DIP socket without spreading its contacts. Cut a piece for each row of pins: a DIP-28 plug takes two of 14.
+- **J1:** Pins, not a chip: the value names the ACE Board socket whose holes they are soldered into.
 
 
 ## ACE SD Adapter Bottom

@@ -5907,7 +5907,7 @@
 				)
 			)
 		)
-		(property "Digikey" "296-1563-5-ND"
+		(property "Digikey" "ED7264-64-ND"
 			(at 54.61 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -5918,7 +5918,7 @@
 				)
 			)
 		)
-		(property "Mouser" "595-SN74HC00N"
+		(property "Mouser" "575-010064"
 			(at 54.61 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -6327,7 +6327,7 @@
 				)
 			)
 		)
-		(property "Digikey" "296-1563-5-ND"
+		(property "Digikey" "ED7264-64-ND"
 			(at 54.61 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -6338,7 +6338,7 @@
 				)
 			)
 		)
-		(property "Mouser" "595-SN74HC00N"
+		(property "Mouser" "575-010064"
 			(at 54.61 87.63 0)
 			(hide yes)
 			(show_name no)

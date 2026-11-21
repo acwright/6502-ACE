@@ -110,7 +110,7 @@ The single integrated board hosting the W65C02S CPU and all peripherals. Provide
   always reach the cable; the `CTS EN` and `DCD EN` jumpers (J2 and J4) pick ground or the cable for
   those two inputs — **both default to ground**
 - **GPIO**: 65C22 VIA (20 GPIO pins, 2× 16-bit timers, shift register)
-- **RTC**: DS1511Y real-time clock with battery-backed NVRAM. Rev 1.1 also takes a DS1501; see [The RTC](#the-rtc)
+- **RTC**: DS1511Y real-time clock with battery-backed NVRAM. Any revision also takes the RTC Adapter, and Rev 1.1 a DS1501; see [The RTC](#the-rtc)
 - **Keyboard Controller**: ATmega1284 running AB Controller firmware
 - **Input**: PS/2 keyboard connector and 8×8 keyboard matrix header
 - **Joystick**: Two Atari 2600-compatible joystick ports (JOYSTICK A on VIA PORT A and JOYSTICK B on VIA PORT B, `J6` and `J8`), read as `JOY(2)` and `JOY(1)` respectively
@@ -136,21 +136,23 @@ problem as U3, and needs the same diode on the card.
 #### The RTC
 
 U18 is the real-time clock, with 256 bytes of battery-backed NVRAM. The DS1511Y is a DS1501 with its 32.768 kHz
-crystal and a lithium cell built into one module: the same registers and pinout, so the BIOS runs either. Rev 1.1
-puts the crystal on the board (`Y2`), so its socket takes the bare chip too:
+crystal and a lithium cell built into one module: the same registers and pinout, so the BIOS runs either. The
+[RTC Adapter](https://github.com/acwright/6502-COB#adapters), in 6502-COB, is a DS1501 and its crystal on a plug that fits any revision's socket, for less. Rev 1.1
+also puts the crystal on the board (`Y2`), so its socket takes the bare chip too:
 
-| Rev | DS1511Y | DS1501 (DIP) |
-|---|---|---|
-| 1.0 | Yes, the part it was made and tested with | No: it has no crystal |
-| 1.1 | Yes | Yes, untested |
+| Rev | DS1511Y | RTC Adapter | DS1501 (DIP) |
+|---|---|---|---|
+| 1.0 | Yes, the part it was made and tested with | Yes, untested | No: it has no crystal |
+| 1.1 | Yes | Yes, untested | Yes, untested |
 
-With a DS1501:
+With the RTC Adapter or a DS1501:
 - **Keep the CR2032 fitted** (`BT1`). It is the DS1501's only backup, so taking it out loses the time and the NVRAM.
   A DS1511Y has its own cell as well.
 - **Clear its Crystal Select bit once,** from BASIC: `POKE 34831,PEEK(34831) AND 191`. A new DS1501 may start with
   the bit set, and then it runs slow on the 6 pF crystal. The bit is battery-backed, so it stays cleared. The BIOS
   doesn't clear it yet: [6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4).
-- **The DS1501YN+ is not for new designs** (NRND). Digi-Key lists it (2026-11-20); Mouser doesn't.
+- **The DS1501YN+, the DIP chip, is not for new designs** (NRND). Digi-Key lists it (2026-11-20); Mouser doesn't. The
+  RTC Adapter's DS1501YZN+, in SOIC, is active.
 
 #### Known limits
 
@@ -211,8 +213,8 @@ Whether each board works with the stock BIOS, and what it takes if not. The stoc
 
 | Board | Rev | Stock BIOS | Why | Source |
 |---|---|---|---|---|
-| ACE Board | 1.0 | **After a step** | Fit the ACE RAM Patch Rev 1.1 in place of U12 and U13, or the BIOS doesn't find the `$8400` RAM window; and fit the video card's `/INT` diode, or a PICO9918 PRO holds `IRQB` high and the keyboard and serial input are dead. The build notes in [BOM.md](BOM.md#build-notes) have both. | Bench, 2026-11-03: `HW_PRESENT` reads `$FD` without the patch and `$FF` with it (see [ACE RAM Patch](#ace-ram-patch)); BOM.md build notes |
-| ACE Board | 1.1 | **Compatible** | The BIOS finds everything on the board: the banked RAM in both windows, the RTC, the CompactFlash slot, the serial port, the VIA, the SID and a PICO9918 PRO running 6502-PICOVDP. Rev 1.1 has the RAM Patch's decode and the `/INT` diode on the board. Not yet built: its label is in [Which revision to make](#which-revision-to-make). With a DS1501 at U18 in place of the DS1511Y, clear its Crystal Select bit once ([6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4)); [The RTC](#the-rtc) has the `POKE`. | BIOS 2.x `Kernal.asm` probes; the decode by `Tests/check-schematics.mjs` |
+| ACE Board | 1.0 | **After a step** | Fit the ACE RAM Patch Rev 1.1 in place of U12 and U13, or the BIOS doesn't find the `$8400` RAM window; and fit the video card's `/INT` diode, or a PICO9918 PRO holds `IRQB` high and the keyboard and serial input are dead. The build notes in [BOM.md](BOM.md#build-notes) have both. With the RTC Adapter at U18 in place of the DS1511Y, clear its Crystal Select bit once ([6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4)); [The RTC](#the-rtc) has the `POKE`. | Bench, 2026-11-03: `HW_PRESENT` reads `$FD` without the patch and `$FF` with it (see [ACE RAM Patch](#ace-ram-patch)); BOM.md build notes |
+| ACE Board | 1.1 | **Compatible** | The BIOS finds everything on the board: the banked RAM in both windows, the RTC, the CompactFlash slot, the serial port, the VIA, the SID and a PICO9918 PRO running 6502-PICOVDP. Rev 1.1 has the RAM Patch's decode and the `/INT` diode on the board. Not yet built: its label is in [Which revision to make](#which-revision-to-make). With the RTC Adapter or a DS1501 at U18 in place of the DS1511Y, clear its Crystal Select bit once ([6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4)); [The RTC](#the-rtc) has the `POKE`. | BIOS 2.x `Kernal.asm` probes; the decode by `Tests/check-schematics.mjs` |
 | ACE CF Adapter | 1.0, 1.1 | **Compatible** | Its CompactFlash card answers in IO 4 (`$8C00`), where the BIOS's storage probe looks, and `LOAD`, `SAVE` and `DIR` use it. | BIOS 2.x `Kernal.asm` `StInit`; bench, 2026-11-12: `CF` on the boot line |
 | ACE RAM Patch | 1.0 | **Nothing to support** | No registers of its own: it replaces the ACE Board 1.0's bank decode. Its decode is wrong, so don't fit one. The BIOS's probe still passes with it, because the probe tests only banks 0 and 1. | [Checking the banked RAM](#checking-the-banked-ram); BOM.md build notes |
 | ACE RAM Patch | 1.1 | **Nothing to support** | No registers of its own: it is the ACE Board 1.0's corrected bank decode. With it fitted, the BIOS finds both RAM windows. | Bench, 2026-11-03: `HW_PRESENT` `$FF` on 10 boots of 10 |

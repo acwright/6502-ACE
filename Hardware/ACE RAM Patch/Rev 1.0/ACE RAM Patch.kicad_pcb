@@ -1379,7 +1379,7 @@
 				)
 			)
 		)
-		(property "Digikey" "296-1563-5-ND"
+		(property "Digikey" "ED7264-64-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1392,7 +1392,7 @@
 				)
 			)
 		)
-		(property "Mouser" "595-SN74HC00N"
+		(property "Mouser" "575-010064"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")

@@ -6,7 +6,7 @@
    "1.0"
   ],
   "category": "after a step",
-  "reason": "Fit the ACE RAM Patch Rev 1.1 in place of U12 and U13, or the BIOS doesn't find the `$8400` RAM window; and fit the video card's `/INT` diode, or a PICO9918 PRO holds `IRQB` high and the keyboard and serial input are dead. The build notes in [BOM.md](BOM.md#build-notes) have both.",
+  "reason": "Fit the ACE RAM Patch Rev 1.1 in place of U12 and U13, or the BIOS doesn't find the `$8400` RAM window; and fit the video card's `/INT` diode, or a PICO9918 PRO holds `IRQB` high and the keyboard and serial input are dead. The build notes in [BOM.md](BOM.md#build-notes) have both. With the RTC Adapter at U18 in place of the DS1511Y, clear its Crystal Select bit once ([6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4)); [The RTC](#the-rtc) has the `POKE`.",
   "source": "Bench, 2026-11-03: `HW_PRESENT` reads `$FD` without the patch and `$FF` with it (see [ACE RAM Patch](#ace-ram-patch)); BOM.md build notes"
  },
  {
@@ -16,7 +16,7 @@
    "1.1"
   ],
   "category": "compatible",
-  "reason": "The BIOS finds everything on the board: the banked RAM in both windows, the RTC, the CompactFlash slot, the serial port, the VIA, the SID and a PICO9918 PRO running 6502-PICOVDP. Rev 1.1 has the RAM Patch's decode and the `/INT` diode on the board. Not yet built: its label is in [Which revision to make](#which-revision-to-make). With a DS1501 at U18 in place of the DS1511Y, clear its Crystal Select bit once ([6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4)); [The RTC](#the-rtc) has the `POKE`.",
+  "reason": "The BIOS finds everything on the board: the banked RAM in both windows, the RTC, the CompactFlash slot, the serial port, the VIA, the SID and a PICO9918 PRO running 6502-PICOVDP. Rev 1.1 has the RAM Patch's decode and the `/INT` diode on the board. Not yet built: its label is in [Which revision to make](#which-revision-to-make). With the RTC Adapter or a DS1501 at U18 in place of the DS1511Y, clear its Crystal Select bit once ([6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4)); [The RTC](#the-rtc) has the `POKE`.",
   "source": "BIOS 2.x `Kernal.asm` probes; the decode by `Tests/check-schematics.mjs`"
  },
  {
