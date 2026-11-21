@@ -49,7 +49,7 @@ pages=[]
 
 pages.append(f'''
 <h1>ACE Board Rev 1.0: Build Notes</h1>
-<p class="sub">The work an ACE Board Rev 1.0 needs beyond its bill of materials, for a new build or for upgrading a built board. Rev 1.1 makes these fixes on the PCB. On Rev 1.0 you make them by hand. Changes 1–7 are done and tested on the owner's Rev 1.0; change 8, which is optional, hasn't been tried on a board yet.</p>
+<p class="sub">The work an ACE Board Rev 1.0 needs beyond its bill of materials, for a new build or for upgrading a built board. Rev 1.1 makes these fixes on the PCB. On Rev 1.0 you make them by hand. Changes 1–8 are done and tested on the owner's Rev 1.0; change 9, which is optional, hasn't been tried on a board yet.</p>
 <div class="side" style="grid-template-columns:1fr 2.75in">
 <div>
 <table>
@@ -252,7 +252,7 @@ RUN</pre>
 ''')
 pages.append(f'''
 {h2(8,"Optional: the SID on J1's clock, for 2 MHz")}
-<p>Only for a board you mean to run at 2 MHz, which is at the builder's risk on any ACE. On Rev 1.0 the SID, U9, takes its clock from U5's 1 MHz output, whatever J1 says, so at 2 MHz it answers only every other CPU cycle. Rev 1.1 clocks the SID from J1's middle pin, PHI2, the clock the CPU runs on. One cut and one wire do the same on a Rev 1.0. After them the SID follows J1 at either setting, so the change does no harm at 1 MHz. This change hasn't been tried on a board yet: Rev 1.1 is drawn this way.</p>
+<p>Only for a board you mean to run at 2 MHz, which is at the builder's risk on any ACE. On Rev 1.0 the SID, U9, takes its clock from U5's 1 MHz output, whatever J1 says, so at 2 MHz it answers only every other CPU cycle. Rev 1.1 clocks the SID from J1's middle pin, PHI2, the clock the CPU runs on. One cut and one wire do the same on a Rev 1.0. After them the SID follows J1 at either setting, so the change does no harm at 1 MHz. Tested on the owner's Rev 1.0 at 2 MHz (2026-11-21): the BIOS finds the SID, an ARMSID, and it plays. Its notes sound an octave higher than at 1 MHz, since a SID's pitch follows its clock and BASIC's <code>SOUND</code> values assume 1 MHz.</p>
 <div class="info"><b>2 MHz needs more than this.</b> The 2 MHz tests of 2026-11-11 ran a Rev 1.0 with a 74HCT00 at U14, which fits its socket. See the 6502-ACE README's notes on 2 MHz.</div>
 <div class="side" style="grid-template-columns:2.7in 1fr">
 <div>{fig(fig_sid_cut(),"<b>Figure 14. Top of the ACE, beside U9.</b> The SID's clock runs on the top side, 2.4 mm left of U9's pins, between two vias. It is drawn in blue: the track itself is under the solder mask. Cut it level with pin 5, below C7.")}</div>
