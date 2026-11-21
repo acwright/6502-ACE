@@ -40,9 +40,11 @@ These change what you buy or fit. The boards themselves stay as they were made.
 |---|---|---|---|
 | ACE Board | 1.0 | R1–R5, R27 | Fit 10k, not the 1k in the original files. See the build notes. |
 | ACE Board | 1.0 | J5 | `VDD` is the supply for a real SID at pin 28: 12 V for a 6581, 9 V for an 8580. The standard build does not provide it, and it has never been tested. Leave it unconnected with an ARMSID. |
+| ACE Board | 1.0 | U7 | With a CF card and a 1 MB Flash Cart both fitted, this AS6C62256 can return a wrong byte from RAM, even at 1 MHz: it lets go of the data bus too early at the end of a read. Either one alone is fine. The fix, tested on a Rev 1.0: bend U7 pin 22 out of its socket and wire it to U14 pin 6, so the RAM's output enable follows the inverted `RWB`. A Hitachi HM62256LP-70, no longer made, also works. |
 | ACE Board | 1.0 | U9 | The silk says 6581; fit an ARMSID. |
 | ACE Board | 1.0 | U4 | The silk says 65C51; fit an R6551AP. |
 | ACE Board | 1.0 | BT1 | `BAT-HLD-001-THM`, on the tested boards, is obsolete. `BAT-HLD-001-THM-TR` is its listed continuation, with no stock today and no board built with it yet. |
+| ACE Board | 1.1 | U7 | With a CF card and a 1 MB Flash Cart both fitted, this AS6C62256 can return a wrong byte from RAM, even at 1 MHz: it lets go of the data bus too early at the end of a read. Either one alone is fine. The fix, tested on a Rev 1.0: bend U7 pin 22 out of its socket and wire it to U14 pin 6, so the RAM's output enable follows the inverted `RWB`. A Hitachi HM62256LP-70, no longer made, also works. |
 | ACE Board | 1.1 | BT1 | `BAT-HLD-001-THM`, on the tested boards, is obsolete. `BAT-HLD-001-THM-TR` is its listed continuation, with no stock today and no board built with it yet. |
 | ACE RAM Patch | 1.0 |  | Boards were made, and testing showed the decode is wrong. Do not fit one: use Rev 1.1. |
 
