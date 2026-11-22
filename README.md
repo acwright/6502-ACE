@@ -194,7 +194,7 @@ Each revision carries one of three labels:
 
 | Board | Newest revision | Label | Why |
 |---|---|---|---|
-| ACE Board | 1.1 | **Proven design** | Each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing. The DS1501 option at U18, with its crystal `Y2`, is untested. |
+| ACE Board | 1.1 | **Proven design** | Each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing. The DS1501 option at U18, with its crystal `Y2`, is untested, and so are the 10k pull-ups on the PS/2 lines, a textbook circuit. |
 | ACE CF Adapter | 1.1 | **Proven design** | The same circuit as the tested Rev 1.0, renumbered and in surface-mount parts for JLCPCB assembly. The new LCSC socket fits the same footprint, but no board has been built with it yet. |
 | ACE RAM Patch | 1.1 | **Tested** | Built and tested on an ACE Board Rev 1.0, 2026-11-03. |
 | ACE SD Adapter Bottom | 1.1 | **Untested** | A new board: an SD card the stock BIOS takes for CompactFlash, with a built-in drive; the ACE SD Adapter Top, stacked on it, carries the SD card socket. Not yet made. |

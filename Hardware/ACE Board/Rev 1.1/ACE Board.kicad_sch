@@ -22633,7 +22633,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 185.42) (xy 209.55 185.42)
+			(xy 204.47 185.42) (xy 212.09 185.42)
 		)
 		(stroke
 			(width 0)
@@ -32453,7 +32453,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 190.5) (xy 209.55 190.5)
+			(xy 204.47 190.5) (xy 219.71 190.5)
 		)
 		(stroke
 			(width 0)
@@ -43139,7 +43139,7 @@
 	)
 	(global_label "PS2DATA"
 		(shape bidirectional)
-		(at 209.55 190.5 0)
+		(at 224.79 190.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43148,7 +43148,7 @@
 		)
 		(uuid "987d9074-e5e6-4bcf-942d-dc5d89092519")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 209.55 190.5 90)
+			(at 224.79 190.5 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43827,7 +43827,7 @@
 	)
 	(global_label "PS2CLK"
 		(shape output)
-		(at 209.55 185.42 0)
+		(at 224.79 185.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43836,7 +43836,7 @@
 		)
 		(uuid "a2ff09a3-9840-45ae-8bf2-f8495a4dd6a7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 209.55 185.42 90)
+			(at 224.79 185.42 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -83680,6 +83680,394 @@
 				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
 					(reference "J15")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 212.09 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed094dd2-68f6-4b4f-9f3b-dfc4bc01d5ca")
+	)
+	(wire
+		(pts
+			(xy 212.09 185.42) (xy 224.79 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cf5cc83-58f7-4a32-b040-aef5dbba9b2b")
+	)
+	(wire
+		(pts
+			(xy 212.09 185.42) (xy 212.09 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "587f3fc3-c4f7-47ce-91bb-1d0181f8a3ee")
+	)
+	(junction
+		(at 219.71 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "528e88df-7a37-479c-ba8d-8db5c9f4830d")
+	)
+	(wire
+		(pts
+			(xy 219.71 190.5) (xy 224.79 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "516a7c3f-5e4f-4f93-b254-37307ead4222")
+	)
+	(wire
+		(pts
+			(xy 219.71 190.5) (xy 219.71 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48885e8a-22c0-464e-a9f3-e7cb232a6ed2")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 212.09 179.07 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c2d23804-971f-4e94-913b-fe0f18cb78ca")
+		(property "Reference" "R39"
+			(at 215.9 177.6222 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 215.9 179.9336 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 213.868 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1/8 W Resistor"
+			(at 212.09 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
+			(at 212.09 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "603-MFR-12FTF52-10K"
+			(at 212.09 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 212.09 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 212.09 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 212.09 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5d6bff7-65a2-4ec9-a749-a98d52055f6a")
+		)
+		(pin "2"
+			(uuid "574ad490-839c-4e5d-a593-96328cd010b4")
+		)
+		(instances
+			(project "ACE Board"
+				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 219.71 179.07 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fb28f4e8-92e9-40a6-a1de-f39e818e3ca4")
+		(property "Reference" "R40"
+			(at 223.52 177.6222 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 223.52 179.9336 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 221.488 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1/8 W Resistor"
+			(at 219.71 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
+			(at 219.71 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "603-MFR-12FTF52-10K"
+			(at 219.71 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 219.71 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 219.71 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 219.71 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bd545403-dcdc-48f3-9845-6017c4f02b64")
+		)
+		(pin "2"
+			(uuid "891a881f-5d23-4342-bf2d-18f8757a5a33")
+		)
+		(instances
+			(project "ACE Board"
+				(path "/34a60d42-c14a-479d-bef3-5ff0ee57bad5"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 212.09 175.26) (xy 212.09 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc2752de-2a7b-4cdc-be54-9fcaee5127c0")
+	)
+	(wire
+		(pts
+			(xy 219.71 175.26) (xy 219.71 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adb2fabf-490f-4ad7-8599-2ec27cf84436")
+	)
+	(wire
+		(pts
+			(xy 212.09 172.72) (xy 219.71 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "820596df-2556-410c-bf2b-3593517b17a8")
+	)
+	(wire
+		(pts
+			(xy 212.09 172.72) (xy 212.09 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "887fcc9d-45df-4322-9b30-7db33d1ac3e5")
+	)
+	(junction
+		(at 212.09 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b98d2950-6b3b-4baf-9f7b-780f31063807")
+	)
+	(global_label "VCC"
+		(shape passive)
+		(at 212.09 170.18 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ee503085-fdcc-44c1-b015-cf1d1dc2e46c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 212.09 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
