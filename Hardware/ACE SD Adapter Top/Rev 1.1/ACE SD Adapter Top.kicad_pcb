@@ -6019,7 +6019,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "S1011EC-40-ND"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -6032,7 +6032,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "200-TSW14007TS"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -6368,7 +6368,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "S1011EC-40-ND"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)
@@ -6381,7 +6381,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "200-TSW14007TS"
 			(at 0 0 180)
 			(layer "B.SilkS")
 			(hide yes)

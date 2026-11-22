@@ -8015,7 +8015,7 @@
 				)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "S7004-ND"
 			(at 48.26 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -8026,7 +8026,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "200-SSW10601TS"
 			(at 48.26 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -9592,7 +9592,7 @@
 				)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "S7004-ND"
 			(at 48.26 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -9603,7 +9603,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "200-SSW10601TS"
 			(at 48.26 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -11921,7 +11921,7 @@
 				)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "2648-SC1631CT-ND"
 			(at 198.12 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -11932,7 +11932,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "358-SC1631"
 			(at 198.12 74.93 0)
 			(hide yes)
 			(show_name no)

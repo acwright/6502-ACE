@@ -365,13 +365,20 @@ Cart files: [digikey.csv](BOM/ACE%20SD%20Adapter%20Bottom/Rev%201.1/digikey.csv)
 |---|---|---|---|---|---|---|---|
 | C1–C4 | 4 | 100nF | YAGEO CC0805KRX7R9BB104 | [311-1140-1-ND](https://www.digikey.com/en/products/filter?keywords=311-1140-1-ND) | [603-CC805KRX7R9BB104](https://www.mouser.com/ProductDetail/603-CC805KRX7R9BB104) | LCSC [C49678](https://www.lcsc.com/search?q=C49678) | Yes |
 | J1 | 1 | STORAGE | Amphenol 68021-120HLF | [609-3338-ND](https://www.digikey.com/en/products/filter?keywords=609-3338-ND) | [649-68021-120HLF](https://www.mouser.com/ProductDetail/649-68021-120HLF) |  | |
+| J7 | 1 | STACK SD | Sullins PPTC061LFBN-RC | [S7004-ND](https://www.digikey.com/en/products/filter?keywords=S7004-ND) | [200-SSW10601TS](https://www.mouser.com/ProductDetail/200-SSW10601TS) |  | |
+| J9 | 1 | STACK POWER | Sullins PPTC061LFBN-RC | [S7004-ND](https://www.digikey.com/en/products/filter?keywords=S7004-ND) | [200-SSW10601TS](https://www.mouser.com/ProductDetail/200-SSW10601TS) |  | |
 | R13–R20 | 8 | 4.7k | YAGEO RC0805FR-074K7L | [311-4.70KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-4.70KCRCT-ND) | [603-RC0805FR-074K7L](https://www.mouser.com/ProductDetail/603-RC0805FR-074K7L) | LCSC [C17673](https://www.lcsc.com/search?q=C17673) | Yes |
 | R21 | 1 | 10k | YAGEO RC0805FR-0710KL | [311-10.0KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-10.0KCRCT-ND) | [603-RC0805FR-0710KL](https://www.mouser.com/ProductDetail/603-RC0805FR-0710KL) | LCSC [C17414](https://www.lcsc.com/search?q=C17414) | Yes |
 | U1 | 1 | 74LVC4245A | Texas Instruments SN74LVC4245APWR | [296-12183-1-ND](https://www.digikey.com/en/products/filter?keywords=296-12183-1-ND) | [595-SN74LVC4245APWR](https://www.mouser.com/ProductDetail/595-SN74LVC4245APWR) | LCSC [C7859](https://www.lcsc.com/search?q=C7859) | Yes |
+| U2 | 1 | Pico 2 | Raspberry Pi SC1631 | [2648-SC1631CT-ND](https://www.digikey.com/en/products/filter?keywords=2648-SC1631CT-ND) | [358-SC1631](https://www.mouser.com/ProductDetail/358-SC1631) |  | |
 | U3 | 1 | W25Q128JVFIQ | Winbond Electronics W25Q128JVFIQ | [W25Q128JVFIQ-ND](https://www.digikey.com/en/products/filter?keywords=W25Q128JVFIQ-ND) | [454-W25Q128JVFIQ](https://www.mouser.com/ProductDetail/454-W25Q128JVFIQ) | LCSC [C2456298](https://www.lcsc.com/search?q=C2456298) | Yes |
 | U6 | 1 | 74LVC541 | Nexperia USA Inc. 74LVC541APW,118 | [1727-6370-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-6370-1-ND) | [771-74LVC541APW-T](https://www.mouser.com/ProductDetail/771-74LVC541APW-T) | LCSC [C113281](https://www.lcsc.com/search?q=C113281) | Yes |
 
+Pin headers are cut from strips, and the cart files count whole strips.
+
 - **J1:** Right-angle header on the CF and SD Adapters; plugs into the right-angle socket on the ACE Board.
+- **J7, J9:** On Mouser: Samtec SSW-106-01-T-S, the same socket.
+- **U2:** Soldered to the board on two 1×20 pin headers, cut from the header strip, not by its castellations. JLCPCB doesn't fit it: solder it yourself.
 - **U3:** The built-in drive (16 MB). Digi-Key and Mouser have none in stock today (36-week lead); LCSC does. Any 16-pin 300 mil W25Q with a /RESET pin fits the same footprint, up to the 128 MB W25Q01JVSFIQ (Digi-Key 256-W25Q01JVSFIQ-ND, Mouser 454-W25Q01JVSFIQ, stocked at both); the firmware fits the disks to the size it finds and mirrors the rest.
 - **U6:** LCSC C113281 is TI's SN74LVC541APWR, the same part. Digi-Key has none of either in stock today; Mouser has.
 
@@ -392,9 +399,13 @@ Cart files: [digikey.csv](BOM/ACE%20SD%20Adapter%20Top/Rev%201.1/digikey.csv), [
 | D1 | 1 | ACT | Lite-On Inc. LTST-C170KRKT | [160-1415-1-ND](https://www.digikey.com/en/products/filter?keywords=160-1415-1-ND) | [859-LTST-C170KRKT](https://www.mouser.com/ProductDetail/859-LTST-C170KRKT) | LCSC [C2295](https://www.lcsc.com/search?q=C2295) | Yes |
 | D2 | 1 | SD | Lite-On Inc. LTST-C170KGKT | [160-1414-1-ND](https://www.digikey.com/en/products/filter?keywords=160-1414-1-ND) | [859-LTST-C170KGKT](https://www.mouser.com/ProductDetail/859-LTST-C170KGKT) | LCSC [C2297](https://www.lcsc.com/search?q=C2297) | Yes |
 | J4 | 1 | SD CARD | XUNPU SD-106M |  |  | LCSC [C266603](https://www.lcsc.com/search?q=C266603) | Yes |
+| J8 | 1 | STACK SD | Pin header 1×6, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  | |
+| J10 | 1 | STACK POWER | Pin header 1×6, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  | |
 | R1, R5 | 2 | 330 | YAGEO RC0805FR-07330RL | [311-330CRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-330CRCT-ND) | [603-RC0805FR-07330RL](https://www.mouser.com/ProductDetail/603-RC0805FR-07330RL) | LCSC [C17630](https://www.lcsc.com/search?q=C17630) | Yes |
 | R4, R23–R27 | 6 | 10k | YAGEO RC0805FR-0710KL | [311-10.0KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-10.0KCRCT-ND) | [603-RC0805FR-0710KL](https://www.mouser.com/ProductDetail/603-RC0805FR-0710KL) | LCSC [C17414](https://www.lcsc.com/search?q=C17414) | Yes |
 | U5 | 1 | AP2112K-3.3 | Diodes Incorporated AP2112K-3.3TRG1 | [AP2112K-3.3TRG1DICT-ND](https://www.digikey.com/en/products/filter?keywords=AP2112K-3.3TRG1DICT-ND) | [621-AP2112K-3.3TRG1](https://www.mouser.com/ProductDetail/621-AP2112K-3.3TRG1) | LCSC [C51118](https://www.lcsc.com/search?q=C51118) | Yes |
+
+Pin headers are cut from strips, and the cart files count whole strips.
 
 - **C25:** Samsung, not YAGEO, on the boards JLCPCB assembles: LCSC has no YAGEO 10 µF 0805 in stock, and C15850 is one of JLCPCB's basic parts.
 - **J4:** Full-size SD, push-push, with card-detect and write-protect switches. LCSC only: the SD Adapter is assembled by JLCPCB, and LCSC stocks this part in thousands where it stocks the Hirose DM1AA in hundreds at eight times the price.
