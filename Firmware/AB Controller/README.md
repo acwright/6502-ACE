@@ -14,6 +14,7 @@ The AB Controller is firmware for the ATmega1284 microcontroller (an ATmega1284P
 - **Debounced Matrix Scanning**: Hardware debouncing for reliable matrix keyboard operation
 - **Enable/Disable Control**: Independent enable signals for PS/2 and matrix inputs
 - **Shared Joystick Ports**: Releases PORT A / PORT B when disabled so the 6502 can read the two Atari 2600-compatible joysticks that share those ports
+- **Open-Drain Key Codes**: Never drives a port line high, so a held joystick can't short an output or change a key; a key it would change waits until the stick is released
 - **6502 Reset Control**: Drives the 6502 RESB line, providing power-on reset and a debounced reset button
 - **Jiffy Clock (optional)**: Can generate periodic 6502 NMIs from the RTC's square-wave output (a DS1511Y, or a DS1501 on the RTC Adapter or on ACE Board 1.1). Disabled by default; enabled at build time via the `ENABLE_SQW` define
 
@@ -127,7 +128,8 @@ extra Y, B and X buttons rather than the 2600's paddle pots and +5V, so a
 2600 stick works with A/fire only, and nothing on the connector sources power.
 
 This is the firmware's obligation in the joystick path: when `CA2` or `CB2`
-goes high, it releases the corresponding port within 100 µs so the 6502 can
+goes high, it releases the corresponding port within 100 µs (with one
+exception, in [Sending a key code](#sending-a-key-code)) so the 6502 can
 read the stick directly — the same arrangement a C64 has with a CIA port.
 `disablePS2()` releases PORT A and `disableMatrix()` releases PORT B, both by
 returning the pins to `INPUT_PULLUP` rather than bare `INPUT`, so an untouched
@@ -145,10 +147,11 @@ for the full account.
 
 **Measured release latency: to be measured later.** This is the figure the
 BIOS's `KBDisable` settle wait is sized against. Cycle-counting the compiled
-firmware puts the worst-case code path at ~17 µs against a 100 µs budget, but
-that excludes a PS/2 interrupt landing in the window and says nothing about how
-long the bus takes to charge through a pull-up, so the published number comes
-from a scope.
+firmware put the worst-case code path at ~17 µs against a 100 µs budget
+before key codes went out open-drain, which adds a 10 µs wait for the lines to
+rise to one path. That count excludes a PS/2 interrupt landing in the window
+and says nothing about how long the bus takes to charge through a pull-up, so
+the published number comes from a scope.
 
 ## Keyboard Matrix Layout
 
@@ -196,6 +199,49 @@ When VIA_CB2 (Pin 13) is pulled LOW:
 ### Dual Mode
 Both keyboards can operate simultaneously if both enable signals are active.
 
+### Sending a key code
+The joysticks' switches ground the same PORT A and PORT B lines the key codes
+go out on, with nothing in series. So the firmware never drives a port line
+high: a held stick would short that output to ground. Whenever it isn't sending
+a code, both ports are inputs with their pull-ups on.
+
+A key code goes out open-drain. The firmware drives the code's 0 bits low,
+leaves its 1 bits to the pull-ups, and reads the port back. If the port reads
+as the code, the firmware pulses `CA1` (PS/2) or `CB1` (matrix) low, less than a
+microsecond after the read. If it doesn't, a held stick is pulling one of the
+code's 1 bits low, and nothing is sent: the key stays queued and is tried again
+every millisecond until the stick lets go. **A key typed with a stick held
+arrives late, never wrong.** Which keys wait depends on which line is held. With
+left held (bit 6) every letter waits; with right held (bit 7) nothing does, since
+no key code sets bit 7. Keys typed after a waiting key wait behind it, so they
+arrive in the order they were typed. Two keys held in one matrix row bridge
+their columns and read back wrong in the same way, so they wait in the same way.
+
+After the strobe the code stays on the port for 20 ms, unless the 6502 asks for
+the port first. The Kernal's interrupt handler reads it within about 90 µs, but
+a program that polls the VIA's interrupt flag once a frame reads it up to a
+frame later, and the VIA isn't set to latch its input. Only one port holds a
+code at a time, and the matrix sweep waits until it's released, so each key
+takes at least 20 ms: about fifty keys a second.
+
+There's one exception to the 100 µs release. When `KBDisable` raises `CA2` and
+`CB2` in the same instant as a strobe, the 6502 takes the keyboard interrupt
+straight after, and the Kernal's handler reads the port 77 (matrix) to 86
+(PS/2) cycles later, before `KBDisable` has begun its wait. The firmware keeps
+the code on the port for 110 µs from the strobe, so the handler reads the key.
+Earlier builds let go at once, which would hand the handler the released lines,
+`$FF` or a stick's state, as a keystroke. `KBDisable` reads the port no sooner
+than about 130 µs after its request, even at 2 MHz.
+
+Each keyboard's queue holds 16 keys. When it's full, a new key is dropped and
+the keys already queued are kept.
+
+Keys in a matrix row or column that a stick holds low can't be scanned while
+it's held, because every key there would read as pressed, so the sweep skips
+them. A key pressed and released in that time isn't seen.
+
+**Not yet tested on an ACE.**
+
 ### Joystick Reads
 When an enable signal goes HIGH the firmware releases that port so the joystick
 sharing it can be read by the 6502 — see [Joystick Interface](#joystick-interface).
@@ -206,13 +252,6 @@ re-enable, so a program that reads a joystick back to back (each read leaves the
 encoder only ~90 µs before the next) never finished a sweep, and the ACE's own
 keyboard sent nothing while it ran. The PS/2 keyboard was unaffected. Tested on
 an ACE Rev 1.0 at 1 MHz, BIOS 2.1.0, 2026-11-21.
-
-**Known issue:** joystick 1's switches are wired to the same PORT B lines the
-encoder drives a matrix key code onto, with no series resistor. A key typed
-while joystick 1 holds a direction or button arrives with that line's bit
-cleared: `H` with left held arrives as `$08`, and `C` with left held as `$03`,
-Ctrl-C, which stops a running BASIC program. PORT A and joystick 2 are wired the
-same way for the PS/2 encoder. Not yet fixed.
 
 ## 6502 System Control
 
