@@ -59,7 +59,7 @@ How to build each board, where it needs more than its parts list.
 
 **RTC:** U18 takes a DS1511Y+, the part every ACE has been tested with. Any revision also takes the [RTC Adapter](https://github.com/acwright/6502-COB#adapters) in its place, a DS1501 and its crystal on a plug, for less; its build notes are in 6502-COB. Rev 1.1 also takes a DS1501YN+ there: the DS1511Y is a DS1501 with its crystal and a lithium cell built in, and Rev 1.1 has the crystal on the board (`Y2`). A Rev 1.0 has no crystal, so it takes the DS1511Y or the adapter. The DS1501 option and the adapter are untested. With the adapter or a DS1501:
 - **Keep the CR2032 fitted** (`BT1`). It is the DS1501's only backup, so taking it out loses the time and the NVRAM. A DS1511Y has its own cell as well.
-- **Clear its Crystal Select bit once,** from BASIC: `POKE 34831,PEEK(34831) AND 191`. A new DS1501 may start with the bit set, and then it runs slow on the 6 pF crystal. The bit is battery-backed, so it stays cleared. The BIOS doesn't clear it yet: [6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4).
+- **Use BIOS 1.8 or 2.2.0 or later.** A new DS1501 may start with its Crystal Select bit set, and then it runs slow on the 6 pF crystal; the BIOS clears the bit at every boot from those releases on ([6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4)).
 - **The DS1501YN+ is not for new designs** (NRND). Digi-Key lists it (2026-11-20); Mouser doesn't.
 
 **Power:** use a centre-positive 5 V supply only, on either revision. Nothing on the board protects it from a reversed supply: the barrel jack goes straight to the power switch, so `VCC` gets the supply's full 5 V.

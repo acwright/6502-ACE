@@ -148,9 +148,9 @@ also puts the crystal on the board (`Y2`), so its socket takes the bare chip too
 With the RTC Adapter or a DS1501:
 - **Keep the CR2032 fitted** (`BT1`). It is the DS1501's only backup, so taking it out loses the time and the NVRAM.
   A DS1511Y has its own cell as well.
-- **Clear its Crystal Select bit once,** from BASIC: `POKE 34831,PEEK(34831) AND 191`. A new DS1501 may start with
-  the bit set, and then it runs slow on the 6 pF crystal. The bit is battery-backed, so it stays cleared. The BIOS
-  doesn't clear it yet: [6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4).
+- **Use BIOS 1.8 or 2.2.0 or later.** A new DS1501 may start with its Crystal Select bit set, and then it runs slow
+  on the 6 pF crystal; the BIOS clears the bit at every boot from those releases on
+  ([6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4)).
 - **The DS1501YN+, the DIP chip, is not for new designs** (NRND). Digi-Key lists it (2026-11-20); Mouser doesn't. The
   RTC Adapter's DS1501YZN+, in SOIC, is active.
 
@@ -213,8 +213,8 @@ Whether each board works with the stock BIOS, and what it takes if not. The stoc
 
 | Board | Rev | Stock BIOS | Why | Source |
 |---|---|---|---|---|
-| ACE Board | 1.0 | **After a step** | Fit the ACE RAM Patch Rev 1.1 in place of U12 and U13, or the BIOS doesn't find the `$8400` RAM window; and fit the video card's `/INT` diode, or a PICO9918 PRO holds `IRQB` high and the keyboard and serial input are dead. The build notes in [BOM.md](BOM.md#build-notes) have both. With the RTC Adapter at U18 in place of the DS1511Y, clear its Crystal Select bit once ([6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4)); [The RTC](#the-rtc) has the `POKE`. | Bench, 2026-11-03: `HW_PRESENT` reads `$FD` without the patch and `$FF` with it (see [ACE RAM Patch](#ace-ram-patch)); BOM.md build notes |
-| ACE Board | 1.1 | **Compatible** | The BIOS finds everything on the board: the banked RAM in both windows, the RTC, the CompactFlash slot, the serial port, the VIA, the SID and a PICO9918 PRO running 6502-PICOVDP. Rev 1.1 has the RAM Patch's decode and the `/INT` diode on the board. Not yet built: its label is in [Which revision to make](#which-revision-to-make). With the RTC Adapter or a DS1501 at U18 in place of the DS1511Y, clear its Crystal Select bit once ([6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4)); [The RTC](#the-rtc) has the `POKE`. | BIOS 2.x `Kernal.asm` probes; the decode by `Tests/check-schematics.mjs` |
+| ACE Board | 1.0 | **After a step** | Fit the ACE RAM Patch Rev 1.1 in place of U12 and U13, or the BIOS doesn't find the `$8400` RAM window; and fit the video card's `/INT` diode, or a PICO9918 PRO holds `IRQB` high and the keyboard and serial input are dead. The build notes in [BOM.md](BOM.md#build-notes) have both. The RTC Adapter at U18 in place of the DS1511Y needs BIOS 2.2.0 or later, which clears the DS1501's Crystal Select bit ([6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4)); see [The RTC](#the-rtc). | Bench, 2026-11-03: `HW_PRESENT` reads `$FD` without the patch and `$FF` with it (see [ACE RAM Patch](#ace-ram-patch)); BOM.md build notes |
+| ACE Board | 1.1 | **Compatible** | The BIOS finds everything on the board: the banked RAM in both windows, the RTC, the CompactFlash slot, the serial port, the VIA, the SID and a PICO9918 PRO running 6502-PICOVDP. Rev 1.1 has the RAM Patch's decode and the `/INT` diode on the board. Not yet built: its label is in [Which revision to make](#which-revision-to-make). The RTC Adapter or a DS1501 at U18 in place of the DS1511Y needs BIOS 2.2.0 or later, which clears the DS1501's Crystal Select bit ([6502-BIOS #4](https://github.com/acwright/6502-BIOS/issues/4)); see [The RTC](#the-rtc). | BIOS 2.x `Kernal.asm` probes; the decode by `Tests/check-schematics.mjs` |
 | ACE CF Adapter | 1.0, 1.1 | **Compatible** | Its CompactFlash card answers in IO 4 (`$8C00`), where the BIOS's storage probe looks, and `LOAD`, `SAVE` and `DIR` use it. | BIOS 2.x `Kernal.asm` `StInit`; bench, 2026-11-12: `CF` on the boot line |
 | ACE RAM Patch | 1.0 | **Nothing to support** | No registers of its own: it replaces the ACE Board 1.0's bank decode. Its decode is wrong, so don't fit one. The BIOS's probe still passes with it, because the probe tests only banks 0 and 1. | [Checking the banked RAM](#checking-the-banked-ram); BOM.md build notes |
 | ACE RAM Patch | 1.1 | **Nothing to support** | No registers of its own: it is the ACE Board 1.0's corrected bank decode. With it fitted, the BIOS finds both RAM windows. | Bench, 2026-11-03: `HW_PRESENT` `$FF` on 10 boots of 10 |
