@@ -218,7 +218,7 @@ pages[-1]+=(f'''
 <h2>First power-on</h2>
 {boxes("SW69, IO ENABLE: all eight switches on. Each switch is one I/O window, IO1 to IO8, and the first two are the banked RAM.",
 "A center-positive 5 V supply. Switch on.")}
-<p>With a pico9918 running 6502-PICOVDP and BIOS 2.x, the screen shows the AC6502 logo, then <code>AC6502 BIOS v2.1</code>, <code>BASIC v2.0 30718 BYTES FREE</code> and the cards the BIOS found: <code>RAM RTC CF SER VIA SID VDP</code>. The 6502-ACE README's "Video card" section covers setting up the card and the ROM.</p>
+<p>With a pico9918 running 6502-PICOVDP and BIOS 2.x, the screen shows the AC6502 logo, then <code>AC6502 BIOS v2.2</code>, <code>BASIC v2.0 30718 BYTES FREE</code> and the cards the BIOS found: <code>RAM RTC CF SER VIA SID VDP</code>. The 6502-ACE README's "Video card" section covers setting up the card and the ROM.</p>
 <h3>Which cards did the BIOS find?</h3>
 <p>Type this at BASIC:</p>
 <pre>PRINT PEEK(781)</pre>
