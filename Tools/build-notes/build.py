@@ -49,8 +49,8 @@ pages=[]
 
 pages.append(f'''
 <h1>ACE Board Rev 1.0: Build Notes</h1>
-<p class="sub">The work an ACE Board Rev 1.0 needs beyond its bill of materials, for a new build or for upgrading a built board. Rev 1.1 makes these fixes on the PCB. On Rev 1.0 you make them by hand. Changes 1–8 are done and tested on the owner's Rev 1.0; change 9, which is optional, hasn't been tried on a board yet.</p>
-<div class="side" style="grid-template-columns:1fr 2.75in">
+<p class="sub">The work an ACE Board Rev 1.0 needs beyond its bill of materials, for a new build or for upgrading a built board. Rev 1.1 makes these fixes on the PCB. On Rev 1.0 you make them by hand. Changes 1–8 are done and tested on the owner's Rev 1.0. Changes 9 and 10 are optional and haven't been done on a board yet; change 10's circuit is tested.</p>
+<div class="side" style="grid-template-columns:1fr 2.55in">
 <div>
 <table>
 <tr><th style="width:17pt"></th><th>Change</th><th>Who needs it</th></tr>
@@ -63,6 +63,7 @@ pages.append(f'''
 <tr><td class="c">7</td><td>Fit the ACE RAM Patch Rev 1.1 in place of U12 and U13</td><td>Any board with the banked RAM (U15, U21, U22)</td></tr>
 <tr><td class="c">8</td><td>Optional: put the SID on J1's clock, with one cut and one wire</td><td>Only a board run at 2 MHz, at the builder's risk</td></tr>
 <tr><td class="c">9</td><td>Optional: turn the RCA jacks' wiring the right way round</td><td>A board whose J11 and J14 feed an amplifier</td></tr>
+<tr><td class="c">10</td><td>Optional: U7's output enable from the inverted RWB</td><td>A board under a heavy load, or above 5.0 V</td></tr>
 </table>
 </div>
 <div>{fig(fig_map(),"<b>Figure 1. Top of the ACE.</b> Where each change is. Change 5 is in two places: the ATmega, U6, and its pull-up under U4.")}</div>
@@ -73,7 +74,7 @@ pages.append(f'''
 <p>Rev 1.0's designators are the ones printed on your board. Build from the ACE Board Rev 1.0 table in <code>BOM.md</code>, or from <code>Production/ACE Board/Rev 1.0/bom.csv</code>, which both use these numbers. Rev 1.1 keeps them, except that its U13 is a 74HC02, not a 74HC00; its new parts take numbers Rev 1.0 never used.</p>
 <h3>Changes to the parts you buy</h3>
 <table>
-<tr><th>Part</th><th style="width:30pt">Qty</th><th>For</th></tr>
+<tr><th>Part</th><th style="width:44pt">Qty</th><th>For</th></tr>
 <tr><td>10 kΩ resistor, 1/8 W</td><td>7</td><td>Change 1 (R1–R5, R27) and change 5 (RESB). Rev 1.0's BOM lists 34 × 1 kΩ: buy 28 instead</td></tr>
 <tr><td>R6551AP</td><td>1</td><td>Change 2. Already at U4 in the BOM, where the value reads 65C51</td></tr>
 <tr><td>10 µF electrolytic, 16 V</td><td>1</td><td>Change 4</td></tr>
@@ -273,6 +274,19 @@ pages.append(f'''
 {step(2,"Free the tip and shunt holes from the ground pour",boxes("Each of the four holes behind the sleeves is held in the ground pour by two thin spokes, one at each end, on each side of the board: sixteen in all, circled in Figures 16 and 17.","Cut each spoke across its gap with a sharp blade, so no copper joins the hole's ring to the pour."))}
 {step(3,"Fit the jacks, then the two wires underneath",boxes("Fit J11 and J14 as usual.","Signal: solder an insulated wire from J15 pin 1 to the tip and shunt holes' joints, all four in a chain (red).","Ground: solder an insulated wire from J14's sleeve joint to J15 pin 2 (blue)."))}
 {step(4,"Check with the meter, power off",boxes("Each sleeve joint to J15 pin 2: beep. Each tip and shunt joint to J15 pin 2: no beep.","Each tip and shunt joint to J15 pin 1: beep. Each sleeve joint to J15 pin 1: no beep.","J15 pin 1 to C8's lead nearest J15: beep. The signal still reaches J15."))}
+''')
+
+pages.append(f'''
+{h2(10,"Optional: the RAM's output enable, for a heavy load")}
+<p>U7, the main RAM, is an Alliance AS6C62256. On Rev 1.0 its output enable, pin 22, is RB, which rises as PHI2 falls, so the RAM lets go of the data bus before the CPU has finished reading it. Under a heavy load, such as the 1 MB Flash Cart, or at 2 MHz, the CPU can then read a 0 bit as 1, and programs crash or misbehave. The supply voltage decides how often: in tests, 5.0 V at the board read clean and 5.1 V or more failed. Rev 1.1 takes U7's output enable from the inverted RWB, which U14 already makes, so the RAM holds the byte until the address changes. Two cuts and two wires do the same on a Rev 1.0, and do no harm on a board that doesn't need them.</p>
+<div class="info"><b>Status:</b> the circuit is tested on the owner's Rev 1.0 (2026-11-21 to 2026-11-23), with U7's pin 22 bent out of its socket and wired to U14 pin 6: the reads that failed thousands of times a run read 0, from 4.5 V to 5.24 V, at 1 MHz and 2 MHz, and none of 20 million writes to the cart, the CF card, the video chip and the bank latches was lost. These cuts and wires make that circuit permanent; they haven't been done on a board yet. A Hitachi HM62256LP-70 at U7, no longer made, doesn't need the change.</div>
+{fig(fig_ram_cuts(),"<b>Figure 18. Underside copper around U7, mirrored.</b> RB in blue: from U18 pin 22 into U7 pin 22, and on toward U8. The two cuts in red.")}
+{step(1,"Cut the track on both sides of U7 pin 22",boxes("On the underside, find U7 pin 22. RB comes into it from U18 and leaves toward U8, the ROM (Figure 18).","<b>Cut 1:</b> on the straight run between U7's two rows of pins, about 11 mm from pin 22.","<b>Cut 2:</b> on the straight run out of pin 22 the other way, about 7 mm from the pin, before the track bends.","At each, make two cuts about 1 mm apart with a sharp blade, and lift the copper between them. No other track runs within 1.2 mm of either cut."))}
+''')
+pages.append(f'''
+{fig(fig_ram_wires(),"<b>Figure 19. Underside of the ACE, mirrored.</b> Blue: the bridge, from U18 pin 22 to U8 pin 22. Red: the signal wire, from U7 pin 22 to U14 pin 6. The red bars are the two cuts. The lines show which joints to join, not the path: route each wire flat along the board.")}
+{step(2,"Fit the two wires",boxes("<b>Bridge:</b> an insulated wire from U18 pin 22 to U8 pin 22, about 11 cm. The cuts leave the ROM, the banked RAM and the CF card off RB; this joins them back to it, with the RTC.","<b>Signal:</b> an insulated wire from U7 pin 22 to U14 pin 6, the inverted RWB, about 9 cm.","Solder to the joints on the underside, keep both wires flat against the board, and keep them clear of the standoffs."))}
+{step(3,"Check with the meter, power off",boxes("U7 pin 22 to U14 pin 6: beep. The signal wire is on.","U7 pin 22 to U14 pin 8: <b>no beep</b>. Both cuts are through: a beep means one isn't.","U14 pin 8 to U8 pin 22, and to U15 pin 24: beep. The bridge is on.","U7 pin 22 to its neighbours, pins 21 and 23: <b>no beep</b>."))}
 ''')
 
 N=len(pages)
