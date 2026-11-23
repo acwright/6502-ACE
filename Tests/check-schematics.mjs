@@ -59,6 +59,9 @@ const CONFIGS = [
     // The ACIA's and the SID's values name the parts tested on the family's machines
     // (2026-10-26 and 2026-11-05). The RTC's names both chips its socket takes (2026-11-20).
     values: { acia: 'R6551AP', sid: 'ARMSID', rtc: 'DS1511Y / DS1501' },
+    // The RAM's /OE is inverted RWB, not RB (2026-11-23): the RAM holds its byte to the end
+    // of every read, so it drives the data bus through PHI2 low too.
+    ramOe: 'rwb',
     rules: ['decode', 'clock', 'shared-lines']
   },
   {
@@ -94,8 +97,10 @@ const RB = (a, r, p) => r && p ? 0 : 1                                     // re
 const WB = (a, r, p) => !r && p ? 0 : 1                                    // write strobe, low
 const low = (cond) => cond ? 0 : 1
 
+const RWB_INV = (a, r) => r ? 0 : 1                                        // inverted RWB
+
 const PINS = [
-  // 32 KB RAM, $0000-$7FFF
+  // 32 KB RAM, $0000-$7FFF. Its /OE is RB, or inverted RWB where the config says ramOe: 'rwb'.
   ['ram', 20, 'RAM /CE', (a) => low(a < 0x8000)],
   ['ram', 22, 'RAM /OE', RB],
   ['ram', 27, 'RAM /WE', WB],
@@ -129,7 +134,8 @@ const PINS = [
 
 // What drives the data bus on a read, and what takes it on a write. Exactly one of each,
 // except that nothing on the board answers $C000-$FFFF while a cartridge does, and nothing
-// answers while PHI2 is low. (A write to $83FF or $87FF also stores the byte in the banked
+// answers while PHI2 is low: unless the RAM's /OE is inverted RWB, when the RAM alone answers
+// a read of $0000-$7FFF with PHI2 low, and nothing else may drive the bus with it. (A write to $83FF or $87FF also stores the byte in the banked
 // RAM; BIOS.inc leaves that byte to the latch.)
 const READERS = [
   ['RAM', v => v('ram', 20) === 0 && v('ram', 22) === 0],
@@ -152,7 +158,8 @@ const WRITERS = [
   ['SID', (v, a, r, p) => v('sid', 8) === 0 && !r && p],
   ['VDP', v => v('vdp', 14) === 0]
 ]
-const expectedReaders = (a, r, p, h) => !r || !p ? 0 : a >= 0xC000 && !h ? 0 : 1
+const expectedReaders = (a, r, p, h, ramOe) =>
+  !r ? 0 : !p ? (ramOe === 'rwb' && a < 0x8000 ? 1 : 0) : a >= 0xC000 && !h ? 0 : 1
 const expectedWriters = (a, r, p) => r || !p ? 0 : a < 0xA000 ? 1 : 0
 
 // ---- Netlists -------------------------------------------------------------------------
@@ -348,7 +355,7 @@ function evaluate(board, logic, inputs) {
 
 // ---- Rules ----------------------------------------------------------------------------
 
-function checkDecode(board) {
+function checkDecode(board, cfg) {
   const logic = compile(board)
   const cpu = pin => board.pin('cpu', pin)
   const addr = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25].map(cpu)  // A0-A15
@@ -360,7 +367,9 @@ function checkDecode(board) {
     if (f.examples.length < 6) f.examples.push(`$${a.toString(16).toUpperCase().padStart(4, '0')} ${r ? 'read ' : 'write'} PHI2=${p}${h ? '' : ' cart'}: got ${got}, want ${want}`)
     failures.set(what, f)
   }
-  const pinNets = PINS.map(([part, pin, what, want]) => {
+  const pins = PINS.map(([part, pin, what, want]) =>
+    [part, pin, what, part === 'ram' && pin === 22 && cfg.ramOe === 'rwb' ? RWB_INV : want])
+  const pinNets = pins.map(([part, pin, what, want]) => {
     const n = board.pin(part, pin)
     if (n === undefined) throw new Error(`${board.parts[part]} pin ${pin} (${what}) is not in the netlist`)
     return [n, what, want]
@@ -378,7 +387,8 @@ function checkDecode(board) {
         if (w !== '-' && got !== w) fail(what, a, r, p, h, got, w)
       }
       const readers = READERS.filter(([, f]) => f(v, a, r, p)).map(([n]) => n)
-      if (readers.length !== expectedReaders(a, r, p, h)) fail('devices driving the data bus', a, r, p, h, readers.join('+') || 'none', expectedReaders(a, r, p, h))
+      const wantReaders = expectedReaders(a, r, p, h, cfg.ramOe)
+      if (readers.length !== wantReaders) fail('devices driving the data bus', a, r, p, h, readers.join('+') || 'none', wantReaders)
       const writers = WRITERS.filter(([, f]) => f(v, a, r, p)).map(([n]) => n)
       if (writers.length !== expectedWriters(a, r, p)) fail('devices taking a write', a, r, p, h, writers.join('+') || 'none', expectedWriters(a, r, p))
     }
@@ -426,7 +436,7 @@ try {
   for (const cfg of CONFIGS) {
     const board = assemble(cli, cfg, dir)
     const results = []
-    if (cfg.rules.includes('decode')) results.push(['address decoding (524,288 bus states)', checkDecode(board)])
+    if (cfg.rules.includes('decode')) results.push(['address decoding (524,288 bus states)', checkDecode(board, cfg)])
     if (cfg.rules.includes('clock')) results.push(['clock', checkClock(board)])
     if (cfg.rules.includes('clock-2mhz')) results.push(['clock at 2 MHz', checkClock(board, 12, '2 MHz output (Q2, pin 12)')])
     if (cfg.rules.includes('shared-lines')) results.push(['IRQB and RESB', checkSharedLines(board)])

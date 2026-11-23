@@ -24,7 +24,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | Board | Revision | What the silk says | Status | Label |
 |---|---|---|---|---|
 | [ACE Board](#ace-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
-| [ACE Board](#ace-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing. The DS1501 option at U18, with its crystal `Y2`, is untested, and so are the 10k pull-ups on the PS/2 lines, a textbook circuit |
+| [ACE Board](#ace-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode, a 74HCT00 at U14 and the RAM's output enable from inverted `RWB`, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing. The DS1501 option at U18, with its crystal `Y2`, is untested, and so are the 10k pull-ups on the PS/2 lines, a textbook circuit |
 | [ACE CF Adapter](#ace-cf-adapter) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [ACE CF Adapter](#ace-cf-adapter) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: the same circuit as the tested Rev 1.0, renumbered and in surface-mount parts for JLCPCB assembly. The new LCSC socket fits the same footprint, but no board has been built with it yet |
 | [ACE RAM Patch](#ace-ram-patch) | 1.0 | Rev 1.0 | Made. Failed: Rev 1.1 replaces it | **Tested**: built and tested: its decode is wrong, and Rev 1.1 replaces it |
@@ -44,7 +44,6 @@ These change what you buy or fit. The boards themselves stay as they were made.
 | ACE Board | 1.0 | U9 | The silk says 6581; fit an ARMSID. |
 | ACE Board | 1.0 | U4 | The silk says 65C51; fit an R6551AP. |
 | ACE Board | 1.0 | BT1 | `BAT-HLD-001-THM`, on the tested boards, is obsolete. `BAT-HLD-001-THM-TR` is its listed continuation, with no stock today and no board built with it yet. |
-| ACE Board | 1.1 | U7 | Under a heavy load, such as the 1 MB Flash Cart, or at 2 MHz, this AS6C62256 can return a wrong byte from RAM: it lets go of the data bus too early at the end of a read, and the CPU can read a 0 bit as 1. Programs then crash or misbehave. The supply voltage decides how often. In tests, a board with 5.0 V at the RAM read clean, and one with 5.1 V or more failed, so measure the voltage at the board if you see this. A Hitachi HM62256LP-70, no longer made, does not have the problem. |
 | ACE Board | 1.1 | BT1 | `BAT-HLD-001-THM`, on the tested boards, is obsolete. `BAT-HLD-001-THM-TR` is its listed continuation, with no stock today and no board built with it yet. |
 | ACE RAM Patch | 1.0 |  | Boards were made, and testing showed the decode is wrong. Do not fit one: use Rev 1.1. |
 
@@ -100,7 +99,7 @@ Rev 1.1's other changes need nothing on a built board, or can't be made on one:
 
 ### ACE Board Rev 1.1
 
-Drawn, not made yet. **Proven design**: each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode and a 74HCT00 at U14, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing. The DS1501 option at U18, with its crystal `Y2`, is untested, and so are the 10k pull-ups on the PS/2 lines, a textbook circuit.
+Drawn, not made yet. **Proven design**: each change is a circuit already tested on a Rev 1.0: the ACE RAM Patch 1.1's bank-latch decode, the video card's `/INT` diode, a 74HCT00 at U14 and the RAM's output enable from inverted `RWB`, all run on the bench, and the ACIA's crystal jumpers, which ship open. The audio jack's pins are put right, `SOB` is tied high, the pull-ups are 10k, and the tracks are rerouted, with the decode check passing. The DS1501 option at U18, with its crystal `Y2`, is untested, and so are the 10k pull-ups on the PS/2 lines, a textbook circuit.
 
 Cart files: [digikey.csv](BOM/ACE%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/ACE%20Board/Rev%201.1/mouser.csv)
 

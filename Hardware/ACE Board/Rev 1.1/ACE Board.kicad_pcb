@@ -8063,7 +8063,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "REB")
+			(net "ROEB")
 			(pinfunction "~{CE}_20")
 			(pintype "bidirectional")
 			(uuid "a0270e24-b76e-4143-bc14-1884651676c2")
@@ -34090,7 +34090,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "RB")
+			(net "RAEB")
 			(pinfunction "~{OE}_22")
 			(pintype "input")
 			(uuid "ec5255ce-b07e-4380-8a0a-3213784cadce")
@@ -35121,7 +35121,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "REB")
+			(net "ROEB")
 			(pintype "output")
 			(uuid "48d9aa9e-cde5-4a24-857a-f2799c99d214")
 		)
@@ -35151,7 +35151,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(U14-Pad13)")
+			(net "RAEB")
 			(pintype "output")
 			(uuid "bdf32b1c-8338-47e0-ad37-4d9148a21bf8")
 		)
@@ -35222,7 +35222,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(U14-Pad13)")
+			(net "RAEB")
 			(pintype "input")
 			(uuid "f09631fa-4efc-4424-9dce-a437e5043c31")
 		)
@@ -98488,14 +98488,6 @@
 		(uuid "4f6d3861-a6ca-447b-9b0f-65416530f1ea")
 	)
 	(segment
-		(start 213.24 191.74)
-		(end 227.42 191.74)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "RB")
-		(uuid "4f9c5902-b886-4ddd-83b6-9a23610581bb")
-	)
-	(segment
 		(start 270.45 140.23)
 		(end 270.78 140.23)
 		(width 0.2)
@@ -98566,14 +98558,6 @@
 		(layer "B.Cu")
 		(net "RB")
 		(uuid "9c1c9d73-1b5e-4772-9cea-0370718d5d67")
-	)
-	(segment
-		(start 210.74 191.74)
-		(end 213.24 191.74)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "RB")
-		(uuid "a3531064-499f-4b54-8113-2b234facca3b")
 	)
 	(segment
 		(start 358.84 168.4)
@@ -102812,7 +102796,7 @@
 		(end 274.3 216.04)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "REB")
+		(net "ROEB")
 		(uuid "19c08bae-9805-422c-85f2-778974394a33")
 	)
 	(segment
@@ -102820,7 +102804,7 @@
 		(end 274.32 216.02)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "REB")
+		(net "ROEB")
 		(uuid "8b7d2e35-e81b-4e6d-9f55-8db4633f73d6")
 	)
 	(segment
@@ -102828,7 +102812,7 @@
 		(end 132.31 199.88)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "REB")
+		(net "ROEB")
 		(uuid "94af944f-a78e-4c31-ac51-b67856344191")
 	)
 	(via
@@ -102836,7 +102820,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "REB")
+		(net "ROEB")
 		(uuid "0ca812ac-6408-4397-a9d4-acb28a5dc0fe")
 	)
 	(via
@@ -102844,7 +102828,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "REB")
+		(net "ROEB")
 		(uuid "35c326fe-2d32-4cf3-a793-2c318c6d4455")
 	)
 	(via
@@ -102852,7 +102836,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "REB")
+		(net "ROEB")
 		(uuid "defdf3c8-cec9-44ff-b681-df4b8b4e3ede")
 	)
 	(via
@@ -102860,7 +102844,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "REB")
+		(net "ROEB")
 		(uuid "ec4c8016-f223-44da-81a0-fc804d5acf3e")
 	)
 	(segment
@@ -102868,7 +102852,7 @@
 		(end 131.8 199.88)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "REB")
+		(net "ROEB")
 		(uuid "0a25ffd2-6252-4741-b189-df9e409d1d7e")
 	)
 	(segment
@@ -102876,7 +102860,7 @@
 		(end 274.35 145.32)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "REB")
+		(net "ROEB")
 		(uuid "12c4a46c-f574-4ab6-9983-89b1b3af2c1e")
 	)
 	(segment
@@ -102884,7 +102868,7 @@
 		(end 131.76 199.84)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "REB")
+		(net "ROEB")
 		(uuid "64e9629a-26e0-4ec8-8050-45f0122f2b47")
 	)
 	(segment
@@ -102892,7 +102876,7 @@
 		(end 129.264 199.84)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "REB")
+		(net "ROEB")
 		(uuid "7b75da6f-66e4-482d-9ce5-62a4274f1325")
 	)
 	(segment
@@ -102900,7 +102884,7 @@
 		(end 132.31 216.04)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "REB")
+		(net "ROEB")
 		(uuid "82a13576-20a9-4a92-8c18-faf88fbb5f05")
 	)
 	(segment
@@ -102908,7 +102892,7 @@
 		(end 274.32 145.29)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "REB")
+		(net "ROEB")
 		(uuid "9d2b32f7-9c5d-4da4-b4e7-2bee86c1469d")
 	)
 	(segment
@@ -116212,7 +116196,7 @@
 		(end 131.51 197.34)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(U14-Pad13)")
+		(net "RAEB")
 		(uuid "88c6c6b3-52ed-473f-9519-c40daf8121c0")
 	)
 	(segment
@@ -116220,7 +116204,7 @@
 		(end 131.53 197.32)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(U14-Pad13)")
+		(net "RAEB")
 		(uuid "d5d11877-ae37-4a25-b21b-c4bc7fd30b86")
 	)
 	(via
@@ -116228,7 +116212,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(U14-Pad13)")
+		(net "RAEB")
 		(uuid "318aaf7d-9371-4fb4-a31b-849754a77620")
 	)
 	(via
@@ -116236,7 +116220,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "Net-(U14-Pad13)")
+		(net "RAEB")
 		(uuid "b2d14ddc-e168-45cd-985a-cd3d5ccf95cc")
 	)
 	(segment
@@ -116244,7 +116228,7 @@
 		(end 131.51 207.47)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(U14-Pad13)")
+		(net "RAEB")
 		(uuid "00493857-f8bb-4568-97ae-48b4f79c4b10")
 	)
 	(segment
@@ -116252,7 +116236,7 @@
 		(end 131.5 207.46)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(U14-Pad13)")
+		(net "RAEB")
 		(uuid "86757c75-d41c-4ec5-bf52-47b015625209")
 	)
 	(segment
@@ -116260,7 +116244,7 @@
 		(end 136.884 197.3)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(U14-Pad13)")
+		(net "RAEB")
 		(uuid "a5f6b6b8-698b-4781-91a5-a13ad7ff8730")
 	)
 	(segment
@@ -116268,7 +116252,7 @@
 		(end 131.55 197.3)
 		(width 0.2)
 		(layer "B.Cu")
-		(net "Net-(U14-Pad13)")
+		(net "RAEB")
 		(uuid "f6b7191a-a02d-40a9-9f68-9b0e18856008")
 	)
 	(segment
