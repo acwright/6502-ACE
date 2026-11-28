@@ -49228,7 +49228,7 @@
 				)
 			)
 		)
-		(property "Digikey" "1450-1033-ND"
+		(property "Digikey" ""
 			(at 40.64 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -49239,7 +49239,7 @@
 				)
 			)
 		)
-		(property "Mouser" "913-AS6C62256-55PCN"
+		(property "Mouser" ""
 			(at 40.64 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -49250,7 +49250,7 @@
 				)
 			)
 		)
-		(property "Jameco" ""
+		(property "Jameco" "82472"
 			(at 40.64 147.32 0)
 			(hide yes)
 			(show_name no)
