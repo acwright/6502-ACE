@@ -46,7 +46,6 @@ def fig_map():
     b+=badge(171,140,'2')+badge(219,110,3)+badge(153,101,4)
     b+=badge(355.5,140,5)+badge(152,129,5)+badge(239,140,6)+badge(338,193,7)
     b+=rect(285,113,308,151,fill='none',stroke=RED,w=.9,dash='3 2')+badge(296.5,132,8)   # optional
-    b+=rect(195,172,217,213,fill='none',stroke=RED,w=.9,dash='3 2')+badge(206,165,10)   # optional, on the underside
     b+=lab(CX,337.5,"Keyboard edge: toward you",s=7.5,w=600)
     return svg(95,70,345,272,b)
 def fig_pull():
@@ -315,35 +314,3 @@ def fig_audio_bot():
     b+=lab(mx(J15P1[0])+1.4,J15P1[1]+.5,"J15",s=1.3,a="start")
     b+=lab(mx(289.0),78.6,"J11",s=1.4,a="start")+lab(mx(277.0),78.6,"J14",s=1.4,a="start")
     return svg(mx(300),76,30,21.5,b)
-
-# Change 10, optional: the RAM's output enable. Read from the Rev 1.0 PCB: RB runs on the underside, a chain from
-# U14 pin 8 to U18 pin 22, then U7 pin 22, then on to U8 pin 22, U15 pin 24 and J21 pin 8. Cut 1 is on the straight
-# run between U7's two rows of pins (y 190.48), cut 2 on the straight run out of pin 22 the other way (y 191.74),
-# 6.8 mm from the pin: no other track within 1.2 mm of either. The bridge joins U18 pin 22 to U8 pin 22, so the RTC,
-# ROM, banked RAM and CF stay on RB; the signal wire joins U7 pin 22 to U14 pin 6, the inverted RWB.
-U7P22,U18P22,U8P22,U14P6=(213.24,191.74),(179.24,192.24),(276.00,140.24),(129.26,207.46)
-RBRUN=[U18P22,(193.93,192.24),(195.69,190.48),(209.48,190.48),(210.74,191.74),U7P22,(227.42,191.74),(228.67,190.49),(236.0,190.49)]
-RAMCUTS=[(202.6,190.48),(220.0,191.74)]
-BLUE="#1f6fd1"
-def fig_ram_cuts():
-    b=BOTCU()
-    for (x1,y1),(x2,y2) in zip(RBRUN,RBRUN[1:]): b+=line(mx(x1),y1,mx(x2),y2,c=BLUE,w=.45)
-    for n,(x,y) in enumerate(RAMCUTS,1):
-        b+=line(mx(x),y-1.3,mx(x),y+1.3,c=RED,w=.6)
-        b+=lab(mx(x),y-2.0,f"Cut {n}",s=1.5,c=RED)
-    for (x,y),t,a,dy in ((U7P22,"U7 pin 22","end",3.2),(U18P22,"U18 pin 22","middle",3.2)):
-        b+=circ(mx(x),y,.95,stroke="#000",w=.25)+lab(mx(x)+(-1.2 if a=="end" else 0),y+dy,t,s=1.3,a=a)
-    b+=lab(mx(198.0),186.4,"U7's other row",s=1.2,a="middle",w=500)
-    b+=lab(mx(236.0)+1.0,190.99,"on to U8",s=1.2,a="start",w=500)
-    return svg(mx(240),183.5,66,13.5,b)
-def fig_ram_wires():
-    b=BOTCU()
-    b+=line(mx(U18P22[0]),U18P22[1],mx(U8P22[0]),U8P22[1],c=BLUE,w=.9)
-    red=[U7P22,(U7P22[0],214.5),(U14P6[0],214.5),U14P6]   # drawn below U18, so it doesn't cross U18 pin 22
-    for (x1,y1),(x2,y2) in zip(red,red[1:]): b+=line(mx(x1),y1,mx(x2),y2,c=RED,w=.9)
-    for x,y in RAMCUTS: b+=line(mx(x),y-2.2,mx(x),y+2.2,c=RED,w=1.0)
-    for (x,y),t,a,dx,dy in ((U18P22,"U18 pin 22","start",2.4,-2.4),(U8P22,"U8 pin 22","start",2.4,1.5),
-                            (U7P22,"U7 pin 22","end",-2.4,-2.4),(U14P6,"U14 pin 6","end",-2.4,-2.4)):
-        b+=circ(mx(x),y,1.6,stroke="#000",w=.45)+lab(mx(x)+dx,y+dy,t,s=3.6,a=a)
-    b+=lab(mx(205.0),171.0,"U7",s=4.2)+lab(mx(171.5),171.0,"U18",s=4.2)+lab(mx(268.4),132.5,"U8",s=4.2)+lab(mx(133.0),190.0,"U14",s=4.2)
-    return svg(mx(290),128,178,91,b)
